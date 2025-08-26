@@ -1,0 +1,79 @@
+﻿Public Class frmTicketServEvalECPEdit
+
+    Dim util As New clsUtils
+    Public sTicketId As String = ""
+    Public sTicketServEvalEcpId As String = ""
+
+    Private Sub frmTicketServEvalECPEdit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        util.DateTimePickerFormat(dtpServiceDate)
+    End Sub
+
+    Private Sub cbxEvalT1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalT1.KeyPress
+        e.Handled = True
+    End Sub
+    Private Sub cbxEvalT2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalT2.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub cbxEvalT3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalT3.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub cbxEvalT4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalT4.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub cbxEvalC1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalC1.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub cbxEvalQ1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalQ1.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub cbxEvalQ2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalQ2.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub cbxEvalP1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalP1.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub cbxEvalP2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalP2.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub cbxEvalP3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalP3.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub cbxEvalP4_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cbxEvalP4.KeyPress
+        e.Handled = True
+    End Sub
+    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub grpClientAnswer_Enter(sender As Object, e As EventArgs) Handles grpClientAnswer1.Enter
+
+    End Sub
+
+    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
+
+    End Sub
+
+    Private Sub GroupBox8_Enter(sender As Object, e As EventArgs) Handles grpClientAnswer2.Enter
+
+    End Sub
+
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+
+    End Sub
+
+    Public Sub Init()
+        'TODO: This line of code loads data into the 'SESTicketAccessDataSet.HSEQ_ANSWERS' table. You can move, or remove it, as needed.
+        'Me.HSEQ_ANSWERSTableAdapter.Fill(Me.SESTicketAccessDataSet.HSEQ_ANSWERS)
+    End Sub
+
+
+End Class

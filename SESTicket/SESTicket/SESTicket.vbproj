@@ -1,0 +1,1461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SESTicket.My.MyApplication</StartupObject>
+    <RootNamespace>SESTicket</RootNamespace>
+    <AssemblyName>SESTicket</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SESTicket.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SESTicket.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>SESTicket.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Superior.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\clsActiveDirectory.vb" />
+    <Compile Include="Class\clsBancoDadosACCESS.vb" />
+    <Compile Include="Class\clsBancoDadosSQL.vb" />
+    <Compile Include="Class\clsDataExp.vb" />
+    <Compile Include="Class\clsDataImp.vb" />
+    <Compile Include="Class\clsRPTDocx.vb" />
+    <Compile Include="Class\clsRPTXlsx.vb" />
+    <Compile Include="Class\clsSalesItemTotal.vb" />
+    <Compile Include="Class\clsSequence.vb" />
+    <Compile Include="Class\clsSyncTicket.vb" />
+    <Compile Include="Class\clsSyncTicketAttach.vb" />
+    <Compile Include="Class\clsTicketInvItem.vb" />
+    <Compile Include="Class\clsUpdSalesItemTicket.vb" />
+    <Compile Include="Class\clsUserAccessControl.vb" />
+    <Compile Include="Class\clsUtils.vb" />
+    <Compile Include="Class\clsSyncBaseData.vb" />
+    <Compile Include="Class\clsSystemVersion.vb" />
+    <Compile Include="Form\frmCancelTicket.Designer.vb">
+      <DependentUpon>frmCancelTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCancelTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmChangeSupSupervisor.Designer.vb">
+      <DependentUpon>frmChangeSupSupervisor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmChangeSupSupervisor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmChangeTicketClosedDate.Designer.vb">
+      <DependentUpon>frmChangeTicketClosedDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmChangeTicketClosedDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCheckConnection.Designer.vb">
+      <DependentUpon>frmCheckConnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCheckConnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCloseTicketDB.Designer.vb">
+      <DependentUpon>frmCloseTicketDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCloseTicketDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmContractEdit.Designer.vb">
+      <DependentUpon>frmContractEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmContractEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmContractList.Designer.vb">
+      <DependentUpon>frmContractList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmContractList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmContractPriceEdit.Designer.vb">
+      <DependentUpon>frmContractPriceEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmContractPriceEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmContractPriceList.Designer.vb">
+      <DependentUpon>frmContractPriceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmContractPriceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmContractPriceRefreshTicket.Designer.vb">
+      <DependentUpon>frmContractPriceRefreshTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmContractPriceRefreshTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCustomerEdit.Designer.vb">
+      <DependentUpon>frmCustomerEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCustomerEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCustomerList.Designer.vb">
+      <DependentUpon>frmCustomerList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCustomerList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmDataImp.Designer.vb">
+      <DependentUpon>frmDataImp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmDataImp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmDataImpContrPriceList.Designer.vb">
+      <DependentUpon>frmDataImpContrPriceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmDataImpContrPriceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmDataImpDetail.Designer.vb">
+      <DependentUpon>frmDataImpDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmDataImpDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmEquipmentEdit.Designer.vb">
+      <DependentUpon>frmEquipmentEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmEquipmentEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmEquipmentList.Designer.vb">
+      <DependentUpon>frmEquipmentList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmEquipmentList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmDataExpLayout.Designer.vb">
+      <DependentUpon>frmDataExpLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmDataExpLayout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmImportTicket.Designer.vb">
+      <DependentUpon>frmImportTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmImportTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmInvoiceEdit.Designer.vb">
+      <DependentUpon>frmInvoiceEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmInvoiceEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmInvClassEdit.Designer.vb">
+      <DependentUpon>frmInvClassEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmInvClassEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmInvClassList.Designer.vb">
+      <DependentUpon>frmInvClassList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmInvClassList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmInvItemEdit.Designer.vb">
+      <DependentUpon>frmInvItemEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmInvItemEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmInvItemList.Designer.vb">
+      <DependentUpon>frmInvItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmInvItemList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPetrFieldEdit.Designer.vb">
+      <DependentUpon>frmPetrFieldEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPetrFieldEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPetrFieldList.Designer.vb">
+      <DependentUpon>frmPetrFieldList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPetrFieldList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmRemoveTicketGrid.Designer.vb">
+      <DependentUpon>frmRemoveTicketGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmRemoveTicketGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmRigEdit.Designer.vb">
+      <DependentUpon>frmRigEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmRigEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmRigList.Designer.vb">
+      <DependentUpon>frmRigList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmRigList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSalesItemL01.Designer.vb">
+      <DependentUpon>frmSalesItemL01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSalesItemL01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSearchEquipment.Designer.vb">
+      <DependentUpon>frmSearchEquipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSearchEquipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSearchInvItem.Designer.vb">
+      <DependentUpon>frmSearchInvItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSearchInvItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSearchRig.Designer.vb">
+      <DependentUpon>frmSearchRig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSearchRig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSearchSalesItem.Designer.vb">
+      <DependentUpon>frmSearchSalesItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSearchSalesItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSearchSite.Designer.vb">
+      <DependentUpon>frmSearchSite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSearchSite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSearchTicketSalesItem.Designer.vb">
+      <DependentUpon>frmSearchTicketSalesItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSearchTicketSalesItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSearchWell.Designer.vb">
+      <DependentUpon>frmSearchWell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSearchWell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSearchWorker.Designer.vb">
+      <DependentUpon>frmSearchWorker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSearchWorker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmServiceLineEdit.Designer.vb">
+      <DependentUpon>frmServiceLineEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmServiceLineEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmServiceLineList.Designer.vb">
+      <DependentUpon>frmServiceLineList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmServiceLineList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmServiceTypeEdit.Designer.vb">
+      <DependentUpon>frmServiceTypeEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmServiceTypeEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmServiceTypeList.Designer.vb">
+      <DependentUpon>frmServiceTypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmServiceTypeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSiteEdit.Designer.vb">
+      <DependentUpon>frmSiteEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSiteEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSiteList.Designer.vb">
+      <DependentUpon>frmSiteList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSiteList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSyncTicket.Designer.vb">
+      <DependentUpon>frmSyncTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSyncTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketDB.Designer.vb">
+      <DependentUpon>frmTicketDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketEdit.Designer.vb">
+      <DependentUpon>frmTicketEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketEquipment.Designer.vb">
+      <DependentUpon>frmTicketEquipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketEquipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketFile.Designer.vb">
+      <DependentUpon>frmTicketFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketFileLog.Designer.vb">
+      <DependentUpon>frmTicketFileLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketFileLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketFileNew.Designer.vb">
+      <DependentUpon>frmTicketFileNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketFileNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketInvItemEdit.Designer.vb">
+      <DependentUpon>frmTicketInvItemEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketInvItemEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmInvoiceList.Designer.vb">
+      <DependentUpon>frmInvoiceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmInvoiceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketInvItemHeadEdit.Designer.vb">
+      <DependentUpon>frmTicketInvItemHeadEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketInvItemHeadEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketInvItemLineEdit.Designer.vb">
+      <DependentUpon>frmTicketInvItemLineEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketInvItemLineEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketInvItemMain.Designer.vb">
+      <DependentUpon>frmTicketInvItemMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketInvItemMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketOpeHourTotal.Designer.vb">
+      <DependentUpon>frmTicketOpeHourTotal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketOpeHourTotal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketOperRepDateEdit.Designer.vb">
+      <DependentUpon>frmTicketOperRepDateEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketOperRepDateEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketOperReport.Designer.vb">
+      <DependentUpon>frmTicketOperReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketOperReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketReopen.Designer.vb">
+      <DependentUpon>frmTicketReopen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketReopen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketSalesItemEdit.Designer.vb">
+      <DependentUpon>frmTicketSalesItemEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketSalesItemEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSyncBaseData.Designer.vb">
+      <DependentUpon>frmSyncBaseData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSyncBaseData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketServEvalECPEdit.Designer.vb">
+      <DependentUpon>frmTicketServEvalECPEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketServEvalECPEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketServEvalHSEQ.Designer.vb">
+      <DependentUpon>frmTicketServEvalHSEQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketServEvalHSEQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketServEvalHSEQEdit.Designer.vb">
+      <DependentUpon>frmTicketServEvalHSEQEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketServEvalHSEQEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTicketWorkerEdit.Designer.vb">
+      <DependentUpon>frmTicketWorkerEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTicketWorkerEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmUserEdit.Designer.vb">
+      <DependentUpon>frmUserEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmUserEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmUserList.Designer.vb">
+      <DependentUpon>frmUserList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmUserList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmUserRightEditClone.Designer.vb">
+      <DependentUpon>frmUserRightEditClone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmUserRightEditClone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmUserRightEditvb.Designer.vb">
+      <DependentUpon>frmUserRightEditvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmUserRightEditvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmWellEdit.Designer.vb">
+      <DependentUpon>frmWellEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmWellEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmWellList.Designer.vb">
+      <DependentUpon>frmWellList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmWellList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmWorkerEdit.Designer.vb">
+      <DependentUpon>frmWorkerEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmWorkerEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmWorkerList.Designer.vb">
+      <DependentUpon>frmWorkerList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmWorkerList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\docx\frmRPTDocxActStartFinish.Designer.vb">
+      <DependentUpon>frmRPTDocxActStartFinish.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\docx\frmRPTDocxActStartFinish.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTExcel.Designer.vb">
+      <DependentUpon>frmRPTExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketHSEQServiceEvalution.Designer.vb">
+      <DependentUpon>frmRPTTicketHSEQServiceEvalution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketHSEQServiceEvalution.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketInvConsumptionConsolidated.Designer.vb">
+      <DependentUpon>frmRPTTicketInvConsumptionConsolidated.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketInvConsumptionConsolidated.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTDefault01LetterLandscape.Designer.vb">
+      <DependentUpon>frmRPTDefault01LetterLandscape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTDefault01LetterLandscape.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTDefault01LetterLandscapePageBreak.Designer.vb">
+      <DependentUpon>frmRPTDefault01LetterLandscapePageBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTDefault01LetterLandscapePageBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTDefault01LetterPortrait.Designer.vb">
+      <DependentUpon>frmRPTDefault01LetterPortrait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTDefault01LetterPortrait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTDefault01LetterPortraitPageBreak.Designer.vb">
+      <DependentUpon>frmRPTDefault01LetterPortraitPageBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTDefault01LetterPortraitPageBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTEcopetrolMaterialLetter.Designer.vb">
+      <DependentUpon>frmRPTEcopetrolMaterialLetter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTEcopetrolMaterialLetter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTEcopetrolMaterialLetterPageBreak.Designer.vb">
+      <DependentUpon>frmRPTEcopetrolMaterialLetterPageBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTEcopetrolMaterialLetterPageBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTEcopetrolServiceLetter.Designer.vb">
+      <DependentUpon>frmRPTEcopetrolServiceLetter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTEcopetrolServiceLetter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTEcopetrolServiceLetterPageBreak.Designer.vb">
+      <DependentUpon>frmRPTEcopetrolServiceLetterPageBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTEcopetrolServiceLetterPageBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel02LetterLandscape.Designer.vb">
+      <DependentUpon>frmRPTModel02LetterLandscape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel02LetterLandscape.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTMain.Designer.vb">
+      <DependentUpon>frmRPTMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel02LetterLandscapePageBreak.Designer.vb">
+      <DependentUpon>frmRPTModel02LetterLandscapePageBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel02LetterLandscapePageBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel02LetterPortrait.Designer.vb">
+      <DependentUpon>frmRPTModel02LetterPortrait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel02LetterPortrait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel02LetterPortraitPageBreak.Designer.vb">
+      <DependentUpon>frmRPTModel02LetterPortraitPageBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel02LetterPortraitPageBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel03LetterLandscape.Designer.vb">
+      <DependentUpon>frmRPTModel03LetterLandscape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel03LetterLandscape.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel03LetterLandscapePageBreak.Designer.vb">
+      <DependentUpon>frmRPTModel03LetterLandscapePageBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel03LetterLandscapePageBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel03LetterPortrait.Designer.vb">
+      <DependentUpon>frmRPTModel03LetterPortrait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel03LetterPortrait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel03LetterPortraitPageBreak.Designer.vb">
+      <DependentUpon>frmRPTModel03LetterPortraitPageBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel03LetterPortraitPageBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel04LetterLandscape.Designer.vb">
+      <DependentUpon>frmRPTModel04LetterLandscape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel04LetterLandscape.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel04LetterPortrait.Designer.vb">
+      <DependentUpon>frmRPTModel04LetterPortrait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTModel04LetterPortrait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTPacificMetapetroleumLetterLandscape.Designer.vb">
+      <DependentUpon>frmRPTPacificMetapetroleumLetterLandscape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTPacificMetapetroleumLetterLandscape.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTPacificMetapetroleumLetterLandscapePageBreak.Designer.vb">
+      <DependentUpon>frmRPTPacificMetapetroleumLetterLandscapePageBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTPacificMetapetroleumLetterLandscapePageBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTPacificMetapetroleumLetterPortrait.Designer.vb">
+      <DependentUpon>frmRPTPacificMetapetroleumLetterPortrait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTPacificMetapetroleumLetterPortrait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTPacificMetapetroleumLetterPortraitPageBreak.Designer.vb">
+      <DependentUpon>frmRPTPacificMetapetroleumLetterPortraitPageBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTPacificMetapetroleumLetterPortraitPageBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTParameter.Designer.vb">
+      <DependentUpon>frmRPTParameter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTParameter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketJobLogLetterPortrait.Designer.vb">
+      <DependentUpon>frmRPTTicketJobLogLetterPortrait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketJobLogLetterPortrait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketSalesItem.Designer.vb">
+      <DependentUpon>frmRPTTicketSalesItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketSalesItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketAnalytical.Designer.vb">
+      <DependentUpon>frmRPTTicketAnalytical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketAnalytical.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketEquipment.Designer.vb">
+      <DependentUpon>frmRPTTicketEquipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketEquipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketInventoryBySalesItem.Designer.vb">
+      <DependentUpon>frmRPTTicketInventoryBySalesItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketInventoryBySalesItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketServiceEvaluation.Designer.vb">
+      <DependentUpon>frmRPTTicketServiceEvaluation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketServiceEvaluation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketWorker.Designer.vb">
+      <DependentUpon>frmRPTTicketWorker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRPTTicketWorker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmTicketInvConsumptionLetterLandscape.Designer.vb">
+      <DependentUpon>frmTicketInvConsumptionLetterLandscape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmTicketInvConsumptionLetterLandscape.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SESTicketAccessDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SESTicketAccessDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SESTicketAccessDataSet.vb">
+      <DependentUpon>SESTicketAccessDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SESTicketSQLDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SESTicketSQLDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SESTicketSQLDataSet.vb">
+      <DependentUpon>SESTicketSQLDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\frmCancelTicket.resx">
+      <DependentUpon>frmCancelTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmChangeSupSupervisor.resx">
+      <DependentUpon>frmChangeSupSupervisor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmChangeTicketClosedDate.resx">
+      <DependentUpon>frmChangeTicketClosedDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCheckConnection.resx">
+      <DependentUpon>frmCheckConnection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCloseTicketDB.resx">
+      <DependentUpon>frmCloseTicketDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmContractEdit.resx">
+      <DependentUpon>frmContractEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmContractList.resx">
+      <DependentUpon>frmContractList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmContractPriceEdit.resx">
+      <DependentUpon>frmContractPriceEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmContractPriceList.resx">
+      <DependentUpon>frmContractPriceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmContractPriceRefreshTicket.resx">
+      <DependentUpon>frmContractPriceRefreshTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCustomerEdit.resx">
+      <DependentUpon>frmCustomerEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCustomerList.resx">
+      <DependentUpon>frmCustomerList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmDataImp.resx">
+      <DependentUpon>frmDataImp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmDataImpContrPriceList.resx">
+      <DependentUpon>frmDataImpContrPriceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmDataImpDetail.resx">
+      <DependentUpon>frmDataImpDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmEquipmentEdit.resx">
+      <DependentUpon>frmEquipmentEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmEquipmentList.resx">
+      <DependentUpon>frmEquipmentList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmDataExpLayout.resx">
+      <DependentUpon>frmDataExpLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmImportTicket.resx">
+      <DependentUpon>frmImportTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmInvoiceEdit.resx">
+      <DependentUpon>frmInvoiceEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmInvClassEdit.resx">
+      <DependentUpon>frmInvClassEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmInvClassList.resx">
+      <DependentUpon>frmInvClassList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmInvItemEdit.es-CO.resx">
+      <DependentUpon>frmInvItemEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmInvItemEdit.resx">
+      <DependentUpon>frmInvItemEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmInvItemList.es-CO.resx">
+      <DependentUpon>frmInvItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmInvItemList.es-EC.resx">
+      <DependentUpon>frmInvItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmInvItemList.resx">
+      <DependentUpon>frmInvItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPetrFieldEdit.resx">
+      <DependentUpon>frmPetrFieldEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPetrFieldList.resx">
+      <DependentUpon>frmPetrFieldList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmRemoveTicketGrid.resx">
+      <DependentUpon>frmRemoveTicketGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmRigEdit.resx">
+      <DependentUpon>frmRigEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmRigList.resx">
+      <DependentUpon>frmRigList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSalesItemL01.resx">
+      <DependentUpon>frmSalesItemL01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSearchEquipment.resx">
+      <DependentUpon>frmSearchEquipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSearchInvItem.resx">
+      <DependentUpon>frmSearchInvItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSearchRig.resx">
+      <DependentUpon>frmSearchRig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSearchSalesItem.resx">
+      <DependentUpon>frmSearchSalesItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSearchSite.resx">
+      <DependentUpon>frmSearchSite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSearchTicketSalesItem.resx">
+      <DependentUpon>frmSearchTicketSalesItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSearchWell.resx">
+      <DependentUpon>frmSearchWell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSearchWorker.resx">
+      <DependentUpon>frmSearchWorker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmServiceLineEdit.resx">
+      <DependentUpon>frmServiceLineEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmServiceLineList.resx">
+      <DependentUpon>frmServiceLineList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmServiceTypeEdit.resx">
+      <DependentUpon>frmServiceTypeEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmServiceTypeList.resx">
+      <DependentUpon>frmServiceTypeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSiteEdit.resx">
+      <DependentUpon>frmSiteEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSiteList.resx">
+      <DependentUpon>frmSiteList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSyncTicket.resx">
+      <DependentUpon>frmSyncTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketDB.resx">
+      <DependentUpon>frmTicketDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketEdit.resx">
+      <DependentUpon>frmTicketEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketEquipment.resx">
+      <DependentUpon>frmTicketEquipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketFile.resx">
+      <DependentUpon>frmTicketFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketFileLog.resx">
+      <DependentUpon>frmTicketFileLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketFileNew.resx">
+      <DependentUpon>frmTicketFileNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketInvItemEdit.resx">
+      <DependentUpon>frmTicketInvItemEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmInvoiceList.resx">
+      <DependentUpon>frmInvoiceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketInvItemHeadEdit.resx">
+      <DependentUpon>frmTicketInvItemHeadEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketInvItemLineEdit.resx">
+      <DependentUpon>frmTicketInvItemLineEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketInvItemMain.resx">
+      <DependentUpon>frmTicketInvItemMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketOpeHourTotal.resx">
+      <DependentUpon>frmTicketOpeHourTotal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketOperRepDateEdit.resx">
+      <DependentUpon>frmTicketOperRepDateEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketOperReport.resx">
+      <DependentUpon>frmTicketOperReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketReopen.resx">
+      <DependentUpon>frmTicketReopen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketSalesItemEdit.resx">
+      <DependentUpon>frmTicketSalesItemEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSyncBaseData.resx">
+      <DependentUpon>frmSyncBaseData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketServEvalECPEdit.resx">
+      <DependentUpon>frmTicketServEvalECPEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketServEvalHSEQ.resx">
+      <DependentUpon>frmTicketServEvalHSEQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketServEvalHSEQEdit.resx">
+      <DependentUpon>frmTicketServEvalHSEQEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTicketWorkerEdit.resx">
+      <DependentUpon>frmTicketWorkerEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmUserEdit.resx">
+      <DependentUpon>frmUserEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmUserList.es-CO.resx">
+      <DependentUpon>frmUserList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmUserList.resx">
+      <DependentUpon>frmUserList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmUserRightEditClone.resx">
+      <DependentUpon>frmUserRightEditClone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmUserRightEditvb.resx">
+      <DependentUpon>frmUserRightEditvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmWellEdit.resx">
+      <DependentUpon>frmWellEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmWellList.resx">
+      <DependentUpon>frmWellList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmWorkerEdit.resx">
+      <DependentUpon>frmWorkerEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmWorkerList.resx">
+      <DependentUpon>frmWorkerList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\docx\frmRPTDocxActStartFinish.resx">
+      <DependentUpon>frmRPTDocxActStartFinish.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTExcel.resx">
+      <DependentUpon>frmRPTExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTTicketHSEQServiceEvalution.resx">
+      <DependentUpon>frmRPTTicketHSEQServiceEvalution.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTTicketInvConsumptionConsolidated.resx">
+      <DependentUpon>frmRPTTicketInvConsumptionConsolidated.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTDefault01LetterLandscape.resx">
+      <DependentUpon>frmRPTDefault01LetterLandscape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTDefault01LetterLandscapePageBreak.resx">
+      <DependentUpon>frmRPTDefault01LetterLandscapePageBreak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTDefault01LetterPortrait.resx">
+      <DependentUpon>frmRPTDefault01LetterPortrait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTDefault01LetterPortraitPageBreak.resx">
+      <DependentUpon>frmRPTDefault01LetterPortraitPageBreak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTEcopetrolMaterialLetter.resx">
+      <DependentUpon>frmRPTEcopetrolMaterialLetter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTEcopetrolMaterialLetterPageBreak.resx">
+      <DependentUpon>frmRPTEcopetrolMaterialLetterPageBreak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTEcopetrolServiceLetter.resx">
+      <DependentUpon>frmRPTEcopetrolServiceLetter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTEcopetrolServiceLetterPageBreak.resx">
+      <DependentUpon>frmRPTEcopetrolServiceLetterPageBreak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTModel02LetterLandscape.resx">
+      <DependentUpon>frmRPTModel02LetterLandscape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTMain.resx">
+      <DependentUpon>frmRPTMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTModel02LetterLandscapePageBreak.resx">
+      <DependentUpon>frmRPTModel02LetterLandscapePageBreak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTModel02LetterPortrait.resx">
+      <DependentUpon>frmRPTModel02LetterPortrait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTModel02LetterPortraitPageBreak.resx">
+      <DependentUpon>frmRPTModel02LetterPortraitPageBreak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTModel03LetterLandscape.resx">
+      <DependentUpon>frmRPTModel03LetterLandscape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTModel03LetterLandscapePageBreak.resx">
+      <DependentUpon>frmRPTModel03LetterLandscapePageBreak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTModel03LetterPortrait.resx">
+      <DependentUpon>frmRPTModel03LetterPortrait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTModel03LetterPortraitPageBreak.resx">
+      <DependentUpon>frmRPTModel03LetterPortraitPageBreak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTModel04LetterLandscape.resx">
+      <DependentUpon>frmRPTModel04LetterLandscape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTModel04LetterPortrait.resx">
+      <DependentUpon>frmRPTModel04LetterPortrait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTPacificMetapetroleumLetterLandscape.resx">
+      <DependentUpon>frmRPTPacificMetapetroleumLetterLandscape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTPacificMetapetroleumLetterLandscapePageBreak.resx">
+      <DependentUpon>frmRPTPacificMetapetroleumLetterLandscapePageBreak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTPacificMetapetroleumLetterPortrait.resx">
+      <DependentUpon>frmRPTPacificMetapetroleumLetterPortrait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTPacificMetapetroleumLetterPortraitPageBreak.resx">
+      <DependentUpon>frmRPTPacificMetapetroleumLetterPortraitPageBreak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTParameter.resx">
+      <DependentUpon>frmRPTParameter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTTicketJobLogLetterPortrait.resx">
+      <DependentUpon>frmRPTTicketJobLogLetterPortrait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTTicketSalesItem.resx">
+      <DependentUpon>frmRPTTicketSalesItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTTicketAnalytical.resx">
+      <DependentUpon>frmRPTTicketAnalytical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTTicketEquipment.resx">
+      <DependentUpon>frmRPTTicketEquipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTTicketInventoryBySalesItem.resx">
+      <DependentUpon>frmRPTTicketInventoryBySalesItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTTicketServiceEvaluation.resx">
+      <DependentUpon>frmRPTTicketServiceEvaluation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRPTTicketWorker.resx">
+      <DependentUpon>frmRPTTicketWorker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTicketAnalytical.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketAnalyticalByInvoice.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketEcopetrolMaterialLetter.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketEcopetrolMaterialLetterPageBreak.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketEcopetrolServiceLetter.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketEcopetrolServiceLetterPageBreak.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketEquipment.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketHSEQServiceEvalution.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketInvConsumptionConsolidated.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketInvConsumptionLetterLandscape.rdlc" />
+    <EmbeddedResource Include="Reports\frmTicketInvConsumptionLetterLandscape.resx">
+      <DependentUpon>frmTicketInvConsumptionLetterLandscape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptTicketInventoryAnalytical.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketJobLogLetterPortrait.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketModel02LetterLandscape.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketModel02LetterLandscapePageBreak.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketModel02LetterPortrait.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketModel02LetterPortraitPageBreak.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketModel03LetterLandscape.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketModel03LetterLandscapePageBreak.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketModel03LetterPortrait.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketModel03LetterPortraitPageBreak.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketModel04LetterLandscape.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketModel04LetterPortrait.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketPacificMetapetroleumLetterLandscape.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketPacificMetapetroleumLetterLandscapePageBreak.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketPacificMetapetroleumLetterPortrait.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketPacificMetapetroleumLetterPortraitPageBreak.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketDefault01LetterLandscape.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketDefault01LetterLandscapePageBreak.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketDefault01LetterPortrait.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketDefault01LetterPortraitPageBreak.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketSalesItemL01.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketSalesItemL02.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketSalesItemTotalL01.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketSalesItemTotalMatL02.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketSalesItemTotalServL02.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketServiceEvaluationLetterPortrait.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketWorker.rdlc" />
+    <EmbeddedResource Include="Reports\rptTicketWorkerTotal.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dns\local_ticket_dev.dsn" />
+    <None Include="Excel\frmInvoiceList.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Reports\docx\CEM-CO-SOP-09-SCF-06-FinishOperation.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\docx\CEM-CO-SOP-09-SCF-06-StartOperation.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\xlsx\servevalecopetrol.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\xlsx\ticketecopetrol.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\xlsx\ticketFrontera.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SESTicket.manifest" />
+    <None Include="Dns\arg_ticket_prd.dsn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Excel\contractpricelist.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Excel\equipment.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Excel\inventoryitem.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Excel\well.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Excel\worker.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SESTicket.exe.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SESTicketAccessDataSet.xsc">
+      <DependentUpon>SESTicketAccessDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SESTicketAccessDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SESTicketAccessDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SESTicketAccessDataSet.xss">
+      <DependentUpon>SESTicketAccessDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SESTicketSQLDataSet.xsc">
+      <DependentUpon>SESTicketSQLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SESTicketSQLDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SESTicketSQLDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SESTicketSQLDataSet.xss">
+      <DependentUpon>SESTicketSQLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dns\col_ticket_prd.dsn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Dns\col_ticket_dev.dsn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppConfig\ARG.txt" />
+    <Content Include="AppConfig\COL_dev.txt" />
+    <Content Include="Image\add.ico" />
+    <Content Include="Image\attach.JPG" />
+    <Content Include="Image\attach2.JPG" />
+    <Content Include="Image\attachicon.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\attachicon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\attachment-paperclip-symbol-of-interface.png" />
+    <Content Include="Image\attachment_icon.jpg" />
+    <Content Include="Image\basetablejoin.htm" />
+    <Content Include="Image\blank.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\bussula.png" />
+    <Content Include="Image\bussula2.png" />
+    <Content Include="Image\cadeado2.jpg" />
+    <Content Include="Image\cadeadoaberto.jpg" />
+    <Content Include="Image\cadeadoaberto2.jpg" />
+    <Content Include="Image\cadeadoaberto3.jpg" />
+    <Content Include="Image\cadeadoaberto4.JPG" />
+    <Content Include="Image\checkgreen.png" />
+    <Content Include="Image\chemical.png" />
+    <Content Include="Image\chemical2.png" />
+    <Content Include="Image\clip.JPG" />
+    <Content Include="Image\close.png" />
+    <Content Include="Image\copy.ico" />
+    <Content Include="Image\cube_molecule.png" />
+    <Content Include="Image\Cursor-Select-icon.png" />
+    <Content Include="Image\Custom-Icon-Design-Flatastic-9-Save.ico" />
+    <Content Include="Image\deleete.png" />
+    <Content Include="Image\door_exit.png" />
+    <Content Include="Image\Double-J-Design-Ravenna-3d-Database-Active.ico" />
+    <Content Include="Image\edit.ico" />
+    <Content Include="Image\excel.png" />
+    <Content Include="Image\excel2.png" />
+    <Content Include="Image\Excel3.ico" />
+    <Content Include="Image\exit.png" />
+    <Content Include="Image\exportdata.JPG" />
+    <Content Include="Image\exportdata2.JPG" />
+    <Content Include="Image\giro.jpg" />
+    <Content Include="Image\if_box_download_48_10266.ico" />
+    <Content Include="Image\if_self1_62587.ico" />
+    <Content Include="Image\if_Shipping1_62590.png" />
+    <Content Include="Image\importdata.JPG" />
+    <Content Include="Image\invitem.jpg" />
+    <Content Include="Image\invoice.png" />
+    <Content Include="Image\its.png" />
+    <Content Include="Image\join_indexes-512.png" />
+    <Content Include="Image\KeyChainAccess.png" />
+    <Content Include="Image\livro_pluma.jpg" />
+    <Content Include="Image\lOG.JPG" />
+    <Content Include="Image\network-server-icon_298690.png" />
+    <Content Include="Image\openfile.JPG" />
+    <Content Include="Image\printer-icon--clipart-best-30.png" />
+    <Content Include="Image\product.png" />
+    <Content Include="Image\refresh.JPG" />
+    <Content Include="Image\refresh2.JPG" />
+    <Content Include="Image\reporticon.png" />
+    <Content Include="Image\reporticon2.ico" />
+    <Content Include="Image\sql-server-database-icon_298689.jpg" />
+    <Content Include="Image\Superior.ico" />
+    <Content Include="Image\superior.JPG" />
+    <Content Include="Image\Sync.ico" />
+    <Content Include="Image\sync.JPG" />
+    <Content Include="Image\unlock %281%29.png" />
+    <Content Include="Image\unlock %282%29.png" />
+    <Content Include="Image\unlock.png" />
+    <Content Include="Image\unlock3.ico" />
+    <Content Include="Image\unlock4.png" />
+    <Content Include="Image\update_icon.jpg" />
+    <Content Include="Image\warehouse-inventory-icon.png" />
+    <Content Include="NewBDObj\Version7.0.1.txt" />
+    <Content Include="NewBDObj\Version3.0.0.txt" />
+    <Content Include="NewBDObj\Version2.0.1.txt" />
+    <Content Include="NewBDObj\Version3.0.2.txt" />
+    <Content Include="NewBDObj\Version3.0.3.txt" />
+    <Content Include="NewBDObj\Version4.0.0.txt" />
+    <Content Include="NewBDObj\Version4.0.1.txt" />
+    <Content Include="NewBDObj\Version4.0.2.txt" />
+    <Content Include="NewBDObj\Version4.0.3.txt" />
+    <Content Include="NewBDObj\Version4.0.5.txt" />
+    <Content Include="NewBDObj\Version4.0.6.txt" />
+    <Content Include="NewBDObj\Version5.0.0.txt" />
+    <Content Include="NewBDObj\Version5.0.1.txt" />
+    <Content Include="NewBDObj\Version5.0.2.txt" />
+    <Content Include="NewBDObj\Version6.0.0.txt" />
+    <Content Include="NewBDObj\Version6.0.2.txt" />
+    <Content Include="NewBDObj\Version6.0.3.txt" />
+    <Content Include="NewBDObj\Version6.0.4.txt" />
+    <Content Include="NewBDObj\Version7.0.0.txt" />
+    <Content Include="NewBDObj\Version7.0.2.txt" />
+    <Content Include="NewBDObj\Version7.0.3.txt" />
+    <Content Include="NewBDObj\Version7.0.4.txt" />
+    <Content Include="NewBDObj\Version7.0.5.txt" />
+    <Content Include="NewBDObj\Version8.0.0.txt" />
+    <Content Include="NewBDObj\Version7.1.0.txt" />
+    <Content Include="Reports\PaperSize.txt" />
+    <Content Include="Reports\ReportFiles\blank.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\ReportFiles\empty.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\ReportFiles\its.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\ReportFiles\superior.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Superior.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="attach\" />
+    <Folder Include="SqlServerTypes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

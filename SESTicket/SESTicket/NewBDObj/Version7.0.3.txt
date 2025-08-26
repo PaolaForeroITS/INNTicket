@@ -1,0 +1,50 @@
+﻿
+ALTER TABLE CONTRACTPRICELIST
+ADD PRICEUNITDECIMAL INT DEFAULT 2 NOT NULL
+
+create Function [dbo].[fnGetNumberDecimal] (@num decimal(20,5))
+Returns varchar(max)
+as
+
+Begin
+
+DECLARE
+@posini integer,
+@str varchar(max),
+@qde int, 
+@newstr varchar(max)
+
+
+set @posini = charindex('.',cast(@num as varchar))
+set @str = substring(cast(@num as varchar),@posini+1,10) 
+set @qde = 0
+
+
+if @posini > 0 begin
+
+	set @newstr = @str
+
+	while len(@newstr) > 0 
+	begin
+	    if cast(@newstr as integer) <> 0 begin
+		set @qde = @qde + 1
+		end
+
+		set @newstr = substring(@newstr,2,15)
+    end 
+
+	if @qde = 1 or @qde = 0 begin
+	   set @qde = 2
+	end
+end
+else begin
+   set @qde = 2
+end
+       
+return @qde
+
+End
+
+
+UPDATE CONTRACTPRICELIST SET
+PRICEUNITDECIMAL = [dbo].[fnGetNumberDecimal] (SALES_PRICE)

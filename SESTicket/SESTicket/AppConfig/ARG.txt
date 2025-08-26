@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+  </configSections>
+  <connectionStrings>
+    <add name="SESTicket.My.MySettings.SESTicketSQLConnStr" connectionString="Data Source=argsql01;Initial Catalog=SESTICKET_ARG;Persist Security Info=True;User ID=usrSESTICKET;Password=sesticket123" providerName="System.Data.SqlClient"/>
+    <add name="SESTicket.My.MySettings.SESTicketAccConnStr" connectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\SESTicket\data\SESTicket.accdb;Persist Security Info=False;Jet OLEDB:Database Password=SESTicket123" providerName="System.Data.OleDb"/>
+    <add name="SESTicket.My.MySettings.SESTicketAccBaseConnStr" connectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\SESTicket\data\SESTicketBaseData.accdb;Persist Security Info=False;Jet OLEDB:Database Password=SESTicket123" providerName="System.Data.OleDb"/>
+  </connectionStrings>
+  <appSettings>
+    <add key="CheckVersion" value="true"/>
+    <add key="SQLServer" value="argsql01"/>
+    <add key="SQLTimeOut" value="30"/>
+    <add key="ActiveDirectoryDomain" value="LDAP://superior.sesi.local"/>
+    <add key="PingMS" value="1200"/>
+    <add key="AppUpdLocal" value="C:\SESTicket\appupd"/>
+    <add key="ClientSettingsProvider.ServiceUri" value=""/>
+    <add key="FilePath" value="C:\SESTicket\file"/>
+    <add key="ReportFilesLocal" value="C:\SESTicket\app\Reports\ReportFiles"/>
+    <add key="RemoteAttachFolder" value="\\argapp01\SESTicket\File"/>
+    <add key="VisibleFormAttachSync" value="true"/>
+    <add key="SESTicketReport" value="http://argapp01:85/SESTicketReport/Report/Forms/frmReportMain.aspx"/>
+  </appSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.1"/>
+  </startup>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri=""/>
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400"/>
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>

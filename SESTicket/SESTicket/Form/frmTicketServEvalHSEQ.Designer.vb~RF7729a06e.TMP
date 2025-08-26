@@ -1,0 +1,715 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmTicketServEvalHSEQ
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketServEvalHSEQ))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HSEQToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EcopetrolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuPrintServEval = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.dgvTicketEvalHSEQ = New System.Windows.Forms.DataGridView()
+        Me.colServiceDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colServDescrip = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colEvalPersonal2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colEvalEquipment2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colEvalComunication2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colEvalHSEQPerf2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colEvalGeneralPercep2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colObs = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTicketServEvalId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTicketId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colEvalPersonal = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colEvalEquipment = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colEvalComunication = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colEvalHSEQPerf = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colEvalGeneralPercep = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TICKETSERVEVAL_HSEQBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.dgvTicketEvalECP = New System.Windows.Forms.DataGridView()
+        Me.ColEcpServiceDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEcpServDescrip = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALTIME11_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALTIME12_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALTIME13_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALTIME14_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALCOST15_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALQUALITY16_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALQUALITY17_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColOBSC1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALPS21_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALPS22_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALPS23_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALPS24_2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColOBSC2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEcpActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColTICKETSERVEVALECPID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEcpTICKETID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALTIME11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALTIME12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALTIME13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALTIME14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALCOST15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALQUALITY16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALQUALITY17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALPS21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALPS22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALPS23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColEVALPS24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TICKETSERVEVALECPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TICKETSERVEVAL_HSEQTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_HSEQTableAdapter()
+        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.TICKETSERVEVAL_ECPTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_ECPTableAdapter()
+        Me.MenuStrip1.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        CType(Me.dgvTicketEvalHSEQ, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TICKETSERVEVAL_HSEQBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage2.SuspendLayout()
+        CType(Me.dgvTicketEvalECP, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TICKETSERVEVALECPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.AutoSize = False
+        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem, Me.mnuPrintServEval})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1467, 52)
+        Me.MenuStrip1.TabIndex = 34
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'mnuNewItem
+        '
+        Me.mnuNewItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HSEQToolStripMenuItem, Me.EcopetrolToolStripMenuItem})
+        Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
+        Me.mnuNewItem.Name = "mnuNewItem"
+        Me.mnuNewItem.Size = New System.Drawing.Size(195, 48)
+        Me.mnuNewItem.Text = "New Service Evaluation"
+        '
+        'HSEQToolStripMenuItem
+        '
+        Me.HSEQToolStripMenuItem.Name = "HSEQToolStripMenuItem"
+        Me.HSEQToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.HSEQToolStripMenuItem.Text = "HSEQ"
+        '
+        'EcopetrolToolStripMenuItem
+        '
+        Me.EcopetrolToolStripMenuItem.Enabled = False
+        Me.EcopetrolToolStripMenuItem.Name = "EcopetrolToolStripMenuItem"
+        Me.EcopetrolToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.EcopetrolToolStripMenuItem.Text = "Ecopetrol"
+        Me.EcopetrolToolStripMenuItem.Visible = False
+        '
+        'mnuPrintServEval
+        '
+        Me.mnuPrintServEval.Image = CType(resources.GetObject("mnuPrintServEval.Image"), System.Drawing.Image)
+        Me.mnuPrintServEval.Name = "mnuPrintServEval"
+        Me.mnuPrintServEval.Size = New System.Drawing.Size(195, 48)
+        Me.mnuPrintServEval.Text = "Print Service Evaluation"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.Brown
+        Me.Label1.Location = New System.Drawing.Point(540, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(547, 68)
+        Me.Label1.TabIndex = 35
+        Me.Label1.Text = "Instructions: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "1) Create a ""New Service Evaluation""." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "2) Select the line and ""Pr" &
+    "int Service Evaluation""." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "3) After received the customer answers, edit the Servi" &
+    "ce Evaluation filling in the fields."
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Location = New System.Drawing.Point(14, 88)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(1441, 544)
+        Me.TabControl1.TabIndex = 37
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.dgvTicketEvalHSEQ)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(1433, 515)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "HSEQ"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'dgvTicketEvalHSEQ
+        '
+        Me.dgvTicketEvalHSEQ.AllowUserToAddRows = False
+        Me.dgvTicketEvalHSEQ.AllowUserToDeleteRows = False
+        Me.dgvTicketEvalHSEQ.AutoGenerateColumns = False
+        Me.dgvTicketEvalHSEQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvTicketEvalHSEQ.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colServiceDate, Me.colServDescrip, Me.colEvalPersonal2, Me.colEvalEquipment2, Me.colEvalComunication2, Me.colEvalHSEQPerf2, Me.colEvalGeneralPercep2, Me.colObs, Me.colTicketServEvalId, Me.colTicketId, Me.colActive, Me.colEvalPersonal, Me.colEvalEquipment, Me.colEvalComunication, Me.colEvalHSEQPerf, Me.colEvalGeneralPercep})
+        Me.dgvTicketEvalHSEQ.DataSource = Me.TICKETSERVEVAL_HSEQBindingSource
+        Me.dgvTicketEvalHSEQ.Location = New System.Drawing.Point(0, 0)
+        Me.dgvTicketEvalHSEQ.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvTicketEvalHSEQ.Name = "dgvTicketEvalHSEQ"
+        Me.dgvTicketEvalHSEQ.ReadOnly = True
+        Me.dgvTicketEvalHSEQ.RowHeadersWidth = 15
+        Me.dgvTicketEvalHSEQ.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvTicketEvalHSEQ.Size = New System.Drawing.Size(1429, 515)
+        Me.dgvTicketEvalHSEQ.TabIndex = 2
+        '
+        'colServiceDate
+        '
+        Me.colServiceDate.DataPropertyName = "SERVICEDATE"
+        DataGridViewCellStyle1.Format = "dd/MM/yyyy"
+        Me.colServiceDate.DefaultCellStyle = DataGridViewCellStyle1
+        Me.colServiceDate.HeaderText = "Service Date"
+        Me.colServiceDate.Name = "colServiceDate"
+        Me.colServiceDate.ReadOnly = True
+        '
+        'colServDescrip
+        '
+        Me.colServDescrip.DataPropertyName = "SERVDESCRIP"
+        Me.colServDescrip.HeaderText = "Description"
+        Me.colServDescrip.Name = "colServDescrip"
+        Me.colServDescrip.ReadOnly = True
+        Me.colServDescrip.Width = 220
+        '
+        'colEvalPersonal2
+        '
+        Me.colEvalPersonal2.DataPropertyName = "EVAL_PERSONAL_DESC"
+        Me.colEvalPersonal2.HeaderText = "Personal"
+        Me.colEvalPersonal2.Name = "colEvalPersonal2"
+        Me.colEvalPersonal2.ReadOnly = True
+        Me.colEvalPersonal2.Width = 85
+        '
+        'colEvalEquipment2
+        '
+        Me.colEvalEquipment2.DataPropertyName = "EVAL_EQUIPMENT_DESC"
+        Me.colEvalEquipment2.HeaderText = "Equipment"
+        Me.colEvalEquipment2.Name = "colEvalEquipment2"
+        Me.colEvalEquipment2.ReadOnly = True
+        Me.colEvalEquipment2.Width = 85
+        '
+        'colEvalComunication2
+        '
+        Me.colEvalComunication2.DataPropertyName = "EVAL_COMUNICATION_DESC"
+        Me.colEvalComunication2.HeaderText = "Comunication"
+        Me.colEvalComunication2.Name = "colEvalComunication2"
+        Me.colEvalComunication2.ReadOnly = True
+        Me.colEvalComunication2.Width = 85
+        '
+        'colEvalHSEQPerf2
+        '
+        Me.colEvalHSEQPerf2.DataPropertyName = "EVAL_HSEQ_PERF_DESC"
+        Me.colEvalHSEQPerf2.HeaderText = "HSEQ Performance"
+        Me.colEvalHSEQPerf2.Name = "colEvalHSEQPerf2"
+        Me.colEvalHSEQPerf2.ReadOnly = True
+        Me.colEvalHSEQPerf2.Width = 85
+        '
+        'colEvalGeneralPercep2
+        '
+        Me.colEvalGeneralPercep2.DataPropertyName = "EVAL_GENERALPERCEP_DESC"
+        Me.colEvalGeneralPercep2.HeaderText = "General Perception"
+        Me.colEvalGeneralPercep2.Name = "colEvalGeneralPercep2"
+        Me.colEvalGeneralPercep2.ReadOnly = True
+        Me.colEvalGeneralPercep2.Width = 85
+        '
+        'colObs
+        '
+        Me.colObs.DataPropertyName = "OBS"
+        Me.colObs.HeaderText = "Obs"
+        Me.colObs.Name = "colObs"
+        Me.colObs.ReadOnly = True
+        Me.colObs.Width = 280
+        '
+        'colTicketServEvalId
+        '
+        Me.colTicketServEvalId.DataPropertyName = "TICKETSERVEVALID"
+        Me.colTicketServEvalId.HeaderText = "TICKETSERVEVALID"
+        Me.colTicketServEvalId.Name = "colTicketServEvalId"
+        Me.colTicketServEvalId.ReadOnly = True
+        Me.colTicketServEvalId.Visible = False
+        '
+        'colTicketId
+        '
+        Me.colTicketId.DataPropertyName = "TICKETID"
+        Me.colTicketId.HeaderText = "TICKETID"
+        Me.colTicketId.Name = "colTicketId"
+        Me.colTicketId.ReadOnly = True
+        Me.colTicketId.Visible = False
+        '
+        'colActive
+        '
+        Me.colActive.DataPropertyName = "ACTIVE"
+        Me.colActive.HeaderText = "ACTIVE"
+        Me.colActive.Name = "colActive"
+        Me.colActive.ReadOnly = True
+        Me.colActive.Visible = False
+        '
+        'colEvalPersonal
+        '
+        Me.colEvalPersonal.DataPropertyName = "EVAL_PERSONAL"
+        Me.colEvalPersonal.HeaderText = "EVAL_PERSONAL"
+        Me.colEvalPersonal.Name = "colEvalPersonal"
+        Me.colEvalPersonal.ReadOnly = True
+        Me.colEvalPersonal.Visible = False
+        '
+        'colEvalEquipment
+        '
+        Me.colEvalEquipment.DataPropertyName = "EVAL_EQUIPMENT"
+        Me.colEvalEquipment.HeaderText = "EVAL_EQUIPMENT"
+        Me.colEvalEquipment.Name = "colEvalEquipment"
+        Me.colEvalEquipment.ReadOnly = True
+        Me.colEvalEquipment.Visible = False
+        '
+        'colEvalComunication
+        '
+        Me.colEvalComunication.DataPropertyName = "EVAL_COMUNICATION"
+        Me.colEvalComunication.HeaderText = "EVAL_COMUNICATION"
+        Me.colEvalComunication.Name = "colEvalComunication"
+        Me.colEvalComunication.ReadOnly = True
+        Me.colEvalComunication.Visible = False
+        '
+        'colEvalHSEQPerf
+        '
+        Me.colEvalHSEQPerf.DataPropertyName = "EVAL_HSEQ_PERF"
+        Me.colEvalHSEQPerf.HeaderText = "EVAL_HSEQ_PERF"
+        Me.colEvalHSEQPerf.Name = "colEvalHSEQPerf"
+        Me.colEvalHSEQPerf.ReadOnly = True
+        Me.colEvalHSEQPerf.Visible = False
+        '
+        'colEvalGeneralPercep
+        '
+        Me.colEvalGeneralPercep.DataPropertyName = "EVAL_GENERALPERCEP"
+        Me.colEvalGeneralPercep.HeaderText = "EVAL_GENERALPERCEP"
+        Me.colEvalGeneralPercep.Name = "colEvalGeneralPercep"
+        Me.colEvalGeneralPercep.ReadOnly = True
+        Me.colEvalGeneralPercep.Visible = False
+        '
+        'TICKETSERVEVAL_HSEQBindingSource
+        '
+        Me.TICKETSERVEVAL_HSEQBindingSource.DataMember = "TICKETSERVEVAL_HSEQ"
+        Me.TICKETSERVEVAL_HSEQBindingSource.DataSource = Me.SESTicketAccessDataSet
+        '
+        'SESTicketAccessDataSet
+        '
+        Me.SESTicketAccessDataSet.DataSetName = "SESTicketAccessDataSet"
+        Me.SESTicketAccessDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.ExcludeSchema
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.dgvTicketEvalECP)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(1433, 515)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "ECOPETROL"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'dgvTicketEvalECP
+        '
+        Me.dgvTicketEvalECP.AllowUserToAddRows = False
+        Me.dgvTicketEvalECP.AllowUserToDeleteRows = False
+        Me.dgvTicketEvalECP.AutoGenerateColumns = False
+        Me.dgvTicketEvalECP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvTicketEvalECP.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColEcpServiceDate, Me.ColEcpServDescrip, Me.ColEVALTIME11_2, Me.ColEVALTIME12_2, Me.ColEVALTIME13_2, Me.ColEVALTIME14_2, Me.ColEVALCOST15_2, Me.ColEVALQUALITY16_2, Me.ColEVALQUALITY17_2, Me.ColOBSC1, Me.ColEVALPS21_2, Me.ColEVALPS22_2, Me.ColEVALPS23_2, Me.ColEVALPS24_2, Me.ColOBSC2, Me.ColEcpActive, Me.ColTICKETSERVEVALECPID, Me.ColEcpTICKETID, Me.ColEVALTIME11, Me.ColEVALTIME12, Me.ColEVALTIME13, Me.ColEVALTIME14, Me.ColEVALCOST15, Me.ColEVALQUALITY16, Me.ColEVALQUALITY17, Me.ColEVALPS21, Me.ColEVALPS22, Me.ColEVALPS23, Me.ColEVALPS24})
+        Me.dgvTicketEvalECP.DataSource = Me.TICKETSERVEVALECPBindingSource
+        Me.dgvTicketEvalECP.Location = New System.Drawing.Point(0, 0)
+        Me.dgvTicketEvalECP.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvTicketEvalECP.Name = "dgvTicketEvalECP"
+        Me.dgvTicketEvalECP.ReadOnly = True
+        Me.dgvTicketEvalECP.RowHeadersWidth = 15
+        Me.dgvTicketEvalECP.RowTemplate.Height = 24
+        Me.dgvTicketEvalECP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvTicketEvalECP.Size = New System.Drawing.Size(1432, 511)
+        Me.dgvTicketEvalECP.TabIndex = 0
+        '
+        'ColEcpServiceDate
+        '
+        Me.ColEcpServiceDate.DataPropertyName = "SERVICEDATE"
+        Me.ColEcpServiceDate.HeaderText = "Fecha Servicio"
+        Me.ColEcpServiceDate.Name = "ColEcpServiceDate"
+        Me.ColEcpServiceDate.ReadOnly = True
+        '
+        'ColEcpServDescrip
+        '
+        Me.ColEcpServDescrip.DataPropertyName = "SERVDESCRIP"
+        Me.ColEcpServDescrip.HeaderText = "Descripcion"
+        Me.ColEcpServDescrip.Name = "ColEcpServDescrip"
+        Me.ColEcpServDescrip.ReadOnly = True
+        '
+        'ColEVALTIME11_2
+        '
+        Me.ColEVALTIME11_2.DataPropertyName = "EVAL_TIME1_1_DESC"
+        Me.ColEVALTIME11_2.HeaderText = "Tiempo 1.1"
+        Me.ColEVALTIME11_2.Name = "ColEVALTIME11_2"
+        Me.ColEVALTIME11_2.ReadOnly = True
+        '
+        'ColEVALTIME12_2
+        '
+        Me.ColEVALTIME12_2.DataPropertyName = "EVAL_TIME1_2_DESC"
+        Me.ColEVALTIME12_2.HeaderText = "Tiempo 1.2"
+        Me.ColEVALTIME12_2.Name = "ColEVALTIME12_2"
+        Me.ColEVALTIME12_2.ReadOnly = True
+        '
+        'ColEVALTIME13_2
+        '
+        Me.ColEVALTIME13_2.DataPropertyName = "EVAL_TIME1_3_DESC"
+        Me.ColEVALTIME13_2.HeaderText = "Tiempo 1.3"
+        Me.ColEVALTIME13_2.Name = "ColEVALTIME13_2"
+        Me.ColEVALTIME13_2.ReadOnly = True
+        '
+        'ColEVALTIME14_2
+        '
+        Me.ColEVALTIME14_2.DataPropertyName = "EVAL_TIME1_4_DESC"
+        Me.ColEVALTIME14_2.HeaderText = "Tiempo 1.4"
+        Me.ColEVALTIME14_2.Name = "ColEVALTIME14_2"
+        Me.ColEVALTIME14_2.ReadOnly = True
+        '
+        'ColEVALCOST15_2
+        '
+        Me.ColEVALCOST15_2.DataPropertyName = "EVAL_COST1_5_DESC"
+        Me.ColEVALCOST15_2.HeaderText = "Costo 1.5"
+        Me.ColEVALCOST15_2.Name = "ColEVALCOST15_2"
+        Me.ColEVALCOST15_2.ReadOnly = True
+        '
+        'ColEVALQUALITY16_2
+        '
+        Me.ColEVALQUALITY16_2.DataPropertyName = "EVAL_QUALITY1_6_DESC"
+        Me.ColEVALQUALITY16_2.HeaderText = "Calidad 1.6"
+        Me.ColEVALQUALITY16_2.Name = "ColEVALQUALITY16_2"
+        Me.ColEVALQUALITY16_2.ReadOnly = True
+        '
+        'ColEVALQUALITY17_2
+        '
+        Me.ColEVALQUALITY17_2.DataPropertyName = "EVAL_QUALITY1_7_DESC"
+        Me.ColEVALQUALITY17_2.HeaderText = "Calidad 1.7"
+        Me.ColEVALQUALITY17_2.Name = "ColEVALQUALITY17_2"
+        Me.ColEVALQUALITY17_2.ReadOnly = True
+        '
+        'ColOBSC1
+        '
+        Me.ColOBSC1.DataPropertyName = "OBS_C1"
+        Me.ColOBSC1.HeaderText = "OBS Eficiencia Operacional"
+        Me.ColOBSC1.Name = "ColOBSC1"
+        Me.ColOBSC1.ReadOnly = True
+        '
+        'ColEVALPS21_2
+        '
+        Me.ColEVALPS21_2.DataPropertyName = "EVAL_PS2_1_DESC"
+        Me.ColEVALPS21_2.HeaderText = "Planeación 2.1"
+        Me.ColEVALPS21_2.Name = "ColEVALPS21_2"
+        Me.ColEVALPS21_2.ReadOnly = True
+        '
+        'ColEVALPS22_2
+        '
+        Me.ColEVALPS22_2.DataPropertyName = "EVAL_PS2_2_DESC"
+        Me.ColEVALPS22_2.HeaderText = "Planeación 2.2"
+        Me.ColEVALPS22_2.Name = "ColEVALPS22_2"
+        Me.ColEVALPS22_2.ReadOnly = True
+        '
+        'ColEVALPS23_2
+        '
+        Me.ColEVALPS23_2.DataPropertyName = "EVAL_PS2_3_DESC"
+        Me.ColEVALPS23_2.HeaderText = "Planeación 2.3"
+        Me.ColEVALPS23_2.Name = "ColEVALPS23_2"
+        Me.ColEVALPS23_2.ReadOnly = True
+        '
+        'ColEVALPS24_2
+        '
+        Me.ColEVALPS24_2.DataPropertyName = "EVAL_PS2_4_DESC"
+        Me.ColEVALPS24_2.HeaderText = "Planeación 2.4"
+        Me.ColEVALPS24_2.Name = "ColEVALPS24_2"
+        Me.ColEVALPS24_2.ReadOnly = True
+        '
+        'ColOBSC2
+        '
+        Me.ColOBSC2.DataPropertyName = "OBS_C2"
+        Me.ColOBSC2.HeaderText = "OBS Planeación y Seguimiento"
+        Me.ColOBSC2.Name = "ColOBSC2"
+        Me.ColOBSC2.ReadOnly = True
+        '
+        'ColEcpActive
+        '
+        Me.ColEcpActive.DataPropertyName = "ACTIVE"
+        Me.ColEcpActive.HeaderText = "ACTIVE"
+        Me.ColEcpActive.Name = "ColEcpActive"
+        Me.ColEcpActive.ReadOnly = True
+        '
+        'ColTICKETSERVEVALECPID
+        '
+        Me.ColTICKETSERVEVALECPID.DataPropertyName = "TICKETSERVEVALECPID"
+        Me.ColTICKETSERVEVALECPID.HeaderText = "TICKETSERVEVALECPID"
+        Me.ColTICKETSERVEVALECPID.Name = "ColTICKETSERVEVALECPID"
+        Me.ColTICKETSERVEVALECPID.ReadOnly = True
+        Me.ColTICKETSERVEVALECPID.Visible = False
+        '
+        'ColEcpTICKETID
+        '
+        Me.ColEcpTICKETID.DataPropertyName = "TICKETID"
+        Me.ColEcpTICKETID.HeaderText = "TICKETID"
+        Me.ColEcpTICKETID.Name = "ColEcpTICKETID"
+        Me.ColEcpTICKETID.ReadOnly = True
+        Me.ColEcpTICKETID.Visible = False
+        '
+        'ColEVALTIME11
+        '
+        Me.ColEVALTIME11.DataPropertyName = "EVAL_TIME1_1"
+        Me.ColEVALTIME11.HeaderText = "EVAL_TIME1_1"
+        Me.ColEVALTIME11.Name = "ColEVALTIME11"
+        Me.ColEVALTIME11.ReadOnly = True
+        Me.ColEVALTIME11.Visible = False
+        '
+        'ColEVALTIME12
+        '
+        Me.ColEVALTIME12.DataPropertyName = "EVAL_TIME1_2"
+        Me.ColEVALTIME12.HeaderText = "EVAL_TIME1_2"
+        Me.ColEVALTIME12.Name = "ColEVALTIME12"
+        Me.ColEVALTIME12.ReadOnly = True
+        Me.ColEVALTIME12.Visible = False
+        '
+        'ColEVALTIME13
+        '
+        Me.ColEVALTIME13.DataPropertyName = "EVAL_TIME1_3"
+        Me.ColEVALTIME13.HeaderText = "EVAL_TIME1_3"
+        Me.ColEVALTIME13.Name = "ColEVALTIME13"
+        Me.ColEVALTIME13.ReadOnly = True
+        Me.ColEVALTIME13.Visible = False
+        '
+        'ColEVALTIME14
+        '
+        Me.ColEVALTIME14.DataPropertyName = "EVAL_TIME1_4"
+        Me.ColEVALTIME14.HeaderText = "EVAL_TIME1_4"
+        Me.ColEVALTIME14.Name = "ColEVALTIME14"
+        Me.ColEVALTIME14.ReadOnly = True
+        Me.ColEVALTIME14.Visible = False
+        '
+        'ColEVALCOST15
+        '
+        Me.ColEVALCOST15.DataPropertyName = "EVAL_COST1_5"
+        Me.ColEVALCOST15.HeaderText = "EVAL_COST1_5"
+        Me.ColEVALCOST15.Name = "ColEVALCOST15"
+        Me.ColEVALCOST15.ReadOnly = True
+        Me.ColEVALCOST15.Visible = False
+        '
+        'ColEVALQUALITY16
+        '
+        Me.ColEVALQUALITY16.DataPropertyName = "EVAL_QUALITY1_6"
+        Me.ColEVALQUALITY16.HeaderText = "EVAL_QUALITY1_6"
+        Me.ColEVALQUALITY16.Name = "ColEVALQUALITY16"
+        Me.ColEVALQUALITY16.ReadOnly = True
+        Me.ColEVALQUALITY16.Visible = False
+        '
+        'ColEVALQUALITY17
+        '
+        Me.ColEVALQUALITY17.DataPropertyName = "EVAL_QUALITY1_7"
+        Me.ColEVALQUALITY17.HeaderText = "EVAL_QUALITY1_7"
+        Me.ColEVALQUALITY17.Name = "ColEVALQUALITY17"
+        Me.ColEVALQUALITY17.ReadOnly = True
+        Me.ColEVALQUALITY17.Visible = False
+        '
+        'ColEVALPS21
+        '
+        Me.ColEVALPS21.DataPropertyName = "EVAL_PS2_1"
+        Me.ColEVALPS21.HeaderText = "EVAL_PS2_1"
+        Me.ColEVALPS21.Name = "ColEVALPS21"
+        Me.ColEVALPS21.ReadOnly = True
+        Me.ColEVALPS21.Visible = False
+        '
+        'ColEVALPS22
+        '
+        Me.ColEVALPS22.DataPropertyName = "EVAL_PS2_2"
+        Me.ColEVALPS22.HeaderText = "EVAL_PS2_2"
+        Me.ColEVALPS22.Name = "ColEVALPS22"
+        Me.ColEVALPS22.ReadOnly = True
+        Me.ColEVALPS22.Visible = False
+        '
+        'ColEVALPS23
+        '
+        Me.ColEVALPS23.DataPropertyName = "EVAL_PS2_3"
+        Me.ColEVALPS23.HeaderText = "EVAL_PS2_3"
+        Me.ColEVALPS23.Name = "ColEVALPS23"
+        Me.ColEVALPS23.ReadOnly = True
+        Me.ColEVALPS23.Visible = False
+        '
+        'ColEVALPS24
+        '
+        Me.ColEVALPS24.DataPropertyName = "EVAL_PS2_4"
+        Me.ColEVALPS24.HeaderText = "EVAL_PS2_4"
+        Me.ColEVALPS24.Name = "ColEVALPS24"
+        Me.ColEVALPS24.ReadOnly = True
+        Me.ColEVALPS24.Visible = False
+        '
+        'TICKETSERVEVALECPBindingSource
+        '
+        Me.TICKETSERVEVALECPBindingSource.DataMember = "TICKETSERVEVAL_ECP"
+        Me.TICKETSERVEVALECPBindingSource.DataSource = Me.SESTicketAccessDataSet
+        '
+        'TICKETSERVEVAL_HSEQTableAdapter
+        '
+        Me.TICKETSERVEVAL_HSEQTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CASINGTableAdapter = Nothing
+        Me.TableAdapterManager.CITYTableAdapter = Nothing
+        Me.TableAdapterManager.Connection = Nothing
+        Me.TableAdapterManager.CONTRACTTableAdapter = Nothing
+        Me.TableAdapterManager.COUNTRYTableAdapter = Nothing
+        Me.TableAdapterManager.CURRENCYTableAdapter = Nothing
+        Me.TableAdapterManager.CUSTOMERTableAdapter = Nothing
+        Me.TableAdapterManager.EQUIPMENTTableAdapter = Nothing
+        Me.TableAdapterManager.HSEQ_ANSWERSTableAdapter = Nothing
+        Me.TableAdapterManager.INVENTORYCLASSTableAdapter = Nothing
+        Me.TableAdapterManager.INVENTORYITEMTableAdapter = Nothing
+        Me.TableAdapterManager.INVENTORYUNITTableAdapter = Nothing
+        Me.TableAdapterManager.PETRFIELDTableAdapter = Nothing
+        Me.TableAdapterManager.REPORTTICKETLISTTableAdapter = Nothing
+        Me.TableAdapterManager.RIGTableAdapter = Nothing
+        Me.TableAdapterManager.SALESITEM_TOTAL_L01TableAdapter = Nothing
+        Me.TableAdapterManager.SALESITEM_TOTAL_L02_MATTableAdapter = Nothing
+        Me.TableAdapterManager.SALESITEM_TOTAL_L02_SERVTableAdapter = Nothing
+        Me.TableAdapterManager.SERVICELINETableAdapter = Nothing
+        Me.TableAdapterManager.SITESTableAdapter = Nothing
+        Me.TableAdapterManager.STATETableAdapter = Nothing
+        Me.TableAdapterManager.TICKETFILELOGTableAdapter = Nothing
+        Me.TableAdapterManager.TICKETOPEREPACTTableAdapter = Nothing
+        Me.TableAdapterManager.TICKETOPEREPTableAdapter = Nothing
+        Me.TableAdapterManager.TICKETTableAdapter = Nothing
+        Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
+        Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
+        Me.TableAdapterManager.TUBINGTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.USERTableAdapter = Nothing
+        Me.TableAdapterManager.WELLTableAdapter = Nothing
+        Me.TableAdapterManager.WORKERTableAdapter = Nothing
+        '
+        'TICKETSERVEVAL_ECPTableAdapter
+        '
+        Me.TICKETSERVEVAL_ECPTableAdapter.ClearBeforeFill = True
+        '
+        'frmTicketServEvalHSEQ
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(1467, 644)
+        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Name = "frmTicketServEvalHSEQ"
+        Me.Text = "frmTicketServEvalHSEQ"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        CType(Me.dgvTicketEvalHSEQ, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TICKETSERVEVAL_HSEQBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage2.ResumeLayout(False)
+        CType(Me.dgvTicketEvalECP, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TICKETSERVEVALECPBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents TICKETSERVEVAL_HSEQBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TICKETSERVEVAL_HSEQTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_HSEQTableAdapter
+    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents mnuNewItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents mnuPrintServEval As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents HSEQToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EcopetrolToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents dgvTicketEvalHSEQ As DataGridView
+    Friend WithEvents colServiceDate As DataGridViewTextBoxColumn
+    Friend WithEvents colServDescrip As DataGridViewTextBoxColumn
+    Friend WithEvents colEvalPersonal2 As DataGridViewTextBoxColumn
+    Friend WithEvents colEvalEquipment2 As DataGridViewTextBoxColumn
+    Friend WithEvents colEvalComunication2 As DataGridViewTextBoxColumn
+    Friend WithEvents colEvalHSEQPerf2 As DataGridViewTextBoxColumn
+    Friend WithEvents colEvalGeneralPercep2 As DataGridViewTextBoxColumn
+    Friend WithEvents colObs As DataGridViewTextBoxColumn
+    Friend WithEvents colTicketServEvalId As DataGridViewTextBoxColumn
+    Friend WithEvents colTicketId As DataGridViewTextBoxColumn
+    Friend WithEvents colActive As DataGridViewTextBoxColumn
+    Friend WithEvents colEvalPersonal As DataGridViewTextBoxColumn
+    Friend WithEvents colEvalEquipment As DataGridViewTextBoxColumn
+    Friend WithEvents colEvalComunication As DataGridViewTextBoxColumn
+    Friend WithEvents colEvalHSEQPerf As DataGridViewTextBoxColumn
+    Friend WithEvents colEvalGeneralPercep As DataGridViewTextBoxColumn
+    Friend WithEvents dgvTicketEvalECP As DataGridView
+    Friend WithEvents TICKETSERVEVALECPBindingSource As BindingSource
+    Friend WithEvents TICKETSERVEVAL_ECPTableAdapter As SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_ECPTableAdapter
+    Friend WithEvents ColEcpServiceDate As DataGridViewTextBoxColumn
+    Friend WithEvents ColEcpServDescrip As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALTIME11_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALTIME12_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALTIME13_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALTIME14_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALCOST15_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALQUALITY16_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALQUALITY17_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColOBSC1 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALPS21_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALPS22_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALPS23_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALPS24_2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColOBSC2 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEcpActive As DataGridViewTextBoxColumn
+    Friend WithEvents ColTICKETSERVEVALECPID As DataGridViewTextBoxColumn
+    Friend WithEvents ColEcpTICKETID As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALTIME11 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALTIME12 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALTIME13 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALTIME14 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALCOST15 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALQUALITY16 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALQUALITY17 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALPS21 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALPS22 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALPS23 As DataGridViewTextBoxColumn
+    Friend WithEvents ColEVALPS24 As DataGridViewTextBoxColumn
+End Class

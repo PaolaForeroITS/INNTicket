@@ -1,0 +1,2576 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SESTicket
+</name>
+</assembly>
+<members>
+<member name="T:SESTicket.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SESTicket.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SESTicket.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CASINGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CITYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.COUNTRYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CUSTOMERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYCLASSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYUNITDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.STATEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TUBINGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CURRENCYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETEQUIPMENTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSALESITEMAMOUNTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETWORKERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVENTORYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_TOTAL_L01DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_TOTAL_L02_MATDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_TOTAL_L02_SERVDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETOPEREPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TUBBING_WEIGHTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TUBBING_DRILLPIPEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CASING_SIZEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CASING_WEIGHTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETOPEREPACTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TMP_RPT_TICKETSERVEVALSERVDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYITEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.EQUIPMENTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.WORKERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.USERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SITESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETFILEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETFILELOGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTPRICELISTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSALESITEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTLINE_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SERVICELINEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSERVEVAL_HSEQDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.HSEQ_ANSWERSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SERVLINE_CUST_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTPARAMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.WELLDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.RIGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSERVICETYPEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SERVICETYPEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.PETRFIELDDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTHEADER_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTTICKETLISTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVGROUPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVHEADDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVLINEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYITEMCONTRACTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVLINESALES_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTINVLINE_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVADICDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTREPLAYOUTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TMP_TICKETOPEREPWORKERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTPRICELISTTMPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.WELL_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETOPEHOURDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.cbxCustomerDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.cbxServiceLineDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.cbxSiteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETEQUIPMENT_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TMP_TICKETCLOSEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKET_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSERVEVAL_ECPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CASINGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CITYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.COUNTRYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CUSTOMERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYCLASSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYUNITRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.STATERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TUBINGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CURRENCYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETEQUIPMENTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSALESITEMAMOUNTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETWORKERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVENTORYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_TOTAL_L01Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_TOTAL_L02_MATRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_TOTAL_L02_SERVRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETOPEREPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TUBBING_WEIGHTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TUBBING_DRILLPIPERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CASING_SIZERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CASING_WEIGHTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETOPEREPACTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TMP_RPT_TICKETSERVEVALSERVRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYITEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.EQUIPMENTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.WORKERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.USERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SITESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETFILERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETFILELOGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTPRICELISTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSALESITEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTLINE_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SERVICELINERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSERVEVAL_HSEQRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.HSEQ_ANSWERSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SERVLINE_CUST_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTPARAMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.WELLRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.RIGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSERVICETYPERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SERVICETYPERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.PETRFIELDRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTHEADER_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTTICKETLISTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVGROUPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVHEADRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVLINERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYITEMCONTRACTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVLINESALES_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTINVLINE_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVADICRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTREPLAYOUTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TMP_TICKETOPEREPWORKERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTPRICELISTTMPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.WELL_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETOPEHOURRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.cbxCustomerRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.cbxServiceLineRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.cbxSiteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETEQUIPMENT_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TMP_TICKETCLOSERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKET_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSERVEVAL_ECPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CASINGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CITYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.COUNTRYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CUSTOMERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYCLASSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYUNITRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.STATERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TUBINGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CURRENCYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETEQUIPMENTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSALESITEMAMOUNTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETWORKERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVENTORYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_TOTAL_L01RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_TOTAL_L02_MATRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_TOTAL_L02_SERVRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETOPEREPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TUBBING_WEIGHTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TUBBING_DRILLPIPERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CASING_SIZERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CASING_WEIGHTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETOPEREPACTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TMP_RPT_TICKETSERVEVALSERVRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYITEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.EQUIPMENTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.WORKERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.USERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SITESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETFILERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETFILELOGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTPRICELISTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSALESITEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SALESITEM_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTLINE_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SERVICELINERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSERVEVAL_HSEQRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.HSEQ_ANSWERSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SERVLINE_CUST_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTPARAMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.WELLRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.RIGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSERVICETYPERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.SERVICETYPERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.PETRFIELDRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTHEADER_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTTICKETLISTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVGROUPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVHEADRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVLINERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.INVENTORYITEMCONTRACTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVLINESALES_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.REPORTINVLINE_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETINVADICRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTREPLAYOUTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TMP_TICKETOPEREPWORKERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.CONTRACTPRICELISTTMPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.WELL_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETOPEHOURRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.cbxCustomerRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.cbxServiceLineRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.cbxSiteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETEQUIPMENT_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TMP_TICKETCLOSERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKET_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSet.TICKETSERVEVAL_ECPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.CASINGTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.CITYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.CONTRACTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.COUNTRYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.CUSTOMERTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.INVENTORYCLASSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.INVENTORYUNITTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.STATETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TUBINGTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.CURRENCYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETEQUIPMENTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSALESITEMAMOUNTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETWORKERTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETINVENTORYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L01TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_MATTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_SERVTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TUBBING_WEIGHTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TUBBING_DRILLPIPETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.CASING_SIZETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.CASING_WEIGHTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPACTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TMP_RPT_TICKETSERVEVALSERVTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.INVENTORYITEMTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.EQUIPMENTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.WORKERTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.USERTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.SITESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETFILETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETFILELOGTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.CONTRACTPRICELISTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSALESITEMTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.REPORTLINE_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.SERVICELINETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_HSEQTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.HSEQ_ANSWERSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.SERVLINE_CUST_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.WELLTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.RIGTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVICETYPETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.SERVICETYPETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.PETRFIELDTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.REPORTTICKETLISTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETINVGROUPTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETINVHEADTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETINVLINETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.INVENTORYITEMCONTRACTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETINVLINESALES_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.REPORTINVLINE_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETINVADICTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.CONTRACTREPLAYOUTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TMP_TICKETOPEREPWORKERTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.CONTRACTPRICELISTTMPTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.WELL_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEHOURTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.cbxCustomerTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.cbxServiceLineTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.cbxSiteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETEQUIPMENT_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TMP_TICKETCLOSETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKET_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_ECPTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SESTicket.SESTicketAccessDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SESTicket.SESTicketAccessDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SESTicket.SESTicketAccessDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateAll(SESTicket.SESTicketAccessDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CASINGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CITYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.COUNTRYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CUSTOMERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYUNITDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.STATEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TUBINGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTAIUINVENTORYCLASSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.AIUTableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYCLASSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.LAYOUTTYPEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemTotalL01RptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemTotalL02MatRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemTotalL02ServRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketEquipmentRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketWorkerRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketWorkerTotalRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYITEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.EQUIPMENTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.WORKERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.USERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_EQUIPMENTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_WORKERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_INVENTORYITEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SITESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SERVICETYPEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_WELLDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemL02RptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemL01RptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTPRICELISTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_CONTRACTPRICELISTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYCLASS_PRICEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketInventoryDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SERVICELINEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVOICE_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKETINVOICELINEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SALESITEM_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxTicketStatusDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxSiteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxServiceLineDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.RIGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.PETRFIELDDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.WELLDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketHeaderRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketHeaderByInvoiceRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKET_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxCustomerDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTREPLAYOUTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKETINVHEADER_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKETHSEQ_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.OBJECTGROUPITEM_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.OBJECTGROUP_VDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxUserCloneRightDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketDBDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketInvoiceDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CASINGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CITYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.COUNTRYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CUSTOMERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYUNITRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.STATERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TUBINGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTAIUINVENTORYCLASSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.AIUTableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYCLASSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.LAYOUTTYPERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemTotalL01RptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemTotalL02MatRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemTotalL02ServRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketEquipmentRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketWorkerRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketWorkerTotalRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYITEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.EQUIPMENTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.WORKERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.USERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_EQUIPMENTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_WORKERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_INVENTORYITEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SITESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SERVICETYPERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_WELLRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemL02RptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemL01RptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTPRICELISTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_CONTRACTPRICELISTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYCLASS_PRICERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketInventoryRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SERVICELINERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVOICE_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKETINVOICELINERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SALESITEM_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxTicketStatusRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxSiteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxServiceLineRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.RIGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.PETRFIELDRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.WELLRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketHeaderRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketHeaderByInvoiceRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKET_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxCustomerRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTREPLAYOUTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKETINVHEADER_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKETHSEQ_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.OBJECTGROUPITEM_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.OBJECTGROUP_VRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxUserCloneRightRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketDBRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketInvoiceRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CASINGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CITYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.COUNTRYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CUSTOMERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYUNITRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.STATERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TUBINGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTAIUINVENTORYCLASSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.AIUTableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYCLASSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.LAYOUTTYPERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemTotalL01RptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemTotalL02MatRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemTotalL02ServRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketEquipmentRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketWorkerRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketWorkerTotalRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYITEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.EQUIPMENTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.WORKERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.USERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_EQUIPMENTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_WORKERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_INVENTORYITEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SITESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SERVICETYPERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_WELLRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemL02RptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_SalesItemL01RptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTPRICELISTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.IMP_CONTRACTPRICELISTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVENTORYCLASS_PRICERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketInventoryRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SERVICELINERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.INVOICE_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKETINVOICELINERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.SALESITEM_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxTicketStatusRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxSiteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxServiceLineRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.RIGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.PETRFIELDRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.WELLRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketHeaderRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketHeaderByInvoiceRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKET_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxCustomerRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.CONTRACTREPLAYOUTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKETINVHEADER_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.TICKETHSEQ_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.OBJECTGROUPITEM_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.OBJECTGROUP_VRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.cbxUserCloneRightRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketDBRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSet.sp_TicketInvoiceRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.CASINGTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.CITYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.COUNTRYTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYUNITTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.STATETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.TUBINGTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTAIUINVENTORYCLASSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.AIUTableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.LAYOUTTYPETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL01RptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL02MatRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL02ServRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketEquipmentRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerTotalRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYITEMTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.EQUIPMENTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.WORKERTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.USERTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.IMP_EQUIPMENTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.IMP_WORKERTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.IMP_INVENTORYITEMTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.SERVICETYPETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.IMP_WELLTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemL02RptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemL01RptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTPRICELISTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.IMP_CONTRACTPRICELISTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASS_PRICETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketInventoryTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.SERVICELINETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.INVOICE_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.TICKETINVOICELINETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.SALESITEM_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.cbxTicketStatusTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.cbxSiteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.cbxServiceLineTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.RIGTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.PETRFIELDTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.WELLTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderByInvoiceRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.TICKET_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.cbxCustomerTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTREPLAYOUTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.TICKETINVHEADER_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.TICKETHSEQ_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.OBJECTGROUPITEM_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.OBJECTGROUP_VTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.cbxUserCloneRightTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketDBTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketInvoiceTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SESTicket.SESTicketSQLDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SESTicket.SESTicketSQLDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SESTicket.SESTicketSQLDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateAll(SESTicket.SESTicketSQLDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

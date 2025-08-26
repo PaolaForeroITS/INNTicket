@@ -1,0 +1,1180 @@
+﻿
+Public Class clsSyncTicket
+    Implements IDisposable
+
+    Dim util As New clsUtils
+    Public sUsername As String
+    Public sLog As String = ""
+    Public bErro As Boolean = False
+
+
+#Region "IDisposable Support"
+    Private disposedValue As Boolean ' To detect redundant calls
+
+    ' IDisposable
+    Protected Overridable Sub Dispose(disposing As Boolean)
+        If Not Me.disposedValue Then
+            If disposing Then
+                ' TODO: dispose managed state (managed objects).
+            End If
+
+            ' TODO: free unmanaged resources (unmanaged objects) and override Finalize() below.
+            ' TODO: set large fields to null.
+        End If
+        Me.disposedValue = True
+    End Sub
+
+    ' TODO: override Finalize() only if Dispose(ByVal disposing As Boolean) above has code to free unmanaged resources.
+    'Protected Overrides Sub Finalize()
+    '    ' Do not change this code.  Put cleanup code in Dispose(ByVal disposing As Boolean) above.
+    '    Dispose(False)
+    '    MyBase.Finalize()
+    'End Sub
+
+    ' This code added by Visual Basic to correctly implement the disposable pattern.
+    Public Sub Dispose() Implements IDisposable.Dispose
+        ' Do not change this code.  Put cleanup code in Dispose(disposing As Boolean) above.
+        Dispose(True)
+        GC.SuppressFinalize(Me)
+    End Sub
+#End Region
+
+    Public Sub SendTicket(sTicketID As String, DBDest As String)
+
+        Dim sStep As String = ""
+
+        Try
+
+            sLog = ""
+            bErro = False
+
+            Dim bdconnACCESS As New clsBancoDadosACCESS
+            bdconnACCESS.OpenConnection()
+
+            Dim sql As String
+
+            Dim sTabOrig As String
+            Dim sTabDest As String
+
+            If DBDest = "SQL" Then
+                Me.DeleteTicket(sTicketID, "SQL")
+                sTabOrig = ""
+                sTabDest = "zSQL_"
+            Else
+                Me.DeleteTicket(sTicketID, "ACCESS")
+                sTabOrig = "zSQL_"
+                sTabDest = ""
+            End If
+
+            sStep = "Preparing TICKET" & Environment.NewLine
+
+            sql = "INSERT INTO " & sTabDest & "TICKET ( TICKETID,DATESERVICE,CUSTOMERID,CONTRACTID,CURRENCYID " &
+                ",WELLID,TIMEARRIVED,TIMESTARTED,TIMECOMPLETED,CASINGSIZE " &
+                ",CASINGWEIGHT,CASINGGRADE,TUBINGSIZE,TUBINGWEIGHT,TUBINGGRADE,PRESSUREMAX " &
+                ",DEPTHMAX,JOBDESCRIPTION,CUSTREPRES,CUSTREPRESPOSITION,CUSTREPRESASSIST " &
+                ",CONTRACTORREPRESENTATIVE,CUSTCOMMENTS,CONTRACTCOMMENTS,CREATEDUSER " &
+                ",CREATEDDATETIME,UPDATEDDATETIME,UPDATEDUSER,EXCHANGERATE " &
+                ",CANCELDATETIME,CANCELUSER,CANCELREASON,CUSTREPRESASSISTPOSITION " &
+                ",TICKETSTATUS,ADICINFORM,SERVICELINEID,RIGID,SERVICETYPEGRPCODE,SERVICETYPEGRPTEXT,SUPERIORNUM,DM,NOINVITEM,JOBNUMBER,SERVICEORDERNUM,SITEID, " &
+                "HOURTRAVEL,HOUROPERATION,HOURSTANDBY,HOURLOST,HOURQDE,CLOSEDUSER,CLOSEDDATE, SUPERIORSUPERVISOR) " &
+                "SELECT TICKETID,DATESERVICE,CUSTOMERID,CONTRACTID " &
+                ",CURRENCYID,WELLID,TIMEARRIVED " &
+                ",TIMESTARTED,TIMECOMPLETED,CASINGSIZE,CASINGWEIGHT " &
+                ",CASINGGRADE,TUBINGSIZE,TUBINGWEIGHT,TUBINGGRADE " &
+                ",PRESSUREMAX,DEPTHMAX,JOBDESCRIPTION,CUSTREPRES " &
+                ",CUSTREPRESPOSITION,CUSTREPRESASSIST,CONTRACTORREPRESENTATIVE " &
+                ",CUSTCOMMENTS,CONTRACTCOMMENTS,CREATEDUSER " &
+                ",CREATEDDATETIME,UPDATEDDATETIME,UPDATEDUSER " &
+                ",EXCHANGERATE,CANCELDATETIME,CANCELUSER " &
+                ",CANCELREASON,CUSTREPRESASSISTPOSITION,TICKETSTATUS,ADICINFORM,SERVICELINEID,RIGID," &
+                "SERVICETYPEGRPCODE,SERVICETYPEGRPTEXT,SUPERIORNUM,DM,NOINVITEM,JOBNUMBER,SERVICEORDERNUM,SITEID,  " &
+                "HOURTRAVEL,HOUROPERATION,HOURSTANDBY,HOURLOST,HOURQDE,CLOSEDUSER,CLOSEDDATE,SUPERIORSUPERVISOR " &
+                "FROM " & sTabOrig & "TICKET " &
+                "WHERE " &
+                "TICKETID = '" & sTicketID & "'"
+
+            sStep = "Inserting TICKET" & Environment.NewLine
+
+            bdconnACCESS.ExecuteNonSQL(sql)
+
+            bdconnACCESS.CloseConnection()
+            bdconnACCESS.Dispose()
+            bdconnACCESS = Nothing
+
+            sStep = "Executing SendWorker" & Environment.NewLine
+            SendWorker(sTicketID, DBDest)
+            sStep = "Executing SendEquipment" & Environment.NewLine
+            SendEquipment(sTicketID, DBDest)
+            sStep = "Executing SendTicketSalesItem" & Environment.NewLine
+            SendTicketSalesItem(sTicketID, DBDest)
+            sStep = "Executing SendTicketInventory" & Environment.NewLine
+            SendTicketInventory(sTicketID, DBDest)
+
+            sStep = "Executing SendTicketInvAdic" & Environment.NewLine
+            SendTicketInvAdic(sTicketID, DBDest)
+            sStep = "Executing SendTicketInvHeader" & Environment.NewLine
+            SendTicketInvHeader(sTicketID, DBDest)
+            sStep = "Executing SendTicketInvLine" & Environment.NewLine
+            SendTicketInvLine(sTicketID, DBDest)
+
+            sStep = "Executing TicketOpeRep" & Environment.NewLine
+            SendTicketOpeRep(sTicketID, DBDest)
+            sStep = "Executing TicketServEvalHSEQ" & Environment.NewLine
+            SendTicketServEvalHSEQ(sTicketID, DBDest)
+            sStep = "Executing TicketDBSyncAccess" & Environment.NewLine
+            TicketDBSyncAccess(sTicketID, DBDest)
+            sStep = "Executing TicketServiceType" & Environment.NewLine
+            SendTicketServiceType(sTicketID, DBDest)
+
+        Catch ex As Exception
+            bErro = True
+            sLog = sStep & Environment.NewLine & "Error: " & ex.Message
+            DeleteTicket(sTicketID, DBDest)
+            UpdateSyncDBStatus(sTicketID, False)
+        End Try
+
+    End Sub
+
+    Private Sub SendWorker(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETWORKER ( TICKETWORKERID,TICKETID,WORKERID,REGISTERDATE,HOURQDE,HOURTRAVEL,HOUROPERATION,HOURSTANDBY,HOURLOST,RESUMEACTIVITY ) " &
+              "SELECT TICKETWORKERID,TICKETID,WORKERID,REGISTERDATE,HOURQDE,HOURTRAVEL,HOUROPERATION,HOURSTANDBY,HOURLOST,RESUMEACTIVITY " &
+              "FROM " & sTabOrig & "TICKETWORKER " &
+              "WHERE " &
+              "TICKETID = '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Private Sub SendEquipment(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETEQUIPMENT ( TICKETID, EQUIPMENTID, TICKETEQUIPMENTID,CONSUMPTION ) " &
+            "SELECT TICKETID, EQUIPMENTID,TICKETEQUIPMENTID,CONSUMPTION  " &
+            "FROM " & sTabOrig & "TICKETEQUIPMENT  " &
+            "WHERE  " &
+            "TICKETID = '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Private Sub SendTicketSalesItem(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETSALESITEM ( TICKETSALESITEMID,TICKETID,CONTRACTPRICELISTID,CUSTCODEITEM " & _
+            ",DESCRIPTION,SALES_PRICE,UNIT_SALE,PRICEUNIT,PRICEUNITUSD,ITEMQTY,ITEMDISC,ITEMAMOUNTNODISC " & _
+            ",ITEMAMOUNTNODISCUSD,ITEMAMOUNT,ITEMAMOUNTUSD,DISCVALUE,DISCVALUEUSD,CREATEDUSER " & _
+            ",CREATEDDATETIME,UPDATEDDATETIME,UPDATEDUSER,DISCTYPE ) " & _
+            "SELECT TICKETSALESITEMID,TICKETID,CONTRACTPRICELISTID,CUSTCODEITEM,DESCRIPTION,SALES_PRICE " & _
+            ",UNIT_SALE,PRICEUNIT,PRICEUNITUSD,ITEMQTY,ITEMDISC,ITEMAMOUNTNODISC,ITEMAMOUNTNODISCUSD " & _
+            ",ITEMAMOUNT,ITEMAMOUNTUSD,DISCVALUE,DISCVALUEUSD,CREATEDUSER,CREATEDDATETIME " & _
+            ",UPDATEDDATETIME,UPDATEDUSER,DISCTYPE " & _
+            "FROM " & sTabOrig & "TICKETSALESITEM   " & _
+            "WHERE " & _
+            "TICKETID = '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Public Sub SendTicketInventory(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETINVENTORY ( TICKETINVENTORYID,TICKETSALESITEMID,INVENTORYITEMID,ITEMQTY,UNIT " &
+                ",DESCRIPTION,CREATEDUSER,CREATEDDATETIME,UPDATEDDATETIME,UPDATEDUSER,COMMENTS ) " &
+                "SELECT TICKETINVENTORYID,TICKETSALESITEMID,INVENTORYITEMID,ITEMQTY,UNIT,DESCRIPTION " &
+                ",CREATEDUSER,CREATEDDATETIME,UPDATEDDATETIME,UPDATEDUSER,COMMENTS " &
+                "FROM " & sTabOrig & "TICKETINVENTORY " &
+                "WHERE " &
+                "EXISTS (SELECT 1 FROM  " & sTabOrig & "TICKETSALESITEM B " &
+                "WHERE " &
+                " " & sTabOrig & "TICKETINVENTORY.TICKETSALESITEMID = B.TICKETSALESITEMID " &
+                "AND B.TICKETID = '" & sTicketId & "') "
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Public Sub SendTicketOpeRep(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETOPEREP " & _
+             "(TICKETOPEREPID,TICKETID,ACTIVITYDATE,SERVICEDESCR,COMMENTS, ACTIVITYDATEDESC) " & _
+             "SELECT TICKETOPEREPID,TICKETID,ACTIVITYDATE,SERVICEDESCR,COMMENTS, ACTIVITYDATEDESC " & _
+             "FROM " & sTabOrig & "TICKETOPEREP " & _
+             "WHERE " & sTabOrig & "TICKETOPEREP.TICKETID = '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        sql = "INSERT INTO " & sTabDest & "TICKETOPEREPACT " & _
+        "(TICKETOPEREPACTID,TICKETOPEREPID " & _
+        ",ACTIVITYTIME,DESCRIPTION,LINEORDER, BOLD,ALIGHMENT) " & _
+        "SELECT TICKETOPEREPACTID,TICKETOPEREPID " & _
+        ",ACTIVITYTIME,DESCRIPTION,LINEORDER, BOLD,ALIGHMENT " & _
+        "FROM " & sTabOrig & "TICKETOPEREPACT " & _
+        "WHERE " & _
+        "EXISTS (SELECT 1 FROM " & sTabOrig & "TICKETOPEREP " & _
+        "WHERE " & sTabOrig & "TICKETOPEREPACT.TICKETOPEREPID = " & sTabOrig & "TICKETOPEREP.TICKETOPEREPID " & _
+        "AND " & sTabOrig & "TICKETOPEREP.TICKETID = '" & sTicketId & "') "
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Public Sub SendTicketServEvalHSEQ(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETSERVEVAL_HSEQ ( " &
+        "[TICKETSERVEVALID],[TICKETID],[SERVICEDATE],[SERVDESCRIP] " &
+        ",[EVAL_PERSONAL],[EVAL_EQUIPMENT],[EVAL_COMUNICATION] " &
+        ",[EVAL_HSEQ_PERF],[EVAL_GENERALPERCEP],[OBS],[ACTIVE]) " &
+        "SELECT [TICKETSERVEVALID],[TICKETID],[SERVICEDATE],[SERVDESCRIP] " &
+        ",[EVAL_PERSONAL],[EVAL_EQUIPMENT],[EVAL_COMUNICATION] " &
+        ",[EVAL_HSEQ_PERF],[EVAL_GENERALPERCEP],[OBS],[ACTIVE] " &
+        "FROM " & sTabOrig & "TICKETSERVEVAL_HSEQ " &
+        "WHERE " & sTabOrig & "TICKETSERVEVAL_HSEQ.TICKETID = '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Public Sub SendTicketServEvalECP(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETSERVEVAL_ECP ( " &
+        "[TICKETSERVEVALECPID],[TICKETID],[SERVICEDATE],[SERVDESCRIP] " &
+        ",[EVAL_TIME1_1],[EVAL_TIME1_2],[EVAL_TIME1_3],[EVAL_TIME1_4] " &
+        ",[EVAL_COST1_5],[EVAL_QUALITY1_6],[EVAL_QUALITY1_7],[EVAL_PS2_1] " &
+        ",[EVAL_PS2_2],[EVAL_PS2_3],[EVAL_PS2_4] ,[OBS_C1],[OBS_C2],[ACTIVE]) " &
+        "SELECT [TICKETSERVEVALECPID],[TICKETID],[SERVICEDATE],[SERVDESCRIP] " &
+        ",[EVAL_TIME1_1],[EVAL_TIME1_2],[EVAL_TIME1_3],[EVAL_TIME1_4] " &
+        ",[EVAL_COST1_5],[EVAL_QUALITY1_6],[EVAL_QUALITY1_7],[EVAL_PS2_1] " &
+        ",[EVAL_PS2_2],[EVAL_PS2_3],[EVAL_PS2_4] ,[OBS_C1],[OBS_C2],[ACTIVE]" &
+        "FROM " & sTabOrig & "TICKETSERVEVALECPID " &
+        "WHERE " & sTabOrig & "TICKETSERVEVALECPID.TICKETID = '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Private Sub SendTicketServiceType(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETSERVICETYPE ( TICKETSERVICETYPEID,TICKETID,SERVICETYPEID ) " &
+            "SELECT TICKETSERVICETYPEID,TICKETID,SERVICETYPEID " &
+            "FROM " & sTabOrig & "TICKETSERVICETYPE   " &
+            "WHERE " &
+            "TICKETID = '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+
+    Private Sub SendTicketInvAdic(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETINVADIC ( TICKETINVADICID,TICKETID,DISPATCHED,RETURNED,TRANSPCOMPANY," &
+            "DRIVER,WAREHOUSERESP,OPERATIONRESP,ENGENEERRESP,COMMENTS ) " &
+            "SELECT TICKETINVADICID,TICKETID,DISPATCHED,RETURNED,TRANSPCOMPANY, " &
+            "DRIVER,WAREHOUSERESP,OPERATIONRESP,ENGENEERRESP,COMMENTS  " &
+            "FROM " & sTabOrig & "TICKETINVADIC   " &
+            "WHERE " &
+            "TICKETID = '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Private Sub SendTicketInvHeader(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETINVHEADER (TICKETINVHEADERID,TICKETID,INVENTORYITEMID,DESCRIPTION,LOTE " &
+            ",DESPATCHED,CONSUMPTION,RETURNED,COMMENTS,CREATEDUSER,CREATEDDATETIME " &
+            ",UPDATEDDATETIME,UPDATEDUSER) " &
+            "SELECT TICKETINVHEADERID,TICKETID,INVENTORYITEMID,DESCRIPTION,LOTE " &
+            ",DESPATCHED,CONSUMPTION,RETURNED,COMMENTS,CREATEDUSER,CREATEDDATETIME  " &
+            ",UPDATEDDATETIME,UPDATEDUSER " &
+            "FROM " & sTabOrig & "TICKETINVHEADER   " &
+            "WHERE " &
+            "TICKETID = '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Private Sub SendTicketInvLine(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & "TICKETINVLINE (TICKETINVLINEID,TICKETINVHEADERID,TICKETSALESITEMID " &
+            ",ITEMQTY,COMMENTS,CREATEDUSER,CREATEDDATETIME,UPDATEDDATETIME,UPDATEDUSER) " &
+            "SELECT TICKETINVLINEID,TICKETINVHEADERID,TICKETSALESITEMID " &
+            ",ITEMQTY,COMMENTS,CREATEDUSER,CREATEDDATETIME,UPDATEDDATETIME,UPDATEDUSER " &
+            "FROM " & sTabOrig & "TICKETINVLINE   " &
+            "WHERE " &
+            "TICKETINVHEADERID IN (SELECT TICKETINVHEADERID FROM TICKETINVHEADER " &
+            "WHERE TICKETID = '" & sTicketId & "')"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+
+    Public Sub DeleteTicket(sTicketId As String, DBDest As String)
+
+        Dim bdconnSQL As New clsBancoDadosSQL
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+
+        If DBDest = "SQL" Then
+            bdconnSQL.OpenConnection()
+        Else
+            bdconnACCESS.OpenConnection()
+        End If
+
+        Dim sql As String
+
+        sql = "DELETE FROM TICKETSERVEVAL_ECP WHERE TICKETID = '" & sTicketId & "' "
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE FROM TICKETSERVEVAL_HSEQ WHERE TICKETID = '" & sTicketId & "' "
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE FROM TICKETINVENTORY " &
+        "where EXISTS (SELECT 1 FROM TICKETSALESITEM B  " &
+        "WHERE TICKETINVENTORY.TICKETSALESITEMID = B.TICKETSALESITEMID AND B.TICKETID = '" & sTicketId & "') "
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE FROM TICKETINVADIC WHERE TICKETID = '" & sTicketId & "' "
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE FROM TICKETINVLINE " &
+        "where EXISTS (SELECT 1 FROM TICKETINVHEADER B  " &
+        "WHERE TICKETINVLINE.TICKETINVHEADERID = B.TICKETINVHEADERID AND B.TICKETID = '" & sTicketId & "') "
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE FROM TICKETINVHEADER WHERE TICKETID = '" & sTicketId & "' "
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE FROM TICKETSALESITEM WHERE TICKETID = '" & sTicketId & "'"
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE FROM TICKETEQUIPMENT WHERE TICKETID = '" & sTicketId & "'"
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE FROM TICKETWORKER WHERE TICKETID = '" & sTicketId & "'"
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE  FROM TICKETOPEREPACT " & _
+              "WHERE " & _
+              "EXISTS (SELECT 1 FROM TICKETOPEREP " & _
+              "WHERE  " & _
+              "TICKETOPEREP.TICKETOPEREPID = TICKETOPEREPACT.TICKETOPEREPID " & _
+              "AND TICKETOPEREP.TICKETID = '" & sTicketId & "')"
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE FROM TICKETOPEREP " & _
+              "WHERE TICKETOPEREP.TICKETID = '" & sTicketId & "'"
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        sql = "DELETE FROM TICKETSERVICETYPE " &
+              "WHERE TICKETID = '" & sTicketId & "'"
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+
+        sql = "DELETE FROM TICKET WHERE TICKETID = '" & sTicketId & "'"
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
+        If DBDest = "SQL" Then
+            bdconnSQL.CloseConnection()
+            bdconnSQL.Dispose()
+            bdconnSQL = Nothing
+        Else
+            bdconnACCESS.CloseConnection()
+            bdconnACCESS.Dispose()
+            bdconnACCESS = Nothing
+        End If
+
+    End Sub
+
+    Public Sub CloseTicket(ByVal sTicketId As String, Optional Source As String = "")
+
+        Dim Sql As String
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim DateTimeUTC As String = util.GetDateTimeUTC()
+
+        If Source = "SQL" Then
+            Sql = "UPDATE zSQL_TICKET SET TICKETSTATUS='Closed', SYNCDATETIME = " & DateTimeUTC & " " &
+                  ",CLOSEDUSER='" & sUsername.ToLower & "' " &
+                  ",CLOSEDDATE=" & util.GetDateTime(True) & " " &
+                  ",[UPDATEDDATETIME] = " & util.GetDateTime(True) & " " &
+                  ",[UPDATEDUSER] = '" & sUsername.ToLower & "' " &
+                  "WHERE TICKETID = '" & sTicketId & "'"
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "UPDATE TICKET SET TICKETSTATUS='Closed', SyncDB=FALSE " &
+                  ",CLOSEDUSER='" & sUsername.ToLower & "' " &
+                  ",CLOSEDDATE=" & util.GetDateTime(True) & " " &
+                  ",[UPDATEDDATETIME] = " & util.GetDateTime() & " " &
+                  ",[UPDATEDUSER] = '" & sUsername.ToLower & "' " &
+                  "WHERE TICKETID = '" & sTicketId & "'"
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+        Else
+            Sql = "UPDATE TICKET SET TICKETSTATUS='Closed', SyncDB=FALSE,TICKET.SYNCDATETIME = " & DateTimeUTC & " " &
+                  ",CLOSEDUSER='" & sUsername.ToLower & "' " &
+                  ",CLOSEDDATE=" & util.GetDateTime(True) & " " &
+                  ",[UPDATEDDATETIME] = " & util.GetDateTime() & " " &
+                  ",[UPDATEDUSER] = '" & sUsername.ToLower & "' " &
+                  "WHERE TICKETID = '" & sTicketId & "'"
+            bdconnACCESS.ExecuteNonSQL(Sql)
+        End If
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Public Sub TicketDBSyncAccess(sTicketId As String, DBDest As String)
+
+        Dim Sql As String
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+
+        bdconnACCESS.OpenConnection()
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        Sql = "UPDATE " & sTabDest & "TICKET INNER JOIN " & sTabOrig & "TICKET ON " & sTabDest & "TICKET.TICKETID = " & sTabOrig & "TICKET.TICKETID " & _
+                "SET " & sTabDest & "TICKET.SYNCDATETIME = [" & sTabOrig & "TICKET].[SYNCDATETIME] " & _
+                "WHERE " & sTabOrig & "TICKET.TICKETID= '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(Sql)
+
+        Sql = "UPDATE TICKET SET SYNCDB=1 WHERE TICKETID = '" & sTicketId & "'"
+        bdconnACCESS.ExecuteNonSQL(Sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Public Function IsTicketExistsAccess(sTicketId As String) As Boolean
+
+        Dim bExist As Boolean = False
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+        Dim ds As New DataSet
+
+        sql = "SELECT COUNT(*) AS QDE " & _
+        "FROM TICKET " & _
+        "WHERE TICKETID='" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteSQL(sql, ds)
+
+        If ds.Tables(0).Rows.Count > 0 Then
+            For i As Integer = 0 To ds.Tables(0).Rows.Count - 1
+                If ds.Tables(0).Rows(i)("QDE") = 0 Then
+                    bExist = False
+                Else
+                    bExist = True
+                End If
+            Next
+        End If
+
+        ds.Dispose()
+        ds = Nothing
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+        Return bExist
+
+    End Function
+
+    Public Function CloneTicket(sTicketId As String, sUsername As String, dServiceDate As Date) As String
+
+        Dim sTicketIdNew As String = ""
+        Dim sSecNew As String = ""
+
+        Try
+
+            Dim Sql As String
+            Dim bdconnACCESS As New clsBancoDadosACCESS
+            Dim DateTimeUTC As String = util.GetDateTimeUTC()
+
+            Me.GetNewTicketNumber(sUsername, sTicketIdNew, sSecNew)
+            Me.DeleteTicket(sTicketIdNew, "ACCESS")
+
+            bdconnACCESS.OpenConnection()
+
+            Sql = "INSERT INTO TICKET " &
+                "(TICKETID,DATESERVICE,CUSTOMERID,CONTRACTID,CURRENCYID " &
+                ",WELLID,TIMEARRIVED,TIMESTARTED,TIMECOMPLETED,CASINGSIZE,CASINGWEIGHT " &
+                ",CASINGGRADE,TUBINGSIZE,TUBINGWEIGHT,TUBINGGRADE,PRESSUREMAX,DEPTHMAX " &
+                ",JOBDESCRIPTION,CUSTREPRES,CUSTREPRESPOSITION,CUSTREPRESASSIST,CONTRACTORREPRESENTATIVE " &
+                ",CUSTCOMMENTS,CONTRACTCOMMENTS,CREATEDUSER,CREATEDDATETIME " &
+                ",EXCHANGERATE,SyncDB,CUSTREPRESASSISTPOSITION,SYNCDATETIME,TICKETSTATUS,SERVICELINEID,RIGID," &
+                "SERVICETYPEGRPCODE,SERVICETYPEGRPTEXT,NOINVITEM,SITEID ) " &
+                "SELECT   " &
+                "'" & sTicketIdNew & "' " &
+                "," & util.SQLConvStrDate(dServiceDate.ToString) & ",CUSTOMERID,CONTRACTID,CURRENCYID,WELLID  " &
+                ",TIMEARRIVED,TIMESTARTED,TIMECOMPLETED,CASINGSIZE,CASINGWEIGHT,CASINGGRADE   " &
+                ",TUBINGSIZE,TUBINGWEIGHT,TUBINGGRADE,PRESSUREMAX,DEPTHMAX,JOBDESCRIPTION  " &
+                ",CUSTREPRES,CUSTREPRESPOSITION,CUSTREPRESASSIST,CONTRACTORREPRESENTATIVE  " &
+                ",CUSTCOMMENTS,CONTRACTCOMMENTS " &
+                ",'" & sUsername & "' " &
+                "," & util.GetDateTime() & " " &
+                ",EXCHANGERATE,false,CUSTREPRESASSISTPOSITION," & DateTimeUTC & ",'Open',SERVICELINEID,RIGID,SERVICETYPEGRPCODE,SERVICETYPEGRPTEXT,NOINVITEM,SITEID " &
+                "FROM TICKET " &
+                "WHERE " &
+                "TICKETID = '" & sTicketId & "' "
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "INSERT INTO TICKETSALESITEM " &
+                "(TICKETSALESITEMID " &
+                ",TICKETID " &
+                ",CONTRACTPRICELISTID,CUSTCODEITEM,DESCRIPTION,SALES_PRICE " &
+                ",UNIT_SALE,PRICEUNIT,PRICEUNITUSD,ITEMQTY,ITEMDISC,ITEMAMOUNTNODISC,ITEMAMOUNTNODISCUSD " &
+                ",ITEMAMOUNT,ITEMAMOUNTUSD,DISCVALUE,DISCVALUEUSD,CREATEDUSER,CREATEDDATETIME, DISCTYPE) " &
+                "SELECT REPLACE(TICKETSALESITEMID, '" & sTicketId & ".','" & sTicketIdNew & ".') " &
+                ",'" & sTicketIdNew & "' " &
+                ",CONTRACTPRICELISTID " &
+                ",CUSTCODEITEM,DESCRIPTION,SALES_PRICE,UNIT_SALE,PRICEUNIT,PRICEUNITUSD " &
+                ",ITEMQTY,ITEMDISC,ITEMAMOUNTNODISC,ITEMAMOUNTNODISCUSD,ITEMAMOUNT " &
+                ",ITEMAMOUNTUSD,DISCVALUE,DISCVALUEUSD,'" & sUsername & "'," & util.GetDateTime() & ", DISCTYPE " &
+                "FROM TICKETSALESITEM " &
+                "WHERE " &
+                "TICKETID = '" & sTicketId & "'"
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "INSERT INTO TICKETINVENTORY " &
+                "(TICKETINVENTORYID,TICKETSALESITEMID " &
+                ",INVENTORYITEMID,ITEMQTY " &
+                ",UNIT,DESCRIPTION,CREATEDUSER,CREATEDDATETIME) " &
+                "SELECT " &
+                "REPLACE(TICKETINVENTORYID,'" & sTicketId & ".','" & sTicketIdNew & ".') " &
+                ",REPLACE(TICKETSALESITEMID,'" & sTicketId & ".','" & sTicketIdNew & ".') " &
+                ",INVENTORYITEMID,ITEMQTY,UNIT,DESCRIPTION,'" & sUsername & "' " &
+                "," & util.GetDateTime() & " " &
+                "FROM TICKETINVENTORY " &
+                "WHERE " &
+                "TICKETINVENTORYID LIKE '" & sTicketId & ".%'"
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+
+            Sql = "INSERT INTO TICKETINVHEADER (TICKETINVHEADERID,TICKETID,INVENTORYITEMID,DESCRIPTION " &
+                ",LOTE,DESPATCHED,CONSUMPTION,RETURNED,COMMENTS,CREATEDUSER,CREATEDDATETIME) " &
+                "SELECT " &
+                "REPLACE(TICKETINVHEADERID, '" & sTicketId & ".','" & sTicketIdNew & ".') " &
+                ",'" & sTicketIdNew & "' " &
+                ",INVENTORYITEMID,DESCRIPTION " &
+                ",LOTE,DESPATCHED,CONSUMPTION,RETURNED,COMMENTS,'" & sUsername & "'," & util.GetDateTime() & " " &
+                "FROM TICKETINVHEADER " &
+                "WHERE " &
+                "TICKETID = '" & sTicketId & "' "
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "INSERT INTO TICKETINVLINE (TICKETINVLINEID,TICKETINVHEADERID,TICKETSALESITEMID " &
+                ",ITEMQTY,COMMENTS,CREATEDUSER,CREATEDDATETIME) " &
+                "SELECT " &
+                "REPLACE(TICKETINVLINEID, '" & sTicketId & ".','" & sTicketIdNew & ".') " &
+                ",REPLACE(TICKETINVHEADERID, '" & sTicketId & ".','" & sTicketIdNew & ".') " &
+                ",REPLACE(TICKETSALESITEMID, '" & sTicketId & ".','" & sTicketIdNew & ".') " &
+                ",ITEMQTY,COMMENTS,'" & sUsername & "'," & util.GetDateTime() & " " &
+                "FROM TICKETINVLINE " &
+                "WHERE " &
+                "TICKETINVLINEID  Like '" & sTicketId & ".%'"
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "INSERT INTO TICKETINVADIC (TICKETINVADICID,TICKETID,DISPATCHED,RETURNED " &
+                ",TRANSPCOMPANY,DRIVER,WAREHOUSERESP,OPERATIONRESP,ENGENEERRESP,COMMENTS) " &
+                "SELECT " &
+                "REPLACE(TICKETINVADICID, '" & sTicketId & ".','" & sTicketIdNew & ".') " &
+                ",'" & sTicketIdNew & "' " &
+                ",DISPATCHED,RETURNED " &
+                ",TRANSPCOMPANY,DRIVER,WAREHOUSERESP,OPERATIONRESP,ENGENEERRESP,COMMENTS " &
+                "FROM TICKETINVADIC " &
+                "WHERE " &
+                "TICKETID = '" & sTicketId & "' "
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "INSERT INTO TICKETEQUIPMENT (TICKETEQUIPMENTID,TICKETID,EQUIPMENTID,CONSUMPTION) " &
+                "SELECT " &
+                "REPLACE(TICKETEQUIPMENTID, '" & sTicketId & ".','" & sTicketIdNew & ".') " &
+                ",'" & sTicketIdNew & "' " &
+                ",EQUIPMENTID " &
+                ",CONSUMPTION " &
+                "FROM TICKETEQUIPMENT " &
+                "WHERE " &
+                "TICKETID = '" & sTicketId & "' "
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "INSERT INTO TICKETWORKER  " &
+                "(TICKETWORKERID,TICKETID,WORKERID  " &
+                ",REGISTERDATE,HOURQDE,HOURTRAVEL,HOUROPERATION,HOURSTANDBY,HOURLOST,RESUMEACTIVITY)  " &
+                "SELECT REPLACE(TICKETWORKERID,'" & sTicketId & ".','" & sTicketIdNew & ".') " &
+                ",'" & sTicketIdNew & "' " &
+                ",WORKERID," & util.GetDateTime() & ",HOURQDE,HOURTRAVEL,HOUROPERATION,HOURSTANDBY,HOURLOST,RESUMEACTIVITY " &
+                "FROM TICKETWORKER " &
+                "WHERE " &
+                "TICKETID = '" & sTicketId & "' "
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "INSERT INTO TICKETOPEREP " & _
+             "(TICKETOPEREPID,TICKETID,ACTIVITYDATE,SERVICEDESCR,COMMENTS, ACTIVITYDATEDESC) " & _
+             "SELECT REPLACE(TICKETOPEREPID,'" & sTicketId & ".','" & sTicketIdNew & ".') " & _
+             ",'" & sTicketIdNew & "' " & _
+             ",ACTIVITYDATE,SERVICEDESCR,COMMENTS,ACTIVITYDATEDESC " & _
+             "FROM TICKETOPEREP " & _
+             "WHERE TICKETOPEREP.TICKETID = '" & sTicketId & "'"
+
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "INSERT INTO TICKETOPEREPACT " & _
+            "(TICKETOPEREPACTID,TICKETOPEREPID " & _
+            ",ACTIVITYTIME,DESCRIPTION,LINEORDER,BOLD,ALIGHMENT) " & _
+            "SELECT " & _
+            "REPLACE(TICKETOPEREPACTID,'" & sTicketId & ".','" & sTicketIdNew & ".') " & _
+            ",REPLACE(TICKETOPEREPID,'" & sTicketId & ".','" & sTicketIdNew & ".') " & _
+            ",ACTIVITYTIME,DESCRIPTION,LINEORDER,BOLD,ALIGHMENT " & _
+            "FROM TICKETOPEREPACT " & _
+            "WHERE " & _
+            "EXISTS (SELECT 1 FROM TICKETOPEREP " & _
+            "WHERE TICKETOPEREPACT.TICKETOPEREPID = TICKETOPEREP.TICKETOPEREPID " & _
+            "AND TICKETOPEREP.TICKETID = '" & sTicketId & "') "
+
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "INSERT INTO TICKETSERVICETYPE " &
+            "(TICKETSERVICETYPEID,TICKETID,SERVICETYPEID) " &
+            "SELECT " &
+            "REPLACE(TICKETSERVICETYPEID,'" & sTicketId & ".','" & sTicketIdNew & ".') " &
+            ",'" & sTicketIdNew & "' " &
+            ",SERVICETYPEID " &
+            "FROM TICKETSERVICETYPE " &
+            "WHERE " &
+            "TICKETID = '" & sTicketId & "' "
+
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+
+            bdconnACCESS.CloseConnection()
+            bdconnACCESS.Dispose()
+            bdconnACCESS = Nothing
+
+            Me.UpdateTicketNumber(sUsername, sSecNew)
+
+            Return sTicketIdNew
+
+        Catch ex As Exception
+            Me.DeleteTicket(sTicketIdNew, "ACCESS")
+            MsgBox("Some problems ocurred during Clone Ticket: " & ex.Message)
+            Return ""
+        End Try
+
+    End Function
+
+    Public Sub UpdateConsecLocal()
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        sql = "insert into CONSEC (USERID,CONSEC,USERNAME) " & _
+            "select userid,0,username " & _
+            "from [USER] " & _
+            "where " & _
+            "NOT EXISTS (SELECT 1 " & _
+            "FROM CONSEC " & _
+            "WHERE " & _
+            "[USER].USERNAME = CONSEC.USERNAME) "
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Private Sub GetNewTicketNumber(ByVal sUsername As String, ByRef sTicketID As String, ByRef sConsec As String)
+
+        Dim sql As String
+        Dim ds As New DataSet
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+
+        bdconnACCESS.OpenConnection()
+
+        sql = "SELECT CONSEC, FULLCONSEC FROM CONSEC_NEXT_V WHERE USERNAME = '" & sUsername & "'"
+        bdconnACCESS.ExecuteSQL(sql, ds)
+
+        If ds.Tables(0).Rows.Count > 0 Then
+            For i As Integer = 0 To ds.Tables(0).Rows.Count - 1
+                sTicketID = ds.Tables(0).Rows(i)("FULLCONSEC").ToString()
+                sConsec = ds.Tables(0).Rows(i)("CONSEC").ToString()
+            Next
+        End If
+
+        ds.Dispose()
+        ds = Nothing
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Private Sub UpdateTicketNumber(sUsername As String, sConsec As String)
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        Dim sql As String
+
+        bdconnACCESS.OpenConnection()
+
+        sql = "UPDATE CONSEC SET CONSEC = " & sConsec & " WHERE USERNAME = '" & sUsername & "'"
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Public Sub UpdateCustCodeItemLocal()
+
+        Dim sql As String
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+
+        bdconnACCESS.OpenConnection()
+
+        'Updating the CUSTCODEITEM in the Tickets
+        sql = "UPDATE CONTRACTPRICELIST INNER JOIN TICKETSALESITEM ON CONTRACTPRICELIST.CONTRACTPRICELISTID = TICKETSALESITEM.CONTRACTPRICELISTID " & _
+              "SET TICKETSALESITEM.CUSTCODEITEM = [CONTRACTPRICELIST].[CUSTCODEITEM]"
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Public Sub TicketCancelSQL(sTicketId As String, sCancelReason As String)
+
+        Dim DateTimeUTC As String = util.GetDateTimeUTC()
+
+        Dim bdconn As New clsBancoDadosSQL
+        bdconn.OpenConnection()
+
+        Dim Sql As String
+
+        Sql = "UPDATE TICKET SET TICKETSTATUS='Canceled', CANCELDATETIME=getdate(),TICKET.SYNCDATETIME = " & DateTimeUTC & " " &
+              ",CANCELUSER='" & LCase(sUsername) & "' " &
+              ",CANCELREASON=" & util.SQLConvStrNull(sCancelReason, "s") & " " &
+              ",[UPDATEDDATETIME] = " & util.GetDateTime() & " " &
+              ",[UPDATEDUSER] = '" & sUsername.ToLower & "' " &
+              "WHERE TICKETID = '" & sTicketId & "'"
+
+        bdconn.ExecuteNonSQL(Sql)
+        bdconn.CloseConnection()
+        bdconn.Dispose()
+        bdconn = Nothing
+
+    End Sub
+
+    Public Sub TicketReopenSQL(sTicketId As String, ByVal sUsername As String, ByVal sAuthBy As String, ByVal sComment As String)
+
+        Dim DateTimeUTC As String = util.GetDateTimeUTC()
+
+        Dim bdconn As New clsBancoDadosSQL
+        bdconn.OpenConnection()
+
+        Dim Sql As String
+
+        Sql = "UPDATE TICKET SET TICKETSTATUS='Open',TICKET.SYNCDATETIME = " & DateTimeUTC & " " &
+              ",CLOSEDUSER=NULL " &
+              ",CLOSEDDATE=NULL " &
+              ",[UPDATEDDATETIME] = " & util.GetDateTime() & " " &
+              ",[UPDATEDUSER] = '" & sUsername.ToLower & "' " &
+              "WHERE TICKETID = '" & sTicketId & "'"
+
+        bdconn.ExecuteNonSQL(Sql)
+
+        Sql = "INSERT INTO [TICKETREOPENLOG] " & _
+                "([TICKETID],[REOPENDATE],[REOPENEDBY],[AUTHORIZEDBY] " & _
+                ",[COMMENT]) VALUES ("
+
+        Sql = Sql & "'" & sTicketId & "',"
+        Sql = Sql & "getdate(),"
+        Sql = Sql & "'" & sUsername.ToLower & "',"
+        Sql = Sql & "'" & sAuthBy & "',"
+        Sql = Sql & "" & util.SQLConvStrNull(sComment, "s") & ")"
+
+        bdconn.ExecuteNonSQL(Sql)
+
+        bdconn.CloseConnection()
+        bdconn.Dispose()
+        bdconn = Nothing
+
+    End Sub
+
+    Public Sub UpdateSyncDateTime(sTicketId As String, DBDest As String)
+
+        Dim bdconn As New clsBancoDadosACCESS
+        bdconn.OpenConnection()
+
+        Dim sql As String
+        Dim sTabDest As String
+        Dim DateTimeUTC As String = util.GetDateTimeUTC()
+
+        If DBDest = "SQL" Then
+            sTabDest = "zSQL_"
+        Else
+            sTabDest = ""
+        End If
+
+        sql = "UPDATE " & sTabDest & "TICKET SET SYNCDATETIME = " & DateTimeUTC & " "
+        If DBDest <> "SQL" Then
+            sql = sql & ",SyncDB=FALSE "
+        End If
+        sql = sql & "WHERE TICKETID = '" & sTicketId & "' "
+        bdconn.ExecuteNonSQL(sql)
+
+        bdconn.CloseConnection()
+        bdconn.Dispose()
+        bdconn = Nothing
+
+    End Sub
+
+    Private Sub UpdateSyncDBStatus(sTicketId As String, bSyncStatus As Boolean)
+
+        Dim bdconn As New clsBancoDadosACCESS
+        Dim sql As String
+        bdconn.OpenConnection()
+
+        If bSyncStatus = True Then
+            sql = "UPDATE TICKET SET " & _
+                  "TICKET.SyncDB=TRUE " & _
+                  "WHERE TICKET.TICKETID = '" & sTicketId & "' "
+        Else
+            sql = "UPDATE TICKET SET " & _
+                  "TICKET.SyncDB=FALSE " & _
+                  "WHERE TICKET.TICKETID = '" & sTicketId & "' "
+        End If
+
+        bdconn.ExecuteNonSQL(sql)
+
+        bdconn.CloseConnection()
+        bdconn.Dispose()
+        bdconn = Nothing
+
+    End Sub
+
+    Public Sub UpdateUserTicketSync()
+        Try
+            sLog = ""
+            bErro = False
+
+            Dim bdconnACCESS As New clsBancoDadosACCESS
+            bdconnACCESS.OpenConnection("AccBaseData")
+
+            Dim sql As String
+
+            sql = "UPDATE zSQL_USER SET zSQL_USER.TICKETSYNC = " & util.GetDateTime() & " WHERE USERNAME = '" & sUsername & "' "
+            bdconnACCESS.ExecuteNonSQL(sql)
+
+            bdconnACCESS.CloseConnection()
+            bdconnACCESS.Dispose()
+            bdconnACCESS = Nothing
+
+        Catch ex As Exception
+            bErro = True
+            sLog = "Error: " & ex.Message
+        End Try
+
+    End Sub
+
+
+
+End Class

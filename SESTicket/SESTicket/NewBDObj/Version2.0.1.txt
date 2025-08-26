@@ -1,0 +1,2 @@
+﻿alter table contract
+add LAYOUTTYPE nvarchar(3) default 'L01' not null

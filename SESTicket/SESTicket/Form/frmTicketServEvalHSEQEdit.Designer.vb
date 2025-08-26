@@ -1,0 +1,394 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmTicketServEvalHSEQEdit
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtServiceDescr = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.dtpServiceDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.grpClientAnswer = New System.Windows.Forms.GroupBox()
+        Me.txtObs = New System.Windows.Forms.TextBox()
+        Me.cbxEvalGeneralPercep = New System.Windows.Forms.ComboBox()
+        Me.HSEQANSWERSBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.cbxEvalHSEQPerf = New System.Windows.Forms.ComboBox()
+        Me.HSEQANSWERSBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.cbxEvalComun = New System.Windows.Forms.ComboBox()
+        Me.HSEQANSWERSBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.cbxEvalEquip = New System.Windows.Forms.ComboBox()
+        Me.HSEQANSWERSBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.cbxEvalPersonal = New System.Windows.Forms.ComboBox()
+        Me.HSEQANSWERSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.HSEQ_ANSWERSTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.HSEQ_ANSWERSTableAdapter()
+        Me.GroupBox1.SuspendLayout()
+        Me.grpClientAnswer.SuspendLayout()
+        CType(Me.HSEQANSWERSBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HSEQANSWERSBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HSEQANSWERSBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HSEQANSWERSBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HSEQANSWERSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.txtServiceDescr)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.dtpServiceDate)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(488, 140)
+        Me.GroupBox1.TabIndex = 0
+        Me.GroupBox1.TabStop = False
+        '
+        'txtServiceDescr
+        '
+        Me.txtServiceDescr.Location = New System.Drawing.Point(12, 96)
+        Me.txtServiceDescr.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtServiceDescr.Name = "txtServiceDescr"
+        Me.txtServiceDescr.Size = New System.Drawing.Size(457, 22)
+        Me.txtServiceDescr.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(8, 76)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(134, 17)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Service Description:"
+        '
+        'dtpServiceDate
+        '
+        Me.dtpServiceDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpServiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpServiceDate.Location = New System.Drawing.Point(12, 43)
+        Me.dtpServiceDate.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpServiceDate.Name = "dtpServiceDate"
+        Me.dtpServiceDate.Size = New System.Drawing.Size(127, 22)
+        Me.dtpServiceDate.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(8, 23)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(93, 17)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Service Date:"
+        '
+        'btnSave
+        '
+        Me.btnSave.Location = New System.Drawing.Point(168, 502)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(100, 28)
+        Me.btnSave.TabIndex = 9
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(276, 502)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(100, 28)
+        Me.btnExit.TabIndex = 10
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'grpClientAnswer
+        '
+        Me.grpClientAnswer.Controls.Add(Me.txtObs)
+        Me.grpClientAnswer.Controls.Add(Me.cbxEvalGeneralPercep)
+        Me.grpClientAnswer.Controls.Add(Me.cbxEvalHSEQPerf)
+        Me.grpClientAnswer.Controls.Add(Me.cbxEvalComun)
+        Me.grpClientAnswer.Controls.Add(Me.cbxEvalEquip)
+        Me.grpClientAnswer.Controls.Add(Me.cbxEvalPersonal)
+        Me.grpClientAnswer.Controls.Add(Me.Label8)
+        Me.grpClientAnswer.Controls.Add(Me.Label7)
+        Me.grpClientAnswer.Controls.Add(Me.Label6)
+        Me.grpClientAnswer.Controls.Add(Me.Label5)
+        Me.grpClientAnswer.Controls.Add(Me.Label4)
+        Me.grpClientAnswer.Controls.Add(Me.Label3)
+        Me.grpClientAnswer.ForeColor = System.Drawing.Color.DarkRed
+        Me.grpClientAnswer.Location = New System.Drawing.Point(17, 164)
+        Me.grpClientAnswer.Margin = New System.Windows.Forms.Padding(4)
+        Me.grpClientAnswer.Name = "grpClientAnswer"
+        Me.grpClientAnswer.Padding = New System.Windows.Forms.Padding(4)
+        Me.grpClientAnswer.Size = New System.Drawing.Size(487, 331)
+        Me.grpClientAnswer.TabIndex = 3
+        Me.grpClientAnswer.TabStop = False
+        Me.grpClientAnswer.Text = "Customer Answers"
+        '
+        'txtObs
+        '
+        Me.txtObs.Location = New System.Drawing.Point(65, 197)
+        Me.txtObs.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtObs.Multiline = True
+        Me.txtObs.Name = "txtObs"
+        Me.txtObs.Size = New System.Drawing.Size(403, 110)
+        Me.txtObs.TabIndex = 8
+        '
+        'cbxEvalGeneralPercep
+        '
+        Me.cbxEvalGeneralPercep.DataSource = Me.HSEQANSWERSBindingSource4
+        Me.cbxEvalGeneralPercep.DisplayMember = "DESCRIP"
+        Me.cbxEvalGeneralPercep.FormattingEnabled = True
+        Me.cbxEvalGeneralPercep.Location = New System.Drawing.Point(229, 158)
+        Me.cbxEvalGeneralPercep.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxEvalGeneralPercep.Name = "cbxEvalGeneralPercep"
+        Me.cbxEvalGeneralPercep.Size = New System.Drawing.Size(239, 24)
+        Me.cbxEvalGeneralPercep.TabIndex = 7
+        Me.cbxEvalGeneralPercep.ValueMember = "ANSWERID"
+        '
+        'HSEQANSWERSBindingSource4
+        '
+        Me.HSEQANSWERSBindingSource4.DataMember = "HSEQ_ANSWERS"
+        Me.HSEQANSWERSBindingSource4.DataSource = Me.SESTicketAccessDataSet
+        'Me.HSEQANSWERSBindingSource4.Filter = "EVALUATION = 'HSEQ' AND QUESTION = 5"
+        '
+        'SESTicketAccessDataSet
+        '
+        Me.SESTicketAccessDataSet.DataSetName = "SESTicketAccessDataSet"
+        Me.SESTicketAccessDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.ExcludeSchema
+        '
+        'cbxEvalHSEQPerf
+        '
+        Me.cbxEvalHSEQPerf.DataSource = Me.HSEQANSWERSBindingSource3
+        Me.cbxEvalHSEQPerf.DisplayMember = "DESCRIP"
+        Me.cbxEvalHSEQPerf.FormattingEnabled = True
+        Me.cbxEvalHSEQPerf.Location = New System.Drawing.Point(229, 124)
+        Me.cbxEvalHSEQPerf.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxEvalHSEQPerf.Name = "cbxEvalHSEQPerf"
+        Me.cbxEvalHSEQPerf.Size = New System.Drawing.Size(239, 24)
+        Me.cbxEvalHSEQPerf.TabIndex = 6
+        Me.cbxEvalHSEQPerf.ValueMember = "ANSWERID"
+        '
+        'HSEQANSWERSBindingSource3
+        '
+        Me.HSEQANSWERSBindingSource3.DataMember = "HSEQ_ANSWERS"
+        Me.HSEQANSWERSBindingSource3.DataSource = Me.SESTicketAccessDataSet
+        'Me.HSEQANSWERSBindingSource3.Filter = "EVALUATION = 'HSEQ' AND QUESTION = 4"
+        '
+        'cbxEvalComun
+        '
+        Me.cbxEvalComun.DataSource = Me.HSEQANSWERSBindingSource2
+        Me.cbxEvalComun.DisplayMember = "DESCRIP"
+        Me.cbxEvalComun.FormattingEnabled = True
+        Me.cbxEvalComun.Location = New System.Drawing.Point(229, 91)
+        Me.cbxEvalComun.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxEvalComun.Name = "cbxEvalComun"
+        Me.cbxEvalComun.Size = New System.Drawing.Size(239, 24)
+        Me.cbxEvalComun.TabIndex = 5
+        Me.cbxEvalComun.ValueMember = "ANSWERID"
+        '
+        'HSEQANSWERSBindingSource2
+        '
+        Me.HSEQANSWERSBindingSource2.DataMember = "HSEQ_ANSWERS"
+        Me.HSEQANSWERSBindingSource2.DataSource = Me.SESTicketAccessDataSet
+        ' Me.HSEQANSWERSBindingSource2.Filter = "EVALUATION = 'HSEQ' AND QUESTION = 3"
+        '
+        'cbxEvalEquip
+        '
+        Me.cbxEvalEquip.DataSource = Me.HSEQANSWERSBindingSource1
+        Me.cbxEvalEquip.DisplayMember = "DESCRIP"
+        Me.cbxEvalEquip.FormattingEnabled = True
+        Me.cbxEvalEquip.Location = New System.Drawing.Point(229, 57)
+        Me.cbxEvalEquip.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxEvalEquip.Name = "cbxEvalEquip"
+        Me.cbxEvalEquip.Size = New System.Drawing.Size(239, 24)
+        Me.cbxEvalEquip.TabIndex = 4
+        Me.cbxEvalEquip.ValueMember = "ANSWERID"
+        '
+        'HSEQANSWERSBindingSource1
+        '
+        Me.HSEQANSWERSBindingSource1.DataMember = "HSEQ_ANSWERS"
+        Me.HSEQANSWERSBindingSource1.DataSource = Me.SESTicketAccessDataSet
+        ' Me.HSEQANSWERSBindingSource1.Filter = "EVALUATION = 'HSEQ' AND QUESTION = 2"
+        '
+        'cbxEvalPersonal
+        '
+        Me.cbxEvalPersonal.DataSource = Me.HSEQANSWERSBindingSource
+        Me.cbxEvalPersonal.DisplayMember = "DESCRIP"
+        Me.cbxEvalPersonal.FormattingEnabled = True
+        Me.cbxEvalPersonal.Location = New System.Drawing.Point(229, 23)
+        Me.cbxEvalPersonal.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxEvalPersonal.Name = "cbxEvalPersonal"
+        Me.cbxEvalPersonal.Size = New System.Drawing.Size(239, 24)
+        Me.cbxEvalPersonal.TabIndex = 3
+        Me.cbxEvalPersonal.Text = " "
+        Me.cbxEvalPersonal.ValueMember = "ANSWERID"
+        '
+        'HSEQANSWERSBindingSource
+        '
+        Me.HSEQANSWERSBindingSource.DataMember = "HSEQ_ANSWERS"
+        Me.HSEQANSWERSBindingSource.DataSource = Me.SESTicketAccessDataSet
+        ' Me.HSEQANSWERSBindingSource.Filter = "EVALUATION = 'HSEQ' AND QUESTION = 1"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Black
+        Me.Label8.Location = New System.Drawing.Point(8, 197)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(45, 17)
+        Me.Label8.TabIndex = 5
+        Me.Label8.Text = "OBS:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(8, 161)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(189, 17)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "GENERAL PERCEPTION:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(8, 128)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(177, 17)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "HSEQ PERFORMANCE:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(8, 95)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(130, 17)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "COMUNICATION:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(8, 62)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(103, 17)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "EQUIPMENT:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(8, 27)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(96, 17)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "PERSONAL:"
+        '
+        'HSEQ_ANSWERSTableAdapter
+        '
+        Me.HSEQ_ANSWERSTableAdapter.ClearBeforeFill = True
+        '
+        'frmTicketServEvalHSEQEdit
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(517, 535)
+        Me.Controls.Add(Me.grpClientAnswer)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnSave)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "frmTicketServEvalHSEQEdit"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "SESTicket - HSEQ Service Evaluation"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.grpClientAnswer.ResumeLayout(False)
+        Me.grpClientAnswer.PerformLayout()
+        CType(Me.HSEQANSWERSBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HSEQANSWERSBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HSEQANSWERSBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HSEQANSWERSBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HSEQANSWERSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents dtpServiceDate As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtServiceDescr As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents btnSave As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents grpClientAnswer As System.Windows.Forms.GroupBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents cbxEvalPersonal As System.Windows.Forms.ComboBox
+    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents HSEQANSWERSBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents HSEQ_ANSWERSTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.HSEQ_ANSWERSTableAdapter
+    Friend WithEvents cbxEvalGeneralPercep As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxEvalHSEQPerf As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxEvalComun As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxEvalEquip As System.Windows.Forms.ComboBox
+    Friend WithEvents HSEQANSWERSBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents txtObs As System.Windows.Forms.TextBox
+    Friend WithEvents HSEQANSWERSBindingSource2 As System.Windows.Forms.BindingSource
+    Friend WithEvents HSEQANSWERSBindingSource3 As System.Windows.Forms.BindingSource
+    Friend WithEvents HSEQANSWERSBindingSource4 As System.Windows.Forms.BindingSource
+End Class

@@ -1,0 +1,4 @@
+﻿alter table [dbo].[USER]
+ADD USERLANG VARCHAR(10) DEFAULT 'es' NOT NULL
+
+

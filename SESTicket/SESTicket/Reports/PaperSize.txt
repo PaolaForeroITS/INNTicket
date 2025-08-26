@@ -1,0 +1,4 @@
+﻿Letter (portrait) : 21,59cm; 27,94cm
+Letter (landscape): 27,94cm; 21,59cm
+A4 (portrait): 29,7cm; 21cm
+A4 (landscape): 21cm; 29,7cm

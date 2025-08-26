@@ -1,0 +1,153 @@
+﻿Public Class frmTicketServEvalHSEQ
+
+    Public sTicketId As String = ""
+    Public bTicketReadOnly As Boolean
+
+    Dim util As New clsUtils
+
+    Private Sub frmTicketServEvalHSEQ_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        RefreshGrid()
+    End Sub
+
+
+    Private Sub RefreshGrid()
+        'TODO: This line of code loads data into the 'SESTicketAccessDataSet.TICKETSERVEVAL_HSEQ' table. You can move, or remove it, as needed.
+        Me.TICKETSERVEVAL_HSEQTableAdapter.Fill(Me.SESTicketAccessDataSet.TICKETSERVEVAL_HSEQ)
+        TICKETSERVEVAL_HSEQBindingSource.Filter = "TICKETID='" & sTicketId & "' "
+        dgvTicketEvalHSEQ.Refresh()
+
+    End Sub
+
+
+    Private Sub mnuNewItem_Click(sender As Object, e As EventArgs) Handles mnuNewItem.Click
+
+        Dim sql As String
+        Dim Customer As String = ""
+        Dim ds As New DataSet
+        Dim bdconn As New clsBancoDadosACCESS
+        bdconn.OpenConnection()
+
+        sql = "SELECT CUSTOMERID " &
+              "FROM TICKET T " &
+              "WHERE T.TICKETID = '" & sTicketId & "' "
+        bdconn.ExecuteSQL(sql, ds)
+
+        If ds.Tables(0).Rows.Count > 0 Then
+            For i As Integer = 0 To ds.Tables(0).Rows.Count - 1
+                Customer = ds.Tables(0).Rows(i)("CUSTOMERID").ToString
+            Next
+        End If
+
+        ds.Dispose()
+        ds = Nothing
+        bdconn.CloseConnection()
+        bdconn.Dispose()
+        bdconn = Nothing
+
+        If (Customer = "899999068") Then
+            EcopetrolToolStripMenuItem.Visible = True
+            EcopetrolToolStripMenuItem.Enabled = True
+
+
+        Else
+            EcopetrolToolStripMenuItem.Enabled = False
+            EcopetrolToolStripMenuItem.Visible = False
+
+        End If
+
+
+    End Sub
+
+    Private Sub dgvTicketEvalHSEQ_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
+
+        If dgvTicketEvalHSEQ.RowCount > 0 Then
+
+            Me.Cursor = Cursors.WaitCursor
+
+            Dim frm As New frmTicketServEvalHSEQEdit
+
+            With frm
+                .Init()
+                .sTicketId = Me.sTicketId
+                .sTicketServEvalId = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colTicketServEvalId").Value)
+                .grpClientAnswer.Visible = True
+                .Size = New Size(404, 471)
+                .btnSave.Location = New Point(126, 408)
+                .btnExit.Location = New Point(207, 408)
+                .dtpServiceDate.Value = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colServiceDate").Value)
+                .txtServiceDescr.Text = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colServDescrip").Value)
+                .cbxEvalComun.SelectedIndex = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colEvalComunication").Value)
+                .cbxEvalEquip.SelectedIndex = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colEvalEquipment").Value)
+                .cbxEvalGeneralPercep.SelectedIndex = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colEvalGeneralPercep").Value)
+                .cbxEvalHSEQPerf.SelectedIndex = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colEvalHSEQPerf").Value)
+                .cbxEvalPersonal.SelectedIndex = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colEvalPersonal").Value)
+                .txtObs.Text = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colObs").Value)
+            End With
+
+            Me.Cursor = Cursors.Arrow
+
+            frm.ShowDialog()
+            frm.Dispose()
+            frm = Nothing
+
+            RefreshGrid()
+
+        End If
+
+    End Sub
+
+    Private Sub mnuPrintServEval_Click(sender As Object, e As EventArgs) Handles mnuPrintServEval.Click
+        If dgvTicketEvalHSEQ.RowCount > 0 Then
+            Dim frm As New frmRPTTicketServiceEvaluation
+            With frm
+                .sTicketId = Me.sTicketId
+                .dServiceDate = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colServiceDate").Value)
+                .sDescription = util.TrataDBNull(dgvTicketEvalHSEQ.CurrentRow.Cells("colServDescrip").Value)
+                .ShowDialog()
+                .Dispose()
+            End With
+            frm = Nothing
+        End If
+    End Sub
+
+    Private Sub HSEQToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HSEQToolStripMenuItem.Click
+
+        Dim frm As New frmTicketServEvalHSEQEdit
+        With frm
+            .Init()
+            .sTicketId = Me.sTicketId
+            .sTicketServEvalId = ""
+            .grpClientAnswer.Visible = False
+            .Size = New Size(404, 198)
+            .btnSave.Location = New Point(104, 132)
+            .btnExit.Location = New Point(185, 132)
+            .ShowDialog()
+        End With
+        frm.Dispose()
+        frm = Nothing
+
+        RefreshGrid()
+
+    End Sub
+
+    Private Sub EcopetrolToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EcopetrolToolStripMenuItem.Click
+        Dim frm As New frmTicketServEvalECPEdit
+        With frm
+            .Init()
+            .sTicketId = Me.sTicketId
+            .sTicketServEvalEcpId = ""
+            .grpClientAnswer1.Visible = False
+            .TabControl1.Visible = False
+            .Size = New Size(404, 198)
+            .btnSave.Location = New Point(104, 132)
+            .btnExit.Location = New Point(185, 132)
+            .ShowDialog()
+        End With
+        frm.Dispose()
+        frm = Nothing
+
+        RefreshGrid()
+    End Sub
+
+
+End Class

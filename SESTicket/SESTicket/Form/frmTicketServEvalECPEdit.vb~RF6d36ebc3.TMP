@@ -1,0 +1,13 @@
+﻿Public Class frmTicketServEvalECPEdit
+    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub grpClientAnswer_Enter(sender As Object, e As EventArgs) Handles grpClientAnswer.Enter
+
+    End Sub
+
+    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
+
+    End Sub
+End Class

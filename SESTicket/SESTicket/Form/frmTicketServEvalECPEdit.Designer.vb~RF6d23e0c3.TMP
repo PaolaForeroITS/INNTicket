@@ -1,0 +1,302 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmTicketServEvalECPEdit
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtServiceDescr = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.dtpServiceDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SesTicketAccessDataSet1 = New SESTicket.SESTicketAccessDataSet()
+        Me.grpClientAnswer = New System.Windows.Forms.GroupBox()
+        Me.cbxEvalGeneralPercep = New System.Windows.Forms.ComboBox()
+        Me.cbxEvalHSEQPerf = New System.Windows.Forms.ComboBox()
+        Me.cbxEvalComun = New System.Windows.Forms.ComboBox()
+        Me.cbxEvalEquip = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtObs = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.SesTicketAccessDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.grpClientAnswer.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.txtServiceDescr)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.dtpServiceDate)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(540, 140)
+        Me.GroupBox1.TabIndex = 1
+        Me.GroupBox1.TabStop = False
+        '
+        'txtServiceDescr
+        '
+        Me.txtServiceDescr.Location = New System.Drawing.Point(12, 96)
+        Me.txtServiceDescr.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtServiceDescr.Name = "txtServiceDescr"
+        Me.txtServiceDescr.Size = New System.Drawing.Size(457, 22)
+        Me.txtServiceDescr.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(8, 76)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(134, 17)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Service Description:"
+        '
+        'dtpServiceDate
+        '
+        Me.dtpServiceDate.CustomFormat = "dd/MM/yyyy"
+        Me.dtpServiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpServiceDate.Location = New System.Drawing.Point(12, 43)
+        Me.dtpServiceDate.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtpServiceDate.Name = "dtpServiceDate"
+        Me.dtpServiceDate.Size = New System.Drawing.Size(127, 22)
+        Me.dtpServiceDate.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(8, 23)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(93, 17)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Service Date:"
+        '
+        'SesTicketAccessDataSet1
+        '
+        Me.SesTicketAccessDataSet1.DataSetName = "SESTicketAccessDataSet"
+        Me.SesTicketAccessDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.ExcludeSchema
+        '
+        'grpClientAnswer
+        '
+        Me.grpClientAnswer.Controls.Add(Me.txtObs)
+        Me.grpClientAnswer.Controls.Add(Me.Label8)
+        Me.grpClientAnswer.Controls.Add(Me.GroupBox2)
+        Me.grpClientAnswer.Controls.Add(Me.Label3)
+        Me.grpClientAnswer.ForeColor = System.Drawing.Color.DarkRed
+        Me.grpClientAnswer.Location = New System.Drawing.Point(17, 163)
+        Me.grpClientAnswer.Margin = New System.Windows.Forms.Padding(4)
+        Me.grpClientAnswer.Name = "grpClientAnswer"
+        Me.grpClientAnswer.Padding = New System.Windows.Forms.Padding(4)
+        Me.grpClientAnswer.Size = New System.Drawing.Size(539, 500)
+        Me.grpClientAnswer.TabIndex = 4
+        Me.grpClientAnswer.TabStop = False
+        Me.grpClientAnswer.Text = "1. EFICIENCIA OPERACIONAL"
+        '
+        'cbxEvalGeneralPercep
+        '
+        Me.cbxEvalGeneralPercep.DisplayMember = "DESCRIP"
+        Me.cbxEvalGeneralPercep.FormattingEnabled = True
+        Me.cbxEvalGeneralPercep.Location = New System.Drawing.Point(334, 144)
+        Me.cbxEvalGeneralPercep.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxEvalGeneralPercep.Name = "cbxEvalGeneralPercep"
+        Me.cbxEvalGeneralPercep.Size = New System.Drawing.Size(140, 24)
+        Me.cbxEvalGeneralPercep.TabIndex = 7
+        Me.cbxEvalGeneralPercep.ValueMember = "ANSWERID"
+        '
+        'cbxEvalHSEQPerf
+        '
+        Me.cbxEvalHSEQPerf.DisplayMember = "DESCRIP"
+        Me.cbxEvalHSEQPerf.FormattingEnabled = True
+        Me.cbxEvalHSEQPerf.Location = New System.Drawing.Point(334, 110)
+        Me.cbxEvalHSEQPerf.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxEvalHSEQPerf.Name = "cbxEvalHSEQPerf"
+        Me.cbxEvalHSEQPerf.Size = New System.Drawing.Size(140, 24)
+        Me.cbxEvalHSEQPerf.TabIndex = 6
+        Me.cbxEvalHSEQPerf.ValueMember = "ANSWERID"
+        '
+        'cbxEvalComun
+        '
+        Me.cbxEvalComun.DisplayMember = "DESCRIP"
+        Me.cbxEvalComun.FormattingEnabled = True
+        Me.cbxEvalComun.Location = New System.Drawing.Point(334, 77)
+        Me.cbxEvalComun.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxEvalComun.Name = "cbxEvalComun"
+        Me.cbxEvalComun.Size = New System.Drawing.Size(140, 24)
+        Me.cbxEvalComun.TabIndex = 5
+        Me.cbxEvalComun.ValueMember = "ANSWERID"
+        '
+        'cbxEvalEquip
+        '
+        Me.cbxEvalEquip.DisplayMember = "DESCRIP"
+        Me.cbxEvalEquip.FormattingEnabled = True
+        Me.cbxEvalEquip.Location = New System.Drawing.Point(334, 43)
+        Me.cbxEvalEquip.Margin = New System.Windows.Forms.Padding(4)
+        Me.cbxEvalEquip.Name = "cbxEvalEquip"
+        Me.cbxEvalEquip.Size = New System.Drawing.Size(140, 24)
+        Me.cbxEvalEquip.TabIndex = 4
+        Me.cbxEvalEquip.ValueMember = "ANSWERID"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(14, 147)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(233, 17)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "1.4 NPT - Planeación/Logistica"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(14, 114)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(296, 17)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "1.3 NPT- Procedimientos operacionales"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(14, 81)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(203, 17)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "1.2 NPT - Fallas de equipo"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(14, 48)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(268, 17)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "1.1 Tiempo Real - Tiempo planeado"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(13, 59)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(96, 17)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "PERSONAL:"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.cbxEvalGeneralPercep)
+        Me.GroupBox2.Controls.Add(Me.cbxEvalHSEQPerf)
+        Me.GroupBox2.Controls.Add(Me.cbxEvalComun)
+        Me.GroupBox2.Controls.Add(Me.cbxEvalEquip)
+        Me.GroupBox2.Controls.Add(Me.Label7)
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.Label5)
+        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.ForeColor = System.Drawing.Color.DarkRed
+        Me.GroupBox2.Location = New System.Drawing.Point(16, 40)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(513, 182)
+        Me.GroupBox2.TabIndex = 9
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "TIEMPO"
+        '
+        'txtObs
+        '
+        Me.txtObs.Location = New System.Drawing.Point(74, 370)
+        Me.txtObs.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtObs.Multiline = True
+        Me.txtObs.Name = "txtObs"
+        Me.txtObs.Size = New System.Drawing.Size(403, 110)
+        Me.txtObs.TabIndex = 11
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Black
+        Me.Label8.Location = New System.Drawing.Point(17, 370)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(45, 17)
+        Me.Label8.TabIndex = 10
+        Me.Label8.Text = "OBS:"
+        '
+        'frmTicketServEvalECPEdit
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(569, 668)
+        Me.Controls.Add(Me.grpClientAnswer)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Name = "frmTicketServEvalECPEdit"
+        Me.Text = "frmTicketServEvalECPEdit"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.SesTicketAccessDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.grpClientAnswer.ResumeLayout(False)
+        Me.grpClientAnswer.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.ResumeLayout(False)
+
+    End Sub
+
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents txtServiceDescr As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents dtpServiceDate As DateTimePicker
+    Friend WithEvents Label1 As Label
+    Friend WithEvents SesTicketAccessDataSet1 As SESTicketAccessDataSet
+    Friend WithEvents grpClientAnswer As GroupBox
+    Friend WithEvents cbxEvalGeneralPercep As ComboBox
+    Friend WithEvents cbxEvalHSEQPerf As ComboBox
+    Friend WithEvents cbxEvalComun As ComboBox
+    Friend WithEvents cbxEvalEquip As ComboBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtObs As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents GroupBox2 As GroupBox
+End Class
