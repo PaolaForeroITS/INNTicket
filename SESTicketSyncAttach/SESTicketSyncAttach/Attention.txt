@@ -1,0 +1,2 @@
+﻿path to copy the bin files
+C:\SESTicket\app\attach

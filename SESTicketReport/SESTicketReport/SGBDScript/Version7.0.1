@@ -1,0 +1,284 @@
+﻿
+
+--===========================================
+
+ALTER PROCEDURE [dbo].[sp_ReportList]
+-- =============================================
+-- Author:		Fernando Melo
+-- Create date: 04/01/2017
+-- =============================================
+   @RepGroup		   varchar(100) = null
+
+AS
+DECLARE
+  @t    varchar(15) = ''
+
+BEGIN
+ 
+   SELECT REPORTID
+   ,REPNAME
+   ,RESUME
+   ,REPGROUP
+   FROM REPORT
+   WHERE (REPGROUP = iif(@RepGroup is null,REPGROUP,@RepGroup)
+   and (@RepGroup is null and REPGROUP <> 'Adic')) or 
+   (REPGROUP = 'Adic' and @RepGroup = 'Adic')
+   ORDER BY ORD ASC
+
+ END
+GO
+
+--===========================================
+
+alter  PROCEDURE [dbo].[sp_RptTicketData]
+    @DateType	        varchar(50)  = 'Service Date'
+   ,@DateBegin          datetime     = null
+   ,@DateEnd            datetime     = null
+
+   ,@TicketId	        varchar(max)  = null
+   ,@SuperiorNum	    varchar(max) = null
+   ,@TicketStatus       varchar(max) = null
+   ,@InvoiceStatus      varchar(max) = null
+   ,@InvoiceNumber      varchar(max) = null
+
+   ,@ServiceLineId      varchar(max) = null
+   ,@CustomerId         varchar(max) = null
+   ,@SiteId             varchar(max) = null
+   ,@ShowProformaDupOnly bit = 0
+
+ 
+AS
+DECLARE @TmpTicketList TABLE (TICKETID NVARCHAR(50))
+
+BEGIN
+ 
+    ----------------------
+    -- Tratando Parametros
+    ----------------------
+    set @DateBegin = cast(floor(cast(@DateBegin as float)) as datetime);
+    set @DateEnd = cast(floor(cast(@DateEnd as float)) as datetime);
+    
+	if @TicketId is not null or @TicketId <> '' begin
+	    set @TicketId = '%' + @TicketId + '%'
+	end 
+	else begin
+	    set @TicketId = null
+	end;
+
+	if @InvoiceNumber is  null or @InvoiceNumber = '' 
+	    set @InvoiceNumber = null;
+
+	
+	if @SuperiorNum is null or ISNULL(@SuperiorNum,'-1') = '-1' or  @SuperiorNum = ''
+	    set @SuperiorNum = NULL;
+	else 
+	    set @SuperiorNum = '%' + @SuperiorNum + '%';
+
+
+	if @ServiceLineId is  null or @ServiceLineId = '' begin
+	    set @ServiceLineId = '-1'
+	end;
+
+	if @CustomerId is  null or @CustomerId = '' begin
+	    set @CustomerId = '-1'
+	end;
+
+	if @SiteId is  null or @SiteId = '' or UPPER(@SiteId) = 'ALL' begin
+	    set @SiteId = '-1'
+	end;
+
+	if @TicketStatus is null or @TicketStatus = '-1' or @TicketStatus = 'All' begin
+	    set @TicketStatus = 'Open,Closed'
+	end;
+		
+	----------------------
+    -- Execução
+    ----------------------
+	IF  @DateType = 'Service Date' 
+		insert into @TmpTicketList (TICKETID)
+		select DISTINCT T.TICKETID 
+		from TICKET T
+		left join TICKETINVOICELINE IL ON (T.TICKETID = IL.TICKETID and (IL.ACTIVE = 'YES'))
+		where
+		1 = 1
+		and cast(floor(cast(T.DATESERVICE as float)) as datetime)  between @DateBegin and @DateEnd
+		and (T.TICKETSTATUS in (select * from dbo.fnStringMultValues (@TicketStatus)) )
+		and (T.TICKETID = @TicketId or @TicketId is null or T.TICKETID like @TicketId)
+		and (T.SUPERIORNUM = @SuperiorNum or (@SuperiorNum is null and LEN(IIF(T.SUPERIORNUM IS NULL,'',T.SUPERIORNUM))=0) 
+	    or T.SUPERIORNUM like @SuperiorNum or @SuperiorNum is null)
+		and (T.TICKETSTATUS in (select * from dbo.fnStringMultValues (@TicketStatus)) )
+			and (T.SERVICELINEID = iif(@ServiceLineId = '-1',T.SERVICELINEID,@ServiceLineId))
+		and (T.CUSTOMERID = iif(@CustomerId = '-1',T.CUSTOMERID,@CustomerId))
+		and (T.SITEID = iif(@SiteId = '-1',T.SITEID,@SiteId))
+		and (IL.INVOICENUMBER = @InvoiceNumber or @InvoiceNumber is null )
+		;
+		
+	else if  @DateType = 'Invoice Date' 
+	
+		insert into @TmpTicketList (TICKETID)
+		select DISTINCT T.TICKETID 
+		from TICKET T
+		left join TICKETINVOICELINE IL ON (T.TICKETID = IL.TICKETID and (IL.ACTIVE = 'YES') )
+		where
+		1 = 1
+		and (IL.INVOICEDATE between cast(@DateBegin as date) and cast(@DateEnd as date))
+		and (T.TICKETSTATUS in (select * from dbo.fnStringMultValues (@TicketStatus)) )
+		and (T.TICKETID = @TicketId or @TicketId is null or T.TICKETID like @TicketId)
+		and (T.SUPERIORNUM = @SuperiorNum or (@SuperiorNum is null and LEN(IIF(T.SUPERIORNUM IS NULL,'',T.SUPERIORNUM))=0) 
+	    or T.SUPERIORNUM like @SuperiorNum or @SuperiorNum is null)
+		and (T.TICKETSTATUS in (select * from dbo.fnStringMultValues (@TicketStatus)) )
+			and (T.SERVICELINEID = iif(@ServiceLineId = '-1',T.SERVICELINEID,@ServiceLineId))
+		and (T.CUSTOMERID = iif(@CustomerId = '-1',T.CUSTOMERID,@CustomerId))
+		and (T.SITEID = iif(@SiteId = '-1',T.SITEID,@SiteId))
+		and (IL.INVOICENUMBER = @InvoiceNumber or @InvoiceNumber is null )
+		;
+	
+	else
+		insert into @TmpTicketList (TICKETID)
+		select DISTINCT T.TICKETID 
+		from TICKET T
+		left join TICKETINVOICELINE IL ON (T.TICKETID = IL.TICKETID and (IL.ACTIVE = 'YES') )
+		where
+		1 = 1
+		and (T.CLOSEDDATE between cast(@DateBegin as date) and cast(@DateEnd as date))
+		and (T.TICKETSTATUS in (select * from dbo.fnStringMultValues (@TicketStatus)) )
+		and (T.TICKETID = @TicketId or @TicketId is null or T.TICKETID like @TicketId)
+		and (T.SUPERIORNUM = @SuperiorNum or (@SuperiorNum is null and LEN(IIF(T.SUPERIORNUM IS NULL,'',T.SUPERIORNUM))=0) 
+	    or T.SUPERIORNUM like @SuperiorNum or @SuperiorNum is null)
+		and (T.TICKETSTATUS in (select * from dbo.fnStringMultValues (@TicketStatus)) )
+			and (T.SERVICELINEID = iif(@ServiceLineId = '-1',T.SERVICELINEID,@ServiceLineId))
+		and (T.CUSTOMERID = iif(@CustomerId = '-1',T.CUSTOMERID,@CustomerId))
+		and (T.SITEID = iif(@SiteId = '-1',T.SITEID,@SiteId))
+		and (IL.INVOICENUMBER = @InvoiceNumber or @InvoiceNumber is null )
+		;
+
+	if @ShowProformaDupOnly = 1 
+	begin
+		DELETE @TmpTicketList WHERE TICKETID NOT IN (
+				SELECT TICKETID FROM TICKET
+				WHERE SUPERIORNUM IN (
+				SELECt SUPERIORNUM FROM TICKET
+				WHERE SUPERIORNUM IS NOT NULL
+				GROUP BY SUPERIORNUM
+				HAVING COUNT(*) > 1)
+				)
+	end
+
+	----------------------
+    -- Query Final
+    ----------------------
+	SELECT 
+	 I.[TICKETID]
+	,I.[SUPERIORNUM]
+	,I.[DATESERVICE]
+	,I.[INVOICEDATE]
+	,I.[INVOICEDETAIL]
+	,I.[CREATEDBY]
+	,I.[TICKETSTATUS]
+	,I.[SERVICELINE]
+	,I.[CUSTOMER]
+	,I.[CONTRACTNUMBER]
+	,I.[SITE]
+	,I.[WELLID]
+	,I.[LINETYPE]
+	,I.SERVICETYPEGRPCODE 
+	,I.SERVICETYPE
+	,I.[CURRENCY]
+	,I.[SUBTOTAL]
+	,I.[DISCOUNT]
+	,I.[TICKETTOTAL]
+	,I.[TICKETINVOICEID]
+	,I.[INVOICESTATUS]
+	,I.[SERVICELINEID]
+	,I.[CUSTOMERID]
+	,I.[SITEID]
+	,I.[INVOICETOTAL]
+	,I.[DIF]
+	,I.CLOSEDDATE
+	,I.DM
+	,I.JOBNUMBER
+	,I.SERVICEORDERNUM
+	,I.SUPERIORSUPERVNAME
+	,(SELECT COUNT(*) FROM TICKETFILE F WHERE F.TICKETID = I.TICKETID) AS FILEATTACH
+	FROM [INVOICE_V] I 
+	INNER JOIN @TmpTicketList TMP ON (I.TICKETID = TMP.TICKETID)
+	WHERE
+	1 =1
+	and (I.INVOICESTATUS in (select * from dbo.fnStringMultValues (@InvoiceStatus)) OR @InvoiceStatus IS NULL)
+	order by  I.[DATESERVICE] asc;
+
+END
+
+
+
+
+GO
+
+--=============================================
+
+
+
+CREATE  PROCEDURE [dbo].[sp_RptInvoiceDocumentList]
+    @DateBegin          datetime     = null
+   ,@DateEnd            datetime     = null
+
+    
+AS
+DECLARE @TmpTicketList TABLE (TICKETID NVARCHAR(50))
+
+BEGIN
+ 
+    ----------------------
+    -- Tratando Parametros
+    ----------------------
+    set @DateBegin = cast(floor(cast(@DateBegin as float)) as datetime);
+    set @DateEnd = cast(floor(cast(@DateEnd as float)) as datetime);
+		
+	----------------------
+    -- Query Final
+    ----------------------
+	SELECT 
+	   [TICKETID]
+      ,[SERVICETICKET]
+      ,[SERVICEDATE]
+      ,[CLOSEDDATE]
+      ,[CREATEDBY]
+      ,[TICKETSTATUS]
+      ,[SERVICETYPEGRPCODE]
+      ,[SERVICETYPE]
+      ,[JOBDESCRIPTION]
+      ,[SERVICELINE]
+      ,[CUSTOMER]
+      ,[CONTRACTID]
+      ,[CONTRACTNUMBER]
+      ,[SITE]
+      ,[WELLID]
+      ,[TICKETINVOICEID]
+      ,[SERVICELINEID]
+      ,[CUSTOMERID]
+      ,[SITEID]
+      ,[DM]
+      ,[JOBNUMBER]
+      ,[SERVICEORDERNUM]
+      ,[INVOICEDATE]
+      ,[INVOICESTATUS]
+      ,[INVOICENUMBER]
+      ,[INVOICEAMOUNT]
+      ,[COMMENT]
+	  ,[CURRENCY]
+  FROM [dbo].[INVOICE_REPORT_V]
+  	where
+	1 = 1
+	and (INVOICEDATE between cast(@DateBegin as date) and cast(@DateEnd as date))
+	and TICKETSTATUS <> 'Canceled'
+	order by [TICKETID] asc;
+
+END
+
+
+
+
+
+GO
+
+insert into REPORT VALUES ('frmRepInvoiceDocumentList','INVOICE DOCUMENT LIST','Invoices documents and amounts by Ticket','Ticket',8)

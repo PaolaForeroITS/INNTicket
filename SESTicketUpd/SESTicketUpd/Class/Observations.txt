@@ -1,0 +1,5 @@
+﻿Comando para Extrair
+7z.exe x C:\SESTicket\update\release\SESTicket_v1.3.4.zip -oC:\SESTicket\update\release\SESTicket_v1.3.4 -y
+
+Comando para Compactar
+7z.exe a -tzip C:\SESTicket\update\bkp\SESTicket.zip C:\SESTicket\app C:\SESTicket\data

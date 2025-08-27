@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SESTICKET"
+  DTS:DTSID="{7F700640-D021-455A-BE20-DE1B347BE0B3}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=COLSQL01;User ID=usrSESTICKET;Initial Catalog=SESTICKET;Provider=SQLNCLI11.1;Persist Security Info=True;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAR6+uPp8UOkmzqVX/ie6e4gAAAAACAAAAAAADZgAAwAAAABAAAAAUUy1BdeiU+u2YkSc4QkxFAAAAAASAAACgAAAAEAAAAPYVEQ7Dk1tIQnxMB6rSHyJ4AAAAnHvLgxloxeBQ9/3QLeEcTNHm3rOFr09LTyPCe1DIU39VTPe30t+zLte0TsQfUmtCSkVMG+FhFOxRIkJCf4ODltcMnw1PVKJdLkJ30OWXvnqAjLYE5EVOvjyVRRJwJMLuvlLl7b/gUEyfJ49ysbJhnQRBj87xAGVuFAAAAIKVHEZJz0L5BtTp1+snt3HIdevv</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

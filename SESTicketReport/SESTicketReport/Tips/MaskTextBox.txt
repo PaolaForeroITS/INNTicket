@@ -1,0 +1,13 @@
+﻿    <%-- Masking Fields: Its necessary include ClientIDMode="Static" in the Textbox--%>
+    <script src="../../Scripts/jquery-3.2.1.min.js"></script>
+    <script src="../../Scripts/jquery.maskedinput.min.js"></script>
+
+    <script type="text/javascript">
+         jQuery(function ($) {
+             $("#txtServiceDateBegin").mask("99/99/9999");
+             $("#txtServiceDateEnd").mask("99/99/9999");
+         });
+    </script>  
+
+ <asp:TextBox ID="txtServiceDateBegin" runat="server" ClientIDMode="Static"  MaxLength="10"></asp:TextBox>
+      

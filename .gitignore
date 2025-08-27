@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/SESTicket/.vs/SESTicket/FileContentIndex/3fa02b1f-9ec1-4342-8305-6718d1b2c9c5.vsidx
+/SESTicket/.vs/SESTicket/FileContentIndex/7f6e07dd-2416-463c-b525-72cd0db3cd2b.vsidx
+/SESTicket/.vs/SESTicket/FileContentIndex/efe01451-80cc-4734-b8c1-647be4a3f1a8.vsidx
+/SESTicket/.vs/SESTicket/v17/.suo
+/SESTicket/.vs/SESTicket/FileContentIndex/efe01451-80cc-4734-b8c1-647be4a3f1a8.vsidx
+/SESTicket/.vs/SESTicket/v17/DocumentLayout.backup.json
+/SESTicket/.vs/SESTicket/v17/DocumentLayout.json
+/SESTicket/.vs/SESTicket/v17/fileList.bin
+/SESTicket/.vs/SESTicket/v17/HierarchyCache.v1.txt
+/SESTicket/.vs/SESTicket/FileContentIndex/508e5b6a-f7b0-4312-96b3-549ed2cbd81c.vsidx
+/SESTicket/.vs/SESTicket/FileContentIndex/e9c714fa-afbb-4ded-aac8-d521f81f52fc.vsidx
+/SESTicket/.vs/SESTicket/FileContentIndex

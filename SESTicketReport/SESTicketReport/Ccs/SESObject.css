@@ -1,0 +1,110 @@
+﻿body {
+}
+
+/*Login Area*/
+.SupLabelTitle {
+    position: absolute;
+    top: -81px;
+    color: #FFFFFF;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.SupWelcome {
+    position: absolute;
+    color: #1E3561;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.SupComplem {
+    color: #1E3561;
+    font-family: Calibri;
+    font-size: 12px;
+}
+
+.InvalidCredentials {
+    color: red;
+    font-family: Calibri;
+    font-size: 12px;
+}
+
+.auto-style7 {
+    width: 69px;
+    height: 70px;
+}
+/*Flag Header*/
+.SupLabelWhiteBold {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.SupLabelWhiteBold {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*Objects*/
+.SupLabel {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.SupLabelBold {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.SupLabelBlueBold {
+    color: #1E3561;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.SupLabelWhiteBold {
+    color: #ffffff;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.SupLabelWhite {
+    color: #ffffff;
+    font-family: Calibri;
+}
+
+.SupLabelRedBold {
+    color: red;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.SupTextBox {
+    font-family: Calibri;
+    height: 25px;
+}
+
+.SupHiddenCol {
+    display: none;
+}
+
+.SupGridViewHeader1 {
+    font-family: Calibri;
+    font-weight: bold;
+    background-color: lightgray;
+    text-wrap: normal;
+}
+
+.SupGridTextBox {
+    display: inline;
+    text-align: justify;
+    font-family: Calibri;
+    font-size: 14px;
+    overflow: hidden;
+    resize: none;
+}

@@ -97,7 +97,6 @@
               "FROM INVENTORYCLASS IC " &
               "ORDER BY IC.DESCRIPTION "
 
-
         bdconnSQL.ExecuteSQL(sql, ds)
 
         If ds.Tables(0).Rows.Count > 0 Then

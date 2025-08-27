@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SESTicket_SSAS", "SESTicket_SSAS\SESTicket_SSAS.dwproj", "{ECC97FAD-4324-4B52-A536-6ADFA74F547C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECC97FAD-4324-4B52-A536-6ADFA74F547C}.Development|Default.ActiveCfg = Development
+		{ECC97FAD-4324-4B52-A536-6ADFA74F547C}.Development|Default.Build.0 = Development
+		{ECC97FAD-4324-4B52-A536-6ADFA74F547C}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64116A4C-DF87-4E62-9E3E-D7EBE3F5E507}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://austfsapp01:8080/tfs/latam
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SESTicket_SSAS\\SESTicket_SSAS.dwproj
+		SccProjectName1 = SESTicket_SSAS
+		SccLocalPath1 = SESTicket_SSAS
+	EndGlobalSection
+EndGlobal

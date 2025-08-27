@@ -1,0 +1,152 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>14.0.1016.285</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+U0FLPC9Qcm9qZWN0TmFtZT4NCiAgPEF1eFBhdGg+U0FLPC9BdXhQYXRoPg0KICA8TG9jYWxQYXRoPlNBSzwvTG9jYWxQYXRoPg0KICA8UHJvdmlkZXI+U0FLPC9Qcm92aWRlcj4NCjwvU291cmNlQ29udHJvbEluZm8+</State>
+  <Database>
+    <Name>SESTICKET_SSAS.database</Name>
+    <FullPath>SESTICKET_SSAS.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Argentina-TicketByServiceDate.cube</Name>
+      <FullPath>Argentina-TicketByServiceDate.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Argentina-TicketByServiceDate.partitions</Name>
+          <FullPath>Argentina-TicketByServiceDate.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Argentina-TicketByClosedDate.cube</Name>
+      <FullPath>Argentina-TicketByClosedDate.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Argentina-TicketByClosedDate.partitions</Name>
+          <FullPath>Argentina-TicketByClosedDate.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Argentina-TicketByInvoiceDate.cube</Name>
+      <FullPath>Argentina-TicketByInvoiceDate.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Argentina-TicketByInvoiceDate.partitions</Name>
+          <FullPath>Argentina-TicketByInvoiceDate.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Colombia-TicketByServiceDate.cube</Name>
+      <FullPath>Colombia-TicketByServiceDate.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Colombia-TicketByServiceDate.partitions</Name>
+          <FullPath>Colombia-TicketByServiceDate.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>TimeOrig.dim</Name>
+      <FullPath>TimeOrig.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Well.dim</Name>
+      <FullPath>Well.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer.dim</Name>
+      <FullPath>Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Country.dim</Name>
+      <FullPath>Country.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Service Line.dim</Name>
+      <FullPath>Service Line.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Site.dim</Name>
+      <FullPath>Site.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ticket Status.dim</Name>
+      <FullPath>Ticket Status.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Contract.dim</Name>
+      <FullPath>Contract.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Service Date.dim</Name>
+      <FullPath>Service Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Closed Date.dim</Name>
+      <FullPath>Closed Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Invoice Status.dim</Name>
+      <FullPath>Invoice Status.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Invoice Date.dim</Name>
+      <FullPath>Invoice Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ticket Detail.dim</Name>
+      <FullPath>Ticket Detail.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>SESTICKET_DW.ds</Name>
+      <FullPath>SESTICKET_DW.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>SESTICKET_DW.dsv</Name>
+      <FullPath>SESTICKET_DW.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Admin.role</Name>
+      <FullPath>Admin.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Argentina.role</Name>
+      <FullPath>Argentina.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Colombia.role</Name>
+      <FullPath>Colombia.role</FullPath>
+    </ProjectItem>
+  </Roles>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>SESTICKET DW</Id>
+            <Name>SESTICKET DW</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=LATAMSQL01;Persist Security Info=True;Password=;User ID=;Initial Catalog=SESTICKET_DW</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>SESTICKET DW</Id>
+            <Name>SESTICKET DW</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

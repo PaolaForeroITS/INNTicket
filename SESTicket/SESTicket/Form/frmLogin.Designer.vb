@@ -37,33 +37,37 @@ Partial Class frmLogin
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 13)
+        Me.PictureBox1.Location = New System.Drawing.Point(16, 16)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(53, 59)
+        Me.PictureBox1.Size = New System.Drawing.Size(71, 73)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(133, 48)
+        Me.txtPassword.Location = New System.Drawing.Point(177, 59)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(154, 20)
+        Me.txtPassword.Size = New System.Drawing.Size(204, 22)
         Me.txtPassword.TabIndex = 2
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(133, 22)
+        Me.txtUsername.Location = New System.Drawing.Point(177, 27)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(154, 20)
+        Me.txtUsername.Size = New System.Drawing.Size(204, 22)
         Me.txtUsername.TabIndex = 1
         '
         'btnLogin
         '
-        Me.btnLogin.Location = New System.Drawing.Point(133, 98)
+        Me.btnLogin.Location = New System.Drawing.Point(177, 121)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(75, 23)
+        Me.btnLogin.Size = New System.Drawing.Size(100, 28)
         Me.btnLogin.TabIndex = 3
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = True
@@ -71,26 +75,29 @@ Partial Class frmLogin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(71, 48)
+        Me.Label1.Location = New System.Drawing.Point(95, 59)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 13)
+        Me.Label1.Size = New System.Drawing.Size(70, 16)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Password:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(71, 22)
+        Me.Label2.Location = New System.Drawing.Point(95, 27)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 13)
+        Me.Label2.Size = New System.Drawing.Size(73, 16)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Username:"
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(214, 98)
+        Me.btnExit.Location = New System.Drawing.Point(285, 121)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.Size = New System.Drawing.Size(100, 28)
         Me.btnExit.TabIndex = 4
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
@@ -98,19 +105,20 @@ Partial Class frmLogin
         'chkCheckCredential
         '
         Me.chkCheckCredential.AutoSize = True
-        Me.chkCheckCredential.Location = New System.Drawing.Point(133, 75)
+        Me.chkCheckCredential.Location = New System.Drawing.Point(177, 92)
+        Me.chkCheckCredential.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkCheckCredential.Name = "chkCheckCredential"
-        Me.chkCheckCredential.Size = New System.Drawing.Size(106, 17)
+        Me.chkCheckCredential.Size = New System.Drawing.Size(132, 20)
         Me.chkCheckCredential.TabIndex = 6
         Me.chkCheckCredential.Text = "Save Credentials"
         Me.chkCheckCredential.UseVisualStyleBackColor = True
         '
         'frmLogin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(308, 126)
+        Me.ClientSize = New System.Drawing.Size(411, 155)
         Me.Controls.Add(Me.chkCheckCredential)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.Label2)
@@ -121,11 +129,12 @@ Partial Class frmLogin
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket"
+        Me.Text = "INNTicket"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

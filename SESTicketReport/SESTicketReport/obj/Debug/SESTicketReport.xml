@@ -1,0 +1,2599 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SESTicketReport
+</name>
+</assembly>
+<members>
+<member name="T:SESTicketReport.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:SESTicketReport.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:SESTicketReport.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:SESTicketReport.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:SESTicketReport.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:SESTicketReport.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="F:SESTicketReport.frmInvalidUser._Image1">
+<summary>
+Image1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmInvalidUser._mspDefault">
+<summary>
+mspDefault control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmInvalidUser._lblUser">
+<summary>
+lblUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmInvalidUser._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmInvalidUser._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.mspDefault._cphhead">
+<summary>
+cphhead control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.mspDefault._Image1">
+<summary>
+Image1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.mspDefault._mspDefault">
+<summary>
+mspDefault control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.mspDefault._lblWelcome">
+<summary>
+lblWelcome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.mspDefault._cphBody">
+<summary>
+cphBody control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._lblServiceDataBegin">
+<summary>
+lblServiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._txtServiceDateBegin">
+<summary>
+txtServiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._lblServiceDataEnd">
+<summary>
+lblServiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._txtServiceDateEnd">
+<summary>
+txtServiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._lblTicketID">
+<summary>
+lblTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._txtTicketID">
+<summary>
+txtTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._lblSiteId">
+<summary>
+lblSiteId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._ddlSiteId">
+<summary>
+ddlSiteId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._SITEds">
+<summary>
+SITEds control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._pnlTicketStatus">
+<summary>
+pnlTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._lblTicketStatus">
+<summary>
+lblTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._chkOpen">
+<summary>
+chkOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._lblTicketStatusOpen">
+<summary>
+lblTicketStatusOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._chkClosed">
+<summary>
+chkClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._lblClosed">
+<summary>
+lblClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._chkCanceled">
+<summary>
+chkCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._lblCanceled">
+<summary>
+lblCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._lblShowHeader">
+<summary>
+lblShowHeader control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._ddlShowHeader">
+<summary>
+ddlShowHeader control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlInicioOperaciones._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._lblServiceDataBegin">
+<summary>
+lblServiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._txtServiceDateBegin">
+<summary>
+txtServiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._lblServiceDataEnd">
+<summary>
+lblServiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._txtServiceDateEnd">
+<summary>
+txtServiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._lblTicketID">
+<summary>
+lblTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._txtTicketID">
+<summary>
+txtTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._lblSiteId">
+<summary>
+lblSiteId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._ddlSiteId">
+<summary>
+ddlSiteId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._SITEds">
+<summary>
+SITEds control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._pnlTicketStatus">
+<summary>
+pnlTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._lblTicketStatus">
+<summary>
+lblTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._chkOpen">
+<summary>
+chkOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._lblTicketStatusOpen">
+<summary>
+lblTicketStatusOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._chkClosed">
+<summary>
+chkClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._lblClosed">
+<summary>
+lblClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._chkCanceled">
+<summary>
+chkCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._lblCanceled">
+<summary>
+lblCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._lblShowHeader">
+<summary>
+lblShowHeader control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._ddlShowHeader">
+<summary>
+ddlShowHeader control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._lblOnlyDuplicates">
+<summary>
+lblOnlyDuplicates control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._ddlOnlyDuplicate">
+<summary>
+ddlOnlyDuplicate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGControlProformaValorizada._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._lblServiceDataBegin">
+<summary>
+lblServiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._txtServiceDateBegin">
+<summary>
+txtServiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._lblServiceDataEnd">
+<summary>
+lblServiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._txtServiceDateEnd">
+<summary>
+txtServiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._lblTicketID">
+<summary>
+lblTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._txtTicketID">
+<summary>
+txtTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._lblCreatedBy">
+<summary>
+lblCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._txtCreatedBy">
+<summary>
+txtCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._pnlCol3">
+<summary>
+pnlCol3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._ddlSiteId">
+<summary>
+ddlSiteId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._SITEds">
+<summary>
+SITEds control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._ddlServiceLineID">
+<summary>
+ddlServiceLineID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._SERVICELINEds">
+<summary>
+SERVICELINEds control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._pnlTicketStatus">
+<summary>
+pnlTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._lblTicketStatus">
+<summary>
+lblTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._chkOpen">
+<summary>
+chkOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._lblTicketStatusOpen">
+<summary>
+lblTicketStatusOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._chkClosed">
+<summary>
+chkClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._lblClosed">
+<summary>
+lblClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._chkCanceled">
+<summary>
+chkCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._lblCanceled">
+<summary>
+lblCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._lblShowHeader">
+<summary>
+lblShowHeader control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._ddlShowHeader">
+<summary>
+ddlShowHeader control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepAdicARGTicketAnalyticalResumed._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmReportMain._imgPageHeader">
+<summary>
+imgPageHeader control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmReportMain._pnlHeader">
+<summary>
+pnlHeader control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmReportMain._lblPageHeader">
+<summary>
+lblPageHeader control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmReportMain._pnlReport">
+<summary>
+pnlReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmReportMain._dgvReport">
+<summary>
+dgvReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmReportMain._DEPds">
+<summary>
+DEPds control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmReportMain._pnlRepAdic">
+<summary>
+pnlRepAdic control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmReportMain._dgvReportAdic">
+<summary>
+dgvReportAdic control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmReportMain._REPAdicDs">
+<summary>
+REPAdicDs control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._lblServiceDataBegin">
+<summary>
+lblServiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._txtServiceDateBegin">
+<summary>
+txtServiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._lblServiceDataEnd">
+<summary>
+lblServiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._txtServiceDateEnd">
+<summary>
+txtServiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._lblTicketID">
+<summary>
+lblTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._txtTicketID">
+<summary>
+txtTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._lblCreatedBy">
+<summary>
+lblCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._txtCreatedBy">
+<summary>
+txtCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._chkOpenByInvoice">
+<summary>
+chkOpenByInvoice control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._lblOpenByInvoice">
+<summary>
+lblOpenByInvoice control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._pnlTicketStatus">
+<summary>
+pnlTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._lblTicketStatus">
+<summary>
+lblTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._chkOpen">
+<summary>
+chkOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._lblTicketStatusOpen">
+<summary>
+lblTicketStatusOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._chkClosed">
+<summary>
+chkClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._lblClosed">
+<summary>
+lblClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._chkCanceled">
+<summary>
+chkCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._lblCanceled">
+<summary>
+lblCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketAnalytical._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._lblServiceDataBegin">
+<summary>
+lblServiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._txtServiceDateBegin">
+<summary>
+txtServiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._lblServiceDataEnd">
+<summary>
+lblServiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._txtServiceDateEnd">
+<summary>
+txtServiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._lblTicketID">
+<summary>
+lblTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._txtTicketID">
+<summary>
+txtTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._lblCreatedBy">
+<summary>
+lblCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._txtCreatedBy">
+<summary>
+txtCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._pnlTicketStatus">
+<summary>
+pnlTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._lblTicketStatus">
+<summary>
+lblTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._chkOpen">
+<summary>
+chkOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._lblTicketStatusOpen">
+<summary>
+lblTicketStatusOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._chkClosed">
+<summary>
+chkClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._lblClosed">
+<summary>
+lblClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._chkCanceled">
+<summary>
+chkCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._lblCanceled">
+<summary>
+lblCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketEquipment._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._lblServiceDataBegin">
+<summary>
+lblServiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._txtServiceDateBegin">
+<summary>
+txtServiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._lblServiceDataEnd">
+<summary>
+lblServiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._txtServiceDateEnd">
+<summary>
+txtServiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._lblTicketID">
+<summary>
+lblTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._txtTicketID">
+<summary>
+txtTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._lblCreatedBy">
+<summary>
+lblCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._txtCreatedBy">
+<summary>
+txtCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._pnlTicketStatus">
+<summary>
+pnlTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._lblTicketStatus">
+<summary>
+lblTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._chkOpen">
+<summary>
+chkOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._lblTicketStatusOpen">
+<summary>
+lblTicketStatusOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._chkClosed">
+<summary>
+chkClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._lblClosed">
+<summary>
+lblClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._chkCanceled">
+<summary>
+chkCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._lblCanceled">
+<summary>
+lblCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketHSEQServEval._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._lblServiceDataBegin">
+<summary>
+lblServiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._txtServiceDateBegin">
+<summary>
+txtServiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._lblServiceDataEnd">
+<summary>
+lblServiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._txtServiceDateEnd">
+<summary>
+txtServiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._lblTicketID">
+<summary>
+lblTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._txtTicketID">
+<summary>
+txtTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._lblCreatedBy">
+<summary>
+lblCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._txtCreatedBy">
+<summary>
+txtCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._pnlTicketStatus">
+<summary>
+pnlTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._lblTicketStatus">
+<summary>
+lblTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._chkOpen">
+<summary>
+chkOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._lblTicketStatusOpen">
+<summary>
+lblTicketStatusOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._chkClosed">
+<summary>
+chkClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._lblClosed">
+<summary>
+lblClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._chkCanceled">
+<summary>
+chkCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._lblCanceled">
+<summary>
+lblCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvConsolidated._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._lblServiceDataBegin">
+<summary>
+lblServiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._txtServiceDateBegin">
+<summary>
+txtServiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._lblServiceDataEnd">
+<summary>
+lblServiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._txtServiceDateEnd">
+<summary>
+txtServiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._lblTicketID">
+<summary>
+lblTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._txtTicketID">
+<summary>
+txtTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._lblCreatedBy">
+<summary>
+lblCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._txtCreatedBy">
+<summary>
+txtCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._pnlTicketStatus">
+<summary>
+pnlTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._lblTicketStatus">
+<summary>
+lblTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._chkOpen">
+<summary>
+chkOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._lblTicketStatusOpen">
+<summary>
+lblTicketStatusOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._chkClosed">
+<summary>
+chkClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._lblClosed">
+<summary>
+lblClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._chkCanceled">
+<summary>
+chkCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._lblCanceled">
+<summary>
+lblCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketInvOpenBySalesItem._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._lblServiceDataBegin">
+<summary>
+lblServiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._txtServiceDateBegin">
+<summary>
+txtServiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._lblServiceDataEnd">
+<summary>
+lblServiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._txtServiceDateEnd">
+<summary>
+txtServiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._lblTicketID">
+<summary>
+lblTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._txtTicketID">
+<summary>
+txtTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._lblCreatedBy">
+<summary>
+lblCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._txtCreatedBy">
+<summary>
+txtCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._pnlTicketStatus">
+<summary>
+pnlTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._lblTicketStatus">
+<summary>
+lblTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._chkOpen">
+<summary>
+chkOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._lblTicketStatusOpen">
+<summary>
+lblTicketStatusOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._chkClosed">
+<summary>
+chkClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._lblClosed">
+<summary>
+lblClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._chkCanceled">
+<summary>
+chkCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._lblCanceled">
+<summary>
+lblCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketSalesItemL02._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._lblServiceDataBegin">
+<summary>
+lblServiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._txtServiceDateBegin">
+<summary>
+txtServiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._lblServiceDataEnd">
+<summary>
+lblServiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._txtServiceDateEnd">
+<summary>
+txtServiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._lblTicketID">
+<summary>
+lblTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._txtTicketID">
+<summary>
+txtTicketID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._lblCreatedBy">
+<summary>
+lblCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._txtCreatedBy">
+<summary>
+txtCreatedBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._pnlTicketStatus">
+<summary>
+pnlTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._lblTicketStatus">
+<summary>
+lblTicketStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._chkOpen">
+<summary>
+chkOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._lblTicketStatusOpen">
+<summary>
+lblTicketStatusOpen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._chkClosed">
+<summary>
+chkClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._lblClosed">
+<summary>
+lblClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._chkCanceled">
+<summary>
+chkCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._lblCanceled">
+<summary>
+lblCanceled control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.frmRepTicketWorker._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.rptInvoiceDocumentList._btnBack">
+<summary>
+btnBack control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.rptInvoiceDocumentList._pnlFilter">
+<summary>
+pnlFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.rptInvoiceDocumentList._lblInvoiceDataBegin">
+<summary>
+lblInvoiceDataBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.rptInvoiceDocumentList._txtInvoiceDateBegin">
+<summary>
+txtInvoiceDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.rptInvoiceDocumentList._lblInvoiceDataEnd">
+<summary>
+lblInvoiceDataEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.rptInvoiceDocumentList._txtInvoiceDateEnd">
+<summary>
+txtInvoiceDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.rptInvoiceDocumentList._btnGenReport">
+<summary>
+btnGenReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.rptInvoiceDocumentList._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:SESTicketReport.rptInvoiceDocumentList._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketHeaderRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketHeaderByInvoiceRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_SalesItemL02RptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketEquipmentRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketWorkerRptDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketInvConsolidatedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketInvOpenBySalesItemDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketHSEQServiceEvalutionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_RptTicketDataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_RptInvoiceDocumentListDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketHeaderRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketHeaderByInvoiceRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_SalesItemL02RptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketEquipmentRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketWorkerRptRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketInvConsolidatedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketInvOpenBySalesItemRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketHSEQServiceEvalutionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_RptTicketDataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_RptInvoiceDocumentListRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketHeaderRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketHeaderByInvoiceRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_SalesItemL02RptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketEquipmentRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketWorkerRptRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketInvConsolidatedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketInvOpenBySalesItemRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_TicketHSEQServiceEvalutionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_RptTicketDataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSet.sp_RptInvoiceDocumentListRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderByInvoiceRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.sp_SalesItemL02RptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.sp_TicketEquipmentRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerRptTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.sp_TicketInvConsolidatedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.sp_TicketInvOpenBySalesItemTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.sp_TicketHSEQServiceEvalutionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.sp_RptTicketDataTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.sp_RptInvoiceDocumentListTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SESTicketReport.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SESTicketReport.SESTicketSQLDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SESTicketReport.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SESTicketReport.SESTicketSQLDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SESTicketReport.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SESTicketReport.SESTicketSQLDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SESTicketReport.SESTicketSQLDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SESTicketReport.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateAll(SESTicketReport.SESTicketSQLDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SESTicketReport.SESTicketSQLDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

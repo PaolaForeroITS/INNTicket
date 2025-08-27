@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SESTICKET_DW"
+  DTS:DTSID="{DC05643C-C63A-4303-9229-181EAC10DB33}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=LATAMSQL01;User ID=usrSESTICKET;Initial Catalog=SESTICKET_DW;Provider=SQLNCLI11.1;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAR6+uPp8UOkmzqVX/ie6e4gAAAAACAAAAAAADZgAAwAAAABAAAADSW+0c+s5nnLi6YROcI2noAAAAAASAAACgAAAAEAAAAGtPUNaxXuJJEsSVrV2comd4AAAA6nFNDpxY/oQideC8+8flvmwgMmPxJsMI6Pip6XtKOtpg2GiqJXaMFc3IAXSTMKAcyMeDhrZ19xcltgPDhJziTwIDXFLkCj2dn72aeEx5Olot3WXHhEpoZb235UcxV7jHtfs5skIh+DxHL22VnszjXx/kCp2h1njsFAAAAJeu/VPDFzTECg3RkCO2/Z7jg1Er</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

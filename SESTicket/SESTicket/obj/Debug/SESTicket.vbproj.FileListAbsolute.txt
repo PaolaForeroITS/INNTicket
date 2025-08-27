@@ -634,190 +634,377 @@ C:\Users\jdecou\Source\Repos\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\doc
 C:\Users\jdecou\Source\Repos\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\docx\CEM-CO-SOP-09-SCF-06-StartOperation.docx
 C:\Users\jdecou\Source\Repos\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\xlsx\ticketFrontera.xlsx
 C:\Users\jdecou\Source\Repos\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.Up2Date
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Image\attachicon.bmp
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Image\attachicon.jpg
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Image\blank.bmp
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\blank.JPG
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\empty.txt
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\its.png
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\superior.JPG
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Excel\frmInvoiceList.xlsx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Reports\docx\CEM-CO-SOP-09-SCF-06-FinishOperation.docx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Reports\docx\CEM-CO-SOP-09-SCF-06-StartOperation.docx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Reports\xlsx\servevalecopetrol.xlsx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Reports\xlsx\ticketecopetrol.xlsx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Reports\xlsx\ticketFrontera.xlsx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Dns\arg_ticket_prd.dsn
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Excel\contractpricelist.xlsx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Excel\equipment.xlsx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Excel\inventoryitem.xlsx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Excel\well.xlsx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Excel\worker.xlsx
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\SESTicket.exe.config
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Dns\col_ticket_prd.dsn
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Dns\col_ticket_dev.dsn
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\SESTicket.exe
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\SESTicket.pdb
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\SESTicket.xml
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\es-CO\SESTicket.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\es-EC\SESTicket.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.WinForms.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.Common.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.AssemblyReference.cache
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmCancelTicket.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmChangeSupSupervisor.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmChangeTicketClosedDate.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmCheckConnection.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmCloseTicketDB.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractPriceEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractPriceList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractPriceRefreshTicket.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmCustomerEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmCustomerList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataImp.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataImpContrPriceList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataImpDetail.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmEquipmentEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmEquipmentList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataExpLayout.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmImportTicket.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvoiceEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvClassEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvClassList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmLogin.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmMain.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmPetrFieldEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmPetrFieldList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRemoveTicketGrid.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRigEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRigList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSalesItemL01.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchEquipment.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchInvItem.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchRig.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchSalesItem.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchSite.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchTicketSalesItem.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchWell.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchWorker.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceLineEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceLineList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceTypeEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceTypeList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSiteEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSiteList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSyncTicket.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketDB.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketEquipment.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketFile.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketFileLog.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketFileNew.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvoiceList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemHeadEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemLineEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemMain.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketOpeHourTotal.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketOperRepDateEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketOperReport.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketReopen.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketSalesItemEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmSyncBaseData.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketServEvalECPEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketServEvalHSEQ.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketServEvalHSEQEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketWorkerEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserRightEditClone.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserRightEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmWellEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmWellList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmWorkerEdit.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmWorkerList.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.Resources.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDocxActStartFinish.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTExcel.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketHSEQServiceEvalution.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketInvConsumptionConsolidated.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterLandscape.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterLandscapePageBreak.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterPortrait.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterPortraitPageBreak.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolMaterialLetter.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolMaterialLetterPageBreak.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolServiceLetter.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolServiceLetterPageBreak.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterLandscape.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTMain.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterLandscapePageBreak.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterPortrait.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterPortraitPageBreak.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterLandscape.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterLandscapePageBreak.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterPortrait.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterPortraitPageBreak.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel04LetterLandscape.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel04LetterPortrait.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterLandscape.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterLandscapePageBreak.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterPortrait.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterPortraitPageBreak.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTParameter.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketJobLogLetterPortrait.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketSalesItem.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketAnalytical.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketEquipment.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketInventoryBySalesItem.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketServiceEvaluation.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketWorker.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvConsumptionLetterLandscape.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemEdit.es-CO.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemList.es-CO.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemList.es-EC.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserList.es-CO.resources
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.GenerateResource.cache
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.CoreCompileInputs.cache
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\es-CO\SESTicket.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\es-EC\SESTicket.resources.dll
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.Up2Date
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.exe
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.xml
-C:\Proyectos_software_LATAM\Sesticket_2025\SESTicket\SESTicket\obj\Debug\SESTicket.pdb
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Image\attachicon.bmp
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Image\attachicon.jpg
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Image\blank.bmp
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\blank.JPG
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\empty.txt
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\its.png
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\superior.JPG
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Excel\frmInvoiceList.xlsx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\docx\CEM-CO-SOP-09-SCF-06-FinishOperation.docx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\docx\CEM-CO-SOP-09-SCF-06-StartOperation.docx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\xlsx\servevalecopetrol.xlsx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\xlsx\ticketecopetrol.xlsx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Reports\xlsx\ticketFrontera.xlsx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Dns\arg_ticket_prd.dsn
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Excel\contractpricelist.xlsx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Excel\equipment.xlsx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Excel\inventoryitem.xlsx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Excel\well.xlsx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Excel\worker.xlsx
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\SESTicket.exe.config
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Dns\col_ticket_prd.dsn
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Dns\col_ticket_dev.dsn
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\SESTicket.exe
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\SESTicket.pdb
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\SESTicket.xml
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\es-CO\SESTicket.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\es-EC\SESTicket.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.AssemblyReference.cache
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmCancelTicket.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmChangeSupSupervisor.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmChangeTicketClosedDate.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmCheckConnection.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmCloseTicketDB.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractPriceEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractPriceList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractPriceRefreshTicket.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmCustomerEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmCustomerList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataImp.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataImpContrPriceList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataImpDetail.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmEquipmentEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmEquipmentList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataExpLayout.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmImportTicket.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvoiceEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvClassEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvClassList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmLogin.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmMain.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmPetrFieldEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmPetrFieldList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRemoveTicketGrid.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRigEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRigList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSalesItemL01.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchEquipment.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchInvItem.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchRig.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchSalesItem.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchSite.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchTicketSalesItem.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchWell.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchWorker.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceLineEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceLineList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceTypeEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceTypeList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSiteEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSiteList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSyncTicket.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketDB.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketEquipment.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketFile.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketFileLog.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketFileNew.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvoiceList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemHeadEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemLineEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemMain.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketOpeHourTotal.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketOperRepDateEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketOperReport.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketReopen.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketSalesItemEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSyncBaseData.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketServEvalECPEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketServEvalHSEQ.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketServEvalHSEQEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketWorkerEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserRightEditClone.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserRightEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmWellEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmWellList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmWorkerEdit.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmWorkerList.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.Resources.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDocxActStartFinish.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTExcel.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketHSEQServiceEvalution.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketInvConsumptionConsolidated.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterLandscape.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterLandscapePageBreak.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterPortrait.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterPortraitPageBreak.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolMaterialLetter.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolMaterialLetterPageBreak.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolServiceLetter.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolServiceLetterPageBreak.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterLandscape.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTMain.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterLandscapePageBreak.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterPortrait.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterPortraitPageBreak.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterLandscape.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterLandscapePageBreak.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterPortrait.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterPortraitPageBreak.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel04LetterLandscape.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel04LetterPortrait.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterLandscape.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterLandscapePageBreak.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterPortrait.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterPortraitPageBreak.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTParameter.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketJobLogLetterPortrait.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketSalesItem.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketAnalytical.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketEquipment.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketInventoryBySalesItem.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketServiceEvaluation.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketWorker.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvConsumptionLetterLandscape.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemEdit.es-CO.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemList.es-CO.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemList.es-EC.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserList.es-CO.resources
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.GenerateResource.cache
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.CoreCompileInputs.cache
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\es-CO\SESTicket.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\es-EC\SESTicket.resources.dll
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.Up2Date
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.exe
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.xml
+C:\Users\Pforero\OneDrive - SESI, LLC\Desktop\SESTicket\SESTicket\SESTicket\obj\Debug\SESTicket.pdb
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Image\attachicon.bmp
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Image\attachicon.jpg
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Image\blank.bmp
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\blank.JPG
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\empty.txt
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\its.png
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Reports\ReportFiles\superior.JPG
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Excel\frmInvoiceList.xlsx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Reports\docx\CEM-CO-SOP-09-SCF-06-FinishOperation.docx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Reports\docx\CEM-CO-SOP-09-SCF-06-StartOperation.docx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Reports\xlsx\servevalecopetrol.xlsx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Reports\xlsx\ticketecopetrol.xlsx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Reports\xlsx\ticketFrontera.xlsx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Dns\arg_ticket_prd.dsn
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Excel\contractpricelist.xlsx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Excel\equipment.xlsx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Excel\inventoryitem.xlsx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Excel\well.xlsx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Excel\worker.xlsx
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\SESTicket.exe.config
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Dns\col_ticket_prd.dsn
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Dns\col_ticket_dev.dsn
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\SESTicket.exe
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\SESTicket.pdb
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\SESTicket.xml
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\es-CO\SESTicket.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\es-EC\SESTicket.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.AssemblyReference.cache
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmCancelTicket.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmChangeSupSupervisor.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmChangeTicketClosedDate.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmCheckConnection.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmCloseTicketDB.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractPriceEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractPriceList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmContractPriceRefreshTicket.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmCustomerEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmCustomerList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataImp.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataImpContrPriceList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataImpDetail.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmEquipmentEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmEquipmentList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmDataExpLayout.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmImportTicket.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvoiceEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvClassEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvClassList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmLogin.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmMain.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmPetrFieldEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmPetrFieldList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRemoveTicketGrid.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRigEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRigList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSalesItemL01.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchEquipment.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchInvItem.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchRig.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchSalesItem.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchSite.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchTicketSalesItem.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchWell.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSearchWorker.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceLineEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceLineList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceTypeEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmServiceTypeList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSiteEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSiteList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSyncTicket.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketDB.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketEquipment.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketFile.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketFileLog.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketFileNew.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvoiceList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemHeadEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemLineEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvItemMain.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketOpeHourTotal.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketOperRepDateEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketOperReport.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketReopen.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketSalesItemEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmSyncBaseData.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketServEvalECPEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketServEvalHSEQ.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketServEvalHSEQEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketWorkerEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserRightEditClone.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserRightEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmWellEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmWellList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmWorkerEdit.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmWorkerList.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.Resources.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDocxActStartFinish.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTExcel.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketHSEQServiceEvalution.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketInvConsumptionConsolidated.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterLandscape.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterLandscapePageBreak.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterPortrait.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTDefault01LetterPortraitPageBreak.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolMaterialLetter.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolMaterialLetterPageBreak.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolServiceLetter.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTEcopetrolServiceLetterPageBreak.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterLandscape.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTMain.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterLandscapePageBreak.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterPortrait.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel02LetterPortraitPageBreak.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterLandscape.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterLandscapePageBreak.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterPortrait.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel03LetterPortraitPageBreak.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel04LetterLandscape.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTModel04LetterPortrait.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterLandscape.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterLandscapePageBreak.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterPortrait.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTPacificMetapetroleumLetterPortraitPageBreak.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTParameter.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketJobLogLetterPortrait.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketSalesItem.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketAnalytical.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketEquipment.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketInventoryBySalesItem.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketServiceEvaluation.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmRPTTicketWorker.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmTicketInvConsumptionLetterLandscape.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemEdit.es-CO.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemList.es-CO.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmInvItemList.es-EC.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.frmUserList.es-CO.resources
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.GenerateResource.cache
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.CoreCompileInputs.cache
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\es-CO\SESTicket.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\es-EC\SESTicket.resources.dll
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.vbproj.Up2Date
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.exe
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.xml
+C:\RepositorioSesticket\SESTicket\SESTicket\obj\Debug\SESTicket.pdb
