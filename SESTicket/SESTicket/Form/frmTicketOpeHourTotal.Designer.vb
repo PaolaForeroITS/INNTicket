@@ -53,17 +53,20 @@ Partial Class frmTicketOpeHourTotal
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.txtHourQde)
         Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Location = New System.Drawing.Point(9, 42)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 52)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(164, 157)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(219, 193)
         Me.GroupBox2.TabIndex = 26
         Me.GroupBox2.TabStop = False
         '
         'txtHourLost
         '
-        Me.txtHourLost.Location = New System.Drawing.Point(99, 97)
+        Me.txtHourLost.Location = New System.Drawing.Point(132, 119)
+        Me.txtHourLost.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHourLost.Name = "txtHourLost"
-        Me.txtHourLost.Size = New System.Drawing.Size(56, 20)
+        Me.txtHourLost.Size = New System.Drawing.Size(73, 22)
         Me.txtHourLost.TabIndex = 31
         Me.txtHourLost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -71,17 +74,19 @@ Partial Class frmTicketOpeHourTotal
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(11, 97)
+        Me.Label5.Location = New System.Drawing.Point(15, 119)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(56, 13)
+        Me.Label5.Size = New System.Drawing.Size(67, 16)
         Me.Label5.TabIndex = 30
         Me.Label5.Text = "Hour Lost:"
         '
         'txtHourStandby
         '
-        Me.txtHourStandby.Location = New System.Drawing.Point(99, 71)
+        Me.txtHourStandby.Location = New System.Drawing.Point(132, 87)
+        Me.txtHourStandby.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHourStandby.Name = "txtHourStandby"
-        Me.txtHourStandby.Size = New System.Drawing.Size(56, 20)
+        Me.txtHourStandby.Size = New System.Drawing.Size(73, 22)
         Me.txtHourStandby.TabIndex = 29
         Me.txtHourStandby.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -89,17 +94,19 @@ Partial Class frmTicketOpeHourTotal
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(11, 71)
+        Me.Label4.Location = New System.Drawing.Point(15, 87)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 13)
+        Me.Label4.Size = New System.Drawing.Size(92, 16)
         Me.Label4.TabIndex = 28
         Me.Label4.Text = "Hour Standby:"
         '
         'txtHourOperation
         '
-        Me.txtHourOperation.Location = New System.Drawing.Point(99, 45)
+        Me.txtHourOperation.Location = New System.Drawing.Point(132, 55)
+        Me.txtHourOperation.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHourOperation.Name = "txtHourOperation"
-        Me.txtHourOperation.Size = New System.Drawing.Size(56, 20)
+        Me.txtHourOperation.Size = New System.Drawing.Size(73, 22)
         Me.txtHourOperation.TabIndex = 27
         Me.txtHourOperation.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -107,17 +114,19 @@ Partial Class frmTicketOpeHourTotal
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(11, 45)
+        Me.Label3.Location = New System.Drawing.Point(15, 55)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(82, 13)
+        Me.Label3.Size = New System.Drawing.Size(101, 16)
         Me.Label3.TabIndex = 26
         Me.Label3.Text = "Hour Operation:"
         '
         'txtHourTravel
         '
-        Me.txtHourTravel.Location = New System.Drawing.Point(99, 19)
+        Me.txtHourTravel.Location = New System.Drawing.Point(132, 23)
+        Me.txtHourTravel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHourTravel.Name = "txtHourTravel"
-        Me.txtHourTravel.Size = New System.Drawing.Size(56, 20)
+        Me.txtHourTravel.Size = New System.Drawing.Size(73, 22)
         Me.txtHourTravel.TabIndex = 25
         Me.txtHourTravel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -125,27 +134,30 @@ Partial Class frmTicketOpeHourTotal
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(11, 19)
+        Me.Label2.Location = New System.Drawing.Point(15, 23)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(66, 13)
+        Me.Label2.Size = New System.Drawing.Size(81, 16)
         Me.Label2.TabIndex = 24
         Me.Label2.Text = "Hour Travel:"
         '
         'txtHourQde
         '
-        Me.txtHourQde.Location = New System.Drawing.Point(99, 123)
+        Me.txtHourQde.Location = New System.Drawing.Point(132, 151)
+        Me.txtHourQde.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHourQde.Name = "txtHourQde"
         Me.txtHourQde.ReadOnly = True
-        Me.txtHourQde.Size = New System.Drawing.Size(56, 20)
+        Me.txtHourQde.Size = New System.Drawing.Size(73, 22)
         Me.txtHourQde.TabIndex = 23
         Me.txtHourQde.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(11, 123)
+        Me.Label10.Location = New System.Drawing.Point(15, 151)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(34, 13)
+        Me.Label10.Size = New System.Drawing.Size(41, 16)
         Me.Label10.TabIndex = 20
         Me.Label10.Text = "Total:"
         '
@@ -157,7 +169,7 @@ Partial Class frmTicketOpeHourTotal
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSave, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(181, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(241, 52)
         Me.MenuStrip1.TabIndex = 36
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -165,26 +177,26 @@ Partial Class frmTicketOpeHourTotal
         '
         Me.mnuSave.Image = CType(resources.GetObject("mnuSave.Image"), System.Drawing.Image)
         Me.mnuSave.Name = "mnuSave"
-        Me.mnuSave.Size = New System.Drawing.Size(67, 38)
+        Me.mnuSave.Size = New System.Drawing.Size(78, 48)
         Me.mnuSave.Text = "Save"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(61, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(71, 48)
         Me.mnuExit.Text = "Exit"
         '
         'frmTicketOpeHourTotal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(181, 207)
+        Me.ClientSize = New System.Drawing.Size(241, 255)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmTicketOpeHourTotal"

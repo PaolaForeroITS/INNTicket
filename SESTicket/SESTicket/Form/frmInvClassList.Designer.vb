@@ -103,11 +103,13 @@ Partial Class frmInvClassList
         Me.dgvInvClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvInvClass.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colInvClassID, Me.colType, Me.colDescription, Me.colCostOfGoodsAccount, Me.colCostOfGoodsSubAccount, Me.colSalesAccount, Me.colSalesAccountAIU, Me.colSalesAccountUBR, Me.colSalesAccountUBRAIU, Me.colSalesSubAccount, Me.colInventoryAccount, Me.colInventorySubAccount})
         Me.dgvInvClass.DataSource = Me.INVENTORYCLASSBindingSource
-        Me.dgvInvClass.Location = New System.Drawing.Point(0, 45)
+        Me.dgvInvClass.Location = New System.Drawing.Point(0, 55)
+        Me.dgvInvClass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvInvClass.Name = "dgvInvClass"
         Me.dgvInvClass.ReadOnly = True
+        Me.dgvInvClass.RowHeadersWidth = 51
         Me.dgvInvClass.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvInvClass.Size = New System.Drawing.Size(514, 420)
+        Me.dgvInvClass.Size = New System.Drawing.Size(685, 517)
         Me.dgvInvClass.TabIndex = 1
         '
         'colInvClassID
@@ -115,23 +117,26 @@ Partial Class frmInvClassList
         Me.colInvClassID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colInvClassID.DataPropertyName = "INVENTORYCLASSID"
         Me.colInvClassID.HeaderText = "ID"
+        Me.colInvClassID.MinimumWidth = 6
         Me.colInvClassID.Name = "colInvClassID"
         Me.colInvClassID.ReadOnly = True
-        Me.colInvClassID.Width = 43
+        Me.colInvClassID.Width = 49
         '
         'colType
         '
         Me.colType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colType.DataPropertyName = "TYPE"
         Me.colType.HeaderText = "Type"
+        Me.colType.MinimumWidth = 6
         Me.colType.Name = "colType"
         Me.colType.ReadOnly = True
-        Me.colType.Width = 56
+        Me.colType.Width = 68
         '
         'colDescription
         '
         Me.colDescription.DataPropertyName = "DESCRIPTION"
         Me.colDescription.HeaderText = "Description"
+        Me.colDescription.MinimumWidth = 6
         Me.colDescription.Name = "colDescription"
         Me.colDescription.ReadOnly = True
         Me.colDescription.Width = 300
@@ -141,90 +146,109 @@ Partial Class frmInvClassList
         Me.colCostOfGoodsAccount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colCostOfGoodsAccount.DataPropertyName = "COSTOFGOODSACCOUNT"
         Me.colCostOfGoodsAccount.HeaderText = "COSTOFGOODSACCOUNT"
+        Me.colCostOfGoodsAccount.MinimumWidth = 6
         Me.colCostOfGoodsAccount.Name = "colCostOfGoodsAccount"
         Me.colCostOfGoodsAccount.ReadOnly = True
         Me.colCostOfGoodsAccount.Visible = False
+        Me.colCostOfGoodsAccount.Width = 125
         '
         'colCostOfGoodsSubAccount
         '
         Me.colCostOfGoodsSubAccount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colCostOfGoodsSubAccount.DataPropertyName = "COSTOFGOODSSUBACCOUNT"
         Me.colCostOfGoodsSubAccount.HeaderText = "COSTOFGOODSSUBACCOUNT"
+        Me.colCostOfGoodsSubAccount.MinimumWidth = 6
         Me.colCostOfGoodsSubAccount.Name = "colCostOfGoodsSubAccount"
         Me.colCostOfGoodsSubAccount.ReadOnly = True
         Me.colCostOfGoodsSubAccount.Visible = False
+        Me.colCostOfGoodsSubAccount.Width = 125
         '
         'colSalesAccount
         '
         Me.colSalesAccount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colSalesAccount.DataPropertyName = "SALESACCOUNT"
         Me.colSalesAccount.HeaderText = "SALESACCOUNT"
+        Me.colSalesAccount.MinimumWidth = 6
         Me.colSalesAccount.Name = "colSalesAccount"
         Me.colSalesAccount.ReadOnly = True
         Me.colSalesAccount.Visible = False
+        Me.colSalesAccount.Width = 125
         '
         'colSalesAccountAIU
         '
         Me.colSalesAccountAIU.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colSalesAccountAIU.DataPropertyName = "SALESACCOUNTAIU"
         Me.colSalesAccountAIU.HeaderText = "SALESACCOUNTAIU"
+        Me.colSalesAccountAIU.MinimumWidth = 6
         Me.colSalesAccountAIU.Name = "colSalesAccountAIU"
         Me.colSalesAccountAIU.ReadOnly = True
         Me.colSalesAccountAIU.Visible = False
+        Me.colSalesAccountAIU.Width = 125
         '
         'colSalesAccountUBR
         '
         Me.colSalesAccountUBR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colSalesAccountUBR.DataPropertyName = "SALESACCOUNTUBR"
         Me.colSalesAccountUBR.HeaderText = "SALESACCOUNTUBR"
+        Me.colSalesAccountUBR.MinimumWidth = 6
         Me.colSalesAccountUBR.Name = "colSalesAccountUBR"
         Me.colSalesAccountUBR.ReadOnly = True
         Me.colSalesAccountUBR.Visible = False
+        Me.colSalesAccountUBR.Width = 125
         '
         'colSalesAccountUBRAIU
         '
         Me.colSalesAccountUBRAIU.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colSalesAccountUBRAIU.DataPropertyName = "SALESACCOUNTUBRAIU"
         Me.colSalesAccountUBRAIU.HeaderText = "SALESACCOUNTUBRAIU"
+        Me.colSalesAccountUBRAIU.MinimumWidth = 6
         Me.colSalesAccountUBRAIU.Name = "colSalesAccountUBRAIU"
         Me.colSalesAccountUBRAIU.ReadOnly = True
         Me.colSalesAccountUBRAIU.Visible = False
+        Me.colSalesAccountUBRAIU.Width = 125
         '
         'colSalesSubAccount
         '
         Me.colSalesSubAccount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colSalesSubAccount.DataPropertyName = "SALESSUBACCOUNT"
         Me.colSalesSubAccount.HeaderText = "SALESSUBACCOUNT"
+        Me.colSalesSubAccount.MinimumWidth = 6
         Me.colSalesSubAccount.Name = "colSalesSubAccount"
         Me.colSalesSubAccount.ReadOnly = True
         Me.colSalesSubAccount.Visible = False
+        Me.colSalesSubAccount.Width = 125
         '
         'colInventoryAccount
         '
         Me.colInventoryAccount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colInventoryAccount.DataPropertyName = "INVENTORYACCOUNT"
         Me.colInventoryAccount.HeaderText = "INVENTORYACCOUNT"
+        Me.colInventoryAccount.MinimumWidth = 6
         Me.colInventoryAccount.Name = "colInventoryAccount"
         Me.colInventoryAccount.ReadOnly = True
         Me.colInventoryAccount.Visible = False
+        Me.colInventoryAccount.Width = 125
         '
         'colInventorySubAccount
         '
         Me.colInventorySubAccount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colInventorySubAccount.DataPropertyName = "INVENTORYSUBACCOUNT"
         Me.colInventorySubAccount.HeaderText = "INVENTORYSUBACCOUNT"
+        Me.colInventorySubAccount.MinimumWidth = 6
         Me.colInventorySubAccount.Name = "colInventorySubAccount"
         Me.colInventorySubAccount.ReadOnly = True
         Me.colInventorySubAccount.Visible = False
+        Me.colInventorySubAccount.Width = 125
         '
         'MenuStrip1
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(517, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(689, 52)
         Me.MenuStrip1.TabIndex = 36
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -232,24 +256,26 @@ Partial Class frmInvClassList
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
         Me.mnuNewItem.Text = "New Item"
         Me.mnuNewItem.ToolTipText = "Save the Ticket"
         '
         'frmInvClassList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(517, 468)
+        Me.ClientSize = New System.Drawing.Size(689, 576)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.dgvInvClass)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmInvClassList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Inventory Class"
+        Me.Text = "INNTicket - Inventory Class"
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.INVENTORYCLASSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvInvClass, System.ComponentModel.ISupportInitialize).EndInit()

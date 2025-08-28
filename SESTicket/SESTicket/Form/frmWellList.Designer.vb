@@ -63,12 +63,13 @@ Partial Class frmWellList
         Me.dgvWell.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvWell.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colWellID, Me.colName, Me.colCountry, Me.colState, Me.colCity, Me.colPetrFieldCode, Me.colSiteID, Me.colSiteName, Me.colRigId, Me.colActive, Me.colPetrFieldId})
         Me.dgvWell.DataSource = Me.WELLBindingSource
-        Me.dgvWell.Location = New System.Drawing.Point(0, 45)
+        Me.dgvWell.Location = New System.Drawing.Point(0, 55)
+        Me.dgvWell.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvWell.Name = "dgvWell"
         Me.dgvWell.ReadOnly = True
         Me.dgvWell.RowHeadersWidth = 10
         Me.dgvWell.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvWell.Size = New System.Drawing.Size(906, 575)
+        Me.dgvWell.Size = New System.Drawing.Size(1208, 708)
         Me.dgvWell.TabIndex = 1
         '
         'colWellID
@@ -76,80 +77,94 @@ Partial Class frmWellList
         Me.colWellID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colWellID.DataPropertyName = "WELLID"
         Me.colWellID.HeaderText = "Well ID"
+        Me.colWellID.MinimumWidth = 6
         Me.colWellID.Name = "colWellID"
         Me.colWellID.ReadOnly = True
-        Me.colWellID.Width = 67
+        Me.colWellID.Width = 79
         '
         'colName
         '
         Me.colName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colName.DataPropertyName = "NAME"
         Me.colName.HeaderText = "Name"
+        Me.colName.MinimumWidth = 6
         Me.colName.Name = "colName"
         Me.colName.ReadOnly = True
-        Me.colName.Width = 60
+        Me.colName.Width = 73
         '
         'colCountry
         '
         Me.colCountry.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colCountry.DataPropertyName = "COUNTRY"
         Me.colCountry.HeaderText = "Country"
+        Me.colCountry.MinimumWidth = 6
         Me.colCountry.Name = "colCountry"
         Me.colCountry.ReadOnly = True
-        Me.colCountry.Width = 68
+        Me.colCountry.Width = 81
         '
         'colState
         '
         Me.colState.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colState.DataPropertyName = "STATE"
         Me.colState.HeaderText = "State"
+        Me.colState.MinimumWidth = 6
         Me.colState.Name = "colState"
         Me.colState.ReadOnly = True
-        Me.colState.Width = 57
+        Me.colState.Width = 67
         '
         'colCity
         '
         Me.colCity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colCity.DataPropertyName = "CITY"
         Me.colCity.HeaderText = "City"
+        Me.colCity.MinimumWidth = 6
         Me.colCity.Name = "colCity"
         Me.colCity.ReadOnly = True
-        Me.colCity.Width = 49
+        Me.colCity.Width = 58
         '
         'colPetrFieldCode
         '
         Me.colPetrFieldCode.DataPropertyName = "PETRFIELDCODE"
         Me.colPetrFieldCode.HeaderText = "Petr Field"
+        Me.colPetrFieldCode.MinimumWidth = 6
         Me.colPetrFieldCode.Name = "colPetrFieldCode"
         Me.colPetrFieldCode.ReadOnly = True
+        Me.colPetrFieldCode.Width = 125
         '
         'colSiteID
         '
         Me.colSiteID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colSiteID.DataPropertyName = "SITEID"
         Me.colSiteID.HeaderText = "SiteID"
+        Me.colSiteID.MinimumWidth = 6
         Me.colSiteID.Name = "colSiteID"
         Me.colSiteID.ReadOnly = True
         Me.colSiteID.Visible = False
+        Me.colSiteID.Width = 125
         '
         'colSiteName
         '
         Me.colSiteName.DataPropertyName = "SITENAME"
         Me.colSiteName.HeaderText = "Site"
+        Me.colSiteName.MinimumWidth = 6
         Me.colSiteName.Name = "colSiteName"
         Me.colSiteName.ReadOnly = True
+        Me.colSiteName.Width = 125
         '
         'colRigId
         '
         Me.colRigId.DataPropertyName = "RIGID"
         Me.colRigId.HeaderText = "Rig"
+        Me.colRigId.MinimumWidth = 6
         Me.colRigId.Name = "colRigId"
         Me.colRigId.ReadOnly = True
+        Me.colRigId.Width = 125
         '
         'colActive
         '
         Me.colActive.DataPropertyName = "ACTIVE"
         Me.colActive.HeaderText = "Active"
+        Me.colActive.MinimumWidth = 6
         Me.colActive.Name = "colActive"
         Me.colActive.ReadOnly = True
         Me.colActive.Width = 60
@@ -159,9 +174,11 @@ Partial Class frmWellList
         Me.colPetrFieldId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colPetrFieldId.DataPropertyName = "PETRFIELDID"
         Me.colPetrFieldId.HeaderText = "Field"
+        Me.colPetrFieldId.MinimumWidth = 6
         Me.colPetrFieldId.Name = "colPetrFieldId"
         Me.colPetrFieldId.ReadOnly = True
         Me.colPetrFieldId.Visible = False
+        Me.colPetrFieldId.Width = 125
         '
         'WELLBindingSource
         '
@@ -176,9 +193,10 @@ Partial Class frmWellList
         'chkNo
         '
         Me.chkNo.AutoSize = True
-        Me.chkNo.Location = New System.Drawing.Point(841, 12)
+        Me.chkNo.Location = New System.Drawing.Point(1121, 15)
+        Me.chkNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkNo.Name = "chkNo"
-        Me.chkNo.Size = New System.Drawing.Size(40, 17)
+        Me.chkNo.Size = New System.Drawing.Size(47, 20)
         Me.chkNo.TabIndex = 43
         Me.chkNo.Text = "No"
         Me.chkNo.UseVisualStyleBackColor = True
@@ -188,9 +206,10 @@ Partial Class frmWellList
         Me.chkYes.AutoSize = True
         Me.chkYes.Checked = True
         Me.chkYes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkYes.Location = New System.Drawing.Point(791, 12)
+        Me.chkYes.Location = New System.Drawing.Point(1055, 15)
+        Me.chkYes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkYes.Name = "chkYes"
-        Me.chkYes.Size = New System.Drawing.Size(44, 17)
+        Me.chkYes.Size = New System.Drawing.Size(53, 20)
         Me.chkYes.TabIndex = 42
         Me.chkYes.Text = "Yes"
         Me.chkYes.UseVisualStyleBackColor = True
@@ -198,9 +217,10 @@ Partial Class frmWellList
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(745, 12)
+        Me.Label3.Location = New System.Drawing.Point(993, 15)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.Size = New System.Drawing.Size(47, 16)
         Me.Label3.TabIndex = 41
         Me.Label3.Text = "Active:"
         '
@@ -208,10 +228,11 @@ Partial Class frmWellList
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem, Me.mnuExportData, Me.mnuImportData})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(906, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1208, 52)
         Me.MenuStrip1.TabIndex = 44
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -219,7 +240,7 @@ Partial Class frmWellList
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
         Me.mnuNewItem.Text = "New Item"
         Me.mnuNewItem.ToolTipText = "Save the Ticket"
         '
@@ -227,14 +248,14 @@ Partial Class frmWellList
         '
         Me.mnuExportData.Image = CType(resources.GetObject("mnuExportData.Image"), System.Drawing.Image)
         Me.mnuExportData.Name = "mnuExportData"
-        Me.mnuExportData.Size = New System.Drawing.Size(95, 38)
+        Me.mnuExportData.Size = New System.Drawing.Size(122, 48)
         Me.mnuExportData.Text = "Export Data"
         '
         'mnuImportData
         '
         Me.mnuImportData.Image = CType(resources.GetObject("mnuImportData.Image"), System.Drawing.Image)
         Me.mnuImportData.Name = "mnuImportData"
-        Me.mnuImportData.Size = New System.Drawing.Size(98, 38)
+        Me.mnuImportData.Size = New System.Drawing.Size(124, 48)
         Me.mnuImportData.Text = "Import Data"
         '
         'WELLTableAdapter
@@ -276,21 +297,23 @@ Partial Class frmWellList
         '
         'frmWellList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(906, 622)
+        Me.ClientSize = New System.Drawing.Size(1208, 766)
         Me.Controls.Add(Me.chkNo)
         Me.Controls.Add(Me.chkYes)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.dgvWell)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmWellList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Well List"
+        Me.Text = "INNTicket - Well List"
         CType(Me.dgvWell, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.WELLBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()

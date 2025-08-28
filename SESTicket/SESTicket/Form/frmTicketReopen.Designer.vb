@@ -46,35 +46,40 @@ Partial Class frmTicketReopen
         Me.GroupBox2.Controls.Add(Me.txtAuthBy)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Location = New System.Drawing.Point(137, 45)
+        Me.GroupBox2.Location = New System.Drawing.Point(183, 55)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(277, 214)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(369, 263)
         Me.GroupBox2.TabIndex = 32
         Me.GroupBox2.TabStop = False
         '
         'txtComment
         '
-        Me.txtComment.Location = New System.Drawing.Point(9, 78)
+        Me.txtComment.Location = New System.Drawing.Point(12, 96)
+        Me.txtComment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtComment.MaxLength = 15
         Me.txtComment.Multiline = True
         Me.txtComment.Name = "txtComment"
-        Me.txtComment.Size = New System.Drawing.Size(257, 127)
+        Me.txtComment.Size = New System.Drawing.Size(341, 155)
         Me.txtComment.TabIndex = 32
         '
         'txtAuthBy
         '
-        Me.txtAuthBy.Location = New System.Drawing.Point(9, 32)
+        Me.txtAuthBy.Location = New System.Drawing.Point(12, 39)
+        Me.txtAuthBy.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAuthBy.MaxLength = 15
         Me.txtAuthBy.Name = "txtAuthBy"
-        Me.txtAuthBy.Size = New System.Drawing.Size(257, 20)
+        Me.txtAuthBy.Size = New System.Drawing.Size(341, 22)
         Me.txtAuthBy.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 62)
+        Me.Label2.Location = New System.Drawing.Point(12, 76)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(67, 16)
         Me.Label2.TabIndex = 31
         Me.Label2.Text = "Comment:"
         '
@@ -82,9 +87,10 @@ Partial Class frmTicketReopen
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(6, 16)
+        Me.Label7.Location = New System.Drawing.Point(8, 20)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(75, 13)
+        Me.Label7.Size = New System.Drawing.Size(92, 16)
         Me.Label7.TabIndex = 30
         Me.Label7.Text = "Authorized By:"
         '
@@ -92,10 +98,11 @@ Partial Class frmTicketReopen
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuReOpenTicket, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(419, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(559, 52)
         Me.MenuStrip1.TabIndex = 42
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -103,14 +110,14 @@ Partial Class frmTicketReopen
         '
         Me.mnuReOpenTicket.Image = CType(resources.GetObject("mnuReOpenTicket.Image"), System.Drawing.Image)
         Me.mnuReOpenTicket.Name = "mnuReOpenTicket"
-        Me.mnuReOpenTicket.Size = New System.Drawing.Size(117, 38)
+        Me.mnuReOpenTicket.Size = New System.Drawing.Size(145, 48)
         Me.mnuReOpenTicket.Text = "Re-Open Ticket"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'GroupBox1
@@ -118,53 +125,60 @@ Partial Class frmTicketReopen
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.lstTickets)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 45)
+        Me.GroupBox1.Location = New System.Drawing.Point(17, 55)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(118, 214)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(157, 263)
         Me.GroupBox1.TabIndex = 43
         Me.GroupBox1.TabStop = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(2, 16)
+        Me.Label3.Location = New System.Drawing.Point(3, 20)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(85, 13)
+        Me.Label3.Size = New System.Drawing.Size(103, 16)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Tickets Affected"
         '
         'lstTickets
         '
         Me.lstTickets.FormattingEnabled = True
-        Me.lstTickets.Location = New System.Drawing.Point(5, 32)
+        Me.lstTickets.ItemHeight = 16
+        Me.lstTickets.Location = New System.Drawing.Point(7, 39)
+        Me.lstTickets.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lstTickets.Name = "lstTickets"
-        Me.lstTickets.Size = New System.Drawing.Size(104, 173)
+        Me.lstTickets.Size = New System.Drawing.Size(137, 212)
         Me.lstTickets.TabIndex = 3
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(9, 16)
+        Me.Label5.Location = New System.Drawing.Point(12, 20)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 13)
+        Me.Label5.Size = New System.Drawing.Size(0, 16)
         Me.Label5.TabIndex = 0
         '
         'frmTicketReopen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(419, 265)
+        Me.ClientSize = New System.Drawing.Size(559, 326)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmTicketReopen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Re-Open Ticket"
+        Me.Text = "INNTicket - Re-Open Ticket"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)

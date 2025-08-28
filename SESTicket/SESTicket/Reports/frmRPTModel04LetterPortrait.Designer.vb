@@ -26,19 +26,40 @@ Partial Class frmRPTModel04LetterPortrait
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim ReportDataSource3 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTModel04LetterPortrait))
         Me.REPORTHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.REPORTHEADER_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
+        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
         Me.REPORTLINE_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.REPORTLINE_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTLINE_VTableAdapter()
         Me.REPORTPARAMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.REPORTHEADER_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
+        Me.REPORTLINE_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTLINE_VTableAdapter()
         Me.REPORTPARAMTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
-        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.REPORTHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.REPORTLINE_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.REPORTPARAMBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'REPORTHEADER_VBindingSource
+        '
+        Me.REPORTHEADER_VBindingSource.DataMember = "REPORTHEADER_V"
+        Me.REPORTHEADER_VBindingSource.DataSource = Me.SESTicketAccessDataSet
+        '
+        'SESTicketAccessDataSet
+        '
+        Me.SESTicketAccessDataSet.DataSetName = "SESTicketAccessDataSet"
+        Me.SESTicketAccessDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.ExcludeSchema
+        '
+        'REPORTLINE_VBindingSource
+        '
+        Me.REPORTLINE_VBindingSource.DataMember = "REPORTLINE_V"
+        Me.REPORTLINE_VBindingSource.DataSource = Me.SESTicketAccessDataSet
+        '
+        'REPORTPARAMBindingSource
+        '
+        Me.REPORTPARAMBindingSource.DataMember = "REPORTPARAM"
+        Me.REPORTPARAMBindingSource.DataSource = Me.SESTicketAccessDataSet
         '
         'ReportViewer1
         '
@@ -52,39 +73,20 @@ Partial Class frmRPTModel04LetterPortrait
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource3)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "SESTicket.rptTicketModel04LetterPortrait.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(1, 3)
+        Me.ReportViewer1.Location = New System.Drawing.Point(1, 4)
+        Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(1159, 644)
+        Me.ReportViewer1.Size = New System.Drawing.Size(1545, 792)
         Me.ReportViewer1.TabIndex = 0
-        '
-        'SESTicketAccessDataSet
-        '
-        Me.SESTicketAccessDataSet.DataSetName = "SESTicketAccessDataSet"
-        Me.SESTicketAccessDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.ExcludeSchema
-        '
-        'REPORTHEADER_VBindingSource
-        '
-        Me.REPORTHEADER_VBindingSource.DataMember = "REPORTHEADER_V"
-        Me.REPORTHEADER_VBindingSource.DataSource = Me.SESTicketAccessDataSet
         '
         'REPORTHEADER_VTableAdapter
         '
         Me.REPORTHEADER_VTableAdapter.ClearBeforeFill = True
         '
-        'REPORTLINE_VBindingSource
-        '
-        Me.REPORTLINE_VBindingSource.DataMember = "REPORTLINE_V"
-        Me.REPORTLINE_VBindingSource.DataSource = Me.SESTicketAccessDataSet
-        '
         'REPORTLINE_VTableAdapter
         '
         Me.REPORTLINE_VTableAdapter.ClearBeforeFill = True
-        '
-        'REPORTPARAMBindingSource
-        '
-        Me.REPORTPARAMBindingSource.DataMember = "REPORTPARAM"
-        Me.REPORTPARAMBindingSource.DataSource = Me.SESTicketAccessDataSet
         '
         'REPORTPARAMTableAdapter
         '
@@ -92,14 +94,16 @@ Partial Class frmRPTModel04LetterPortrait
         '
         'frmRPTModel04LetterPortrait
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1171, 646)
+        Me.ClientSize = New System.Drawing.Size(1561, 795)
         Me.Controls.Add(Me.ReportViewer1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmRPTModel04LetterPortrait"
         Me.Text = "frmRPTModel04LetterPortrait"
-        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.REPORTHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.REPORTLINE_VBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.REPORTPARAMBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

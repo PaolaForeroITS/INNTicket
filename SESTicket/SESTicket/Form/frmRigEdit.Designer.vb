@@ -38,27 +38,31 @@ Partial Class frmRigEdit
         '
         Me.GroupBox1.Controls.Add(Me.txtRig)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(5, 45)
+        Me.GroupBox1.Location = New System.Drawing.Point(7, 55)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(305, 68)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(407, 84)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         '
         'txtRig
         '
-        Me.txtRig.Location = New System.Drawing.Point(13, 35)
+        Me.txtRig.Location = New System.Drawing.Point(17, 43)
+        Me.txtRig.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtRig.MaxLength = 50
         Me.txtRig.Name = "txtRig"
-        Me.txtRig.Size = New System.Drawing.Size(280, 20)
+        Me.txtRig.Size = New System.Drawing.Size(372, 22)
         Me.txtRig.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(10, 19)
+        Me.Label2.Location = New System.Drawing.Point(13, 23)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(26, 13)
+        Me.Label2.Size = New System.Drawing.Size(31, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Rig:"
         '
@@ -66,10 +70,11 @@ Partial Class frmRigEdit
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSave, Me.mnuDelete, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(318, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(424, 52)
         Me.MenuStrip1.TabIndex = 34
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -77,37 +82,38 @@ Partial Class frmRigEdit
         '
         Me.mnuSave.Image = CType(resources.GetObject("mnuSave.Image"), System.Drawing.Image)
         Me.mnuSave.Name = "mnuSave"
-        Me.mnuSave.Size = New System.Drawing.Size(59, 38)
+        Me.mnuSave.Size = New System.Drawing.Size(74, 48)
         Me.mnuSave.Text = "Save"
         '
         'mnuDelete
         '
         Me.mnuDelete.Image = CType(resources.GetObject("mnuDelete.Image"), System.Drawing.Image)
         Me.mnuDelete.Name = "mnuDelete"
-        Me.mnuDelete.Size = New System.Drawing.Size(68, 38)
+        Me.mnuDelete.Size = New System.Drawing.Size(87, 48)
         Me.mnuDelete.Text = "Delete"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'frmRigEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(318, 119)
+        Me.ClientSize = New System.Drawing.Size(424, 146)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmRigEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTICKET - Rig Edit"
+        Me.Text = "INNTICKET - Rig Edit"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)

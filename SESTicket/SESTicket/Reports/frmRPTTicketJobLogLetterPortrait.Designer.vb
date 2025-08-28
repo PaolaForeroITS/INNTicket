@@ -27,10 +27,12 @@ Partial Class frmRPTTicketJobLogLetterPortrait
         Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim ReportDataSource3 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim ReportDataSource4 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTTicketJobLogLetterPortrait))
         Me.REPORTHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
         Me.TICKETOPEREPACTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TICKETOPEREPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TMP_TICKETOPEREPWORKERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.btnOk = New System.Windows.Forms.Button()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -39,14 +41,13 @@ Partial Class frmRPTTicketJobLogLetterPortrait
         Me.REPORTHEADER_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
         Me.TICKETOPEREPACTTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPACTTableAdapter()
         Me.TICKETOPEREPTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPTableAdapter()
-        Me.TMP_TICKETOPEREPWORKERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TMP_TICKETOPEREPWORKERTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TMP_TICKETOPEREPWORKERTableAdapter()
         CType(Me.REPORTHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TICKETOPEREPACTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TICKETOPEREPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         CType(Me.TMP_TICKETOPEREPWORKERBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'REPORTHEADER_VBindingSource
@@ -69,11 +70,17 @@ Partial Class frmRPTTicketJobLogLetterPortrait
         Me.TICKETOPEREPBindingSource.DataMember = "TICKETOPEREP"
         Me.TICKETOPEREPBindingSource.DataSource = Me.SESTicketAccessDataSet
         '
+        'TMP_TICKETOPEREPWORKERBindingSource
+        '
+        Me.TMP_TICKETOPEREPWORKERBindingSource.DataMember = "TMP_TICKETOPEREPWORKER"
+        Me.TMP_TICKETOPEREPWORKERBindingSource.DataSource = Me.SESTicketAccessDataSet
+        '
         'btnOk
         '
-        Me.btnOk.Location = New System.Drawing.Point(516, 15)
+        Me.btnOk.Location = New System.Drawing.Point(688, 18)
+        Me.btnOk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnOk.Name = "btnOk"
-        Me.btnOk.Size = New System.Drawing.Size(75, 23)
+        Me.btnOk.Size = New System.Drawing.Size(100, 28)
         Me.btnOk.TabIndex = 2
         Me.btnOk.Text = "Ok"
         Me.btnOk.UseVisualStyleBackColor = True
@@ -93,19 +100,21 @@ Partial Class frmRPTTicketJobLogLetterPortrait
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource3)
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource4)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "SESTicket.rptTicketJobLogLetterPortrait.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(12, 61)
+        Me.ReportViewer1.Location = New System.Drawing.Point(16, 75)
+        Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(1167, 634)
+        Me.ReportViewer1.Size = New System.Drawing.Size(1555, 780)
         Me.ReportViewer1.TabIndex = 5
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(25, 20)
+        Me.Label1.Location = New System.Drawing.Point(33, 25)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 13)
+        Me.Label1.Size = New System.Drawing.Size(59, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Job Log:"
         '
@@ -114,9 +123,11 @@ Partial Class frmRPTTicketJobLogLetterPortrait
         Me.GroupBox1.Controls.Add(Me.cbxJobLog)
         Me.GroupBox1.Controls.Add(Me.btnOk)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 9)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 11)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(606, 46)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(808, 57)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filter"
@@ -126,9 +137,10 @@ Partial Class frmRPTTicketJobLogLetterPortrait
         Me.cbxJobLog.DataSource = Me.TICKETOPEREPBindingSource
         Me.cbxJobLog.DisplayMember = "DESCRIPNEW"
         Me.cbxJobLog.FormattingEnabled = True
-        Me.cbxJobLog.Location = New System.Drawing.Point(79, 17)
+        Me.cbxJobLog.Location = New System.Drawing.Point(105, 21)
+        Me.cbxJobLog.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxJobLog.Name = "cbxJobLog"
-        Me.cbxJobLog.Size = New System.Drawing.Size(421, 21)
+        Me.cbxJobLog.Size = New System.Drawing.Size(560, 24)
         Me.cbxJobLog.TabIndex = 1
         Me.cbxJobLog.ValueMember = "TICKETOPEREPID"
         '
@@ -144,23 +156,20 @@ Partial Class frmRPTTicketJobLogLetterPortrait
         '
         Me.TICKETOPEREPTableAdapter.ClearBeforeFill = True
         '
-        'TMP_TICKETOPEREPWORKERBindingSource
-        '
-        Me.TMP_TICKETOPEREPWORKERBindingSource.DataMember = "TMP_TICKETOPEREPWORKER"
-        Me.TMP_TICKETOPEREPWORKERBindingSource.DataSource = Me.SESTicketAccessDataSet
-        '
         'TMP_TICKETOPEREPWORKERTableAdapter
         '
         Me.TMP_TICKETOPEREPWORKERTableAdapter.ClearBeforeFill = True
         '
         'frmRPTTicketJobLogLetterPortrait
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1191, 699)
+        Me.ClientSize = New System.Drawing.Size(1588, 860)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmRPTTicketJobLogLetterPortrait"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Report - Ticket Job Log"
@@ -168,9 +177,9 @@ Partial Class frmRPTTicketJobLogLetterPortrait
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TICKETOPEREPACTBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TICKETOPEREPBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TMP_TICKETOPEREPWORKERBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.TMP_TICKETOPEREPWORKERBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

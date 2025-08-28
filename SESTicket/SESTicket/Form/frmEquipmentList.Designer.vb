@@ -25,17 +25,6 @@ Partial Class frmEquipmentList
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEquipmentList))
         Me.dgvEquipment = New System.Windows.Forms.DataGridView()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuExportData = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuImportData = New System.Windows.Forms.ToolStripMenuItem()
-        Me.chkNo = New System.Windows.Forms.CheckBox()
-        Me.chkYes = New System.Windows.Forms.CheckBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.EQUIPMENTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
-        Me.EQUIPMENTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.EQUIPMENTTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.colEquipmentId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colModel = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -43,10 +32,21 @@ Partial Class frmEquipmentList
         Me.colTag = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colUnit = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EQUIPMENTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuExportData = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuImportData = New System.Windows.Forms.ToolStripMenuItem()
+        Me.chkNo = New System.Windows.Forms.CheckBox()
+        Me.chkYes = New System.Windows.Forms.CheckBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.EQUIPMENTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.EQUIPMENTTableAdapter()
+        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         CType(Me.dgvEquipment, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip1.SuspendLayout()
         CType(Me.EQUIPMENTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgvEquipment
@@ -59,76 +59,83 @@ Partial Class frmEquipmentList
         Me.dgvEquipment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvEquipment.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colEquipmentId, Me.colDescription, Me.colModel, Me.colSerial, Me.colTag, Me.colUnit, Me.colActive})
         Me.dgvEquipment.DataSource = Me.EQUIPMENTBindingSource
-        Me.dgvEquipment.Location = New System.Drawing.Point(0, 45)
+        Me.dgvEquipment.Location = New System.Drawing.Point(0, 55)
+        Me.dgvEquipment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvEquipment.Name = "dgvEquipment"
         Me.dgvEquipment.ReadOnly = True
+        Me.dgvEquipment.RowHeadersWidth = 51
         Me.dgvEquipment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvEquipment.Size = New System.Drawing.Size(893, 479)
+        Me.dgvEquipment.Size = New System.Drawing.Size(1191, 590)
         Me.dgvEquipment.TabIndex = 1
         '
-        'MenuStrip1
+        'colEquipmentId
         '
-        Me.MenuStrip1.AutoSize = False
-        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem, Me.mnuExportData, Me.mnuImportData})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(900, 42)
-        Me.MenuStrip1.TabIndex = 32
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.colEquipmentId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colEquipmentId.DataPropertyName = "EQUIPMENTID"
+        Me.colEquipmentId.HeaderText = "ID"
+        Me.colEquipmentId.MinimumWidth = 6
+        Me.colEquipmentId.Name = "colEquipmentId"
+        Me.colEquipmentId.ReadOnly = True
+        Me.colEquipmentId.Width = 49
         '
-        'mnuNewItem
+        'colDescription
         '
-        Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
-        Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
-        Me.mnuNewItem.Text = "New Item"
-        Me.mnuNewItem.ToolTipText = "Save the Ticket"
+        Me.colDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colDescription.DataPropertyName = "DESCRIPTION"
+        Me.colDescription.HeaderText = "Description"
+        Me.colDescription.MinimumWidth = 6
+        Me.colDescription.Name = "colDescription"
+        Me.colDescription.ReadOnly = True
+        Me.colDescription.Width = 104
         '
-        'mnuExportData
+        'colModel
         '
-        Me.mnuExportData.Image = CType(resources.GetObject("mnuExportData.Image"), System.Drawing.Image)
-        Me.mnuExportData.Name = "mnuExportData"
-        Me.mnuExportData.Size = New System.Drawing.Size(95, 38)
-        Me.mnuExportData.Text = "Export Data"
+        Me.colModel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colModel.DataPropertyName = "MODEL"
+        Me.colModel.HeaderText = "Model"
+        Me.colModel.MinimumWidth = 6
+        Me.colModel.Name = "colModel"
+        Me.colModel.ReadOnly = True
+        Me.colModel.Width = 74
         '
-        'mnuImportData
+        'colSerial
         '
-        Me.mnuImportData.Image = CType(resources.GetObject("mnuImportData.Image"), System.Drawing.Image)
-        Me.mnuImportData.Name = "mnuImportData"
-        Me.mnuImportData.Size = New System.Drawing.Size(98, 38)
-        Me.mnuImportData.Text = "Import Data"
+        Me.colSerial.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colSerial.DataPropertyName = "SERIAL"
+        Me.colSerial.HeaderText = "Serial"
+        Me.colSerial.MinimumWidth = 6
+        Me.colSerial.Name = "colSerial"
+        Me.colSerial.ReadOnly = True
+        Me.colSerial.Width = 71
         '
-        'chkNo
+        'colTag
         '
-        Me.chkNo.AutoSize = True
-        Me.chkNo.Location = New System.Drawing.Point(848, 16)
-        Me.chkNo.Name = "chkNo"
-        Me.chkNo.Size = New System.Drawing.Size(40, 17)
-        Me.chkNo.TabIndex = 37
-        Me.chkNo.Text = "No"
-        Me.chkNo.UseVisualStyleBackColor = True
+        Me.colTag.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colTag.DataPropertyName = "TAG"
+        Me.colTag.HeaderText = "Tag"
+        Me.colTag.MinimumWidth = 6
+        Me.colTag.Name = "colTag"
+        Me.colTag.ReadOnly = True
+        Me.colTag.Width = 61
         '
-        'chkYes
+        'colUnit
         '
-        Me.chkYes.AutoSize = True
-        Me.chkYes.Checked = True
-        Me.chkYes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkYes.Location = New System.Drawing.Point(798, 16)
-        Me.chkYes.Name = "chkYes"
-        Me.chkYes.Size = New System.Drawing.Size(44, 17)
-        Me.chkYes.TabIndex = 36
-        Me.chkYes.Text = "Yes"
-        Me.chkYes.UseVisualStyleBackColor = True
+        Me.colUnit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colUnit.DataPropertyName = "UNIT"
+        Me.colUnit.HeaderText = "Unit"
+        Me.colUnit.MinimumWidth = 6
+        Me.colUnit.Name = "colUnit"
+        Me.colUnit.ReadOnly = True
+        Me.colUnit.Width = 59
         '
-        'Label3
+        'colActive
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(752, 16)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
-        Me.Label3.TabIndex = 35
-        Me.Label3.Text = "Active:"
+        Me.colActive.DataPropertyName = "ACTIVE"
+        Me.colActive.HeaderText = "Active"
+        Me.colActive.MinimumWidth = 6
+        Me.colActive.Name = "colActive"
+        Me.colActive.ReadOnly = True
+        Me.colActive.Width = 60
         '
         'EQUIPMENTBindingSource
         '
@@ -139,6 +146,74 @@ Partial Class frmEquipmentList
         '
         Me.SESTicketSQLDataSet.DataSetName = "SESTicketSQLDataSet"
         Me.SESTicketSQLDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.AutoSize = False
+        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem, Me.mnuExportData, Me.mnuImportData})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1200, 52)
+        Me.MenuStrip1.TabIndex = 32
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'mnuNewItem
+        '
+        Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
+        Me.mnuNewItem.Name = "mnuNewItem"
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
+        Me.mnuNewItem.Text = "New Item"
+        Me.mnuNewItem.ToolTipText = "Save the Ticket"
+        '
+        'mnuExportData
+        '
+        Me.mnuExportData.Image = CType(resources.GetObject("mnuExportData.Image"), System.Drawing.Image)
+        Me.mnuExportData.Name = "mnuExportData"
+        Me.mnuExportData.Size = New System.Drawing.Size(122, 48)
+        Me.mnuExportData.Text = "Export Data"
+        '
+        'mnuImportData
+        '
+        Me.mnuImportData.Image = CType(resources.GetObject("mnuImportData.Image"), System.Drawing.Image)
+        Me.mnuImportData.Name = "mnuImportData"
+        Me.mnuImportData.Size = New System.Drawing.Size(124, 48)
+        Me.mnuImportData.Text = "Import Data"
+        '
+        'chkNo
+        '
+        Me.chkNo.AutoSize = True
+        Me.chkNo.Location = New System.Drawing.Point(1131, 20)
+        Me.chkNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkNo.Name = "chkNo"
+        Me.chkNo.Size = New System.Drawing.Size(47, 20)
+        Me.chkNo.TabIndex = 37
+        Me.chkNo.Text = "No"
+        Me.chkNo.UseVisualStyleBackColor = True
+        '
+        'chkYes
+        '
+        Me.chkYes.AutoSize = True
+        Me.chkYes.Checked = True
+        Me.chkYes.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkYes.Location = New System.Drawing.Point(1064, 20)
+        Me.chkYes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkYes.Name = "chkYes"
+        Me.chkYes.Size = New System.Drawing.Size(53, 20)
+        Me.chkYes.TabIndex = 36
+        Me.chkYes.Text = "Yes"
+        Me.chkYes.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(1003, 20)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(47, 16)
+        Me.Label3.TabIndex = 35
+        Me.Label3.Text = "Active:"
         '
         'EQUIPMENTTableAdapter
         '
@@ -176,90 +251,30 @@ Partial Class frmEquipmentList
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
         '
-        'colEquipmentId
-        '
-        Me.colEquipmentId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colEquipmentId.DataPropertyName = "EQUIPMENTID"
-        Me.colEquipmentId.HeaderText = "ID"
-        Me.colEquipmentId.Name = "colEquipmentId"
-        Me.colEquipmentId.ReadOnly = True
-        Me.colEquipmentId.Width = 43
-        '
-        'colDescription
-        '
-        Me.colDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colDescription.DataPropertyName = "DESCRIPTION"
-        Me.colDescription.HeaderText = "Description"
-        Me.colDescription.Name = "colDescription"
-        Me.colDescription.ReadOnly = True
-        Me.colDescription.Width = 85
-        '
-        'colModel
-        '
-        Me.colModel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colModel.DataPropertyName = "MODEL"
-        Me.colModel.HeaderText = "Model"
-        Me.colModel.Name = "colModel"
-        Me.colModel.ReadOnly = True
-        Me.colModel.Width = 61
-        '
-        'colSerial
-        '
-        Me.colSerial.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colSerial.DataPropertyName = "SERIAL"
-        Me.colSerial.HeaderText = "Serial"
-        Me.colSerial.Name = "colSerial"
-        Me.colSerial.ReadOnly = True
-        Me.colSerial.Width = 58
-        '
-        'colTag
-        '
-        Me.colTag.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colTag.DataPropertyName = "TAG"
-        Me.colTag.HeaderText = "Tag"
-        Me.colTag.Name = "colTag"
-        Me.colTag.ReadOnly = True
-        Me.colTag.Width = 51
-        '
-        'colUnit
-        '
-        Me.colUnit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colUnit.DataPropertyName = "UNIT"
-        Me.colUnit.HeaderText = "Unit"
-        Me.colUnit.Name = "colUnit"
-        Me.colUnit.ReadOnly = True
-        Me.colUnit.Width = 51
-        '
-        'colActive
-        '
-        Me.colActive.DataPropertyName = "ACTIVE"
-        Me.colActive.HeaderText = "Active"
-        Me.colActive.Name = "colActive"
-        Me.colActive.ReadOnly = True
-        Me.colActive.Width = 60
-        '
         'frmEquipmentList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(900, 527)
+        Me.ClientSize = New System.Drawing.Size(1200, 649)
         Me.Controls.Add(Me.chkNo)
         Me.Controls.Add(Me.chkYes)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.dgvEquipment)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmEquipmentList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "SESTicket - Equipment"
+        Me.Text = "INNTicket - Equipment"
         CType(Me.dgvEquipment, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         CType(Me.EQUIPMENTBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

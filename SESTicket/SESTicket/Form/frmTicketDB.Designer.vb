@@ -23,10 +23,10 @@ Partial Class frmTicketDB
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketDB))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketDB))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblTicketID = New System.Windows.Forms.Label()
         Me.cbxTicket = New System.Windows.Forms.ComboBox()
@@ -54,18 +54,6 @@ Partial Class frmTicketDB
         Me.Sp_TicketDBBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.dgvTicket = New System.Windows.Forms.DataGridView()
-        Me.cmnuGridPrincip = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.cmnuImportTicket = New System.Windows.Forms.ToolStripMenuItem()
-        Me.cmnuReOpenTicket = New System.Windows.Forms.ToolStripMenuItem()
-        Me.cmnuSep00 = New System.Windows.Forms.ToolStripSeparator()
-        Me.mnuCloseTickets = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuChangeSupSupervisor = New System.Windows.Forms.ToolStripMenuItem()
-        Me.cmnuSep01 = New System.Windows.Forms.ToolStripSeparator()
-        Me.cmnuCancelTicket = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CbxServiceLineTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxServiceLineTableAdapter()
-        Me.CbxCustomerTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxCustomerTableAdapter()
-        Me.CbxSiteTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxSiteTableAdapter()
-        Me.Sp_TicketDBTableAdapter1 = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketDBTableAdapter()
         Me.colAttach = New System.Windows.Forms.DataGridViewImageColumn()
         Me.colTicketId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colServiceTicket = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -81,6 +69,18 @@ Partial Class frmTicketDB
         Me.colItemAmount = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colSyncDateTime = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colHasAttach = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cmnuGridPrincip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.cmnuImportTicket = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cmnuReOpenTicket = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cmnuSep00 = New System.Windows.Forms.ToolStripSeparator()
+        Me.mnuCloseTickets = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuChangeSupSupervisor = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cmnuSep01 = New System.Windows.Forms.ToolStripSeparator()
+        Me.cmnuCancelTicket = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CbxServiceLineTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxServiceLineTableAdapter()
+        Me.CbxCustomerTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxCustomerTableAdapter()
+        Me.CbxSiteTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxSiteTableAdapter()
+        Me.Sp_TicketDBTableAdapter1 = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketDBTableAdapter()
         Me.GroupBox1.SuspendLayout()
         CType(Me.CbxCustomerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,18 +112,21 @@ Partial Class frmTicketDB
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1100, 67)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1467, 82)
         Me.GroupBox1.TabIndex = 41
         Me.GroupBox1.TabStop = False
         '
         'lblTicketID
         '
         Me.lblTicketID.AutoSize = True
-        Me.lblTicketID.Location = New System.Drawing.Point(498, 42)
+        Me.lblTicketID.Location = New System.Drawing.Point(664, 52)
+        Me.lblTicketID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTicketID.Name = "lblTicketID"
-        Me.lblTicketID.Size = New System.Drawing.Size(51, 13)
+        Me.lblTicketID.Size = New System.Drawing.Size(60, 16)
         Me.lblTicketID.TabIndex = 59
         Me.lblTicketID.Text = "TicketID:"
         '
@@ -131,26 +134,29 @@ Partial Class frmTicketDB
         '
         Me.cbxTicket.FormattingEnabled = True
         Me.cbxTicket.Items.AddRange(New Object() {"Ticket ID", "Proforma Val."})
-        Me.cbxTicket.Location = New System.Drawing.Point(501, 37)
+        Me.cbxTicket.Location = New System.Drawing.Point(668, 46)
+        Me.cbxTicket.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxTicket.Name = "cbxTicket"
-        Me.cbxTicket.Size = New System.Drawing.Size(94, 21)
+        Me.cbxTicket.Size = New System.Drawing.Size(124, 24)
         Me.cbxTicket.TabIndex = 42
         Me.cbxTicket.Text = "Ticket ID"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(498, 16)
+        Me.Label1.Location = New System.Drawing.Point(664, 20)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
         Me.Label1.TabIndex = 57
         Me.Label1.Text = "Customer:"
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(977, 16)
+        Me.btnSearch.Location = New System.Drawing.Point(1303, 20)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(86, 34)
+        Me.btnSearch.Size = New System.Drawing.Size(115, 42)
         Me.btnSearch.TabIndex = 36
         Me.btnSearch.Text = "Ok"
         Me.btnSearch.UseVisualStyleBackColor = True
@@ -160,9 +166,10 @@ Partial Class frmTicketDB
         Me.cbxCustomer.DataSource = Me.CbxCustomerBindingSource
         Me.cbxCustomer.DisplayMember = "NAME"
         Me.cbxCustomer.FormattingEnabled = True
-        Me.cbxCustomer.Location = New System.Drawing.Point(601, 13)
+        Me.cbxCustomer.Location = New System.Drawing.Point(801, 16)
+        Me.cbxCustomer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCustomer.Name = "cbxCustomer"
-        Me.cbxCustomer.Size = New System.Drawing.Size(178, 21)
+        Me.cbxCustomer.Size = New System.Drawing.Size(236, 24)
         Me.cbxCustomer.TabIndex = 56
         Me.cbxCustomer.ValueMember = "CUSTOMERID"
         '
@@ -178,9 +185,10 @@ Partial Class frmTicketDB
         '
         'txtTicketId
         '
-        Me.txtTicketId.Location = New System.Drawing.Point(601, 38)
+        Me.txtTicketId.Location = New System.Drawing.Point(801, 47)
+        Me.txtTicketId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTicketId.Name = "txtTicketId"
-        Me.txtTicketId.Size = New System.Drawing.Size(178, 20)
+        Me.txtTicketId.Size = New System.Drawing.Size(236, 22)
         Me.txtTicketId.TabIndex = 55
         '
         'chkCanceled
@@ -188,9 +196,10 @@ Partial Class frmTicketDB
         Me.chkCanceled.AutoSize = True
         Me.chkCanceled.Checked = True
         Me.chkCanceled.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkCanceled.Location = New System.Drawing.Point(880, 41)
+        Me.chkCanceled.Location = New System.Drawing.Point(1173, 50)
+        Me.chkCanceled.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkCanceled.Name = "chkCanceled"
-        Me.chkCanceled.Size = New System.Drawing.Size(71, 17)
+        Me.chkCanceled.Size = New System.Drawing.Size(87, 20)
         Me.chkCanceled.TabIndex = 39
         Me.chkCanceled.Text = "Canceled"
         Me.chkCanceled.UseVisualStyleBackColor = True
@@ -200,9 +209,10 @@ Partial Class frmTicketDB
         Me.chkClosed.AutoSize = True
         Me.chkClosed.Checked = True
         Me.chkClosed.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkClosed.Location = New System.Drawing.Point(880, 26)
+        Me.chkClosed.Location = New System.Drawing.Point(1173, 32)
+        Me.chkClosed.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkClosed.Name = "chkClosed"
-        Me.chkClosed.Size = New System.Drawing.Size(58, 17)
+        Me.chkClosed.Size = New System.Drawing.Size(72, 20)
         Me.chkClosed.TabIndex = 38
         Me.chkClosed.Text = "Closed"
         Me.chkClosed.UseVisualStyleBackColor = True
@@ -212,9 +222,10 @@ Partial Class frmTicketDB
         Me.chkOpen.AutoSize = True
         Me.chkOpen.Checked = True
         Me.chkOpen.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkOpen.Location = New System.Drawing.Point(880, 11)
+        Me.chkOpen.Location = New System.Drawing.Point(1173, 14)
+        Me.chkOpen.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkOpen.Name = "chkOpen"
-        Me.chkOpen.Size = New System.Drawing.Size(52, 17)
+        Me.chkOpen.Size = New System.Drawing.Size(62, 20)
         Me.chkOpen.TabIndex = 37
         Me.chkOpen.Text = "Open"
         Me.chkOpen.UseVisualStyleBackColor = True
@@ -224,9 +235,10 @@ Partial Class frmTicketDB
         Me.cbxSite.DataSource = Me.CbxSiteBindingSource
         Me.cbxSite.DisplayMember = "NAME"
         Me.cbxSite.FormattingEnabled = True
-        Me.cbxSite.Location = New System.Drawing.Point(328, 37)
+        Me.cbxSite.Location = New System.Drawing.Point(437, 46)
+        Me.cbxSite.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxSite.Name = "cbxSite"
-        Me.cbxSite.Size = New System.Drawing.Size(162, 21)
+        Me.cbxSite.Size = New System.Drawing.Size(215, 24)
         Me.cbxSite.TabIndex = 47
         Me.cbxSite.ValueMember = "SITEID"
         '
@@ -238,9 +250,10 @@ Partial Class frmTicketDB
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(253, 37)
+        Me.Label6.Location = New System.Drawing.Point(337, 46)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(28, 13)
+        Me.Label6.Size = New System.Drawing.Size(33, 16)
         Me.Label6.TabIndex = 46
         Me.Label6.Text = "Site:"
         '
@@ -249,9 +262,10 @@ Partial Class frmTicketDB
         Me.cbxServiceLine.DataSource = Me.CbxServiceLineBindingSource
         Me.cbxServiceLine.DisplayMember = "NAME"
         Me.cbxServiceLine.FormattingEnabled = True
-        Me.cbxServiceLine.Location = New System.Drawing.Point(328, 13)
+        Me.cbxServiceLine.Location = New System.Drawing.Point(437, 16)
+        Me.cbxServiceLine.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxServiceLine.Name = "cbxServiceLine"
-        Me.cbxServiceLine.Size = New System.Drawing.Size(162, 21)
+        Me.cbxServiceLine.Size = New System.Drawing.Size(215, 24)
         Me.cbxServiceLine.TabIndex = 45
         Me.cbxServiceLine.ValueMember = "SERVICELINEID"
         '
@@ -263,9 +277,10 @@ Partial Class frmTicketDB
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(253, 16)
+        Me.Label5.Location = New System.Drawing.Point(337, 20)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(69, 13)
+        Me.Label5.Size = New System.Drawing.Size(84, 16)
         Me.Label5.TabIndex = 44
         Me.Label5.Text = "Service Line:"
         '
@@ -273,26 +288,29 @@ Partial Class frmTicketDB
         '
         Me.dtpServiceDateEnd.CustomFormat = "dd/MM/yyyy"
         Me.dtpServiceDateEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpServiceDateEnd.Location = New System.Drawing.Point(139, 36)
+        Me.dtpServiceDateEnd.Location = New System.Drawing.Point(185, 44)
+        Me.dtpServiceDateEnd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpServiceDateEnd.Name = "dtpServiceDateEnd"
-        Me.dtpServiceDateEnd.Size = New System.Drawing.Size(96, 20)
+        Me.dtpServiceDateEnd.Size = New System.Drawing.Size(127, 22)
         Me.dtpServiceDateEnd.TabIndex = 40
         '
         'dtpServiceDateBegin
         '
         Me.dtpServiceDateBegin.CustomFormat = "dd/MM/yyyy"
         Me.dtpServiceDateBegin.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpServiceDateBegin.Location = New System.Drawing.Point(139, 13)
+        Me.dtpServiceDateBegin.Location = New System.Drawing.Point(185, 16)
+        Me.dtpServiceDateBegin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpServiceDateBegin.Name = "dtpServiceDateBegin"
-        Me.dtpServiceDateBegin.Size = New System.Drawing.Size(96, 20)
+        Me.dtpServiceDateBegin.Size = New System.Drawing.Size(127, 22)
         Me.dtpServiceDateBegin.TabIndex = 39
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(801, 11)
+        Me.Label4.Location = New System.Drawing.Point(1068, 14)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(73, 13)
+        Me.Label4.Size = New System.Drawing.Size(87, 16)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Ticket Status:"
         '
@@ -300,9 +318,10 @@ Partial Class frmTicketDB
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(25, 37)
+        Me.Label8.Location = New System.Drawing.Point(33, 46)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(100, 13)
+        Me.Label8.Size = New System.Drawing.Size(123, 16)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Service Date (End):"
         '
@@ -310,9 +329,10 @@ Partial Class frmTicketDB
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(25, 16)
+        Me.Label10.Location = New System.Drawing.Point(33, 20)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(108, 13)
+        Me.Label10.Size = New System.Drawing.Size(134, 16)
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "Service Date (Begin):"
         '
@@ -371,63 +391,214 @@ Partial Class frmTicketDB
         Me.dgvTicket.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colAttach, Me.colTicketId, Me.colServiceTicket, Me.colSuperiorSupervisor, Me.colCreatedBy, Me.colTicketStatus, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn19, Me.colItemAmount, Me.colSyncDateTime, Me.colHasAttach})
         Me.dgvTicket.ContextMenuStrip = Me.cmnuGridPrincip
         Me.dgvTicket.DataSource = Me.Sp_TicketDBBindingSource
-        Me.dgvTicket.Location = New System.Drawing.Point(6, 85)
+        Me.dgvTicket.Location = New System.Drawing.Point(8, 105)
+        Me.dgvTicket.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvTicket.Name = "dgvTicket"
         Me.dgvTicket.ReadOnly = True
         Me.dgvTicket.RowHeadersWidth = 15
         Me.dgvTicket.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvTicket.Size = New System.Drawing.Size(1181, 552)
+        Me.dgvTicket.Size = New System.Drawing.Size(1575, 679)
         Me.dgvTicket.TabIndex = 43
+        '
+        'colAttach
+        '
+        Me.colAttach.HeaderText = ""
+        Me.colAttach.MinimumWidth = 6
+        Me.colAttach.Name = "colAttach"
+        Me.colAttach.ReadOnly = True
+        Me.colAttach.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.colAttach.Width = 20
+        '
+        'colTicketId
+        '
+        Me.colTicketId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colTicketId.DataPropertyName = "TICKETID"
+        Me.colTicketId.HeaderText = "Ticket"
+        Me.colTicketId.MinimumWidth = 6
+        Me.colTicketId.Name = "colTicketId"
+        Me.colTicketId.ReadOnly = True
+        Me.colTicketId.Width = 73
+        '
+        'colServiceTicket
+        '
+        Me.colServiceTicket.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colServiceTicket.DataPropertyName = "PROFORMAVAL"
+        Me.colServiceTicket.HeaderText = "Proforma Val Field Tickets"
+        Me.colServiceTicket.MinimumWidth = 6
+        Me.colServiceTicket.Name = "colServiceTicket"
+        Me.colServiceTicket.ReadOnly = True
+        Me.colServiceTicket.Width = 137
+        '
+        'colSuperiorSupervisor
+        '
+        Me.colSuperiorSupervisor.DataPropertyName = "SUPERIORSUPERVNAME"
+        Me.colSuperiorSupervisor.HeaderText = "Superior´s Supervisor"
+        Me.colSuperiorSupervisor.MinimumWidth = 6
+        Me.colSuperiorSupervisor.Name = "colSuperiorSupervisor"
+        Me.colSuperiorSupervisor.ReadOnly = True
+        Me.colSuperiorSupervisor.Width = 120
+        '
+        'colCreatedBy
+        '
+        Me.colCreatedBy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colCreatedBy.DataPropertyName = "FULLUSERNAME"
+        Me.colCreatedBy.HeaderText = "Created by"
+        Me.colCreatedBy.MinimumWidth = 6
+        Me.colCreatedBy.Name = "colCreatedBy"
+        Me.colCreatedBy.ReadOnly = True
+        Me.colCreatedBy.Width = 94
+        '
+        'colTicketStatus
+        '
+        Me.colTicketStatus.DataPropertyName = "TICKETSTATUS"
+        Me.colTicketStatus.HeaderText = "Status"
+        Me.colTicketStatus.MinimumWidth = 6
+        Me.colTicketStatus.Name = "colTicketStatus"
+        Me.colTicketStatus.ReadOnly = True
+        Me.colTicketStatus.Width = 70
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "DATESERVICE"
+        DataGridViewCellStyle1.Format = "d"
+        DataGridViewCellStyle1.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Service Date"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        Me.DataGridViewTextBoxColumn4.Width = 92
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "SERVICELINE"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Service Line"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        Me.DataGridViewTextBoxColumn5.Width = 110
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "CUSTOMERNAME"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Customer"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        Me.DataGridViewTextBoxColumn6.Width = 190
+        '
+        'DataGridViewTextBoxColumn17
+        '
+        Me.DataGridViewTextBoxColumn17.DataPropertyName = "SITE"
+        Me.DataGridViewTextBoxColumn17.HeaderText = "Site"
+        Me.DataGridViewTextBoxColumn17.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        Me.DataGridViewTextBoxColumn17.ReadOnly = True
+        Me.DataGridViewTextBoxColumn17.Width = 45
+        '
+        'DataGridViewTextBoxColumn13
+        '
+        Me.DataGridViewTextBoxColumn13.DataPropertyName = "WELLID"
+        Me.DataGridViewTextBoxColumn13.HeaderText = "Well"
+        Me.DataGridViewTextBoxColumn13.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
+        Me.DataGridViewTextBoxColumn13.ReadOnly = True
+        Me.DataGridViewTextBoxColumn13.Width = 125
+        '
+        'DataGridViewTextBoxColumn19
+        '
+        Me.DataGridViewTextBoxColumn19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.DataGridViewTextBoxColumn19.DataPropertyName = "CURRENCY"
+        Me.DataGridViewTextBoxColumn19.HeaderText = ""
+        Me.DataGridViewTextBoxColumn19.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        Me.DataGridViewTextBoxColumn19.ReadOnly = True
+        Me.DataGridViewTextBoxColumn19.Width = 23
+        '
+        'colItemAmount
+        '
+        Me.colItemAmount.DataPropertyName = "ITEMAMOUNT"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle2.Format = "n2"
+        Me.colItemAmount.DefaultCellStyle = DataGridViewCellStyle2
+        Me.colItemAmount.HeaderText = "Amount"
+        Me.colItemAmount.MinimumWidth = 6
+        Me.colItemAmount.Name = "colItemAmount"
+        Me.colItemAmount.ReadOnly = True
+        Me.colItemAmount.Width = 125
+        '
+        'colSyncDateTime
+        '
+        Me.colSyncDateTime.DataPropertyName = "SYNCDATETIME"
+        DataGridViewCellStyle3.Format = "G"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.colSyncDateTime.DefaultCellStyle = DataGridViewCellStyle3
+        Me.colSyncDateTime.HeaderText = "Sync Date"
+        Me.colSyncDateTime.MinimumWidth = 6
+        Me.colSyncDateTime.Name = "colSyncDateTime"
+        Me.colSyncDateTime.ReadOnly = True
+        Me.colSyncDateTime.Width = 135
+        '
+        'colHasAttach
+        '
+        Me.colHasAttach.DataPropertyName = "HASATTACH"
+        Me.colHasAttach.HeaderText = "HASATTACH"
+        Me.colHasAttach.MinimumWidth = 6
+        Me.colHasAttach.Name = "colHasAttach"
+        Me.colHasAttach.ReadOnly = True
+        Me.colHasAttach.Visible = False
+        Me.colHasAttach.Width = 125
         '
         'cmnuGridPrincip
         '
+        Me.cmnuGridPrincip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.cmnuGridPrincip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.cmnuImportTicket, Me.cmnuReOpenTicket, Me.cmnuSep00, Me.mnuCloseTickets, Me.mnuChangeSupSupervisor, Me.cmnuSep01, Me.cmnuCancelTicket})
         Me.cmnuGridPrincip.Name = "cmnuGridPrincip"
-        Me.cmnuGridPrincip.Size = New System.Drawing.Size(174, 126)
+        Me.cmnuGridPrincip.Size = New System.Drawing.Size(206, 146)
         '
         'cmnuImportTicket
         '
         Me.cmnuImportTicket.Image = CType(resources.GetObject("cmnuImportTicket.Image"), System.Drawing.Image)
         Me.cmnuImportTicket.Name = "cmnuImportTicket"
-        Me.cmnuImportTicket.Size = New System.Drawing.Size(173, 22)
+        Me.cmnuImportTicket.Size = New System.Drawing.Size(205, 26)
         Me.cmnuImportTicket.Text = "Import Ticket"
         '
         'cmnuReOpenTicket
         '
         Me.cmnuReOpenTicket.Image = CType(resources.GetObject("cmnuReOpenTicket.Image"), System.Drawing.Image)
         Me.cmnuReOpenTicket.Name = "cmnuReOpenTicket"
-        Me.cmnuReOpenTicket.Size = New System.Drawing.Size(173, 22)
+        Me.cmnuReOpenTicket.Size = New System.Drawing.Size(205, 26)
         Me.cmnuReOpenTicket.Text = "Re-Open Ticket"
         '
         'cmnuSep00
         '
         Me.cmnuSep00.Name = "cmnuSep00"
-        Me.cmnuSep00.Size = New System.Drawing.Size(170, 6)
+        Me.cmnuSep00.Size = New System.Drawing.Size(202, 6)
         '
         'mnuCloseTickets
         '
         Me.mnuCloseTickets.Image = CType(resources.GetObject("mnuCloseTickets.Image"), System.Drawing.Image)
         Me.mnuCloseTickets.Name = "mnuCloseTickets"
-        Me.mnuCloseTickets.Size = New System.Drawing.Size(173, 22)
+        Me.mnuCloseTickets.Size = New System.Drawing.Size(205, 26)
         Me.mnuCloseTickets.Text = "Close Ticket"
         '
         'mnuChangeSupSupervisor
         '
         Me.mnuChangeSupSupervisor.Image = CType(resources.GetObject("mnuChangeSupSupervisor.Image"), System.Drawing.Image)
         Me.mnuChangeSupSupervisor.Name = "mnuChangeSupSupervisor"
-        Me.mnuChangeSupSupervisor.Size = New System.Drawing.Size(173, 22)
+        Me.mnuChangeSupSupervisor.Size = New System.Drawing.Size(205, 26)
         Me.mnuChangeSupSupervisor.Text = "Change Supervisor"
         '
         'cmnuSep01
         '
         Me.cmnuSep01.Name = "cmnuSep01"
-        Me.cmnuSep01.Size = New System.Drawing.Size(170, 6)
+        Me.cmnuSep01.Size = New System.Drawing.Size(202, 6)
         '
         'cmnuCancelTicket
         '
         Me.cmnuCancelTicket.Image = CType(resources.GetObject("cmnuCancelTicket.Image"), System.Drawing.Image)
         Me.cmnuCancelTicket.Name = "cmnuCancelTicket"
-        Me.cmnuCancelTicket.Size = New System.Drawing.Size(173, 22)
+        Me.cmnuCancelTicket.Size = New System.Drawing.Size(205, 26)
         Me.cmnuCancelTicket.Text = "Cancel Ticket"
         '
         'CbxServiceLineTableAdapter
@@ -446,150 +617,20 @@ Partial Class frmTicketDB
         '
         Me.Sp_TicketDBTableAdapter1.ClearBeforeFill = True
         '
-        'colAttach
-        '
-        Me.colAttach.HeaderText = ""
-        Me.colAttach.Name = "colAttach"
-        Me.colAttach.ReadOnly = True
-        Me.colAttach.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.colAttach.Width = 20
-        '
-        'colTicketId
-        '
-        Me.colTicketId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colTicketId.DataPropertyName = "TICKETID"
-        Me.colTicketId.HeaderText = "Ticket"
-        Me.colTicketId.Name = "colTicketId"
-        Me.colTicketId.ReadOnly = True
-        Me.colTicketId.Width = 62
-        '
-        'colServiceTicket
-        '
-        Me.colServiceTicket.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colServiceTicket.DataPropertyName = "PROFORMAVAL"
-        Me.colServiceTicket.HeaderText = "Proforma Val Field Tickets"
-        Me.colServiceTicket.Name = "colServiceTicket"
-        Me.colServiceTicket.ReadOnly = True
-        Me.colServiceTicket.Width = 110
-        '
-        'colSuperiorSupervisor
-        '
-        Me.colSuperiorSupervisor.DataPropertyName = "SUPERIORSUPERVNAME"
-        Me.colSuperiorSupervisor.HeaderText = "Superior´s Supervisor"
-        Me.colSuperiorSupervisor.Name = "colSuperiorSupervisor"
-        Me.colSuperiorSupervisor.ReadOnly = True
-        Me.colSuperiorSupervisor.Width = 120
-        '
-        'colCreatedBy
-        '
-        Me.colCreatedBy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colCreatedBy.DataPropertyName = "FULLUSERNAME"
-        Me.colCreatedBy.HeaderText = "Created by"
-        Me.colCreatedBy.Name = "colCreatedBy"
-        Me.colCreatedBy.ReadOnly = True
-        Me.colCreatedBy.Width = 77
-        '
-        'colTicketStatus
-        '
-        Me.colTicketStatus.DataPropertyName = "TICKETSTATUS"
-        Me.colTicketStatus.HeaderText = "Status"
-        Me.colTicketStatus.Name = "colTicketStatus"
-        Me.colTicketStatus.ReadOnly = True
-        Me.colTicketStatus.Width = 70
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "DATESERVICE"
-        DataGridViewCellStyle1.Format = "d"
-        DataGridViewCellStyle1.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle1
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Service Date"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
-        Me.DataGridViewTextBoxColumn4.Width = 92
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "SERVICELINE"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Service Line"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
-        Me.DataGridViewTextBoxColumn5.Width = 110
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "CUSTOMERNAME"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Customer"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        Me.DataGridViewTextBoxColumn6.Width = 190
-        '
-        'DataGridViewTextBoxColumn17
-        '
-        Me.DataGridViewTextBoxColumn17.DataPropertyName = "SITE"
-        Me.DataGridViewTextBoxColumn17.HeaderText = "Site"
-        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
-        Me.DataGridViewTextBoxColumn17.ReadOnly = True
-        Me.DataGridViewTextBoxColumn17.Width = 45
-        '
-        'DataGridViewTextBoxColumn13
-        '
-        Me.DataGridViewTextBoxColumn13.DataPropertyName = "WELLID"
-        Me.DataGridViewTextBoxColumn13.HeaderText = "Well"
-        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
-        Me.DataGridViewTextBoxColumn13.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn19
-        '
-        Me.DataGridViewTextBoxColumn19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.DataGridViewTextBoxColumn19.DataPropertyName = "CURRENCY"
-        Me.DataGridViewTextBoxColumn19.HeaderText = ""
-        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
-        Me.DataGridViewTextBoxColumn19.ReadOnly = True
-        Me.DataGridViewTextBoxColumn19.Width = 19
-        '
-        'colItemAmount
-        '
-        Me.colItemAmount.DataPropertyName = "ITEMAMOUNT"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle2.Format = "n2"
-        Me.colItemAmount.DefaultCellStyle = DataGridViewCellStyle2
-        Me.colItemAmount.HeaderText = "Amount"
-        Me.colItemAmount.Name = "colItemAmount"
-        Me.colItemAmount.ReadOnly = True
-        '
-        'colSyncDateTime
-        '
-        Me.colSyncDateTime.DataPropertyName = "SYNCDATETIME"
-        DataGridViewCellStyle3.Format = "G"
-        DataGridViewCellStyle3.NullValue = Nothing
-        Me.colSyncDateTime.DefaultCellStyle = DataGridViewCellStyle3
-        Me.colSyncDateTime.HeaderText = "Sync Date"
-        Me.colSyncDateTime.Name = "colSyncDateTime"
-        Me.colSyncDateTime.ReadOnly = True
-        Me.colSyncDateTime.Width = 135
-        '
-        'colHasAttach
-        '
-        Me.colHasAttach.DataPropertyName = "HASATTACH"
-        Me.colHasAttach.HeaderText = "HASATTACH"
-        Me.colHasAttach.Name = "colHasAttach"
-        Me.colHasAttach.ReadOnly = True
-        Me.colHasAttach.Visible = False
-        '
         'frmTicketDB
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1191, 649)
+        Me.ClientSize = New System.Drawing.Size(1588, 799)
         Me.Controls.Add(Me.dgvTicket)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmTicketDB"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Ticket Database"
+        Me.Text = "INNTicket - Ticket Database"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.CbxCustomerBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

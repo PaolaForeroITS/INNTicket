@@ -55,18 +55,20 @@ Partial Class frmSearchWorker
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(519, 10)
+        Me.Button1.Location = New System.Drawing.Point(692, 12)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 20
         Me.Button1.Text = "Search"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'txtSearch
         '
-        Me.txtSearch.Location = New System.Drawing.Point(205, 12)
+        Me.txtSearch.Location = New System.Drawing.Point(273, 15)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(308, 20)
+        Me.txtSearch.Size = New System.Drawing.Size(409, 22)
         Me.txtSearch.TabIndex = 19
         '
         'dgvWorker
@@ -78,12 +80,14 @@ Partial Class frmSearchWorker
         Me.dgvWorker.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvWorker.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colFullName, Me.colAppointment, Me.colWorkerId, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn7, Me.colManHourValue, Me.colBonusValue})
         Me.dgvWorker.DataSource = Me.WORKERBindingSource
-        Me.dgvWorker.Location = New System.Drawing.Point(2, 39)
+        Me.dgvWorker.Location = New System.Drawing.Point(3, 48)
+        Me.dgvWorker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvWorker.MultiSelect = False
         Me.dgvWorker.Name = "dgvWorker"
         Me.dgvWorker.ReadOnly = True
+        Me.dgvWorker.RowHeadersWidth = 51
         Me.dgvWorker.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvWorker.Size = New System.Drawing.Size(690, 385)
+        Me.dgvWorker.Size = New System.Drawing.Size(920, 474)
         Me.dgvWorker.TabIndex = 21
         '
         'colFullName
@@ -92,6 +96,7 @@ Partial Class frmSearchWorker
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.colFullName.DefaultCellStyle = DataGridViewCellStyle1
         Me.colFullName.HeaderText = "Full Name"
+        Me.colFullName.MinimumWidth = 6
         Me.colFullName.Name = "colFullName"
         Me.colFullName.ReadOnly = True
         Me.colFullName.Width = 300
@@ -102,6 +107,7 @@ Partial Class frmSearchWorker
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.colAppointment.DefaultCellStyle = DataGridViewCellStyle2
         Me.colAppointment.HeaderText = "Appointment"
+        Me.colAppointment.MinimumWidth = 6
         Me.colAppointment.Name = "colAppointment"
         Me.colAppointment.ReadOnly = True
         Me.colAppointment.Width = 300
@@ -110,49 +116,61 @@ Partial Class frmSearchWorker
         '
         Me.colWorkerId.DataPropertyName = "WORKERID"
         Me.colWorkerId.HeaderText = "Id"
+        Me.colWorkerId.MinimumWidth = 6
         Me.colWorkerId.Name = "colWorkerId"
         Me.colWorkerId.ReadOnly = True
         Me.colWorkerId.Visible = False
+        Me.colWorkerId.Width = 125
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "NAME1"
         Me.DataGridViewTextBoxColumn2.HeaderText = "NAME1"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
         Me.DataGridViewTextBoxColumn2.Visible = False
+        Me.DataGridViewTextBoxColumn2.Width = 125
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "NAME2"
         Me.DataGridViewTextBoxColumn3.HeaderText = "NAME2"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.ReadOnly = True
         Me.DataGridViewTextBoxColumn3.Visible = False
+        Me.DataGridViewTextBoxColumn3.Width = 125
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "SURNAME1"
         Me.DataGridViewTextBoxColumn4.HeaderText = "SURNAME1"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         Me.DataGridViewTextBoxColumn4.ReadOnly = True
         Me.DataGridViewTextBoxColumn4.Visible = False
+        Me.DataGridViewTextBoxColumn4.Width = 125
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "SURNAME2"
         Me.DataGridViewTextBoxColumn5.HeaderText = "SURNAME2"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.ReadOnly = True
         Me.DataGridViewTextBoxColumn5.Visible = False
+        Me.DataGridViewTextBoxColumn5.Width = 125
         '
         'DataGridViewTextBoxColumn7
         '
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "SUBACCOUNT"
         Me.DataGridViewTextBoxColumn7.HeaderText = "SUBACCOUNT"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
         Me.DataGridViewTextBoxColumn7.Visible = False
+        Me.DataGridViewTextBoxColumn7.Width = 125
         '
         'colManHourValue
         '
@@ -161,6 +179,7 @@ Partial Class frmSearchWorker
         DataGridViewCellStyle3.Format = "n2"
         Me.colManHourValue.DefaultCellStyle = DataGridViewCellStyle3
         Me.colManHourValue.HeaderText = "Man/Hour Value"
+        Me.colManHourValue.MinimumWidth = 6
         Me.colManHourValue.Name = "colManHourValue"
         Me.colManHourValue.ReadOnly = True
         Me.colManHourValue.Visible = False
@@ -173,9 +192,11 @@ Partial Class frmSearchWorker
         DataGridViewCellStyle4.Format = "n2"
         Me.colBonusValue.DefaultCellStyle = DataGridViewCellStyle4
         Me.colBonusValue.HeaderText = "Bonus Value"
+        Me.colBonusValue.MinimumWidth = 6
         Me.colBonusValue.Name = "colBonusValue"
         Me.colBonusValue.ReadOnly = True
         Me.colBonusValue.Visible = False
+        Me.colBonusValue.Width = 125
         '
         'WORKERBindingSource
         '
@@ -191,26 +212,29 @@ Partial Class frmSearchWorker
         '
         Me.cbxSearch.FormattingEnabled = True
         Me.cbxSearch.Items.AddRange(New Object() {"Full Name", "Appointment"})
-        Me.cbxSearch.Location = New System.Drawing.Point(78, 12)
+        Me.cbxSearch.Location = New System.Drawing.Point(104, 15)
+        Me.cbxSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxSearch.Name = "cbxSearch"
-        Me.cbxSearch.Size = New System.Drawing.Size(121, 21)
+        Me.cbxSearch.Size = New System.Drawing.Size(160, 24)
         Me.cbxSearch.TabIndex = 23
         Me.cbxSearch.Text = "Full Name"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(14, 13)
+        Me.Label1.Location = New System.Drawing.Point(19, 16)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.Size = New System.Drawing.Size(71, 16)
         Me.Label1.TabIndex = 22
         Me.Label1.Text = "Search by:"
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(600, 10)
+        Me.btnReset.Location = New System.Drawing.Point(800, 12)
+        Me.btnReset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnReset.Size = New System.Drawing.Size(100, 28)
         Me.btnReset.TabIndex = 24
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
@@ -247,6 +271,7 @@ Partial Class frmSearchWorker
         Me.TableAdapterManager.TICKETOPEREPTableAdapter = Nothing
         Me.TableAdapterManager.TICKETTableAdapter = Nothing
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
+        Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
@@ -255,10 +280,10 @@ Partial Class frmSearchWorker
         '
         'frmSearchWorker
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(697, 427)
+        Me.ClientSize = New System.Drawing.Size(929, 526)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.cbxSearch)
         Me.Controls.Add(Me.Label1)
@@ -267,6 +292,7 @@ Partial Class frmSearchWorker
         Me.Controls.Add(Me.txtSearch)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSearchWorker"

@@ -264,10 +264,11 @@ Partial Class frmTicketEdit
         Me.TabControl1.Controls.Add(Me.tabOperReport)
         Me.TabControl1.Controls.Add(Me.tabServEvalHSEQ)
         Me.TabControl1.Controls.Add(Me.tabAdicInform)
-        Me.TabControl1.Location = New System.Drawing.Point(6, 114)
+        Me.TabControl1.Location = New System.Drawing.Point(8, 140)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1120, 557)
+        Me.TabControl1.Size = New System.Drawing.Size(1493, 686)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
@@ -280,10 +281,11 @@ Partial Class frmTicketEdit
         Me.TabPage1.Controls.Add(Me.grpServiceType)
         Me.TabPage1.Controls.Add(Me.GroupBox6)
         Me.TabPage1.Controls.Add(Me.GroupBox5)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1112, 531)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Size = New System.Drawing.Size(1485, 657)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Details"
         '
@@ -298,18 +300,21 @@ Partial Class frmTicketEdit
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.txtRig)
         Me.GroupBox1.Controls.Add(Me.Label24)
-        Me.GroupBox1.Location = New System.Drawing.Point(648, 6)
+        Me.GroupBox1.Location = New System.Drawing.Point(864, 7)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(456, 59)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(608, 73)
         Me.GroupBox1.TabIndex = 39
         Me.GroupBox1.TabStop = False
         '
         'btnSearchSite
         '
         Me.btnSearchSite.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearchSite.Location = New System.Drawing.Point(412, 30)
+        Me.btnSearchSite.Location = New System.Drawing.Point(549, 37)
+        Me.btnSearchSite.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearchSite.Name = "btnSearchSite"
-        Me.btnSearchSite.Size = New System.Drawing.Size(27, 23)
+        Me.btnSearchSite.Size = New System.Drawing.Size(36, 28)
         Me.btnSearchSite.TabIndex = 21
         Me.btnSearchSite.Text = "..."
         Me.btnSearchSite.UseVisualStyleBackColor = True
@@ -318,28 +323,31 @@ Partial Class frmTicketEdit
         '
         Me.txtSiteId.BackColor = System.Drawing.Color.White
         Me.txtSiteId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSiteId.Location = New System.Drawing.Point(324, 33)
+        Me.txtSiteId.Location = New System.Drawing.Point(432, 41)
+        Me.txtSiteId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSiteId.Name = "txtSiteId"
         Me.txtSiteId.ReadOnly = True
-        Me.txtSiteId.Size = New System.Drawing.Size(83, 20)
+        Me.txtSiteId.Size = New System.Drawing.Size(110, 22)
         Me.txtSiteId.TabIndex = 19
         '
         'Label30
         '
         Me.Label30.AutoSize = True
         Me.Label30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label30.Location = New System.Drawing.Point(321, 18)
+        Me.Label30.Location = New System.Drawing.Point(428, 22)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(61, 13)
+        Me.Label30.Size = New System.Drawing.Size(73, 16)
         Me.Label30.TabIndex = 20
         Me.Label30.Text = "Ticket Site:"
         '
         'btnSearchRig
         '
         Me.btnSearchRig.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearchRig.Location = New System.Drawing.Point(286, 31)
+        Me.btnSearchRig.Location = New System.Drawing.Point(381, 38)
+        Me.btnSearchRig.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearchRig.Name = "btnSearchRig"
-        Me.btnSearchRig.Size = New System.Drawing.Size(27, 23)
+        Me.btnSearchRig.Size = New System.Drawing.Size(36, 28)
         Me.btnSearchRig.TabIndex = 18
         Me.btnSearchRig.Text = "..."
         Me.btnSearchRig.UseVisualStyleBackColor = True
@@ -348,18 +356,20 @@ Partial Class frmTicketEdit
         '
         Me.txtWellName.BackColor = System.Drawing.Color.White
         Me.txtWellName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtWellName.Location = New System.Drawing.Point(12, 33)
+        Me.txtWellName.Location = New System.Drawing.Point(16, 41)
+        Me.txtWellName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtWellName.Name = "txtWellName"
         Me.txtWellName.ReadOnly = True
-        Me.txtWellName.Size = New System.Drawing.Size(116, 20)
+        Me.txtWellName.Size = New System.Drawing.Size(154, 22)
         Me.txtWellName.TabIndex = 16
         '
         'btnSearchWell
         '
         Me.btnSearchWell.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearchWell.Location = New System.Drawing.Point(133, 31)
+        Me.btnSearchWell.Location = New System.Drawing.Point(177, 38)
+        Me.btnSearchWell.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearchWell.Name = "btnSearchWell"
-        Me.btnSearchWell.Size = New System.Drawing.Size(27, 23)
+        Me.btnSearchWell.Size = New System.Drawing.Size(36, 28)
         Me.btnSearchWell.TabIndex = 17
         Me.btnSearchWell.Text = "..."
         Me.btnSearchWell.UseVisualStyleBackColor = True
@@ -368,9 +378,10 @@ Partial Class frmTicketEdit
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(9, 18)
+        Me.Label6.Location = New System.Drawing.Point(12, 22)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(31, 13)
+        Me.Label6.Size = New System.Drawing.Size(37, 16)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Well:"
         '
@@ -378,18 +389,20 @@ Partial Class frmTicketEdit
         '
         Me.txtRig.BackColor = System.Drawing.Color.White
         Me.txtRig.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtRig.Location = New System.Drawing.Point(171, 33)
+        Me.txtRig.Location = New System.Drawing.Point(228, 41)
+        Me.txtRig.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtRig.Name = "txtRig"
         Me.txtRig.ReadOnly = True
-        Me.txtRig.Size = New System.Drawing.Size(111, 20)
+        Me.txtRig.Size = New System.Drawing.Size(147, 22)
         Me.txtRig.TabIndex = 11
         '
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(167, 18)
+        Me.Label24.Location = New System.Drawing.Point(223, 22)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(26, 13)
+        Me.Label24.Size = New System.Drawing.Size(31, 16)
         Me.Label24.TabIndex = 15
         Me.Label24.Text = "Rig:"
         '
@@ -398,9 +411,11 @@ Partial Class frmTicketEdit
         Me.gpbServiceDate.BackColor = System.Drawing.SystemColors.Control
         Me.gpbServiceDate.Controls.Add(Me.dtpServiceDate)
         Me.gpbServiceDate.Controls.Add(Me.Label7)
-        Me.gpbServiceDate.Location = New System.Drawing.Point(16, 7)
+        Me.gpbServiceDate.Location = New System.Drawing.Point(21, 9)
+        Me.gpbServiceDate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.gpbServiceDate.Name = "gpbServiceDate"
-        Me.gpbServiceDate.Size = New System.Drawing.Size(122, 58)
+        Me.gpbServiceDate.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gpbServiceDate.Size = New System.Drawing.Size(163, 71)
         Me.gpbServiceDate.TabIndex = 38
         Me.gpbServiceDate.TabStop = False
         '
@@ -408,18 +423,20 @@ Partial Class frmTicketEdit
         '
         Me.dtpServiceDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpServiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpServiceDate.Location = New System.Drawing.Point(12, 32)
+        Me.dtpServiceDate.Location = New System.Drawing.Point(16, 39)
+        Me.dtpServiceDate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpServiceDate.Name = "dtpServiceDate"
-        Me.dtpServiceDate.Size = New System.Drawing.Size(96, 20)
+        Me.dtpServiceDate.Size = New System.Drawing.Size(127, 22)
         Me.dtpServiceDate.TabIndex = 1
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(9, 16)
+        Me.Label7.Location = New System.Drawing.Point(12, 20)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(72, 13)
+        Me.Label7.Size = New System.Drawing.Size(88, 16)
         Me.Label7.TabIndex = 37
         Me.Label7.Text = "Service Date:"
         '
@@ -430,9 +447,11 @@ Partial Class frmTicketEdit
         Me.GroupBox10.Controls.Add(Me.Label22)
         Me.GroupBox10.Controls.Add(Me.Label23)
         Me.GroupBox10.Controls.Add(Me.txtContrComments)
-        Me.GroupBox10.Location = New System.Drawing.Point(16, 71)
+        Me.GroupBox10.Location = New System.Drawing.Point(21, 87)
+        Me.GroupBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Size = New System.Drawing.Size(626, 161)
+        Me.GroupBox10.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox10.Size = New System.Drawing.Size(835, 198)
         Me.GroupBox10.TabIndex = 37
         Me.GroupBox10.TabStop = False
         '
@@ -440,18 +459,20 @@ Partial Class frmTicketEdit
         '
         Me.txtContrRepres.BackColor = System.Drawing.Color.White
         Me.txtContrRepres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtContrRepres.Location = New System.Drawing.Point(6, 28)
+        Me.txtContrRepres.Location = New System.Drawing.Point(8, 34)
+        Me.txtContrRepres.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtContrRepres.Name = "txtContrRepres"
         Me.txtContrRepres.ReadOnly = True
-        Me.txtContrRepres.Size = New System.Drawing.Size(330, 20)
+        Me.txtContrRepres.Size = New System.Drawing.Size(439, 22)
         Me.txtContrRepres.TabIndex = 20
         '
         'btnSearchWorker
         '
         Me.btnSearchWorker.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearchWorker.Location = New System.Drawing.Point(341, 26)
+        Me.btnSearchWorker.Location = New System.Drawing.Point(455, 32)
+        Me.btnSearchWorker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearchWorker.Name = "btnSearchWorker"
-        Me.btnSearchWorker.Size = New System.Drawing.Size(27, 23)
+        Me.btnSearchWorker.Size = New System.Drawing.Size(36, 28)
         Me.btnSearchWorker.TabIndex = 21
         Me.btnSearchWorker.Text = "..."
         Me.btnSearchWorker.UseVisualStyleBackColor = True
@@ -460,28 +481,31 @@ Partial Class frmTicketEdit
         '
         Me.Label22.AutoSize = True
         Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label22.Location = New System.Drawing.Point(7, 13)
+        Me.Label22.Location = New System.Drawing.Point(9, 16)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(134, 13)
+        Me.Label22.Size = New System.Drawing.Size(166, 16)
         Me.Label22.TabIndex = 11
         Me.Label22.Text = "Contractor Representative:"
         '
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(7, 56)
+        Me.Label23.Location = New System.Drawing.Point(9, 69)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(111, 13)
+        Me.Label23.Size = New System.Drawing.Size(138, 16)
         Me.Label23.TabIndex = 14
         Me.Label23.Text = "Contractor Comments:"
         '
         'txtContrComments
         '
-        Me.txtContrComments.Location = New System.Drawing.Point(6, 72)
+        Me.txtContrComments.Location = New System.Drawing.Point(8, 89)
+        Me.txtContrComments.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtContrComments.MaxLength = 1000
         Me.txtContrComments.Multiline = True
         Me.txtContrComments.Name = "txtContrComments"
-        Me.txtContrComments.Size = New System.Drawing.Size(611, 74)
+        Me.txtContrComments.Size = New System.Drawing.Size(813, 90)
         Me.txtContrComments.TabIndex = 19
         '
         'grpServiceType
@@ -493,9 +517,11 @@ Partial Class frmTicketEdit
         Me.grpServiceType.Controls.Add(Me.cbxServiceType)
         Me.grpServiceType.Controls.Add(Me.txtJobDescription)
         Me.grpServiceType.Controls.Add(Me.Label17)
-        Me.grpServiceType.Location = New System.Drawing.Point(648, 71)
+        Me.grpServiceType.Location = New System.Drawing.Point(864, 87)
+        Me.grpServiceType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpServiceType.Name = "grpServiceType"
-        Me.grpServiceType.Size = New System.Drawing.Size(456, 420)
+        Me.grpServiceType.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpServiceType.Size = New System.Drawing.Size(608, 517)
         Me.grpServiceType.TabIndex = 36
         Me.grpServiceType.TabStop = False
         '
@@ -509,25 +535,29 @@ Partial Class frmTicketEdit
         Me.dgvTicketServType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvTicketServType.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.colTicketServiceTypeId, Me.colTicketId, Me.DataGridViewTextBoxColumn3})
         Me.dgvTicketServType.DataSource = Me.TICKETSERVICETYPEBindingSource
-        Me.dgvTicketServType.Location = New System.Drawing.Point(12, 206)
+        Me.dgvTicketServType.Location = New System.Drawing.Point(16, 254)
+        Me.dgvTicketServType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvTicketServType.Name = "dgvTicketServType"
         Me.dgvTicketServType.ReadOnly = True
         Me.dgvTicketServType.RowHeadersWidth = 20
         Me.dgvTicketServType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvTicketServType.Size = New System.Drawing.Size(438, 202)
+        Me.dgvTicketServType.Size = New System.Drawing.Size(584, 249)
         Me.dgvTicketServType.TabIndex = 14
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "SERVICETYPECODE"
         Me.DataGridViewTextBoxColumn4.HeaderText = "Code"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        Me.DataGridViewTextBoxColumn4.Width = 125
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "DESCRIPTION"
         Me.DataGridViewTextBoxColumn5.HeaderText = "Service Type"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.ReadOnly = True
         Me.DataGridViewTextBoxColumn5.Width = 270
@@ -536,25 +566,31 @@ Partial Class frmTicketEdit
         '
         Me.colTicketServiceTypeId.DataPropertyName = "TICKETSERVICETYPEID"
         Me.colTicketServiceTypeId.HeaderText = "TICKETSERVICETYPEID"
+        Me.colTicketServiceTypeId.MinimumWidth = 6
         Me.colTicketServiceTypeId.Name = "colTicketServiceTypeId"
         Me.colTicketServiceTypeId.ReadOnly = True
         Me.colTicketServiceTypeId.Visible = False
+        Me.colTicketServiceTypeId.Width = 125
         '
         'colTicketId
         '
         Me.colTicketId.DataPropertyName = "TICKETID"
         Me.colTicketId.HeaderText = "TICKETID"
+        Me.colTicketId.MinimumWidth = 6
         Me.colTicketId.Name = "colTicketId"
         Me.colTicketId.ReadOnly = True
         Me.colTicketId.Visible = False
+        Me.colTicketId.Width = 125
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "SERVICETYPEID"
         Me.DataGridViewTextBoxColumn3.HeaderText = "SERVICETYPEID"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.ReadOnly = True
         Me.DataGridViewTextBoxColumn3.Visible = False
+        Me.DataGridViewTextBoxColumn3.Width = 125
         '
         'TICKETSERVICETYPEBindingSource
         '
@@ -568,18 +604,20 @@ Partial Class frmTicketEdit
         '
         'btnDeleteServiceLine
         '
-        Me.btnDeleteServiceLine.Location = New System.Drawing.Point(393, 172)
+        Me.btnDeleteServiceLine.Location = New System.Drawing.Point(524, 212)
+        Me.btnDeleteServiceLine.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnDeleteServiceLine.Name = "btnDeleteServiceLine"
-        Me.btnDeleteServiceLine.Size = New System.Drawing.Size(57, 23)
+        Me.btnDeleteServiceLine.Size = New System.Drawing.Size(76, 28)
         Me.btnDeleteServiceLine.TabIndex = 14
         Me.btnDeleteServiceLine.Text = "Delete"
         Me.btnDeleteServiceLine.UseVisualStyleBackColor = True
         '
         'btnAddServiceType
         '
-        Me.btnAddServiceType.Location = New System.Drawing.Point(330, 172)
+        Me.btnAddServiceType.Location = New System.Drawing.Point(440, 212)
+        Me.btnAddServiceType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAddServiceType.Name = "btnAddServiceType"
-        Me.btnAddServiceType.Size = New System.Drawing.Size(57, 23)
+        Me.btnAddServiceType.Size = New System.Drawing.Size(76, 28)
         Me.btnAddServiceType.TabIndex = 13
         Me.btnAddServiceType.Text = "Add"
         Me.btnAddServiceType.UseVisualStyleBackColor = True
@@ -588,9 +626,10 @@ Partial Class frmTicketEdit
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(9, 158)
+        Me.Label4.Location = New System.Drawing.Point(12, 194)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(73, 13)
+        Me.Label4.Size = New System.Drawing.Size(91, 16)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Service Type:"
         '
@@ -599,9 +638,10 @@ Partial Class frmTicketEdit
         Me.cbxServiceType.DataSource = Me.SERVICETYPEBindingSource
         Me.cbxServiceType.DisplayMember = "DESCRIPTION"
         Me.cbxServiceType.FormattingEnabled = True
-        Me.cbxServiceType.Location = New System.Drawing.Point(12, 174)
+        Me.cbxServiceType.Location = New System.Drawing.Point(16, 214)
+        Me.cbxServiceType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxServiceType.Name = "cbxServiceType"
-        Me.cbxServiceType.Size = New System.Drawing.Size(312, 21)
+        Me.cbxServiceType.Size = New System.Drawing.Size(415, 24)
         Me.cbxServiceType.TabIndex = 9
         Me.cbxServiceType.ValueMember = "SERVICETYPEID"
         '
@@ -612,19 +652,21 @@ Partial Class frmTicketEdit
         '
         'txtJobDescription
         '
-        Me.txtJobDescription.Location = New System.Drawing.Point(12, 29)
+        Me.txtJobDescription.Location = New System.Drawing.Point(16, 36)
+        Me.txtJobDescription.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtJobDescription.MaxLength = 200
         Me.txtJobDescription.Multiline = True
         Me.txtJobDescription.Name = "txtJobDescription"
-        Me.txtJobDescription.Size = New System.Drawing.Size(438, 117)
+        Me.txtJobDescription.Size = New System.Drawing.Size(583, 143)
         Me.txtJobDescription.TabIndex = 12
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(9, 13)
+        Me.Label17.Location = New System.Drawing.Point(12, 16)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(102, 13)
+        Me.Label17.Size = New System.Drawing.Size(127, 16)
         Me.Label17.TabIndex = 0
         Me.Label17.Text = "Service Description:"
         '
@@ -641,102 +683,114 @@ Partial Class frmTicketEdit
         Me.GroupBox6.Controls.Add(Me.txtCustRepresAssist)
         Me.GroupBox6.Controls.Add(Me.Label18)
         Me.GroupBox6.Controls.Add(Me.txtCustRepres)
-        Me.GroupBox6.Location = New System.Drawing.Point(16, 232)
+        Me.GroupBox6.Location = New System.Drawing.Point(21, 286)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(626, 259)
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox6.Size = New System.Drawing.Size(835, 319)
         Me.GroupBox6.TabIndex = 34
         Me.GroupBox6.TabStop = False
         '
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(289, 56)
+        Me.Label28.Location = New System.Drawing.Point(385, 69)
+        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(98, 13)
+        Me.Label28.Size = New System.Drawing.Size(123, 16)
         Me.Label28.TabIndex = 16
         Me.Label28.Text = "Position (Assistant):"
         '
         'txtCustRepresAssistPos
         '
         Me.txtCustRepresAssistPos.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCustRepresAssistPos.Location = New System.Drawing.Point(289, 72)
+        Me.txtCustRepresAssistPos.Location = New System.Drawing.Point(385, 89)
+        Me.txtCustRepresAssistPos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCustRepresAssistPos.MaxLength = 50
         Me.txtCustRepresAssistPos.Name = "txtCustRepresAssistPos"
-        Me.txtCustRepresAssistPos.Size = New System.Drawing.Size(328, 20)
+        Me.txtCustRepresAssistPos.Size = New System.Drawing.Size(436, 22)
         Me.txtCustRepresAssistPos.TabIndex = 16
         '
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(9, 95)
+        Me.Label21.Location = New System.Drawing.Point(12, 117)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(106, 13)
+        Me.Label21.Size = New System.Drawing.Size(134, 16)
         Me.Label21.TabIndex = 9
         Me.Label21.Text = "Customer Comments:"
         '
         'txtCustComments
         '
-        Me.txtCustComments.Location = New System.Drawing.Point(9, 111)
+        Me.txtCustComments.Location = New System.Drawing.Point(12, 137)
+        Me.txtCustComments.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCustComments.MaxLength = 1000
         Me.txtCustComments.Multiline = True
         Me.txtCustComments.Name = "txtCustComments"
-        Me.txtCustComments.Size = New System.Drawing.Size(608, 136)
+        Me.txtCustComments.Size = New System.Drawing.Size(809, 166)
         Me.txtCustComments.TabIndex = 17
         '
         'Label20
         '
         Me.Label20.AutoSize = True
         Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label20.Location = New System.Drawing.Point(289, 13)
+        Me.Label20.Location = New System.Drawing.Point(385, 16)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(47, 13)
+        Me.Label20.Size = New System.Drawing.Size(58, 16)
         Me.Label20.TabIndex = 7
         Me.Label20.Text = "Position:"
         '
         'txtCustRepresPosition
         '
         Me.txtCustRepresPosition.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCustRepresPosition.Location = New System.Drawing.Point(289, 29)
+        Me.txtCustRepresPosition.Location = New System.Drawing.Point(385, 36)
+        Me.txtCustRepresPosition.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCustRepresPosition.MaxLength = 50
         Me.txtCustRepresPosition.Name = "txtCustRepresPosition"
-        Me.txtCustRepresPosition.Size = New System.Drawing.Size(328, 20)
+        Me.txtCustRepresPosition.Size = New System.Drawing.Size(436, 22)
         Me.txtCustRepresPosition.TabIndex = 14
         '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(9, 56)
+        Me.Label19.Location = New System.Drawing.Point(12, 69)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(174, 13)
+        Me.Label19.Size = New System.Drawing.Size(219, 16)
         Me.Label19.TabIndex = 5
         Me.Label19.Text = "Customer Representative Assistant:"
         '
         'txtCustRepresAssist
         '
         Me.txtCustRepresAssist.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCustRepresAssist.Location = New System.Drawing.Point(9, 72)
+        Me.txtCustRepresAssist.Location = New System.Drawing.Point(12, 89)
+        Me.txtCustRepresAssist.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCustRepresAssist.MaxLength = 50
         Me.txtCustRepresAssist.Name = "txtCustRepresAssist"
-        Me.txtCustRepresAssist.Size = New System.Drawing.Size(274, 20)
+        Me.txtCustRepresAssist.Size = New System.Drawing.Size(364, 22)
         Me.txtCustRepresAssist.TabIndex = 15
         '
         'Label18
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(9, 13)
+        Me.Label18.Location = New System.Drawing.Point(12, 16)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(129, 13)
+        Me.Label18.Size = New System.Drawing.Size(162, 16)
         Me.Label18.TabIndex = 3
         Me.Label18.Text = "Customer Representative:"
         '
         'txtCustRepres
         '
         Me.txtCustRepres.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCustRepres.Location = New System.Drawing.Point(9, 29)
+        Me.txtCustRepres.Location = New System.Drawing.Point(12, 36)
+        Me.txtCustRepres.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCustRepres.MaxLength = 50
         Me.txtCustRepres.Name = "txtCustRepres"
-        Me.txtCustRepres.Size = New System.Drawing.Size(274, 20)
+        Me.txtCustRepres.Size = New System.Drawing.Size(364, 22)
         Me.txtCustRepres.TabIndex = 13
         '
         'GroupBox5
@@ -748,9 +802,11 @@ Partial Class frmTicketEdit
         Me.GroupBox5.Controls.Add(Me.Label9)
         Me.GroupBox5.Controls.Add(Me.dtpTimeStarted)
         Me.GroupBox5.Controls.Add(Me.Label10)
-        Me.GroupBox5.Location = New System.Drawing.Point(144, 7)
+        Me.GroupBox5.Location = New System.Drawing.Point(192, 9)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(498, 58)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox5.Size = New System.Drawing.Size(664, 71)
         Me.GroupBox5.TabIndex = 33
         Me.GroupBox5.TabStop = False
         '
@@ -758,9 +814,10 @@ Partial Class frmTicketEdit
         '
         Me.dtpTimeCompleted.CustomFormat = "dd/MM/yyyy HH:mm tt"
         Me.dtpTimeCompleted.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpTimeCompleted.Location = New System.Drawing.Point(337, 32)
+        Me.dtpTimeCompleted.Location = New System.Drawing.Point(449, 39)
+        Me.dtpTimeCompleted.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpTimeCompleted.Name = "dtpTimeCompleted"
-        Me.dtpTimeCompleted.Size = New System.Drawing.Size(146, 20)
+        Me.dtpTimeCompleted.Size = New System.Drawing.Size(193, 22)
         Me.dtpTimeCompleted.TabIndex = 7
         Me.dtpTimeCompleted.Value = New Date(2017, 3, 21, 0, 0, 0, 0)
         '
@@ -768,9 +825,10 @@ Partial Class frmTicketEdit
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(14, 16)
+        Me.Label8.Location = New System.Drawing.Point(19, 20)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(69, 13)
+        Me.Label8.Size = New System.Drawing.Size(87, 16)
         Me.Label8.TabIndex = 0
         Me.Label8.Text = "Time Arrived:"
         '
@@ -778,9 +836,10 @@ Partial Class frmTicketEdit
         '
         Me.dtpTimeArrived.CustomFormat = "dd/MM/yyyy HH:mm tt"
         Me.dtpTimeArrived.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpTimeArrived.Location = New System.Drawing.Point(17, 32)
+        Me.dtpTimeArrived.Location = New System.Drawing.Point(23, 39)
+        Me.dtpTimeArrived.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpTimeArrived.Name = "dtpTimeArrived"
-        Me.dtpTimeArrived.Size = New System.Drawing.Size(155, 20)
+        Me.dtpTimeArrived.Size = New System.Drawing.Size(205, 22)
         Me.dtpTimeArrived.TabIndex = 5
         Me.dtpTimeArrived.Value = New Date(2017, 3, 21, 0, 0, 0, 0)
         '
@@ -788,9 +847,10 @@ Partial Class frmTicketEdit
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(175, 16)
+        Me.Label9.Location = New System.Drawing.Point(233, 20)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(70, 13)
+        Me.Label9.Size = New System.Drawing.Size(87, 16)
         Me.Label9.TabIndex = 14
         Me.Label9.Text = "Time Started:"
         '
@@ -798,9 +858,10 @@ Partial Class frmTicketEdit
         '
         Me.dtpTimeStarted.CustomFormat = "dd/MM/yyyy HH:mm tt"
         Me.dtpTimeStarted.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpTimeStarted.Location = New System.Drawing.Point(178, 32)
+        Me.dtpTimeStarted.Location = New System.Drawing.Point(237, 39)
+        Me.dtpTimeStarted.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpTimeStarted.Name = "dtpTimeStarted"
-        Me.dtpTimeStarted.Size = New System.Drawing.Size(153, 20)
+        Me.dtpTimeStarted.Size = New System.Drawing.Size(203, 22)
         Me.dtpTimeStarted.TabIndex = 6
         Me.dtpTimeStarted.Value = New Date(2017, 3, 21, 0, 0, 0, 0)
         '
@@ -808,9 +869,10 @@ Partial Class frmTicketEdit
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(335, 16)
+        Me.Label10.Location = New System.Drawing.Point(447, 20)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(86, 13)
+        Me.Label10.Size = New System.Drawing.Size(110, 16)
         Me.Label10.TabIndex = 16
         Me.Label10.Text = "Time Completed:"
         '
@@ -818,10 +880,11 @@ Partial Class frmTicketEdit
         '
         Me.tabSalesItem.AutoScroll = True
         Me.tabSalesItem.Controls.Add(Me.pnlSalesItem)
-        Me.tabSalesItem.Location = New System.Drawing.Point(4, 22)
+        Me.tabSalesItem.Location = New System.Drawing.Point(4, 25)
+        Me.tabSalesItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabSalesItem.Name = "tabSalesItem"
-        Me.tabSalesItem.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabSalesItem.Size = New System.Drawing.Size(1112, 531)
+        Me.tabSalesItem.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabSalesItem.Size = New System.Drawing.Size(1485, 657)
         Me.tabSalesItem.TabIndex = 1
         Me.tabSalesItem.Text = "Sales Item"
         Me.tabSalesItem.UseVisualStyleBackColor = True
@@ -830,25 +893,28 @@ Partial Class frmTicketEdit
         '
         Me.pnlSalesItem.BackColor = System.Drawing.SystemColors.Control
         Me.pnlSalesItem.Location = New System.Drawing.Point(0, 0)
+        Me.pnlSalesItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlSalesItem.Name = "pnlSalesItem"
-        Me.pnlSalesItem.Size = New System.Drawing.Size(1112, 531)
+        Me.pnlSalesItem.Size = New System.Drawing.Size(1483, 654)
         Me.pnlSalesItem.TabIndex = 0
         '
         'tabEquipments
         '
         Me.tabEquipments.BackColor = System.Drawing.SystemColors.Control
         Me.tabEquipments.Controls.Add(Me.pnlEquipment)
-        Me.tabEquipments.Location = New System.Drawing.Point(4, 22)
+        Me.tabEquipments.Location = New System.Drawing.Point(4, 25)
+        Me.tabEquipments.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabEquipments.Name = "tabEquipments"
-        Me.tabEquipments.Size = New System.Drawing.Size(1112, 531)
+        Me.tabEquipments.Size = New System.Drawing.Size(1485, 657)
         Me.tabEquipments.TabIndex = 2
         Me.tabEquipments.Text = "Equipments"
         '
         'pnlEquipment
         '
         Me.pnlEquipment.Location = New System.Drawing.Point(0, 0)
+        Me.pnlEquipment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlEquipment.Name = "pnlEquipment"
-        Me.pnlEquipment.Size = New System.Drawing.Size(1112, 531)
+        Me.pnlEquipment.Size = New System.Drawing.Size(1483, 654)
         Me.pnlEquipment.TabIndex = 0
         '
         'tabWorkers
@@ -856,20 +922,21 @@ Partial Class frmTicketEdit
         Me.tabWorkers.BackColor = System.Drawing.SystemColors.Control
         Me.tabWorkers.Controls.Add(Me.GroupBox9)
         Me.tabWorkers.Controls.Add(Me.GroupBox8)
-        Me.tabWorkers.Location = New System.Drawing.Point(4, 22)
+        Me.tabWorkers.Location = New System.Drawing.Point(4, 25)
+        Me.tabWorkers.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabWorkers.Name = "tabWorkers"
-        Me.tabWorkers.Size = New System.Drawing.Size(1112, 531)
+        Me.tabWorkers.Size = New System.Drawing.Size(1485, 657)
         Me.tabWorkers.TabIndex = 3
         Me.tabWorkers.Text = "Workers"
         '
         'GroupBox9
         '
         Me.GroupBox9.Controls.Add(Me.dgvTicketOpeHour)
-        Me.GroupBox9.Location = New System.Drawing.Point(3, 8)
-        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox9.Location = New System.Drawing.Point(4, 10)
+        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox9.Size = New System.Drawing.Size(553, 99)
+        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox9.Size = New System.Drawing.Size(737, 122)
         Me.GroupBox9.TabIndex = 20
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Operation (Hours Total) - Double click to edit"
@@ -884,14 +951,15 @@ Partial Class frmTicketEdit
         Me.dgvTicketOpeHour.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvTicketOpeHour.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colOpHourTravel, Me.colOpHourOperation, Me.colOpHourStandby, Me.colOpHourLost, Me.colOpHourQde, Me.DataGridViewTextBoxColumn1})
         Me.dgvTicketOpeHour.DataSource = Me.TICKETOPEHOURBindingSource
-        Me.dgvTicketOpeHour.Location = New System.Drawing.Point(4, 16)
-        Me.dgvTicketOpeHour.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgvTicketOpeHour.Location = New System.Drawing.Point(5, 20)
+        Me.dgvTicketOpeHour.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgvTicketOpeHour.MultiSelect = False
         Me.dgvTicketOpeHour.Name = "dgvTicketOpeHour"
         Me.dgvTicketOpeHour.ReadOnly = True
+        Me.dgvTicketOpeHour.RowHeadersWidth = 51
         Me.dgvTicketOpeHour.RowTemplate.Height = 28
         Me.dgvTicketOpeHour.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvTicketOpeHour.Size = New System.Drawing.Size(542, 69)
+        Me.dgvTicketOpeHour.Size = New System.Drawing.Size(723, 85)
         Me.dgvTicketOpeHour.TabIndex = 0
         '
         'colOpHourTravel
@@ -902,6 +970,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle1.NullValue = "0.00"
         Me.colOpHourTravel.DefaultCellStyle = DataGridViewCellStyle1
         Me.colOpHourTravel.HeaderText = "Hour Travel"
+        Me.colOpHourTravel.MinimumWidth = 6
         Me.colOpHourTravel.Name = "colOpHourTravel"
         Me.colOpHourTravel.ReadOnly = True
         Me.colOpHourTravel.Width = 90
@@ -914,6 +983,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle2.NullValue = "0.00"
         Me.colOpHourOperation.DefaultCellStyle = DataGridViewCellStyle2
         Me.colOpHourOperation.HeaderText = "Hour Operation"
+        Me.colOpHourOperation.MinimumWidth = 6
         Me.colOpHourOperation.Name = "colOpHourOperation"
         Me.colOpHourOperation.ReadOnly = True
         Me.colOpHourOperation.Width = 90
@@ -926,6 +996,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle3.NullValue = "0.00"
         Me.colOpHourStandby.DefaultCellStyle = DataGridViewCellStyle3
         Me.colOpHourStandby.HeaderText = "Hour Standby"
+        Me.colOpHourStandby.MinimumWidth = 6
         Me.colOpHourStandby.Name = "colOpHourStandby"
         Me.colOpHourStandby.ReadOnly = True
         Me.colOpHourStandby.Width = 90
@@ -938,6 +1009,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle4.NullValue = "0.00"
         Me.colOpHourLost.DefaultCellStyle = DataGridViewCellStyle4
         Me.colOpHourLost.HeaderText = "Hour Lost"
+        Me.colOpHourLost.MinimumWidth = 6
         Me.colOpHourLost.Name = "colOpHourLost"
         Me.colOpHourLost.ReadOnly = True
         Me.colOpHourLost.Width = 90
@@ -950,6 +1022,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle5.NullValue = "0.00"
         Me.colOpHourQde.DefaultCellStyle = DataGridViewCellStyle5
         Me.colOpHourQde.HeaderText = "Total"
+        Me.colOpHourQde.MinimumWidth = 6
         Me.colOpHourQde.Name = "colOpHourQde"
         Me.colOpHourQde.ReadOnly = True
         Me.colOpHourQde.Width = 90
@@ -958,9 +1031,11 @@ Partial Class frmTicketEdit
         '
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "TICKETID"
         Me.DataGridViewTextBoxColumn1.HeaderText = "TICKETID"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
         Me.DataGridViewTextBoxColumn1.Visible = False
+        Me.DataGridViewTextBoxColumn1.Width = 125
         '
         'TICKETOPEHOURBindingSource
         '
@@ -971,11 +1046,11 @@ Partial Class frmTicketEdit
         '
         Me.GroupBox8.Controls.Add(Me.btnWAdd)
         Me.GroupBox8.Controls.Add(Me.dgvWorker)
-        Me.GroupBox8.Location = New System.Drawing.Point(2, 110)
-        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox8.Location = New System.Drawing.Point(3, 135)
+        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox8.Size = New System.Drawing.Size(1107, 398)
+        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox8.Size = New System.Drawing.Size(1476, 490)
         Me.GroupBox8.TabIndex = 19
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Workers"
@@ -984,9 +1059,10 @@ Partial Class frmTicketEdit
         '
         Me.btnWAdd.Image = CType(resources.GetObject("btnWAdd.Image"), System.Drawing.Image)
         Me.btnWAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnWAdd.Location = New System.Drawing.Point(5, 18)
+        Me.btnWAdd.Location = New System.Drawing.Point(7, 22)
+        Me.btnWAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnWAdd.Name = "btnWAdd"
-        Me.btnWAdd.Size = New System.Drawing.Size(80, 28)
+        Me.btnWAdd.Size = New System.Drawing.Size(107, 34)
         Me.btnWAdd.TabIndex = 12
         Me.btnWAdd.Text = "Add"
         Me.btnWAdd.UseVisualStyleBackColor = True
@@ -1001,12 +1077,14 @@ Partial Class frmTicketEdit
         Me.dgvWorker.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvWorker.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colWFullName, Me.colWAppoint, Me.colWRegisterDate, Me.colHourTravel, Me.colHourOperation, Me.colHourStandby, Me.colHourLost, Me.colWHourQde, Me.colResumeActivity, Me.colWWorkerId, Me.colWTicketWorkerID})
         Me.dgvWorker.DataSource = Me.TICKETWORKERBindingSource
-        Me.dgvWorker.Location = New System.Drawing.Point(5, 52)
+        Me.dgvWorker.Location = New System.Drawing.Point(7, 64)
+        Me.dgvWorker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvWorker.MultiSelect = False
         Me.dgvWorker.Name = "dgvWorker"
         Me.dgvWorker.ReadOnly = True
+        Me.dgvWorker.RowHeadersWidth = 51
         Me.dgvWorker.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvWorker.Size = New System.Drawing.Size(1093, 339)
+        Me.dgvWorker.Size = New System.Drawing.Size(1457, 417)
         Me.dgvWorker.TabIndex = 18
         '
         'colWFullName
@@ -1014,9 +1092,10 @@ Partial Class frmTicketEdit
         Me.colWFullName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colWFullName.DataPropertyName = "FULLNAME"
         Me.colWFullName.HeaderText = "Name"
+        Me.colWFullName.MinimumWidth = 6
         Me.colWFullName.Name = "colWFullName"
         Me.colWFullName.ReadOnly = True
-        Me.colWFullName.Width = 60
+        Me.colWFullName.Width = 73
         '
         'colWAppoint
         '
@@ -1024,6 +1103,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.colWAppoint.DefaultCellStyle = DataGridViewCellStyle6
         Me.colWAppoint.HeaderText = "Appointment"
+        Me.colWAppoint.MinimumWidth = 6
         Me.colWAppoint.Name = "colWAppoint"
         Me.colWAppoint.ReadOnly = True
         Me.colWAppoint.Width = 200
@@ -1035,6 +1115,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle7.NullValue = Nothing
         Me.colWRegisterDate.DefaultCellStyle = DataGridViewCellStyle7
         Me.colWRegisterDate.HeaderText = "Register Date"
+        Me.colWRegisterDate.MinimumWidth = 6
         Me.colWRegisterDate.Name = "colWRegisterDate"
         Me.colWRegisterDate.ReadOnly = True
         Me.colWRegisterDate.Width = 70
@@ -1046,6 +1127,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle8.Format = "n2"
         Me.colHourTravel.DefaultCellStyle = DataGridViewCellStyle8
         Me.colHourTravel.HeaderText = "Hour Travel"
+        Me.colHourTravel.MinimumWidth = 6
         Me.colHourTravel.Name = "colHourTravel"
         Me.colHourTravel.ReadOnly = True
         Me.colHourTravel.Width = 60
@@ -1057,6 +1139,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle9.Format = "n2"
         Me.colHourOperation.DefaultCellStyle = DataGridViewCellStyle9
         Me.colHourOperation.HeaderText = "Hour Operation"
+        Me.colHourOperation.MinimumWidth = 6
         Me.colHourOperation.Name = "colHourOperation"
         Me.colHourOperation.ReadOnly = True
         Me.colHourOperation.Width = 60
@@ -1068,6 +1151,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle10.Format = "n2"
         Me.colHourStandby.DefaultCellStyle = DataGridViewCellStyle10
         Me.colHourStandby.HeaderText = "Hour Standby"
+        Me.colHourStandby.MinimumWidth = 6
         Me.colHourStandby.Name = "colHourStandby"
         Me.colHourStandby.ReadOnly = True
         Me.colHourStandby.Width = 60
@@ -1079,6 +1163,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle11.Format = "n2"
         Me.colHourLost.DefaultCellStyle = DataGridViewCellStyle11
         Me.colHourLost.HeaderText = "Hour Lost"
+        Me.colHourLost.MinimumWidth = 6
         Me.colHourLost.Name = "colHourLost"
         Me.colHourLost.ReadOnly = True
         Me.colHourLost.Width = 60
@@ -1091,6 +1176,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle12.NullValue = Nothing
         Me.colWHourQde.DefaultCellStyle = DataGridViewCellStyle12
         Me.colWHourQde.HeaderText = "Total"
+        Me.colWHourQde.MinimumWidth = 6
         Me.colWHourQde.Name = "colWHourQde"
         Me.colWHourQde.ReadOnly = True
         Me.colWHourQde.Width = 75
@@ -1101,6 +1187,7 @@ Partial Class frmTicketEdit
         DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.colResumeActivity.DefaultCellStyle = DataGridViewCellStyle13
         Me.colResumeActivity.HeaderText = "Resume"
+        Me.colResumeActivity.MinimumWidth = 6
         Me.colResumeActivity.Name = "colResumeActivity"
         Me.colResumeActivity.ReadOnly = True
         Me.colResumeActivity.Width = 260
@@ -1109,17 +1196,21 @@ Partial Class frmTicketEdit
         '
         Me.colWWorkerId.DataPropertyName = "WORKERID"
         Me.colWWorkerId.HeaderText = "WORKERID"
+        Me.colWWorkerId.MinimumWidth = 6
         Me.colWWorkerId.Name = "colWWorkerId"
         Me.colWWorkerId.ReadOnly = True
         Me.colWWorkerId.Visible = False
+        Me.colWWorkerId.Width = 125
         '
         'colWTicketWorkerID
         '
         Me.colWTicketWorkerID.DataPropertyName = "TICKETWORKERID"
         Me.colWTicketWorkerID.HeaderText = "TICKETWORKERID"
+        Me.colWTicketWorkerID.MinimumWidth = 6
         Me.colWTicketWorkerID.Name = "colWTicketWorkerID"
         Me.colWTicketWorkerID.ReadOnly = True
         Me.colWTicketWorkerID.Visible = False
+        Me.colWTicketWorkerID.Width = 125
         '
         'TICKETWORKERBindingSource
         '
@@ -1130,9 +1221,10 @@ Partial Class frmTicketEdit
         '
         Me.tabOperReport.BackColor = System.Drawing.SystemColors.Control
         Me.tabOperReport.Controls.Add(Me.pnlOperReport)
-        Me.tabOperReport.Location = New System.Drawing.Point(4, 22)
+        Me.tabOperReport.Location = New System.Drawing.Point(4, 25)
+        Me.tabOperReport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabOperReport.Name = "tabOperReport"
-        Me.tabOperReport.Size = New System.Drawing.Size(1112, 531)
+        Me.tabOperReport.Size = New System.Drawing.Size(1485, 657)
         Me.tabOperReport.TabIndex = 5
         Me.tabOperReport.Text = "Job Log"
         '
@@ -1140,16 +1232,18 @@ Partial Class frmTicketEdit
         '
         Me.pnlOperReport.BackColor = System.Drawing.SystemColors.Control
         Me.pnlOperReport.Location = New System.Drawing.Point(0, 0)
+        Me.pnlOperReport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlOperReport.Name = "pnlOperReport"
-        Me.pnlOperReport.Size = New System.Drawing.Size(1112, 531)
+        Me.pnlOperReport.Size = New System.Drawing.Size(1483, 654)
         Me.pnlOperReport.TabIndex = 1
         '
         'tabServEvalHSEQ
         '
         Me.tabServEvalHSEQ.Controls.Add(Me.pnlHSEQServEval)
-        Me.tabServEvalHSEQ.Location = New System.Drawing.Point(4, 22)
+        Me.tabServEvalHSEQ.Location = New System.Drawing.Point(4, 25)
+        Me.tabServEvalHSEQ.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabServEvalHSEQ.Name = "tabServEvalHSEQ"
-        Me.tabServEvalHSEQ.Size = New System.Drawing.Size(1112, 531)
+        Me.tabServEvalHSEQ.Size = New System.Drawing.Size(1485, 657)
         Me.tabServEvalHSEQ.TabIndex = 6
         Me.tabServEvalHSEQ.Text = "HSEQ - Service Evaluation"
         Me.tabServEvalHSEQ.UseVisualStyleBackColor = True
@@ -1158,8 +1252,9 @@ Partial Class frmTicketEdit
         '
         Me.pnlHSEQServEval.BackColor = System.Drawing.SystemColors.Control
         Me.pnlHSEQServEval.Location = New System.Drawing.Point(0, 0)
+        Me.pnlHSEQServEval.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlHSEQServEval.Name = "pnlHSEQServEval"
-        Me.pnlHSEQServEval.Size = New System.Drawing.Size(1112, 531)
+        Me.pnlHSEQServEval.Size = New System.Drawing.Size(1483, 654)
         Me.pnlHSEQServEval.TabIndex = 2
         '
         'tabAdicInform
@@ -1172,10 +1267,11 @@ Partial Class frmTicketEdit
         Me.tabAdicInform.Controls.Add(Me.PictureBox1)
         Me.tabAdicInform.Controls.Add(Me.txtAdicInform)
         Me.tabAdicInform.Controls.Add(Me.Label29)
-        Me.tabAdicInform.Location = New System.Drawing.Point(4, 22)
+        Me.tabAdicInform.Location = New System.Drawing.Point(4, 25)
+        Me.tabAdicInform.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabAdicInform.Name = "tabAdicInform"
-        Me.tabAdicInform.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabAdicInform.Size = New System.Drawing.Size(1112, 531)
+        Me.tabAdicInform.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabAdicInform.Size = New System.Drawing.Size(1485, 657)
         Me.tabAdicInform.TabIndex = 4
         Me.tabAdicInform.Text = "Additional Information"
         '
@@ -1193,9 +1289,11 @@ Partial Class frmTicketEdit
         Me.grpAddicInfoARG.Controls.Add(Me.Label2)
         Me.grpAddicInfoARG.Controls.Add(Me.Label1)
         Me.grpAddicInfoARG.ForeColor = System.Drawing.Color.Red
-        Me.grpAddicInfoARG.Location = New System.Drawing.Point(686, 309)
+        Me.grpAddicInfoARG.Location = New System.Drawing.Point(915, 380)
+        Me.grpAddicInfoARG.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpAddicInfoARG.Name = "grpAddicInfoARG"
-        Me.grpAddicInfoARG.Size = New System.Drawing.Size(423, 161)
+        Me.grpAddicInfoARG.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpAddicInfoARG.Size = New System.Drawing.Size(564, 198)
         Me.grpAddicInfoARG.TabIndex = 39
         Me.grpAddicInfoARG.TabStop = False
         Me.grpAddicInfoARG.Text = "Argentina Only"
@@ -1204,18 +1302,20 @@ Partial Class frmTicketEdit
         '
         Me.txtSuperiorSupervisor.BackColor = System.Drawing.Color.White
         Me.txtSuperiorSupervisor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSuperiorSupervisor.Location = New System.Drawing.Point(10, 124)
+        Me.txtSuperiorSupervisor.Location = New System.Drawing.Point(13, 153)
+        Me.txtSuperiorSupervisor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSuperiorSupervisor.Name = "txtSuperiorSupervisor"
         Me.txtSuperiorSupervisor.ReadOnly = True
-        Me.txtSuperiorSupervisor.Size = New System.Drawing.Size(202, 20)
+        Me.txtSuperiorSupervisor.Size = New System.Drawing.Size(269, 22)
         Me.txtSuperiorSupervisor.TabIndex = 32
         '
         'btnSearchSupervisor
         '
         Me.btnSearchSupervisor.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearchSupervisor.Location = New System.Drawing.Point(216, 121)
+        Me.btnSearchSupervisor.Location = New System.Drawing.Point(288, 149)
+        Me.btnSearchSupervisor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearchSupervisor.Name = "btnSearchSupervisor"
-        Me.btnSearchSupervisor.Size = New System.Drawing.Size(27, 23)
+        Me.btnSearchSupervisor.Size = New System.Drawing.Size(36, 28)
         Me.btnSearchSupervisor.TabIndex = 33
         Me.btnSearchSupervisor.Text = "..."
         Me.btnSearchSupervisor.UseVisualStyleBackColor = True
@@ -1224,9 +1324,10 @@ Partial Class frmTicketEdit
         '
         Me.Label27.AutoSize = True
         Me.Label27.ForeColor = System.Drawing.Color.Black
-        Me.Label27.Location = New System.Drawing.Point(7, 108)
+        Me.Label27.Location = New System.Drawing.Point(9, 133)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(110, 13)
+        Me.Label27.Size = New System.Drawing.Size(140, 16)
         Me.Label27.TabIndex = 31
         Me.Label27.Text = "Superior´s Supervisor:"
         '
@@ -1234,63 +1335,68 @@ Partial Class frmTicketEdit
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(213, 60)
+        Me.Label5.Location = New System.Drawing.Point(284, 74)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(159, 13)
+        Me.Label5.Size = New System.Drawing.Size(198, 16)
         Me.Label5.TabIndex = 30
         Me.Label5.Text = "Service Order / Parte de Campo"
         '
         'txtSONumber
         '
-        Me.txtSONumber.Location = New System.Drawing.Point(216, 75)
-        Me.txtSONumber.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSONumber.Location = New System.Drawing.Point(288, 92)
+        Me.txtSONumber.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtSONumber.MaxLength = 255
         Me.txtSONumber.Name = "txtSONumber"
-        Me.txtSONumber.Size = New System.Drawing.Size(202, 20)
+        Me.txtSONumber.Size = New System.Drawing.Size(268, 22)
         Me.txtSONumber.TabIndex = 29
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(7, 60)
+        Me.Label3.Location = New System.Drawing.Point(9, 74)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(67, 13)
+        Me.Label3.Size = New System.Drawing.Size(84, 16)
         Me.Label3.TabIndex = 28
         Me.Label3.Text = "Job Number:"
         '
         'txtJobNumber
         '
-        Me.txtJobNumber.Location = New System.Drawing.Point(10, 75)
-        Me.txtJobNumber.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtJobNumber.Location = New System.Drawing.Point(13, 92)
+        Me.txtJobNumber.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtJobNumber.MaxLength = 255
         Me.txtJobNumber.Name = "txtJobNumber"
-        Me.txtJobNumber.Size = New System.Drawing.Size(202, 20)
+        Me.txtJobNumber.Size = New System.Drawing.Size(268, 22)
         Me.txtJobNumber.TabIndex = 27
         '
         'txtDM
         '
-        Me.txtDM.Location = New System.Drawing.Point(216, 36)
+        Me.txtDM.Location = New System.Drawing.Point(288, 44)
+        Me.txtDM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDM.MaxLength = 255
         Me.txtDM.Name = "txtDM"
-        Me.txtDM.Size = New System.Drawing.Size(203, 20)
+        Me.txtDM.Size = New System.Drawing.Size(269, 22)
         Me.txtDM.TabIndex = 26
         '
         'txtSupNum
         '
-        Me.txtSupNum.Location = New System.Drawing.Point(9, 36)
+        Me.txtSupNum.Location = New System.Drawing.Point(12, 44)
+        Me.txtSupNum.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSupNum.MaxLength = 255
         Me.txtSupNum.Name = "txtSupNum"
-        Me.txtSupNum.Size = New System.Drawing.Size(203, 20)
+        Me.txtSupNum.Size = New System.Drawing.Size(269, 22)
         Me.txtSupNum.TabIndex = 25
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(213, 21)
+        Me.Label2.Location = New System.Drawing.Point(284, 26)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 13)
+        Me.Label2.Size = New System.Drawing.Size(91, 16)
         Me.Label2.TabIndex = 24
         Me.Label2.Text = "DM/CERTOP:"
         '
@@ -1298,9 +1404,10 @@ Partial Class frmTicketEdit
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(5, 21)
+        Me.Label1.Location = New System.Drawing.Point(7, 26)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(175, 13)
+        Me.Label1.Size = New System.Drawing.Size(220, 16)
         Me.Label1.TabIndex = 23
         Me.Label1.Text = "Proforma Valorizada / Field Tickets:"
         '
@@ -1310,9 +1417,11 @@ Partial Class frmTicketEdit
         Me.GroupBox7.Controls.Add(Me.txtMaxPressure)
         Me.GroupBox7.Controls.Add(Me.Label25)
         Me.GroupBox7.Controls.Add(Me.Label26)
-        Me.GroupBox7.Location = New System.Drawing.Point(685, 144)
+        Me.GroupBox7.Location = New System.Drawing.Point(913, 177)
+        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(203, 66)
+        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox7.Size = New System.Drawing.Size(271, 81)
         Me.GroupBox7.TabIndex = 38
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Pressure"
@@ -1320,34 +1429,38 @@ Partial Class frmTicketEdit
         'txtMaxDepth
         '
         Me.txtMaxDepth.BackColor = System.Drawing.Color.White
-        Me.txtMaxDepth.Location = New System.Drawing.Point(110, 38)
+        Me.txtMaxDepth.Location = New System.Drawing.Point(147, 47)
+        Me.txtMaxDepth.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtMaxDepth.Name = "txtMaxDepth"
-        Me.txtMaxDepth.Size = New System.Drawing.Size(80, 20)
+        Me.txtMaxDepth.Size = New System.Drawing.Size(105, 22)
         Me.txtMaxDepth.TabIndex = 24
         '
         'txtMaxPressure
         '
         Me.txtMaxPressure.BackColor = System.Drawing.Color.White
-        Me.txtMaxPressure.Location = New System.Drawing.Point(110, 16)
+        Me.txtMaxPressure.Location = New System.Drawing.Point(147, 20)
+        Me.txtMaxPressure.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtMaxPressure.Name = "txtMaxPressure"
-        Me.txtMaxPressure.Size = New System.Drawing.Size(80, 20)
+        Me.txtMaxPressure.Size = New System.Drawing.Size(105, 22)
         Me.txtMaxPressure.TabIndex = 23
         '
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(7, 19)
+        Me.Label25.Location = New System.Drawing.Point(9, 23)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(97, 13)
+        Me.Label25.Size = New System.Drawing.Size(122, 16)
         Me.Label25.TabIndex = 20
         Me.Label25.Text = "Max Pressure (Psi):"
         '
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(7, 41)
+        Me.Label26.Location = New System.Drawing.Point(9, 50)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(80, 13)
+        Me.Label26.Size = New System.Drawing.Size(96, 16)
         Me.Label26.TabIndex = 22
         Me.Label26.Text = "Max Depth (Ft):"
         '
@@ -1360,9 +1473,11 @@ Partial Class frmTicketEdit
         Me.GroupBox4.Controls.Add(Me.Label14)
         Me.GroupBox4.Controls.Add(Me.Label15)
         Me.GroupBox4.Controls.Add(Me.Label16)
-        Me.GroupBox4.Location = New System.Drawing.Point(685, 48)
+        Me.GroupBox4.Location = New System.Drawing.Point(913, 59)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(203, 86)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Size = New System.Drawing.Size(271, 106)
         Me.GroupBox4.TabIndex = 37
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Tubing"
@@ -1372,9 +1487,10 @@ Partial Class frmTicketEdit
         Me.cbxTubingGrade.DataSource = Me.TUBINGBindingSource
         Me.cbxTubingGrade.DisplayMember = "GRADE"
         Me.cbxTubingGrade.FormattingEnabled = True
-        Me.cbxTubingGrade.Location = New System.Drawing.Point(100, 60)
+        Me.cbxTubingGrade.Location = New System.Drawing.Point(133, 74)
+        Me.cbxTubingGrade.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxTubingGrade.Name = "cbxTubingGrade"
-        Me.cbxTubingGrade.Size = New System.Drawing.Size(83, 21)
+        Me.cbxTubingGrade.Size = New System.Drawing.Size(109, 24)
         Me.cbxTubingGrade.TabIndex = 22
         Me.cbxTubingGrade.ValueMember = "GRADE"
         '
@@ -1383,9 +1499,10 @@ Partial Class frmTicketEdit
         Me.cbxTubingWeight.DataSource = Me.TUBBINGWEIGHTBindingSource
         Me.cbxTubingWeight.DisplayMember = "WEIGHT"
         Me.cbxTubingWeight.FormattingEnabled = True
-        Me.cbxTubingWeight.Location = New System.Drawing.Point(100, 38)
+        Me.cbxTubingWeight.Location = New System.Drawing.Point(133, 47)
+        Me.cbxTubingWeight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxTubingWeight.Name = "cbxTubingWeight"
-        Me.cbxTubingWeight.Size = New System.Drawing.Size(83, 21)
+        Me.cbxTubingWeight.Size = New System.Drawing.Size(109, 24)
         Me.cbxTubingWeight.TabIndex = 21
         Me.cbxTubingWeight.ValueMember = "WEIGHT"
         '
@@ -1399,9 +1516,10 @@ Partial Class frmTicketEdit
         Me.cbxTubingPipe.DataSource = Me.TUBBINGDRILLPIPEBindingSource
         Me.cbxTubingPipe.DisplayMember = "DRILL_PIPE"
         Me.cbxTubingPipe.FormattingEnabled = True
-        Me.cbxTubingPipe.Location = New System.Drawing.Point(100, 16)
+        Me.cbxTubingPipe.Location = New System.Drawing.Point(133, 20)
+        Me.cbxTubingPipe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxTubingPipe.Name = "cbxTubingPipe"
-        Me.cbxTubingPipe.Size = New System.Drawing.Size(83, 21)
+        Me.cbxTubingPipe.Size = New System.Drawing.Size(109, 24)
         Me.cbxTubingPipe.TabIndex = 20
         Me.cbxTubingPipe.ValueMember = "DRILL_PIPE"
         '
@@ -1413,27 +1531,30 @@ Partial Class frmTicketEdit
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(7, 19)
+        Me.Label14.Location = New System.Drawing.Point(9, 23)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(72, 13)
+        Me.Label14.Size = New System.Drawing.Size(88, 16)
         Me.Label14.TabIndex = 18
         Me.Label14.Text = "Pipe (Inches):"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(6, 41)
+        Me.Label15.Location = New System.Drawing.Point(8, 50)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(78, 13)
+        Me.Label15.Size = New System.Drawing.Size(91, 16)
         Me.Label15.TabIndex = 20
         Me.Label15.Text = "Weight (#/FT):"
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(7, 63)
+        Me.Label16.Location = New System.Drawing.Point(9, 78)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(39, 13)
+        Me.Label16.Size = New System.Drawing.Size(48, 16)
         Me.Label16.TabIndex = 22
         Me.Label16.Text = "Grade:"
         '
@@ -1445,9 +1566,11 @@ Partial Class frmTicketEdit
         Me.GroupBox3.Controls.Add(Me.Label11)
         Me.GroupBox3.Controls.Add(Me.Label12)
         Me.GroupBox3.Controls.Add(Me.Label13)
-        Me.GroupBox3.Location = New System.Drawing.Point(685, 216)
+        Me.GroupBox3.Location = New System.Drawing.Point(913, 266)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(203, 86)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(271, 106)
         Me.GroupBox3.TabIndex = 36
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Casing"
@@ -1457,9 +1580,10 @@ Partial Class frmTicketEdit
         Me.cbxCasingGrade.DataSource = Me.CASINGBindingSource
         Me.cbxCasingGrade.DisplayMember = "GRADE"
         Me.cbxCasingGrade.FormattingEnabled = True
-        Me.cbxCasingGrade.Location = New System.Drawing.Point(100, 60)
+        Me.cbxCasingGrade.Location = New System.Drawing.Point(133, 74)
+        Me.cbxCasingGrade.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCasingGrade.Name = "cbxCasingGrade"
-        Me.cbxCasingGrade.Size = New System.Drawing.Size(83, 21)
+        Me.cbxCasingGrade.Size = New System.Drawing.Size(109, 24)
         Me.cbxCasingGrade.TabIndex = 27
         Me.cbxCasingGrade.ValueMember = "GRADE"
         '
@@ -1473,9 +1597,10 @@ Partial Class frmTicketEdit
         Me.cbxCasingWeight.DataSource = Me.CASINGWEIGHTBindingSource
         Me.cbxCasingWeight.DisplayMember = "WEIGHTFT"
         Me.cbxCasingWeight.FormattingEnabled = True
-        Me.cbxCasingWeight.Location = New System.Drawing.Point(100, 38)
+        Me.cbxCasingWeight.Location = New System.Drawing.Point(133, 47)
+        Me.cbxCasingWeight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCasingWeight.Name = "cbxCasingWeight"
-        Me.cbxCasingWeight.Size = New System.Drawing.Size(83, 21)
+        Me.cbxCasingWeight.Size = New System.Drawing.Size(109, 24)
         Me.cbxCasingWeight.TabIndex = 26
         Me.cbxCasingWeight.ValueMember = "WEIGHTFT"
         '
@@ -1489,9 +1614,10 @@ Partial Class frmTicketEdit
         Me.cbxCasingSize.DataSource = Me.CASINGSIZEBindingSource
         Me.cbxCasingSize.DisplayMember = "SIZEINC"
         Me.cbxCasingSize.FormattingEnabled = True
-        Me.cbxCasingSize.Location = New System.Drawing.Point(100, 16)
+        Me.cbxCasingSize.Location = New System.Drawing.Point(133, 20)
+        Me.cbxCasingSize.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCasingSize.Name = "cbxCasingSize"
-        Me.cbxCasingSize.Size = New System.Drawing.Size(83, 21)
+        Me.cbxCasingSize.Size = New System.Drawing.Size(109, 24)
         Me.cbxCasingSize.TabIndex = 25
         Me.cbxCasingSize.ValueMember = "SIZEINC"
         '
@@ -1503,9 +1629,10 @@ Partial Class frmTicketEdit
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(6, 19)
+        Me.Label11.Location = New System.Drawing.Point(8, 23)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(71, 13)
+        Me.Label11.Size = New System.Drawing.Size(86, 16)
         Me.Label11.TabIndex = 18
         Me.Label11.Text = "Size (Inches):"
         '
@@ -1513,46 +1640,51 @@ Partial Class frmTicketEdit
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.SystemColors.Control
-        Me.Label12.Location = New System.Drawing.Point(6, 41)
+        Me.Label12.Location = New System.Drawing.Point(8, 50)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(78, 13)
+        Me.Label12.Size = New System.Drawing.Size(91, 16)
         Me.Label12.TabIndex = 20
         Me.Label12.Text = "Weight (#/FT):"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(7, 63)
+        Me.Label13.Location = New System.Drawing.Point(9, 78)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(39, 13)
+        Me.Label13.Size = New System.Drawing.Size(48, 16)
         Me.Label13.TabIndex = 22
         Me.Label13.Text = "Grade:"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 6)
+        Me.PictureBox1.Location = New System.Drawing.Point(16, 7)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(46, 39)
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 48)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 19
         Me.PictureBox1.TabStop = False
         '
         'txtAdicInform
         '
-        Me.txtAdicInform.Location = New System.Drawing.Point(11, 48)
+        Me.txtAdicInform.Location = New System.Drawing.Point(15, 59)
+        Me.txtAdicInform.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAdicInform.MaxLength = 1000
         Me.txtAdicInform.Multiline = True
         Me.txtAdicInform.Name = "txtAdicInform"
-        Me.txtAdicInform.Size = New System.Drawing.Size(668, 464)
+        Me.txtAdicInform.Size = New System.Drawing.Size(889, 570)
         Me.txtAdicInform.TabIndex = 18
         '
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(64, 6)
+        Me.Label29.Location = New System.Drawing.Point(85, 7)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(386, 39)
+        Me.Label29.Size = New System.Drawing.Size(472, 48)
         Me.Label29.TabIndex = 8
         Me.Label29.Text = "Additional Information: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Use this area to write anything that is important regis" &
     "ter for this Ticket." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "This information will not exhibit in the Ticket print. Its" &
@@ -1566,7 +1698,7 @@ Partial Class frmTicketEdit
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSaveTicket, Me.mnuPrint, Me.mnuInvItem, Me.mnuCloseTicket, Me.mnuAttachment, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1132, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1509, 52)
         Me.MenuStrip1.TabIndex = 30
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -1574,7 +1706,7 @@ Partial Class frmTicketEdit
         '
         Me.mnuSaveTicket.Image = CType(resources.GetObject("mnuSaveTicket.Image"), System.Drawing.Image)
         Me.mnuSaveTicket.Name = "mnuSaveTicket"
-        Me.mnuSaveTicket.Size = New System.Drawing.Size(67, 38)
+        Me.mnuSaveTicket.Size = New System.Drawing.Size(78, 48)
         Me.mnuSaveTicket.Text = "Save"
         Me.mnuSaveTicket.ToolTipText = "Save the Ticket"
         '
@@ -1583,58 +1715,58 @@ Partial Class frmTicketEdit
         Me.mnuPrint.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TicketSalesItemToolStripMenuItem, Me.ToolStripSeparator1, Me.mnuActaIniFimOpe, Me.mnuJobLog, Me.FronteraToolStripMenuItem})
         Me.mnuPrint.Image = CType(resources.GetObject("mnuPrint.Image"), System.Drawing.Image)
         Me.mnuPrint.Name = "mnuPrint"
-        Me.mnuPrint.Size = New System.Drawing.Size(68, 38)
+        Me.mnuPrint.Size = New System.Drawing.Size(77, 48)
         Me.mnuPrint.Text = "Print"
         Me.mnuPrint.ToolTipText = "Print the Ticket"
         '
         'TicketSalesItemToolStripMenuItem
         '
         Me.TicketSalesItemToolStripMenuItem.Name = "TicketSalesItemToolStripMenuItem"
-        Me.TicketSalesItemToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
+        Me.TicketSalesItemToolStripMenuItem.Size = New System.Drawing.Size(309, 26)
         Me.TicketSalesItemToolStripMenuItem.Text = "Ticket Sales Item"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(244, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(306, 6)
         '
         'mnuActaIniFimOpe
         '
         Me.mnuActaIniFimOpe.Name = "mnuActaIniFimOpe"
-        Me.mnuActaIniFimOpe.Size = New System.Drawing.Size(247, 22)
+        Me.mnuActaIniFimOpe.Size = New System.Drawing.Size(309, 26)
         Me.mnuActaIniFimOpe.Text = "Acta Inicio y Finaliz. Operaciones"
         '
         'mnuJobLog
         '
         Me.mnuJobLog.Name = "mnuJobLog"
-        Me.mnuJobLog.Size = New System.Drawing.Size(247, 22)
+        Me.mnuJobLog.Size = New System.Drawing.Size(309, 26)
         Me.mnuJobLog.Text = "Job Log"
         '
         'FronteraToolStripMenuItem
         '
         Me.FronteraToolStripMenuItem.Name = "FronteraToolStripMenuItem"
-        Me.FronteraToolStripMenuItem.Size = New System.Drawing.Size(247, 22)
+        Me.FronteraToolStripMenuItem.Size = New System.Drawing.Size(309, 26)
         Me.FronteraToolStripMenuItem.Text = "Frontera"
         '
         'mnuInvItem
         '
         Me.mnuInvItem.Image = CType(resources.GetObject("mnuInvItem.Image"), System.Drawing.Image)
         Me.mnuInvItem.Name = "mnuInvItem"
-        Me.mnuInvItem.Size = New System.Drawing.Size(120, 38)
+        Me.mnuInvItem.Size = New System.Drawing.Size(142, 48)
         Me.mnuInvItem.Text = "Inventory Item"
         '
         'mnuCloseTicket
         '
         Me.mnuCloseTicket.Image = CType(resources.GetObject("mnuCloseTicket.Image"), System.Drawing.Image)
         Me.mnuCloseTicket.Name = "mnuCloseTicket"
-        Me.mnuCloseTicket.Size = New System.Drawing.Size(106, 38)
+        Me.mnuCloseTicket.Size = New System.Drawing.Size(126, 48)
         Me.mnuCloseTicket.Text = "Close Ticket"
         '
         'mnuAttachment
         '
         Me.mnuAttachment.Image = CType(resources.GetObject("mnuAttachment.Image"), System.Drawing.Image)
         Me.mnuAttachment.Name = "mnuAttachment"
-        Me.mnuAttachment.Size = New System.Drawing.Size(106, 38)
+        Me.mnuAttachment.Size = New System.Drawing.Size(124, 48)
         Me.mnuAttachment.Text = "Attachment"
         '
         'ExitToolStripMenuItem
@@ -1659,18 +1791,20 @@ Partial Class frmTicketEdit
         Me.pnlTicket.Controls.Add(Me.txtTicketNumber)
         Me.pnlTicket.Controls.Add(Me.lblCustomer)
         Me.pnlTicket.Controls.Add(Me.lblTicketNumber)
-        Me.pnlTicket.Location = New System.Drawing.Point(6, 46)
+        Me.pnlTicket.Location = New System.Drawing.Point(8, 57)
+        Me.pnlTicket.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlTicket.Name = "pnlTicket"
-        Me.pnlTicket.Size = New System.Drawing.Size(987, 62)
+        Me.pnlTicket.Size = New System.Drawing.Size(1316, 76)
         Me.pnlTicket.TabIndex = 31
         '
         'lblServiceLine
         '
         Me.lblServiceLine.AutoSize = True
         Me.lblServiceLine.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblServiceLine.Location = New System.Drawing.Point(409, 10)
+        Me.lblServiceLine.Location = New System.Drawing.Point(545, 12)
+        Me.lblServiceLine.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblServiceLine.Name = "lblServiceLine"
-        Me.lblServiceLine.Size = New System.Drawing.Size(69, 13)
+        Me.lblServiceLine.Size = New System.Drawing.Size(84, 16)
         Me.lblServiceLine.TabIndex = 41
         Me.lblServiceLine.Text = "Service Line:"
         '
@@ -1679,9 +1813,10 @@ Partial Class frmTicketEdit
         Me.cbxServiceLine.DataSource = Me.SERVLINECUSTVBindingSource
         Me.cbxServiceLine.DisplayMember = "NAME"
         Me.cbxServiceLine.FormattingEnabled = True
-        Me.cbxServiceLine.Location = New System.Drawing.Point(412, 25)
+        Me.cbxServiceLine.Location = New System.Drawing.Point(549, 31)
+        Me.cbxServiceLine.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxServiceLine.Name = "cbxServiceLine"
-        Me.cbxServiceLine.Size = New System.Drawing.Size(204, 21)
+        Me.cbxServiceLine.Size = New System.Drawing.Size(271, 24)
         Me.cbxServiceLine.TabIndex = 40
         Me.cbxServiceLine.ValueMember = "SERVICELINEID"
         '
@@ -1695,9 +1830,10 @@ Partial Class frmTicketEdit
         Me.cbxContract.DataSource = Me.CONTRACTBindingSource
         Me.cbxContract.DisplayMember = "CONTRACTNUMBER"
         Me.cbxContract.FormattingEnabled = True
-        Me.cbxContract.Location = New System.Drawing.Point(622, 24)
+        Me.cbxContract.Location = New System.Drawing.Point(829, 30)
+        Me.cbxContract.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxContract.Name = "cbxContract"
-        Me.cbxContract.Size = New System.Drawing.Size(193, 21)
+        Me.cbxContract.Size = New System.Drawing.Size(256, 24)
         Me.cbxContract.TabIndex = 3
         Me.cbxContract.ValueMember = "CONTRACTID"
         '
@@ -1712,9 +1848,10 @@ Partial Class frmTicketEdit
         Me.cbxCurrency.DisplayMember = "CURRENCYNAME"
         Me.cbxCurrency.Enabled = False
         Me.cbxCurrency.FormattingEnabled = True
-        Me.cbxCurrency.Location = New System.Drawing.Point(821, 24)
+        Me.cbxCurrency.Location = New System.Drawing.Point(1095, 30)
+        Me.cbxCurrency.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCurrency.Name = "cbxCurrency"
-        Me.cbxCurrency.Size = New System.Drawing.Size(153, 21)
+        Me.cbxCurrency.Size = New System.Drawing.Size(203, 24)
         Me.cbxCurrency.TabIndex = 4
         Me.cbxCurrency.ValueMember = "CURRENCYCODE"
         '
@@ -1727,9 +1864,10 @@ Partial Class frmTicketEdit
         '
         Me.lblCurrency.AutoSize = True
         Me.lblCurrency.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblCurrency.Location = New System.Drawing.Point(818, 9)
+        Me.lblCurrency.Location = New System.Drawing.Point(1091, 11)
+        Me.lblCurrency.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCurrency.Name = "lblCurrency"
-        Me.lblCurrency.Size = New System.Drawing.Size(52, 13)
+        Me.lblCurrency.Size = New System.Drawing.Size(63, 16)
         Me.lblCurrency.TabIndex = 39
         Me.lblCurrency.Text = "Currency:"
         '
@@ -1737,9 +1875,10 @@ Partial Class frmTicketEdit
         '
         Me.lblContract.AutoSize = True
         Me.lblContract.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblContract.Location = New System.Drawing.Point(619, 8)
+        Me.lblContract.Location = New System.Drawing.Point(825, 10)
+        Me.lblContract.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblContract.Name = "lblContract"
-        Me.lblContract.Size = New System.Drawing.Size(50, 13)
+        Me.lblContract.Size = New System.Drawing.Size(59, 16)
         Me.lblContract.TabIndex = 30
         Me.lblContract.Text = "Contract:"
         '
@@ -1748,9 +1887,10 @@ Partial Class frmTicketEdit
         Me.cbxCustomer.DataSource = Me.CUSTOMERBindingSource
         Me.cbxCustomer.DisplayMember = "NAME"
         Me.cbxCustomer.FormattingEnabled = True
-        Me.cbxCustomer.Location = New System.Drawing.Point(116, 25)
+        Me.cbxCustomer.Location = New System.Drawing.Point(155, 31)
+        Me.cbxCustomer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCustomer.Name = "cbxCustomer"
-        Me.cbxCustomer.Size = New System.Drawing.Size(290, 21)
+        Me.cbxCustomer.Size = New System.Drawing.Size(385, 24)
         Me.cbxCustomer.TabIndex = 2
         Me.cbxCustomer.ValueMember = "CUSTOMERID"
         '
@@ -1764,27 +1904,30 @@ Partial Class frmTicketEdit
         Me.txtTicketNumber.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtTicketNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtTicketNumber.Enabled = False
-        Me.txtTicketNumber.Location = New System.Drawing.Point(15, 26)
+        Me.txtTicketNumber.Location = New System.Drawing.Point(20, 32)
+        Me.txtTicketNumber.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTicketNumber.Name = "txtTicketNumber"
-        Me.txtTicketNumber.Size = New System.Drawing.Size(86, 20)
+        Me.txtTicketNumber.Size = New System.Drawing.Size(114, 22)
         Me.txtTicketNumber.TabIndex = 1
         '
         'lblCustomer
         '
         Me.lblCustomer.AutoSize = True
         Me.lblCustomer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblCustomer.Location = New System.Drawing.Point(113, 10)
+        Me.lblCustomer.Location = New System.Drawing.Point(151, 12)
+        Me.lblCustomer.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCustomer.Name = "lblCustomer"
-        Me.lblCustomer.Size = New System.Drawing.Size(54, 13)
+        Me.lblCustomer.Size = New System.Drawing.Size(67, 16)
         Me.lblCustomer.TabIndex = 34
         Me.lblCustomer.Text = "Customer:"
         '
         'lblTicketNumber
         '
         Me.lblTicketNumber.AutoSize = True
-        Me.lblTicketNumber.Location = New System.Drawing.Point(12, 10)
+        Me.lblTicketNumber.Location = New System.Drawing.Point(16, 12)
+        Me.lblTicketNumber.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTicketNumber.Name = "lblTicketNumber"
-        Me.lblTicketNumber.Size = New System.Drawing.Size(80, 13)
+        Me.lblTicketNumber.Size = New System.Drawing.Size(98, 16)
         Me.lblTicketNumber.TabIndex = 33
         Me.lblTicketNumber.Text = "Ticket Number:"
         '
@@ -1856,16 +1999,18 @@ Partial Class frmTicketEdit
         Me.pnlTicketCanceled.BackColor = System.Drawing.Color.White
         Me.pnlTicketCanceled.Controls.Add(Me.btnCancelDet)
         Me.pnlTicketCanceled.Controls.Add(Me.lblTicketCancelDet)
-        Me.pnlTicketCanceled.Location = New System.Drawing.Point(998, 47)
+        Me.pnlTicketCanceled.Location = New System.Drawing.Point(1331, 58)
+        Me.pnlTicketCanceled.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlTicketCanceled.Name = "pnlTicketCanceled"
-        Me.pnlTicketCanceled.Size = New System.Drawing.Size(124, 61)
+        Me.pnlTicketCanceled.Size = New System.Drawing.Size(165, 75)
         Me.pnlTicketCanceled.TabIndex = 33
         '
         'btnCancelDet
         '
-        Me.btnCancelDet.Location = New System.Drawing.Point(24, 25)
+        Me.btnCancelDet.Location = New System.Drawing.Point(32, 31)
+        Me.btnCancelDet.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCancelDet.Name = "btnCancelDet"
-        Me.btnCancelDet.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelDet.Size = New System.Drawing.Size(100, 28)
         Me.btnCancelDet.TabIndex = 38
         Me.btnCancelDet.Text = "Details"
         Me.btnCancelDet.UseVisualStyleBackColor = True
@@ -1875,9 +2020,10 @@ Partial Class frmTicketEdit
         Me.lblTicketCancelDet.AutoSize = True
         Me.lblTicketCancelDet.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTicketCancelDet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblTicketCancelDet.Location = New System.Drawing.Point(1, 9)
+        Me.lblTicketCancelDet.Location = New System.Drawing.Point(1, 11)
+        Me.lblTicketCancelDet.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTicketCancelDet.Name = "lblTicketCancelDet"
-        Me.lblTicketCancelDet.Size = New System.Drawing.Size(120, 13)
+        Me.lblTicketCancelDet.Size = New System.Drawing.Size(148, 17)
         Me.lblTicketCancelDet.TabIndex = 37
         Me.lblTicketCancelDet.Text = "TICKET CANCELED"
         '
@@ -1911,20 +2057,21 @@ Partial Class frmTicketEdit
         '
         'frmTicketEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(1132, 675)
+        Me.ClientSize = New System.Drawing.Size(1509, 831)
         Me.Controls.Add(Me.pnlTicketCanceled)
         Me.Controls.Add(Me.pnlTicket)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmTicketEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Ticket Detail"
+        Me.Text = "INNTicket - Ticket Detail"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)

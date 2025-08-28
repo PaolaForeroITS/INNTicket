@@ -34,29 +34,32 @@ Partial Class frmDataImpDetail
         '
         Me.txtDetail.BackColor = System.Drawing.Color.White
         Me.txtDetail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtDetail.Location = New System.Drawing.Point(5, 39)
+        Me.txtDetail.Location = New System.Drawing.Point(7, 48)
+        Me.txtDetail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDetail.Multiline = True
         Me.txtDetail.Name = "txtDetail"
         Me.txtDetail.ReadOnly = True
         Me.txtDetail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtDetail.Size = New System.Drawing.Size(434, 325)
+        Me.txtDetail.Size = New System.Drawing.Size(578, 400)
         Me.txtDetail.TabIndex = 0
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 5)
+        Me.PictureBox1.Location = New System.Drawing.Point(4, 6)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox1.Size = New System.Drawing.Size(43, 39)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(347, 10)
+        Me.btnClose.Location = New System.Drawing.Point(463, 12)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(75, 23)
+        Me.btnClose.Size = New System.Drawing.Size(100, 28)
         Me.btnClose.TabIndex = 8
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
@@ -66,28 +69,31 @@ Partial Class frmDataImpDetail
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(41, 10)
+        Me.Label1.Location = New System.Drawing.Point(55, 12)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 13)
+        Me.Label1.Size = New System.Drawing.Size(87, 17)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Import Detail"
         '
         'frmDataImpDetail
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(444, 367)
+        Me.ClientSize = New System.Drawing.Size(592, 452)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtDetail)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmDataImpDetail"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Data Import Tool Detail"
+        Me.Text = "INNTicket - Data Import Tool Detail"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

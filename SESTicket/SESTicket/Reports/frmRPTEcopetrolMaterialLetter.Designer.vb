@@ -26,13 +26,14 @@ Partial Class frmRPTEcopetrolMaterialLetter
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim ReportDataSource3 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTEcopetrolMaterialLetter))
         Me.REPORTHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
         Me.REPORTLINE_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.REPORTPARAMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.REPORTHEADER_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
         Me.REPORTLINE_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTLINE_VTableAdapter()
-        Me.REPORTPARAMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.REPORTPARAMTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
         CType(Me.REPORTHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,6 +56,11 @@ Partial Class frmRPTEcopetrolMaterialLetter
         Me.REPORTLINE_VBindingSource.DataMember = "REPORTLINE_V"
         Me.REPORTLINE_VBindingSource.DataSource = Me.SESTicketAccessDataSet
         '
+        'REPORTPARAMBindingSource
+        '
+        Me.REPORTPARAMBindingSource.DataMember = "REPORTPARAM"
+        Me.REPORTPARAMBindingSource.DataSource = Me.SESTicketAccessDataSet
+        '
         'ReportViewer1
         '
         ReportDataSource1.Name = "dsHeader"
@@ -68,9 +74,11 @@ Partial Class frmRPTEcopetrolMaterialLetter
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource3)
         Me.ReportViewer1.LocalReport.EnableExternalImages = True
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "SESTicket.rptTicketEcopetrolMaterialLetter.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(3, 1)
+        Me.ReportViewer1.Location = New System.Drawing.Point(4, 1)
+        Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(862, 581)
+        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        Me.ReportViewer1.Size = New System.Drawing.Size(1149, 715)
         Me.ReportViewer1.TabIndex = 3
         '
         'REPORTHEADER_VTableAdapter
@@ -81,21 +89,18 @@ Partial Class frmRPTEcopetrolMaterialLetter
         '
         Me.REPORTLINE_VTableAdapter.ClearBeforeFill = True
         '
-        'REPORTPARAMBindingSource
-        '
-        Me.REPORTPARAMBindingSource.DataMember = "REPORTPARAM"
-        Me.REPORTPARAMBindingSource.DataSource = Me.SESTicketAccessDataSet
-        '
         'REPORTPARAMTableAdapter
         '
         Me.REPORTPARAMTableAdapter.ClearBeforeFill = True
         '
         'frmRPTEcopetrolMaterialLetter
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(869, 583)
+        Me.ClientSize = New System.Drawing.Size(1159, 718)
         Me.Controls.Add(Me.ReportViewer1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmRPTEcopetrolMaterialLetter"
         Me.Text = "frmRPTEcopetrolMaterialLetter"
         CType(Me.REPORTHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

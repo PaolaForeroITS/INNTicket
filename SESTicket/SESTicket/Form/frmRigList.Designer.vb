@@ -44,10 +44,11 @@ Partial Class frmRigList
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(320, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(427, 52)
         Me.MenuStrip1.TabIndex = 45
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -55,14 +56,14 @@ Partial Class frmRigList
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
         Me.mnuNewItem.Text = "New Item"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'SESTicketSQLDataSet
@@ -122,11 +123,13 @@ Partial Class frmRigList
         Me.dgvRig.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvRig.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colRigId})
         Me.dgvRig.DataSource = Me.RIGBindingSource
-        Me.dgvRig.Location = New System.Drawing.Point(5, 45)
+        Me.dgvRig.Location = New System.Drawing.Point(7, 55)
+        Me.dgvRig.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvRig.MultiSelect = False
         Me.dgvRig.Name = "dgvRig"
         Me.dgvRig.ReadOnly = True
-        Me.dgvRig.Size = New System.Drawing.Size(311, 422)
+        Me.dgvRig.RowHeadersWidth = 51
+        Me.dgvRig.Size = New System.Drawing.Size(415, 519)
         Me.dgvRig.TabIndex = 46
         '
         'colRigId
@@ -135,24 +138,26 @@ Partial Class frmRigList
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue
         Me.colRigId.DefaultCellStyle = DataGridViewCellStyle1
         Me.colRigId.HeaderText = "Rig Code"
+        Me.colRigId.MinimumWidth = 6
         Me.colRigId.Name = "colRigId"
         Me.colRigId.ReadOnly = True
         Me.colRigId.Width = 230
         '
         'frmRigList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(320, 473)
+        Me.ClientSize = New System.Drawing.Size(427, 582)
         Me.Controls.Add(Me.dgvRig)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmRigList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Rig List"
+        Me.Text = "INNTicket - Rig List"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()

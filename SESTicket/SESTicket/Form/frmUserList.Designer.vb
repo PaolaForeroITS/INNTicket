@@ -24,18 +24,9 @@ Partial Class frmUserList
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUserList))
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvUser = New System.Windows.Forms.DataGridView()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.chkNo = New System.Windows.Forms.CheckBox()
-        Me.chkYes = New System.Windows.Forms.CheckBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.USERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
-        Me.USERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.USERTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.colUserID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colUsername = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colName = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -44,10 +35,19 @@ Partial Class frmUserList
         Me.colBaseDataSync = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colTicketSync = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.USERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.chkNo = New System.Windows.Forms.CheckBox()
+        Me.chkYes = New System.Windows.Forms.CheckBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.USERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.USERTableAdapter()
+        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         CType(Me.dgvUser, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip1.SuspendLayout()
         CType(Me.USERBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgvUser
@@ -64,83 +64,6 @@ Partial Class frmUserList
         Me.dgvUser.Name = "dgvUser"
         Me.dgvUser.ReadOnly = True
         Me.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        '
-        'MenuStrip1
-        '
-        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
-        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem})
-        Me.MenuStrip1.Name = "MenuStrip1"
-        '
-        'mnuNewItem
-        '
-        resources.ApplyResources(Me.mnuNewItem, "mnuNewItem")
-        Me.mnuNewItem.Name = "mnuNewItem"
-        '
-        'chkNo
-        '
-        resources.ApplyResources(Me.chkNo, "chkNo")
-        Me.chkNo.Name = "chkNo"
-        Me.chkNo.UseVisualStyleBackColor = True
-        '
-        'chkYes
-        '
-        resources.ApplyResources(Me.chkYes, "chkYes")
-        Me.chkYes.Checked = True
-        Me.chkYes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkYes.Name = "chkYes"
-        Me.chkYes.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        resources.ApplyResources(Me.Label3, "Label3")
-        Me.Label3.Name = "Label3"
-        '
-        'USERBindingSource
-        '
-        Me.USERBindingSource.DataMember = "USER"
-        Me.USERBindingSource.DataSource = Me.SESTicketSQLDataSet
-        '
-        'SESTicketSQLDataSet
-        '
-        Me.SESTicketSQLDataSet.DataSetName = "SESTicketSQLDataSet"
-        Me.SESTicketSQLDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'USERTableAdapter
-        '
-        Me.USERTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.CASINGTableAdapter = Nothing
-        Me.TableAdapterManager.CITYTableAdapter = Nothing
-        Me.TableAdapterManager.CONTRACTAIUINVENTORYCLASSTableAdapter = Nothing
-        Me.TableAdapterManager.CONTRACTPRICELISTTableAdapter = Nothing
-        Me.TableAdapterManager.CONTRACTTableAdapter = Nothing
-        Me.TableAdapterManager.CUSTOMERTableAdapter = Nothing
-        Me.TableAdapterManager.EQUIPMENTTableAdapter = Nothing
-        Me.TableAdapterManager.IMP_CONTRACTPRICELISTTableAdapter = Nothing
-        Me.TableAdapterManager.IMP_EQUIPMENTTableAdapter = Nothing
-        Me.TableAdapterManager.IMP_INVENTORYITEMTableAdapter = Nothing
-        Me.TableAdapterManager.IMP_WELLTableAdapter = Nothing
-        Me.TableAdapterManager.IMP_WORKERTableAdapter = Nothing
-        Me.TableAdapterManager.INVENTORYCLASS_PRICETableAdapter = Nothing
-        Me.TableAdapterManager.INVENTORYCLASSTableAdapter = Nothing
-        Me.TableAdapterManager.INVENTORYITEMTableAdapter = Nothing
-        Me.TableAdapterManager.INVENTORYUNITTableAdapter = Nothing
-        Me.TableAdapterManager.PETRFIELDTableAdapter = Nothing
-        Me.TableAdapterManager.RIGTableAdapter = Nothing
-        Me.TableAdapterManager.SERVICELINETableAdapter = Nothing
-        Me.TableAdapterManager.SERVICETYPETableAdapter = Nothing
-        Me.TableAdapterManager.SITESTableAdapter = Nothing
-        Me.TableAdapterManager.STATETableAdapter = Nothing
-        Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
-        Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.USERTableAdapter = Me.USERTableAdapter
-        Me.TableAdapterManager.WELLTableAdapter = Nothing
-        Me.TableAdapterManager.WORKERTableAdapter = Nothing
         '
         'colUserID
         '
@@ -183,9 +106,9 @@ Partial Class frmUserList
         'colBaseDataSync
         '
         Me.colBaseDataSync.DataPropertyName = "BASEDATASYNC"
-        DataGridViewCellStyle3.Format = "G"
-        DataGridViewCellStyle3.NullValue = Nothing
-        Me.colBaseDataSync.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Format = "G"
+        DataGridViewCellStyle1.NullValue = Nothing
+        Me.colBaseDataSync.DefaultCellStyle = DataGridViewCellStyle1
         resources.ApplyResources(Me.colBaseDataSync, "colBaseDataSync")
         Me.colBaseDataSync.Name = "colBaseDataSync"
         Me.colBaseDataSync.ReadOnly = True
@@ -193,9 +116,9 @@ Partial Class frmUserList
         'colTicketSync
         '
         Me.colTicketSync.DataPropertyName = "TICKETSYNC"
-        DataGridViewCellStyle4.Format = "G"
-        DataGridViewCellStyle4.NullValue = Nothing
-        Me.colTicketSync.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Format = "G"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.colTicketSync.DefaultCellStyle = DataGridViewCellStyle2
         resources.ApplyResources(Me.colTicketSync, "colTicketSync")
         Me.colTicketSync.Name = "colTicketSync"
         Me.colTicketSync.ReadOnly = True
@@ -206,6 +129,84 @@ Partial Class frmUserList
         resources.ApplyResources(Me.colActive, "colActive")
         Me.colActive.Name = "colActive"
         Me.colActive.ReadOnly = True
+        '
+        'USERBindingSource
+        '
+        Me.USERBindingSource.DataMember = "USER"
+        Me.USERBindingSource.DataSource = Me.SESTicketSQLDataSet
+        '
+        'SESTicketSQLDataSet
+        '
+        Me.SESTicketSQLDataSet.DataSetName = "SESTicketSQLDataSet"
+        Me.SESTicketSQLDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'MenuStrip1
+        '
+        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
+        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem})
+        Me.MenuStrip1.Name = "MenuStrip1"
+        '
+        'mnuNewItem
+        '
+        resources.ApplyResources(Me.mnuNewItem, "mnuNewItem")
+        Me.mnuNewItem.Name = "mnuNewItem"
+        '
+        'chkNo
+        '
+        resources.ApplyResources(Me.chkNo, "chkNo")
+        Me.chkNo.Name = "chkNo"
+        Me.chkNo.UseVisualStyleBackColor = True
+        '
+        'chkYes
+        '
+        resources.ApplyResources(Me.chkYes, "chkYes")
+        Me.chkYes.Checked = True
+        Me.chkYes.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkYes.Name = "chkYes"
+        Me.chkYes.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.Name = "Label3"
+        '
+        'USERTableAdapter
+        '
+        Me.USERTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CASINGTableAdapter = Nothing
+        Me.TableAdapterManager.CITYTableAdapter = Nothing
+        Me.TableAdapterManager.CONTRACTAIUINVENTORYCLASSTableAdapter = Nothing
+        Me.TableAdapterManager.CONTRACTPRICELISTTableAdapter = Nothing
+        Me.TableAdapterManager.CONTRACTTableAdapter = Nothing
+        Me.TableAdapterManager.CUSTOMERTableAdapter = Nothing
+        Me.TableAdapterManager.EQUIPMENTTableAdapter = Nothing
+        Me.TableAdapterManager.IMP_CONTRACTPRICELISTTableAdapter = Nothing
+        Me.TableAdapterManager.IMP_EQUIPMENTTableAdapter = Nothing
+        Me.TableAdapterManager.IMP_INVENTORYITEMTableAdapter = Nothing
+        Me.TableAdapterManager.IMP_WELLTableAdapter = Nothing
+        Me.TableAdapterManager.IMP_WORKERTableAdapter = Nothing
+        Me.TableAdapterManager.INVENTORYCLASS_PRICETableAdapter = Nothing
+        Me.TableAdapterManager.INVENTORYCLASSTableAdapter = Nothing
+        Me.TableAdapterManager.INVENTORYITEMTableAdapter = Nothing
+        Me.TableAdapterManager.INVENTORYUNITTableAdapter = Nothing
+        Me.TableAdapterManager.PETRFIELDTableAdapter = Nothing
+        Me.TableAdapterManager.RIGTableAdapter = Nothing
+        Me.TableAdapterManager.SERVICELINETableAdapter = Nothing
+        Me.TableAdapterManager.SERVICETYPETableAdapter = Nothing
+        Me.TableAdapterManager.SITESTableAdapter = Nothing
+        Me.TableAdapterManager.STATETableAdapter = Nothing
+        Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
+        Me.TableAdapterManager.TUBINGTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.USERTableAdapter = Me.USERTableAdapter
+        Me.TableAdapterManager.WELLTableAdapter = Nothing
+        Me.TableAdapterManager.WORKERTableAdapter = Nothing
         '
         'frmUserList
         '
@@ -221,10 +222,10 @@ Partial Class frmUserList
         Me.MinimizeBox = False
         Me.Name = "frmUserList"
         CType(Me.dgvUser, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         CType(Me.USERBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

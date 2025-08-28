@@ -39,9 +39,11 @@ Partial Class frmUserRightEditClone
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.cbxUserCloneRight1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(243, 52)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(324, 64)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Choose the User:"
@@ -51,9 +53,10 @@ Partial Class frmUserRightEditClone
         Me.cbxUserCloneRight1.DataSource = Me.CbxUserCloneRightBindingSource
         Me.cbxUserCloneRight1.DisplayMember = "NAME"
         Me.cbxUserCloneRight1.FormattingEnabled = True
-        Me.cbxUserCloneRight1.Location = New System.Drawing.Point(19, 19)
+        Me.cbxUserCloneRight1.Location = New System.Drawing.Point(25, 23)
+        Me.cbxUserCloneRight1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxUserCloneRight1.Name = "cbxUserCloneRight1"
-        Me.cbxUserCloneRight1.Size = New System.Drawing.Size(208, 21)
+        Me.cbxUserCloneRight1.Size = New System.Drawing.Size(276, 24)
         Me.cbxUserCloneRight1.TabIndex = 0
         Me.cbxUserCloneRight1.ValueMember = "USERNAME"
         '
@@ -69,9 +72,10 @@ Partial Class frmUserRightEditClone
         '
         'btnOk
         '
-        Me.btnOk.Location = New System.Drawing.Point(261, 29)
+        Me.btnOk.Location = New System.Drawing.Point(348, 36)
+        Me.btnOk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnOk.Name = "btnOk"
-        Me.btnOk.Size = New System.Drawing.Size(75, 23)
+        Me.btnOk.Size = New System.Drawing.Size(100, 28)
         Me.btnOk.TabIndex = 1
         Me.btnOk.Text = "Ok"
         Me.btnOk.UseVisualStyleBackColor = True
@@ -115,18 +119,19 @@ Partial Class frmUserRightEditClone
         '
         'frmUserRightEditClone
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(339, 69)
+        Me.ClientSize = New System.Drawing.Size(452, 85)
         Me.Controls.Add(Me.btnOk)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmUserRightEditClone"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - User Rights - Clone"
+        Me.Text = "INNTicket - User Rights - Clone"
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.CbxUserCloneRightBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()

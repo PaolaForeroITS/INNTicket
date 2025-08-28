@@ -23,6 +23,7 @@ Partial Class frmTicketServEvalECPEdit
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketServEvalECPEdit))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtServiceDescr = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -141,7 +142,7 @@ Partial Class frmTicketServEvalECPEdit
         Me.Label2.Location = New System.Drawing.Point(8, 76)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(134, 17)
+        Me.Label2.Size = New System.Drawing.Size(127, 16)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Service Description:"
         '
@@ -162,7 +163,7 @@ Partial Class frmTicketServEvalECPEdit
         Me.Label1.Location = New System.Drawing.Point(8, 23)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 17)
+        Me.Label1.Size = New System.Drawing.Size(88, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Service Date:"
         '
@@ -240,7 +241,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource6.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource6.DataSource = Me.SESTicketAccessDataSet
-        ' Me.HSEQANSWERSBindingSource6.Filter = "EVALUATION = 'ECP' AND QUESTION = 7"
         Me.HSEQANSWERSBindingSource6.Sort = "DESCRIP ASC"
         '
         'SESTicketAccessDataSet
@@ -275,7 +275,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource5.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource5.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource5.Filter = "EVALUATION = 'ECP' AND QUESTION = 6"
         Me.HSEQANSWERSBindingSource5.Sort = "DESCRIP ASC"
         '
         'Label9
@@ -317,7 +316,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource4.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource4.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource4.Filter = "EVALUATION = 'ECP' AND QUESTION = 5"
         Me.HSEQANSWERSBindingSource4.Sort = "DESCRIP ASC"
         '
         'Label12
@@ -386,7 +384,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource3.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource3.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource3.Filter = "EVALUATION = 'ECP' AND QUESTION = 4"
         Me.HSEQANSWERSBindingSource3.Sort = "DESCRIP ASC"
         '
         'cbxEvalT3
@@ -405,7 +402,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource2.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource2.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource2.Filter = "EVALUATION = 'ECP' AND QUESTION = 3"
         Me.HSEQANSWERSBindingSource2.Sort = "DESCRIP ASC"
         '
         'cbxEvalT2
@@ -424,7 +420,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource1.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource1.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource1.Filter = "EVALUATION = 'ECP' AND QUESTION = 2"
         Me.HSEQANSWERSBindingSource1.Sort = "DESCRIP ASC"
         '
         'cbxEvalT1
@@ -443,7 +438,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource.Filter = "EVALUATION = 'ECP' AND QUESTION = 1"
         Me.HSEQANSWERSBindingSource.Sort = "DESCRIP ASC"
         '
         'Label7
@@ -583,7 +577,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource10.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource10.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource10.Filter = "EVALUATION = 'ECP' AND QUESTION = 11"
         Me.HSEQANSWERSBindingSource10.Sort = "DESCRIP ASC"
         '
         'Label13
@@ -613,7 +606,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource9.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource9.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource9.Filter = "EVALUATION = 'ECP' AND QUESTION = 10"
         Me.HSEQANSWERSBindingSource9.Sort = "DESCRIP ASC"
         '
         'Label11
@@ -642,7 +634,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource8.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource8.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource8.Filter = "EVALUATION = 'ECP' AND QUESTION = 9"
         Me.HSEQANSWERSBindingSource8.Sort = "DESCRIP ASC"
         '
         'cbxEvalP1
@@ -661,7 +652,6 @@ Partial Class frmTicketServEvalECPEdit
         '
         Me.HSEQANSWERSBindingSource7.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource7.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource7.Filter = "EVALUATION = 'ECP' AND QUESTION = 8"
         Me.HSEQANSWERSBindingSource7.Sort = "DESCRIP ASC"
         '
         'Label16
@@ -748,9 +738,10 @@ Partial Class frmTicketServEvalECPEdit
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmTicketServEvalECPEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - ECOPETROL Service Evaluation"
+        Me.Text = "INNTicket - ECOPETROL Service Evaluation"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.SesTicketAccessDataSet1, System.ComponentModel.ISupportInitialize).EndInit()

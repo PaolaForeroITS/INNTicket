@@ -23,16 +23,75 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripLogin = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripFullName = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripSQL = New System.Windows.Forms.ToolStripStatusLabel()
         Me.dgvTicketAccess = New System.Windows.Forms.DataGridView()
+        Me.colAttach = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.colTicketID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSuperiorNum = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDM = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSuperiorSupName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colFullUserName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTicketStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDateService = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colServiceLine = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCustomerName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSite = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colWellID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCurrency = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colItemAmount = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSyncDB = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.colSyncDatetime = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCustomerID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colServiceLineId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colContractID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCurrencyID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colServiceTypeID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTimeArrivedID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTimeStarted = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTimeCompleted = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCasingSize = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCasingWeight = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCasingGrade = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTubingSize = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTubingWeight = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTubingGrade = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colPressureMax = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDepthMax = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colJobDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCustRepRes = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCustRepResPosition = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCustRepResAssist = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colContractorRepresentative = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCustComments = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colContractComments = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colRig = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colExchangeRate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCancelDateTime = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCancelUser = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCancelReason = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCustRepresAssistPos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colInvoiceNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colAdicInform = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colWellName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colNoInvItem = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colHasAttach = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colJobNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSiteId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colContrRepresName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colServiceOrderNum = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSuperiorSupervisor = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.cmnuGridPrincip = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.cmnuOpenTicket = New System.Windows.Forms.ToolStripMenuItem()
         Me.cmnuAttachment = New System.Windows.Forms.ToolStripMenuItem()
@@ -104,65 +163,6 @@ Partial Class frmMain
         Me.CbxServiceLineTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxServiceLineTableAdapter()
         Me.CbxCustomerTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxCustomerTableAdapter()
         Me.CbxSiteTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxSiteTableAdapter()
-        Me.colAttach = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.colTicketID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSuperiorNum = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDM = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSuperiorSupName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colFullUserName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTicketStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDateService = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colServiceLine = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCustomerName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSite = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colWellID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCurrency = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colItemAmount = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSyncDB = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.colSyncDatetime = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCustomerID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colServiceLineId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colContractID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCurrencyID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colServiceTypeID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTimeArrivedID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTimeStarted = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTimeCompleted = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCasingSize = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCasingWeight = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCasingGrade = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTubingSize = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTubingWeight = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTubingGrade = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colPressureMax = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDepthMax = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colJobDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCustRepRes = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCustRepResPosition = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCustRepResAssist = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colContractorRepresentative = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCustComments = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colContractComments = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colRig = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colExchangeRate = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCancelDateTime = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCancelUser = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCancelReason = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCustRepresAssistPos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colInvoiceNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colAdicInform = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colWellName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colNoInvItem = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colHasAttach = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colJobNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSiteId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colContrRepresName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colServiceOrderNum = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSuperiorSupervisor = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.dgvTicketAccess, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.cmnuGridPrincip.SuspendLayout()
@@ -179,29 +179,29 @@ Partial Class frmMain
         '
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLogin, Me.ToolStripFullName, Me.ToolStripSQL})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 627)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 623)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1191, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1191, 26)
         Me.StatusStrip1.TabIndex = 1
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'ToolStripLogin
         '
         Me.ToolStripLogin.Name = "ToolStripLogin"
-        Me.ToolStripLogin.Size = New System.Drawing.Size(81, 17)
+        Me.ToolStripLogin.Size = New System.Drawing.Size(98, 20)
         Me.ToolStripLogin.Text = "Login: FMELO"
         '
         'ToolStripFullName
         '
         Me.ToolStripFullName.Name = "ToolStripFullName"
-        Me.ToolStripFullName.Size = New System.Drawing.Size(547, 17)
+        Me.ToolStripFullName.Size = New System.Drawing.Size(539, 20)
         Me.ToolStripFullName.Spring = True
         Me.ToolStripFullName.Text = "Name: MELO, FERNANDO"
         '
         'ToolStripSQL
         '
         Me.ToolStripSQL.Name = "ToolStripSQL"
-        Me.ToolStripSQL.Size = New System.Drawing.Size(547, 17)
+        Me.ToolStripSQL.Size = New System.Drawing.Size(539, 20)
         Me.ToolStripSQL.Spring = True
         Me.ToolStripSQL.Text = "SQL Connected: YES"
         '
@@ -222,62 +222,612 @@ Partial Class frmMain
         Me.dgvTicketAccess.Size = New System.Drawing.Size(1169, 497)
         Me.dgvTicketAccess.TabIndex = 0
         '
+        'colAttach
+        '
+        Me.colAttach.HeaderText = ""
+        Me.colAttach.MinimumWidth = 6
+        Me.colAttach.Name = "colAttach"
+        Me.colAttach.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.colAttach.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.colAttach.Width = 20
+        '
+        'colTicketID
+        '
+        Me.colTicketID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colTicketID.DataPropertyName = "TICKETID"
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.colTicketID.DefaultCellStyle = DataGridViewCellStyle1
+        Me.colTicketID.HeaderText = "Ticket"
+        Me.colTicketID.MinimumWidth = 6
+        Me.colTicketID.Name = "colTicketID"
+        Me.colTicketID.ReadOnly = True
+        Me.colTicketID.Width = 73
+        '
+        'colSuperiorNum
+        '
+        Me.colSuperiorNum.DataPropertyName = "SUPERIORNUM"
+        Me.colSuperiorNum.HeaderText = "Proforma Val Field Tickets"
+        Me.colSuperiorNum.MinimumWidth = 6
+        Me.colSuperiorNum.Name = "colSuperiorNum"
+        Me.colSuperiorNum.ReadOnly = True
+        Me.colSuperiorNum.Width = 125
+        '
+        'colDM
+        '
+        Me.colDM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.colDM.DataPropertyName = "DM"
+        Me.colDM.HeaderText = "DM/CERTOP"
+        Me.colDM.MinimumWidth = 6
+        Me.colDM.Name = "colDM"
+        Me.colDM.ReadOnly = True
+        Me.colDM.Width = 117
+        '
+        'colSuperiorSupName
+        '
+        Me.colSuperiorSupName.DataPropertyName = "SUPERIORSUPNAME"
+        Me.colSuperiorSupName.HeaderText = "Superior´s Supervisor"
+        Me.colSuperiorSupName.MinimumWidth = 6
+        Me.colSuperiorSupName.Name = "colSuperiorSupName"
+        Me.colSuperiorSupName.ReadOnly = True
+        Me.colSuperiorSupName.Width = 120
+        '
+        'colFullUserName
+        '
+        Me.colFullUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colFullUserName.DataPropertyName = "FULLUSERNAME"
+        Me.colFullUserName.HeaderText = "Created By"
+        Me.colFullUserName.MinimumWidth = 6
+        Me.colFullUserName.Name = "colFullUserName"
+        Me.colFullUserName.ReadOnly = True
+        Me.colFullUserName.Width = 95
+        '
+        'colTicketStatus
+        '
+        Me.colTicketStatus.DataPropertyName = "TICKETSTATUS"
+        Me.colTicketStatus.HeaderText = "Status"
+        Me.colTicketStatus.MinimumWidth = 6
+        Me.colTicketStatus.Name = "colTicketStatus"
+        Me.colTicketStatus.ReadOnly = True
+        Me.colTicketStatus.Width = 68
+        '
+        'colDateService
+        '
+        Me.colDateService.DataPropertyName = "DATESERVICE"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle2.Format = "d"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.colDateService.DefaultCellStyle = DataGridViewCellStyle2
+        Me.colDateService.HeaderText = "ServiceDate"
+        Me.colDateService.MinimumWidth = 6
+        Me.colDateService.Name = "colDateService"
+        Me.colDateService.ReadOnly = True
+        Me.colDateService.Width = 72
+        '
+        'colServiceLine
+        '
+        Me.colServiceLine.DataPropertyName = "SERVICELINE"
+        Me.colServiceLine.HeaderText = "Service Line"
+        Me.colServiceLine.MinimumWidth = 6
+        Me.colServiceLine.Name = "colServiceLine"
+        Me.colServiceLine.ReadOnly = True
+        Me.colServiceLine.Width = 150
+        '
+        'colCustomerName
+        '
+        Me.colCustomerName.DataPropertyName = "CUSTOMERNAME"
+        Me.colCustomerName.HeaderText = "Customer"
+        Me.colCustomerName.MinimumWidth = 6
+        Me.colCustomerName.Name = "colCustomerName"
+        Me.colCustomerName.ReadOnly = True
+        Me.colCustomerName.Width = 140
+        '
+        'colSite
+        '
+        Me.colSite.DataPropertyName = "SITE"
+        Me.colSite.HeaderText = "Site"
+        Me.colSite.MinimumWidth = 6
+        Me.colSite.Name = "colSite"
+        Me.colSite.ReadOnly = True
+        Me.colSite.Width = 45
+        '
+        'colWellID
+        '
+        Me.colWellID.DataPropertyName = "WELLID"
+        Me.colWellID.HeaderText = "Well"
+        Me.colWellID.MinimumWidth = 6
+        Me.colWellID.Name = "colWellID"
+        Me.colWellID.ReadOnly = True
+        Me.colWellID.Width = 125
+        '
+        'colCurrency
+        '
+        Me.colCurrency.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colCurrency.DataPropertyName = "Currency"
+        Me.colCurrency.HeaderText = ""
+        Me.colCurrency.MinimumWidth = 6
+        Me.colCurrency.Name = "colCurrency"
+        Me.colCurrency.ReadOnly = True
+        Me.colCurrency.Width = 23
+        '
+        'colItemAmount
+        '
+        Me.colItemAmount.DataPropertyName = "ITEMAMOUNT"
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle3.Format = "n2"
+        Me.colItemAmount.DefaultCellStyle = DataGridViewCellStyle3
+        Me.colItemAmount.HeaderText = "Amount"
+        Me.colItemAmount.MinimumWidth = 6
+        Me.colItemAmount.Name = "colItemAmount"
+        Me.colItemAmount.ReadOnly = True
+        Me.colItemAmount.Width = 125
+        '
+        'colSyncDB
+        '
+        Me.colSyncDB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colSyncDB.DataPropertyName = "SyncDB"
+        Me.colSyncDB.HeaderText = "Sync"
+        Me.colSyncDB.MinimumWidth = 6
+        Me.colSyncDB.Name = "colSyncDB"
+        Me.colSyncDB.ReadOnly = True
+        Me.colSyncDB.Width = 43
+        '
+        'colSyncDatetime
+        '
+        Me.colSyncDatetime.DataPropertyName = "SYNCDATETIME"
+        DataGridViewCellStyle4.Format = "dd/MM/yyyy HH:mm:ss tt"
+        Me.colSyncDatetime.DefaultCellStyle = DataGridViewCellStyle4
+        Me.colSyncDatetime.HeaderText = "Sync Date"
+        Me.colSyncDatetime.MinimumWidth = 6
+        Me.colSyncDatetime.Name = "colSyncDatetime"
+        Me.colSyncDatetime.ReadOnly = True
+        Me.colSyncDatetime.Visible = False
+        Me.colSyncDatetime.Width = 135
+        '
+        'colCustomerID
+        '
+        Me.colCustomerID.DataPropertyName = "CUSTOMERID"
+        Me.colCustomerID.HeaderText = "CUSTOMERID"
+        Me.colCustomerID.MinimumWidth = 6
+        Me.colCustomerID.Name = "colCustomerID"
+        Me.colCustomerID.Visible = False
+        Me.colCustomerID.Width = 125
+        '
+        'colServiceLineId
+        '
+        Me.colServiceLineId.DataPropertyName = "SERVICELINEID"
+        Me.colServiceLineId.HeaderText = "SERVICELINEID"
+        Me.colServiceLineId.MinimumWidth = 6
+        Me.colServiceLineId.Name = "colServiceLineId"
+        Me.colServiceLineId.Visible = False
+        Me.colServiceLineId.Width = 125
+        '
+        'colContractID
+        '
+        Me.colContractID.DataPropertyName = "CONTRACTID"
+        Me.colContractID.HeaderText = "CONTRACTID"
+        Me.colContractID.MinimumWidth = 6
+        Me.colContractID.Name = "colContractID"
+        Me.colContractID.Visible = False
+        Me.colContractID.Width = 125
+        '
+        'colCurrencyID
+        '
+        Me.colCurrencyID.DataPropertyName = "CURRENCYID"
+        Me.colCurrencyID.HeaderText = "CURRENCYID"
+        Me.colCurrencyID.MinimumWidth = 6
+        Me.colCurrencyID.Name = "colCurrencyID"
+        Me.colCurrencyID.Visible = False
+        Me.colCurrencyID.Width = 125
+        '
+        'colServiceTypeID
+        '
+        Me.colServiceTypeID.DataPropertyName = "SERVICETYPEID"
+        Me.colServiceTypeID.HeaderText = "SERVICETYPEID"
+        Me.colServiceTypeID.MinimumWidth = 6
+        Me.colServiceTypeID.Name = "colServiceTypeID"
+        Me.colServiceTypeID.Visible = False
+        Me.colServiceTypeID.Width = 125
+        '
+        'colTimeArrivedID
+        '
+        Me.colTimeArrivedID.DataPropertyName = "TIMEARRIVED"
+        Me.colTimeArrivedID.HeaderText = "TIMEARRIVED"
+        Me.colTimeArrivedID.MinimumWidth = 6
+        Me.colTimeArrivedID.Name = "colTimeArrivedID"
+        Me.colTimeArrivedID.Visible = False
+        Me.colTimeArrivedID.Width = 125
+        '
+        'colTimeStarted
+        '
+        Me.colTimeStarted.DataPropertyName = "TIMESTARTED"
+        Me.colTimeStarted.HeaderText = "TIMESTARTED"
+        Me.colTimeStarted.MinimumWidth = 6
+        Me.colTimeStarted.Name = "colTimeStarted"
+        Me.colTimeStarted.Visible = False
+        Me.colTimeStarted.Width = 125
+        '
+        'colTimeCompleted
+        '
+        Me.colTimeCompleted.DataPropertyName = "TIMECOMPLETED"
+        Me.colTimeCompleted.HeaderText = "TIMECOMPLETED"
+        Me.colTimeCompleted.MinimumWidth = 6
+        Me.colTimeCompleted.Name = "colTimeCompleted"
+        Me.colTimeCompleted.Visible = False
+        Me.colTimeCompleted.Width = 125
+        '
+        'colCasingSize
+        '
+        Me.colCasingSize.DataPropertyName = "CASINGSIZE"
+        Me.colCasingSize.HeaderText = "CASINGSIZE"
+        Me.colCasingSize.MinimumWidth = 6
+        Me.colCasingSize.Name = "colCasingSize"
+        Me.colCasingSize.Visible = False
+        Me.colCasingSize.Width = 125
+        '
+        'colCasingWeight
+        '
+        Me.colCasingWeight.DataPropertyName = "CASINGWEIGHT"
+        Me.colCasingWeight.HeaderText = "CASINGWEIGHT"
+        Me.colCasingWeight.MinimumWidth = 6
+        Me.colCasingWeight.Name = "colCasingWeight"
+        Me.colCasingWeight.Visible = False
+        Me.colCasingWeight.Width = 125
+        '
+        'colCasingGrade
+        '
+        Me.colCasingGrade.DataPropertyName = "CASINGGRADE"
+        Me.colCasingGrade.HeaderText = "CASINGGRADE"
+        Me.colCasingGrade.MinimumWidth = 6
+        Me.colCasingGrade.Name = "colCasingGrade"
+        Me.colCasingGrade.Visible = False
+        Me.colCasingGrade.Width = 125
+        '
+        'colTubingSize
+        '
+        Me.colTubingSize.DataPropertyName = "TUBINGSIZE"
+        Me.colTubingSize.HeaderText = "TUBINGSIZE"
+        Me.colTubingSize.MinimumWidth = 6
+        Me.colTubingSize.Name = "colTubingSize"
+        Me.colTubingSize.Visible = False
+        Me.colTubingSize.Width = 125
+        '
+        'colTubingWeight
+        '
+        Me.colTubingWeight.DataPropertyName = "TUBINGWEIGHT"
+        Me.colTubingWeight.HeaderText = "TUBINGWEIGHT"
+        Me.colTubingWeight.MinimumWidth = 6
+        Me.colTubingWeight.Name = "colTubingWeight"
+        Me.colTubingWeight.Visible = False
+        Me.colTubingWeight.Width = 125
+        '
+        'colTubingGrade
+        '
+        Me.colTubingGrade.DataPropertyName = "TUBINGGRADE"
+        Me.colTubingGrade.HeaderText = "TUBINGGRADE"
+        Me.colTubingGrade.MinimumWidth = 6
+        Me.colTubingGrade.Name = "colTubingGrade"
+        Me.colTubingGrade.Visible = False
+        Me.colTubingGrade.Width = 125
+        '
+        'colPressureMax
+        '
+        Me.colPressureMax.DataPropertyName = "PRESSUREMAX"
+        Me.colPressureMax.HeaderText = "PRESSUREMAX"
+        Me.colPressureMax.MinimumWidth = 6
+        Me.colPressureMax.Name = "colPressureMax"
+        Me.colPressureMax.Visible = False
+        Me.colPressureMax.Width = 125
+        '
+        'colDepthMax
+        '
+        Me.colDepthMax.DataPropertyName = "DEPTHMAX"
+        Me.colDepthMax.HeaderText = "DEPTHMAX"
+        Me.colDepthMax.MinimumWidth = 6
+        Me.colDepthMax.Name = "colDepthMax"
+        Me.colDepthMax.Visible = False
+        Me.colDepthMax.Width = 125
+        '
+        'colJobDescription
+        '
+        Me.colJobDescription.DataPropertyName = "JOBDESCRIPTION"
+        Me.colJobDescription.HeaderText = "JOBDESCRIPTION"
+        Me.colJobDescription.MinimumWidth = 6
+        Me.colJobDescription.Name = "colJobDescription"
+        Me.colJobDescription.Visible = False
+        Me.colJobDescription.Width = 125
+        '
+        'colCustRepRes
+        '
+        Me.colCustRepRes.DataPropertyName = "CUSTREPRES"
+        Me.colCustRepRes.HeaderText = "CUSTREPRES"
+        Me.colCustRepRes.MinimumWidth = 6
+        Me.colCustRepRes.Name = "colCustRepRes"
+        Me.colCustRepRes.Visible = False
+        Me.colCustRepRes.Width = 125
+        '
+        'colCustRepResPosition
+        '
+        Me.colCustRepResPosition.DataPropertyName = "CUSTREPRESPOSITION"
+        Me.colCustRepResPosition.HeaderText = "CUSTREPRESPOSITION"
+        Me.colCustRepResPosition.MinimumWidth = 6
+        Me.colCustRepResPosition.Name = "colCustRepResPosition"
+        Me.colCustRepResPosition.Visible = False
+        Me.colCustRepResPosition.Width = 125
+        '
+        'colCustRepResAssist
+        '
+        Me.colCustRepResAssist.DataPropertyName = "CUSTREPRESASSIST"
+        Me.colCustRepResAssist.HeaderText = "CUSTREPRESASSIST"
+        Me.colCustRepResAssist.MinimumWidth = 6
+        Me.colCustRepResAssist.Name = "colCustRepResAssist"
+        Me.colCustRepResAssist.Visible = False
+        Me.colCustRepResAssist.Width = 125
+        '
+        'colContractorRepresentative
+        '
+        Me.colContractorRepresentative.DataPropertyName = "CONTRACTORREPRESENTATIVE"
+        Me.colContractorRepresentative.HeaderText = "CONTRACTORREPRESENTATIVE"
+        Me.colContractorRepresentative.MinimumWidth = 6
+        Me.colContractorRepresentative.Name = "colContractorRepresentative"
+        Me.colContractorRepresentative.Visible = False
+        Me.colContractorRepresentative.Width = 125
+        '
+        'colCustComments
+        '
+        Me.colCustComments.DataPropertyName = "CUSTCOMMENTS"
+        Me.colCustComments.HeaderText = "CUSTCOMMENTS"
+        Me.colCustComments.MinimumWidth = 6
+        Me.colCustComments.Name = "colCustComments"
+        Me.colCustComments.Visible = False
+        Me.colCustComments.Width = 125
+        '
+        'colContractComments
+        '
+        Me.colContractComments.DataPropertyName = "CONTRACTCOMMENTS"
+        Me.colContractComments.HeaderText = "CONTRACTCOMMENTS"
+        Me.colContractComments.MinimumWidth = 6
+        Me.colContractComments.Name = "colContractComments"
+        Me.colContractComments.Visible = False
+        Me.colContractComments.Width = 125
+        '
+        'DataGridViewTextBoxColumn27
+        '
+        Me.DataGridViewTextBoxColumn27.DataPropertyName = "CREATEDUSER"
+        Me.DataGridViewTextBoxColumn27.HeaderText = "CREATEDUSER"
+        Me.DataGridViewTextBoxColumn27.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
+        Me.DataGridViewTextBoxColumn27.Visible = False
+        Me.DataGridViewTextBoxColumn27.Width = 125
+        '
+        'DataGridViewTextBoxColumn28
+        '
+        Me.DataGridViewTextBoxColumn28.DataPropertyName = "CREATEDDATETIME"
+        Me.DataGridViewTextBoxColumn28.HeaderText = "CREATEDDATETIME"
+        Me.DataGridViewTextBoxColumn28.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
+        Me.DataGridViewTextBoxColumn28.Visible = False
+        Me.DataGridViewTextBoxColumn28.Width = 125
+        '
+        'DataGridViewTextBoxColumn29
+        '
+        Me.DataGridViewTextBoxColumn29.DataPropertyName = "UPDATEDDATETIME"
+        Me.DataGridViewTextBoxColumn29.HeaderText = "UPDATEDDATETIME"
+        Me.DataGridViewTextBoxColumn29.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
+        Me.DataGridViewTextBoxColumn29.Visible = False
+        Me.DataGridViewTextBoxColumn29.Width = 125
+        '
+        'DataGridViewTextBoxColumn30
+        '
+        Me.DataGridViewTextBoxColumn30.DataPropertyName = "UPDATEDUSER"
+        Me.DataGridViewTextBoxColumn30.HeaderText = "UPDATEDUSER"
+        Me.DataGridViewTextBoxColumn30.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
+        Me.DataGridViewTextBoxColumn30.Visible = False
+        Me.DataGridViewTextBoxColumn30.Width = 125
+        '
+        'colRig
+        '
+        Me.colRig.DataPropertyName = "RIG"
+        Me.colRig.HeaderText = "RIG"
+        Me.colRig.MinimumWidth = 6
+        Me.colRig.Name = "colRig"
+        Me.colRig.Visible = False
+        Me.colRig.Width = 125
+        '
+        'colExchangeRate
+        '
+        Me.colExchangeRate.DataPropertyName = "EXCHANGERATE"
+        Me.colExchangeRate.HeaderText = "EXCHANGERATE"
+        Me.colExchangeRate.MinimumWidth = 6
+        Me.colExchangeRate.Name = "colExchangeRate"
+        Me.colExchangeRate.Visible = False
+        Me.colExchangeRate.Width = 125
+        '
+        'colCancelDateTime
+        '
+        Me.colCancelDateTime.DataPropertyName = "CANCELDATETIME"
+        Me.colCancelDateTime.HeaderText = "CANCELDATETIME"
+        Me.colCancelDateTime.MinimumWidth = 6
+        Me.colCancelDateTime.Name = "colCancelDateTime"
+        Me.colCancelDateTime.Visible = False
+        Me.colCancelDateTime.Width = 125
+        '
+        'colCancelUser
+        '
+        Me.colCancelUser.DataPropertyName = "CANCELUSER"
+        Me.colCancelUser.HeaderText = "CANCELUSER"
+        Me.colCancelUser.MinimumWidth = 6
+        Me.colCancelUser.Name = "colCancelUser"
+        Me.colCancelUser.Visible = False
+        Me.colCancelUser.Width = 125
+        '
+        'colCancelReason
+        '
+        Me.colCancelReason.DataPropertyName = "CANCELREASON"
+        Me.colCancelReason.HeaderText = "CANCELREASON"
+        Me.colCancelReason.MinimumWidth = 6
+        Me.colCancelReason.Name = "colCancelReason"
+        Me.colCancelReason.Visible = False
+        Me.colCancelReason.Width = 125
+        '
+        'colCustRepresAssistPos
+        '
+        Me.colCustRepresAssistPos.DataPropertyName = "CUSTREPRESASSISTPOSITION"
+        Me.colCustRepresAssistPos.HeaderText = "CUSTREPRESASSISTPOSITION"
+        Me.colCustRepresAssistPos.MinimumWidth = 6
+        Me.colCustRepresAssistPos.Name = "colCustRepresAssistPos"
+        Me.colCustRepresAssistPos.Visible = False
+        Me.colCustRepresAssistPos.Width = 125
+        '
+        'colInvoiceNumber
+        '
+        Me.colInvoiceNumber.DataPropertyName = "INVOICENUMBER"
+        Me.colInvoiceNumber.HeaderText = "INVOICENUMBER"
+        Me.colInvoiceNumber.MinimumWidth = 6
+        Me.colInvoiceNumber.Name = "colInvoiceNumber"
+        Me.colInvoiceNumber.Visible = False
+        Me.colInvoiceNumber.Width = 125
+        '
+        'colAdicInform
+        '
+        Me.colAdicInform.DataPropertyName = "ADICINFORM"
+        Me.colAdicInform.HeaderText = "ADICINFORM"
+        Me.colAdicInform.MinimumWidth = 6
+        Me.colAdicInform.Name = "colAdicInform"
+        Me.colAdicInform.Visible = False
+        Me.colAdicInform.Width = 125
+        '
+        'colWellName
+        '
+        Me.colWellName.DataPropertyName = "WELLNAME"
+        Me.colWellName.HeaderText = "WELLNAME"
+        Me.colWellName.MinimumWidth = 6
+        Me.colWellName.Name = "colWellName"
+        Me.colWellName.Visible = False
+        Me.colWellName.Width = 125
+        '
+        'colNoInvItem
+        '
+        Me.colNoInvItem.DataPropertyName = "NOINVITEM"
+        Me.colNoInvItem.HeaderText = "NOINVITEM"
+        Me.colNoInvItem.MinimumWidth = 6
+        Me.colNoInvItem.Name = "colNoInvItem"
+        Me.colNoInvItem.Visible = False
+        Me.colNoInvItem.Width = 125
+        '
+        'colHasAttach
+        '
+        Me.colHasAttach.DataPropertyName = "HASATTACH"
+        Me.colHasAttach.HeaderText = "HASATTACH"
+        Me.colHasAttach.MinimumWidth = 6
+        Me.colHasAttach.Name = "colHasAttach"
+        Me.colHasAttach.Visible = False
+        Me.colHasAttach.Width = 125
+        '
+        'colJobNumber
+        '
+        Me.colJobNumber.DataPropertyName = "JOBNUMBER"
+        Me.colJobNumber.HeaderText = "JOBNUMBER"
+        Me.colJobNumber.MinimumWidth = 6
+        Me.colJobNumber.Name = "colJobNumber"
+        Me.colJobNumber.Visible = False
+        Me.colJobNumber.Width = 125
+        '
+        'colSiteId
+        '
+        Me.colSiteId.DataPropertyName = "SITEID"
+        Me.colSiteId.HeaderText = "SITEID"
+        Me.colSiteId.MinimumWidth = 6
+        Me.colSiteId.Name = "colSiteId"
+        Me.colSiteId.Visible = False
+        Me.colSiteId.Width = 125
+        '
+        'colContrRepresName
+        '
+        Me.colContrRepresName.DataPropertyName = "CONTRREPRESNAME"
+        Me.colContrRepresName.HeaderText = "CONTRREPRESNAME"
+        Me.colContrRepresName.MinimumWidth = 6
+        Me.colContrRepresName.Name = "colContrRepresName"
+        Me.colContrRepresName.ReadOnly = True
+        Me.colContrRepresName.Visible = False
+        Me.colContrRepresName.Width = 125
+        '
+        'colServiceOrderNum
+        '
+        Me.colServiceOrderNum.DataPropertyName = "SERVICEORDERNUM"
+        Me.colServiceOrderNum.HeaderText = "Service Order"
+        Me.colServiceOrderNum.MinimumWidth = 6
+        Me.colServiceOrderNum.Name = "colServiceOrderNum"
+        Me.colServiceOrderNum.Visible = False
+        Me.colServiceOrderNum.Width = 125
+        '
+        'colSuperiorSupervisor
+        '
+        Me.colSuperiorSupervisor.DataPropertyName = "SUPERIORSUPERVISOR"
+        Me.colSuperiorSupervisor.HeaderText = "SUPERIORSUPERVISOR"
+        Me.colSuperiorSupervisor.MinimumWidth = 6
+        Me.colSuperiorSupervisor.Name = "colSuperiorSupervisor"
+        Me.colSuperiorSupervisor.Visible = False
+        Me.colSuperiorSupervisor.Width = 125
+        '
         'cmnuGridPrincip
         '
+        Me.cmnuGridPrincip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.cmnuGridPrincip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.cmnuOpenTicket, Me.cmnuAttachment, Me.cmnuCloneTicket, Me.cmnuSep00, Me.mnuCloseTickets, Me.mnuChangeSupSupervisor, Me.cmnuSep01, Me.cmnuRemoveTicketList})
         Me.cmnuGridPrincip.Name = "cmnuGridPrincip"
-        Me.cmnuGridPrincip.Size = New System.Drawing.Size(205, 148)
+        Me.cmnuGridPrincip.Size = New System.Drawing.Size(244, 172)
         '
         'cmnuOpenTicket
         '
         Me.cmnuOpenTicket.Image = CType(resources.GetObject("cmnuOpenTicket.Image"), System.Drawing.Image)
         Me.cmnuOpenTicket.Name = "cmnuOpenTicket"
-        Me.cmnuOpenTicket.Size = New System.Drawing.Size(204, 22)
+        Me.cmnuOpenTicket.Size = New System.Drawing.Size(243, 26)
         Me.cmnuOpenTicket.Text = "Open Ticket"
         '
         'cmnuAttachment
         '
         Me.cmnuAttachment.Image = CType(resources.GetObject("cmnuAttachment.Image"), System.Drawing.Image)
         Me.cmnuAttachment.Name = "cmnuAttachment"
-        Me.cmnuAttachment.Size = New System.Drawing.Size(204, 22)
+        Me.cmnuAttachment.Size = New System.Drawing.Size(243, 26)
         Me.cmnuAttachment.Text = "Attachment"
         '
         'cmnuCloneTicket
         '
         Me.cmnuCloneTicket.Image = CType(resources.GetObject("cmnuCloneTicket.Image"), System.Drawing.Image)
         Me.cmnuCloneTicket.Name = "cmnuCloneTicket"
-        Me.cmnuCloneTicket.Size = New System.Drawing.Size(204, 22)
+        Me.cmnuCloneTicket.Size = New System.Drawing.Size(243, 26)
         Me.cmnuCloneTicket.Text = "Clone Ticket"
         '
         'cmnuSep00
         '
         Me.cmnuSep00.Name = "cmnuSep00"
-        Me.cmnuSep00.Size = New System.Drawing.Size(201, 6)
+        Me.cmnuSep00.Size = New System.Drawing.Size(240, 6)
         '
         'mnuCloseTickets
         '
         Me.mnuCloseTickets.Image = CType(resources.GetObject("mnuCloseTickets.Image"), System.Drawing.Image)
         Me.mnuCloseTickets.Name = "mnuCloseTickets"
-        Me.mnuCloseTickets.Size = New System.Drawing.Size(204, 22)
+        Me.mnuCloseTickets.Size = New System.Drawing.Size(243, 26)
         Me.mnuCloseTickets.Text = "Close Ticket"
         '
         'mnuChangeSupSupervisor
         '
         Me.mnuChangeSupSupervisor.Image = CType(resources.GetObject("mnuChangeSupSupervisor.Image"), System.Drawing.Image)
         Me.mnuChangeSupSupervisor.Name = "mnuChangeSupSupervisor"
-        Me.mnuChangeSupSupervisor.Size = New System.Drawing.Size(204, 22)
+        Me.mnuChangeSupSupervisor.Size = New System.Drawing.Size(243, 26)
         Me.mnuChangeSupSupervisor.Text = "Change Supervisor"
         '
         'cmnuSep01
         '
         Me.cmnuSep01.Name = "cmnuSep01"
-        Me.cmnuSep01.Size = New System.Drawing.Size(201, 6)
+        Me.cmnuSep01.Size = New System.Drawing.Size(240, 6)
         '
         'cmnuRemoveTicketList
         '
         Me.cmnuRemoveTicketList.Image = CType(resources.GetObject("cmnuRemoveTicketList.Image"), System.Drawing.Image)
         Me.cmnuRemoveTicketList.Name = "cmnuRemoveTicketList"
-        Me.cmnuRemoveTicketList.Size = New System.Drawing.Size(204, 22)
+        Me.cmnuRemoveTicketList.Size = New System.Drawing.Size(243, 26)
         Me.cmnuRemoveTicketList.Text = "Remove Ticket From List"
         '
         'TICKET_VBindingSource
@@ -294,8 +844,10 @@ Partial Class frmMain
         '
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "INVOICENUMBER"
         Me.DataGridViewTextBoxColumn1.HeaderText = "INVOICENUMBER"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.Visible = False
+        Me.DataGridViewTextBoxColumn1.Width = 125
         '
         'mnuMain
         '
@@ -314,220 +866,220 @@ Partial Class frmMain
         Me.mnuBaseData.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuUpdateBaseData, Me.mnuSep02, Me.mnuSystem, Me.mnuResource, Me.mnuInventory, Me.mnuCustomer, Me.mnuOperational, Me.mnuSep03, Me.mnuReportParameter})
         Me.mnuBaseData.Image = CType(resources.GetObject("mnuBaseData.Image"), System.Drawing.Image)
         Me.mnuBaseData.Name = "mnuBaseData"
-        Me.mnuBaseData.Size = New System.Drawing.Size(94, 38)
+        Me.mnuBaseData.Size = New System.Drawing.Size(114, 38)
         Me.mnuBaseData.Text = "Base Data"
         '
         'mnuUpdateBaseData
         '
         Me.mnuUpdateBaseData.Name = "mnuUpdateBaseData"
-        Me.mnuUpdateBaseData.Size = New System.Drawing.Size(166, 22)
+        Me.mnuUpdateBaseData.Size = New System.Drawing.Size(212, 26)
         Me.mnuUpdateBaseData.Text = "Update Base Data"
         '
         'mnuSep02
         '
         Me.mnuSep02.Name = "mnuSep02"
-        Me.mnuSep02.Size = New System.Drawing.Size(163, 6)
+        Me.mnuSep02.Size = New System.Drawing.Size(209, 6)
         '
         'mnuSystem
         '
         Me.mnuSystem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSystemUsers})
         Me.mnuSystem.Name = "mnuSystem"
-        Me.mnuSystem.Size = New System.Drawing.Size(166, 22)
+        Me.mnuSystem.Size = New System.Drawing.Size(212, 26)
         Me.mnuSystem.Text = "System"
         '
         'mnuSystemUsers
         '
         Me.mnuSystemUsers.Name = "mnuSystemUsers"
-        Me.mnuSystemUsers.Size = New System.Drawing.Size(102, 22)
+        Me.mnuSystemUsers.Size = New System.Drawing.Size(127, 26)
         Me.mnuSystemUsers.Text = "Users"
         '
         'mnuResource
         '
         Me.mnuResource.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuResourceEquipment, Me.mnuResourceWorker})
         Me.mnuResource.Name = "mnuResource"
-        Me.mnuResource.Size = New System.Drawing.Size(166, 22)
+        Me.mnuResource.Size = New System.Drawing.Size(212, 26)
         Me.mnuResource.Text = "Resource"
         '
         'mnuResourceEquipment
         '
         Me.mnuResourceEquipment.Name = "mnuResourceEquipment"
-        Me.mnuResourceEquipment.Size = New System.Drawing.Size(132, 22)
+        Me.mnuResourceEquipment.Size = New System.Drawing.Size(164, 26)
         Me.mnuResourceEquipment.Text = "Equipment"
         '
         'mnuResourceWorker
         '
         Me.mnuResourceWorker.Name = "mnuResourceWorker"
-        Me.mnuResourceWorker.Size = New System.Drawing.Size(132, 22)
+        Me.mnuResourceWorker.Size = New System.Drawing.Size(164, 26)
         Me.mnuResourceWorker.Text = "Worker"
         '
         'mnuInventory
         '
         Me.mnuInventory.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuInventoryItem, Me.mnuInventoryClass})
         Me.mnuInventory.Name = "mnuInventory"
-        Me.mnuInventory.Size = New System.Drawing.Size(166, 22)
+        Me.mnuInventory.Size = New System.Drawing.Size(212, 26)
         Me.mnuInventory.Text = "Inventory"
         '
         'mnuInventoryItem
         '
         Me.mnuInventoryItem.Name = "mnuInventoryItem"
-        Me.mnuInventoryItem.Size = New System.Drawing.Size(101, 22)
+        Me.mnuInventoryItem.Size = New System.Drawing.Size(125, 26)
         Me.mnuInventoryItem.Text = "Item"
         '
         'mnuInventoryClass
         '
         Me.mnuInventoryClass.Name = "mnuInventoryClass"
-        Me.mnuInventoryClass.Size = New System.Drawing.Size(101, 22)
+        Me.mnuInventoryClass.Size = New System.Drawing.Size(125, 26)
         Me.mnuInventoryClass.Text = "Class"
         '
         'mnuCustomer
         '
         Me.mnuCustomer.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuCustomerList, Me.mnuContractHeader, Me.mnuContractPriceList})
         Me.mnuCustomer.Name = "mnuCustomer"
-        Me.mnuCustomer.Size = New System.Drawing.Size(166, 22)
+        Me.mnuCustomer.Size = New System.Drawing.Size(212, 26)
         Me.mnuCustomer.Text = "Customer"
         '
         'mnuCustomerList
         '
         Me.mnuCustomerList.Name = "mnuCustomerList"
-        Me.mnuCustomerList.Size = New System.Drawing.Size(170, 22)
+        Me.mnuCustomerList.Size = New System.Drawing.Size(210, 26)
         Me.mnuCustomerList.Text = "Customer List"
         '
         'mnuContractHeader
         '
         Me.mnuContractHeader.Name = "mnuContractHeader"
-        Me.mnuContractHeader.Size = New System.Drawing.Size(170, 22)
+        Me.mnuContractHeader.Size = New System.Drawing.Size(210, 26)
         Me.mnuContractHeader.Text = "Contract Header"
         '
         'mnuContractPriceList
         '
         Me.mnuContractPriceList.Name = "mnuContractPriceList"
-        Me.mnuContractPriceList.Size = New System.Drawing.Size(170, 22)
+        Me.mnuContractPriceList.Size = New System.Drawing.Size(210, 26)
         Me.mnuContractPriceList.Text = "Contract Price List"
         '
         'mnuOperational
         '
         Me.mnuOperational.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuOperSites, Me.mnuOperSep00, Me.mnuOperPetrFields, Me.mnuOperRig, Me.mnuOperWell, Me.mnuOperSep01, Me.mnuOperServiceLine, Me.mnuOperServiceType})
         Me.mnuOperational.Name = "mnuOperational"
-        Me.mnuOperational.Size = New System.Drawing.Size(166, 22)
+        Me.mnuOperational.Size = New System.Drawing.Size(212, 26)
         Me.mnuOperational.Text = "Operational"
         '
         'mnuOperSites
         '
         Me.mnuOperSites.Name = "mnuOperSites"
-        Me.mnuOperSites.Size = New System.Drawing.Size(162, 22)
+        Me.mnuOperSites.Size = New System.Drawing.Size(201, 26)
         Me.mnuOperSites.Text = "Sites"
         '
         'mnuOperSep00
         '
         Me.mnuOperSep00.Name = "mnuOperSep00"
-        Me.mnuOperSep00.Size = New System.Drawing.Size(159, 6)
+        Me.mnuOperSep00.Size = New System.Drawing.Size(198, 6)
         '
         'mnuOperPetrFields
         '
         Me.mnuOperPetrFields.Name = "mnuOperPetrFields"
-        Me.mnuOperPetrFields.Size = New System.Drawing.Size(162, 22)
+        Me.mnuOperPetrFields.Size = New System.Drawing.Size(201, 26)
         Me.mnuOperPetrFields.Text = "Petroleum Fields"
         '
         'mnuOperRig
         '
         Me.mnuOperRig.Name = "mnuOperRig"
-        Me.mnuOperRig.Size = New System.Drawing.Size(162, 22)
+        Me.mnuOperRig.Size = New System.Drawing.Size(201, 26)
         Me.mnuOperRig.Text = "Rig"
         '
         'mnuOperWell
         '
         Me.mnuOperWell.Name = "mnuOperWell"
-        Me.mnuOperWell.Size = New System.Drawing.Size(162, 22)
+        Me.mnuOperWell.Size = New System.Drawing.Size(201, 26)
         Me.mnuOperWell.Text = "Well"
         '
         'mnuOperSep01
         '
         Me.mnuOperSep01.Name = "mnuOperSep01"
-        Me.mnuOperSep01.Size = New System.Drawing.Size(159, 6)
+        Me.mnuOperSep01.Size = New System.Drawing.Size(198, 6)
         '
         'mnuOperServiceLine
         '
         Me.mnuOperServiceLine.Name = "mnuOperServiceLine"
-        Me.mnuOperServiceLine.Size = New System.Drawing.Size(162, 22)
+        Me.mnuOperServiceLine.Size = New System.Drawing.Size(201, 26)
         Me.mnuOperServiceLine.Text = "Service Line"
         '
         'mnuOperServiceType
         '
         Me.mnuOperServiceType.Name = "mnuOperServiceType"
-        Me.mnuOperServiceType.Size = New System.Drawing.Size(162, 22)
+        Me.mnuOperServiceType.Size = New System.Drawing.Size(201, 26)
         Me.mnuOperServiceType.Text = "Service Type"
         '
         'mnuSep03
         '
         Me.mnuSep03.Name = "mnuSep03"
-        Me.mnuSep03.Size = New System.Drawing.Size(163, 6)
+        Me.mnuSep03.Size = New System.Drawing.Size(209, 6)
         '
         'mnuReportParameter
         '
         Me.mnuReportParameter.Name = "mnuReportParameter"
-        Me.mnuReportParameter.Size = New System.Drawing.Size(166, 22)
+        Me.mnuReportParameter.Size = New System.Drawing.Size(212, 26)
         Me.mnuReportParameter.Text = "Report Parameter"
         '
         'mnuTicketDatabase
         '
         Me.mnuTicketDatabase.Image = CType(resources.GetObject("mnuTicketDatabase.Image"), System.Drawing.Image)
         Me.mnuTicketDatabase.Name = "mnuTicketDatabase"
-        Me.mnuTicketDatabase.Size = New System.Drawing.Size(126, 38)
+        Me.mnuTicketDatabase.Size = New System.Drawing.Size(153, 38)
         Me.mnuTicketDatabase.Text = "Ticket Database"
         '
         'mnuInvControl
         '
         Me.mnuInvControl.Image = CType(resources.GetObject("mnuInvControl.Image"), System.Drawing.Image)
         Me.mnuInvControl.Name = "mnuInvControl"
-        Me.mnuInvControl.Size = New System.Drawing.Size(124, 38)
+        Me.mnuInvControl.Size = New System.Drawing.Size(147, 38)
         Me.mnuInvControl.Text = "Invoice Control"
         '
         'mnuReport
         '
         Me.mnuReport.Image = CType(resources.GetObject("mnuReport.Image"), System.Drawing.Image)
         Me.mnuReport.Name = "mnuReport"
-        Me.mnuReport.Size = New System.Drawing.Size(78, 38)
+        Me.mnuReport.Size = New System.Drawing.Size(92, 38)
         Me.mnuReport.Text = "Report"
         '
         'mnuSep00
         '
         Me.mnuSep00.Enabled = False
         Me.mnuSep00.Name = "mnuSep00"
-        Me.mnuSep00.Size = New System.Drawing.Size(22, 38)
+        Me.mnuSep00.Size = New System.Drawing.Size(27, 38)
         Me.mnuSep00.Text = "|"
         '
         'mnuSyncTicket
         '
         Me.mnuSyncTicket.Image = CType(resources.GetObject("mnuSyncTicket.Image"), System.Drawing.Image)
         Me.mnuSyncTicket.Name = "mnuSyncTicket"
-        Me.mnuSyncTicket.Size = New System.Drawing.Size(142, 38)
+        Me.mnuSyncTicket.Size = New System.Drawing.Size(169, 38)
         Me.mnuSyncTicket.Text = "Synchronize Ticket"
         '
         'mnuSepMain00
         '
         Me.mnuSepMain00.Name = "mnuSepMain00"
-        Me.mnuSepMain00.Size = New System.Drawing.Size(22, 38)
+        Me.mnuSepMain00.Size = New System.Drawing.Size(27, 38)
         Me.mnuSepMain00.Text = "|"
         '
         'mnuNewTicket
         '
         Me.mnuNewTicket.Image = CType(resources.GetObject("mnuNewTicket.Image"), System.Drawing.Image)
         Me.mnuNewTicket.Name = "mnuNewTicket"
-        Me.mnuNewTicket.Size = New System.Drawing.Size(102, 38)
+        Me.mnuNewTicket.Size = New System.Drawing.Size(120, 38)
         Me.mnuNewTicket.Text = "New Ticket"
         '
         'mnuSep01
         '
         Me.mnuSep01.Enabled = False
         Me.mnuSep01.Name = "mnuSep01"
-        Me.mnuSep01.Size = New System.Drawing.Size(22, 38)
+        Me.mnuSep01.Size = New System.Drawing.Size(27, 38)
         Me.mnuSep01.Text = "|"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(61, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(71, 38)
         Me.mnuExit.Text = "Exit"
         '
         'GroupBox2
@@ -557,7 +1109,7 @@ Partial Class frmMain
         Me.lblTicketID.AutoSize = True
         Me.lblTicketID.Location = New System.Drawing.Point(300, 40)
         Me.lblTicketID.Name = "lblTicketID"
-        Me.lblTicketID.Size = New System.Drawing.Size(51, 13)
+        Me.lblTicketID.Size = New System.Drawing.Size(60, 16)
         Me.lblTicketID.TabIndex = 58
         Me.lblTicketID.Text = "TicketID:"
         '
@@ -567,7 +1119,7 @@ Partial Class frmMain
         Me.cbxTicket.Items.AddRange(New Object() {"Ticket ID", "Proforma Val."})
         Me.cbxTicket.Location = New System.Drawing.Point(303, 36)
         Me.cbxTicket.Name = "cbxTicket"
-        Me.cbxTicket.Size = New System.Drawing.Size(101, 21)
+        Me.cbxTicket.Size = New System.Drawing.Size(101, 24)
         Me.cbxTicket.TabIndex = 57
         Me.cbxTicket.Text = "Ticket ID"
         '
@@ -576,7 +1128,7 @@ Partial Class frmMain
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(300, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
         Me.Label1.TabIndex = 57
         Me.Label1.Text = "Customer:"
         '
@@ -596,7 +1148,7 @@ Partial Class frmMain
         Me.cbxCustomer.FormattingEnabled = True
         Me.cbxCustomer.Location = New System.Drawing.Point(410, 13)
         Me.cbxCustomer.Name = "cbxCustomer"
-        Me.cbxCustomer.Size = New System.Drawing.Size(162, 21)
+        Me.cbxCustomer.Size = New System.Drawing.Size(162, 24)
         Me.cbxCustomer.TabIndex = 56
         Me.cbxCustomer.ValueMember = "CUSTOMERID"
         '
@@ -609,7 +1161,7 @@ Partial Class frmMain
         '
         Me.txtTicketId.Location = New System.Drawing.Point(410, 37)
         Me.txtTicketId.Name = "txtTicketId"
-        Me.txtTicketId.Size = New System.Drawing.Size(162, 20)
+        Me.txtTicketId.Size = New System.Drawing.Size(162, 22)
         Me.txtTicketId.TabIndex = 55
         '
         'chkCanceled
@@ -619,7 +1171,7 @@ Partial Class frmMain
         Me.chkCanceled.CheckState = System.Windows.Forms.CheckState.Checked
         Me.chkCanceled.Location = New System.Drawing.Point(673, 44)
         Me.chkCanceled.Name = "chkCanceled"
-        Me.chkCanceled.Size = New System.Drawing.Size(71, 17)
+        Me.chkCanceled.Size = New System.Drawing.Size(87, 20)
         Me.chkCanceled.TabIndex = 39
         Me.chkCanceled.Text = "Canceled"
         Me.chkCanceled.UseVisualStyleBackColor = True
@@ -631,7 +1183,7 @@ Partial Class frmMain
         Me.chkClosed.CheckState = System.Windows.Forms.CheckState.Checked
         Me.chkClosed.Location = New System.Drawing.Point(673, 29)
         Me.chkClosed.Name = "chkClosed"
-        Me.chkClosed.Size = New System.Drawing.Size(58, 17)
+        Me.chkClosed.Size = New System.Drawing.Size(72, 20)
         Me.chkClosed.TabIndex = 38
         Me.chkClosed.Text = "Closed"
         Me.chkClosed.UseVisualStyleBackColor = True
@@ -643,7 +1195,7 @@ Partial Class frmMain
         Me.chkOpen.CheckState = System.Windows.Forms.CheckState.Checked
         Me.chkOpen.Location = New System.Drawing.Point(673, 14)
         Me.chkOpen.Name = "chkOpen"
-        Me.chkOpen.Size = New System.Drawing.Size(52, 17)
+        Me.chkOpen.Size = New System.Drawing.Size(62, 20)
         Me.chkOpen.TabIndex = 37
         Me.chkOpen.Text = "Open"
         Me.chkOpen.UseVisualStyleBackColor = True
@@ -655,7 +1207,7 @@ Partial Class frmMain
         Me.cbxSite.FormattingEnabled = True
         Me.cbxSite.Location = New System.Drawing.Point(98, 37)
         Me.cbxSite.Name = "cbxSite"
-        Me.cbxSite.Size = New System.Drawing.Size(185, 21)
+        Me.cbxSite.Size = New System.Drawing.Size(185, 24)
         Me.cbxSite.TabIndex = 47
         Me.cbxSite.ValueMember = "SITEID"
         '
@@ -669,7 +1221,7 @@ Partial Class frmMain
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(23, 37)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(28, 13)
+        Me.Label6.Size = New System.Drawing.Size(33, 16)
         Me.Label6.TabIndex = 46
         Me.Label6.Text = "Site:"
         '
@@ -680,7 +1232,7 @@ Partial Class frmMain
         Me.cbxServiceLine.FormattingEnabled = True
         Me.cbxServiceLine.Location = New System.Drawing.Point(98, 13)
         Me.cbxServiceLine.Name = "cbxServiceLine"
-        Me.cbxServiceLine.Size = New System.Drawing.Size(185, 21)
+        Me.cbxServiceLine.Size = New System.Drawing.Size(185, 24)
         Me.cbxServiceLine.TabIndex = 45
         Me.cbxServiceLine.ValueMember = "SERVICELINEID"
         '
@@ -694,7 +1246,7 @@ Partial Class frmMain
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(23, 16)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(69, 13)
+        Me.Label5.Size = New System.Drawing.Size(84, 16)
         Me.Label5.TabIndex = 44
         Me.Label5.Text = "Service Line:"
         '
@@ -703,7 +1255,7 @@ Partial Class frmMain
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(594, 14)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(73, 13)
+        Me.Label4.Size = New System.Drawing.Size(87, 16)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Ticket Status:"
         '
@@ -759,450 +1311,6 @@ Partial Class frmMain
         '
         Me.CbxSiteTableAdapter.ClearBeforeFill = True
         '
-        'colAttach
-        '
-        Me.colAttach.HeaderText = ""
-        Me.colAttach.Name = "colAttach"
-        Me.colAttach.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.colAttach.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.colAttach.Width = 20
-        '
-        'colTicketID
-        '
-        Me.colTicketID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colTicketID.DataPropertyName = "TICKETID"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.colTicketID.DefaultCellStyle = DataGridViewCellStyle1
-        Me.colTicketID.HeaderText = "Ticket"
-        Me.colTicketID.Name = "colTicketID"
-        Me.colTicketID.ReadOnly = True
-        Me.colTicketID.Width = 62
-        '
-        'colSuperiorNum
-        '
-        Me.colSuperiorNum.DataPropertyName = "SUPERIORNUM"
-        Me.colSuperiorNum.HeaderText = "Proforma Val Field Tickets"
-        Me.colSuperiorNum.Name = "colSuperiorNum"
-        Me.colSuperiorNum.ReadOnly = True
-        '
-        'colDM
-        '
-        Me.colDM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.colDM.DataPropertyName = "DM"
-        Me.colDM.HeaderText = "DM/CERTOP"
-        Me.colDM.Name = "colDM"
-        Me.colDM.ReadOnly = True
-        Me.colDM.Width = 98
-        '
-        'colSuperiorSupName
-        '
-        Me.colSuperiorSupName.DataPropertyName = "SUPERIORSUPNAME"
-        Me.colSuperiorSupName.HeaderText = "Superior´s Supervisor"
-        Me.colSuperiorSupName.Name = "colSuperiorSupName"
-        Me.colSuperiorSupName.ReadOnly = True
-        Me.colSuperiorSupName.Width = 120
-        '
-        'colFullUserName
-        '
-        Me.colFullUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colFullUserName.DataPropertyName = "FULLUSERNAME"
-        Me.colFullUserName.HeaderText = "Created By"
-        Me.colFullUserName.Name = "colFullUserName"
-        Me.colFullUserName.ReadOnly = True
-        Me.colFullUserName.Width = 78
-        '
-        'colTicketStatus
-        '
-        Me.colTicketStatus.DataPropertyName = "TICKETSTATUS"
-        Me.colTicketStatus.HeaderText = "Status"
-        Me.colTicketStatus.Name = "colTicketStatus"
-        Me.colTicketStatus.ReadOnly = True
-        Me.colTicketStatus.Width = 68
-        '
-        'colDateService
-        '
-        Me.colDateService.DataPropertyName = "DATESERVICE"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle2.Format = "d"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.colDateService.DefaultCellStyle = DataGridViewCellStyle2
-        Me.colDateService.HeaderText = "ServiceDate"
-        Me.colDateService.Name = "colDateService"
-        Me.colDateService.ReadOnly = True
-        Me.colDateService.Width = 72
-        '
-        'colServiceLine
-        '
-        Me.colServiceLine.DataPropertyName = "SERVICELINE"
-        Me.colServiceLine.HeaderText = "Service Line"
-        Me.colServiceLine.Name = "colServiceLine"
-        Me.colServiceLine.ReadOnly = True
-        Me.colServiceLine.Width = 150
-        '
-        'colCustomerName
-        '
-        Me.colCustomerName.DataPropertyName = "CUSTOMERNAME"
-        Me.colCustomerName.HeaderText = "Customer"
-        Me.colCustomerName.Name = "colCustomerName"
-        Me.colCustomerName.ReadOnly = True
-        Me.colCustomerName.Width = 140
-        '
-        'colSite
-        '
-        Me.colSite.DataPropertyName = "SITE"
-        Me.colSite.HeaderText = "Site"
-        Me.colSite.Name = "colSite"
-        Me.colSite.ReadOnly = True
-        Me.colSite.Width = 45
-        '
-        'colWellID
-        '
-        Me.colWellID.DataPropertyName = "WELLID"
-        Me.colWellID.HeaderText = "Well"
-        Me.colWellID.Name = "colWellID"
-        Me.colWellID.ReadOnly = True
-        '
-        'colCurrency
-        '
-        Me.colCurrency.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colCurrency.DataPropertyName = "Currency"
-        Me.colCurrency.HeaderText = ""
-        Me.colCurrency.Name = "colCurrency"
-        Me.colCurrency.ReadOnly = True
-        Me.colCurrency.Width = 19
-        '
-        'colItemAmount
-        '
-        Me.colItemAmount.DataPropertyName = "ITEMAMOUNT"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle3.Format = "n2"
-        Me.colItemAmount.DefaultCellStyle = DataGridViewCellStyle3
-        Me.colItemAmount.HeaderText = "Amount"
-        Me.colItemAmount.Name = "colItemAmount"
-        Me.colItemAmount.ReadOnly = True
-        '
-        'colSyncDB
-        '
-        Me.colSyncDB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colSyncDB.DataPropertyName = "SyncDB"
-        Me.colSyncDB.HeaderText = "Sync"
-        Me.colSyncDB.Name = "colSyncDB"
-        Me.colSyncDB.ReadOnly = True
-        Me.colSyncDB.Width = 37
-        '
-        'colSyncDatetime
-        '
-        Me.colSyncDatetime.DataPropertyName = "SYNCDATETIME"
-        DataGridViewCellStyle4.Format = "dd/MM/yyyy HH:mm:ss tt"
-        Me.colSyncDatetime.DefaultCellStyle = DataGridViewCellStyle4
-        Me.colSyncDatetime.HeaderText = "Sync Date"
-        Me.colSyncDatetime.Name = "colSyncDatetime"
-        Me.colSyncDatetime.ReadOnly = True
-        Me.colSyncDatetime.Visible = False
-        Me.colSyncDatetime.Width = 135
-        '
-        'colCustomerID
-        '
-        Me.colCustomerID.DataPropertyName = "CUSTOMERID"
-        Me.colCustomerID.HeaderText = "CUSTOMERID"
-        Me.colCustomerID.Name = "colCustomerID"
-        Me.colCustomerID.Visible = False
-        '
-        'colServiceLineId
-        '
-        Me.colServiceLineId.DataPropertyName = "SERVICELINEID"
-        Me.colServiceLineId.HeaderText = "SERVICELINEID"
-        Me.colServiceLineId.Name = "colServiceLineId"
-        Me.colServiceLineId.Visible = False
-        '
-        'colContractID
-        '
-        Me.colContractID.DataPropertyName = "CONTRACTID"
-        Me.colContractID.HeaderText = "CONTRACTID"
-        Me.colContractID.Name = "colContractID"
-        Me.colContractID.Visible = False
-        '
-        'colCurrencyID
-        '
-        Me.colCurrencyID.DataPropertyName = "CURRENCYID"
-        Me.colCurrencyID.HeaderText = "CURRENCYID"
-        Me.colCurrencyID.Name = "colCurrencyID"
-        Me.colCurrencyID.Visible = False
-        '
-        'colServiceTypeID
-        '
-        Me.colServiceTypeID.DataPropertyName = "SERVICETYPEID"
-        Me.colServiceTypeID.HeaderText = "SERVICETYPEID"
-        Me.colServiceTypeID.Name = "colServiceTypeID"
-        Me.colServiceTypeID.Visible = False
-        '
-        'colTimeArrivedID
-        '
-        Me.colTimeArrivedID.DataPropertyName = "TIMEARRIVED"
-        Me.colTimeArrivedID.HeaderText = "TIMEARRIVED"
-        Me.colTimeArrivedID.Name = "colTimeArrivedID"
-        Me.colTimeArrivedID.Visible = False
-        '
-        'colTimeStarted
-        '
-        Me.colTimeStarted.DataPropertyName = "TIMESTARTED"
-        Me.colTimeStarted.HeaderText = "TIMESTARTED"
-        Me.colTimeStarted.Name = "colTimeStarted"
-        Me.colTimeStarted.Visible = False
-        '
-        'colTimeCompleted
-        '
-        Me.colTimeCompleted.DataPropertyName = "TIMECOMPLETED"
-        Me.colTimeCompleted.HeaderText = "TIMECOMPLETED"
-        Me.colTimeCompleted.Name = "colTimeCompleted"
-        Me.colTimeCompleted.Visible = False
-        '
-        'colCasingSize
-        '
-        Me.colCasingSize.DataPropertyName = "CASINGSIZE"
-        Me.colCasingSize.HeaderText = "CASINGSIZE"
-        Me.colCasingSize.Name = "colCasingSize"
-        Me.colCasingSize.Visible = False
-        '
-        'colCasingWeight
-        '
-        Me.colCasingWeight.DataPropertyName = "CASINGWEIGHT"
-        Me.colCasingWeight.HeaderText = "CASINGWEIGHT"
-        Me.colCasingWeight.Name = "colCasingWeight"
-        Me.colCasingWeight.Visible = False
-        '
-        'colCasingGrade
-        '
-        Me.colCasingGrade.DataPropertyName = "CASINGGRADE"
-        Me.colCasingGrade.HeaderText = "CASINGGRADE"
-        Me.colCasingGrade.Name = "colCasingGrade"
-        Me.colCasingGrade.Visible = False
-        '
-        'colTubingSize
-        '
-        Me.colTubingSize.DataPropertyName = "TUBINGSIZE"
-        Me.colTubingSize.HeaderText = "TUBINGSIZE"
-        Me.colTubingSize.Name = "colTubingSize"
-        Me.colTubingSize.Visible = False
-        '
-        'colTubingWeight
-        '
-        Me.colTubingWeight.DataPropertyName = "TUBINGWEIGHT"
-        Me.colTubingWeight.HeaderText = "TUBINGWEIGHT"
-        Me.colTubingWeight.Name = "colTubingWeight"
-        Me.colTubingWeight.Visible = False
-        '
-        'colTubingGrade
-        '
-        Me.colTubingGrade.DataPropertyName = "TUBINGGRADE"
-        Me.colTubingGrade.HeaderText = "TUBINGGRADE"
-        Me.colTubingGrade.Name = "colTubingGrade"
-        Me.colTubingGrade.Visible = False
-        '
-        'colPressureMax
-        '
-        Me.colPressureMax.DataPropertyName = "PRESSUREMAX"
-        Me.colPressureMax.HeaderText = "PRESSUREMAX"
-        Me.colPressureMax.Name = "colPressureMax"
-        Me.colPressureMax.Visible = False
-        '
-        'colDepthMax
-        '
-        Me.colDepthMax.DataPropertyName = "DEPTHMAX"
-        Me.colDepthMax.HeaderText = "DEPTHMAX"
-        Me.colDepthMax.Name = "colDepthMax"
-        Me.colDepthMax.Visible = False
-        '
-        'colJobDescription
-        '
-        Me.colJobDescription.DataPropertyName = "JOBDESCRIPTION"
-        Me.colJobDescription.HeaderText = "JOBDESCRIPTION"
-        Me.colJobDescription.Name = "colJobDescription"
-        Me.colJobDescription.Visible = False
-        '
-        'colCustRepRes
-        '
-        Me.colCustRepRes.DataPropertyName = "CUSTREPRES"
-        Me.colCustRepRes.HeaderText = "CUSTREPRES"
-        Me.colCustRepRes.Name = "colCustRepRes"
-        Me.colCustRepRes.Visible = False
-        '
-        'colCustRepResPosition
-        '
-        Me.colCustRepResPosition.DataPropertyName = "CUSTREPRESPOSITION"
-        Me.colCustRepResPosition.HeaderText = "CUSTREPRESPOSITION"
-        Me.colCustRepResPosition.Name = "colCustRepResPosition"
-        Me.colCustRepResPosition.Visible = False
-        '
-        'colCustRepResAssist
-        '
-        Me.colCustRepResAssist.DataPropertyName = "CUSTREPRESASSIST"
-        Me.colCustRepResAssist.HeaderText = "CUSTREPRESASSIST"
-        Me.colCustRepResAssist.Name = "colCustRepResAssist"
-        Me.colCustRepResAssist.Visible = False
-        '
-        'colContractorRepresentative
-        '
-        Me.colContractorRepresentative.DataPropertyName = "CONTRACTORREPRESENTATIVE"
-        Me.colContractorRepresentative.HeaderText = "CONTRACTORREPRESENTATIVE"
-        Me.colContractorRepresentative.Name = "colContractorRepresentative"
-        Me.colContractorRepresentative.Visible = False
-        '
-        'colCustComments
-        '
-        Me.colCustComments.DataPropertyName = "CUSTCOMMENTS"
-        Me.colCustComments.HeaderText = "CUSTCOMMENTS"
-        Me.colCustComments.Name = "colCustComments"
-        Me.colCustComments.Visible = False
-        '
-        'colContractComments
-        '
-        Me.colContractComments.DataPropertyName = "CONTRACTCOMMENTS"
-        Me.colContractComments.HeaderText = "CONTRACTCOMMENTS"
-        Me.colContractComments.Name = "colContractComments"
-        Me.colContractComments.Visible = False
-        '
-        'DataGridViewTextBoxColumn27
-        '
-        Me.DataGridViewTextBoxColumn27.DataPropertyName = "CREATEDUSER"
-        Me.DataGridViewTextBoxColumn27.HeaderText = "CREATEDUSER"
-        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
-        Me.DataGridViewTextBoxColumn27.Visible = False
-        '
-        'DataGridViewTextBoxColumn28
-        '
-        Me.DataGridViewTextBoxColumn28.DataPropertyName = "CREATEDDATETIME"
-        Me.DataGridViewTextBoxColumn28.HeaderText = "CREATEDDATETIME"
-        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
-        Me.DataGridViewTextBoxColumn28.Visible = False
-        '
-        'DataGridViewTextBoxColumn29
-        '
-        Me.DataGridViewTextBoxColumn29.DataPropertyName = "UPDATEDDATETIME"
-        Me.DataGridViewTextBoxColumn29.HeaderText = "UPDATEDDATETIME"
-        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
-        Me.DataGridViewTextBoxColumn29.Visible = False
-        '
-        'DataGridViewTextBoxColumn30
-        '
-        Me.DataGridViewTextBoxColumn30.DataPropertyName = "UPDATEDUSER"
-        Me.DataGridViewTextBoxColumn30.HeaderText = "UPDATEDUSER"
-        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
-        Me.DataGridViewTextBoxColumn30.Visible = False
-        '
-        'colRig
-        '
-        Me.colRig.DataPropertyName = "RIG"
-        Me.colRig.HeaderText = "RIG"
-        Me.colRig.Name = "colRig"
-        Me.colRig.Visible = False
-        '
-        'colExchangeRate
-        '
-        Me.colExchangeRate.DataPropertyName = "EXCHANGERATE"
-        Me.colExchangeRate.HeaderText = "EXCHANGERATE"
-        Me.colExchangeRate.Name = "colExchangeRate"
-        Me.colExchangeRate.Visible = False
-        '
-        'colCancelDateTime
-        '
-        Me.colCancelDateTime.DataPropertyName = "CANCELDATETIME"
-        Me.colCancelDateTime.HeaderText = "CANCELDATETIME"
-        Me.colCancelDateTime.Name = "colCancelDateTime"
-        Me.colCancelDateTime.Visible = False
-        '
-        'colCancelUser
-        '
-        Me.colCancelUser.DataPropertyName = "CANCELUSER"
-        Me.colCancelUser.HeaderText = "CANCELUSER"
-        Me.colCancelUser.Name = "colCancelUser"
-        Me.colCancelUser.Visible = False
-        '
-        'colCancelReason
-        '
-        Me.colCancelReason.DataPropertyName = "CANCELREASON"
-        Me.colCancelReason.HeaderText = "CANCELREASON"
-        Me.colCancelReason.Name = "colCancelReason"
-        Me.colCancelReason.Visible = False
-        '
-        'colCustRepresAssistPos
-        '
-        Me.colCustRepresAssistPos.DataPropertyName = "CUSTREPRESASSISTPOSITION"
-        Me.colCustRepresAssistPos.HeaderText = "CUSTREPRESASSISTPOSITION"
-        Me.colCustRepresAssistPos.Name = "colCustRepresAssistPos"
-        Me.colCustRepresAssistPos.Visible = False
-        '
-        'colInvoiceNumber
-        '
-        Me.colInvoiceNumber.DataPropertyName = "INVOICENUMBER"
-        Me.colInvoiceNumber.HeaderText = "INVOICENUMBER"
-        Me.colInvoiceNumber.Name = "colInvoiceNumber"
-        Me.colInvoiceNumber.Visible = False
-        '
-        'colAdicInform
-        '
-        Me.colAdicInform.DataPropertyName = "ADICINFORM"
-        Me.colAdicInform.HeaderText = "ADICINFORM"
-        Me.colAdicInform.Name = "colAdicInform"
-        Me.colAdicInform.Visible = False
-        '
-        'colWellName
-        '
-        Me.colWellName.DataPropertyName = "WELLNAME"
-        Me.colWellName.HeaderText = "WELLNAME"
-        Me.colWellName.Name = "colWellName"
-        Me.colWellName.Visible = False
-        '
-        'colNoInvItem
-        '
-        Me.colNoInvItem.DataPropertyName = "NOINVITEM"
-        Me.colNoInvItem.HeaderText = "NOINVITEM"
-        Me.colNoInvItem.Name = "colNoInvItem"
-        Me.colNoInvItem.Visible = False
-        '
-        'colHasAttach
-        '
-        Me.colHasAttach.DataPropertyName = "HASATTACH"
-        Me.colHasAttach.HeaderText = "HASATTACH"
-        Me.colHasAttach.Name = "colHasAttach"
-        Me.colHasAttach.Visible = False
-        '
-        'colJobNumber
-        '
-        Me.colJobNumber.DataPropertyName = "JOBNUMBER"
-        Me.colJobNumber.HeaderText = "JOBNUMBER"
-        Me.colJobNumber.Name = "colJobNumber"
-        Me.colJobNumber.Visible = False
-        '
-        'colSiteId
-        '
-        Me.colSiteId.DataPropertyName = "SITEID"
-        Me.colSiteId.HeaderText = "SITEID"
-        Me.colSiteId.Name = "colSiteId"
-        Me.colSiteId.Visible = False
-        '
-        'colContrRepresName
-        '
-        Me.colContrRepresName.DataPropertyName = "CONTRREPRESNAME"
-        Me.colContrRepresName.HeaderText = "CONTRREPRESNAME"
-        Me.colContrRepresName.Name = "colContrRepresName"
-        Me.colContrRepresName.ReadOnly = True
-        Me.colContrRepresName.Visible = False
-        '
-        'colServiceOrderNum
-        '
-        Me.colServiceOrderNum.DataPropertyName = "SERVICEORDERNUM"
-        Me.colServiceOrderNum.HeaderText = "Service Order"
-        Me.colServiceOrderNum.Name = "colServiceOrderNum"
-        Me.colServiceOrderNum.Visible = False
-        '
-        'colSuperiorSupervisor
-        '
-        Me.colSuperiorSupervisor.DataPropertyName = "SUPERIORSUPERVISOR"
-        Me.colSuperiorSupervisor.HeaderText = "SUPERIORSUPERVISOR"
-        Me.colSuperiorSupervisor.Name = "colSuperiorSupervisor"
-        Me.colSuperiorSupervisor.Visible = False
-        '
         'frmMain
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -1216,7 +1324,7 @@ Partial Class frmMain
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Version 1.1"
+        Me.Text = "INNTicket - Version 1.1"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         CType(Me.dgvTicketAccess, System.ComponentModel.ISupportInitialize).EndInit()

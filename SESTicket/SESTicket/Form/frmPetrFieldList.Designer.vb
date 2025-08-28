@@ -48,24 +48,29 @@ Partial Class frmPetrFieldList
         Me.dgvPetrField.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvPetrField.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colPetrFieldCode, Me.colDescrip, Me.colPetrFieldArea, Me.colPetrFieldId})
         Me.dgvPetrField.DataSource = Me.PETRFIELDBindingSource
-        Me.dgvPetrField.Location = New System.Drawing.Point(0, 45)
+        Me.dgvPetrField.Location = New System.Drawing.Point(0, 55)
+        Me.dgvPetrField.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvPetrField.Name = "dgvPetrField"
         Me.dgvPetrField.ReadOnly = True
+        Me.dgvPetrField.RowHeadersWidth = 51
         Me.dgvPetrField.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvPetrField.Size = New System.Drawing.Size(619, 479)
+        Me.dgvPetrField.Size = New System.Drawing.Size(825, 590)
         Me.dgvPetrField.TabIndex = 1
         '
         'colPetrFieldCode
         '
         Me.colPetrFieldCode.DataPropertyName = "PETRFIELDCODE"
         Me.colPetrFieldCode.HeaderText = "Code"
+        Me.colPetrFieldCode.MinimumWidth = 6
         Me.colPetrFieldCode.Name = "colPetrFieldCode"
         Me.colPetrFieldCode.ReadOnly = True
+        Me.colPetrFieldCode.Width = 125
         '
         'colDescrip
         '
         Me.colDescrip.DataPropertyName = "DESCRIP"
         Me.colDescrip.HeaderText = "Description"
+        Me.colDescrip.MinimumWidth = 6
         Me.colDescrip.Name = "colDescrip"
         Me.colDescrip.ReadOnly = True
         Me.colDescrip.Width = 250
@@ -74,6 +79,7 @@ Partial Class frmPetrFieldList
         '
         Me.colPetrFieldArea.DataPropertyName = "PETRFIELDAREA"
         Me.colPetrFieldArea.HeaderText = "Zona"
+        Me.colPetrFieldArea.MinimumWidth = 6
         Me.colPetrFieldArea.Name = "colPetrFieldArea"
         Me.colPetrFieldArea.ReadOnly = True
         Me.colPetrFieldArea.Width = 200
@@ -82,9 +88,11 @@ Partial Class frmPetrFieldList
         '
         Me.colPetrFieldId.DataPropertyName = "PETRFIELDID"
         Me.colPetrFieldId.HeaderText = "PETRFIELDID"
+        Me.colPetrFieldId.MinimumWidth = 6
         Me.colPetrFieldId.Name = "colPetrFieldId"
         Me.colPetrFieldId.ReadOnly = True
         Me.colPetrFieldId.Visible = False
+        Me.colPetrFieldId.Width = 125
         '
         'PETRFIELDBindingSource
         '
@@ -100,10 +108,11 @@ Partial Class frmPetrFieldList
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(625, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(833, 52)
         Me.MenuStrip1.TabIndex = 35
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -111,7 +120,7 @@ Partial Class frmPetrFieldList
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
         Me.mnuNewItem.Text = "New Item"
         Me.mnuNewItem.ToolTipText = "Save the Ticket"
         '
@@ -121,19 +130,20 @@ Partial Class frmPetrFieldList
         '
         'frmPetrFieldList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(625, 525)
+        Me.ClientSize = New System.Drawing.Size(833, 646)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.dgvPetrField)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmPetrFieldList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Petroleum Fields"
+        Me.Text = "INNTicket - Petroleum Fields"
         CType(Me.dgvPetrField, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PETRFIELDBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()

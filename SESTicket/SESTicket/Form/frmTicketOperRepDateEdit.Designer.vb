@@ -22,6 +22,7 @@ Partial Class frmTicketOperRepDateEdit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketOperRepDateEdit))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtServiceDescription = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -41,27 +42,31 @@ Partial Class frmTicketOperRepDateEdit
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.dtpActivityDate)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 3)
+        Me.GroupBox2.Location = New System.Drawing.Point(16, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(524, 64)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(699, 79)
         Me.GroupBox2.TabIndex = 24
         Me.GroupBox2.TabStop = False
         '
         'txtServiceDescription
         '
-        Me.txtServiceDescription.Location = New System.Drawing.Point(111, 33)
+        Me.txtServiceDescription.Location = New System.Drawing.Point(148, 41)
+        Me.txtServiceDescription.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtServiceDescription.MaxLength = 200
         Me.txtServiceDescription.Name = "txtServiceDescription"
-        Me.txtServiceDescription.Size = New System.Drawing.Size(398, 20)
+        Me.txtServiceDescription.Size = New System.Drawing.Size(529, 22)
         Me.txtServiceDescription.TabIndex = 41
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(108, 17)
+        Me.Label1.Location = New System.Drawing.Point(144, 21)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(102, 13)
+        Me.Label1.Size = New System.Drawing.Size(127, 16)
         Me.Label1.TabIndex = 40
         Me.Label1.Text = "Service Description:"
         '
@@ -69,35 +74,39 @@ Partial Class frmTicketOperRepDateEdit
         '
         Me.dtpActivityDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpActivityDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpActivityDate.Location = New System.Drawing.Point(9, 33)
+        Me.dtpActivityDate.Location = New System.Drawing.Point(12, 41)
+        Me.dtpActivityDate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpActivityDate.Name = "dtpActivityDate"
-        Me.dtpActivityDate.Size = New System.Drawing.Size(96, 20)
+        Me.dtpActivityDate.Size = New System.Drawing.Size(127, 22)
         Me.dtpActivityDate.TabIndex = 38
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(6, 16)
+        Me.Label7.Location = New System.Drawing.Point(8, 20)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(70, 13)
+        Me.Label7.Size = New System.Drawing.Size(84, 16)
         Me.Label7.TabIndex = 39
         Me.Label7.Text = "Activity Date:"
         '
         'btnCancelDelete
         '
-        Me.btnCancelDelete.Location = New System.Drawing.Point(268, 281)
+        Me.btnCancelDelete.Location = New System.Drawing.Point(357, 346)
+        Me.btnCancelDelete.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCancelDelete.Name = "btnCancelDelete"
-        Me.btnCancelDelete.Size = New System.Drawing.Size(101, 27)
+        Me.btnCancelDelete.Size = New System.Drawing.Size(135, 33)
         Me.btnCancelDelete.TabIndex = 23
         Me.btnCancelDelete.Text = "Delete"
         Me.btnCancelDelete.UseVisualStyleBackColor = True
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(162, 281)
+        Me.btnSave.Location = New System.Drawing.Point(216, 346)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(100, 27)
+        Me.btnSave.Size = New System.Drawing.Size(133, 33)
         Me.btnSave.TabIndex = 22
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
@@ -105,38 +114,43 @@ Partial Class frmTicketOperRepDateEdit
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.txtComments)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 73)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 90)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(524, 202)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(699, 249)
         Me.GroupBox1.TabIndex = 21
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Comments"
         '
         'txtComments
         '
-        Me.txtComments.Location = New System.Drawing.Point(6, 19)
+        Me.txtComments.Location = New System.Drawing.Point(8, 23)
+        Me.txtComments.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtComments.MaxLength = 32750
         Me.txtComments.Multiline = True
         Me.txtComments.Name = "txtComments"
-        Me.txtComments.Size = New System.Drawing.Size(512, 177)
+        Me.txtComments.Size = New System.Drawing.Size(681, 217)
         Me.txtComments.TabIndex = 13
         '
         'frmTicketOperRepDateEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(548, 317)
+        Me.ClientSize = New System.Drawing.Size(731, 390)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.btnCancelDelete)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmTicketOperRepDateEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Job Log"
+        Me.Text = "INNTicket - Job Log"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)

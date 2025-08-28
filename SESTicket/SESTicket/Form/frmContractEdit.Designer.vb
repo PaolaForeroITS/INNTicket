@@ -177,9 +177,11 @@ Partial Class frmContractEdit
         Me.GroupBox1.Controls.Add(Me.txtName)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 17)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 21)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(529, 193)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(705, 238)
         Me.GroupBox1.TabIndex = 18
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Basic Information"
@@ -188,9 +190,10 @@ Partial Class frmContractEdit
         '
         Me.Label23.AutoSize = True
         Me.Label23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label23.Location = New System.Drawing.Point(30, 28)
+        Me.Label23.Location = New System.Drawing.Point(40, 34)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(69, 13)
+        Me.Label23.Size = New System.Drawing.Size(84, 16)
         Me.Label23.TabIndex = 29
         Me.Label23.Text = "Service Line:"
         '
@@ -199,9 +202,10 @@ Partial Class frmContractEdit
         Me.cbxServiceLine.DataSource = Me.SERVICELINEBindingSource
         Me.cbxServiceLine.DisplayMember = "NAME"
         Me.cbxServiceLine.FormattingEnabled = True
-        Me.cbxServiceLine.Location = New System.Drawing.Point(105, 25)
+        Me.cbxServiceLine.Location = New System.Drawing.Point(140, 31)
+        Me.cbxServiceLine.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxServiceLine.Name = "cbxServiceLine"
-        Me.cbxServiceLine.Size = New System.Drawing.Size(196, 21)
+        Me.cbxServiceLine.Size = New System.Drawing.Size(260, 24)
         Me.cbxServiceLine.TabIndex = 30
         Me.cbxServiceLine.ValueMember = "SERVICELINEID"
         '
@@ -220,9 +224,10 @@ Partial Class frmContractEdit
         Me.cbxActive.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cbxActive.FormattingEnabled = True
         Me.cbxActive.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cbxActive.Location = New System.Drawing.Point(362, 25)
+        Me.cbxActive.Location = New System.Drawing.Point(483, 31)
+        Me.cbxActive.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxActive.Name = "cbxActive"
-        Me.cbxActive.Size = New System.Drawing.Size(51, 21)
+        Me.cbxActive.Size = New System.Drawing.Size(67, 24)
         Me.cbxActive.TabIndex = 40
         Me.cbxActive.Text = "YES"
         '
@@ -230,28 +235,31 @@ Partial Class frmContractEdit
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(316, 26)
+        Me.Label18.Location = New System.Drawing.Point(421, 32)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(40, 13)
+        Me.Label18.Size = New System.Drawing.Size(47, 16)
         Me.Label18.TabIndex = 39
         Me.Label18.Text = "Active:"
         '
         'txtDescription
         '
-        Me.txtDescription.Location = New System.Drawing.Point(105, 118)
+        Me.txtDescription.Location = New System.Drawing.Point(140, 145)
+        Me.txtDescription.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDescription.MaxLength = 300
         Me.txtDescription.Multiline = True
         Me.txtDescription.Name = "txtDescription"
-        Me.txtDescription.Size = New System.Drawing.Size(411, 64)
+        Me.txtDescription.Size = New System.Drawing.Size(547, 78)
         Me.txtDescription.TabIndex = 4
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(36, 121)
+        Me.Label4.Location = New System.Drawing.Point(48, 149)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(63, 13)
+        Me.Label4.Size = New System.Drawing.Size(78, 16)
         Me.Label4.TabIndex = 23
         Me.Label4.Text = "Description:"
         '
@@ -260,9 +268,10 @@ Partial Class frmContractEdit
         Me.cbxCustomer.DataSource = Me.CUSTOMERBindingSource
         Me.cbxCustomer.DisplayMember = "NAME"
         Me.cbxCustomer.FormattingEnabled = True
-        Me.cbxCustomer.Location = New System.Drawing.Point(105, 52)
+        Me.cbxCustomer.Location = New System.Drawing.Point(140, 64)
+        Me.cbxCustomer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCustomer.Name = "cbxCustomer"
-        Me.cbxCustomer.Size = New System.Drawing.Size(308, 21)
+        Me.cbxCustomer.Size = New System.Drawing.Size(409, 24)
         Me.cbxCustomer.TabIndex = 1
         Me.cbxCustomer.ValueMember = "CUSTOMERID"
         '
@@ -275,35 +284,39 @@ Partial Class frmContractEdit
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(45, 55)
+        Me.Label3.Location = New System.Drawing.Point(60, 68)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(54, 13)
+        Me.Label3.Size = New System.Drawing.Size(67, 16)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Customer:"
         '
         'txtContractNumber
         '
-        Me.txtContractNumber.Location = New System.Drawing.Point(105, 74)
+        Me.txtContractNumber.Location = New System.Drawing.Point(140, 91)
+        Me.txtContractNumber.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtContractNumber.MaxLength = 25
         Me.txtContractNumber.Name = "txtContractNumber"
-        Me.txtContractNumber.Size = New System.Drawing.Size(308, 20)
+        Me.txtContractNumber.Size = New System.Drawing.Size(409, 22)
         Me.txtContractNumber.TabIndex = 2
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(105, 96)
+        Me.txtName.Location = New System.Drawing.Point(140, 118)
+        Me.txtName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtName.MaxLength = 100
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(411, 20)
+        Me.txtName.Size = New System.Drawing.Size(547, 22)
         Me.txtName.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(9, 77)
+        Me.Label1.Location = New System.Drawing.Point(12, 95)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 13)
+        Me.Label1.Size = New System.Drawing.Size(110, 16)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Contract Number:"
         '
@@ -311,9 +324,10 @@ Partial Class frmContractEdit
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(61, 99)
+        Me.Label2.Location = New System.Drawing.Point(81, 122)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 13)
+        Me.Label2.Size = New System.Drawing.Size(47, 16)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Name:"
         '
@@ -322,9 +336,10 @@ Partial Class frmContractEdit
         Me.cbxCurrency.DataSource = Me.CURRENCYBindingSource1
         Me.cbxCurrency.DisplayMember = "CURRENCYNAME"
         Me.cbxCurrency.FormattingEnabled = True
-        Me.cbxCurrency.Location = New System.Drawing.Point(102, 18)
+        Me.cbxCurrency.Location = New System.Drawing.Point(136, 22)
+        Me.cbxCurrency.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCurrency.Name = "cbxCurrency"
-        Me.cbxCurrency.Size = New System.Drawing.Size(205, 21)
+        Me.cbxCurrency.Size = New System.Drawing.Size(272, 24)
         Me.cbxCurrency.TabIndex = 7
         Me.cbxCurrency.ValueMember = "CURRENCYCODE"
         '
@@ -342,9 +357,10 @@ Partial Class frmContractEdit
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(16, 21)
+        Me.Label7.Location = New System.Drawing.Point(21, 26)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(52, 13)
+        Me.Label7.Size = New System.Drawing.Size(63, 16)
         Me.Label7.TabIndex = 28
         Me.Label7.Text = "Currency:"
         '
@@ -352,18 +368,20 @@ Partial Class frmContractEdit
         '
         Me.dtpDueDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpDueDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpDueDate.Location = New System.Drawing.Point(76, 41)
+        Me.dtpDueDate.Location = New System.Drawing.Point(101, 50)
+        Me.dtpDueDate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpDueDate.Name = "dtpDueDate"
-        Me.dtpDueDate.Size = New System.Drawing.Size(95, 20)
+        Me.dtpDueDate.Size = New System.Drawing.Size(125, 22)
         Me.dtpDueDate.TabIndex = 6
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(14, 44)
+        Me.Label6.Location = New System.Drawing.Point(19, 54)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(56, 13)
+        Me.Label6.Size = New System.Drawing.Size(67, 16)
         Me.Label6.TabIndex = 26
         Me.Label6.Text = "Due Date:"
         '
@@ -371,18 +389,20 @@ Partial Class frmContractEdit
         '
         Me.dtpStartDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpStartDate.Location = New System.Drawing.Point(76, 21)
+        Me.dtpStartDate.Location = New System.Drawing.Point(101, 26)
+        Me.dtpStartDate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpStartDate.Name = "dtpStartDate"
-        Me.dtpStartDate.Size = New System.Drawing.Size(95, 20)
+        Me.dtpStartDate.Size = New System.Drawing.Size(125, 22)
         Me.dtpStartDate.TabIndex = 5
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(14, 21)
+        Me.Label5.Location = New System.Drawing.Point(19, 26)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 13)
+        Me.Label5.Size = New System.Drawing.Size(69, 16)
         Me.Label5.TabIndex = 24
         Me.Label5.Text = "Start Date:"
         '
@@ -404,90 +424,102 @@ Partial Class frmContractEdit
         Me.GroupBox4.Controls.Add(Me.Label17)
         Me.GroupBox4.Controls.Add(Me.txtSalesAccount)
         Me.GroupBox4.Controls.Add(Me.Label16)
-        Me.GroupBox4.Location = New System.Drawing.Point(6, 86)
+        Me.GroupBox4.Location = New System.Drawing.Point(8, 106)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(529, 69)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Size = New System.Drawing.Size(705, 85)
         Me.GroupBox4.TabIndex = 27
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Account"
         '
         'txtGoodsSubAccount
         '
-        Me.txtGoodsSubAccount.Location = New System.Drawing.Point(370, 40)
+        Me.txtGoodsSubAccount.Location = New System.Drawing.Point(493, 49)
+        Me.txtGoodsSubAccount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtGoodsSubAccount.MaxLength = 30
         Me.txtGoodsSubAccount.Name = "txtGoodsSubAccount"
-        Me.txtGoodsSubAccount.Size = New System.Drawing.Size(126, 20)
+        Me.txtGoodsSubAccount.Size = New System.Drawing.Size(167, 22)
         Me.txtGoodsSubAccount.TabIndex = 16
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label14.Location = New System.Drawing.Point(261, 43)
+        Me.Label14.Location = New System.Drawing.Point(348, 53)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(103, 13)
+        Me.Label14.Size = New System.Drawing.Size(126, 16)
         Me.Label14.TabIndex = 17
         Me.Label14.Text = "Goods SubAccount:"
         '
         'txtGoodAccount
         '
-        Me.txtGoodAccount.Location = New System.Drawing.Point(127, 40)
+        Me.txtGoodAccount.Location = New System.Drawing.Point(169, 49)
+        Me.txtGoodAccount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtGoodAccount.MaxLength = 30
         Me.txtGoodAccount.Name = "txtGoodAccount"
-        Me.txtGoodAccount.Size = New System.Drawing.Size(126, 20)
+        Me.txtGoodAccount.Size = New System.Drawing.Size(167, 22)
         Me.txtGoodAccount.TabIndex = 15
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label13.Location = New System.Drawing.Point(37, 43)
+        Me.Label13.Location = New System.Drawing.Point(49, 53)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(84, 13)
+        Me.Label13.Size = New System.Drawing.Size(102, 16)
         Me.Label13.TabIndex = 16
         Me.Label13.Text = "Goods Account:"
         '
         'txtSalesSubAccount
         '
-        Me.txtSalesSubAccount.Location = New System.Drawing.Point(370, 18)
+        Me.txtSalesSubAccount.Location = New System.Drawing.Point(493, 22)
+        Me.txtSalesSubAccount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSalesSubAccount.MaxLength = 30
         Me.txtSalesSubAccount.Name = "txtSalesSubAccount"
-        Me.txtSalesSubAccount.Size = New System.Drawing.Size(126, 20)
+        Me.txtSalesSubAccount.Size = New System.Drawing.Size(167, 22)
         Me.txtSalesSubAccount.TabIndex = 14
         '
         'Label17
         '
         Me.Label17.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label17.Location = New System.Drawing.Point(266, 21)
+        Me.Label17.Location = New System.Drawing.Point(355, 26)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(98, 16)
+        Me.Label17.Size = New System.Drawing.Size(131, 20)
         Me.Label17.TabIndex = 9
         Me.Label17.Text = "Sales SubAccount:"
         '
         'txtSalesAccount
         '
-        Me.txtSalesAccount.Location = New System.Drawing.Point(127, 18)
+        Me.txtSalesAccount.Location = New System.Drawing.Point(169, 22)
+        Me.txtSalesAccount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSalesAccount.MaxLength = 30
         Me.txtSalesAccount.Name = "txtSalesAccount"
-        Me.txtSalesAccount.Size = New System.Drawing.Size(126, 20)
+        Me.txtSalesAccount.Size = New System.Drawing.Size(167, 22)
         Me.txtSalesAccount.TabIndex = 13
         '
         'Label16
         '
         Me.Label16.AutoSize = True
         Me.Label16.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label16.Location = New System.Drawing.Point(42, 21)
+        Me.Label16.Location = New System.Drawing.Point(56, 26)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(79, 13)
+        Me.Label16.Size = New System.Drawing.Size(96, 16)
         Me.Label16.TabIndex = 7
         Me.Label16.Text = "Sales Account:"
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.chkAIUApplication)
-        Me.GroupBox2.Location = New System.Drawing.Point(325, 216)
+        Me.GroupBox2.Location = New System.Drawing.Point(433, 266)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(209, 202)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(279, 249)
         Me.GroupBox2.TabIndex = 28
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Application"
@@ -496,9 +528,10 @@ Partial Class frmContractEdit
         '
         Me.chkAIUApplication.FormattingEnabled = True
         Me.chkAIUApplication.Items.AddRange(New Object() {"Cemento", "Primary Cementing Products", "Primary Cementing Personal", "Primary Cementing Services", "Remedial Cementing Products", "Remedial Cementing Personal", "Remedial Cementing Services", "Equipo de Flotacion", "Gravel Pack Products", "Gravel Pack Personal", "Gravel Pack Services", "Casing Hardware Products", "Pumping Jobs Products", "Pumping Jobs Personal", "Pumping Jobs Services", "Quimica "})
-        Me.chkAIUApplication.Location = New System.Drawing.Point(12, 19)
+        Me.chkAIUApplication.Location = New System.Drawing.Point(16, 23)
+        Me.chkAIUApplication.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkAIUApplication.Name = "chkAIUApplication"
-        Me.chkAIUApplication.Size = New System.Drawing.Size(191, 169)
+        Me.chkAIUApplication.Size = New System.Drawing.Size(253, 191)
         Me.chkAIUApplication.TabIndex = 9
         '
         'AIUTableBindingSource
@@ -517,18 +550,21 @@ Partial Class frmContractEdit
         Me.GroupBox3.Controls.Add(Me.txtServiceUtilityPerc)
         Me.GroupBox3.Controls.Add(Me.chkServiceUtility)
         Me.GroupBox3.Controls.Add(Me.Label8)
-        Me.GroupBox3.Location = New System.Drawing.Point(9, 66)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 81)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(193, 63)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(257, 78)
         Me.GroupBox3.TabIndex = 29
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Tax - Service"
         '
         'txtServiceIVAPerc
         '
-        Me.txtServiceIVAPerc.Location = New System.Drawing.Point(61, 15)
+        Me.txtServiceIVAPerc.Location = New System.Drawing.Point(81, 18)
+        Me.txtServiceIVAPerc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtServiceIVAPerc.Name = "txtServiceIVAPerc"
-        Me.txtServiceIVAPerc.Size = New System.Drawing.Size(52, 20)
+        Me.txtServiceIVAPerc.Size = New System.Drawing.Size(68, 23)
         Me.txtServiceIVAPerc.TabIndex = 4
         Me.txtServiceIVAPerc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -536,26 +572,29 @@ Partial Class frmContractEdit
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(11, 18)
+        Me.Label9.Location = New System.Drawing.Point(15, 22)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(44, 13)
+        Me.Label9.Size = New System.Drawing.Size(59, 17)
         Me.Label9.TabIndex = 3
         Me.Label9.Text = "IVA (%):"
         '
         'txtServiceUtilityPerc
         '
-        Me.txtServiceUtilityPerc.Location = New System.Drawing.Point(61, 37)
+        Me.txtServiceUtilityPerc.Location = New System.Drawing.Point(81, 46)
+        Me.txtServiceUtilityPerc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtServiceUtilityPerc.Name = "txtServiceUtilityPerc"
-        Me.txtServiceUtilityPerc.Size = New System.Drawing.Size(52, 20)
+        Me.txtServiceUtilityPerc.Size = New System.Drawing.Size(68, 23)
         Me.txtServiceUtilityPerc.TabIndex = 1
         Me.txtServiceUtilityPerc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'chkServiceUtility
         '
         Me.chkServiceUtility.AutoSize = True
-        Me.chkServiceUtility.Location = New System.Drawing.Point(118, 39)
+        Me.chkServiceUtility.Location = New System.Drawing.Point(157, 48)
+        Me.chkServiceUtility.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkServiceUtility.Name = "chkServiceUtility"
-        Me.chkServiceUtility.Size = New System.Drawing.Size(68, 17)
+        Me.chkServiceUtility.Size = New System.Drawing.Size(86, 21)
         Me.chkServiceUtility.TabIndex = 2
         Me.chkServiceUtility.Text = "No Utility"
         Me.chkServiceUtility.UseVisualStyleBackColor = True
@@ -563,9 +602,10 @@ Partial Class frmContractEdit
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(11, 40)
+        Me.Label8.Location = New System.Drawing.Point(15, 49)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(52, 13)
+        Me.Label8.Size = New System.Drawing.Size(72, 17)
         Me.Label8.TabIndex = 0
         Me.Label8.Text = "Utility (%):"
         '
@@ -573,18 +613,21 @@ Partial Class frmContractEdit
         '
         Me.GroupBox5.Controls.Add(Me.txtMaterialIVAPerc)
         Me.GroupBox5.Controls.Add(Me.Label10)
-        Me.GroupBox5.Location = New System.Drawing.Point(208, 66)
+        Me.GroupBox5.Location = New System.Drawing.Point(277, 81)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(115, 63)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox5.Size = New System.Drawing.Size(153, 78)
         Me.GroupBox5.TabIndex = 30
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Tax - Material"
         '
         'txtMaterialIVAPerc
         '
-        Me.txtMaterialIVAPerc.Location = New System.Drawing.Point(58, 15)
+        Me.txtMaterialIVAPerc.Location = New System.Drawing.Point(77, 18)
+        Me.txtMaterialIVAPerc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtMaterialIVAPerc.Name = "txtMaterialIVAPerc"
-        Me.txtMaterialIVAPerc.Size = New System.Drawing.Size(51, 20)
+        Me.txtMaterialIVAPerc.Size = New System.Drawing.Size(67, 23)
         Me.txtMaterialIVAPerc.TabIndex = 4
         Me.txtMaterialIVAPerc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -592,9 +635,10 @@ Partial Class frmContractEdit
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(6, 18)
+        Me.Label10.Location = New System.Drawing.Point(8, 22)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(44, 13)
+        Me.Label10.Size = New System.Drawing.Size(59, 17)
         Me.Label10.TabIndex = 3
         Me.Label10.Text = "IVA (%):"
         '
@@ -604,18 +648,21 @@ Partial Class frmContractEdit
         Me.grpPortion.Controls.Add(Me.Label12)
         Me.grpPortion.Controls.Add(Me.txtPortionUSD)
         Me.grpPortion.Controls.Add(Me.Label11)
-        Me.grpPortion.Location = New System.Drawing.Point(329, 64)
+        Me.grpPortion.Location = New System.Drawing.Point(439, 79)
+        Me.grpPortion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpPortion.Name = "grpPortion"
-        Me.grpPortion.Size = New System.Drawing.Size(119, 65)
+        Me.grpPortion.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpPortion.Size = New System.Drawing.Size(159, 80)
         Me.grpPortion.TabIndex = 31
         Me.grpPortion.TabStop = False
         Me.grpPortion.Text = "Portion"
         '
         'txtPortionCOP
         '
-        Me.txtPortionCOP.Location = New System.Drawing.Point(61, 39)
+        Me.txtPortionCOP.Location = New System.Drawing.Point(81, 48)
+        Me.txtPortionCOP.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPortionCOP.Name = "txtPortionCOP"
-        Me.txtPortionCOP.Size = New System.Drawing.Size(53, 20)
+        Me.txtPortionCOP.Size = New System.Drawing.Size(69, 23)
         Me.txtPortionCOP.TabIndex = 7
         Me.txtPortionCOP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -623,17 +670,19 @@ Partial Class frmContractEdit
         '
         Me.Label12.AutoSize = True
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(6, 42)
+        Me.Label12.Location = New System.Drawing.Point(8, 52)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(49, 13)
+        Me.Label12.Size = New System.Drawing.Size(67, 17)
         Me.Label12.TabIndex = 6
         Me.Label12.Text = "COP (%):"
         '
         'txtPortionUSD
         '
-        Me.txtPortionUSD.Location = New System.Drawing.Point(61, 17)
+        Me.txtPortionUSD.Location = New System.Drawing.Point(81, 21)
+        Me.txtPortionUSD.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPortionUSD.Name = "txtPortionUSD"
-        Me.txtPortionUSD.Size = New System.Drawing.Size(53, 20)
+        Me.txtPortionUSD.Size = New System.Drawing.Size(69, 23)
         Me.txtPortionUSD.TabIndex = 5
         Me.txtPortionUSD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -641,9 +690,10 @@ Partial Class frmContractEdit
         '
         Me.Label11.AutoSize = True
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(6, 20)
+        Me.Label11.Location = New System.Drawing.Point(8, 25)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(50, 13)
+        Me.Label11.Size = New System.Drawing.Size(67, 17)
         Me.Label11.TabIndex = 0
         Me.Label11.Text = "USD (%):"
         '
@@ -655,9 +705,11 @@ Partial Class frmContractEdit
         Me.GroupBox7.Controls.Add(Me.GroupBox5)
         Me.GroupBox7.Controls.Add(Me.GroupBox3)
         Me.GroupBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox7.Location = New System.Drawing.Point(6, 190)
+        Me.GroupBox7.Location = New System.Drawing.Point(8, 234)
+        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(462, 148)
+        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox7.Size = New System.Drawing.Size(616, 182)
         Me.GroupBox7.TabIndex = 32
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Calculation"
@@ -667,9 +719,10 @@ Partial Class frmContractEdit
         Me.cbxLayoutType.DataSource = Me.LAYOUTTYPEBindingSource
         Me.cbxLayoutType.DisplayMember = "DESCRIPTION"
         Me.cbxLayoutType.FormattingEnabled = True
-        Me.cbxLayoutType.Location = New System.Drawing.Point(64, 24)
+        Me.cbxLayoutType.Location = New System.Drawing.Point(85, 30)
+        Me.cbxLayoutType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxLayoutType.Name = "cbxLayoutType"
-        Me.cbxLayoutType.Size = New System.Drawing.Size(239, 21)
+        Me.cbxLayoutType.Size = New System.Drawing.Size(317, 25)
         Me.cbxLayoutType.TabIndex = 30
         Me.cbxLayoutType.ValueMember = "LAYOUTTYPE"
         '
@@ -682,9 +735,10 @@ Partial Class frmContractEdit
         '
         Me.Label15.AutoSize = True
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(16, 27)
+        Me.Label15.Location = New System.Drawing.Point(21, 33)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(42, 13)
+        Me.Label15.Size = New System.Drawing.Size(55, 17)
         Me.Label15.TabIndex = 29
         Me.Label15.Text = "Layout:"
         '
@@ -698,9 +752,11 @@ Partial Class frmContractEdit
         Me.GroupBox6.Controls.Add(Me.Label5)
         Me.GroupBox6.Controls.Add(Me.dtpStartDate)
         Me.GroupBox6.Controls.Add(Me.Label6)
-        Me.GroupBox6.Location = New System.Drawing.Point(6, 216)
+        Me.GroupBox6.Location = New System.Drawing.Point(8, 266)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(208, 72)
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox6.Size = New System.Drawing.Size(277, 89)
         Me.GroupBox6.TabIndex = 33
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Contract Vigency"
@@ -711,18 +767,21 @@ Partial Class frmContractEdit
         Me.GroupBox8.Controls.Add(Me.Label19)
         Me.GroupBox8.Controls.Add(Me.cbxCurrency)
         Me.GroupBox8.Controls.Add(Me.Label7)
-        Me.GroupBox8.Location = New System.Drawing.Point(6, 23)
+        Me.GroupBox8.Location = New System.Drawing.Point(8, 28)
+        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(317, 71)
+        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox8.Size = New System.Drawing.Size(423, 87)
         Me.GroupBox8.TabIndex = 34
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Currency"
         '
         'txtExchangeRate
         '
-        Me.txtExchangeRate.Location = New System.Drawing.Point(102, 41)
+        Me.txtExchangeRate.Location = New System.Drawing.Point(136, 50)
+        Me.txtExchangeRate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtExchangeRate.Name = "txtExchangeRate"
-        Me.txtExchangeRate.Size = New System.Drawing.Size(93, 20)
+        Me.txtExchangeRate.Size = New System.Drawing.Size(123, 22)
         Me.txtExchangeRate.TabIndex = 30
         Me.txtExchangeRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -730,9 +789,10 @@ Partial Class frmContractEdit
         '
         Me.Label19.AutoSize = True
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(16, 44)
+        Me.Label19.Location = New System.Drawing.Point(21, 54)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(84, 13)
+        Me.Label19.Size = New System.Drawing.Size(102, 16)
         Me.Label19.TabIndex = 29
         Me.Label19.Text = "Exchange Rate:"
         '
@@ -740,9 +800,10 @@ Partial Class frmContractEdit
         '
         Me.Label21.AutoSize = True
         Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label21.Location = New System.Drawing.Point(16, 19)
+        Me.Label21.Location = New System.Drawing.Point(21, 23)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(168, 13)
+        Me.Label21.Size = New System.Drawing.Size(205, 16)
         Me.Label21.TabIndex = 34
         Me.Label21.Text = "Can Update the Exchange Rate?:"
         '
@@ -750,27 +811,30 @@ Partial Class frmContractEdit
         '
         Me.cbxEnableExcRate.FormattingEnabled = True
         Me.cbxEnableExcRate.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cbxEnableExcRate.Location = New System.Drawing.Point(190, 16)
+        Me.cbxEnableExcRate.Location = New System.Drawing.Point(253, 20)
+        Me.cbxEnableExcRate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxEnableExcRate.Name = "cbxEnableExcRate"
-        Me.cbxEnableExcRate.Size = New System.Drawing.Size(53, 21)
+        Me.cbxEnableExcRate.Size = New System.Drawing.Size(69, 24)
         Me.cbxEnableExcRate.TabIndex = 33
         '
         'cbxEnableDisc
         '
         Me.cbxEnableDisc.FormattingEnabled = True
         Me.cbxEnableDisc.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cbxEnableDisc.Location = New System.Drawing.Point(189, 40)
+        Me.cbxEnableDisc.Location = New System.Drawing.Point(252, 49)
+        Me.cbxEnableDisc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxEnableDisc.Name = "cbxEnableDisc"
-        Me.cbxEnableDisc.Size = New System.Drawing.Size(54, 21)
+        Me.cbxEnableDisc.Size = New System.Drawing.Size(71, 24)
         Me.cbxEnableDisc.TabIndex = 32
         '
         'Label20
         '
         Me.Label20.AutoSize = True
         Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label20.Location = New System.Drawing.Point(16, 43)
+        Me.Label20.Location = New System.Drawing.Point(21, 53)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(102, 13)
+        Me.Label20.Size = New System.Drawing.Size(124, 16)
         Me.Label20.TabIndex = 31
         Me.Label20.Text = "Can Give Discount?"
         '
@@ -778,9 +842,11 @@ Partial Class frmContractEdit
         '
         Me.GroupBox9.Controls.Add(Me.cbxInvSplitAmount)
         Me.GroupBox9.Controls.Add(Me.Label22)
-        Me.GroupBox9.Location = New System.Drawing.Point(329, 109)
+        Me.GroupBox9.Location = New System.Drawing.Point(439, 134)
+        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(214, 51)
+        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox9.Size = New System.Drawing.Size(285, 63)
         Me.GroupBox9.TabIndex = 35
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Invoice Control"
@@ -789,18 +855,20 @@ Partial Class frmContractEdit
         '
         Me.cbxInvSplitAmount.FormattingEnabled = True
         Me.cbxInvSplitAmount.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cbxInvSplitAmount.Location = New System.Drawing.Point(145, 16)
+        Me.cbxInvSplitAmount.Location = New System.Drawing.Point(193, 20)
+        Me.cbxInvSplitAmount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxInvSplitAmount.Name = "cbxInvSplitAmount"
-        Me.cbxInvSplitAmount.Size = New System.Drawing.Size(53, 21)
+        Me.cbxInvSplitAmount.Size = New System.Drawing.Size(69, 24)
         Me.cbxInvSplitAmount.TabIndex = 34
         '
         'Label22
         '
         Me.Label22.AutoSize = True
         Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label22.Location = New System.Drawing.Point(16, 19)
+        Me.Label22.Location = New System.Drawing.Point(21, 23)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(123, 13)
+        Me.Label22.Size = New System.Drawing.Size(149, 16)
         Me.Label22.TabIndex = 7
         Me.Label22.Text = "Split Amount (Mat/Serv):"
         '
@@ -814,10 +882,11 @@ Partial Class frmContractEdit
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage4)
-        Me.TabControl1.Location = New System.Drawing.Point(5, 45)
+        Me.TabControl1.Location = New System.Drawing.Point(7, 55)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(559, 452)
+        Me.TabControl1.Size = New System.Drawing.Size(745, 556)
         Me.TabControl1.TabIndex = 38
         '
         'TabPage1
@@ -826,10 +895,11 @@ Partial Class frmContractEdit
         Me.TabPage1.Controls.Add(Me.GroupBox1)
         Me.TabPage1.Controls.Add(Me.GroupBox6)
         Me.TabPage1.Controls.Add(Me.GroupBox2)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(551, 426)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Size = New System.Drawing.Size(737, 527)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Contract Information"
         '
@@ -840,10 +910,11 @@ Partial Class frmContractEdit
         Me.TabPage2.Controls.Add(Me.GroupBox8)
         Me.TabPage2.Controls.Add(Me.GroupBox9)
         Me.TabPage2.Controls.Add(Me.GroupBox7)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(551, 426)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Size = New System.Drawing.Size(737, 527)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Currency, Invoice, Discount"
         '
@@ -853,9 +924,11 @@ Partial Class frmContractEdit
         Me.GroupBox12.Controls.Add(Me.cbxEnableExcRate)
         Me.GroupBox12.Controls.Add(Me.Label20)
         Me.GroupBox12.Controls.Add(Me.cbxEnableDisc)
-        Me.GroupBox12.Location = New System.Drawing.Point(6, 109)
+        Me.GroupBox12.Location = New System.Drawing.Point(8, 134)
+        Me.GroupBox12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Size = New System.Drawing.Size(317, 75)
+        Me.GroupBox12.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox12.Size = New System.Drawing.Size(423, 92)
         Me.GroupBox12.TabIndex = 36
         Me.GroupBox12.TabStop = False
         Me.GroupBox12.Text = "User Permission"
@@ -867,10 +940,11 @@ Partial Class frmContractEdit
         Me.TabPage3.Controls.Add(Me.grpReportList)
         Me.TabPage3.Controls.Add(Me.GroupBox11)
         Me.TabPage3.Controls.Add(Me.GroupBox10)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(551, 426)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Size = New System.Drawing.Size(737, 527)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Report Config"
         '
@@ -883,9 +957,11 @@ Partial Class frmContractEdit
         Me.grpReportList.Controls.Add(Me.Label26)
         Me.grpReportList.Controls.Add(Me.btnDeleteTicketLayout)
         Me.grpReportList.Controls.Add(Me.btnAddTicketLayout)
-        Me.grpReportList.Location = New System.Drawing.Point(15, 74)
+        Me.grpReportList.Location = New System.Drawing.Point(20, 91)
+        Me.grpReportList.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpReportList.Name = "grpReportList"
-        Me.grpReportList.Size = New System.Drawing.Size(511, 321)
+        Me.grpReportList.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpReportList.Size = New System.Drawing.Size(681, 395)
         Me.grpReportList.TabIndex = 38
         Me.grpReportList.TabStop = False
         Me.grpReportList.Text = "Report Sales Itens Availlabe for Contract"
@@ -898,17 +974,20 @@ Partial Class frmContractEdit
         Me.dgvReportLayout.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvReportLayout.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colCountryCode, Me.colReportName, Me.colContractId, Me.colReportCode, Me.colContractRepLayout})
         Me.dgvReportLayout.DataSource = Me.CONTRACTREPLAYOUTBindingSource
-        Me.dgvReportLayout.Location = New System.Drawing.Point(10, 82)
+        Me.dgvReportLayout.Location = New System.Drawing.Point(13, 101)
+        Me.dgvReportLayout.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvReportLayout.Name = "dgvReportLayout"
         Me.dgvReportLayout.ReadOnly = True
+        Me.dgvReportLayout.RowHeadersWidth = 51
         Me.dgvReportLayout.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvReportLayout.Size = New System.Drawing.Size(486, 220)
+        Me.dgvReportLayout.Size = New System.Drawing.Size(648, 271)
         Me.dgvReportLayout.TabIndex = 21
         '
         'colCountryCode
         '
         Me.colCountryCode.DataPropertyName = "COUNTRYCODE"
         Me.colCountryCode.HeaderText = "Country"
+        Me.colCountryCode.MinimumWidth = 6
         Me.colCountryCode.Name = "colCountryCode"
         Me.colCountryCode.ReadOnly = True
         Me.colCountryCode.Width = 60
@@ -917,6 +996,7 @@ Partial Class frmContractEdit
         '
         Me.colReportName.DataPropertyName = "REPORTNAME"
         Me.colReportName.HeaderText = "Ticket Layout"
+        Me.colReportName.MinimumWidth = 6
         Me.colReportName.Name = "colReportName"
         Me.colReportName.ReadOnly = True
         Me.colReportName.Width = 320
@@ -925,25 +1005,31 @@ Partial Class frmContractEdit
         '
         Me.colContractId.DataPropertyName = "CONTRACTID"
         Me.colContractId.HeaderText = "CONTRACTID"
+        Me.colContractId.MinimumWidth = 6
         Me.colContractId.Name = "colContractId"
         Me.colContractId.ReadOnly = True
         Me.colContractId.Visible = False
+        Me.colContractId.Width = 125
         '
         'colReportCode
         '
         Me.colReportCode.DataPropertyName = "REPORTCODE"
         Me.colReportCode.HeaderText = "REPORTCODE"
+        Me.colReportCode.MinimumWidth = 6
         Me.colReportCode.Name = "colReportCode"
         Me.colReportCode.ReadOnly = True
         Me.colReportCode.Visible = False
+        Me.colReportCode.Width = 125
         '
         'colContractRepLayout
         '
         Me.colContractRepLayout.DataPropertyName = "CONTRACTREPLAYOUT"
         Me.colContractRepLayout.HeaderText = "CONTRACTREPLAYOUT"
+        Me.colContractRepLayout.MinimumWidth = 6
         Me.colContractRepLayout.Name = "colContractRepLayout"
         Me.colContractRepLayout.ReadOnly = True
         Me.colContractRepLayout.Visible = False
+        Me.colContractRepLayout.Width = 125
         '
         'CONTRACTREPLAYOUTBindingSource
         '
@@ -955,9 +1041,10 @@ Partial Class frmContractEdit
         Me.cbxTicketLayout.DataSource = Me.REPORTTICKETLISTBindingSource
         Me.cbxTicketLayout.DisplayMember = "REPORTNAME"
         Me.cbxTicketLayout.FormattingEnabled = True
-        Me.cbxTicketLayout.Location = New System.Drawing.Point(93, 43)
+        Me.cbxTicketLayout.Location = New System.Drawing.Point(124, 53)
+        Me.cbxTicketLayout.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxTicketLayout.Name = "cbxTicketLayout"
-        Me.cbxTicketLayout.Size = New System.Drawing.Size(261, 21)
+        Me.cbxTicketLayout.Size = New System.Drawing.Size(347, 24)
         Me.cbxTicketLayout.TabIndex = 21
         Me.cbxTicketLayout.ValueMember = "REPORTCODE"
         '
@@ -971,9 +1058,10 @@ Partial Class frmContractEdit
         Me.cbxCountry.DataSource = Me.COUNTRYBindingSource
         Me.cbxCountry.DisplayMember = "COUNTRYCODE"
         Me.cbxCountry.FormattingEnabled = True
-        Me.cbxCountry.Location = New System.Drawing.Point(10, 43)
+        Me.cbxCountry.Location = New System.Drawing.Point(13, 53)
+        Me.cbxCountry.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCountry.Name = "cbxCountry"
-        Me.cbxCountry.Size = New System.Drawing.Size(77, 21)
+        Me.cbxCountry.Size = New System.Drawing.Size(101, 24)
         Me.cbxCountry.TabIndex = 20
         Me.cbxCountry.ValueMember = "COUNTRYCODE"
         '
@@ -985,35 +1073,39 @@ Partial Class frmContractEdit
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(90, 27)
+        Me.Label27.Location = New System.Drawing.Point(120, 33)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(75, 13)
+        Me.Label27.Size = New System.Drawing.Size(90, 16)
         Me.Label27.TabIndex = 19
         Me.Label27.Text = "Ticket Layout:"
         '
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(7, 27)
+        Me.Label26.Location = New System.Drawing.Point(9, 33)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(46, 13)
+        Me.Label26.Size = New System.Drawing.Size(55, 16)
         Me.Label26.TabIndex = 18
         Me.Label26.Text = "Country:"
         '
         'btnDeleteTicketLayout
         '
-        Me.btnDeleteTicketLayout.Location = New System.Drawing.Point(439, 41)
+        Me.btnDeleteTicketLayout.Location = New System.Drawing.Point(585, 50)
+        Me.btnDeleteTicketLayout.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnDeleteTicketLayout.Name = "btnDeleteTicketLayout"
-        Me.btnDeleteTicketLayout.Size = New System.Drawing.Size(57, 23)
+        Me.btnDeleteTicketLayout.Size = New System.Drawing.Size(76, 28)
         Me.btnDeleteTicketLayout.TabIndex = 17
         Me.btnDeleteTicketLayout.Text = "Delete"
         Me.btnDeleteTicketLayout.UseVisualStyleBackColor = True
         '
         'btnAddTicketLayout
         '
-        Me.btnAddTicketLayout.Location = New System.Drawing.Point(376, 41)
+        Me.btnAddTicketLayout.Location = New System.Drawing.Point(501, 50)
+        Me.btnAddTicketLayout.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAddTicketLayout.Name = "btnAddTicketLayout"
-        Me.btnAddTicketLayout.Size = New System.Drawing.Size(57, 23)
+        Me.btnAddTicketLayout.Size = New System.Drawing.Size(76, 28)
         Me.btnAddTicketLayout.TabIndex = 16
         Me.btnAddTicketLayout.Text = "Add"
         Me.btnAddTicketLayout.UseVisualStyleBackColor = True
@@ -1021,17 +1113,20 @@ Partial Class frmContractEdit
         'GroupBox11
         '
         Me.GroupBox11.Controls.Add(Me.Label25)
-        Me.GroupBox11.Location = New System.Drawing.Point(15, 382)
+        Me.GroupBox11.Location = New System.Drawing.Point(20, 470)
+        Me.GroupBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Size = New System.Drawing.Size(317, 41)
+        Me.GroupBox11.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox11.Size = New System.Drawing.Size(423, 50)
         Me.GroupBox11.TabIndex = 37
         Me.GroupBox11.TabStop = False
         '
         'Label25
         '
-        Me.Label25.Location = New System.Drawing.Point(6, 16)
+        Me.Label25.Location = New System.Drawing.Point(8, 20)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(304, 17)
+        Me.Label25.Size = New System.Drawing.Size(405, 21)
         Me.Label25.TabIndex = 35
         Me.Label25.Text = "To Update - Double Click" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -1039,9 +1134,11 @@ Partial Class frmContractEdit
         '
         Me.GroupBox10.Controls.Add(Me.txtRepParam)
         Me.GroupBox10.Controls.Add(Me.Label24)
-        Me.GroupBox10.Location = New System.Drawing.Point(15, 16)
+        Me.GroupBox10.Location = New System.Drawing.Point(20, 20)
+        Me.GroupBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Size = New System.Drawing.Size(317, 51)
+        Me.GroupBox10.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox10.Size = New System.Drawing.Size(423, 63)
         Me.GroupBox10.TabIndex = 0
         Me.GroupBox10.TabStop = False
         '
@@ -1050,18 +1147,20 @@ Partial Class frmContractEdit
         Me.txtRepParam.BackColor = System.Drawing.Color.White
         Me.txtRepParam.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtRepParam.ForeColor = System.Drawing.Color.Red
-        Me.txtRepParam.Location = New System.Drawing.Point(106, 18)
+        Me.txtRepParam.Location = New System.Drawing.Point(141, 22)
+        Me.txtRepParam.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtRepParam.Name = "txtRepParam"
         Me.txtRepParam.ReadOnly = True
-        Me.txtRepParam.Size = New System.Drawing.Size(191, 20)
+        Me.txtRepParam.Size = New System.Drawing.Size(254, 22)
         Me.txtRepParam.TabIndex = 1
         '
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(7, 20)
+        Me.Label24.Location = New System.Drawing.Point(9, 25)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(93, 13)
+        Me.Label24.Size = New System.Drawing.Size(117, 16)
         Me.Label24.TabIndex = 0
         Me.Label24.Text = "Report Parameter:"
         '
@@ -1069,10 +1168,11 @@ Partial Class frmContractEdit
         '
         Me.TabPage4.BackColor = System.Drawing.SystemColors.Control
         Me.TabPage4.Controls.Add(Me.GroupBox4)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(551, 426)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Size = New System.Drawing.Size(737, 527)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Accounts"
         '
@@ -1080,10 +1180,11 @@ Partial Class frmContractEdit
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSave, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(567, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(756, 52)
         Me.MenuStrip1.TabIndex = 39
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -1091,14 +1192,14 @@ Partial Class frmContractEdit
         '
         Me.mnuSave.Image = CType(resources.GetObject("mnuSave.Image"), System.Drawing.Image)
         Me.mnuSave.Name = "mnuSave"
-        Me.mnuSave.Size = New System.Drawing.Size(59, 38)
+        Me.mnuSave.Size = New System.Drawing.Size(74, 48)
         Me.mnuSave.Text = "Save"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'COUNTRYTableAdapter
@@ -1147,19 +1248,20 @@ Partial Class frmContractEdit
         '
         'frmContractEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(567, 502)
+        Me.ClientSize = New System.Drawing.Size(756, 618)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmContractEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTICKET - Contract Edit"
+        Me.Text = "INNTICKET - Contract Edit"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.SERVICELINEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

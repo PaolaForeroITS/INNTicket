@@ -49,6 +49,7 @@ Partial Class frmSalesItemL01
         Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSalesItemL01))
         Me.tabSalesItemFoot = New System.Windows.Forms.TabControl()
         Me.tabpLineAmount = New System.Windows.Forms.TabPage()
         Me.txtUnitSale = New System.Windows.Forms.TextBox()
@@ -97,13 +98,6 @@ Partial Class frmSalesItemL01
         Me.Label29 = New System.Windows.Forms.Label()
         Me.txtExchangeRate = New System.Windows.Forms.TextBox()
         Me.dgvSalesItem = New System.Windows.Forms.DataGridView()
-        Me.SALESITEMVBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SALESITEM_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_VTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
-        Me.SALESITEM_TOTAL_L01TableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L01TableAdapter()
-        Me.SALESITEM_TOTAL_L02_MATTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_MATTableAdapter()
-        Me.SALESITEM_TOTAL_L02_SERVTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_SERVTableAdapter()
-        Me.TICKETINVLINESALES_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETINVLINESALES_VTableAdapter()
         Me.colType = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colTabGroup = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colSICustCodeItem = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -128,6 +122,13 @@ Partial Class frmSalesItemL01
         Me.colSIContractPriceListId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colSISalesPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colDiscType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SALESITEMVBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SALESITEM_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_VTableAdapter()
+        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.SALESITEM_TOTAL_L01TableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L01TableAdapter()
+        Me.SALESITEM_TOTAL_L02_MATTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_MATTableAdapter()
+        Me.SALESITEM_TOTAL_L02_SERVTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_SERVTableAdapter()
+        Me.TICKETINVLINESALES_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETINVLINESALES_VTableAdapter()
         Me.tabSalesItemFoot.SuspendLayout()
         Me.tabpLineAmount.SuspendLayout()
         Me.tabL02.SuspendLayout()
@@ -153,11 +154,12 @@ Partial Class frmSalesItemL01
         Me.tabSalesItemFoot.Alignment = System.Windows.Forms.TabAlignment.Left
         Me.tabSalesItemFoot.Controls.Add(Me.tabpLineAmount)
         Me.tabSalesItemFoot.Controls.Add(Me.tabpInventoryItem)
-        Me.tabSalesItemFoot.Location = New System.Drawing.Point(1, 311)
+        Me.tabSalesItemFoot.Location = New System.Drawing.Point(1, 383)
+        Me.tabSalesItemFoot.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabSalesItemFoot.Multiline = True
         Me.tabSalesItemFoot.Name = "tabSalesItemFoot"
         Me.tabSalesItemFoot.SelectedIndex = 0
-        Me.tabSalesItemFoot.Size = New System.Drawing.Size(1082, 210)
+        Me.tabSalesItemFoot.Size = New System.Drawing.Size(1443, 258)
         Me.tabSalesItemFoot.TabIndex = 6
         '
         'tabpLineAmount
@@ -169,10 +171,11 @@ Partial Class frmSalesItemL01
         Me.tabpLineAmount.Controls.Add(Me.txtDescription)
         Me.tabpLineAmount.Controls.Add(Me.tabL02)
         Me.tabpLineAmount.Controls.Add(Me.dgvSalesItemTotalL01)
-        Me.tabpLineAmount.Location = New System.Drawing.Point(23, 4)
+        Me.tabpLineAmount.Location = New System.Drawing.Point(25, 4)
+        Me.tabpLineAmount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabpLineAmount.Name = "tabpLineAmount"
-        Me.tabpLineAmount.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabpLineAmount.Size = New System.Drawing.Size(1055, 202)
+        Me.tabpLineAmount.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabpLineAmount.Size = New System.Drawing.Size(1414, 250)
         Me.tabpLineAmount.TabIndex = 1
         Me.tabpLineAmount.Text = "Totals"
         Me.tabpLineAmount.UseVisualStyleBackColor = True
@@ -181,28 +184,31 @@ Partial Class frmSalesItemL01
         '
         Me.txtUnitSale.BackColor = System.Drawing.Color.White
         Me.txtUnitSale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtUnitSale.Location = New System.Drawing.Point(24, 145)
+        Me.txtUnitSale.Location = New System.Drawing.Point(32, 178)
+        Me.txtUnitSale.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtUnitSale.Multiline = True
         Me.txtUnitSale.Name = "txtUnitSale"
         Me.txtUnitSale.ReadOnly = True
-        Me.txtUnitSale.Size = New System.Drawing.Size(473, 21)
+        Me.txtUnitSale.Size = New System.Drawing.Size(630, 25)
         Me.txtUnitSale.TabIndex = 7
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(21, 129)
+        Me.Label2.Location = New System.Drawing.Point(28, 159)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(26, 13)
+        Me.Label2.Size = New System.Drawing.Size(30, 16)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Unit"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 9)
+        Me.Label1.Location = New System.Drawing.Point(28, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 13)
+        Me.Label1.Size = New System.Drawing.Size(75, 16)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Description"
         '
@@ -210,30 +216,33 @@ Partial Class frmSalesItemL01
         '
         Me.txtDescription.BackColor = System.Drawing.Color.White
         Me.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtDescription.Location = New System.Drawing.Point(24, 25)
+        Me.txtDescription.Location = New System.Drawing.Point(32, 31)
+        Me.txtDescription.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDescription.Multiline = True
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.ReadOnly = True
-        Me.txtDescription.Size = New System.Drawing.Size(473, 90)
+        Me.txtDescription.Size = New System.Drawing.Size(630, 110)
         Me.txtDescription.TabIndex = 4
         '
         'tabL02
         '
         Me.tabL02.Controls.Add(Me.tabpService)
         Me.tabL02.Controls.Add(Me.tabpMaterial)
-        Me.tabL02.Location = New System.Drawing.Point(713, 3)
+        Me.tabL02.Location = New System.Drawing.Point(951, 4)
+        Me.tabL02.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabL02.Name = "tabL02"
         Me.tabL02.SelectedIndex = 0
-        Me.tabL02.Size = New System.Drawing.Size(332, 175)
+        Me.tabL02.Size = New System.Drawing.Size(443, 215)
         Me.tabL02.TabIndex = 3
         '
         'tabpService
         '
         Me.tabpService.Controls.Add(Me.dgvSalesItemTotalL02Serv)
-        Me.tabpService.Location = New System.Drawing.Point(4, 22)
+        Me.tabpService.Location = New System.Drawing.Point(4, 25)
+        Me.tabpService.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabpService.Name = "tabpService"
-        Me.tabpService.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabpService.Size = New System.Drawing.Size(324, 149)
+        Me.tabpService.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabpService.Size = New System.Drawing.Size(435, 186)
         Me.tabpService.TabIndex = 1
         Me.tabpService.Text = "Service"
         Me.tabpService.UseVisualStyleBackColor = True
@@ -249,15 +258,17 @@ Partial Class frmSalesItemL01
         Me.dgvSalesItemTotalL02Serv.ColumnHeadersVisible = False
         Me.dgvSalesItemTotalL02Serv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn8, Me.colAmountCOP2, Me.colAmountUSD2, Me.DataGridViewTextBoxColumn12})
         Me.dgvSalesItemTotalL02Serv.DataSource = Me.SALESITEMTOTALL02SERVBindingSource
-        Me.dgvSalesItemTotalL02Serv.Location = New System.Drawing.Point(7, 3)
+        Me.dgvSalesItemTotalL02Serv.Location = New System.Drawing.Point(9, 4)
+        Me.dgvSalesItemTotalL02Serv.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvSalesItemTotalL02Serv.MultiSelect = False
         Me.dgvSalesItemTotalL02Serv.Name = "dgvSalesItemTotalL02Serv"
         Me.dgvSalesItemTotalL02Serv.ReadOnly = True
         Me.dgvSalesItemTotalL02Serv.RowHeadersVisible = False
+        Me.dgvSalesItemTotalL02Serv.RowHeadersWidth = 51
         Me.dgvSalesItemTotalL02Serv.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.dgvSalesItemTotalL02Serv.ShowCellErrors = False
         Me.dgvSalesItemTotalL02Serv.ShowRowErrors = False
-        Me.dgvSalesItemTotalL02Serv.Size = New System.Drawing.Size(311, 138)
+        Me.dgvSalesItemTotalL02Serv.Size = New System.Drawing.Size(415, 170)
         Me.dgvSalesItemTotalL02Serv.TabIndex = 2
         '
         'DataGridViewTextBoxColumn8
@@ -268,6 +279,7 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
         Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridViewTextBoxColumn8.HeaderText = "DESCRIBE"
+        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         Me.DataGridViewTextBoxColumn8.ReadOnly = True
         Me.DataGridViewTextBoxColumn8.Width = 200
@@ -282,8 +294,10 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
         Me.colAmountCOP2.DefaultCellStyle = DataGridViewCellStyle2
         Me.colAmountCOP2.HeaderText = "AMOUNTCOP"
+        Me.colAmountCOP2.MinimumWidth = 6
         Me.colAmountCOP2.Name = "colAmountCOP2"
         Me.colAmountCOP2.ReadOnly = True
+        Me.colAmountCOP2.Width = 125
         '
         'colAmountUSD2
         '
@@ -296,16 +310,20 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
         Me.colAmountUSD2.DefaultCellStyle = DataGridViewCellStyle3
         Me.colAmountUSD2.HeaderText = "AMOUNTUSD"
+        Me.colAmountUSD2.MinimumWidth = 6
         Me.colAmountUSD2.Name = "colAmountUSD2"
         Me.colAmountUSD2.ReadOnly = True
+        Me.colAmountUSD2.Width = 125
         '
         'DataGridViewTextBoxColumn12
         '
         Me.DataGridViewTextBoxColumn12.DataPropertyName = "TICKETID"
         Me.DataGridViewTextBoxColumn12.HeaderText = "TICKETID"
+        Me.DataGridViewTextBoxColumn12.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         Me.DataGridViewTextBoxColumn12.ReadOnly = True
         Me.DataGridViewTextBoxColumn12.Visible = False
+        Me.DataGridViewTextBoxColumn12.Width = 125
         '
         'SALESITEMTOTALL02SERVBindingSource
         '
@@ -320,10 +338,11 @@ Partial Class frmSalesItemL01
         'tabpMaterial
         '
         Me.tabpMaterial.Controls.Add(Me.dgvSalesItemTotalL02Mat)
-        Me.tabpMaterial.Location = New System.Drawing.Point(4, 22)
+        Me.tabpMaterial.Location = New System.Drawing.Point(4, 25)
+        Me.tabpMaterial.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabpMaterial.Name = "tabpMaterial"
-        Me.tabpMaterial.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabpMaterial.Size = New System.Drawing.Size(324, 149)
+        Me.tabpMaterial.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabpMaterial.Size = New System.Drawing.Size(435, 186)
         Me.tabpMaterial.TabIndex = 0
         Me.tabpMaterial.Text = "Material"
         Me.tabpMaterial.UseVisualStyleBackColor = True
@@ -339,15 +358,17 @@ Partial Class frmSalesItemL01
         Me.dgvSalesItemTotalL02Mat.ColumnHeadersVisible = False
         Me.dgvSalesItemTotalL02Mat.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.colAmountCOP, Me.colAmountUSD, Me.DataGridViewTextBoxColumn10})
         Me.dgvSalesItemTotalL02Mat.DataSource = Me.SALESITEMTOTALL02MATBindingSource
-        Me.dgvSalesItemTotalL02Mat.Location = New System.Drawing.Point(7, 3)
+        Me.dgvSalesItemTotalL02Mat.Location = New System.Drawing.Point(9, 4)
+        Me.dgvSalesItemTotalL02Mat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvSalesItemTotalL02Mat.MultiSelect = False
         Me.dgvSalesItemTotalL02Mat.Name = "dgvSalesItemTotalL02Mat"
         Me.dgvSalesItemTotalL02Mat.ReadOnly = True
         Me.dgvSalesItemTotalL02Mat.RowHeadersVisible = False
+        Me.dgvSalesItemTotalL02Mat.RowHeadersWidth = 51
         Me.dgvSalesItemTotalL02Mat.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.dgvSalesItemTotalL02Mat.ShowCellErrors = False
         Me.dgvSalesItemTotalL02Mat.ShowRowErrors = False
-        Me.dgvSalesItemTotalL02Mat.Size = New System.Drawing.Size(311, 138)
+        Me.dgvSalesItemTotalL02Mat.Size = New System.Drawing.Size(415, 170)
         Me.dgvSalesItemTotalL02Mat.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -358,6 +379,7 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
         Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridViewTextBoxColumn1.HeaderText = "DESCRIBE"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
         Me.DataGridViewTextBoxColumn1.Width = 200
@@ -372,8 +394,10 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
         Me.colAmountCOP.DefaultCellStyle = DataGridViewCellStyle5
         Me.colAmountCOP.HeaderText = "AMOUNTCOP"
+        Me.colAmountCOP.MinimumWidth = 6
         Me.colAmountCOP.Name = "colAmountCOP"
         Me.colAmountCOP.ReadOnly = True
+        Me.colAmountCOP.Width = 125
         '
         'colAmountUSD
         '
@@ -386,16 +410,20 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
         Me.colAmountUSD.DefaultCellStyle = DataGridViewCellStyle6
         Me.colAmountUSD.HeaderText = "AMOUNTUSD"
+        Me.colAmountUSD.MinimumWidth = 6
         Me.colAmountUSD.Name = "colAmountUSD"
         Me.colAmountUSD.ReadOnly = True
+        Me.colAmountUSD.Width = 125
         '
         'DataGridViewTextBoxColumn10
         '
         Me.DataGridViewTextBoxColumn10.DataPropertyName = "TICKETID"
         Me.DataGridViewTextBoxColumn10.HeaderText = "TICKETID"
+        Me.DataGridViewTextBoxColumn10.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         Me.DataGridViewTextBoxColumn10.ReadOnly = True
         Me.DataGridViewTextBoxColumn10.Visible = False
+        Me.DataGridViewTextBoxColumn10.Width = 125
         '
         'SALESITEMTOTALL02MATBindingSource
         '
@@ -413,15 +441,17 @@ Partial Class frmSalesItemL01
         Me.dgvSalesItemTotalL01.ColumnHeadersVisible = False
         Me.dgvSalesItemTotalL01.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.colAmountUSD3, Me.colPortionValueUSD3, Me.colPortionValueCOP3, Me.DataGridViewTextBoxColumn2})
         Me.dgvSalesItemTotalL01.DataSource = Me.SALESITEM_TOTAL_L01BindingSource
-        Me.dgvSalesItemTotalL01.Location = New System.Drawing.Point(535, 3)
+        Me.dgvSalesItemTotalL01.Location = New System.Drawing.Point(713, 4)
+        Me.dgvSalesItemTotalL01.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvSalesItemTotalL01.MultiSelect = False
         Me.dgvSalesItemTotalL01.Name = "dgvSalesItemTotalL01"
         Me.dgvSalesItemTotalL01.ReadOnly = True
         Me.dgvSalesItemTotalL01.RowHeadersVisible = False
+        Me.dgvSalesItemTotalL01.RowHeadersWidth = 51
         Me.dgvSalesItemTotalL01.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.dgvSalesItemTotalL01.ShowCellErrors = False
         Me.dgvSalesItemTotalL01.ShowRowErrors = False
-        Me.dgvSalesItemTotalL01.Size = New System.Drawing.Size(510, 93)
+        Me.dgvSalesItemTotalL01.Size = New System.Drawing.Size(680, 114)
         Me.dgvSalesItemTotalL01.TabIndex = 0
         '
         'DataGridViewTextBoxColumn3
@@ -432,6 +462,7 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
         Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle7
         Me.DataGridViewTextBoxColumn3.HeaderText = "DESCRIBE"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.ReadOnly = True
         Me.DataGridViewTextBoxColumn3.Width = 200
@@ -446,8 +477,10 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black
         Me.colAmountUSD3.DefaultCellStyle = DataGridViewCellStyle8
         Me.colAmountUSD3.HeaderText = "AMOUNTUSD"
+        Me.colAmountUSD3.MinimumWidth = 6
         Me.colAmountUSD3.Name = "colAmountUSD3"
         Me.colAmountUSD3.ReadOnly = True
+        Me.colAmountUSD3.Width = 125
         '
         'colPortionValueUSD3
         '
@@ -459,8 +492,10 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
         Me.colPortionValueUSD3.DefaultCellStyle = DataGridViewCellStyle9
         Me.colPortionValueUSD3.HeaderText = "PORTIONVALUEUSD"
+        Me.colPortionValueUSD3.MinimumWidth = 6
         Me.colPortionValueUSD3.Name = "colPortionValueUSD3"
         Me.colPortionValueUSD3.ReadOnly = True
+        Me.colPortionValueUSD3.Width = 125
         '
         'colPortionValueCOP3
         '
@@ -472,16 +507,20 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black
         Me.colPortionValueCOP3.DefaultCellStyle = DataGridViewCellStyle10
         Me.colPortionValueCOP3.HeaderText = "PORTIONVALUECOP"
+        Me.colPortionValueCOP3.MinimumWidth = 6
         Me.colPortionValueCOP3.Name = "colPortionValueCOP3"
         Me.colPortionValueCOP3.ReadOnly = True
+        Me.colPortionValueCOP3.Width = 125
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "TICKETID"
         Me.DataGridViewTextBoxColumn2.HeaderText = "TICKETID"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
         Me.DataGridViewTextBoxColumn2.Visible = False
+        Me.DataGridViewTextBoxColumn2.Width = 125
         '
         'SALESITEM_TOTAL_L01BindingSource
         '
@@ -492,10 +531,11 @@ Partial Class frmSalesItemL01
         '
         Me.tabpInventoryItem.Controls.Add(Me.dgvInventory)
         Me.tabpInventoryItem.Controls.Add(Me.btnNewInvItem)
-        Me.tabpInventoryItem.Location = New System.Drawing.Point(23, 4)
+        Me.tabpInventoryItem.Location = New System.Drawing.Point(25, 4)
+        Me.tabpInventoryItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabpInventoryItem.Name = "tabpInventoryItem"
-        Me.tabpInventoryItem.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabpInventoryItem.Size = New System.Drawing.Size(1055, 202)
+        Me.tabpInventoryItem.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabpInventoryItem.Size = New System.Drawing.Size(1414, 250)
         Me.tabpInventoryItem.TabIndex = 0
         Me.tabpInventoryItem.Text = "Inventory Item"
         Me.tabpInventoryItem.UseVisualStyleBackColor = True
@@ -526,6 +566,7 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvInventory.DefaultCellStyle = DataGridViewCellStyle15
         Me.dgvInventory.Location = New System.Drawing.Point(0, 0)
+        Me.dgvInventory.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvInventory.MultiSelect = False
         Me.dgvInventory.Name = "dgvInventory"
         Me.dgvInventory.ReadOnly = True
@@ -539,7 +580,7 @@ Partial Class frmSalesItemL01
         Me.dgvInventory.RowHeadersDefaultCellStyle = DataGridViewCellStyle16
         Me.dgvInventory.RowHeadersWidth = 10
         Me.dgvInventory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvInventory.Size = New System.Drawing.Size(975, 199)
+        Me.dgvInventory.Size = New System.Drawing.Size(1300, 245)
         Me.dgvInventory.TabIndex = 10
         '
         'colIInventoryItem
@@ -549,9 +590,10 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Maroon
         Me.colIInventoryItem.DefaultCellStyle = DataGridViewCellStyle12
         Me.colIInventoryItem.HeaderText = "Inventory Item"
+        Me.colIInventoryItem.MinimumWidth = 6
         Me.colIInventoryItem.Name = "colIInventoryItem"
         Me.colIInventoryItem.ReadOnly = True
-        Me.colIInventoryItem.Width = 99
+        Me.colIInventoryItem.Width = 125
         '
         'colAbbrev
         '
@@ -559,9 +601,10 @@ Partial Class frmSalesItemL01
         Me.colAbbrev.DataPropertyName = "ABBREVIATION"
         Me.colAbbrev.FillWeight = 40.0!
         Me.colAbbrev.HeaderText = "Abbreviation"
+        Me.colAbbrev.MinimumWidth = 6
         Me.colAbbrev.Name = "colAbbrev"
         Me.colAbbrev.ReadOnly = True
-        Me.colAbbrev.Width = 91
+        Me.colAbbrev.Width = 116
         '
         'colIDescription
         '
@@ -569,6 +612,7 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.colIDescription.DefaultCellStyle = DataGridViewCellStyle13
         Me.colIDescription.HeaderText = "Description"
+        Me.colIDescription.MinimumWidth = 6
         Me.colIDescription.Name = "colIDescription"
         Me.colIDescription.ReadOnly = True
         Me.colIDescription.Width = 480
@@ -578,9 +622,10 @@ Partial Class frmSalesItemL01
         Me.colIUnit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colIUnit.DataPropertyName = "UNIT"
         Me.colIUnit.HeaderText = "Unit"
+        Me.colIUnit.MinimumWidth = 6
         Me.colIUnit.Name = "colIUnit"
         Me.colIUnit.ReadOnly = True
-        Me.colIUnit.Width = 51
+        Me.colIUnit.Width = 62
         '
         'colIItemQty
         '
@@ -590,25 +635,30 @@ Partial Class frmSalesItemL01
         DataGridViewCellStyle14.Format = "n2"
         Me.colIItemQty.DefaultCellStyle = DataGridViewCellStyle14
         Me.colIItemQty.HeaderText = "Qty"
+        Me.colIItemQty.MinimumWidth = 6
         Me.colIItemQty.Name = "colIItemQty"
         Me.colIItemQty.ReadOnly = True
-        Me.colIItemQty.Width = 48
+        Me.colIItemQty.Width = 59
         '
         'colITicketSalesItemId
         '
         Me.colITicketSalesItemId.DataPropertyName = "TICKETSALESITEMID"
         Me.colITicketSalesItemId.HeaderText = "TICKETSALESITEMID"
+        Me.colITicketSalesItemId.MinimumWidth = 6
         Me.colITicketSalesItemId.Name = "colITicketSalesItemId"
         Me.colITicketSalesItemId.ReadOnly = True
         Me.colITicketSalesItemId.Visible = False
+        Me.colITicketSalesItemId.Width = 125
         '
         'colTicketInvLineId
         '
         Me.colTicketInvLineId.DataPropertyName = "TICKETINVLINEID"
         Me.colTicketInvLineId.HeaderText = "TICKETINVLINEID"
+        Me.colTicketInvLineId.MinimumWidth = 6
         Me.colTicketInvLineId.Name = "colTicketInvLineId"
         Me.colTicketInvLineId.ReadOnly = True
         Me.colTicketInvLineId.Visible = False
+        Me.colTicketInvLineId.Width = 125
         '
         'TICKETINVLINESALESVBindingSource
         '
@@ -617,9 +667,10 @@ Partial Class frmSalesItemL01
         '
         'btnNewInvItem
         '
-        Me.btnNewInvItem.Location = New System.Drawing.Point(981, 3)
+        Me.btnNewInvItem.Location = New System.Drawing.Point(1308, 4)
+        Me.btnNewInvItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnNewInvItem.Name = "btnNewInvItem"
-        Me.btnNewInvItem.Size = New System.Drawing.Size(68, 32)
+        Me.btnNewInvItem.Size = New System.Drawing.Size(91, 39)
         Me.btnNewInvItem.TabIndex = 11
         Me.btnNewInvItem.Text = "New"
         Me.btnNewInvItem.UseVisualStyleBackColor = True
@@ -633,17 +684,20 @@ Partial Class frmSalesItemL01
         Me.GroupBox8.Controls.Add(Me.Label29)
         Me.GroupBox8.Controls.Add(Me.txtExchangeRate)
         Me.GroupBox8.Location = New System.Drawing.Point(1, 1)
+        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(1082, 43)
+        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox8.Size = New System.Drawing.Size(1443, 53)
         Me.GroupBox8.TabIndex = 5
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Sales Item"
         '
         'btnApplyDisc
         '
-        Me.btnApplyDisc.Location = New System.Drawing.Point(949, 11)
+        Me.btnApplyDisc.Location = New System.Drawing.Point(1265, 14)
+        Me.btnApplyDisc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnApplyDisc.Name = "btnApplyDisc"
-        Me.btnApplyDisc.Size = New System.Drawing.Size(34, 23)
+        Me.btnApplyDisc.Size = New System.Drawing.Size(45, 28)
         Me.btnApplyDisc.TabIndex = 48
         Me.btnApplyDisc.Text = "Ok"
         Me.btnApplyDisc.UseVisualStyleBackColor = True
@@ -653,25 +707,28 @@ Partial Class frmSalesItemL01
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label30.Location = New System.Drawing.Point(789, 15)
+        Me.Label30.Location = New System.Drawing.Point(1052, 18)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(82, 13)
+        Me.Label30.Size = New System.Drawing.Size(106, 17)
         Me.Label30.TabIndex = 47
         Me.Label30.Text = "Discount (%):"
         '
         'txtSalesItemDisc
         '
-        Me.txtSalesItemDisc.Location = New System.Drawing.Point(877, 13)
+        Me.txtSalesItemDisc.Location = New System.Drawing.Point(1169, 16)
+        Me.txtSalesItemDisc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSalesItemDisc.Name = "txtSalesItemDisc"
-        Me.txtSalesItemDisc.Size = New System.Drawing.Size(66, 20)
+        Me.txtSalesItemDisc.Size = New System.Drawing.Size(87, 22)
         Me.txtSalesItemDisc.TabIndex = 46
         Me.txtSalesItemDisc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'btnNewSalesItem
         '
-        Me.btnNewSalesItem.Location = New System.Drawing.Point(47, 15)
+        Me.btnNewSalesItem.Location = New System.Drawing.Point(63, 18)
+        Me.btnNewSalesItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnNewSalesItem.Name = "btnNewSalesItem"
-        Me.btnNewSalesItem.Size = New System.Drawing.Size(72, 22)
+        Me.btnNewSalesItem.Size = New System.Drawing.Size(96, 27)
         Me.btnNewSalesItem.TabIndex = 6
         Me.btnNewSalesItem.Text = "New"
         Me.btnNewSalesItem.UseVisualStyleBackColor = True
@@ -681,18 +738,20 @@ Partial Class frmSalesItemL01
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label29.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label29.Location = New System.Drawing.Point(505, 15)
+        Me.Label29.Location = New System.Drawing.Point(673, 18)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(135, 13)
+        Me.Label29.Size = New System.Drawing.Size(171, 17)
         Me.Label29.TabIndex = 45
         Me.Label29.Text = "Exchange Rate (COP):"
         '
         'txtExchangeRate
         '
         Me.txtExchangeRate.BackColor = System.Drawing.Color.White
-        Me.txtExchangeRate.Location = New System.Drawing.Point(646, 13)
+        Me.txtExchangeRate.Location = New System.Drawing.Point(861, 16)
+        Me.txtExchangeRate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtExchangeRate.Name = "txtExchangeRate"
-        Me.txtExchangeRate.Size = New System.Drawing.Size(121, 20)
+        Me.txtExchangeRate.Size = New System.Drawing.Size(160, 22)
         Me.txtExchangeRate.TabIndex = 44
         Me.txtExchangeRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -705,14 +764,286 @@ Partial Class frmSalesItemL01
         Me.dgvSalesItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSalesItem.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colType, Me.colTabGroup, Me.colSICustCodeItem, Me.colSIDescription, Me.colSIUnitSale, Me.colSIItemQty, Me.colPriceUnit, Me.colPriceUnitUSD, Me.colSIItemDisc, Me.colItemAmountNoDisc, Me.colItemAmountNoDiscUSD, Me.colItemAmountUSD, Me.colItemAmount, Me.colPortionValueUSD, Me.colPortionValueCOP, Me.colItemDiscValue, Me.colItemDiscValueUSD, Me.colPortionCOP, Me.colPortionUSD, Me.colSITicketSalesItemId, Me.colSITicketId, Me.colSIContractPriceListId, Me.colSISalesPrice, Me.colDiscType})
         Me.dgvSalesItem.DataSource = Me.SALESITEMVBindingSource
-        Me.dgvSalesItem.Location = New System.Drawing.Point(4, 46)
+        Me.dgvSalesItem.Location = New System.Drawing.Point(5, 57)
+        Me.dgvSalesItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvSalesItem.MultiSelect = False
         Me.dgvSalesItem.Name = "dgvSalesItem"
         Me.dgvSalesItem.ReadOnly = True
         Me.dgvSalesItem.RowHeadersWidth = 10
         Me.dgvSalesItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvSalesItem.Size = New System.Drawing.Size(1079, 257)
+        Me.dgvSalesItem.Size = New System.Drawing.Size(1439, 316)
         Me.dgvSalesItem.TabIndex = 0
+        '
+        'colType
+        '
+        Me.colType.DataPropertyName = "TYPE"
+        Me.colType.HeaderText = "Type"
+        Me.colType.MinimumWidth = 6
+        Me.colType.Name = "colType"
+        Me.colType.ReadOnly = True
+        Me.colType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.colType.Width = 49
+        '
+        'colTabGroup
+        '
+        Me.colTabGroup.DataPropertyName = "TABGROUP"
+        Me.colTabGroup.HeaderText = "Group"
+        Me.colTabGroup.MinimumWidth = 6
+        Me.colTabGroup.Name = "colTabGroup"
+        Me.colTabGroup.ReadOnly = True
+        Me.colTabGroup.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.colTabGroup.Width = 53
+        '
+        'colSICustCodeItem
+        '
+        Me.colSICustCodeItem.DataPropertyName = "CUSTCODEITEM"
+        Me.colSICustCodeItem.HeaderText = "Item"
+        Me.colSICustCodeItem.MinimumWidth = 6
+        Me.colSICustCodeItem.Name = "colSICustCodeItem"
+        Me.colSICustCodeItem.ReadOnly = True
+        Me.colSICustCodeItem.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.colSICustCodeItem.Width = 44
+        '
+        'colSIDescription
+        '
+        Me.colSIDescription.DataPropertyName = "DESCRIPTION"
+        Me.colSIDescription.HeaderText = "Description"
+        Me.colSIDescription.MinimumWidth = 6
+        Me.colSIDescription.Name = "colSIDescription"
+        Me.colSIDescription.ReadOnly = True
+        Me.colSIDescription.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.colSIDescription.Width = 330
+        '
+        'colSIUnitSale
+        '
+        Me.colSIUnitSale.DataPropertyName = "UNIT_SALE"
+        Me.colSIUnitSale.HeaderText = "Unit"
+        Me.colSIUnitSale.MinimumWidth = 6
+        Me.colSIUnitSale.Name = "colSIUnitSale"
+        Me.colSIUnitSale.ReadOnly = True
+        Me.colSIUnitSale.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.colSIUnitSale.Width = 50
+        '
+        'colSIItemQty
+        '
+        Me.colSIItemQty.DataPropertyName = "ITEMQTY"
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle17.NullValue = Nothing
+        Me.colSIItemQty.DefaultCellStyle = DataGridViewCellStyle17
+        Me.colSIItemQty.HeaderText = "Qty"
+        Me.colSIItemQty.MinimumWidth = 6
+        Me.colSIItemQty.Name = "colSIItemQty"
+        Me.colSIItemQty.ReadOnly = True
+        Me.colSIItemQty.Width = 70
+        '
+        'colPriceUnit
+        '
+        Me.colPriceUnit.DataPropertyName = "PRICEUNIT"
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.colPriceUnit.DefaultCellStyle = DataGridViewCellStyle18
+        Me.colPriceUnit.HeaderText = "Price Unit (COP)"
+        Me.colPriceUnit.MinimumWidth = 6
+        Me.colPriceUnit.Name = "colPriceUnit"
+        Me.colPriceUnit.ReadOnly = True
+        Me.colPriceUnit.Visible = False
+        Me.colPriceUnit.Width = 125
+        '
+        'colPriceUnitUSD
+        '
+        Me.colPriceUnitUSD.DataPropertyName = "PRICEUNITUSD"
+        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle19.NullValue = Nothing
+        Me.colPriceUnitUSD.DefaultCellStyle = DataGridViewCellStyle19
+        Me.colPriceUnitUSD.HeaderText = "Price Unit (USD)"
+        Me.colPriceUnitUSD.MinimumWidth = 6
+        Me.colPriceUnitUSD.Name = "colPriceUnitUSD"
+        Me.colPriceUnitUSD.ReadOnly = True
+        Me.colPriceUnitUSD.Visible = False
+        Me.colPriceUnitUSD.Width = 125
+        '
+        'colSIItemDisc
+        '
+        Me.colSIItemDisc.DataPropertyName = "ITEMDISC"
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle20.Format = "N2"
+        DataGridViewCellStyle20.NullValue = Nothing
+        Me.colSIItemDisc.DefaultCellStyle = DataGridViewCellStyle20
+        Me.colSIItemDisc.HeaderText = "Disc (%)"
+        Me.colSIItemDisc.MinimumWidth = 6
+        Me.colSIItemDisc.Name = "colSIItemDisc"
+        Me.colSIItemDisc.ReadOnly = True
+        Me.colSIItemDisc.Width = 50
+        '
+        'colItemAmountNoDisc
+        '
+        Me.colItemAmountNoDisc.DataPropertyName = "ITEMAMOUNTNODISC"
+        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle21.Format = "n2"
+        Me.colItemAmountNoDisc.DefaultCellStyle = DataGridViewCellStyle21
+        Me.colItemAmountNoDisc.HeaderText = "Total no Discount (COP)"
+        Me.colItemAmountNoDisc.MinimumWidth = 6
+        Me.colItemAmountNoDisc.Name = "colItemAmountNoDisc"
+        Me.colItemAmountNoDisc.ReadOnly = True
+        Me.colItemAmountNoDisc.Visible = False
+        Me.colItemAmountNoDisc.Width = 125
+        '
+        'colItemAmountNoDiscUSD
+        '
+        Me.colItemAmountNoDiscUSD.DataPropertyName = "ITEMAMOUNTNODISCUSD"
+        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle22.Format = "n2"
+        Me.colItemAmountNoDiscUSD.DefaultCellStyle = DataGridViewCellStyle22
+        Me.colItemAmountNoDiscUSD.HeaderText = "Total no Discount (USD)"
+        Me.colItemAmountNoDiscUSD.MinimumWidth = 6
+        Me.colItemAmountNoDiscUSD.Name = "colItemAmountNoDiscUSD"
+        Me.colItemAmountNoDiscUSD.ReadOnly = True
+        Me.colItemAmountNoDiscUSD.Visible = False
+        Me.colItemAmountNoDiscUSD.Width = 125
+        '
+        'colItemAmountUSD
+        '
+        Me.colItemAmountUSD.DataPropertyName = "ITEMAMOUNTUSD"
+        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle23.Format = "N2"
+        DataGridViewCellStyle23.NullValue = Nothing
+        Me.colItemAmountUSD.DefaultCellStyle = DataGridViewCellStyle23
+        Me.colItemAmountUSD.HeaderText = "Total (USD)"
+        Me.colItemAmountUSD.MinimumWidth = 6
+        Me.colItemAmountUSD.Name = "colItemAmountUSD"
+        Me.colItemAmountUSD.ReadOnly = True
+        Me.colItemAmountUSD.Visible = False
+        Me.colItemAmountUSD.Width = 125
+        '
+        'colItemAmount
+        '
+        Me.colItemAmount.DataPropertyName = "ITEMAMOUNT"
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle24.Format = "n2"
+        Me.colItemAmount.DefaultCellStyle = DataGridViewCellStyle24
+        Me.colItemAmount.HeaderText = "Total (COP)"
+        Me.colItemAmount.MinimumWidth = 6
+        Me.colItemAmount.Name = "colItemAmount"
+        Me.colItemAmount.ReadOnly = True
+        Me.colItemAmount.Visible = False
+        Me.colItemAmount.Width = 125
+        '
+        'colPortionValueUSD
+        '
+        Me.colPortionValueUSD.DataPropertyName = "PORTIONVALUEUSD"
+        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle25.Format = "N2"
+        DataGridViewCellStyle25.NullValue = Nothing
+        Me.colPortionValueUSD.DefaultCellStyle = DataGridViewCellStyle25
+        Me.colPortionValueUSD.HeaderText = "Portion USD perc"
+        Me.colPortionValueUSD.MinimumWidth = 6
+        Me.colPortionValueUSD.Name = "colPortionValueUSD"
+        Me.colPortionValueUSD.ReadOnly = True
+        Me.colPortionValueUSD.Visible = False
+        Me.colPortionValueUSD.Width = 125
+        '
+        'colPortionValueCOP
+        '
+        Me.colPortionValueCOP.DataPropertyName = "PORTIONVALUECOP"
+        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle26.Format = "N2"
+        DataGridViewCellStyle26.NullValue = Nothing
+        Me.colPortionValueCOP.DefaultCellStyle = DataGridViewCellStyle26
+        Me.colPortionValueCOP.HeaderText = "Portion COP perc"
+        Me.colPortionValueCOP.MinimumWidth = 6
+        Me.colPortionValueCOP.Name = "colPortionValueCOP"
+        Me.colPortionValueCOP.ReadOnly = True
+        Me.colPortionValueCOP.Visible = False
+        Me.colPortionValueCOP.Width = 125
+        '
+        'colItemDiscValue
+        '
+        Me.colItemDiscValue.DataPropertyName = "ITEMDISCVALUE"
+        Me.colItemDiscValue.HeaderText = "ITEMDISCVALUE"
+        Me.colItemDiscValue.MinimumWidth = 6
+        Me.colItemDiscValue.Name = "colItemDiscValue"
+        Me.colItemDiscValue.ReadOnly = True
+        Me.colItemDiscValue.Visible = False
+        Me.colItemDiscValue.Width = 125
+        '
+        'colItemDiscValueUSD
+        '
+        Me.colItemDiscValueUSD.DataPropertyName = "ITEMDISCVALUEUSD"
+        Me.colItemDiscValueUSD.HeaderText = "ITEMDISCVALUEUSD"
+        Me.colItemDiscValueUSD.MinimumWidth = 6
+        Me.colItemDiscValueUSD.Name = "colItemDiscValueUSD"
+        Me.colItemDiscValueUSD.ReadOnly = True
+        Me.colItemDiscValueUSD.Visible = False
+        Me.colItemDiscValueUSD.Width = 125
+        '
+        'colPortionCOP
+        '
+        Me.colPortionCOP.DataPropertyName = "PORTIONCOP"
+        Me.colPortionCOP.HeaderText = "PORTIONCOP"
+        Me.colPortionCOP.MinimumWidth = 6
+        Me.colPortionCOP.Name = "colPortionCOP"
+        Me.colPortionCOP.ReadOnly = True
+        Me.colPortionCOP.Visible = False
+        Me.colPortionCOP.Width = 125
+        '
+        'colPortionUSD
+        '
+        Me.colPortionUSD.DataPropertyName = "PORTIONUSD"
+        Me.colPortionUSD.HeaderText = "PORTIONUSD"
+        Me.colPortionUSD.MinimumWidth = 6
+        Me.colPortionUSD.Name = "colPortionUSD"
+        Me.colPortionUSD.ReadOnly = True
+        Me.colPortionUSD.Visible = False
+        Me.colPortionUSD.Width = 125
+        '
+        'colSITicketSalesItemId
+        '
+        Me.colSITicketSalesItemId.DataPropertyName = "TICKETSALESITEMID"
+        Me.colSITicketSalesItemId.HeaderText = "TICKETSALESITEMID"
+        Me.colSITicketSalesItemId.MinimumWidth = 6
+        Me.colSITicketSalesItemId.Name = "colSITicketSalesItemId"
+        Me.colSITicketSalesItemId.ReadOnly = True
+        Me.colSITicketSalesItemId.Visible = False
+        Me.colSITicketSalesItemId.Width = 125
+        '
+        'colSITicketId
+        '
+        Me.colSITicketId.DataPropertyName = "TICKETID"
+        Me.colSITicketId.HeaderText = "TICKETID"
+        Me.colSITicketId.MinimumWidth = 6
+        Me.colSITicketId.Name = "colSITicketId"
+        Me.colSITicketId.ReadOnly = True
+        Me.colSITicketId.Visible = False
+        Me.colSITicketId.Width = 125
+        '
+        'colSIContractPriceListId
+        '
+        Me.colSIContractPriceListId.DataPropertyName = "CONTRACTPRICELISTID"
+        Me.colSIContractPriceListId.HeaderText = "CONTRACTPRICELISTID"
+        Me.colSIContractPriceListId.MinimumWidth = 6
+        Me.colSIContractPriceListId.Name = "colSIContractPriceListId"
+        Me.colSIContractPriceListId.ReadOnly = True
+        Me.colSIContractPriceListId.Visible = False
+        Me.colSIContractPriceListId.Width = 125
+        '
+        'colSISalesPrice
+        '
+        Me.colSISalesPrice.DataPropertyName = "SALES_PRICE"
+        Me.colSISalesPrice.HeaderText = "SALES_PRICE"
+        Me.colSISalesPrice.MinimumWidth = 6
+        Me.colSISalesPrice.Name = "colSISalesPrice"
+        Me.colSISalesPrice.ReadOnly = True
+        Me.colSISalesPrice.Visible = False
+        Me.colSISalesPrice.Width = 125
+        '
+        'colDiscType
+        '
+        Me.colDiscType.DataPropertyName = "DISCTYPE"
+        Me.colDiscType.HeaderText = "DISCTYPE"
+        Me.colDiscType.MinimumWidth = 6
+        Me.colDiscType.Name = "colDiscType"
+        Me.colDiscType.ReadOnly = True
+        Me.colDiscType.Visible = False
+        Me.colDiscType.Width = 125
         '
         'SALESITEMVBindingSource
         '
@@ -775,245 +1106,17 @@ Partial Class frmSalesItemL01
         '
         Me.TICKETINVLINESALES_VTableAdapter.ClearBeforeFill = True
         '
-        'colType
-        '
-        Me.colType.DataPropertyName = "TYPE"
-        Me.colType.HeaderText = "Type"
-        Me.colType.Name = "colType"
-        Me.colType.ReadOnly = True
-        Me.colType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.colType.Width = 49
-        '
-        'colTabGroup
-        '
-        Me.colTabGroup.DataPropertyName = "TABGROUP"
-        Me.colTabGroup.HeaderText = "Group"
-        Me.colTabGroup.Name = "colTabGroup"
-        Me.colTabGroup.ReadOnly = True
-        Me.colTabGroup.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.colTabGroup.Width = 53
-        '
-        'colSICustCodeItem
-        '
-        Me.colSICustCodeItem.DataPropertyName = "CUSTCODEITEM"
-        Me.colSICustCodeItem.HeaderText = "Item"
-        Me.colSICustCodeItem.Name = "colSICustCodeItem"
-        Me.colSICustCodeItem.ReadOnly = True
-        Me.colSICustCodeItem.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.colSICustCodeItem.Width = 44
-        '
-        'colSIDescription
-        '
-        Me.colSIDescription.DataPropertyName = "DESCRIPTION"
-        Me.colSIDescription.HeaderText = "Description"
-        Me.colSIDescription.Name = "colSIDescription"
-        Me.colSIDescription.ReadOnly = True
-        Me.colSIDescription.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.colSIDescription.Width = 330
-        '
-        'colSIUnitSale
-        '
-        Me.colSIUnitSale.DataPropertyName = "UNIT_SALE"
-        Me.colSIUnitSale.HeaderText = "Unit"
-        Me.colSIUnitSale.Name = "colSIUnitSale"
-        Me.colSIUnitSale.ReadOnly = True
-        Me.colSIUnitSale.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.colSIUnitSale.Width = 50
-        '
-        'colSIItemQty
-        '
-        Me.colSIItemQty.DataPropertyName = "ITEMQTY"
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle17.NullValue = Nothing
-        Me.colSIItemQty.DefaultCellStyle = DataGridViewCellStyle17
-        Me.colSIItemQty.HeaderText = "Qty"
-        Me.colSIItemQty.Name = "colSIItemQty"
-        Me.colSIItemQty.ReadOnly = True
-        Me.colSIItemQty.Width = 70
-        '
-        'colPriceUnit
-        '
-        Me.colPriceUnit.DataPropertyName = "PRICEUNIT"
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.colPriceUnit.DefaultCellStyle = DataGridViewCellStyle18
-        Me.colPriceUnit.HeaderText = "Price Unit (COP)"
-        Me.colPriceUnit.Name = "colPriceUnit"
-        Me.colPriceUnit.ReadOnly = True
-        Me.colPriceUnit.Visible = False
-        '
-        'colPriceUnitUSD
-        '
-        Me.colPriceUnitUSD.DataPropertyName = "PRICEUNITUSD"
-        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle19.NullValue = Nothing
-        Me.colPriceUnitUSD.DefaultCellStyle = DataGridViewCellStyle19
-        Me.colPriceUnitUSD.HeaderText = "Price Unit (USD)"
-        Me.colPriceUnitUSD.Name = "colPriceUnitUSD"
-        Me.colPriceUnitUSD.ReadOnly = True
-        Me.colPriceUnitUSD.Visible = False
-        '
-        'colSIItemDisc
-        '
-        Me.colSIItemDisc.DataPropertyName = "ITEMDISC"
-        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle20.Format = "N2"
-        DataGridViewCellStyle20.NullValue = Nothing
-        Me.colSIItemDisc.DefaultCellStyle = DataGridViewCellStyle20
-        Me.colSIItemDisc.HeaderText = "Disc (%)"
-        Me.colSIItemDisc.Name = "colSIItemDisc"
-        Me.colSIItemDisc.ReadOnly = True
-        Me.colSIItemDisc.Width = 50
-        '
-        'colItemAmountNoDisc
-        '
-        Me.colItemAmountNoDisc.DataPropertyName = "ITEMAMOUNTNODISC"
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle21.Format = "n2"
-        Me.colItemAmountNoDisc.DefaultCellStyle = DataGridViewCellStyle21
-        Me.colItemAmountNoDisc.HeaderText = "Total no Discount (COP)"
-        Me.colItemAmountNoDisc.Name = "colItemAmountNoDisc"
-        Me.colItemAmountNoDisc.ReadOnly = True
-        Me.colItemAmountNoDisc.Visible = False
-        '
-        'colItemAmountNoDiscUSD
-        '
-        Me.colItemAmountNoDiscUSD.DataPropertyName = "ITEMAMOUNTNODISCUSD"
-        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle22.Format = "n2"
-        Me.colItemAmountNoDiscUSD.DefaultCellStyle = DataGridViewCellStyle22
-        Me.colItemAmountNoDiscUSD.HeaderText = "Total no Discount (USD)"
-        Me.colItemAmountNoDiscUSD.Name = "colItemAmountNoDiscUSD"
-        Me.colItemAmountNoDiscUSD.ReadOnly = True
-        Me.colItemAmountNoDiscUSD.Visible = False
-        '
-        'colItemAmountUSD
-        '
-        Me.colItemAmountUSD.DataPropertyName = "ITEMAMOUNTUSD"
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle23.Format = "N2"
-        DataGridViewCellStyle23.NullValue = Nothing
-        Me.colItemAmountUSD.DefaultCellStyle = DataGridViewCellStyle23
-        Me.colItemAmountUSD.HeaderText = "Total (USD)"
-        Me.colItemAmountUSD.Name = "colItemAmountUSD"
-        Me.colItemAmountUSD.ReadOnly = True
-        Me.colItemAmountUSD.Visible = False
-        '
-        'colItemAmount
-        '
-        Me.colItemAmount.DataPropertyName = "ITEMAMOUNT"
-        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle24.Format = "n2"
-        Me.colItemAmount.DefaultCellStyle = DataGridViewCellStyle24
-        Me.colItemAmount.HeaderText = "Total (COP)"
-        Me.colItemAmount.Name = "colItemAmount"
-        Me.colItemAmount.ReadOnly = True
-        Me.colItemAmount.Visible = False
-        '
-        'colPortionValueUSD
-        '
-        Me.colPortionValueUSD.DataPropertyName = "PORTIONVALUEUSD"
-        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle25.Format = "N2"
-        DataGridViewCellStyle25.NullValue = Nothing
-        Me.colPortionValueUSD.DefaultCellStyle = DataGridViewCellStyle25
-        Me.colPortionValueUSD.HeaderText = "Portion USD perc"
-        Me.colPortionValueUSD.Name = "colPortionValueUSD"
-        Me.colPortionValueUSD.ReadOnly = True
-        Me.colPortionValueUSD.Visible = False
-        '
-        'colPortionValueCOP
-        '
-        Me.colPortionValueCOP.DataPropertyName = "PORTIONVALUECOP"
-        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle26.Format = "N2"
-        DataGridViewCellStyle26.NullValue = Nothing
-        Me.colPortionValueCOP.DefaultCellStyle = DataGridViewCellStyle26
-        Me.colPortionValueCOP.HeaderText = "Portion COP perc"
-        Me.colPortionValueCOP.Name = "colPortionValueCOP"
-        Me.colPortionValueCOP.ReadOnly = True
-        Me.colPortionValueCOP.Visible = False
-        '
-        'colItemDiscValue
-        '
-        Me.colItemDiscValue.DataPropertyName = "ITEMDISCVALUE"
-        Me.colItemDiscValue.HeaderText = "ITEMDISCVALUE"
-        Me.colItemDiscValue.Name = "colItemDiscValue"
-        Me.colItemDiscValue.ReadOnly = True
-        Me.colItemDiscValue.Visible = False
-        '
-        'colItemDiscValueUSD
-        '
-        Me.colItemDiscValueUSD.DataPropertyName = "ITEMDISCVALUEUSD"
-        Me.colItemDiscValueUSD.HeaderText = "ITEMDISCVALUEUSD"
-        Me.colItemDiscValueUSD.Name = "colItemDiscValueUSD"
-        Me.colItemDiscValueUSD.ReadOnly = True
-        Me.colItemDiscValueUSD.Visible = False
-        '
-        'colPortionCOP
-        '
-        Me.colPortionCOP.DataPropertyName = "PORTIONCOP"
-        Me.colPortionCOP.HeaderText = "PORTIONCOP"
-        Me.colPortionCOP.Name = "colPortionCOP"
-        Me.colPortionCOP.ReadOnly = True
-        Me.colPortionCOP.Visible = False
-        '
-        'colPortionUSD
-        '
-        Me.colPortionUSD.DataPropertyName = "PORTIONUSD"
-        Me.colPortionUSD.HeaderText = "PORTIONUSD"
-        Me.colPortionUSD.Name = "colPortionUSD"
-        Me.colPortionUSD.ReadOnly = True
-        Me.colPortionUSD.Visible = False
-        '
-        'colSITicketSalesItemId
-        '
-        Me.colSITicketSalesItemId.DataPropertyName = "TICKETSALESITEMID"
-        Me.colSITicketSalesItemId.HeaderText = "TICKETSALESITEMID"
-        Me.colSITicketSalesItemId.Name = "colSITicketSalesItemId"
-        Me.colSITicketSalesItemId.ReadOnly = True
-        Me.colSITicketSalesItemId.Visible = False
-        '
-        'colSITicketId
-        '
-        Me.colSITicketId.DataPropertyName = "TICKETID"
-        Me.colSITicketId.HeaderText = "TICKETID"
-        Me.colSITicketId.Name = "colSITicketId"
-        Me.colSITicketId.ReadOnly = True
-        Me.colSITicketId.Visible = False
-        '
-        'colSIContractPriceListId
-        '
-        Me.colSIContractPriceListId.DataPropertyName = "CONTRACTPRICELISTID"
-        Me.colSIContractPriceListId.HeaderText = "CONTRACTPRICELISTID"
-        Me.colSIContractPriceListId.Name = "colSIContractPriceListId"
-        Me.colSIContractPriceListId.ReadOnly = True
-        Me.colSIContractPriceListId.Visible = False
-        '
-        'colSISalesPrice
-        '
-        Me.colSISalesPrice.DataPropertyName = "SALES_PRICE"
-        Me.colSISalesPrice.HeaderText = "SALES_PRICE"
-        Me.colSISalesPrice.Name = "colSISalesPrice"
-        Me.colSISalesPrice.ReadOnly = True
-        Me.colSISalesPrice.Visible = False
-        '
-        'colDiscType
-        '
-        Me.colDiscType.DataPropertyName = "DISCTYPE"
-        Me.colDiscType.HeaderText = "DISCTYPE"
-        Me.colDiscType.Name = "colDiscType"
-        Me.colDiscType.ReadOnly = True
-        Me.colDiscType.Visible = False
-        '
         'frmSalesItemL01
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(1086, 523)
+        Me.ClientSize = New System.Drawing.Size(1448, 644)
         Me.Controls.Add(Me.tabSalesItemFoot)
         Me.Controls.Add(Me.GroupBox8)
         Me.Controls.Add(Me.dgvSalesItem)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmSalesItemL01"
         Me.Text = "frmSalesItemL01"
         Me.tabSalesItemFoot.ResumeLayout(False)

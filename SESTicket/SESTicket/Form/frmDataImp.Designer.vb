@@ -43,6 +43,7 @@ Partial Class frmDataImp
         Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDataImp))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabContrPrice = New System.Windows.Forms.TabPage()
         Me.txtContract = New System.Windows.Forms.TextBox()
@@ -179,10 +180,11 @@ Partial Class frmDataImp
         Me.TabControl1.Controls.Add(Me.tabWorker)
         Me.TabControl1.Controls.Add(Me.tabInvItem)
         Me.TabControl1.Controls.Add(Me.tabWell)
-        Me.TabControl1.Location = New System.Drawing.Point(6, 50)
+        Me.TabControl1.Location = New System.Drawing.Point(8, 62)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1126, 588)
+        Me.TabControl1.Size = New System.Drawing.Size(1501, 724)
         Me.TabControl1.TabIndex = 5
         '
         'tabContrPrice
@@ -194,10 +196,11 @@ Partial Class frmDataImp
         Me.tabContrPrice.Controls.Add(Me.Label3)
         Me.tabContrPrice.Controls.Add(Me.Label2)
         Me.tabContrPrice.Controls.Add(Me.dgvImpContrPrice)
-        Me.tabContrPrice.Location = New System.Drawing.Point(4, 22)
+        Me.tabContrPrice.Location = New System.Drawing.Point(4, 25)
+        Me.tabContrPrice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabContrPrice.Name = "tabContrPrice"
-        Me.tabContrPrice.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabContrPrice.Size = New System.Drawing.Size(1118, 562)
+        Me.tabContrPrice.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabContrPrice.Size = New System.Drawing.Size(1493, 695)
         Me.tabContrPrice.TabIndex = 0
         Me.tabContrPrice.Text = "CONTRACT PRICE LIST"
         '
@@ -205,37 +208,41 @@ Partial Class frmDataImp
         '
         Me.txtContract.BackColor = System.Drawing.Color.White
         Me.txtContract.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtContract.Location = New System.Drawing.Point(441, 9)
+        Me.txtContract.Location = New System.Drawing.Point(588, 11)
+        Me.txtContract.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtContract.Name = "txtContract"
         Me.txtContract.ReadOnly = True
-        Me.txtContract.Size = New System.Drawing.Size(343, 20)
+        Me.txtContract.Size = New System.Drawing.Size(457, 22)
         Me.txtContract.TabIndex = 9
         '
         'txtCustomer
         '
         Me.txtCustomer.BackColor = System.Drawing.Color.White
         Me.txtCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtCustomer.Location = New System.Drawing.Point(66, 9)
+        Me.txtCustomer.Location = New System.Drawing.Point(88, 11)
+        Me.txtCustomer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCustomer.Name = "txtCustomer"
         Me.txtCustomer.ReadOnly = True
-        Me.txtCustomer.Size = New System.Drawing.Size(313, 20)
+        Me.txtCustomer.Size = New System.Drawing.Size(417, 22)
         Me.txtCustomer.TabIndex = 8
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(385, 9)
+        Me.Label3.Location = New System.Drawing.Point(513, 11)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(50, 13)
+        Me.Label3.Size = New System.Drawing.Size(59, 16)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Contract:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 9)
+        Me.Label2.Location = New System.Drawing.Point(8, 11)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(67, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Customer:"
         '
@@ -249,11 +256,12 @@ Partial Class frmDataImp
         Me.dgvImpContrPrice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvImpContrPrice.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.GROUPORDER, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.ACTIVE, Me.PRICEBASE, Me.PRICEUTILITY})
         Me.dgvImpContrPrice.DataSource = Me.IMP_CONTRACTPRICELISTBindingSource
-        Me.dgvImpContrPrice.Location = New System.Drawing.Point(3, 35)
+        Me.dgvImpContrPrice.Location = New System.Drawing.Point(4, 43)
+        Me.dgvImpContrPrice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvImpContrPrice.Name = "dgvImpContrPrice"
         Me.dgvImpContrPrice.ReadOnly = True
         Me.dgvImpContrPrice.RowHeadersWidth = 10
-        Me.dgvImpContrPrice.Size = New System.Drawing.Size(1109, 521)
+        Me.dgvImpContrPrice.Size = New System.Drawing.Size(1479, 641)
         Me.dgvImpContrPrice.TabIndex = 0
         '
         'DataGridViewTextBoxColumn1
@@ -264,9 +272,11 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridViewTextBoxColumn1.Frozen = True
         Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
         Me.DataGridViewTextBoxColumn1.Visible = False
+        Me.DataGridViewTextBoxColumn1.Width = 125
         '
         'DataGridViewTextBoxColumn2
         '
@@ -276,6 +286,7 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridViewTextBoxColumn2.Frozen = True
         Me.DataGridViewTextBoxColumn2.HeaderText = "IMPORT STATUS"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
         Me.DataGridViewTextBoxColumn2.Width = 200
@@ -287,8 +298,10 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridViewTextBoxColumn3.Frozen = True
         Me.DataGridViewTextBoxColumn3.HeaderText = "CONTRACTPRICELISTID"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.DataGridViewTextBoxColumn3.Width = 125
         '
         'DataGridViewTextBoxColumn4
         '
@@ -297,16 +310,20 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridViewTextBoxColumn4.Frozen = True
         Me.DataGridViewTextBoxColumn4.HeaderText = "TABGROUP"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        Me.DataGridViewTextBoxColumn4.Width = 125
         '
         'GROUPORDER
         '
         Me.GROUPORDER.DataPropertyName = "GROUPORDER"
         Me.GROUPORDER.Frozen = True
         Me.GROUPORDER.HeaderText = "GROUPORDER"
+        Me.GROUPORDER.MinimumWidth = 6
         Me.GROUPORDER.Name = "GROUPORDER"
         Me.GROUPORDER.ReadOnly = True
+        Me.GROUPORDER.Width = 125
         '
         'DataGridViewTextBoxColumn5
         '
@@ -315,8 +332,10 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridViewTextBoxColumn5.Frozen = True
         Me.DataGridViewTextBoxColumn5.HeaderText = "CUSTCODEITEM"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        Me.DataGridViewTextBoxColumn5.Width = 125
         '
         'DataGridViewTextBoxColumn6
         '
@@ -325,6 +344,7 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridViewTextBoxColumn6.Frozen = True
         Me.DataGridViewTextBoxColumn6.HeaderText = "DESCRIPTION"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.ReadOnly = True
         Me.DataGridViewTextBoxColumn6.Width = 350
@@ -337,9 +357,10 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle7
         Me.DataGridViewTextBoxColumn7.Frozen = True
         Me.DataGridViewTextBoxColumn7.HeaderText = "SALES_PRICE"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
-        Me.DataGridViewTextBoxColumn7.Width = 104
+        Me.DataGridViewTextBoxColumn7.Width = 126
         '
         'DataGridViewTextBoxColumn8
         '
@@ -349,9 +370,10 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle8
         Me.DataGridViewTextBoxColumn8.Frozen = True
         Me.DataGridViewTextBoxColumn8.HeaderText = "UNIT_SALE"
+        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         Me.DataGridViewTextBoxColumn8.ReadOnly = True
-        Me.DataGridViewTextBoxColumn8.Width = 91
+        Me.DataGridViewTextBoxColumn8.Width = 109
         '
         'DataGridViewTextBoxColumn9
         '
@@ -361,9 +383,10 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle9
         Me.DataGridViewTextBoxColumn9.Frozen = True
         Me.DataGridViewTextBoxColumn9.HeaderText = "INVENTORYCLASSID"
+        Me.DataGridViewTextBoxColumn9.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         Me.DataGridViewTextBoxColumn9.ReadOnly = True
-        Me.DataGridViewTextBoxColumn9.Width = 140
+        Me.DataGridViewTextBoxColumn9.Width = 171
         '
         'DataGridViewTextBoxColumn10
         '
@@ -373,9 +396,10 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle10
         Me.DataGridViewTextBoxColumn10.Frozen = True
         Me.DataGridViewTextBoxColumn10.HeaderText = "CONTRACTED_QTY"
+        Me.DataGridViewTextBoxColumn10.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         Me.DataGridViewTextBoxColumn10.ReadOnly = True
-        Me.DataGridViewTextBoxColumn10.Width = 134
+        Me.DataGridViewTextBoxColumn10.Width = 165
         '
         'DataGridViewTextBoxColumn11
         '
@@ -385,9 +409,10 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn11.DefaultCellStyle = DataGridViewCellStyle11
         Me.DataGridViewTextBoxColumn11.Frozen = True
         Me.DataGridViewTextBoxColumn11.HeaderText = "ISHEADER"
+        Me.DataGridViewTextBoxColumn11.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         Me.DataGridViewTextBoxColumn11.ReadOnly = True
-        Me.DataGridViewTextBoxColumn11.Width = 87
+        Me.DataGridViewTextBoxColumn11.Width = 105
         '
         'DataGridViewTextBoxColumn12
         '
@@ -397,9 +422,10 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn12.DefaultCellStyle = DataGridViewCellStyle12
         Me.DataGridViewTextBoxColumn12.Frozen = True
         Me.DataGridViewTextBoxColumn12.HeaderText = "EXIBITONREPORT"
+        Me.DataGridViewTextBoxColumn12.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         Me.DataGridViewTextBoxColumn12.ReadOnly = True
-        Me.DataGridViewTextBoxColumn12.Width = 127
+        Me.DataGridViewTextBoxColumn12.Width = 154
         '
         'DataGridViewTextBoxColumn13
         '
@@ -409,17 +435,20 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn13.DefaultCellStyle = DataGridViewCellStyle13
         Me.DataGridViewTextBoxColumn13.Frozen = True
         Me.DataGridViewTextBoxColumn13.HeaderText = "SHOWCUSTITEMREPORT"
+        Me.DataGridViewTextBoxColumn13.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
         Me.DataGridViewTextBoxColumn13.ReadOnly = True
-        Me.DataGridViewTextBoxColumn13.Width = 166
+        Me.DataGridViewTextBoxColumn13.Width = 204
         '
         'ACTIVE
         '
         Me.ACTIVE.DataPropertyName = "ACTIVE"
         Me.ACTIVE.Frozen = True
         Me.ACTIVE.HeaderText = "ACTIVE"
+        Me.ACTIVE.MinimumWidth = 6
         Me.ACTIVE.Name = "ACTIVE"
         Me.ACTIVE.ReadOnly = True
+        Me.ACTIVE.Width = 125
         '
         'PRICEBASE
         '
@@ -428,8 +457,10 @@ Partial Class frmDataImp
         Me.PRICEBASE.DefaultCellStyle = DataGridViewCellStyle14
         Me.PRICEBASE.Frozen = True
         Me.PRICEBASE.HeaderText = "PRICEBASE"
+        Me.PRICEBASE.MinimumWidth = 6
         Me.PRICEBASE.Name = "PRICEBASE"
         Me.PRICEBASE.ReadOnly = True
+        Me.PRICEBASE.Width = 125
         '
         'PRICEUTILITY
         '
@@ -438,8 +469,10 @@ Partial Class frmDataImp
         Me.PRICEUTILITY.DefaultCellStyle = DataGridViewCellStyle15
         Me.PRICEUTILITY.Frozen = True
         Me.PRICEUTILITY.HeaderText = "PRICEUTILITY"
+        Me.PRICEUTILITY.MinimumWidth = 6
         Me.PRICEUTILITY.Name = "PRICEUTILITY"
         Me.PRICEUTILITY.ReadOnly = True
+        Me.PRICEUTILITY.Width = 125
         '
         'IMP_CONTRACTPRICELISTBindingSource
         '
@@ -455,10 +488,11 @@ Partial Class frmDataImp
         '
         Me.tabEquipment.BackColor = System.Drawing.SystemColors.Control
         Me.tabEquipment.Controls.Add(Me.dgvImpEquipment)
-        Me.tabEquipment.Location = New System.Drawing.Point(4, 22)
+        Me.tabEquipment.Location = New System.Drawing.Point(4, 25)
+        Me.tabEquipment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabEquipment.Name = "tabEquipment"
-        Me.tabEquipment.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabEquipment.Size = New System.Drawing.Size(1118, 562)
+        Me.tabEquipment.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabEquipment.Size = New System.Drawing.Size(1493, 695)
         Me.tabEquipment.TabIndex = 1
         Me.tabEquipment.Text = "EQUIPMENT"
         '
@@ -472,11 +506,12 @@ Partial Class frmDataImp
         Me.dgvImpEquipment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvImpEquipment.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22})
         Me.dgvImpEquipment.DataSource = Me.IMP_EQUIPMENTBindingSource
-        Me.dgvImpEquipment.Location = New System.Drawing.Point(0, 3)
+        Me.dgvImpEquipment.Location = New System.Drawing.Point(0, 4)
+        Me.dgvImpEquipment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvImpEquipment.Name = "dgvImpEquipment"
         Me.dgvImpEquipment.ReadOnly = True
         Me.dgvImpEquipment.RowHeadersWidth = 10
-        Me.dgvImpEquipment.Size = New System.Drawing.Size(1109, 553)
+        Me.dgvImpEquipment.Size = New System.Drawing.Size(1479, 681)
         Me.dgvImpEquipment.TabIndex = 0
         '
         'DataGridViewTextBoxColumn15
@@ -485,9 +520,11 @@ Partial Class frmDataImp
         DataGridViewCellStyle16.BackColor = System.Drawing.Color.Gainsboro
         Me.DataGridViewTextBoxColumn15.DefaultCellStyle = DataGridViewCellStyle16
         Me.DataGridViewTextBoxColumn15.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn15.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
         Me.DataGridViewTextBoxColumn15.ReadOnly = True
         Me.DataGridViewTextBoxColumn15.Visible = False
+        Me.DataGridViewTextBoxColumn15.Width = 125
         '
         'DataGridViewTextBoxColumn16
         '
@@ -495,6 +532,7 @@ Partial Class frmDataImp
         DataGridViewCellStyle17.BackColor = System.Drawing.Color.Gainsboro
         Me.DataGridViewTextBoxColumn16.DefaultCellStyle = DataGridViewCellStyle17
         Me.DataGridViewTextBoxColumn16.HeaderText = "IMPORT STATUS"
+        Me.DataGridViewTextBoxColumn16.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
         Me.DataGridViewTextBoxColumn16.ReadOnly = True
         Me.DataGridViewTextBoxColumn16.Width = 200
@@ -504,14 +542,16 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn17.DataPropertyName = "EQUIPMENTID"
         Me.DataGridViewTextBoxColumn17.HeaderText = "EQUIPMENTID"
+        Me.DataGridViewTextBoxColumn17.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
         Me.DataGridViewTextBoxColumn17.ReadOnly = True
-        Me.DataGridViewTextBoxColumn17.Width = 107
+        Me.DataGridViewTextBoxColumn17.Width = 129
         '
         'DataGridViewTextBoxColumn18
         '
         Me.DataGridViewTextBoxColumn18.DataPropertyName = "DESCRIPTION"
         Me.DataGridViewTextBoxColumn18.HeaderText = "DESCRIPTION"
+        Me.DataGridViewTextBoxColumn18.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
         Me.DataGridViewTextBoxColumn18.ReadOnly = True
         Me.DataGridViewTextBoxColumn18.Width = 250
@@ -521,32 +561,36 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn19.DataPropertyName = "MODEL"
         Me.DataGridViewTextBoxColumn19.HeaderText = "MODEL"
+        Me.DataGridViewTextBoxColumn19.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
         Me.DataGridViewTextBoxColumn19.ReadOnly = True
-        Me.DataGridViewTextBoxColumn19.Width = 70
+        Me.DataGridViewTextBoxColumn19.Width = 83
         '
         'DataGridViewTextBoxColumn20
         '
         Me.DataGridViewTextBoxColumn20.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn20.DataPropertyName = "SERIAL"
         Me.DataGridViewTextBoxColumn20.HeaderText = "SERIAL"
+        Me.DataGridViewTextBoxColumn20.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
         Me.DataGridViewTextBoxColumn20.ReadOnly = True
-        Me.DataGridViewTextBoxColumn20.Width = 70
+        Me.DataGridViewTextBoxColumn20.Width = 83
         '
         'DataGridViewTextBoxColumn21
         '
         Me.DataGridViewTextBoxColumn21.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn21.DataPropertyName = "TAG"
         Me.DataGridViewTextBoxColumn21.HeaderText = "TAG"
+        Me.DataGridViewTextBoxColumn21.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
         Me.DataGridViewTextBoxColumn21.ReadOnly = True
-        Me.DataGridViewTextBoxColumn21.Width = 54
+        Me.DataGridViewTextBoxColumn21.Width = 64
         '
         'DataGridViewTextBoxColumn22
         '
         Me.DataGridViewTextBoxColumn22.DataPropertyName = "ACTIVE"
         Me.DataGridViewTextBoxColumn22.HeaderText = "ACTIVE"
+        Me.DataGridViewTextBoxColumn22.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
         Me.DataGridViewTextBoxColumn22.ReadOnly = True
         Me.DataGridViewTextBoxColumn22.Width = 60
@@ -560,10 +604,11 @@ Partial Class frmDataImp
         '
         Me.tabWorker.BackColor = System.Drawing.SystemColors.Control
         Me.tabWorker.Controls.Add(Me.dgvImpWorker)
-        Me.tabWorker.Location = New System.Drawing.Point(4, 22)
+        Me.tabWorker.Location = New System.Drawing.Point(4, 25)
+        Me.tabWorker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabWorker.Name = "tabWorker"
-        Me.tabWorker.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabWorker.Size = New System.Drawing.Size(1118, 562)
+        Me.tabWorker.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabWorker.Size = New System.Drawing.Size(1493, 695)
         Me.tabWorker.TabIndex = 2
         Me.tabWorker.Text = "WORKER"
         '
@@ -577,18 +622,21 @@ Partial Class frmDataImp
         Me.dgvImpWorker.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvImpWorker.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33, Me.DataGridViewTextBoxColumn34, Me.DataGridViewTextBoxColumn35, Me.DataGridViewTextBoxColumn36})
         Me.dgvImpWorker.DataSource = Me.IMP_WORKERBindingSource
-        Me.dgvImpWorker.Location = New System.Drawing.Point(0, 3)
+        Me.dgvImpWorker.Location = New System.Drawing.Point(0, 4)
+        Me.dgvImpWorker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvImpWorker.Name = "dgvImpWorker"
         Me.dgvImpWorker.RowHeadersWidth = 10
-        Me.dgvImpWorker.Size = New System.Drawing.Size(1116, 556)
+        Me.dgvImpWorker.Size = New System.Drawing.Size(1488, 684)
         Me.dgvImpWorker.TabIndex = 0
         '
         'DataGridViewTextBoxColumn23
         '
         Me.DataGridViewTextBoxColumn23.DataPropertyName = "ID"
         Me.DataGridViewTextBoxColumn23.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn23.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
         Me.DataGridViewTextBoxColumn23.Visible = False
+        Me.DataGridViewTextBoxColumn23.Width = 125
         '
         'DataGridViewTextBoxColumn24
         '
@@ -596,6 +644,7 @@ Partial Class frmDataImp
         DataGridViewCellStyle18.BackColor = System.Drawing.Color.Gainsboro
         Me.DataGridViewTextBoxColumn24.DefaultCellStyle = DataGridViewCellStyle18
         Me.DataGridViewTextBoxColumn24.HeaderText = "IMPORT STATUS"
+        Me.DataGridViewTextBoxColumn24.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
         Me.DataGridViewTextBoxColumn24.Width = 200
         '
@@ -604,96 +653,108 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn25.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn25.DataPropertyName = "WORKERID"
         Me.DataGridViewTextBoxColumn25.HeaderText = "WORKERID"
+        Me.DataGridViewTextBoxColumn25.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
-        Me.DataGridViewTextBoxColumn25.Width = 92
+        Me.DataGridViewTextBoxColumn25.Width = 109
         '
         'DataGridViewTextBoxColumn26
         '
         Me.DataGridViewTextBoxColumn26.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn26.DataPropertyName = "NAME1"
         Me.DataGridViewTextBoxColumn26.HeaderText = "NAME1"
+        Me.DataGridViewTextBoxColumn26.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
-        Me.DataGridViewTextBoxColumn26.Width = 69
+        Me.DataGridViewTextBoxColumn26.Width = 82
         '
         'DataGridViewTextBoxColumn27
         '
         Me.DataGridViewTextBoxColumn27.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn27.DataPropertyName = "NAME2"
         Me.DataGridViewTextBoxColumn27.HeaderText = "NAME2"
+        Me.DataGridViewTextBoxColumn27.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
-        Me.DataGridViewTextBoxColumn27.Width = 69
+        Me.DataGridViewTextBoxColumn27.Width = 82
         '
         'DataGridViewTextBoxColumn28
         '
         Me.DataGridViewTextBoxColumn28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn28.DataPropertyName = "SURNAME1"
         Me.DataGridViewTextBoxColumn28.HeaderText = "SURNAME1"
+        Me.DataGridViewTextBoxColumn28.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
-        Me.DataGridViewTextBoxColumn28.Width = 92
+        Me.DataGridViewTextBoxColumn28.Width = 111
         '
         'DataGridViewTextBoxColumn29
         '
         Me.DataGridViewTextBoxColumn29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn29.DataPropertyName = "SURNAME2"
         Me.DataGridViewTextBoxColumn29.HeaderText = "SURNAME2"
+        Me.DataGridViewTextBoxColumn29.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
-        Me.DataGridViewTextBoxColumn29.Width = 92
+        Me.DataGridViewTextBoxColumn29.Width = 111
         '
         'DataGridViewTextBoxColumn30
         '
         Me.DataGridViewTextBoxColumn30.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn30.DataPropertyName = "APPOINTMENT"
         Me.DataGridViewTextBoxColumn30.HeaderText = "APPOINTMENT"
+        Me.DataGridViewTextBoxColumn30.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
-        Me.DataGridViewTextBoxColumn30.Width = 110
+        Me.DataGridViewTextBoxColumn30.Width = 134
         '
         'DataGridViewTextBoxColumn31
         '
         Me.DataGridViewTextBoxColumn31.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn31.DataPropertyName = "SUBACCOUNT"
         Me.DataGridViewTextBoxColumn31.HeaderText = "SUBACCOUNT"
+        Me.DataGridViewTextBoxColumn31.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn31.Name = "DataGridViewTextBoxColumn31"
-        Me.DataGridViewTextBoxColumn31.Width = 106
+        Me.DataGridViewTextBoxColumn31.Width = 130
         '
         'DataGridViewTextBoxColumn32
         '
         Me.DataGridViewTextBoxColumn32.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn32.DataPropertyName = "EMAIL"
         Me.DataGridViewTextBoxColumn32.HeaderText = "EMAIL"
+        Me.DataGridViewTextBoxColumn32.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
-        Me.DataGridViewTextBoxColumn32.Width = 64
+        Me.DataGridViewTextBoxColumn32.Width = 75
         '
         'DataGridViewTextBoxColumn33
         '
         Me.DataGridViewTextBoxColumn33.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn33.DataPropertyName = "BONUSVALUE"
         Me.DataGridViewTextBoxColumn33.HeaderText = "BONUSVALUE"
+        Me.DataGridViewTextBoxColumn33.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
-        Me.DataGridViewTextBoxColumn33.Width = 105
+        Me.DataGridViewTextBoxColumn33.Width = 128
         '
         'DataGridViewTextBoxColumn34
         '
         Me.DataGridViewTextBoxColumn34.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn34.DataPropertyName = "MANHOURVALUE"
         Me.DataGridViewTextBoxColumn34.HeaderText = "MANHOURVALUE"
+        Me.DataGridViewTextBoxColumn34.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn34.Name = "DataGridViewTextBoxColumn34"
-        Me.DataGridViewTextBoxColumn34.Width = 123
+        Me.DataGridViewTextBoxColumn34.Width = 150
         '
         'DataGridViewTextBoxColumn35
         '
         Me.DataGridViewTextBoxColumn35.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn35.DataPropertyName = "PHONE"
         Me.DataGridViewTextBoxColumn35.HeaderText = "PHONE"
+        Me.DataGridViewTextBoxColumn35.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn35.Name = "DataGridViewTextBoxColumn35"
-        Me.DataGridViewTextBoxColumn35.Width = 70
+        Me.DataGridViewTextBoxColumn35.Width = 84
         '
         'DataGridViewTextBoxColumn36
         '
         Me.DataGridViewTextBoxColumn36.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn36.DataPropertyName = "ACTIVE"
         Me.DataGridViewTextBoxColumn36.HeaderText = "ACTIVE"
+        Me.DataGridViewTextBoxColumn36.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn36.Name = "DataGridViewTextBoxColumn36"
-        Me.DataGridViewTextBoxColumn36.Width = 70
+        Me.DataGridViewTextBoxColumn36.Width = 84
         '
         'IMP_WORKERBindingSource
         '
@@ -704,10 +765,11 @@ Partial Class frmDataImp
         '
         Me.tabInvItem.BackColor = System.Drawing.SystemColors.Control
         Me.tabInvItem.Controls.Add(Me.dgvImpInvItem)
-        Me.tabInvItem.Location = New System.Drawing.Point(4, 22)
+        Me.tabInvItem.Location = New System.Drawing.Point(4, 25)
+        Me.tabInvItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabInvItem.Name = "tabInvItem"
-        Me.tabInvItem.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabInvItem.Size = New System.Drawing.Size(1118, 562)
+        Me.tabInvItem.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabInvItem.Size = New System.Drawing.Size(1493, 695)
         Me.tabInvItem.TabIndex = 3
         Me.tabInvItem.Text = "INVENTORY ITEM"
         '
@@ -721,18 +783,21 @@ Partial Class frmDataImp
         Me.dgvImpInvItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvImpInvItem.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn37, Me.DataGridViewTextBoxColumn38, Me.DataGridViewTextBoxColumn39, Me.DataGridViewTextBoxColumn40, Me.DataGridViewTextBoxColumn41, Me.DataGridViewTextBoxColumn42, Me.VENDORID, Me.VENDOR, Me.BRAND, Me.DataGridViewTextBoxColumn43, Me.DataGridViewTextBoxColumn44, Me.DataGridViewTextBoxColumn45, Me.DataGridViewTextBoxColumn46, Me.DataGridViewTextBoxColumn47, Me.DataGridViewTextBoxColumn48, Me.DataGridViewTextBoxColumn49, Me.DataGridViewTextBoxColumn50, Me.DataGridViewTextBoxColumn51, Me.DataGridViewTextBoxColumn52, Me.DataGridViewTextBoxColumn53, Me.DataGridViewTextBoxColumn54, Me.DataGridViewTextBoxColumn55, Me.DataGridViewTextBoxColumn56, Me.DataGridViewTextBoxColumn57, Me.DataGridViewTextBoxColumn58, Me.DataGridViewTextBoxColumn59})
         Me.dgvImpInvItem.DataSource = Me.IMP_INVENTORYITEMBindingSource
-        Me.dgvImpInvItem.Location = New System.Drawing.Point(0, 3)
+        Me.dgvImpInvItem.Location = New System.Drawing.Point(0, 4)
+        Me.dgvImpInvItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvImpInvItem.Name = "dgvImpInvItem"
         Me.dgvImpInvItem.RowHeadersWidth = 10
-        Me.dgvImpInvItem.Size = New System.Drawing.Size(1116, 560)
+        Me.dgvImpInvItem.Size = New System.Drawing.Size(1488, 689)
         Me.dgvImpInvItem.TabIndex = 0
         '
         'DataGridViewTextBoxColumn37
         '
         Me.DataGridViewTextBoxColumn37.DataPropertyName = "ID"
         Me.DataGridViewTextBoxColumn37.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn37.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn37.Name = "DataGridViewTextBoxColumn37"
         Me.DataGridViewTextBoxColumn37.Visible = False
+        Me.DataGridViewTextBoxColumn37.Width = 125
         '
         'DataGridViewTextBoxColumn38
         '
@@ -740,6 +805,7 @@ Partial Class frmDataImp
         DataGridViewCellStyle19.BackColor = System.Drawing.Color.Gainsboro
         Me.DataGridViewTextBoxColumn38.DefaultCellStyle = DataGridViewCellStyle19
         Me.DataGridViewTextBoxColumn38.HeaderText = "IMPORT STATUS"
+        Me.DataGridViewTextBoxColumn38.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn38.Name = "DataGridViewTextBoxColumn38"
         Me.DataGridViewTextBoxColumn38.Width = 200
         '
@@ -748,186 +814,213 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn39.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn39.DataPropertyName = "INVENTORYITEMID"
         Me.DataGridViewTextBoxColumn39.HeaderText = "INVENTORYITEMID"
+        Me.DataGridViewTextBoxColumn39.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn39.Name = "DataGridViewTextBoxColumn39"
-        Me.DataGridViewTextBoxColumn39.Width = 132
+        Me.DataGridViewTextBoxColumn39.Width = 160
         '
         'DataGridViewTextBoxColumn40
         '
         Me.DataGridViewTextBoxColumn40.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn40.DataPropertyName = "ABBREVIATION"
         Me.DataGridViewTextBoxColumn40.HeaderText = "ABBREVIATION"
+        Me.DataGridViewTextBoxColumn40.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn40.Name = "DataGridViewTextBoxColumn40"
-        Me.DataGridViewTextBoxColumn40.Width = 111
+        Me.DataGridViewTextBoxColumn40.Width = 135
         '
         'DataGridViewTextBoxColumn41
         '
         Me.DataGridViewTextBoxColumn41.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn41.DataPropertyName = "DESCRIPTION"
         Me.DataGridViewTextBoxColumn41.HeaderText = "DESCRIPTION"
+        Me.DataGridViewTextBoxColumn41.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn41.Name = "DataGridViewTextBoxColumn41"
-        Me.DataGridViewTextBoxColumn41.Width = 105
+        Me.DataGridViewTextBoxColumn41.Width = 127
         '
         'DataGridViewTextBoxColumn42
         '
         Me.DataGridViewTextBoxColumn42.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn42.DataPropertyName = "INVENTORYCLASSID"
         Me.DataGridViewTextBoxColumn42.HeaderText = "INVENTORYCLASSID"
+        Me.DataGridViewTextBoxColumn42.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn42.Name = "DataGridViewTextBoxColumn42"
-        Me.DataGridViewTextBoxColumn42.Width = 140
+        Me.DataGridViewTextBoxColumn42.Width = 171
         '
         'VENDORID
         '
         Me.VENDORID.DataPropertyName = "VENDORID"
         Me.VENDORID.HeaderText = "VENDORID"
+        Me.VENDORID.MinimumWidth = 6
         Me.VENDORID.Name = "VENDORID"
+        Me.VENDORID.Width = 125
         '
         'VENDOR
         '
         Me.VENDOR.DataPropertyName = "VENDORNAME"
         Me.VENDOR.HeaderText = "VENDORNAME"
+        Me.VENDOR.MinimumWidth = 6
         Me.VENDOR.Name = "VENDOR"
+        Me.VENDOR.Width = 125
         '
         'BRAND
         '
         Me.BRAND.DataPropertyName = "BRAND"
         Me.BRAND.HeaderText = "BRAND"
+        Me.BRAND.MinimumWidth = 6
         Me.BRAND.Name = "BRAND"
+        Me.BRAND.Width = 125
         '
         'DataGridViewTextBoxColumn43
         '
         Me.DataGridViewTextBoxColumn43.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn43.DataPropertyName = "LASTCOST"
         Me.DataGridViewTextBoxColumn43.HeaderText = "LASTCOST"
+        Me.DataGridViewTextBoxColumn43.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn43.Name = "DataGridViewTextBoxColumn43"
-        Me.DataGridViewTextBoxColumn43.Width = 88
+        Me.DataGridViewTextBoxColumn43.Width = 107
         '
         'DataGridViewTextBoxColumn44
         '
         Me.DataGridViewTextBoxColumn44.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn44.DataPropertyName = "AVERAGECOST"
         Me.DataGridViewTextBoxColumn44.HeaderText = "AVERAGECOST"
+        Me.DataGridViewTextBoxColumn44.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn44.Name = "DataGridViewTextBoxColumn44"
-        Me.DataGridViewTextBoxColumn44.Width = 112
+        Me.DataGridViewTextBoxColumn44.Width = 138
         '
         'DataGridViewTextBoxColumn45
         '
         Me.DataGridViewTextBoxColumn45.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn45.DataPropertyName = "LISTPRICE"
         Me.DataGridViewTextBoxColumn45.HeaderText = "LISTPRICE"
+        Me.DataGridViewTextBoxColumn45.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn45.Name = "DataGridViewTextBoxColumn45"
-        Me.DataGridViewTextBoxColumn45.Width = 87
+        Me.DataGridViewTextBoxColumn45.Width = 104
         '
         'DataGridViewTextBoxColumn46
         '
         Me.DataGridViewTextBoxColumn46.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn46.DataPropertyName = "DEFAULTSITEID"
         Me.DataGridViewTextBoxColumn46.HeaderText = "DEFAULTSITEID"
+        Me.DataGridViewTextBoxColumn46.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn46.Name = "DataGridViewTextBoxColumn46"
-        Me.DataGridViewTextBoxColumn46.Width = 116
+        Me.DataGridViewTextBoxColumn46.Width = 141
         '
         'DataGridViewTextBoxColumn47
         '
         Me.DataGridViewTextBoxColumn47.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn47.DataPropertyName = "STORAGEUNIT"
         Me.DataGridViewTextBoxColumn47.HeaderText = "STORAGEUNIT"
+        Me.DataGridViewTextBoxColumn47.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn47.Name = "DataGridViewTextBoxColumn47"
-        Me.DataGridViewTextBoxColumn47.Width = 110
+        Me.DataGridViewTextBoxColumn47.Width = 134
         '
         'DataGridViewTextBoxColumn48
         '
         Me.DataGridViewTextBoxColumn48.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn48.DataPropertyName = "COSTOFGOODSACCOUNT"
         Me.DataGridViewTextBoxColumn48.HeaderText = "COSTOFGOODSACCOUNT"
+        Me.DataGridViewTextBoxColumn48.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn48.Name = "DataGridViewTextBoxColumn48"
-        Me.DataGridViewTextBoxColumn48.Width = 166
+        Me.DataGridViewTextBoxColumn48.Width = 206
         '
         'DataGridViewTextBoxColumn49
         '
         Me.DataGridViewTextBoxColumn49.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn49.DataPropertyName = "COSTOFGOODSSUBACCOUNT"
         Me.DataGridViewTextBoxColumn49.HeaderText = "COSTOFGOODSSUBACCOUNT"
+        Me.DataGridViewTextBoxColumn49.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn49.Name = "DataGridViewTextBoxColumn49"
-        Me.DataGridViewTextBoxColumn49.Width = 188
+        Me.DataGridViewTextBoxColumn49.Width = 234
         '
         'DataGridViewTextBoxColumn50
         '
         Me.DataGridViewTextBoxColumn50.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn50.DataPropertyName = "SALESACCOUNT"
         Me.DataGridViewTextBoxColumn50.HeaderText = "SALESACCOUNT"
+        Me.DataGridViewTextBoxColumn50.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn50.Name = "DataGridViewTextBoxColumn50"
-        Me.DataGridViewTextBoxColumn50.Width = 118
+        Me.DataGridViewTextBoxColumn50.Width = 145
         '
         'DataGridViewTextBoxColumn51
         '
         Me.DataGridViewTextBoxColumn51.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn51.DataPropertyName = "SALESACCOUNTAIU"
         Me.DataGridViewTextBoxColumn51.HeaderText = "SALESACCOUNTAIU"
+        Me.DataGridViewTextBoxColumn51.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn51.Name = "DataGridViewTextBoxColumn51"
-        Me.DataGridViewTextBoxColumn51.Width = 136
+        Me.DataGridViewTextBoxColumn51.Width = 167
         '
         'DataGridViewTextBoxColumn52
         '
         Me.DataGridViewTextBoxColumn52.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn52.DataPropertyName = "SALESACCOUNTUBR"
         Me.DataGridViewTextBoxColumn52.HeaderText = "SALESACCOUNTUBR"
+        Me.DataGridViewTextBoxColumn52.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn52.Name = "DataGridViewTextBoxColumn52"
-        Me.DataGridViewTextBoxColumn52.Width = 141
+        Me.DataGridViewTextBoxColumn52.Width = 174
         '
         'DataGridViewTextBoxColumn53
         '
         Me.DataGridViewTextBoxColumn53.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn53.DataPropertyName = "SALESACCOUNTUBRAIU"
         Me.DataGridViewTextBoxColumn53.HeaderText = "SALESACCOUNTUBRAIU"
+        Me.DataGridViewTextBoxColumn53.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn53.Name = "DataGridViewTextBoxColumn53"
-        Me.DataGridViewTextBoxColumn53.Width = 159
+        Me.DataGridViewTextBoxColumn53.Width = 196
         '
         'DataGridViewTextBoxColumn54
         '
         Me.DataGridViewTextBoxColumn54.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn54.DataPropertyName = "SALESSUBACCOUNT"
         Me.DataGridViewTextBoxColumn54.HeaderText = "SALESSUBACCOUNT"
+        Me.DataGridViewTextBoxColumn54.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn54.Name = "DataGridViewTextBoxColumn54"
-        Me.DataGridViewTextBoxColumn54.Width = 140
+        Me.DataGridViewTextBoxColumn54.Width = 173
         '
         'DataGridViewTextBoxColumn55
         '
         Me.DataGridViewTextBoxColumn55.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn55.DataPropertyName = "INVENTORYACCOUNT"
         Me.DataGridViewTextBoxColumn55.HeaderText = "INVENTORYACCOUNT"
+        Me.DataGridViewTextBoxColumn55.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn55.Name = "DataGridViewTextBoxColumn55"
-        Me.DataGridViewTextBoxColumn55.Width = 147
+        Me.DataGridViewTextBoxColumn55.Width = 181
         '
         'DataGridViewTextBoxColumn56
         '
         Me.DataGridViewTextBoxColumn56.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn56.DataPropertyName = "INVENTORYSUBACCOUNT"
         Me.DataGridViewTextBoxColumn56.HeaderText = "INVENTORYSUBACCOUNT"
+        Me.DataGridViewTextBoxColumn56.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn56.Name = "DataGridViewTextBoxColumn56"
-        Me.DataGridViewTextBoxColumn56.Width = 169
+        Me.DataGridViewTextBoxColumn56.Width = 209
         '
         'DataGridViewTextBoxColumn57
         '
         Me.DataGridViewTextBoxColumn57.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn57.DataPropertyName = "MINONHAND"
         Me.DataGridViewTextBoxColumn57.HeaderText = "MINONHAND"
+        Me.DataGridViewTextBoxColumn57.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn57.Name = "DataGridViewTextBoxColumn57"
-        Me.DataGridViewTextBoxColumn57.Width = 99
+        Me.DataGridViewTextBoxColumn57.Width = 119
         '
         'DataGridViewTextBoxColumn58
         '
         Me.DataGridViewTextBoxColumn58.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn58.DataPropertyName = "MAXONHAND"
         Me.DataGridViewTextBoxColumn58.HeaderText = "MAXONHAND"
+        Me.DataGridViewTextBoxColumn58.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn58.Name = "DataGridViewTextBoxColumn58"
-        Me.DataGridViewTextBoxColumn58.Width = 102
+        Me.DataGridViewTextBoxColumn58.Width = 123
         '
         'DataGridViewTextBoxColumn59
         '
         Me.DataGridViewTextBoxColumn59.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn59.DataPropertyName = "ACTIVE"
         Me.DataGridViewTextBoxColumn59.HeaderText = "ACTIVE"
+        Me.DataGridViewTextBoxColumn59.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn59.Name = "DataGridViewTextBoxColumn59"
-        Me.DataGridViewTextBoxColumn59.Width = 70
+        Me.DataGridViewTextBoxColumn59.Width = 84
         '
         'IMP_INVENTORYITEMBindingSource
         '
@@ -938,10 +1031,11 @@ Partial Class frmDataImp
         '
         Me.tabWell.BackColor = System.Drawing.SystemColors.Control
         Me.tabWell.Controls.Add(Me.dgvImpWell)
-        Me.tabWell.Location = New System.Drawing.Point(4, 22)
+        Me.tabWell.Location = New System.Drawing.Point(4, 25)
+        Me.tabWell.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabWell.Name = "tabWell"
-        Me.tabWell.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabWell.Size = New System.Drawing.Size(1118, 562)
+        Me.tabWell.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabWell.Size = New System.Drawing.Size(1493, 695)
         Me.tabWell.TabIndex = 4
         Me.tabWell.Text = "WELL"
         '
@@ -955,18 +1049,21 @@ Partial Class frmDataImp
         Me.dgvImpWell.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvImpWell.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn60, Me.DataGridViewTextBoxColumn61, Me.DataGridViewTextBoxColumn62, Me.DataGridViewTextBoxColumn63, Me.DataGridViewTextBoxColumn64, Me.DataGridViewTextBoxColumn65, Me.DataGridViewTextBoxColumn66, Me.DataGridViewTextBoxColumn67, Me.DataGridViewTextBoxColumn68, Me.DataGridViewTextBoxColumn69, Me.RIGID})
         Me.dgvImpWell.DataSource = Me.IMP_WELLBindingSource
-        Me.dgvImpWell.Location = New System.Drawing.Point(0, 3)
+        Me.dgvImpWell.Location = New System.Drawing.Point(0, 4)
+        Me.dgvImpWell.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvImpWell.Name = "dgvImpWell"
         Me.dgvImpWell.RowHeadersWidth = 10
-        Me.dgvImpWell.Size = New System.Drawing.Size(1116, 560)
+        Me.dgvImpWell.Size = New System.Drawing.Size(1488, 689)
         Me.dgvImpWell.TabIndex = 0
         '
         'DataGridViewTextBoxColumn60
         '
         Me.DataGridViewTextBoxColumn60.DataPropertyName = "ID"
         Me.DataGridViewTextBoxColumn60.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn60.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn60.Name = "DataGridViewTextBoxColumn60"
         Me.DataGridViewTextBoxColumn60.Visible = False
+        Me.DataGridViewTextBoxColumn60.Width = 125
         '
         'DataGridViewTextBoxColumn61
         '
@@ -974,6 +1071,7 @@ Partial Class frmDataImp
         DataGridViewCellStyle20.BackColor = System.Drawing.Color.Gainsboro
         Me.DataGridViewTextBoxColumn61.DefaultCellStyle = DataGridViewCellStyle20
         Me.DataGridViewTextBoxColumn61.HeaderText = "IMPORT STATUS"
+        Me.DataGridViewTextBoxColumn61.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn61.Name = "DataGridViewTextBoxColumn61"
         Me.DataGridViewTextBoxColumn61.Width = 200
         '
@@ -982,70 +1080,80 @@ Partial Class frmDataImp
         Me.DataGridViewTextBoxColumn62.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn62.DataPropertyName = "WELLID"
         Me.DataGridViewTextBoxColumn62.HeaderText = "WELLID"
+        Me.DataGridViewTextBoxColumn62.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn62.Name = "DataGridViewTextBoxColumn62"
-        Me.DataGridViewTextBoxColumn62.Width = 73
+        Me.DataGridViewTextBoxColumn62.Width = 85
         '
         'DataGridViewTextBoxColumn63
         '
         Me.DataGridViewTextBoxColumn63.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn63.DataPropertyName = "NAME"
         Me.DataGridViewTextBoxColumn63.HeaderText = "NAME"
+        Me.DataGridViewTextBoxColumn63.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn63.Name = "DataGridViewTextBoxColumn63"
-        Me.DataGridViewTextBoxColumn63.Width = 63
+        Me.DataGridViewTextBoxColumn63.Width = 75
         '
         'DataGridViewTextBoxColumn64
         '
         Me.DataGridViewTextBoxColumn64.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn64.DataPropertyName = "PETRFIELDID"
         Me.DataGridViewTextBoxColumn64.HeaderText = "PETRFIELDID"
+        Me.DataGridViewTextBoxColumn64.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn64.Name = "DataGridViewTextBoxColumn64"
-        Me.DataGridViewTextBoxColumn64.Width = 102
+        Me.DataGridViewTextBoxColumn64.Width = 123
         '
         'DataGridViewTextBoxColumn65
         '
         Me.DataGridViewTextBoxColumn65.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn65.DataPropertyName = "COUNTRY"
         Me.DataGridViewTextBoxColumn65.HeaderText = "COUNTRY"
+        Me.DataGridViewTextBoxColumn65.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn65.Name = "DataGridViewTextBoxColumn65"
-        Me.DataGridViewTextBoxColumn65.Width = 85
+        Me.DataGridViewTextBoxColumn65.Width = 103
         '
         'DataGridViewTextBoxColumn66
         '
         Me.DataGridViewTextBoxColumn66.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn66.DataPropertyName = "STATE"
         Me.DataGridViewTextBoxColumn66.HeaderText = "STATE"
+        Me.DataGridViewTextBoxColumn66.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn66.Name = "DataGridViewTextBoxColumn66"
-        Me.DataGridViewTextBoxColumn66.Width = 67
+        Me.DataGridViewTextBoxColumn66.Width = 81
         '
         'DataGridViewTextBoxColumn67
         '
         Me.DataGridViewTextBoxColumn67.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn67.DataPropertyName = "CITY"
         Me.DataGridViewTextBoxColumn67.HeaderText = "CITY"
+        Me.DataGridViewTextBoxColumn67.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn67.Name = "DataGridViewTextBoxColumn67"
-        Me.DataGridViewTextBoxColumn67.Width = 56
+        Me.DataGridViewTextBoxColumn67.Width = 66
         '
         'DataGridViewTextBoxColumn68
         '
         Me.DataGridViewTextBoxColumn68.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn68.DataPropertyName = "SITEID"
         Me.DataGridViewTextBoxColumn68.HeaderText = "SITEID"
+        Me.DataGridViewTextBoxColumn68.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn68.Name = "DataGridViewTextBoxColumn68"
-        Me.DataGridViewTextBoxColumn68.Width = 67
+        Me.DataGridViewTextBoxColumn68.Width = 79
         '
         'DataGridViewTextBoxColumn69
         '
         Me.DataGridViewTextBoxColumn69.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn69.DataPropertyName = "ACTIVE"
         Me.DataGridViewTextBoxColumn69.HeaderText = "ACTIVE"
+        Me.DataGridViewTextBoxColumn69.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn69.Name = "DataGridViewTextBoxColumn69"
-        Me.DataGridViewTextBoxColumn69.Width = 70
+        Me.DataGridViewTextBoxColumn69.Width = 84
         '
         'RIGID
         '
         Me.RIGID.DataPropertyName = "RIGID"
         Me.RIGID.HeaderText = "RIGID"
+        Me.RIGID.MinimumWidth = 6
         Me.RIGID.Name = "RIGID"
+        Me.RIGID.Width = 125
         '
         'IMP_WELLBindingSource
         '
@@ -1058,9 +1166,11 @@ Partial Class frmDataImp
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.btnImportData)
         Me.GroupBox1.Controls.Add(Me.btnOpenFile)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 1)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 1)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(674, 43)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(899, 53)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         '
@@ -1068,35 +1178,39 @@ Partial Class frmDataImp
         '
         Me.txtFilePath.BackColor = System.Drawing.Color.White
         Me.txtFilePath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtFilePath.Location = New System.Drawing.Point(38, 15)
+        Me.txtFilePath.Location = New System.Drawing.Point(51, 18)
+        Me.txtFilePath.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFilePath.Name = "txtFilePath"
         Me.txtFilePath.ReadOnly = True
-        Me.txtFilePath.Size = New System.Drawing.Size(456, 20)
+        Me.txtFilePath.Size = New System.Drawing.Size(607, 22)
         Me.txtFilePath.TabIndex = 9
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 17)
+        Me.Label1.Location = New System.Drawing.Point(8, 21)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(26, 13)
+        Me.Label1.Size = New System.Drawing.Size(32, 16)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "File:"
         '
         'btnImportData
         '
-        Me.btnImportData.Location = New System.Drawing.Point(581, 13)
+        Me.btnImportData.Location = New System.Drawing.Point(775, 16)
+        Me.btnImportData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnImportData.Name = "btnImportData"
-        Me.btnImportData.Size = New System.Drawing.Size(75, 23)
+        Me.btnImportData.Size = New System.Drawing.Size(100, 28)
         Me.btnImportData.TabIndex = 7
         Me.btnImportData.Text = "Import Data"
         Me.btnImportData.UseVisualStyleBackColor = True
         '
         'btnOpenFile
         '
-        Me.btnOpenFile.Location = New System.Drawing.Point(500, 13)
+        Me.btnOpenFile.Location = New System.Drawing.Point(667, 16)
+        Me.btnOpenFile.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnOpenFile.Name = "btnOpenFile"
-        Me.btnOpenFile.Size = New System.Drawing.Size(75, 23)
+        Me.btnOpenFile.Size = New System.Drawing.Size(100, 28)
         Me.btnOpenFile.TabIndex = 5
         Me.btnOpenFile.Text = "Open File"
         Me.btnOpenFile.UseVisualStyleBackColor = True
@@ -1160,18 +1274,20 @@ Partial Class frmDataImp
         '
         'frmDataImp
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(1137, 644)
+        Me.ClientSize = New System.Drawing.Size(1516, 793)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmDataImp"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Data Import Tool"
+        Me.Text = "INNTicket - Data Import Tool"
         Me.TabControl1.ResumeLayout(False)
         Me.tabContrPrice.ResumeLayout(False)
         Me.tabContrPrice.PerformLayout()

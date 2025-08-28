@@ -23,6 +23,7 @@ Partial Class frmDataExpLayout
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDataExpLayout))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.optExpDataNo = New System.Windows.Forms.RadioButton()
         Me.optExpDataYes = New System.Windows.Forms.RadioButton()
@@ -55,9 +56,11 @@ Partial Class frmDataExpLayout
         '
         Me.GroupBox1.Controls.Add(Me.optExpDataNo)
         Me.GroupBox1.Controls.Add(Me.optExpDataYes)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(138, 39)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(184, 48)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Export Data"
@@ -65,9 +68,10 @@ Partial Class frmDataExpLayout
         'optExpDataNo
         '
         Me.optExpDataNo.AutoSize = True
-        Me.optExpDataNo.Location = New System.Drawing.Point(87, 16)
+        Me.optExpDataNo.Location = New System.Drawing.Point(116, 20)
+        Me.optExpDataNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.optExpDataNo.Name = "optExpDataNo"
-        Me.optExpDataNo.Size = New System.Drawing.Size(39, 17)
+        Me.optExpDataNo.Size = New System.Drawing.Size(46, 20)
         Me.optExpDataNo.TabIndex = 1
         Me.optExpDataNo.Text = "No"
         Me.optExpDataNo.UseVisualStyleBackColor = True
@@ -76,9 +80,10 @@ Partial Class frmDataExpLayout
         '
         Me.optExpDataYes.AutoSize = True
         Me.optExpDataYes.Checked = True
-        Me.optExpDataYes.Location = New System.Drawing.Point(27, 16)
+        Me.optExpDataYes.Location = New System.Drawing.Point(36, 20)
+        Me.optExpDataYes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.optExpDataYes.Name = "optExpDataYes"
-        Me.optExpDataYes.Size = New System.Drawing.Size(43, 17)
+        Me.optExpDataYes.Size = New System.Drawing.Size(52, 20)
         Me.optExpDataYes.TabIndex = 0
         Me.optExpDataYes.TabStop = True
         Me.optExpDataYes.Text = "Yes"
@@ -88,9 +93,11 @@ Partial Class frmDataExpLayout
         '
         Me.grpExpInacLine.Controls.Add(Me.optExpInacLineNo)
         Me.grpExpInacLine.Controls.Add(Me.optExpInacLineYes)
-        Me.grpExpInacLine.Location = New System.Drawing.Point(156, 12)
+        Me.grpExpInacLine.Location = New System.Drawing.Point(208, 15)
+        Me.grpExpInacLine.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpExpInacLine.Name = "grpExpInacLine"
-        Me.grpExpInacLine.Size = New System.Drawing.Size(135, 39)
+        Me.grpExpInacLine.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpExpInacLine.Size = New System.Drawing.Size(180, 48)
         Me.grpExpInacLine.TabIndex = 2
         Me.grpExpInacLine.TabStop = False
         Me.grpExpInacLine.Text = "Export Inactive Lines"
@@ -99,9 +106,10 @@ Partial Class frmDataExpLayout
         '
         Me.optExpInacLineNo.AutoSize = True
         Me.optExpInacLineNo.Checked = True
-        Me.optExpInacLineNo.Location = New System.Drawing.Point(81, 16)
+        Me.optExpInacLineNo.Location = New System.Drawing.Point(108, 20)
+        Me.optExpInacLineNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.optExpInacLineNo.Name = "optExpInacLineNo"
-        Me.optExpInacLineNo.Size = New System.Drawing.Size(39, 17)
+        Me.optExpInacLineNo.Size = New System.Drawing.Size(46, 20)
         Me.optExpInacLineNo.TabIndex = 3
         Me.optExpInacLineNo.TabStop = True
         Me.optExpInacLineNo.Text = "No"
@@ -110,9 +118,10 @@ Partial Class frmDataExpLayout
         'optExpInacLineYes
         '
         Me.optExpInacLineYes.AutoSize = True
-        Me.optExpInacLineYes.Location = New System.Drawing.Point(20, 16)
+        Me.optExpInacLineYes.Location = New System.Drawing.Point(27, 20)
+        Me.optExpInacLineYes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.optExpInacLineYes.Name = "optExpInacLineYes"
-        Me.optExpInacLineYes.Size = New System.Drawing.Size(43, 17)
+        Me.optExpInacLineYes.Size = New System.Drawing.Size(52, 20)
         Me.optExpInacLineYes.TabIndex = 2
         Me.optExpInacLineYes.Text = "Yes"
         Me.optExpInacLineYes.UseVisualStyleBackColor = True
@@ -120,10 +129,11 @@ Partial Class frmDataExpLayout
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.tabContrPrice)
-        Me.TabControl1.Location = New System.Drawing.Point(12, 57)
+        Me.TabControl1.Location = New System.Drawing.Point(16, 70)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(366, 104)
+        Me.TabControl1.Size = New System.Drawing.Size(488, 128)
         Me.TabControl1.TabIndex = 3
         '
         'tabContrPrice
@@ -133,28 +143,31 @@ Partial Class frmDataExpLayout
         Me.tabContrPrice.Controls.Add(Me.Label1)
         Me.tabContrPrice.Controls.Add(Me.cbxCustomer)
         Me.tabContrPrice.Controls.Add(Me.cbxContract)
-        Me.tabContrPrice.Location = New System.Drawing.Point(4, 22)
+        Me.tabContrPrice.Location = New System.Drawing.Point(4, 25)
+        Me.tabContrPrice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tabContrPrice.Name = "tabContrPrice"
-        Me.tabContrPrice.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabContrPrice.Size = New System.Drawing.Size(358, 78)
+        Me.tabContrPrice.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tabContrPrice.Size = New System.Drawing.Size(480, 99)
         Me.tabContrPrice.TabIndex = 0
         Me.tabContrPrice.Text = "CONTRACT PRICE LIST"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 42)
+        Me.Label2.Location = New System.Drawing.Point(12, 52)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(50, 13)
+        Me.Label2.Size = New System.Drawing.Size(59, 16)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Contract:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 15)
+        Me.Label1.Location = New System.Drawing.Point(12, 18)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Customer:"
         '
@@ -163,9 +176,10 @@ Partial Class frmDataExpLayout
         Me.cbxCustomer.DataSource = Me.CUSTOMERBindingSource
         Me.cbxCustomer.DisplayMember = "NAME"
         Me.cbxCustomer.FormattingEnabled = True
-        Me.cbxCustomer.Location = New System.Drawing.Point(69, 12)
+        Me.cbxCustomer.Location = New System.Drawing.Point(92, 15)
+        Me.cbxCustomer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCustomer.Name = "cbxCustomer"
-        Me.cbxCustomer.Size = New System.Drawing.Size(283, 21)
+        Me.cbxCustomer.Size = New System.Drawing.Size(376, 24)
         Me.cbxCustomer.TabIndex = 1
         Me.cbxCustomer.ValueMember = "CUSTOMERID"
         '
@@ -184,9 +198,10 @@ Partial Class frmDataExpLayout
         Me.cbxContract.DataSource = Me.CONTRACTBindingSource
         Me.cbxContract.DisplayMember = "CONTRACTNUMBER"
         Me.cbxContract.FormattingEnabled = True
-        Me.cbxContract.Location = New System.Drawing.Point(69, 39)
+        Me.cbxContract.Location = New System.Drawing.Point(92, 48)
+        Me.cbxContract.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxContract.Name = "cbxContract"
-        Me.cbxContract.Size = New System.Drawing.Size(283, 21)
+        Me.cbxContract.Size = New System.Drawing.Size(376, 24)
         Me.cbxContract.TabIndex = 0
         Me.cbxContract.ValueMember = "CONTRACTID"
         '
@@ -197,9 +212,10 @@ Partial Class frmDataExpLayout
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(297, 16)
+        Me.Button1.Location = New System.Drawing.Point(396, 20)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(81, 35)
+        Me.Button1.Size = New System.Drawing.Size(108, 43)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Export Layout"
         Me.Button1.UseVisualStyleBackColor = True
@@ -219,20 +235,22 @@ Partial Class frmDataExpLayout
         '
         'frmDataExpLayout
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(385, 167)
+        Me.ClientSize = New System.Drawing.Size(513, 206)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.grpExpInacLine)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmDataExpLayout"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Export Data Layout Tool"
+        Me.Text = "INNTicket - Export Data Layout Tool"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.grpExpInacLine.ResumeLayout(False)

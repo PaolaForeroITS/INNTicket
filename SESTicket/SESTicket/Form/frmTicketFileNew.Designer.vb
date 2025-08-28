@@ -22,6 +22,7 @@ Partial Class frmTicketFileNew
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketFileNew))
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -76,7 +77,7 @@ Partial Class frmTicketFileNew
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(7, 82)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(56, 13)
+        Me.Label2.Size = New System.Drawing.Size(71, 16)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Comments"
         '
@@ -96,7 +97,7 @@ Partial Class frmTicketFileNew
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(7, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(26, 13)
+        Me.Label1.Size = New System.Drawing.Size(32, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "File:"
         '
@@ -109,6 +110,7 @@ Partial Class frmTicketFileNew
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnSave)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmTicketFileNew"

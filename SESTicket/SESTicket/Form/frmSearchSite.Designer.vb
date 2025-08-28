@@ -43,9 +43,10 @@ Partial Class frmSearchSite
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(1, 6)
+        Me.Label3.Location = New System.Drawing.Point(1, 7)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(177, 13)
+        Me.Label3.Size = New System.Drawing.Size(222, 17)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Double click to select the line"
         '
@@ -60,27 +61,31 @@ Partial Class frmSearchSite
         Me.dgvSite.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSite.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colSiteAlias, Me.colName, Me.colSiteId})
         Me.dgvSite.DataSource = Me.SITESBindingSource
-        Me.dgvSite.Location = New System.Drawing.Point(4, 21)
-        Me.dgvSite.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgvSite.Location = New System.Drawing.Point(5, 26)
+        Me.dgvSite.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgvSite.MultiSelect = False
         Me.dgvSite.Name = "dgvSite"
         Me.dgvSite.ReadOnly = True
+        Me.dgvSite.RowHeadersWidth = 51
         Me.dgvSite.RowTemplate.Height = 28
         Me.dgvSite.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvSite.Size = New System.Drawing.Size(497, 345)
+        Me.dgvSite.Size = New System.Drawing.Size(663, 425)
         Me.dgvSite.TabIndex = 15
         '
         'colSiteAlias
         '
         Me.colSiteAlias.DataPropertyName = "ALIAS"
         Me.colSiteAlias.HeaderText = "Site"
+        Me.colSiteAlias.MinimumWidth = 6
         Me.colSiteAlias.Name = "colSiteAlias"
         Me.colSiteAlias.ReadOnly = True
+        Me.colSiteAlias.Width = 125
         '
         'colName
         '
         Me.colName.DataPropertyName = "NAME"
         Me.colName.HeaderText = "Name"
+        Me.colName.MinimumWidth = 6
         Me.colName.Name = "colName"
         Me.colName.ReadOnly = True
         Me.colName.Width = 320
@@ -89,9 +94,11 @@ Partial Class frmSearchSite
         '
         Me.colSiteId.DataPropertyName = "SITEID"
         Me.colSiteId.HeaderText = "SITEID"
+        Me.colSiteId.MinimumWidth = 6
         Me.colSiteId.Name = "colSiteId"
         Me.colSiteId.ReadOnly = True
         Me.colSiteId.Visible = False
+        Me.colSiteId.Width = 125
         '
         'SITESBindingSource
         '
@@ -135,6 +142,7 @@ Partial Class frmSearchSite
         Me.TableAdapterManager.TICKETOPEREPTableAdapter = Nothing
         Me.TableAdapterManager.TICKETTableAdapter = Nothing
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
+        Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
@@ -143,14 +151,14 @@ Partial Class frmSearchSite
         '
         'frmSearchSite
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(504, 369)
+        Me.ClientSize = New System.Drawing.Size(672, 454)
         Me.Controls.Add(Me.dgvSite)
         Me.Controls.Add(Me.Label3)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSearchSite"

@@ -39,9 +39,10 @@ Partial Class frmChangeTicketClosedDate
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 16)
+        Me.Label1.Location = New System.Drawing.Point(12, 20)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 13)
+        Me.Label1.Size = New System.Drawing.Size(0, 16)
         Me.Label1.TabIndex = 0
         '
         'GroupBox1
@@ -51,9 +52,11 @@ Partial Class frmChangeTicketClosedDate
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.lstTickets)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(8, 45)
+        Me.GroupBox1.Location = New System.Drawing.Point(11, 55)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(354, 239)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(472, 294)
         Me.GroupBox1.TabIndex = 42
         Me.GroupBox1.TabStop = False
         '
@@ -61,45 +64,51 @@ Partial Class frmChangeTicketClosedDate
         '
         Me.dtpTicketClosedDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpTicketClosedDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpTicketClosedDate.Location = New System.Drawing.Point(138, 16)
+        Me.dtpTicketClosedDate.Location = New System.Drawing.Point(184, 20)
+        Me.dtpTicketClosedDate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpTicketClosedDate.Name = "dtpTicketClosedDate"
-        Me.dtpTicketClosedDate.Size = New System.Drawing.Size(96, 20)
+        Me.dtpTicketClosedDate.Size = New System.Drawing.Size(127, 22)
         Me.dtpTicketClosedDate.TabIndex = 6
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 16)
+        Me.Label2.Location = New System.Drawing.Point(8, 20)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(126, 13)
+        Me.Label2.Size = New System.Drawing.Size(155, 16)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "New Ticket Closed Date:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 45)
+        Me.Label3.Location = New System.Drawing.Point(8, 55)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(85, 13)
+        Me.Label3.Size = New System.Drawing.Size(103, 16)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Tickets Affected"
         '
         'lstTickets
         '
         Me.lstTickets.FormattingEnabled = True
-        Me.lstTickets.Location = New System.Drawing.Point(9, 61)
+        Me.lstTickets.ItemHeight = 16
+        Me.lstTickets.Location = New System.Drawing.Point(12, 75)
+        Me.lstTickets.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lstTickets.Name = "lstTickets"
-        Me.lstTickets.Size = New System.Drawing.Size(339, 173)
+        Me.lstTickets.Size = New System.Drawing.Size(451, 212)
         Me.lstTickets.TabIndex = 3
         '
         'MenuStrip1
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuChangeDate, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(366, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(488, 52)
         Me.MenuStrip1.TabIndex = 43
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -107,29 +116,30 @@ Partial Class frmChangeTicketClosedDate
         '
         Me.mnuChangeDate.Image = CType(resources.GetObject("mnuChangeDate.Image"), System.Drawing.Image)
         Me.mnuChangeDate.Name = "mnuChangeDate"
-        Me.mnuChangeDate.Size = New System.Drawing.Size(103, 38)
+        Me.mnuChangeDate.Size = New System.Drawing.Size(129, 48)
         Me.mnuChangeDate.Text = "Change Date"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'frmChangeTicketClosedDate
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(366, 290)
+        Me.ClientSize = New System.Drawing.Size(488, 357)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmChangeTicketClosedDate"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Change Ticket Closed Date"
+        Me.Text = "INNTicket - Change Ticket Closed Date"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)

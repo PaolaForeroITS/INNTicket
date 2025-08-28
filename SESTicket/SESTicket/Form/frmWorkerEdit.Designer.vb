@@ -22,6 +22,7 @@ Partial Class frmWorkerEdit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmWorkerEdit))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cbxActive = New System.Windows.Forms.ComboBox()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -80,9 +81,11 @@ Partial Class frmWorkerEdit
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.lblBonus)
         Me.GroupBox1.Controls.Add(Me.lblManHour)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 1)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 1)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(433, 274)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(577, 337)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
@@ -91,9 +94,10 @@ Partial Class frmWorkerEdit
         Me.cbxActive.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cbxActive.FormattingEnabled = True
         Me.cbxActive.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cbxActive.Location = New System.Drawing.Point(295, 17)
+        Me.cbxActive.Location = New System.Drawing.Point(393, 21)
+        Me.cbxActive.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxActive.Name = "cbxActive"
-        Me.cbxActive.Size = New System.Drawing.Size(51, 21)
+        Me.cbxActive.Size = New System.Drawing.Size(67, 24)
         Me.cbxActive.TabIndex = 42
         Me.cbxActive.Text = "YES"
         '
@@ -101,105 +105,119 @@ Partial Class frmWorkerEdit
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(249, 20)
+        Me.Label18.Location = New System.Drawing.Point(332, 25)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(40, 13)
+        Me.Label18.Size = New System.Drawing.Size(47, 16)
         Me.Label18.TabIndex = 41
         Me.Label18.Text = "Active:"
         '
         'txtPhone
         '
-        Me.txtPhone.Location = New System.Drawing.Point(101, 203)
+        Me.txtPhone.Location = New System.Drawing.Point(135, 250)
+        Me.txtPhone.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(245, 20)
+        Me.txtPhone.Size = New System.Drawing.Size(325, 22)
         Me.txtPhone.TabIndex = 21
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(13, 206)
+        Me.Label12.Location = New System.Drawing.Point(17, 254)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(41, 13)
+        Me.Label12.Size = New System.Drawing.Size(49, 16)
         Me.Label12.TabIndex = 20
         Me.Label12.Text = "Phone:"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(232, 22)
+        Me.Label11.Location = New System.Drawing.Point(309, 27)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(0, 13)
+        Me.Label11.Size = New System.Drawing.Size(0, 16)
         Me.Label11.TabIndex = 19
         '
         'txtWorkerID
         '
-        Me.txtWorkerID.Location = New System.Drawing.Point(101, 19)
+        Me.txtWorkerID.Location = New System.Drawing.Point(135, 23)
+        Me.txtWorkerID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtWorkerID.Name = "txtWorkerID"
-        Me.txtWorkerID.Size = New System.Drawing.Size(119, 20)
+        Me.txtWorkerID.Size = New System.Drawing.Size(157, 22)
         Me.txtWorkerID.TabIndex = 1
         '
         'txtName1
         '
-        Me.txtName1.Location = New System.Drawing.Point(101, 41)
+        Me.txtName1.Location = New System.Drawing.Point(135, 50)
+        Me.txtName1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtName1.Name = "txtName1"
-        Me.txtName1.Size = New System.Drawing.Size(245, 20)
+        Me.txtName1.Size = New System.Drawing.Size(325, 22)
         Me.txtName1.TabIndex = 3
         '
         'txtAppointment
         '
-        Me.txtAppointment.Location = New System.Drawing.Point(101, 131)
+        Me.txtAppointment.Location = New System.Drawing.Point(135, 161)
+        Me.txtAppointment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAppointment.Name = "txtAppointment"
-        Me.txtAppointment.Size = New System.Drawing.Size(245, 20)
+        Me.txtAppointment.Size = New System.Drawing.Size(325, 22)
         Me.txtAppointment.TabIndex = 7
         '
         'txtName2
         '
-        Me.txtName2.Location = New System.Drawing.Point(101, 63)
+        Me.txtName2.Location = New System.Drawing.Point(135, 78)
+        Me.txtName2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtName2.Name = "txtName2"
-        Me.txtName2.Size = New System.Drawing.Size(245, 20)
+        Me.txtName2.Size = New System.Drawing.Size(325, 22)
         Me.txtName2.TabIndex = 4
         '
         'txtSurname2
         '
-        Me.txtSurname2.Location = New System.Drawing.Point(101, 109)
+        Me.txtSurname2.Location = New System.Drawing.Point(135, 134)
+        Me.txtSurname2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSurname2.Name = "txtSurname2"
-        Me.txtSurname2.Size = New System.Drawing.Size(245, 20)
+        Me.txtSurname2.Size = New System.Drawing.Size(325, 22)
         Me.txtSurname2.TabIndex = 6
         '
         'txtSurname1
         '
-        Me.txtSurname1.Location = New System.Drawing.Point(101, 86)
+        Me.txtSurname1.Location = New System.Drawing.Point(135, 106)
+        Me.txtSurname1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSurname1.Name = "txtSurname1"
-        Me.txtSurname1.Size = New System.Drawing.Size(245, 20)
+        Me.txtSurname1.Size = New System.Drawing.Size(325, 22)
         Me.txtSurname1.TabIndex = 5
         '
         'txtSubAccount
         '
-        Me.txtSubAccount.Location = New System.Drawing.Point(101, 154)
+        Me.txtSubAccount.Location = New System.Drawing.Point(135, 190)
+        Me.txtSubAccount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSubAccount.Name = "txtSubAccount"
-        Me.txtSubAccount.Size = New System.Drawing.Size(155, 20)
+        Me.txtSubAccount.Size = New System.Drawing.Size(205, 22)
         Me.txtSubAccount.TabIndex = 8
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(101, 177)
+        Me.txtEmail.Location = New System.Drawing.Point(135, 218)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(324, 20)
+        Me.txtEmail.Size = New System.Drawing.Size(431, 22)
         Me.txtEmail.TabIndex = 9
         '
         'txtBonusValue
         '
-        Me.txtBonusValue.Location = New System.Drawing.Point(101, 225)
+        Me.txtBonusValue.Location = New System.Drawing.Point(135, 277)
+        Me.txtBonusValue.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtBonusValue.Name = "txtBonusValue"
-        Me.txtBonusValue.Size = New System.Drawing.Size(112, 20)
+        Me.txtBonusValue.Size = New System.Drawing.Size(148, 22)
         Me.txtBonusValue.TabIndex = 10
         Me.txtBonusValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtManHourValue
         '
-        Me.txtManHourValue.Location = New System.Drawing.Point(101, 248)
+        Me.txtManHourValue.Location = New System.Drawing.Point(135, 305)
+        Me.txtManHourValue.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtManHourValue.Name = "txtManHourValue"
-        Me.txtManHourValue.Size = New System.Drawing.Size(112, 20)
+        Me.txtManHourValue.Size = New System.Drawing.Size(148, 22)
         Me.txtManHourValue.TabIndex = 11
         Me.txtManHourValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -207,9 +225,10 @@ Partial Class frmWorkerEdit
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(12, 22)
+        Me.Label1.Location = New System.Drawing.Point(16, 27)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 13)
+        Me.Label1.Size = New System.Drawing.Size(70, 16)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Worker ID:"
         '
@@ -217,18 +236,20 @@ Partial Class frmWorkerEdit
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(13, 44)
+        Me.Label2.Location = New System.Drawing.Point(17, 54)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.Size = New System.Drawing.Size(54, 16)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Name1:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 66)
+        Me.Label3.Location = New System.Drawing.Point(17, 81)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(44, 13)
+        Me.Label3.Size = New System.Drawing.Size(54, 16)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Name2:"
         '
@@ -236,18 +257,20 @@ Partial Class frmWorkerEdit
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(13, 89)
+        Me.Label4.Location = New System.Drawing.Point(17, 110)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 13)
+        Me.Label4.Size = New System.Drawing.Size(71, 16)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Surname1:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(13, 112)
+        Me.Label5.Location = New System.Drawing.Point(17, 138)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 13)
+        Me.Label5.Size = New System.Drawing.Size(71, 16)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Surname2:"
         '
@@ -255,9 +278,10 @@ Partial Class frmWorkerEdit
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(13, 134)
+        Me.Label6.Location = New System.Drawing.Point(17, 165)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(69, 13)
+        Me.Label6.Size = New System.Drawing.Size(85, 16)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Appointment:"
         '
@@ -265,18 +289,20 @@ Partial Class frmWorkerEdit
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(13, 157)
+        Me.Label7.Location = New System.Drawing.Point(17, 193)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(69, 13)
+        Me.Label7.Size = New System.Drawing.Size(82, 16)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "SubAccount:"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(13, 180)
+        Me.Label8.Location = New System.Drawing.Point(17, 222)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.Size = New System.Drawing.Size(44, 16)
         Me.Label8.TabIndex = 8
         Me.Label8.Text = "Email:"
         '
@@ -284,9 +310,10 @@ Partial Class frmWorkerEdit
         '
         Me.lblBonus.AutoSize = True
         Me.lblBonus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblBonus.Location = New System.Drawing.Point(13, 228)
+        Me.lblBonus.Location = New System.Drawing.Point(17, 281)
+        Me.lblBonus.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBonus.Name = "lblBonus"
-        Me.lblBonus.Size = New System.Drawing.Size(70, 13)
+        Me.lblBonus.Size = New System.Drawing.Size(86, 16)
         Me.lblBonus.TabIndex = 9
         Me.lblBonus.Text = "Bonus Value:"
         '
@@ -294,40 +321,45 @@ Partial Class frmWorkerEdit
         '
         Me.lblManHour.AutoSize = True
         Me.lblManHour.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblManHour.Location = New System.Drawing.Point(13, 251)
+        Me.lblManHour.Location = New System.Drawing.Point(17, 309)
+        Me.lblManHour.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblManHour.Name = "lblManHour"
-        Me.lblManHour.Size = New System.Drawing.Size(87, 13)
+        Me.lblManHour.Size = New System.Drawing.Size(107, 16)
         Me.lblManHour.TabIndex = 10
         Me.lblManHour.Text = "Man-Hour Value:"
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(224, 281)
+        Me.btnExit.Location = New System.Drawing.Point(299, 346)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(90, 24)
+        Me.btnExit.Size = New System.Drawing.Size(120, 30)
         Me.btnExit.TabIndex = 13
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(128, 281)
+        Me.btnSave.Location = New System.Drawing.Point(171, 346)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(90, 25)
+        Me.btnSave.Size = New System.Drawing.Size(120, 31)
         Me.btnSave.TabIndex = 12
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
         '
         'frmWorkerEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(453, 311)
+        Me.ClientSize = New System.Drawing.Size(604, 383)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmWorkerEdit"

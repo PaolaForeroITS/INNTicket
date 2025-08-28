@@ -28,41 +28,44 @@ Partial Class frmRPTExcel
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cbxRepParam = New System.Windows.Forms.ComboBox()
+        Me.REPORTPARAMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
-        Me.REPORTPARAMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.REPORTPARAMTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
-        Me.MenuStrip1.SuspendLayout()
-        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.REPORTPARAMBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'cbxExcelLayout
         '
         Me.cbxExcelLayout.FormattingEnabled = True
         Me.cbxExcelLayout.Items.AddRange(New Object() {"Ecopetrol - Material", "Ecopetrol - Service"})
-        Me.cbxExcelLayout.Location = New System.Drawing.Point(86, 43)
+        Me.cbxExcelLayout.Location = New System.Drawing.Point(115, 53)
+        Me.cbxExcelLayout.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxExcelLayout.Name = "cbxExcelLayout"
-        Me.cbxExcelLayout.Size = New System.Drawing.Size(280, 21)
+        Me.cbxExcelLayout.Size = New System.Drawing.Size(372, 24)
         Me.cbxExcelLayout.TabIndex = 15
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 46)
+        Me.Label1.Location = New System.Drawing.Point(12, 57)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 13)
+        Me.Label1.Size = New System.Drawing.Size(86, 16)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Excel Layout:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(22, 73)
+        Me.Label2.Location = New System.Drawing.Point(29, 90)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 13)
+        Me.Label2.Size = New System.Drawing.Size(73, 16)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Parameter:"
         '
@@ -71,20 +74,32 @@ Partial Class frmRPTExcel
         Me.cbxRepParam.DataSource = Me.REPORTPARAMBindingSource
         Me.cbxRepParam.DisplayMember = "DESCRIP"
         Me.cbxRepParam.FormattingEnabled = True
-        Me.cbxRepParam.Location = New System.Drawing.Point(86, 70)
+        Me.cbxRepParam.Location = New System.Drawing.Point(115, 86)
+        Me.cbxRepParam.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxRepParam.Name = "cbxRepParam"
-        Me.cbxRepParam.Size = New System.Drawing.Size(280, 21)
+        Me.cbxRepParam.Size = New System.Drawing.Size(372, 24)
         Me.cbxRepParam.TabIndex = 16
         Me.cbxRepParam.ValueMember = "REPORTPARAMID"
+        '
+        'REPORTPARAMBindingSource
+        '
+        Me.REPORTPARAMBindingSource.DataMember = "REPORTPARAM"
+        Me.REPORTPARAMBindingSource.DataSource = Me.SESTicketAccessDataSet
+        '
+        'SESTicketAccessDataSet
+        '
+        Me.SESTicketAccessDataSet.DataSetName = "SESTicketAccessDataSet"
+        Me.SESTicketAccessDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.ExcludeSchema
         '
         'MenuStrip1
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSave, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(378, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(504, 52)
         Me.MenuStrip1.TabIndex = 35
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -92,25 +107,15 @@ Partial Class frmRPTExcel
         '
         Me.mnuSave.Image = CType(resources.GetObject("mnuSave.Image"), System.Drawing.Image)
         Me.mnuSave.Name = "mnuSave"
-        Me.mnuSave.Size = New System.Drawing.Size(82, 38)
+        Me.mnuSave.Size = New System.Drawing.Size(103, 48)
         Me.mnuSave.Text = "Generate"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
-        '
-        'SESTicketAccessDataSet
-        '
-        Me.SESTicketAccessDataSet.DataSetName = "SESTicketAccessDataSet"
-        Me.SESTicketAccessDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.ExcludeSchema
-        '
-        'REPORTPARAMBindingSource
-        '
-        Me.REPORTPARAMBindingSource.DataMember = "REPORTPARAM"
-        Me.REPORTPARAMBindingSource.DataSource = Me.SESTicketAccessDataSet
         '
         'REPORTPARAMTableAdapter
         '
@@ -118,25 +123,26 @@ Partial Class frmRPTExcel
         '
         'frmRPTExcel
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(378, 101)
+        Me.ClientSize = New System.Drawing.Size(504, 124)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cbxRepParam)
         Me.Controls.Add(Me.cbxExcelLayout)
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmRPTExcel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Report Excel Tool"
+        Me.Text = "INNTicket - Report Excel Tool"
+        CType(Me.REPORTPARAMBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.REPORTPARAMBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

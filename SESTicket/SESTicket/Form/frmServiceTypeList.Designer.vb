@@ -62,33 +62,39 @@ Partial Class frmServiceTypeList
         Me.dgvServiceType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvServiceType.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colServiceTypeID, Me.colServiceTypeCode, Me.colDescription, Me.colActive})
         Me.dgvServiceType.DataSource = Me.SERVICETYPEBindingSource
-        Me.dgvServiceType.Location = New System.Drawing.Point(0, 45)
+        Me.dgvServiceType.Location = New System.Drawing.Point(0, 55)
+        Me.dgvServiceType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvServiceType.Name = "dgvServiceType"
         Me.dgvServiceType.ReadOnly = True
         Me.dgvServiceType.RowHeadersWidth = 10
         Me.dgvServiceType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvServiceType.Size = New System.Drawing.Size(497, 511)
+        Me.dgvServiceType.Size = New System.Drawing.Size(663, 629)
         Me.dgvServiceType.TabIndex = 1
         '
         'colServiceTypeID
         '
         Me.colServiceTypeID.DataPropertyName = "SERVICETYPEID"
         Me.colServiceTypeID.HeaderText = "ServiceTypeID"
+        Me.colServiceTypeID.MinimumWidth = 6
         Me.colServiceTypeID.Name = "colServiceTypeID"
         Me.colServiceTypeID.ReadOnly = True
         Me.colServiceTypeID.Visible = False
+        Me.colServiceTypeID.Width = 125
         '
         'colServiceTypeCode
         '
         Me.colServiceTypeCode.DataPropertyName = "SERVICETYPECODE"
         Me.colServiceTypeCode.HeaderText = "Code"
+        Me.colServiceTypeCode.MinimumWidth = 6
         Me.colServiceTypeCode.Name = "colServiceTypeCode"
         Me.colServiceTypeCode.ReadOnly = True
+        Me.colServiceTypeCode.Width = 125
         '
         'colDescription
         '
         Me.colDescription.DataPropertyName = "DESCRIPTION"
         Me.colDescription.HeaderText = "Service Type"
+        Me.colDescription.MinimumWidth = 6
         Me.colDescription.Name = "colDescription"
         Me.colDescription.ReadOnly = True
         Me.colDescription.Width = 300
@@ -97,6 +103,7 @@ Partial Class frmServiceTypeList
         '
         Me.colActive.DataPropertyName = "ACTIVE"
         Me.colActive.HeaderText = "Active"
+        Me.colActive.MinimumWidth = 6
         Me.colActive.Name = "colActive"
         Me.colActive.ReadOnly = True
         Me.colActive.Width = 60
@@ -141,10 +148,11 @@ Partial Class frmServiceTypeList
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(503, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(671, 52)
         Me.MenuStrip1.TabIndex = 34
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -152,16 +160,17 @@ Partial Class frmServiceTypeList
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
         Me.mnuNewItem.Text = "New Item"
         Me.mnuNewItem.ToolTipText = "Save the Ticket"
         '
         'chkNo
         '
         Me.chkNo.AutoSize = True
-        Me.chkNo.Location = New System.Drawing.Point(356, 12)
+        Me.chkNo.Location = New System.Drawing.Point(475, 15)
+        Me.chkNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkNo.Name = "chkNo"
-        Me.chkNo.Size = New System.Drawing.Size(40, 17)
+        Me.chkNo.Size = New System.Drawing.Size(47, 20)
         Me.chkNo.TabIndex = 43
         Me.chkNo.Text = "No"
         Me.chkNo.UseVisualStyleBackColor = True
@@ -171,9 +180,10 @@ Partial Class frmServiceTypeList
         Me.chkYes.AutoSize = True
         Me.chkYes.Checked = True
         Me.chkYes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkYes.Location = New System.Drawing.Point(306, 12)
+        Me.chkYes.Location = New System.Drawing.Point(408, 15)
+        Me.chkYes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkYes.Name = "chkYes"
-        Me.chkYes.Size = New System.Drawing.Size(44, 17)
+        Me.chkYes.Size = New System.Drawing.Size(53, 20)
         Me.chkYes.TabIndex = 42
         Me.chkYes.Text = "Yes"
         Me.chkYes.UseVisualStyleBackColor = True
@@ -181,18 +191,19 @@ Partial Class frmServiceTypeList
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(260, 12)
+        Me.Label3.Location = New System.Drawing.Point(347, 15)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.Size = New System.Drawing.Size(47, 16)
         Me.Label3.TabIndex = 41
         Me.Label3.Text = "Active:"
         '
         'frmServiceTypeList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(503, 559)
+        Me.ClientSize = New System.Drawing.Size(671, 688)
         Me.Controls.Add(Me.chkNo)
         Me.Controls.Add(Me.chkYes)
         Me.Controls.Add(Me.Label3)
@@ -200,11 +211,12 @@ Partial Class frmServiceTypeList
         Me.Controls.Add(Me.dgvServiceType)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmServiceTypeList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Service Type"
+        Me.Text = "INNTicket - Service Type"
         CType(Me.SERVICETYPEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvServiceType, System.ComponentModel.ISupportInitialize).EndInit()

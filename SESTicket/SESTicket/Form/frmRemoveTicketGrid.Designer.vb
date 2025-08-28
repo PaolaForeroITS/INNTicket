@@ -35,17 +35,21 @@ Partial Class frmRemoveTicketGrid
         'lstTickets
         '
         Me.lstTickets.FormattingEnabled = True
-        Me.lstTickets.Location = New System.Drawing.Point(6, 19)
+        Me.lstTickets.ItemHeight = 16
+        Me.lstTickets.Location = New System.Drawing.Point(8, 23)
+        Me.lstTickets.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lstTickets.Name = "lstTickets"
-        Me.lstTickets.Size = New System.Drawing.Size(221, 316)
+        Me.lstTickets.Size = New System.Drawing.Size(293, 388)
         Me.lstTickets.TabIndex = 0
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.lstTickets)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 45)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 55)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(233, 341)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(311, 420)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Remove these Tickets from List?"
@@ -54,10 +58,11 @@ Partial Class frmRemoveTicketGrid
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuRemoveTicket, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(252, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(336, 52)
         Me.MenuStrip1.TabIndex = 44
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -65,30 +70,31 @@ Partial Class frmRemoveTicketGrid
         '
         Me.mnuRemoveTicket.Image = CType(resources.GetObject("mnuRemoveTicket.Image"), System.Drawing.Image)
         Me.mnuRemoveTicket.Name = "mnuRemoveTicket"
-        Me.mnuRemoveTicket.Size = New System.Drawing.Size(113, 38)
+        Me.mnuRemoveTicket.Size = New System.Drawing.Size(140, 48)
         Me.mnuRemoveTicket.Text = "Remove Ticket"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'frmRemoveTicketGrid
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(252, 391)
+        Me.ClientSize = New System.Drawing.Size(336, 481)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmRemoveTicketGrid"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Remove Ticket from List"
+        Me.Text = "INNTicket - Remove Ticket from List"
         Me.GroupBox1.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

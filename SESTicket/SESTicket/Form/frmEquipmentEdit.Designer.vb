@@ -22,7 +22,10 @@ Partial Class frmEquipmentEdit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEquipmentEdit))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtUnit = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.cbxActive = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.txtEquipmentID = New System.Windows.Forms.TextBox()
@@ -37,8 +40,6 @@ Partial Class frmEquipmentEdit
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
-        Me.txtUnit = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,20 +59,42 @@ Partial Class frmEquipmentEdit
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(4, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(470, 154)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(627, 190)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'txtUnit
+        '
+        Me.txtUnit.Location = New System.Drawing.Point(111, 153)
+        Me.txtUnit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtUnit.MaxLength = 30
+        Me.txtUnit.Name = "txtUnit"
+        Me.txtUnit.Size = New System.Drawing.Size(112, 22)
+        Me.txtUnit.TabIndex = 42
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(51, 156)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(33, 16)
+        Me.Label6.TabIndex = 41
+        Me.Label6.Text = "Unit:"
         '
         'cbxActive
         '
         Me.cbxActive.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cbxActive.FormattingEnabled = True
         Me.cbxActive.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cbxActive.Location = New System.Drawing.Point(390, 17)
+        Me.cbxActive.Location = New System.Drawing.Point(520, 21)
+        Me.cbxActive.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxActive.Name = "cbxActive"
-        Me.cbxActive.Size = New System.Drawing.Size(71, 21)
+        Me.cbxActive.Size = New System.Drawing.Size(93, 24)
         Me.cbxActive.TabIndex = 40
         Me.cbxActive.Text = "YES"
         '
@@ -79,77 +102,86 @@ Partial Class frmEquipmentEdit
         '
         Me.Label14.AutoSize = True
         Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(344, 20)
+        Me.Label14.Location = New System.Drawing.Point(459, 25)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(40, 13)
+        Me.Label14.Size = New System.Drawing.Size(47, 16)
         Me.Label14.TabIndex = 39
         Me.Label14.Text = "Active:"
         '
         'txtEquipmentID
         '
-        Me.txtEquipmentID.Location = New System.Drawing.Point(83, 17)
+        Me.txtEquipmentID.Location = New System.Drawing.Point(111, 21)
+        Me.txtEquipmentID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtEquipmentID.MaxLength = 30
         Me.txtEquipmentID.Name = "txtEquipmentID"
-        Me.txtEquipmentID.Size = New System.Drawing.Size(142, 20)
+        Me.txtEquipmentID.Size = New System.Drawing.Size(188, 22)
         Me.txtEquipmentID.TabIndex = 1
         '
         'txtSerial
         '
-        Me.txtSerial.Location = New System.Drawing.Point(216, 102)
+        Me.txtSerial.Location = New System.Drawing.Point(288, 126)
+        Me.txtSerial.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSerial.MaxLength = 30
         Me.txtSerial.Name = "txtSerial"
-        Me.txtSerial.Size = New System.Drawing.Size(108, 20)
+        Me.txtSerial.Size = New System.Drawing.Size(143, 22)
         Me.txtSerial.TabIndex = 5
         '
         'txtTag
         '
-        Me.txtTag.Location = New System.Drawing.Point(365, 102)
+        Me.txtTag.Location = New System.Drawing.Point(487, 126)
+        Me.txtTag.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTag.MaxLength = 30
         Me.txtTag.Name = "txtTag"
-        Me.txtTag.Size = New System.Drawing.Size(96, 20)
+        Me.txtTag.Size = New System.Drawing.Size(127, 22)
         Me.txtTag.TabIndex = 6
         '
         'txtDescription
         '
-        Me.txtDescription.Location = New System.Drawing.Point(83, 40)
+        Me.txtDescription.Location = New System.Drawing.Point(111, 49)
+        Me.txtDescription.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDescription.MaxLength = 100
         Me.txtDescription.Multiline = True
         Me.txtDescription.Name = "txtDescription"
-        Me.txtDescription.Size = New System.Drawing.Size(378, 59)
+        Me.txtDescription.Size = New System.Drawing.Size(503, 72)
         Me.txtDescription.TabIndex = 3
         '
         'txtModel
         '
-        Me.txtModel.Location = New System.Drawing.Point(83, 102)
+        Me.txtModel.Location = New System.Drawing.Point(111, 126)
+        Me.txtModel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtModel.MaxLength = 30
         Me.txtModel.Name = "txtModel"
-        Me.txtModel.Size = New System.Drawing.Size(85, 20)
+        Me.txtModel.Size = New System.Drawing.Size(112, 22)
         Me.txtModel.TabIndex = 4
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(330, 105)
+        Me.Label5.Location = New System.Drawing.Point(440, 129)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(29, 13)
+        Me.Label5.Size = New System.Drawing.Size(35, 16)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Tag:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(174, 105)
+        Me.Label4.Location = New System.Drawing.Point(232, 129)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(36, 13)
+        Me.Label4.Size = New System.Drawing.Size(45, 16)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Serial:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(38, 105)
+        Me.Label3.Location = New System.Drawing.Point(51, 129)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.Size = New System.Drawing.Size(48, 16)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Model:"
         '
@@ -157,9 +189,10 @@ Partial Class frmEquipmentEdit
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(16, 40)
+        Me.Label2.Location = New System.Drawing.Point(21, 49)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 13)
+        Me.Label2.Size = New System.Drawing.Size(78, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Description:"
         '
@@ -167,57 +200,45 @@ Partial Class frmEquipmentEdit
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(5, 19)
+        Me.Label1.Location = New System.Drawing.Point(7, 23)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 13)
+        Me.Label1.Size = New System.Drawing.Size(90, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Equipment ID:"
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(239, 162)
+        Me.btnExit.Location = New System.Drawing.Point(319, 199)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(88, 23)
+        Me.btnExit.Size = New System.Drawing.Size(117, 28)
         Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(143, 162)
+        Me.btnSave.Location = New System.Drawing.Point(191, 199)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(90, 23)
+        Me.btnSave.Size = New System.Drawing.Size(120, 28)
         Me.btnSave.TabIndex = 7
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
         '
-        'txtUnit
-        '
-        Me.txtUnit.Location = New System.Drawing.Point(83, 124)
-        Me.txtUnit.MaxLength = 30
-        Me.txtUnit.Name = "txtUnit"
-        Me.txtUnit.Size = New System.Drawing.Size(85, 20)
-        Me.txtUnit.TabIndex = 42
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(38, 127)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(29, 13)
-        Me.Label6.TabIndex = 41
-        Me.Label6.Text = "Unit:"
-        '
         'frmEquipmentEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(479, 189)
+        Me.ClientSize = New System.Drawing.Size(639, 233)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmEquipmentEdit"

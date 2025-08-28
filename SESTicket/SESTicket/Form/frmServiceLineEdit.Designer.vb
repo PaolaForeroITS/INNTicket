@@ -34,18 +34,20 @@ Partial Class frmServiceLineEdit
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(456, 40)
+        Me.btnExit.Location = New System.Drawing.Point(608, 49)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(88, 23)
+        Me.btnExit.Size = New System.Drawing.Size(117, 28)
         Me.btnExit.TabIndex = 17
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(456, 11)
+        Me.btnSave.Location = New System.Drawing.Point(608, 14)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(88, 23)
+        Me.btnSave.Size = New System.Drawing.Size(117, 28)
         Me.btnSave.TabIndex = 16
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
@@ -56,9 +58,11 @@ Partial Class frmServiceLineEdit
         Me.GroupBox1.Controls.Add(Me.Label18)
         Me.GroupBox1.Controls.Add(Me.txtName)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 1)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 1)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(444, 67)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(592, 82)
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
         '
@@ -67,9 +71,10 @@ Partial Class frmServiceLineEdit
         Me.cbxActive.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cbxActive.FormattingEnabled = True
         Me.cbxActive.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cbxActive.Location = New System.Drawing.Point(9, 31)
+        Me.cbxActive.Location = New System.Drawing.Point(12, 38)
+        Me.cbxActive.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxActive.Name = "cbxActive"
-        Me.cbxActive.Size = New System.Drawing.Size(51, 21)
+        Me.cbxActive.Size = New System.Drawing.Size(67, 24)
         Me.cbxActive.TabIndex = 46
         Me.cbxActive.Text = "YES"
         '
@@ -77,45 +82,49 @@ Partial Class frmServiceLineEdit
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(6, 15)
+        Me.Label18.Location = New System.Drawing.Point(8, 18)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(40, 13)
+        Me.Label18.Size = New System.Drawing.Size(47, 16)
         Me.Label18.TabIndex = 45
         Me.Label18.Text = "Active:"
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(66, 31)
+        Me.txtName.Location = New System.Drawing.Point(88, 38)
+        Me.txtName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtName.MaxLength = 100
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(365, 20)
+        Me.txtName.Size = New System.Drawing.Size(485, 22)
         Me.txtName.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(63, 15)
+        Me.Label2.Location = New System.Drawing.Point(84, 18)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 13)
+        Me.Label2.Size = New System.Drawing.Size(84, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Service Line:"
         '
         'frmServiceLineEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(552, 75)
+        Me.ClientSize = New System.Drawing.Size(736, 92)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmServiceLineEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Edit Service Line"
+        Me.Text = "INNTicket - Edit Service Line"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

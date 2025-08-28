@@ -99,6 +99,7 @@ Partial Class frmTicketEquipment
         Me.TableAdapterManager.TICKETOPEREPTableAdapter = Nothing
         Me.TableAdapterManager.TICKETTableAdapter = Nothing
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
+        Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
@@ -118,11 +119,12 @@ Partial Class frmTicketEquipment
         Me.dgvEquip.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.colConsumptionAux, Me.colConsumption, Me.colTicketEquipmentId, Me.DataGridViewTextBoxColumn2})
         Me.dgvEquip.ContextMenuStrip = Me.mnuContextMain
         Me.dgvEquip.DataSource = Me.TICKETEQUIPMENT_VBindingSource
-        Me.dgvEquip.Location = New System.Drawing.Point(12, 55)
+        Me.dgvEquip.Location = New System.Drawing.Point(16, 68)
+        Me.dgvEquip.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvEquip.Name = "dgvEquip"
         Me.dgvEquip.RowHeadersWidth = 12
         Me.dgvEquip.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvEquip.Size = New System.Drawing.Size(1062, 464)
+        Me.dgvEquip.Size = New System.Drawing.Size(1416, 571)
         Me.dgvEquip.TabIndex = 1
         '
         'DataGridViewTextBoxColumn3
@@ -132,9 +134,10 @@ Partial Class frmTicketEquipment
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridViewTextBoxColumn3.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        Me.DataGridViewTextBoxColumn3.Width = 43
+        Me.DataGridViewTextBoxColumn3.Width = 49
         '
         'DataGridViewTextBoxColumn4
         '
@@ -143,6 +146,7 @@ Partial Class frmTicketEquipment
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridViewTextBoxColumn4.HeaderText = "Description"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         Me.DataGridViewTextBoxColumn4.ReadOnly = True
         Me.DataGridViewTextBoxColumn4.Width = 400
@@ -153,8 +157,10 @@ Partial Class frmTicketEquipment
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridViewTextBoxColumn5.HeaderText = "Model"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        Me.DataGridViewTextBoxColumn5.Width = 125
         '
         'DataGridViewTextBoxColumn6
         '
@@ -163,9 +169,10 @@ Partial Class frmTicketEquipment
         DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridViewTextBoxColumn6.HeaderText = "Serial"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        Me.DataGridViewTextBoxColumn6.Width = 58
+        Me.DataGridViewTextBoxColumn6.Width = 71
         '
         'DataGridViewTextBoxColumn7
         '
@@ -174,9 +181,10 @@ Partial Class frmTicketEquipment
         DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridViewTextBoxColumn7.HeaderText = "Tag"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
-        Me.DataGridViewTextBoxColumn7.Width = 51
+        Me.DataGridViewTextBoxColumn7.Width = 61
         '
         'DataGridViewTextBoxColumn8
         '
@@ -185,9 +193,10 @@ Partial Class frmTicketEquipment
         DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridViewTextBoxColumn8.HeaderText = "Unit"
+        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         Me.DataGridViewTextBoxColumn8.ReadOnly = True
-        Me.DataGridViewTextBoxColumn8.Width = 51
+        Me.DataGridViewTextBoxColumn8.Width = 59
         '
         'colConsumptionAux
         '
@@ -197,7 +206,9 @@ Partial Class frmTicketEquipment
         DataGridViewCellStyle7.NullValue = Nothing
         Me.colConsumptionAux.DefaultCellStyle = DataGridViewCellStyle7
         Me.colConsumptionAux.HeaderText = "Value"
+        Me.colConsumptionAux.MinimumWidth = 6
         Me.colConsumptionAux.Name = "colConsumptionAux"
+        Me.colConsumptionAux.Width = 125
         '
         'colConsumption
         '
@@ -207,55 +218,65 @@ Partial Class frmTicketEquipment
         DataGridViewCellStyle8.NullValue = "0"
         Me.colConsumption.DefaultCellStyle = DataGridViewCellStyle8
         Me.colConsumption.HeaderText = "CONSUMPTION"
+        Me.colConsumption.MinimumWidth = 6
         Me.colConsumption.Name = "colConsumption"
         Me.colConsumption.ReadOnly = True
         Me.colConsumption.Visible = False
+        Me.colConsumption.Width = 125
         '
         'colTicketEquipmentId
         '
         Me.colTicketEquipmentId.DataPropertyName = "TICKETEQUIPMENTID"
         Me.colTicketEquipmentId.HeaderText = "TICKETEQUIPMENTID"
+        Me.colTicketEquipmentId.MinimumWidth = 6
         Me.colTicketEquipmentId.Name = "colTicketEquipmentId"
         Me.colTicketEquipmentId.Visible = False
+        Me.colTicketEquipmentId.Width = 125
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "TICKETID"
         Me.DataGridViewTextBoxColumn2.HeaderText = "TICKETID"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.Visible = False
+        Me.DataGridViewTextBoxColumn2.Width = 125
         '
         'mnuContextMain
         '
+        Me.mnuContextMain.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.mnuContextMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuConsDelete})
         Me.mnuContextMain.Name = "mnuContextMain"
-        Me.mnuContextMain.Size = New System.Drawing.Size(108, 26)
+        Me.mnuContextMain.Size = New System.Drawing.Size(127, 30)
         '
         'mnuConsDelete
         '
         Me.mnuConsDelete.Image = CType(resources.GetObject("mnuConsDelete.Image"), System.Drawing.Image)
         Me.mnuConsDelete.Name = "mnuConsDelete"
-        Me.mnuConsDelete.Size = New System.Drawing.Size(107, 22)
+        Me.mnuConsDelete.Size = New System.Drawing.Size(126, 26)
         Me.mnuConsDelete.Text = "Delete"
         '
         'btnAdd
         '
         Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
         Me.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAdd.Location = New System.Drawing.Point(12, 12)
+        Me.btnAdd.Location = New System.Drawing.Point(16, 15)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(80, 28)
+        Me.btnAdd.Size = New System.Drawing.Size(107, 34)
         Me.btnAdd.TabIndex = 13
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
         'frmTicketEquipment
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1079, 523)
+        Me.ClientSize = New System.Drawing.Size(1439, 644)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.dgvEquip)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmTicketEquipment"
         Me.Text = "frmTicketEquipment"
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).EndInit()

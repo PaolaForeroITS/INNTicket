@@ -82,9 +82,11 @@ Partial Class frmWellEdit
         Me.GroupBox3.Controls.Add(Me.cbxCity)
         Me.GroupBox3.Controls.Add(Me.Label5)
         Me.GroupBox3.Controls.Add(Me.cbxCountry)
-        Me.GroupBox3.Location = New System.Drawing.Point(9, 174)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 214)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(355, 126)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(473, 155)
         Me.GroupBox3.TabIndex = 27
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Location"
@@ -93,9 +95,10 @@ Partial Class frmWellEdit
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(17, 22)
+        Me.Label4.Location = New System.Drawing.Point(23, 27)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(28, 13)
+        Me.Label4.Size = New System.Drawing.Size(33, 16)
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "Site:"
         '
@@ -104,9 +107,10 @@ Partial Class frmWellEdit
         Me.cbxSite.DataSource = Me.SITESBindingSource
         Me.cbxSite.DisplayMember = "NAME"
         Me.cbxSite.FormattingEnabled = True
-        Me.cbxSite.Location = New System.Drawing.Point(75, 19)
+        Me.cbxSite.Location = New System.Drawing.Point(100, 23)
+        Me.cbxSite.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxSite.Name = "cbxSite"
-        Me.cbxSite.Size = New System.Drawing.Size(149, 21)
+        Me.cbxSite.Size = New System.Drawing.Size(197, 24)
         Me.cbxSite.TabIndex = 16
         Me.cbxSite.ValueMember = "SITEID"
         '
@@ -125,9 +129,10 @@ Partial Class frmWellEdit
         Me.cbxState.DataSource = Me.STATEBindingSource
         Me.cbxState.DisplayMember = "NAME"
         Me.cbxState.FormattingEnabled = True
-        Me.cbxState.Location = New System.Drawing.Point(75, 69)
+        Me.cbxState.Location = New System.Drawing.Point(100, 85)
+        Me.cbxState.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxState.Name = "cbxState"
-        Me.cbxState.Size = New System.Drawing.Size(149, 21)
+        Me.cbxState.Size = New System.Drawing.Size(197, 24)
         Me.cbxState.TabIndex = 6
         Me.cbxState.ValueMember = "STATEID"
         '
@@ -140,9 +145,10 @@ Partial Class frmWellEdit
         '
         Me.Label11.AutoSize = True
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(17, 72)
+        Me.Label11.Location = New System.Drawing.Point(23, 89)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(35, 13)
+        Me.Label11.Size = New System.Drawing.Size(41, 16)
         Me.Label11.TabIndex = 14
         Me.Label11.Text = "State:"
         '
@@ -150,9 +156,10 @@ Partial Class frmWellEdit
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(17, 96)
+        Me.Label6.Location = New System.Drawing.Point(23, 118)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(27, 13)
+        Me.Label6.Size = New System.Drawing.Size(32, 16)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "City:"
         '
@@ -161,9 +168,10 @@ Partial Class frmWellEdit
         Me.cbxCity.DataSource = Me.CITYBindingSource
         Me.cbxCity.DisplayMember = "NAME"
         Me.cbxCity.FormattingEnabled = True
-        Me.cbxCity.Location = New System.Drawing.Point(75, 93)
+        Me.cbxCity.Location = New System.Drawing.Point(100, 114)
+        Me.cbxCity.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCity.Name = "cbxCity"
-        Me.cbxCity.Size = New System.Drawing.Size(149, 21)
+        Me.cbxCity.Size = New System.Drawing.Size(197, 24)
         Me.cbxCity.TabIndex = 7
         Me.cbxCity.ValueMember = "CITYID"
         '
@@ -176,9 +184,10 @@ Partial Class frmWellEdit
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(17, 50)
+        Me.Label5.Location = New System.Drawing.Point(23, 62)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(46, 13)
+        Me.Label5.Size = New System.Drawing.Size(55, 16)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Country:"
         '
@@ -187,9 +196,10 @@ Partial Class frmWellEdit
         Me.cbxCountry.DataSource = Me.COUNTRYBindingSource
         Me.cbxCountry.DisplayMember = "NAME"
         Me.cbxCountry.FormattingEnabled = True
-        Me.cbxCountry.Location = New System.Drawing.Point(75, 47)
+        Me.cbxCountry.Location = New System.Drawing.Point(100, 58)
+        Me.cbxCountry.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCountry.Name = "cbxCountry"
-        Me.cbxCountry.Size = New System.Drawing.Size(149, 21)
+        Me.cbxCountry.Size = New System.Drawing.Size(197, 24)
         Me.cbxCountry.TabIndex = 5
         Me.cbxCountry.ValueMember = "COUNTRYID"
         '
@@ -210,9 +220,11 @@ Partial Class frmWellEdit
         Me.GroupBox1.Controls.Add(Me.txtName)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(9, 45)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 55)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(355, 123)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(473, 151)
         Me.GroupBox1.TabIndex = 26
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Base Information"
@@ -222,9 +234,10 @@ Partial Class frmWellEdit
         Me.cbxRig.DataSource = Me.RIGBindingSource
         Me.cbxRig.DisplayMember = "RIGID"
         Me.cbxRig.FormattingEnabled = True
-        Me.cbxRig.Location = New System.Drawing.Point(75, 93)
+        Me.cbxRig.Location = New System.Drawing.Point(100, 114)
+        Me.cbxRig.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxRig.Name = "cbxRig"
-        Me.cbxRig.Size = New System.Drawing.Size(149, 21)
+        Me.cbxRig.Size = New System.Drawing.Size(197, 24)
         Me.cbxRig.TabIndex = 46
         Me.cbxRig.ValueMember = "RIGID"
         '
@@ -236,9 +249,10 @@ Partial Class frmWellEdit
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(17, 96)
+        Me.Label3.Location = New System.Drawing.Point(23, 118)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(26, 13)
+        Me.Label3.Size = New System.Drawing.Size(31, 16)
         Me.Label3.TabIndex = 45
         Me.Label3.Text = "Rig:"
         '
@@ -247,9 +261,10 @@ Partial Class frmWellEdit
         Me.cbxActive.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cbxActive.FormattingEnabled = True
         Me.cbxActive.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cbxActive.Location = New System.Drawing.Point(288, 23)
+        Me.cbxActive.Location = New System.Drawing.Point(384, 28)
+        Me.cbxActive.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxActive.Name = "cbxActive"
-        Me.cbxActive.Size = New System.Drawing.Size(51, 21)
+        Me.cbxActive.Size = New System.Drawing.Size(67, 24)
         Me.cbxActive.TabIndex = 44
         Me.cbxActive.Text = "YES"
         '
@@ -257,9 +272,10 @@ Partial Class frmWellEdit
         '
         Me.Label18.AutoSize = True
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(242, 26)
+        Me.Label18.Location = New System.Drawing.Point(323, 32)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(40, 13)
+        Me.Label18.Size = New System.Drawing.Size(47, 16)
         Me.Label18.TabIndex = 43
         Me.Label18.Text = "Active:"
         '
@@ -267,9 +283,10 @@ Partial Class frmWellEdit
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(17, 71)
+        Me.Label7.Location = New System.Drawing.Point(23, 87)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(54, 13)
+        Me.Label7.Size = New System.Drawing.Size(67, 16)
         Me.Label7.TabIndex = 20
         Me.Label7.Text = "Petr Field:"
         '
@@ -278,9 +295,10 @@ Partial Class frmWellEdit
         Me.cbxField.DataSource = Me.PETRFIELDBindingSource
         Me.cbxField.DisplayMember = "DESCRIP"
         Me.cbxField.FormattingEnabled = True
-        Me.cbxField.Location = New System.Drawing.Point(75, 68)
+        Me.cbxField.Location = New System.Drawing.Point(100, 84)
+        Me.cbxField.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxField.Name = "cbxField"
-        Me.cbxField.Size = New System.Drawing.Size(149, 21)
+        Me.cbxField.Size = New System.Drawing.Size(197, 24)
         Me.cbxField.TabIndex = 21
         Me.cbxField.ValueMember = "PETRFIELDID"
         '
@@ -291,27 +309,30 @@ Partial Class frmWellEdit
         '
         'txtWellID
         '
-        Me.txtWellID.Location = New System.Drawing.Point(75, 24)
+        Me.txtWellID.Location = New System.Drawing.Point(100, 30)
+        Me.txtWellID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtWellID.MaxLength = 15
         Me.txtWellID.Name = "txtWellID"
-        Me.txtWellID.Size = New System.Drawing.Size(119, 20)
+        Me.txtWellID.Size = New System.Drawing.Size(157, 22)
         Me.txtWellID.TabIndex = 1
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(75, 46)
+        Me.txtName.Location = New System.Drawing.Point(100, 57)
+        Me.txtName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtName.MaxLength = 50
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(264, 20)
+        Me.txtName.Size = New System.Drawing.Size(351, 22)
         Me.txtName.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(17, 27)
+        Me.Label1.Location = New System.Drawing.Point(23, 33)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 13)
+        Me.Label1.Size = New System.Drawing.Size(53, 16)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Well ID:"
         '
@@ -319,9 +340,10 @@ Partial Class frmWellEdit
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(17, 49)
+        Me.Label2.Location = New System.Drawing.Point(23, 60)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 13)
+        Me.Label2.Size = New System.Drawing.Size(47, 16)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Name:"
         '
@@ -349,10 +371,11 @@ Partial Class frmWellEdit
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSave, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(372, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(496, 52)
         Me.MenuStrip1.TabIndex = 34
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -360,14 +383,14 @@ Partial Class frmWellEdit
         '
         Me.mnuSave.Image = CType(resources.GetObject("mnuSave.Image"), System.Drawing.Image)
         Me.mnuSave.Name = "mnuSave"
-        Me.mnuSave.Size = New System.Drawing.Size(59, 38)
+        Me.mnuSave.Size = New System.Drawing.Size(74, 48)
         Me.mnuSave.Text = "Save"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'RIGTableAdapter
@@ -376,20 +399,21 @@ Partial Class frmWellEdit
         '
         'frmWellEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(372, 308)
+        Me.ClientSize = New System.Drawing.Size(496, 379)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmWellEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTICKET - Well Edit"
+        Me.Text = "INNTICKET - Well Edit"
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         CType(Me.SITESBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

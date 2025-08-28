@@ -58,18 +58,20 @@ Partial Class frmSearchInvItem
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(516, 12)
+        Me.btnSearch.Location = New System.Drawing.Point(688, 15)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(75, 23)
+        Me.btnSearch.Size = New System.Drawing.Size(100, 28)
         Me.btnSearch.TabIndex = 7
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
         'txtSearch
         '
-        Me.txtSearch.Location = New System.Drawing.Point(202, 14)
+        Me.txtSearch.Location = New System.Drawing.Point(269, 17)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(308, 20)
+        Me.txtSearch.Size = New System.Drawing.Size(409, 22)
         Me.txtSearch.TabIndex = 6
         '
         'dgvInvItem
@@ -81,12 +83,13 @@ Partial Class frmSearchInvItem
         Me.dgvInvItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvInvItem.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colInventoryItemId, Me.colAbbrev, Me.colDescription, Me.INVENTORYCLASSID, Me.colStorageUnit, Me.VENDOR, Me.BRAND, Me.LASTCOST, Me.colInventoryClassId})
         Me.dgvInvItem.DataSource = Me.INVENTORYITEMCONTRACTBindingSource
-        Me.dgvInvItem.Location = New System.Drawing.Point(12, 50)
+        Me.dgvInvItem.Location = New System.Drawing.Point(16, 62)
+        Me.dgvInvItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvInvItem.Name = "dgvInvItem"
         Me.dgvInvItem.ReadOnly = True
         Me.dgvInvItem.RowHeadersWidth = 10
         Me.dgvInvItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvInvItem.Size = New System.Drawing.Size(1150, 504)
+        Me.dgvInvItem.Size = New System.Drawing.Size(1533, 620)
         Me.dgvInvItem.TabIndex = 8
         '
         'colInventoryItemId
@@ -94,9 +97,10 @@ Partial Class frmSearchInvItem
         Me.colInventoryItemId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colInventoryItemId.DataPropertyName = "INVENTORYITEMID"
         Me.colInventoryItemId.HeaderText = "Item"
+        Me.colInventoryItemId.MinimumWidth = 6
         Me.colInventoryItemId.Name = "colInventoryItemId"
         Me.colInventoryItemId.ReadOnly = True
-        Me.colInventoryItemId.Width = 52
+        Me.colInventoryItemId.Width = 61
         '
         'colAbbrev
         '
@@ -104,6 +108,7 @@ Partial Class frmSearchInvItem
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.colAbbrev.DefaultCellStyle = DataGridViewCellStyle1
         Me.colAbbrev.HeaderText = "Abbreviation"
+        Me.colAbbrev.MinimumWidth = 6
         Me.colAbbrev.Name = "colAbbrev"
         Me.colAbbrev.ReadOnly = True
         Me.colAbbrev.Width = 160
@@ -114,6 +119,7 @@ Partial Class frmSearchInvItem
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.colDescription.DefaultCellStyle = DataGridViewCellStyle2
         Me.colDescription.HeaderText = "Description"
+        Me.colDescription.MinimumWidth = 6
         Me.colDescription.Name = "colDescription"
         Me.colDescription.ReadOnly = True
         Me.colDescription.Width = 350
@@ -123,9 +129,10 @@ Partial Class frmSearchInvItem
         Me.INVENTORYCLASSID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.INVENTORYCLASSID.DataPropertyName = "INVENTORYCLASSID"
         Me.INVENTORYCLASSID.HeaderText = "Class"
+        Me.INVENTORYCLASSID.MinimumWidth = 6
         Me.INVENTORYCLASSID.Name = "INVENTORYCLASSID"
         Me.INVENTORYCLASSID.ReadOnly = True
-        Me.INVENTORYCLASSID.Width = 57
+        Me.INVENTORYCLASSID.Width = 70
         '
         'colStorageUnit
         '
@@ -133,6 +140,7 @@ Partial Class frmSearchInvItem
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.colStorageUnit.DefaultCellStyle = DataGridViewCellStyle3
         Me.colStorageUnit.HeaderText = "Unit"
+        Me.colStorageUnit.MinimumWidth = 6
         Me.colStorageUnit.Name = "colStorageUnit"
         Me.colStorageUnit.ReadOnly = True
         Me.colStorageUnit.Width = 60
@@ -143,6 +151,7 @@ Partial Class frmSearchInvItem
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.VENDOR.DefaultCellStyle = DataGridViewCellStyle4
         Me.VENDOR.HeaderText = "Vendor"
+        Me.VENDOR.MinimumWidth = 6
         Me.VENDOR.Name = "VENDOR"
         Me.VENDOR.ReadOnly = True
         Me.VENDOR.Width = 120
@@ -153,6 +162,7 @@ Partial Class frmSearchInvItem
         DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.BRAND.DefaultCellStyle = DataGridViewCellStyle5
         Me.BRAND.HeaderText = "Brand"
+        Me.BRAND.MinimumWidth = 6
         Me.BRAND.Name = "BRAND"
         Me.BRAND.ReadOnly = True
         Me.BRAND.Width = 120
@@ -164,16 +174,20 @@ Partial Class frmSearchInvItem
         DataGridViewCellStyle6.Format = "n2"
         Me.LASTCOST.DefaultCellStyle = DataGridViewCellStyle6
         Me.LASTCOST.HeaderText = "Last Cost"
+        Me.LASTCOST.MinimumWidth = 6
         Me.LASTCOST.Name = "LASTCOST"
         Me.LASTCOST.ReadOnly = True
+        Me.LASTCOST.Width = 125
         '
         'colInventoryClassId
         '
         Me.colInventoryClassId.DataPropertyName = "INVENTORYCLASSID"
         Me.colInventoryClassId.HeaderText = "INVENTORYCLASSID"
+        Me.colInventoryClassId.MinimumWidth = 6
         Me.colInventoryClassId.Name = "colInventoryClassId"
         Me.colInventoryClassId.ReadOnly = True
         Me.colInventoryClassId.Visible = False
+        Me.colInventoryClassId.Width = 125
         '
         'INVENTORYITEMCONTRACTBindingSource
         '
@@ -189,26 +203,29 @@ Partial Class frmSearchInvItem
         '
         Me.cbxSearch.FormattingEnabled = True
         Me.cbxSearch.Items.AddRange(New Object() {"Item", "Abbreviation", "Description"})
-        Me.cbxSearch.Location = New System.Drawing.Point(75, 14)
+        Me.cbxSearch.Location = New System.Drawing.Point(100, 17)
+        Me.cbxSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxSearch.Name = "cbxSearch"
-        Me.cbxSearch.Size = New System.Drawing.Size(121, 21)
+        Me.cbxSearch.Size = New System.Drawing.Size(160, 24)
         Me.cbxSearch.TabIndex = 10
         Me.cbxSearch.Text = "Description"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(11, 15)
+        Me.Label1.Location = New System.Drawing.Point(15, 18)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.Size = New System.Drawing.Size(71, 16)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Search by:"
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(597, 12)
+        Me.btnReset.Location = New System.Drawing.Point(796, 15)
+        Me.btnReset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnReset.Size = New System.Drawing.Size(100, 28)
         Me.btnReset.TabIndex = 11
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
@@ -220,9 +237,11 @@ Partial Class frmSearchInvItem
         Me.GroupBox1.Controls.Add(Me.txtSearch)
         Me.GroupBox1.Controls.Add(Me.cbxSearch)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 3)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(696, 41)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(928, 50)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         '
@@ -259,6 +278,7 @@ Partial Class frmSearchInvItem
         Me.TableAdapterManager.TICKETOPEREPTableAdapter = Nothing
         Me.TableAdapterManager.TICKETTableAdapter = Nothing
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
+        Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
@@ -267,14 +287,15 @@ Partial Class frmSearchInvItem
         '
         'frmSearchInvItem
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(1166, 563)
+        Me.ClientSize = New System.Drawing.Size(1555, 693)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.dgvInvItem)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSearchInvItem"

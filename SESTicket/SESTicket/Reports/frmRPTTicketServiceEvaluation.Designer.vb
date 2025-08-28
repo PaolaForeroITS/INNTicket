@@ -25,6 +25,7 @@ Partial Class frmRPTTicketServiceEvaluation
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTTicketServiceEvaluation))
         Me.REPORTHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
         Me.TMP_RPT_TICKETSERVEVALSERVBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -61,8 +62,10 @@ Partial Class frmRPTTicketServiceEvaluation
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "SESTicket.rptTicketServiceEvaluationLetterPortrait.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(1, 1)
+        Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(1149, 598)
+        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        Me.ReportViewer1.Size = New System.Drawing.Size(1531, 736)
         Me.ReportViewer1.TabIndex = 3
         '
         'REPORTHEADER_VTableAdapter
@@ -75,11 +78,13 @@ Partial Class frmRPTTicketServiceEvaluation
         '
         'frmRPTTicketServiceEvaluation
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1151, 600)
+        Me.ClientSize = New System.Drawing.Size(1535, 738)
         Me.Controls.Add(Me.ReportViewer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmRPTTicketServiceEvaluation"

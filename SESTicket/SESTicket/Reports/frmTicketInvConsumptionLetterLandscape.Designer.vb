@@ -23,10 +23,10 @@ Partial Class frmTicketInvConsumptionLetterLandscape
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ReportDataSource5 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Dim ReportDataSource6 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Dim ReportDataSource7 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Dim ReportDataSource8 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource3 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim ReportDataSource4 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketInvConsumptionLetterLandscape))
         Me.REPORTHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
@@ -76,24 +76,25 @@ Partial Class frmTicketInvConsumptionLetterLandscape
         '
         'ReportViewer1
         '
-        ReportDataSource5.Name = "dsHeader"
-        ReportDataSource5.Value = Me.REPORTHEADER_VBindingSource
-        ReportDataSource6.Name = "dsLine"
-        ReportDataSource6.Value = Me.REPORTINVLINE_VBindingSource
-        ReportDataSource7.Name = "dsReportParam"
-        ReportDataSource7.Value = Me.REPORTPARAMBindingSource
-        ReportDataSource8.Name = "dsADIC"
-        ReportDataSource8.Value = Me.TICKETINVADICBindingSource
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource5)
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource6)
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource7)
-        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource8)
+        ReportDataSource1.Name = "dsHeader"
+        ReportDataSource1.Value = Me.REPORTHEADER_VBindingSource
+        ReportDataSource2.Name = "dsLine"
+        ReportDataSource2.Value = Me.REPORTINVLINE_VBindingSource
+        ReportDataSource3.Name = "dsReportParam"
+        ReportDataSource3.Value = Me.REPORTPARAMBindingSource
+        ReportDataSource4.Name = "dsADIC"
+        ReportDataSource4.Value = Me.TICKETINVADICBindingSource
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource3)
+        Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource4)
         Me.ReportViewer1.LocalReport.EnableExternalImages = True
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "SESTicket.rptTicketInvConsumptionLetterLandscape.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(1, 49)
+        Me.ReportViewer1.Location = New System.Drawing.Point(1, 60)
+        Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(1201, 593)
+        Me.ReportViewer1.Size = New System.Drawing.Size(1601, 729)
         Me.ReportViewer1.TabIndex = 3
         '
         'REPORTHEADER_VTableAdapter
@@ -115,9 +116,10 @@ Partial Class frmTicketInvConsumptionLetterLandscape
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(11, 15)
+        Me.Label2.Location = New System.Drawing.Point(15, 18)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 13)
+        Me.Label2.Size = New System.Drawing.Size(73, 16)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Parameter:"
         '
@@ -126,9 +128,10 @@ Partial Class frmTicketInvConsumptionLetterLandscape
         Me.cbxRepParam.DataSource = Me.REPORTPARAMBindingSource1
         Me.cbxRepParam.DisplayMember = "DESCRIP"
         Me.cbxRepParam.FormattingEnabled = True
-        Me.cbxRepParam.Location = New System.Drawing.Point(75, 12)
+        Me.cbxRepParam.Location = New System.Drawing.Point(100, 15)
+        Me.cbxRepParam.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxRepParam.Name = "cbxRepParam"
-        Me.cbxRepParam.Size = New System.Drawing.Size(214, 21)
+        Me.cbxRepParam.Size = New System.Drawing.Size(284, 24)
         Me.cbxRepParam.TabIndex = 10
         Me.cbxRepParam.ValueMember = "REPORTPARAMID"
         '
@@ -139,18 +142,19 @@ Partial Class frmTicketInvConsumptionLetterLandscape
         '
         'frmTicketInvConsumptionLetterLandscape
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1204, 644)
+        Me.ClientSize = New System.Drawing.Size(1605, 793)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cbxRepParam)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmTicketInvConsumptionLetterLandscape"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Inventory Consumption - Ticket: "
+        Me.Text = "INNTicket - Inventory Consumption - Ticket: "
         CType(Me.REPORTHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.REPORTINVLINE_VBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

@@ -37,10 +37,11 @@ Partial Class frmImportTicket
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuImportTicket, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(234, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(312, 52)
         Me.MenuStrip1.TabIndex = 43
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -48,23 +49,25 @@ Partial Class frmImportTicket
         '
         Me.mnuImportTicket.Image = CType(resources.GetObject("mnuImportTicket.Image"), System.Drawing.Image)
         Me.mnuImportTicket.Name = "mnuImportTicket"
-        Me.mnuImportTicket.Size = New System.Drawing.Size(106, 38)
+        Me.mnuImportTicket.Size = New System.Drawing.Size(131, 48)
         Me.mnuImportTicket.Text = "Import Ticket"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.lstTickets)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 45)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 55)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(215, 324)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(287, 399)
         Me.GroupBox1.TabIndex = 44
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tickets to be Imported to Local"
@@ -72,32 +75,36 @@ Partial Class frmImportTicket
         'lstTickets
         '
         Me.lstTickets.FormattingEnabled = True
-        Me.lstTickets.Location = New System.Drawing.Point(12, 19)
+        Me.lstTickets.ItemHeight = 16
+        Me.lstTickets.Location = New System.Drawing.Point(16, 23)
+        Me.lstTickets.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lstTickets.Name = "lstTickets"
-        Me.lstTickets.Size = New System.Drawing.Size(193, 290)
+        Me.lstTickets.Size = New System.Drawing.Size(256, 356)
         Me.lstTickets.TabIndex = 3
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(9, 16)
+        Me.Label5.Location = New System.Drawing.Point(12, 20)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 13)
+        Me.Label5.Size = New System.Drawing.Size(0, 16)
         Me.Label5.TabIndex = 0
         '
         'frmImportTicket
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(234, 375)
+        Me.ClientSize = New System.Drawing.Size(312, 462)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmImportTicket"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Import Ticket"
+        Me.Text = "INNTicket - Import Ticket"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)

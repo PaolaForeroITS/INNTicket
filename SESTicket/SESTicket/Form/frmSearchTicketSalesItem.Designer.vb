@@ -55,53 +55,60 @@ Partial Class frmSearchTicketSalesItem
         Me.GroupBox1.Controls.Add(Me.txtSearch)
         Me.GroupBox1.Controls.Add(Me.cbxSearch)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(7, 3)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(737, 41)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(983, 50)
         Me.GroupBox1.TabIndex = 14
         Me.GroupBox1.TabStop = False
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(516, 12)
+        Me.btnSearch.Location = New System.Drawing.Point(688, 15)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(75, 23)
+        Me.btnSearch.Size = New System.Drawing.Size(100, 28)
         Me.btnSearch.TabIndex = 7
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(597, 12)
+        Me.btnReset.Location = New System.Drawing.Point(796, 15)
+        Me.btnReset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnReset.Size = New System.Drawing.Size(100, 28)
         Me.btnReset.TabIndex = 11
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
         '
         'txtSearch
         '
-        Me.txtSearch.Location = New System.Drawing.Point(202, 14)
+        Me.txtSearch.Location = New System.Drawing.Point(269, 17)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(308, 20)
+        Me.txtSearch.Size = New System.Drawing.Size(409, 22)
         Me.txtSearch.TabIndex = 6
         '
         'cbxSearch
         '
         Me.cbxSearch.FormattingEnabled = True
         Me.cbxSearch.Items.AddRange(New Object() {"Item", "Description"})
-        Me.cbxSearch.Location = New System.Drawing.Point(75, 14)
+        Me.cbxSearch.Location = New System.Drawing.Point(100, 17)
+        Me.cbxSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxSearch.Name = "cbxSearch"
-        Me.cbxSearch.Size = New System.Drawing.Size(121, 21)
+        Me.cbxSearch.Size = New System.Drawing.Size(160, 24)
         Me.cbxSearch.TabIndex = 10
         Me.cbxSearch.Text = "Description"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(11, 15)
+        Me.Label1.Location = New System.Drawing.Point(15, 18)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.Size = New System.Drawing.Size(71, 16)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Search by:"
         '
@@ -127,19 +134,21 @@ Partial Class frmSearchTicketSalesItem
         Me.dgvSalesItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSalesItem.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colType, Me.colTabGroup, Me.colSICustCodeItem, Me.colSIDescription, Me.colSIUnitSale, Me.colSIItemQty, Me.colSITicketSalesItemId})
         Me.dgvSalesItem.DataSource = Me.SALESITEMVBindingSource
-        Me.dgvSalesItem.Location = New System.Drawing.Point(7, 50)
+        Me.dgvSalesItem.Location = New System.Drawing.Point(9, 62)
+        Me.dgvSalesItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvSalesItem.MultiSelect = False
         Me.dgvSalesItem.Name = "dgvSalesItem"
         Me.dgvSalesItem.ReadOnly = True
         Me.dgvSalesItem.RowHeadersWidth = 10
         Me.dgvSalesItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvSalesItem.Size = New System.Drawing.Size(737, 468)
+        Me.dgvSalesItem.Size = New System.Drawing.Size(983, 576)
         Me.dgvSalesItem.TabIndex = 15
         '
         'colType
         '
         Me.colType.DataPropertyName = "TYPE"
         Me.colType.HeaderText = "Type"
+        Me.colType.MinimumWidth = 6
         Me.colType.Name = "colType"
         Me.colType.ReadOnly = True
         Me.colType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
@@ -149,6 +158,7 @@ Partial Class frmSearchTicketSalesItem
         '
         Me.colTabGroup.DataPropertyName = "TABGROUP"
         Me.colTabGroup.HeaderText = "Group"
+        Me.colTabGroup.MinimumWidth = 6
         Me.colTabGroup.Name = "colTabGroup"
         Me.colTabGroup.ReadOnly = True
         Me.colTabGroup.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
@@ -158,6 +168,7 @@ Partial Class frmSearchTicketSalesItem
         '
         Me.colSICustCodeItem.DataPropertyName = "CUSTCODEITEM"
         Me.colSICustCodeItem.HeaderText = "Item"
+        Me.colSICustCodeItem.MinimumWidth = 6
         Me.colSICustCodeItem.Name = "colSICustCodeItem"
         Me.colSICustCodeItem.ReadOnly = True
         Me.colSICustCodeItem.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
@@ -167,6 +178,7 @@ Partial Class frmSearchTicketSalesItem
         '
         Me.colSIDescription.DataPropertyName = "DESCRIPTION"
         Me.colSIDescription.HeaderText = "Description"
+        Me.colSIDescription.MinimumWidth = 6
         Me.colSIDescription.Name = "colSIDescription"
         Me.colSIDescription.ReadOnly = True
         Me.colSIDescription.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
@@ -176,6 +188,7 @@ Partial Class frmSearchTicketSalesItem
         '
         Me.colSIUnitSale.DataPropertyName = "UNIT_SALE"
         Me.colSIUnitSale.HeaderText = "Unit"
+        Me.colSIUnitSale.MinimumWidth = 6
         Me.colSIUnitSale.Name = "colSIUnitSale"
         Me.colSIUnitSale.ReadOnly = True
         Me.colSIUnitSale.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
@@ -189,6 +202,7 @@ Partial Class frmSearchTicketSalesItem
         DataGridViewCellStyle1.NullValue = Nothing
         Me.colSIItemQty.DefaultCellStyle = DataGridViewCellStyle1
         Me.colSIItemQty.HeaderText = "Qty"
+        Me.colSIItemQty.MinimumWidth = 6
         Me.colSIItemQty.Name = "colSIItemQty"
         Me.colSIItemQty.ReadOnly = True
         Me.colSIItemQty.Width = 50
@@ -197,19 +211,22 @@ Partial Class frmSearchTicketSalesItem
         '
         Me.colSITicketSalesItemId.DataPropertyName = "TICKETSALESITEMID"
         Me.colSITicketSalesItemId.HeaderText = "TICKETSALESITEMID"
+        Me.colSITicketSalesItemId.MinimumWidth = 6
         Me.colSITicketSalesItemId.Name = "colSITicketSalesItemId"
         Me.colSITicketSalesItemId.ReadOnly = True
         Me.colSITicketSalesItemId.Visible = False
+        Me.colSITicketSalesItemId.Width = 125
         '
         'frmSearchTicketSalesItem
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(750, 523)
+        Me.ClientSize = New System.Drawing.Size(1000, 644)
         Me.Controls.Add(Me.dgvSalesItem)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSearchTicketSalesItem"

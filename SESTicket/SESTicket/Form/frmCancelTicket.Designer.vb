@@ -39,9 +39,10 @@ Partial Class frmCancelTicket
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 16)
+        Me.Label1.Location = New System.Drawing.Point(12, 20)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 13)
+        Me.Label1.Size = New System.Drawing.Size(0, 16)
         Me.Label1.TabIndex = 0
         '
         'GroupBox1
@@ -51,45 +52,52 @@ Partial Class frmCancelTicket
         Me.GroupBox1.Controls.Add(Me.txtCancelReason)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(7, 40)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 49)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(378, 214)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(504, 263)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(2, 16)
+        Me.Label3.Location = New System.Drawing.Point(3, 20)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(85, 13)
+        Me.Label3.Size = New System.Drawing.Size(103, 16)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Tickets Affected"
         '
         'lstTickets
         '
         Me.lstTickets.FormattingEnabled = True
-        Me.lstTickets.Location = New System.Drawing.Point(5, 32)
+        Me.lstTickets.ItemHeight = 16
+        Me.lstTickets.Location = New System.Drawing.Point(7, 39)
+        Me.lstTickets.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lstTickets.Name = "lstTickets"
-        Me.lstTickets.Size = New System.Drawing.Size(104, 173)
+        Me.lstTickets.Size = New System.Drawing.Size(137, 212)
         Me.lstTickets.TabIndex = 3
         '
         'txtCancelReason
         '
-        Me.txtCancelReason.Location = New System.Drawing.Point(115, 32)
+        Me.txtCancelReason.Location = New System.Drawing.Point(153, 39)
+        Me.txtCancelReason.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCancelReason.MaxLength = 200
         Me.txtCancelReason.Multiline = True
         Me.txtCancelReason.Name = "txtCancelReason"
-        Me.txtCancelReason.Size = New System.Drawing.Size(258, 174)
+        Me.txtCancelReason.Size = New System.Drawing.Size(343, 213)
         Me.txtCancelReason.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(115, 16)
+        Me.Label2.Location = New System.Drawing.Point(153, 20)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(86, 13)
+        Me.Label2.Size = New System.Drawing.Size(106, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Cancel Reason: "
         '
@@ -97,10 +105,11 @@ Partial Class frmCancelTicket
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuCancel, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(391, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(521, 52)
         Me.MenuStrip1.TabIndex = 41
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -108,31 +117,32 @@ Partial Class frmCancelTicket
         '
         Me.mnuCancel.Image = CType(resources.GetObject("mnuCancel.Image"), System.Drawing.Image)
         Me.mnuCancel.Name = "mnuCancel"
-        Me.mnuCancel.Size = New System.Drawing.Size(106, 38)
+        Me.mnuCancel.Size = New System.Drawing.Size(130, 48)
         Me.mnuCancel.Text = "Cancel Ticket"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'frmCancelTicket
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(391, 257)
+        Me.ClientSize = New System.Drawing.Size(521, 316)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmCancelTicket"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Cancel Ticket"
+        Me.Text = "INNTicket - Cancel Ticket"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)

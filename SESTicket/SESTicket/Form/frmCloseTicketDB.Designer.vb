@@ -35,12 +35,12 @@ Partial Class frmCloseTicketDB
         Me.TMP_TICKETCLOSETableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TMP_TICKETCLOSETableAdapter()
         Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
         Me.dgvTicketClose = New System.Windows.Forms.DataGridView()
-        Me.chkTicketNoInventory = New System.Windows.Forms.CheckBox()
         Me.colTicketId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colServiceTicket = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colHasServiceType = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colHasInvItem = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colResult = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.chkTicketNoInventory = New System.Windows.Forms.CheckBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TMP_TICKETCLOSEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,10 +51,11 @@ Partial Class frmCloseTicketDB
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuCloseTicket, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(701, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(935, 52)
         Me.MenuStrip1.TabIndex = 42
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -62,14 +63,14 @@ Partial Class frmCloseTicketDB
         '
         Me.mnuCloseTicket.Image = CType(resources.GetObject("mnuCloseTicket.Image"), System.Drawing.Image)
         Me.mnuCloseTicket.Name = "mnuCloseTicket"
-        Me.mnuCloseTicket.Size = New System.Drawing.Size(99, 38)
+        Me.mnuCloseTicket.Size = New System.Drawing.Size(122, 48)
         Me.mnuCloseTicket.Text = "Close Ticket"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'SESTicketAccessDataSet
@@ -133,37 +134,31 @@ Partial Class frmCloseTicketDB
         Me.dgvTicketClose.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvTicketClose.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colTicketId, Me.colServiceTicket, Me.colHasServiceType, Me.colHasInvItem, Me.colResult})
         Me.dgvTicketClose.DataSource = Me.TMP_TICKETCLOSEBindingSource
-        Me.dgvTicketClose.Location = New System.Drawing.Point(0, 45)
+        Me.dgvTicketClose.Location = New System.Drawing.Point(0, 55)
+        Me.dgvTicketClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvTicketClose.Name = "dgvTicketClose"
         Me.dgvTicketClose.ReadOnly = True
         Me.dgvTicketClose.RowHeadersWidth = 15
-        Me.dgvTicketClose.Size = New System.Drawing.Size(700, 414)
+        Me.dgvTicketClose.Size = New System.Drawing.Size(933, 510)
         Me.dgvTicketClose.TabIndex = 43
-        '
-        'chkTicketNoInventory
-        '
-        Me.chkTicketNoInventory.AutoSize = True
-        Me.chkTicketNoInventory.ForeColor = System.Drawing.Color.Maroon
-        Me.chkTicketNoInventory.Location = New System.Drawing.Point(494, 22)
-        Me.chkTicketNoInventory.Name = "chkTicketNoInventory"
-        Me.chkTicketNoInventory.Size = New System.Drawing.Size(206, 17)
-        Me.chkTicketNoInventory.TabIndex = 44
-        Me.chkTicketNoInventory.Text = "Force Close Tickets with No Inventory"
-        Me.chkTicketNoInventory.UseVisualStyleBackColor = True
         '
         'colTicketId
         '
         Me.colTicketId.DataPropertyName = "TICKETID"
         Me.colTicketId.HeaderText = "Ticket ID"
+        Me.colTicketId.MinimumWidth = 6
         Me.colTicketId.Name = "colTicketId"
         Me.colTicketId.ReadOnly = True
+        Me.colTicketId.Width = 125
         '
         'colServiceTicket
         '
         Me.colServiceTicket.DataPropertyName = "SUPERIORNUM"
         Me.colServiceTicket.HeaderText = "Service Ticket"
+        Me.colServiceTicket.MinimumWidth = 6
         Me.colServiceTicket.Name = "colServiceTicket"
         Me.colServiceTicket.ReadOnly = True
+        Me.colServiceTicket.Width = 125
         '
         'colHasServiceType
         '
@@ -171,6 +166,7 @@ Partial Class frmCloseTicketDB
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.colHasServiceType.DefaultCellStyle = DataGridViewCellStyle1
         Me.colHasServiceType.HeaderText = "Has ServiceType?"
+        Me.colHasServiceType.MinimumWidth = 6
         Me.colHasServiceType.Name = "colHasServiceType"
         Me.colHasServiceType.ReadOnly = True
         Me.colHasServiceType.Width = 80
@@ -181,6 +177,7 @@ Partial Class frmCloseTicketDB
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.colHasInvItem.DefaultCellStyle = DataGridViewCellStyle2
         Me.colHasInvItem.HeaderText = "Has Inventory?"
+        Me.colHasInvItem.MinimumWidth = 6
         Me.colHasInvItem.Name = "colHasInvItem"
         Me.colHasInvItem.ReadOnly = True
         Me.colHasInvItem.Width = 80
@@ -191,25 +188,39 @@ Partial Class frmCloseTicketDB
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.colResult.DefaultCellStyle = DataGridViewCellStyle3
         Me.colResult.HeaderText = "Process Result"
+        Me.colResult.MinimumWidth = 6
         Me.colResult.Name = "colResult"
         Me.colResult.ReadOnly = True
         Me.colResult.Width = 300
         '
+        'chkTicketNoInventory
+        '
+        Me.chkTicketNoInventory.AutoSize = True
+        Me.chkTicketNoInventory.ForeColor = System.Drawing.Color.Maroon
+        Me.chkTicketNoInventory.Location = New System.Drawing.Point(659, 27)
+        Me.chkTicketNoInventory.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkTicketNoInventory.Name = "chkTicketNoInventory"
+        Me.chkTicketNoInventory.Size = New System.Drawing.Size(252, 20)
+        Me.chkTicketNoInventory.TabIndex = 44
+        Me.chkTicketNoInventory.Text = "Force Close Tickets with No Inventory"
+        Me.chkTicketNoInventory.UseVisualStyleBackColor = True
+        '
         'frmCloseTicketDB
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(701, 461)
+        Me.ClientSize = New System.Drawing.Size(935, 567)
         Me.Controls.Add(Me.chkTicketNoInventory)
         Me.Controls.Add(Me.dgvTicketClose)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmCloseTicketDB"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Close Tickets"
+        Me.Text = "INNTicket - Close Tickets"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).EndInit()

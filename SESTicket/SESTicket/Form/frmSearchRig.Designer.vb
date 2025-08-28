@@ -46,9 +46,10 @@ Partial Class frmSearchRig
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(9, 75)
+        Me.Label3.Location = New System.Drawing.Point(12, 92)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(177, 13)
+        Me.Label3.Size = New System.Drawing.Size(222, 17)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Double click to select the line"
         '
@@ -57,34 +58,39 @@ Partial Class frmSearchRig
         Me.GroupBox1.Controls.Add(Me.btnSearch)
         Me.GroupBox1.Controls.Add(Me.txtSearch)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(366, 50)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(488, 62)
         Me.GroupBox1.TabIndex = 14
         Me.GroupBox1.TabStop = False
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(268, 14)
+        Me.btnSearch.Location = New System.Drawing.Point(357, 17)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(74, 23)
+        Me.btnSearch.Size = New System.Drawing.Size(99, 28)
         Me.btnSearch.TabIndex = 4
         Me.btnSearch.Text = "Ok"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
         'txtSearch
         '
-        Me.txtSearch.Location = New System.Drawing.Point(63, 16)
+        Me.txtSearch.Location = New System.Drawing.Point(84, 20)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(189, 20)
+        Me.txtSearch.Size = New System.Drawing.Size(251, 22)
         Me.txtSearch.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 19)
+        Me.Label1.Location = New System.Drawing.Point(17, 23)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(53, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Search:"
         '
@@ -130,6 +136,7 @@ Partial Class frmSearchRig
         Me.TableAdapterManager.TICKETOPEREPTableAdapter = Nothing
         Me.TableAdapterManager.TICKETTableAdapter = Nothing
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
+        Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
@@ -146,32 +153,35 @@ Partial Class frmSearchRig
         Me.dgvRig.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvRig.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colRigId})
         Me.dgvRig.DataSource = Me.RIGBindingSource
-        Me.dgvRig.Location = New System.Drawing.Point(10, 91)
+        Me.dgvRig.Location = New System.Drawing.Point(13, 112)
+        Me.dgvRig.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvRig.Name = "dgvRig"
         Me.dgvRig.ReadOnly = True
         Me.dgvRig.RowHeadersWidth = 15
         Me.dgvRig.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvRig.Size = New System.Drawing.Size(368, 411)
+        Me.dgvRig.Size = New System.Drawing.Size(491, 506)
         Me.dgvRig.TabIndex = 16
         '
         'colRigId
         '
         Me.colRigId.DataPropertyName = "RIGID"
         Me.colRigId.HeaderText = "Rig"
+        Me.colRigId.MinimumWidth = 6
         Me.colRigId.Name = "colRigId"
         Me.colRigId.ReadOnly = True
         Me.colRigId.Width = 310
         '
         'frmSearchRig
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(386, 507)
+        Me.ClientSize = New System.Drawing.Size(515, 624)
         Me.Controls.Add(Me.dgvRig)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSearchRig"

@@ -32,19 +32,21 @@ Partial Class frmSyncTicket
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(370, 10)
+        Me.btnClose.Location = New System.Drawing.Point(493, 12)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(75, 23)
+        Me.btnClose.Size = New System.Drawing.Size(100, 28)
         Me.btnClose.TabIndex = 8
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
         '
         'txtLog
         '
-        Me.txtLog.Location = New System.Drawing.Point(12, 39)
+        Me.txtLog.Location = New System.Drawing.Point(16, 48)
+        Me.txtLog.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtLog.Multiline = True
         Me.txtLog.Name = "txtLog"
-        Me.txtLog.Size = New System.Drawing.Size(433, 332)
+        Me.txtLog.Size = New System.Drawing.Size(576, 408)
         Me.txtLog.TabIndex = 7
         '
         'Label1
@@ -52,9 +54,10 @@ Partial Class frmSyncTicket
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(50, 7)
+        Me.Label1.Location = New System.Drawing.Point(67, 9)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(305, 26)
+        Me.Label1.Size = New System.Drawing.Size(405, 34)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Synchronizing Tickets. Please Wait." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Attention: Do not close this window until th" &
     "e process is finished."
@@ -62,7 +65,8 @@ Partial Class frmSyncTicket
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 3)
+        Me.PictureBox1.Location = New System.Drawing.Point(16, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -71,21 +75,22 @@ Partial Class frmSyncTicket
         '
         'frmSyncTicket
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(457, 383)
+        Me.ClientSize = New System.Drawing.Size(609, 471)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.txtLog)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSyncTicket"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Ticket Sync"
+        Me.Text = "INNTicket - Ticket Sync"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

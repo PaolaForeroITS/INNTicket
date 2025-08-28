@@ -23,23 +23,12 @@ Partial Class frmContractList
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmContractList))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.CONTRACTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
         Me.dgvContract = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.cbxCustomer = New System.Windows.Forms.ComboBox()
-        Me.CUSTOMERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.CUSTOMERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
-        Me.CONTRACTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
-        Me.chkNo = New System.Windows.Forms.CheckBox()
-        Me.chkYes = New System.Windows.Forms.CheckBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.colContractID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colServiceLineName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colContractNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -69,6 +58,17 @@ Partial Class frmContractList
         Me.colCustomerID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colReportParamId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colReportParamDesc = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbxCustomer = New System.Windows.Forms.ComboBox()
+        Me.CUSTOMERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CUSTOMERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
+        Me.CONTRACTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
+        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.chkNo = New System.Windows.Forms.CheckBox()
+        Me.chkYes = New System.Windows.Forms.CheckBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.CONTRACTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvContract, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,19 +94,312 @@ Partial Class frmContractList
         Me.dgvContract.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvContract.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colContractID, Me.colServiceLineName, Me.colContractNumber, Me.colName, Me.colDescription, Me.colStartDate, Me.colCompletionDate, Me.colCustomerName, Me.colCurrency, Me.colActive, Me.colSalesAccount, Me.colSalesSubAccount, Me.colGoodsAccount, Me.colGoodsSubAccount, Me.colServiceUtility, Me.colServiceUtilityPerc, Me.colServiceIVAPerc, Me.colMaterialIVAPerc, Me.colPortionCOP, Me.colPortionUSD, Me.colLayoutType, Me.colExchangeRate, Me.colEnableExcRate, Me.colEnableDisc, Me.colSplitAmountMatServ, Me.colServiceLineId, Me.colCustomerID, Me.colReportParamId, Me.colReportParamDesc})
         Me.dgvContract.DataSource = Me.CONTRACTBindingSource
-        Me.dgvContract.Location = New System.Drawing.Point(0, 45)
+        Me.dgvContract.Location = New System.Drawing.Point(0, 55)
+        Me.dgvContract.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvContract.Name = "dgvContract"
         Me.dgvContract.ReadOnly = True
+        Me.dgvContract.RowHeadersWidth = 51
         Me.dgvContract.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvContract.Size = New System.Drawing.Size(1056, 500)
+        Me.dgvContract.Size = New System.Drawing.Size(1408, 615)
         Me.dgvContract.TabIndex = 1
+        '
+        'colContractID
+        '
+        Me.colContractID.DataPropertyName = "CONTRACTID"
+        Me.colContractID.HeaderText = "ID"
+        Me.colContractID.MinimumWidth = 6
+        Me.colContractID.Name = "colContractID"
+        Me.colContractID.ReadOnly = True
+        Me.colContractID.Width = 50
+        '
+        'colServiceLineName
+        '
+        Me.colServiceLineName.DataPropertyName = "SERVICELINENAME"
+        Me.colServiceLineName.HeaderText = "Service Line"
+        Me.colServiceLineName.MinimumWidth = 6
+        Me.colServiceLineName.Name = "colServiceLineName"
+        Me.colServiceLineName.ReadOnly = True
+        Me.colServiceLineName.Width = 140
+        '
+        'colContractNumber
+        '
+        Me.colContractNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colContractNumber.DataPropertyName = "CONTRACTNUMBER"
+        Me.colContractNumber.HeaderText = "Contract Number"
+        Me.colContractNumber.MinimumWidth = 6
+        Me.colContractNumber.Name = "colContractNumber"
+        Me.colContractNumber.ReadOnly = True
+        Me.colContractNumber.Width = 125
+        '
+        'colName
+        '
+        Me.colName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colName.DataPropertyName = "NAME"
+        Me.colName.HeaderText = "Name"
+        Me.colName.MinimumWidth = 6
+        Me.colName.Name = "colName"
+        Me.colName.ReadOnly = True
+        Me.colName.Width = 73
+        '
+        'colDescription
+        '
+        Me.colDescription.DataPropertyName = "DESCRIPTION"
+        Me.colDescription.HeaderText = "Description"
+        Me.colDescription.MinimumWidth = 6
+        Me.colDescription.Name = "colDescription"
+        Me.colDescription.ReadOnly = True
+        Me.colDescription.Visible = False
+        Me.colDescription.Width = 250
+        '
+        'colStartDate
+        '
+        Me.colStartDate.DataPropertyName = "START_DATE"
+        DataGridViewCellStyle3.Format = "d"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.colStartDate.DefaultCellStyle = DataGridViewCellStyle3
+        Me.colStartDate.HeaderText = "Start Date"
+        Me.colStartDate.MinimumWidth = 6
+        Me.colStartDate.Name = "colStartDate"
+        Me.colStartDate.ReadOnly = True
+        Me.colStartDate.Width = 80
+        '
+        'colCompletionDate
+        '
+        Me.colCompletionDate.DataPropertyName = "COMPLETION_DATE"
+        DataGridViewCellStyle4.Format = "d"
+        DataGridViewCellStyle4.NullValue = Nothing
+        Me.colCompletionDate.DefaultCellStyle = DataGridViewCellStyle4
+        Me.colCompletionDate.HeaderText = "Due Date"
+        Me.colCompletionDate.MinimumWidth = 6
+        Me.colCompletionDate.Name = "colCompletionDate"
+        Me.colCompletionDate.ReadOnly = True
+        Me.colCompletionDate.Width = 80
+        '
+        'colCustomerName
+        '
+        Me.colCustomerName.DataPropertyName = "CUSTOMERNAME"
+        Me.colCustomerName.HeaderText = "Customer"
+        Me.colCustomerName.MinimumWidth = 6
+        Me.colCustomerName.Name = "colCustomerName"
+        Me.colCustomerName.ReadOnly = True
+        Me.colCustomerName.Width = 230
+        '
+        'colCurrency
+        '
+        Me.colCurrency.DataPropertyName = "CURRENCY"
+        Me.colCurrency.HeaderText = "Currency"
+        Me.colCurrency.MinimumWidth = 6
+        Me.colCurrency.Name = "colCurrency"
+        Me.colCurrency.ReadOnly = True
+        Me.colCurrency.Width = 60
+        '
+        'colActive
+        '
+        Me.colActive.DataPropertyName = "ACTIVE"
+        Me.colActive.HeaderText = "Active"
+        Me.colActive.MinimumWidth = 6
+        Me.colActive.Name = "colActive"
+        Me.colActive.ReadOnly = True
+        Me.colActive.Width = 60
+        '
+        'colSalesAccount
+        '
+        Me.colSalesAccount.DataPropertyName = "SALESACCOUNT"
+        Me.colSalesAccount.HeaderText = "Sales Account"
+        Me.colSalesAccount.MinimumWidth = 6
+        Me.colSalesAccount.Name = "colSalesAccount"
+        Me.colSalesAccount.ReadOnly = True
+        Me.colSalesAccount.Visible = False
+        Me.colSalesAccount.Width = 125
+        '
+        'colSalesSubAccount
+        '
+        Me.colSalesSubAccount.DataPropertyName = "SALESSUBACCOUNT"
+        Me.colSalesSubAccount.HeaderText = "Sales SubAccount"
+        Me.colSalesSubAccount.MinimumWidth = 6
+        Me.colSalesSubAccount.Name = "colSalesSubAccount"
+        Me.colSalesSubAccount.ReadOnly = True
+        Me.colSalesSubAccount.Visible = False
+        Me.colSalesSubAccount.Width = 125
+        '
+        'colGoodsAccount
+        '
+        Me.colGoodsAccount.DataPropertyName = "COSTOFGOODSACCOUNT"
+        Me.colGoodsAccount.HeaderText = "CostOfGoodsAccount"
+        Me.colGoodsAccount.MinimumWidth = 6
+        Me.colGoodsAccount.Name = "colGoodsAccount"
+        Me.colGoodsAccount.ReadOnly = True
+        Me.colGoodsAccount.Visible = False
+        Me.colGoodsAccount.Width = 125
+        '
+        'colGoodsSubAccount
+        '
+        Me.colGoodsSubAccount.DataPropertyName = "COSTOFGOODSSUBACCOUNT"
+        Me.colGoodsSubAccount.HeaderText = "CostOfGoodsSubAccount"
+        Me.colGoodsSubAccount.MinimumWidth = 6
+        Me.colGoodsSubAccount.Name = "colGoodsSubAccount"
+        Me.colGoodsSubAccount.ReadOnly = True
+        Me.colGoodsSubAccount.Visible = False
+        Me.colGoodsSubAccount.Width = 125
+        '
+        'colServiceUtility
+        '
+        Me.colServiceUtility.DataPropertyName = "SERVICE_UTILITY"
+        Me.colServiceUtility.HeaderText = "Service Utility"
+        Me.colServiceUtility.MinimumWidth = 6
+        Me.colServiceUtility.Name = "colServiceUtility"
+        Me.colServiceUtility.ReadOnly = True
+        Me.colServiceUtility.Visible = False
+        Me.colServiceUtility.Width = 125
+        '
+        'colServiceUtilityPerc
+        '
+        Me.colServiceUtilityPerc.DataPropertyName = "SERVICE_UTILITY_PERC"
+        Me.colServiceUtilityPerc.HeaderText = "Service Utility Perc"
+        Me.colServiceUtilityPerc.MinimumWidth = 6
+        Me.colServiceUtilityPerc.Name = "colServiceUtilityPerc"
+        Me.colServiceUtilityPerc.ReadOnly = True
+        Me.colServiceUtilityPerc.Visible = False
+        Me.colServiceUtilityPerc.Width = 125
+        '
+        'colServiceIVAPerc
+        '
+        Me.colServiceIVAPerc.DataPropertyName = "SERVICE_IVA_PERC"
+        Me.colServiceIVAPerc.HeaderText = "Service IVA Perc"
+        Me.colServiceIVAPerc.MinimumWidth = 6
+        Me.colServiceIVAPerc.Name = "colServiceIVAPerc"
+        Me.colServiceIVAPerc.ReadOnly = True
+        Me.colServiceIVAPerc.Visible = False
+        Me.colServiceIVAPerc.Width = 125
+        '
+        'colMaterialIVAPerc
+        '
+        Me.colMaterialIVAPerc.DataPropertyName = "MATERIAL_IVA_PERC"
+        Me.colMaterialIVAPerc.HeaderText = "Material IVA Perc"
+        Me.colMaterialIVAPerc.MinimumWidth = 6
+        Me.colMaterialIVAPerc.Name = "colMaterialIVAPerc"
+        Me.colMaterialIVAPerc.ReadOnly = True
+        Me.colMaterialIVAPerc.Visible = False
+        Me.colMaterialIVAPerc.Width = 125
+        '
+        'colPortionCOP
+        '
+        Me.colPortionCOP.DataPropertyName = "PORTIONCOP"
+        Me.colPortionCOP.HeaderText = "PORTIONCOP"
+        Me.colPortionCOP.MinimumWidth = 6
+        Me.colPortionCOP.Name = "colPortionCOP"
+        Me.colPortionCOP.ReadOnly = True
+        Me.colPortionCOP.Visible = False
+        Me.colPortionCOP.Width = 125
+        '
+        'colPortionUSD
+        '
+        Me.colPortionUSD.DataPropertyName = "PORTIONUSD"
+        Me.colPortionUSD.HeaderText = "PORTIONUSD"
+        Me.colPortionUSD.MinimumWidth = 6
+        Me.colPortionUSD.Name = "colPortionUSD"
+        Me.colPortionUSD.ReadOnly = True
+        Me.colPortionUSD.Visible = False
+        Me.colPortionUSD.Width = 125
+        '
+        'colLayoutType
+        '
+        Me.colLayoutType.DataPropertyName = "LAYOUTTYPE"
+        Me.colLayoutType.HeaderText = "LAYOUTTYPE"
+        Me.colLayoutType.MinimumWidth = 6
+        Me.colLayoutType.Name = "colLayoutType"
+        Me.colLayoutType.ReadOnly = True
+        Me.colLayoutType.Visible = False
+        Me.colLayoutType.Width = 125
+        '
+        'colExchangeRate
+        '
+        Me.colExchangeRate.DataPropertyName = "EXCHANGERATE"
+        Me.colExchangeRate.HeaderText = "EXCHANGERATE"
+        Me.colExchangeRate.MinimumWidth = 6
+        Me.colExchangeRate.Name = "colExchangeRate"
+        Me.colExchangeRate.ReadOnly = True
+        Me.colExchangeRate.Visible = False
+        Me.colExchangeRate.Width = 125
+        '
+        'colEnableExcRate
+        '
+        Me.colEnableExcRate.DataPropertyName = "ENABLEEXCHANGERATE"
+        Me.colEnableExcRate.HeaderText = "ENABLEEXCHANGERATE"
+        Me.colEnableExcRate.MinimumWidth = 6
+        Me.colEnableExcRate.Name = "colEnableExcRate"
+        Me.colEnableExcRate.ReadOnly = True
+        Me.colEnableExcRate.Visible = False
+        Me.colEnableExcRate.Width = 125
+        '
+        'colEnableDisc
+        '
+        Me.colEnableDisc.DataPropertyName = "ENABLEDISCOUNT"
+        Me.colEnableDisc.HeaderText = "ENABLEDISCOUNT"
+        Me.colEnableDisc.MinimumWidth = 6
+        Me.colEnableDisc.Name = "colEnableDisc"
+        Me.colEnableDisc.ReadOnly = True
+        Me.colEnableDisc.Visible = False
+        Me.colEnableDisc.Width = 125
+        '
+        'colSplitAmountMatServ
+        '
+        Me.colSplitAmountMatServ.DataPropertyName = "SPLITAMOUNTMATSERV"
+        Me.colSplitAmountMatServ.HeaderText = "SPLITAMOUNTMATSERV"
+        Me.colSplitAmountMatServ.MinimumWidth = 6
+        Me.colSplitAmountMatServ.Name = "colSplitAmountMatServ"
+        Me.colSplitAmountMatServ.ReadOnly = True
+        Me.colSplitAmountMatServ.Visible = False
+        Me.colSplitAmountMatServ.Width = 125
+        '
+        'colServiceLineId
+        '
+        Me.colServiceLineId.DataPropertyName = "SERVICELINEID"
+        Me.colServiceLineId.HeaderText = "SERVICELINEID"
+        Me.colServiceLineId.MinimumWidth = 6
+        Me.colServiceLineId.Name = "colServiceLineId"
+        Me.colServiceLineId.ReadOnly = True
+        Me.colServiceLineId.Visible = False
+        Me.colServiceLineId.Width = 125
+        '
+        'colCustomerID
+        '
+        Me.colCustomerID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colCustomerID.DataPropertyName = "CUSTOMERID"
+        Me.colCustomerID.HeaderText = "CustomerID"
+        Me.colCustomerID.MinimumWidth = 6
+        Me.colCustomerID.Name = "colCustomerID"
+        Me.colCustomerID.ReadOnly = True
+        Me.colCustomerID.Visible = False
+        Me.colCustomerID.Width = 125
+        '
+        'colReportParamId
+        '
+        Me.colReportParamId.DataPropertyName = "REPORTPARAMID"
+        Me.colReportParamId.HeaderText = "REPORTPARAMID"
+        Me.colReportParamId.MinimumWidth = 6
+        Me.colReportParamId.Name = "colReportParamId"
+        Me.colReportParamId.ReadOnly = True
+        Me.colReportParamId.Visible = False
+        Me.colReportParamId.Width = 125
+        '
+        'colReportParamDesc
+        '
+        Me.colReportParamDesc.DataPropertyName = "REPPARAMDESC"
+        Me.colReportParamDesc.HeaderText = "REPPARAMDESC"
+        Me.colReportParamDesc.MinimumWidth = 6
+        Me.colReportParamDesc.Name = "colReportParamDesc"
+        Me.colReportParamDesc.ReadOnly = True
+        Me.colReportParamDesc.Visible = False
+        Me.colReportParamDesc.Width = 125
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(350, 15)
+        Me.Label1.Location = New System.Drawing.Point(467, 18)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Customer:"
         '
@@ -115,9 +408,10 @@ Partial Class frmContractList
         Me.cbxCustomer.DataSource = Me.CUSTOMERBindingSource
         Me.cbxCustomer.DisplayMember = "NAME"
         Me.cbxCustomer.FormattingEnabled = True
-        Me.cbxCustomer.Location = New System.Drawing.Point(411, 12)
+        Me.cbxCustomer.Location = New System.Drawing.Point(548, 15)
+        Me.cbxCustomer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCustomer.Name = "cbxCustomer"
-        Me.cbxCustomer.Size = New System.Drawing.Size(295, 21)
+        Me.cbxCustomer.Size = New System.Drawing.Size(392, 24)
         Me.cbxCustomer.TabIndex = 3
         Me.cbxCustomer.ValueMember = "CUSTOMERID"
         '
@@ -169,9 +463,10 @@ Partial Class frmContractList
         'chkNo
         '
         Me.chkNo.AutoSize = True
-        Me.chkNo.Location = New System.Drawing.Point(1011, 16)
+        Me.chkNo.Location = New System.Drawing.Point(1348, 20)
+        Me.chkNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkNo.Name = "chkNo"
-        Me.chkNo.Size = New System.Drawing.Size(40, 17)
+        Me.chkNo.Size = New System.Drawing.Size(47, 20)
         Me.chkNo.TabIndex = 41
         Me.chkNo.Text = "No"
         Me.chkNo.UseVisualStyleBackColor = True
@@ -181,9 +476,10 @@ Partial Class frmContractList
         Me.chkYes.AutoSize = True
         Me.chkYes.Checked = True
         Me.chkYes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkYes.Location = New System.Drawing.Point(961, 16)
+        Me.chkYes.Location = New System.Drawing.Point(1281, 20)
+        Me.chkYes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkYes.Name = "chkYes"
-        Me.chkYes.Size = New System.Drawing.Size(44, 17)
+        Me.chkYes.Size = New System.Drawing.Size(53, 20)
         Me.chkYes.TabIndex = 40
         Me.chkYes.Text = "Yes"
         Me.chkYes.UseVisualStyleBackColor = True
@@ -191,9 +487,10 @@ Partial Class frmContractList
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(915, 17)
+        Me.Label3.Location = New System.Drawing.Point(1220, 21)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.Size = New System.Drawing.Size(47, 16)
         Me.Label3.TabIndex = 39
         Me.Label3.Text = "Active:"
         '
@@ -201,10 +498,11 @@ Partial Class frmContractList
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1066, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1421, 52)
         Me.MenuStrip1.TabIndex = 38
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -212,259 +510,16 @@ Partial Class frmContractList
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
         Me.mnuNewItem.Text = "New Item"
         Me.mnuNewItem.ToolTipText = "Save the Ticket"
         '
-        'colContractID
-        '
-        Me.colContractID.DataPropertyName = "CONTRACTID"
-        Me.colContractID.HeaderText = "ID"
-        Me.colContractID.Name = "colContractID"
-        Me.colContractID.ReadOnly = True
-        Me.colContractID.Width = 50
-        '
-        'colServiceLineName
-        '
-        Me.colServiceLineName.DataPropertyName = "SERVICELINENAME"
-        Me.colServiceLineName.HeaderText = "Service Line"
-        Me.colServiceLineName.Name = "colServiceLineName"
-        Me.colServiceLineName.ReadOnly = True
-        Me.colServiceLineName.Width = 140
-        '
-        'colContractNumber
-        '
-        Me.colContractNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colContractNumber.DataPropertyName = "CONTRACTNUMBER"
-        Me.colContractNumber.HeaderText = "Contract Number"
-        Me.colContractNumber.Name = "colContractNumber"
-        Me.colContractNumber.ReadOnly = True
-        Me.colContractNumber.Width = 103
-        '
-        'colName
-        '
-        Me.colName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colName.DataPropertyName = "NAME"
-        Me.colName.HeaderText = "Name"
-        Me.colName.Name = "colName"
-        Me.colName.ReadOnly = True
-        Me.colName.Width = 60
-        '
-        'colDescription
-        '
-        Me.colDescription.DataPropertyName = "DESCRIPTION"
-        Me.colDescription.HeaderText = "Description"
-        Me.colDescription.Name = "colDescription"
-        Me.colDescription.ReadOnly = True
-        Me.colDescription.Visible = False
-        Me.colDescription.Width = 250
-        '
-        'colStartDate
-        '
-        Me.colStartDate.DataPropertyName = "START_DATE"
-        DataGridViewCellStyle1.Format = "d"
-        DataGridViewCellStyle1.NullValue = Nothing
-        Me.colStartDate.DefaultCellStyle = DataGridViewCellStyle1
-        Me.colStartDate.HeaderText = "Start Date"
-        Me.colStartDate.Name = "colStartDate"
-        Me.colStartDate.ReadOnly = True
-        Me.colStartDate.Width = 80
-        '
-        'colCompletionDate
-        '
-        Me.colCompletionDate.DataPropertyName = "COMPLETION_DATE"
-        DataGridViewCellStyle2.Format = "d"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.colCompletionDate.DefaultCellStyle = DataGridViewCellStyle2
-        Me.colCompletionDate.HeaderText = "Due Date"
-        Me.colCompletionDate.Name = "colCompletionDate"
-        Me.colCompletionDate.ReadOnly = True
-        Me.colCompletionDate.Width = 80
-        '
-        'colCustomerName
-        '
-        Me.colCustomerName.DataPropertyName = "CUSTOMERNAME"
-        Me.colCustomerName.HeaderText = "Customer"
-        Me.colCustomerName.Name = "colCustomerName"
-        Me.colCustomerName.ReadOnly = True
-        Me.colCustomerName.Width = 230
-        '
-        'colCurrency
-        '
-        Me.colCurrency.DataPropertyName = "CURRENCY"
-        Me.colCurrency.HeaderText = "Currency"
-        Me.colCurrency.Name = "colCurrency"
-        Me.colCurrency.ReadOnly = True
-        Me.colCurrency.Width = 60
-        '
-        'colActive
-        '
-        Me.colActive.DataPropertyName = "ACTIVE"
-        Me.colActive.HeaderText = "Active"
-        Me.colActive.Name = "colActive"
-        Me.colActive.ReadOnly = True
-        Me.colActive.Width = 60
-        '
-        'colSalesAccount
-        '
-        Me.colSalesAccount.DataPropertyName = "SALESACCOUNT"
-        Me.colSalesAccount.HeaderText = "Sales Account"
-        Me.colSalesAccount.Name = "colSalesAccount"
-        Me.colSalesAccount.ReadOnly = True
-        Me.colSalesAccount.Visible = False
-        '
-        'colSalesSubAccount
-        '
-        Me.colSalesSubAccount.DataPropertyName = "SALESSUBACCOUNT"
-        Me.colSalesSubAccount.HeaderText = "Sales SubAccount"
-        Me.colSalesSubAccount.Name = "colSalesSubAccount"
-        Me.colSalesSubAccount.ReadOnly = True
-        Me.colSalesSubAccount.Visible = False
-        '
-        'colGoodsAccount
-        '
-        Me.colGoodsAccount.DataPropertyName = "COSTOFGOODSACCOUNT"
-        Me.colGoodsAccount.HeaderText = "CostOfGoodsAccount"
-        Me.colGoodsAccount.Name = "colGoodsAccount"
-        Me.colGoodsAccount.ReadOnly = True
-        Me.colGoodsAccount.Visible = False
-        '
-        'colGoodsSubAccount
-        '
-        Me.colGoodsSubAccount.DataPropertyName = "COSTOFGOODSSUBACCOUNT"
-        Me.colGoodsSubAccount.HeaderText = "CostOfGoodsSubAccount"
-        Me.colGoodsSubAccount.Name = "colGoodsSubAccount"
-        Me.colGoodsSubAccount.ReadOnly = True
-        Me.colGoodsSubAccount.Visible = False
-        '
-        'colServiceUtility
-        '
-        Me.colServiceUtility.DataPropertyName = "SERVICE_UTILITY"
-        Me.colServiceUtility.HeaderText = "Service Utility"
-        Me.colServiceUtility.Name = "colServiceUtility"
-        Me.colServiceUtility.ReadOnly = True
-        Me.colServiceUtility.Visible = False
-        '
-        'colServiceUtilityPerc
-        '
-        Me.colServiceUtilityPerc.DataPropertyName = "SERVICE_UTILITY_PERC"
-        Me.colServiceUtilityPerc.HeaderText = "Service Utility Perc"
-        Me.colServiceUtilityPerc.Name = "colServiceUtilityPerc"
-        Me.colServiceUtilityPerc.ReadOnly = True
-        Me.colServiceUtilityPerc.Visible = False
-        '
-        'colServiceIVAPerc
-        '
-        Me.colServiceIVAPerc.DataPropertyName = "SERVICE_IVA_PERC"
-        Me.colServiceIVAPerc.HeaderText = "Service IVA Perc"
-        Me.colServiceIVAPerc.Name = "colServiceIVAPerc"
-        Me.colServiceIVAPerc.ReadOnly = True
-        Me.colServiceIVAPerc.Visible = False
-        '
-        'colMaterialIVAPerc
-        '
-        Me.colMaterialIVAPerc.DataPropertyName = "MATERIAL_IVA_PERC"
-        Me.colMaterialIVAPerc.HeaderText = "Material IVA Perc"
-        Me.colMaterialIVAPerc.Name = "colMaterialIVAPerc"
-        Me.colMaterialIVAPerc.ReadOnly = True
-        Me.colMaterialIVAPerc.Visible = False
-        '
-        'colPortionCOP
-        '
-        Me.colPortionCOP.DataPropertyName = "PORTIONCOP"
-        Me.colPortionCOP.HeaderText = "PORTIONCOP"
-        Me.colPortionCOP.Name = "colPortionCOP"
-        Me.colPortionCOP.ReadOnly = True
-        Me.colPortionCOP.Visible = False
-        '
-        'colPortionUSD
-        '
-        Me.colPortionUSD.DataPropertyName = "PORTIONUSD"
-        Me.colPortionUSD.HeaderText = "PORTIONUSD"
-        Me.colPortionUSD.Name = "colPortionUSD"
-        Me.colPortionUSD.ReadOnly = True
-        Me.colPortionUSD.Visible = False
-        '
-        'colLayoutType
-        '
-        Me.colLayoutType.DataPropertyName = "LAYOUTTYPE"
-        Me.colLayoutType.HeaderText = "LAYOUTTYPE"
-        Me.colLayoutType.Name = "colLayoutType"
-        Me.colLayoutType.ReadOnly = True
-        Me.colLayoutType.Visible = False
-        '
-        'colExchangeRate
-        '
-        Me.colExchangeRate.DataPropertyName = "EXCHANGERATE"
-        Me.colExchangeRate.HeaderText = "EXCHANGERATE"
-        Me.colExchangeRate.Name = "colExchangeRate"
-        Me.colExchangeRate.ReadOnly = True
-        Me.colExchangeRate.Visible = False
-        '
-        'colEnableExcRate
-        '
-        Me.colEnableExcRate.DataPropertyName = "ENABLEEXCHANGERATE"
-        Me.colEnableExcRate.HeaderText = "ENABLEEXCHANGERATE"
-        Me.colEnableExcRate.Name = "colEnableExcRate"
-        Me.colEnableExcRate.ReadOnly = True
-        Me.colEnableExcRate.Visible = False
-        '
-        'colEnableDisc
-        '
-        Me.colEnableDisc.DataPropertyName = "ENABLEDISCOUNT"
-        Me.colEnableDisc.HeaderText = "ENABLEDISCOUNT"
-        Me.colEnableDisc.Name = "colEnableDisc"
-        Me.colEnableDisc.ReadOnly = True
-        Me.colEnableDisc.Visible = False
-        '
-        'colSplitAmountMatServ
-        '
-        Me.colSplitAmountMatServ.DataPropertyName = "SPLITAMOUNTMATSERV"
-        Me.colSplitAmountMatServ.HeaderText = "SPLITAMOUNTMATSERV"
-        Me.colSplitAmountMatServ.Name = "colSplitAmountMatServ"
-        Me.colSplitAmountMatServ.ReadOnly = True
-        Me.colSplitAmountMatServ.Visible = False
-        '
-        'colServiceLineId
-        '
-        Me.colServiceLineId.DataPropertyName = "SERVICELINEID"
-        Me.colServiceLineId.HeaderText = "SERVICELINEID"
-        Me.colServiceLineId.Name = "colServiceLineId"
-        Me.colServiceLineId.ReadOnly = True
-        Me.colServiceLineId.Visible = False
-        '
-        'colCustomerID
-        '
-        Me.colCustomerID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colCustomerID.DataPropertyName = "CUSTOMERID"
-        Me.colCustomerID.HeaderText = "CustomerID"
-        Me.colCustomerID.Name = "colCustomerID"
-        Me.colCustomerID.ReadOnly = True
-        Me.colCustomerID.Visible = False
-        Me.colCustomerID.Width = 87
-        '
-        'colReportParamId
-        '
-        Me.colReportParamId.DataPropertyName = "REPORTPARAMID"
-        Me.colReportParamId.HeaderText = "REPORTPARAMID"
-        Me.colReportParamId.Name = "colReportParamId"
-        Me.colReportParamId.ReadOnly = True
-        Me.colReportParamId.Visible = False
-        '
-        'colReportParamDesc
-        '
-        Me.colReportParamDesc.DataPropertyName = "REPPARAMDESC"
-        Me.colReportParamDesc.HeaderText = "REPPARAMDESC"
-        Me.colReportParamDesc.Name = "colReportParamDesc"
-        Me.colReportParamDesc.ReadOnly = True
-        Me.colReportParamDesc.Visible = False
-        '
         'frmContractList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(1066, 546)
+        Me.ClientSize = New System.Drawing.Size(1421, 672)
         Me.Controls.Add(Me.cbxCustomer)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.chkNo)
@@ -473,11 +528,13 @@ Partial Class frmContractList
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.dgvContract)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmContractList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Contract"
+        Me.Text = "INNTicket - Contract"
         CType(Me.CONTRACTBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvContract, System.ComponentModel.ISupportInitialize).EndInit()

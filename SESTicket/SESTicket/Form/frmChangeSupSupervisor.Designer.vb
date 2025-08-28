@@ -41,6 +41,7 @@ Partial Class frmChangeSupSupervisor
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuChangeSupervisor, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -52,14 +53,14 @@ Partial Class frmChangeSupSupervisor
         '
         Me.mnuChangeSupervisor.Image = CType(resources.GetObject("mnuChangeSupervisor.Image"), System.Drawing.Image)
         Me.mnuChangeSupervisor.Name = "mnuChangeSupervisor"
-        Me.mnuChangeSupervisor.Size = New System.Drawing.Size(134, 38)
+        Me.mnuChangeSupervisor.Size = New System.Drawing.Size(166, 38)
         Me.mnuChangeSupervisor.Text = "Change Supervisor"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 38)
         Me.mnuExit.Text = "Exit"
         '
         'GroupBox1
@@ -83,7 +84,7 @@ Partial Class frmChangeSupSupervisor
         Me.txtSuperiorSupervisor.Location = New System.Drawing.Point(9, 32)
         Me.txtSuperiorSupervisor.Name = "txtSuperiorSupervisor"
         Me.txtSuperiorSupervisor.ReadOnly = True
-        Me.txtSuperiorSupervisor.Size = New System.Drawing.Size(306, 20)
+        Me.txtSuperiorSupervisor.Size = New System.Drawing.Size(306, 22)
         Me.txtSuperiorSupervisor.TabIndex = 38
         '
         'btnSearchSupervisor
@@ -102,7 +103,7 @@ Partial Class frmChangeSupSupervisor
         Me.Label27.ForeColor = System.Drawing.Color.Black
         Me.Label27.Location = New System.Drawing.Point(8, 16)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(110, 13)
+        Me.Label27.Size = New System.Drawing.Size(140, 16)
         Me.Label27.TabIndex = 37
         Me.Label27.Text = "Superior´s Supervisor:"
         '
@@ -111,16 +112,17 @@ Partial Class frmChangeSupSupervisor
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(8, 59)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(85, 13)
+        Me.Label3.Size = New System.Drawing.Size(103, 16)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Tickets Affected"
         '
         'lstTickets
         '
         Me.lstTickets.FormattingEnabled = True
+        Me.lstTickets.ItemHeight = 16
         Me.lstTickets.Location = New System.Drawing.Point(9, 75)
         Me.lstTickets.Name = "lstTickets"
-        Me.lstTickets.Size = New System.Drawing.Size(339, 160)
+        Me.lstTickets.Size = New System.Drawing.Size(339, 148)
         Me.lstTickets.TabIndex = 3
         '
         'Label1
@@ -128,7 +130,7 @@ Partial Class frmChangeSupSupervisor
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(9, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 13)
+        Me.Label1.Size = New System.Drawing.Size(0, 16)
         Me.Label1.TabIndex = 0
         '
         'frmChangeSupSupervisor
@@ -143,7 +145,7 @@ Partial Class frmChangeSupSupervisor
         Me.MinimizeBox = False
         Me.Name = "frmChangeSupSupervisor"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Change Supervisor"
+        Me.Text = "INNTicket - Change Supervisor"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)

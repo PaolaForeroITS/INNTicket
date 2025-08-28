@@ -71,10 +71,11 @@ Partial Class frmUserRightEdit
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuCopyFromUser, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(587, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(783, 52)
         Me.MenuStrip1.TabIndex = 36
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -82,22 +83,24 @@ Partial Class frmUserRightEdit
         '
         Me.mnuCopyFromUser.Image = CType(resources.GetObject("mnuCopyFromUser.Image"), System.Drawing.Image)
         Me.mnuCopyFromUser.Name = "mnuCopyFromUser"
-        Me.mnuCopyFromUser.Size = New System.Drawing.Size(120, 38)
+        Me.mnuCopyFromUser.Size = New System.Drawing.Size(148, 48)
         Me.mnuCopyFromUser.Text = "Copy From User"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.dgvObjGroupItem)
-        Me.GroupBox3.Location = New System.Drawing.Point(247, 104)
+        Me.GroupBox3.Location = New System.Drawing.Point(329, 128)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(335, 392)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(447, 482)
         Me.GroupBox3.TabIndex = 3
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Options"
@@ -114,17 +117,19 @@ Partial Class frmUserRightEdit
         Me.dgvObjGroupItem.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.OBJECTDESCRIPTIONDataGridViewTextBoxColumn, Me.USERNAMEDataGridViewTextBoxColumn, Me.colObjectGroupItemUserId, Me.OBJECTGROUPIDDataGridViewTextBoxColumn, Me.colEnableOpt, Me.chkCheck})
         Me.dgvObjGroupItem.ContextMenuStrip = Me.mnuGrant
         Me.dgvObjGroupItem.DataSource = Me.OBJECTGROUPITEMVBindingSource
-        Me.dgvObjGroupItem.Location = New System.Drawing.Point(6, 19)
+        Me.dgvObjGroupItem.Location = New System.Drawing.Point(8, 23)
+        Me.dgvObjGroupItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvObjGroupItem.Name = "dgvObjGroupItem"
         Me.dgvObjGroupItem.RowHeadersWidth = 10
         Me.dgvObjGroupItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvObjGroupItem.Size = New System.Drawing.Size(322, 365)
+        Me.dgvObjGroupItem.Size = New System.Drawing.Size(429, 449)
         Me.dgvObjGroupItem.TabIndex = 0
         '
         'OBJECTDESCRIPTIONDataGridViewTextBoxColumn
         '
         Me.OBJECTDESCRIPTIONDataGridViewTextBoxColumn.DataPropertyName = "OBJECTDESCRIPTION"
         Me.OBJECTDESCRIPTIONDataGridViewTextBoxColumn.HeaderText = ""
+        Me.OBJECTDESCRIPTIONDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.OBJECTDESCRIPTIONDataGridViewTextBoxColumn.Name = "OBJECTDESCRIPTIONDataGridViewTextBoxColumn"
         Me.OBJECTDESCRIPTIONDataGridViewTextBoxColumn.ReadOnly = True
         Me.OBJECTDESCRIPTIONDataGridViewTextBoxColumn.Width = 270
@@ -133,59 +138,69 @@ Partial Class frmUserRightEdit
         '
         Me.USERNAMEDataGridViewTextBoxColumn.DataPropertyName = "USERNAME"
         Me.USERNAMEDataGridViewTextBoxColumn.HeaderText = "USERNAME"
+        Me.USERNAMEDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.USERNAMEDataGridViewTextBoxColumn.Name = "USERNAMEDataGridViewTextBoxColumn"
         Me.USERNAMEDataGridViewTextBoxColumn.Visible = False
+        Me.USERNAMEDataGridViewTextBoxColumn.Width = 125
         '
         'colObjectGroupItemUserId
         '
         Me.colObjectGroupItemUserId.DataPropertyName = "OBJECTGROUPITEMUSERID"
         Me.colObjectGroupItemUserId.HeaderText = "OBJECTGROUPITEMUSERID"
+        Me.colObjectGroupItemUserId.MinimumWidth = 6
         Me.colObjectGroupItemUserId.Name = "colObjectGroupItemUserId"
         Me.colObjectGroupItemUserId.Visible = False
+        Me.colObjectGroupItemUserId.Width = 125
         '
         'OBJECTGROUPIDDataGridViewTextBoxColumn
         '
         Me.OBJECTGROUPIDDataGridViewTextBoxColumn.DataPropertyName = "OBJECTGROUPID"
         Me.OBJECTGROUPIDDataGridViewTextBoxColumn.HeaderText = "OBJECTGROUPID"
+        Me.OBJECTGROUPIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.OBJECTGROUPIDDataGridViewTextBoxColumn.Name = "OBJECTGROUPIDDataGridViewTextBoxColumn"
         Me.OBJECTGROUPIDDataGridViewTextBoxColumn.Visible = False
+        Me.OBJECTGROUPIDDataGridViewTextBoxColumn.Width = 125
         '
         'colEnableOpt
         '
         Me.colEnableOpt.DataPropertyName = "ENABLE"
         Me.colEnableOpt.HeaderText = "ENABLE"
+        Me.colEnableOpt.MinimumWidth = 6
         Me.colEnableOpt.Name = "colEnableOpt"
         Me.colEnableOpt.Visible = False
+        Me.colEnableOpt.Width = 125
         '
         'chkCheck
         '
         Me.chkCheck.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.chkCheck.DataPropertyName = "BENABLE"
         Me.chkCheck.HeaderText = ""
+        Me.chkCheck.MinimumWidth = 6
         Me.chkCheck.Name = "chkCheck"
         Me.chkCheck.ReadOnly = True
         Me.chkCheck.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.chkCheck.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.chkCheck.Width = 19
+        Me.chkCheck.Width = 23
         '
         'mnuGrant
         '
+        Me.mnuGrant.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.mnuGrant.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PermitToolStripMenuItem, Me.DenyToolStripMenuItem})
         Me.mnuGrant.Name = "mnuGrant"
-        Me.mnuGrant.Size = New System.Drawing.Size(181, 70)
+        Me.mnuGrant.Size = New System.Drawing.Size(125, 56)
         '
         'PermitToolStripMenuItem
         '
         Me.PermitToolStripMenuItem.Image = CType(resources.GetObject("PermitToolStripMenuItem.Image"), System.Drawing.Image)
         Me.PermitToolStripMenuItem.Name = "PermitToolStripMenuItem"
-        Me.PermitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PermitToolStripMenuItem.Size = New System.Drawing.Size(124, 26)
         Me.PermitToolStripMenuItem.Text = "Permit"
         '
         'DenyToolStripMenuItem
         '
         Me.DenyToolStripMenuItem.Image = CType(resources.GetObject("DenyToolStripMenuItem.Image"), System.Drawing.Image)
         Me.DenyToolStripMenuItem.Name = "DenyToolStripMenuItem"
-        Me.DenyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DenyToolStripMenuItem.Size = New System.Drawing.Size(124, 26)
         Me.DenyToolStripMenuItem.Text = "Deny"
         '
         'OBJECTGROUPITEMVBindingSource
@@ -202,9 +217,11 @@ Partial Class frmUserRightEdit
         '
         Me.GroupBox2.Controls.Add(Me.txtSubGroup)
         Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Location = New System.Drawing.Point(247, 45)
+        Me.GroupBox2.Location = New System.Drawing.Point(329, 55)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(335, 53)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(447, 65)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         '
@@ -212,18 +229,20 @@ Partial Class frmUserRightEdit
         '
         Me.txtSubGroup.BackColor = System.Drawing.Color.White
         Me.txtSubGroup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSubGroup.Location = New System.Drawing.Point(46, 20)
+        Me.txtSubGroup.Location = New System.Drawing.Point(61, 25)
+        Me.txtSubGroup.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSubGroup.Name = "txtSubGroup"
         Me.txtSubGroup.ReadOnly = True
-        Me.txtSubGroup.Size = New System.Drawing.Size(263, 20)
+        Me.txtSubGroup.Size = New System.Drawing.Size(350, 22)
         Me.txtSubGroup.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 23)
+        Me.Label1.Location = New System.Drawing.Point(8, 28)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(33, 13)
+        Me.Label1.Size = New System.Drawing.Size(41, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Form:"
         '
@@ -239,12 +258,14 @@ Partial Class frmUserRightEdit
         Me.dgvObjGroup.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colSubGroup, Me.GROUPNAMEDataGridViewTextBoxColumn, Me.colObjectGroupId, Me.colObjectGroupUserId, Me.colEnable, Me.BENABLEDataGridViewTextBoxColumn})
         Me.dgvObjGroup.ContextMenuStrip = Me.mnuGrant
         Me.dgvObjGroup.DataSource = Me.OBJECTGROUPVBindingSource
-        Me.dgvObjGroup.Location = New System.Drawing.Point(9, 20)
+        Me.dgvObjGroup.Location = New System.Drawing.Point(12, 25)
+        Me.dgvObjGroup.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvObjGroup.Name = "dgvObjGroup"
         Me.dgvObjGroup.ReadOnly = True
         Me.dgvObjGroup.RowHeadersVisible = False
+        Me.dgvObjGroup.RowHeadersWidth = 51
         Me.dgvObjGroup.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvObjGroup.Size = New System.Drawing.Size(214, 423)
+        Me.dgvObjGroup.Size = New System.Drawing.Size(285, 521)
         Me.dgvObjGroup.TabIndex = 1
         '
         'colSubGroup
@@ -252,42 +273,50 @@ Partial Class frmUserRightEdit
         Me.colSubGroup.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.colSubGroup.DataPropertyName = "SUBGROUP"
         Me.colSubGroup.HeaderText = "SUBGROUP"
+        Me.colSubGroup.MinimumWidth = 6
         Me.colSubGroup.Name = "colSubGroup"
         Me.colSubGroup.ReadOnly = True
-        Me.colSubGroup.Width = 5
+        Me.colSubGroup.Width = 6
         '
         'GROUPNAMEDataGridViewTextBoxColumn
         '
         Me.GROUPNAMEDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.GROUPNAMEDataGridViewTextBoxColumn.DataPropertyName = "GROUPNAME"
         Me.GROUPNAMEDataGridViewTextBoxColumn.HeaderText = "GROUPNAME"
+        Me.GROUPNAMEDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.GROUPNAMEDataGridViewTextBoxColumn.Name = "GROUPNAMEDataGridViewTextBoxColumn"
         Me.GROUPNAMEDataGridViewTextBoxColumn.ReadOnly = True
-        Me.GROUPNAMEDataGridViewTextBoxColumn.Width = 5
+        Me.GROUPNAMEDataGridViewTextBoxColumn.Width = 6
         '
         'colObjectGroupId
         '
         Me.colObjectGroupId.DataPropertyName = "OBJECTGROUPID"
         Me.colObjectGroupId.HeaderText = "OBJECTGROUPID"
+        Me.colObjectGroupId.MinimumWidth = 6
         Me.colObjectGroupId.Name = "colObjectGroupId"
         Me.colObjectGroupId.ReadOnly = True
         Me.colObjectGroupId.Visible = False
+        Me.colObjectGroupId.Width = 125
         '
         'colObjectGroupUserId
         '
         Me.colObjectGroupUserId.DataPropertyName = "OBJECTGROUPUSERID"
         Me.colObjectGroupUserId.HeaderText = "OBJECTGROUPUSERID"
+        Me.colObjectGroupUserId.MinimumWidth = 6
         Me.colObjectGroupUserId.Name = "colObjectGroupUserId"
         Me.colObjectGroupUserId.ReadOnly = True
         Me.colObjectGroupUserId.Visible = False
+        Me.colObjectGroupUserId.Width = 125
         '
         'colEnable
         '
         Me.colEnable.DataPropertyName = "ENABLE"
         Me.colEnable.HeaderText = "ENABLE"
+        Me.colEnable.MinimumWidth = 6
         Me.colEnable.Name = "colEnable"
         Me.colEnable.ReadOnly = True
         Me.colEnable.Visible = False
+        Me.colEnable.Width = 125
         '
         'BENABLEDataGridViewTextBoxColumn
         '
@@ -309,9 +338,11 @@ Partial Class frmUserRightEdit
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.dgvObjGroup)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 45)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 55)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(229, 451)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(305, 555)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Forms"
@@ -359,20 +390,21 @@ Partial Class frmUserRightEdit
         '
         'frmUserRightEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(587, 500)
+        Me.ClientSize = New System.Drawing.Size(783, 615)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmUserRightEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - User Right"
+        Me.Text = "INNTicket - User Right"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)

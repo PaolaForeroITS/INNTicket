@@ -23,6 +23,7 @@ Partial Class frmTicketServEvalHSEQEdit
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketServEvalHSEQEdit))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtServiceDescr = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -89,7 +90,7 @@ Partial Class frmTicketServEvalHSEQEdit
         Me.Label2.Location = New System.Drawing.Point(8, 76)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(134, 17)
+        Me.Label2.Size = New System.Drawing.Size(127, 16)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Service Description:"
         '
@@ -110,7 +111,7 @@ Partial Class frmTicketServEvalHSEQEdit
         Me.Label1.Location = New System.Drawing.Point(8, 23)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 17)
+        Me.Label1.Size = New System.Drawing.Size(88, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Service Date:"
         '
@@ -183,7 +184,6 @@ Partial Class frmTicketServEvalHSEQEdit
         '
         Me.HSEQANSWERSBindingSource4.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource4.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource4.Filter = "EVALUATION = 'HSEQ' AND QUESTION = 5"
         '
         'SESTicketAccessDataSet
         '
@@ -206,7 +206,6 @@ Partial Class frmTicketServEvalHSEQEdit
         '
         Me.HSEQANSWERSBindingSource3.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource3.DataSource = Me.SESTicketAccessDataSet
-        'Me.HSEQANSWERSBindingSource3.Filter = "EVALUATION = 'HSEQ' AND QUESTION = 4"
         '
         'cbxEvalComun
         '
@@ -224,7 +223,6 @@ Partial Class frmTicketServEvalHSEQEdit
         '
         Me.HSEQANSWERSBindingSource2.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource2.DataSource = Me.SESTicketAccessDataSet
-        ' Me.HSEQANSWERSBindingSource2.Filter = "EVALUATION = 'HSEQ' AND QUESTION = 3"
         '
         'cbxEvalEquip
         '
@@ -242,7 +240,6 @@ Partial Class frmTicketServEvalHSEQEdit
         '
         Me.HSEQANSWERSBindingSource1.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource1.DataSource = Me.SESTicketAccessDataSet
-        ' Me.HSEQANSWERSBindingSource1.Filter = "EVALUATION = 'HSEQ' AND QUESTION = 2"
         '
         'cbxEvalPersonal
         '
@@ -254,14 +251,12 @@ Partial Class frmTicketServEvalHSEQEdit
         Me.cbxEvalPersonal.Name = "cbxEvalPersonal"
         Me.cbxEvalPersonal.Size = New System.Drawing.Size(239, 24)
         Me.cbxEvalPersonal.TabIndex = 3
-        Me.cbxEvalPersonal.Text = " "
         Me.cbxEvalPersonal.ValueMember = "ANSWERID"
         '
         'HSEQANSWERSBindingSource
         '
         Me.HSEQANSWERSBindingSource.DataMember = "HSEQ_ANSWERS"
         Me.HSEQANSWERSBindingSource.DataSource = Me.SESTicketAccessDataSet
-        ' Me.HSEQANSWERSBindingSource.Filter = "EVALUATION = 'HSEQ' AND QUESTION = 1"
         '
         'Label8
         '
@@ -345,12 +340,13 @@ Partial Class frmTicketServEvalHSEQEdit
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmTicketServEvalHSEQEdit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - HSEQ Service Evaluation"
+        Me.Text = "INNTicket - HSEQ Service Evaluation"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.grpClientAnswer.ResumeLayout(False)

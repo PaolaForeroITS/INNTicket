@@ -71,9 +71,11 @@ Partial Class frmRPTParameter
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.dgvParam)
-        Me.GroupBox3.Location = New System.Drawing.Point(3, 45)
+        Me.GroupBox3.Location = New System.Drawing.Point(4, 55)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(207, 471)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(276, 580)
         Me.GroupBox3.TabIndex = 10
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parameter"
@@ -89,18 +91,21 @@ Partial Class frmRPTParameter
         Me.dgvParam.ColumnHeadersVisible = False
         Me.dgvParam.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colDescrip, Me.colHead1, Me.colHead2, Me.colSESLogo, Me.colAuxLogo, Me.colReportParamId})
         Me.dgvParam.DataSource = Me.REPORTPARAMBindingSource
-        Me.dgvParam.Location = New System.Drawing.Point(9, 20)
+        Me.dgvParam.Location = New System.Drawing.Point(12, 25)
+        Me.dgvParam.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvParam.MultiSelect = False
         Me.dgvParam.Name = "dgvParam"
         Me.dgvParam.ReadOnly = True
         Me.dgvParam.RowHeadersVisible = False
-        Me.dgvParam.Size = New System.Drawing.Size(186, 442)
+        Me.dgvParam.RowHeadersWidth = 51
+        Me.dgvParam.Size = New System.Drawing.Size(248, 544)
         Me.dgvParam.TabIndex = 0
         '
         'colDescrip
         '
         Me.colDescrip.DataPropertyName = "DESCRIP"
         Me.colDescrip.HeaderText = "DESCRIP"
+        Me.colDescrip.MinimumWidth = 6
         Me.colDescrip.Name = "colDescrip"
         Me.colDescrip.ReadOnly = True
         Me.colDescrip.Width = 160
@@ -109,41 +114,51 @@ Partial Class frmRPTParameter
         '
         Me.colHead1.DataPropertyName = "HEAD1"
         Me.colHead1.HeaderText = "HEAD1"
+        Me.colHead1.MinimumWidth = 6
         Me.colHead1.Name = "colHead1"
         Me.colHead1.ReadOnly = True
         Me.colHead1.Visible = False
+        Me.colHead1.Width = 125
         '
         'colHead2
         '
         Me.colHead2.DataPropertyName = "HEAD2"
         Me.colHead2.HeaderText = "HEAD2"
+        Me.colHead2.MinimumWidth = 6
         Me.colHead2.Name = "colHead2"
         Me.colHead2.ReadOnly = True
         Me.colHead2.Visible = False
+        Me.colHead2.Width = 125
         '
         'colSESLogo
         '
         Me.colSESLogo.DataPropertyName = "SESLOGO"
         Me.colSESLogo.HeaderText = "SESLOGO"
+        Me.colSESLogo.MinimumWidth = 6
         Me.colSESLogo.Name = "colSESLogo"
         Me.colSESLogo.ReadOnly = True
         Me.colSESLogo.Visible = False
+        Me.colSESLogo.Width = 125
         '
         'colAuxLogo
         '
         Me.colAuxLogo.DataPropertyName = "AUXLOGO"
         Me.colAuxLogo.HeaderText = "AUXLOGO"
+        Me.colAuxLogo.MinimumWidth = 6
         Me.colAuxLogo.Name = "colAuxLogo"
         Me.colAuxLogo.ReadOnly = True
         Me.colAuxLogo.Visible = False
+        Me.colAuxLogo.Width = 125
         '
         'colReportParamId
         '
         Me.colReportParamId.DataPropertyName = "REPORTPARAMID"
         Me.colReportParamId.HeaderText = "REPORTPARAMID"
+        Me.colReportParamId.MinimumWidth = 6
         Me.colReportParamId.Name = "colReportParamId"
         Me.colReportParamId.ReadOnly = True
         Me.colReportParamId.Visible = False
+        Me.colReportParamId.Width = 125
         '
         'REPORTPARAMBindingSource
         '
@@ -159,10 +174,11 @@ Partial Class frmRPTParameter
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNew, Me.mnuSave, Me.mnuEdit, Me.mnuDelete, Me.mnuCancel, Me.mnuExit})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(556, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(741, 52)
         Me.MenuStrip1.TabIndex = 33
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -170,67 +186,71 @@ Partial Class frmRPTParameter
         '
         Me.mnuNew.Image = CType(resources.GetObject("mnuNew.Image"), System.Drawing.Image)
         Me.mnuNew.Name = "mnuNew"
-        Me.mnuNew.Size = New System.Drawing.Size(59, 38)
+        Me.mnuNew.Size = New System.Drawing.Size(73, 48)
         Me.mnuNew.Text = "New"
         '
         'mnuSave
         '
         Me.mnuSave.Image = CType(resources.GetObject("mnuSave.Image"), System.Drawing.Image)
         Me.mnuSave.Name = "mnuSave"
-        Me.mnuSave.Size = New System.Drawing.Size(59, 38)
+        Me.mnuSave.Size = New System.Drawing.Size(74, 48)
         Me.mnuSave.Text = "Save"
         '
         'mnuEdit
         '
         Me.mnuEdit.Image = CType(resources.GetObject("mnuEdit.Image"), System.Drawing.Image)
         Me.mnuEdit.Name = "mnuEdit"
-        Me.mnuEdit.Size = New System.Drawing.Size(55, 38)
+        Me.mnuEdit.Size = New System.Drawing.Size(69, 48)
         Me.mnuEdit.Text = "Edit"
         '
         'mnuDelete
         '
         Me.mnuDelete.Image = CType(resources.GetObject("mnuDelete.Image"), System.Drawing.Image)
         Me.mnuDelete.Name = "mnuDelete"
-        Me.mnuDelete.Size = New System.Drawing.Size(68, 38)
+        Me.mnuDelete.Size = New System.Drawing.Size(87, 48)
         Me.mnuDelete.Text = "Delete"
         '
         'mnuCancel
         '
         Me.mnuCancel.Image = CType(resources.GetObject("mnuCancel.Image"), System.Drawing.Image)
         Me.mnuCancel.Name = "mnuCancel"
-        Me.mnuCancel.Size = New System.Drawing.Size(71, 38)
+        Me.mnuCancel.Size = New System.Drawing.Size(87, 48)
         Me.mnuCancel.Text = "Cancel"
         '
         'mnuExit
         '
         Me.mnuExit.Image = CType(resources.GetObject("mnuExit.Image"), System.Drawing.Image)
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(53, 38)
+        Me.mnuExit.Size = New System.Drawing.Size(67, 48)
         Me.mnuExit.Text = "Exit"
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.txtParamDescrip)
         Me.GroupBox1.Controls.Add(Me.lblName)
-        Me.GroupBox1.Location = New System.Drawing.Point(216, 45)
+        Me.GroupBox1.Location = New System.Drawing.Point(288, 55)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(316, 44)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(421, 54)
         Me.GroupBox1.TabIndex = 34
         Me.GroupBox1.TabStop = False
         '
         'txtParamDescrip
         '
-        Me.txtParamDescrip.Location = New System.Drawing.Point(85, 14)
+        Me.txtParamDescrip.Location = New System.Drawing.Point(113, 17)
+        Me.txtParamDescrip.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtParamDescrip.Name = "txtParamDescrip"
-        Me.txtParamDescrip.Size = New System.Drawing.Size(194, 20)
+        Me.txtParamDescrip.Size = New System.Drawing.Size(257, 22)
         Me.txtParamDescrip.TabIndex = 1
         '
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.Location = New System.Drawing.Point(21, 16)
+        Me.lblName.Location = New System.Drawing.Point(28, 20)
+        Me.lblName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(38, 13)
+        Me.lblName.Size = New System.Drawing.Size(47, 16)
         Me.lblName.TabIndex = 3
         Me.lblName.Text = "Name:"
         '
@@ -240,9 +260,11 @@ Partial Class frmRPTParameter
         Me.gpbLogo.Controls.Add(Me.Label1)
         Me.gpbLogo.Controls.Add(Me.picAUXLogo)
         Me.gpbLogo.Controls.Add(Me.picSESLogo)
-        Me.gpbLogo.Location = New System.Drawing.Point(216, 95)
+        Me.gpbLogo.Location = New System.Drawing.Point(288, 117)
+        Me.gpbLogo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.gpbLogo.Name = "gpbLogo"
-        Me.gpbLogo.Size = New System.Drawing.Size(316, 105)
+        Me.gpbLogo.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gpbLogo.Size = New System.Drawing.Size(421, 129)
         Me.gpbLogo.TabIndex = 35
         Me.gpbLogo.TabStop = False
         Me.gpbLogo.Text = "Logo"
@@ -250,27 +272,30 @@ Partial Class frmRPTParameter
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(153, 24)
+        Me.Label3.Location = New System.Drawing.Point(204, 30)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 13)
+        Me.Label3.Size = New System.Drawing.Size(84, 16)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Image Local:"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(24, 24)
+        Me.Label1.Location = New System.Drawing.Point(32, 30)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
+        Me.Label1.Size = New System.Drawing.Size(78, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Image SES:"
         '
         'picAUXLogo
         '
         Me.picAUXLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.picAUXLogo.Location = New System.Drawing.Point(156, 43)
+        Me.picAUXLogo.Location = New System.Drawing.Point(208, 53)
+        Me.picAUXLogo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.picAUXLogo.Name = "picAUXLogo"
-        Me.picAUXLogo.Size = New System.Drawing.Size(126, 50)
+        Me.picAUXLogo.Size = New System.Drawing.Size(167, 61)
         Me.picAUXLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picAUXLogo.TabIndex = 1
         Me.picAUXLogo.TabStop = False
@@ -278,9 +303,10 @@ Partial Class frmRPTParameter
         'picSESLogo
         '
         Me.picSESLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.picSESLogo.Location = New System.Drawing.Point(24, 43)
+        Me.picSESLogo.Location = New System.Drawing.Point(32, 53)
+        Me.picSESLogo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.picSESLogo.Name = "picSESLogo"
-        Me.picSESLogo.Size = New System.Drawing.Size(126, 50)
+        Me.picSESLogo.Size = New System.Drawing.Size(167, 61)
         Me.picSESLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picSESLogo.TabIndex = 0
         Me.picSESLogo.TabStop = False
@@ -291,46 +317,52 @@ Partial Class frmRPTParameter
         Me.grpHeaderText.Controls.Add(Me.Label4)
         Me.grpHeaderText.Controls.Add(Me.txtHEAD1)
         Me.grpHeaderText.Controls.Add(Me.Label5)
-        Me.grpHeaderText.Location = New System.Drawing.Point(216, 206)
+        Me.grpHeaderText.Location = New System.Drawing.Point(288, 254)
+        Me.grpHeaderText.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpHeaderText.Name = "grpHeaderText"
-        Me.grpHeaderText.Size = New System.Drawing.Size(333, 311)
+        Me.grpHeaderText.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpHeaderText.Size = New System.Drawing.Size(444, 383)
         Me.grpHeaderText.TabIndex = 36
         Me.grpHeaderText.TabStop = False
         Me.grpHeaderText.Text = "Header Text"
         '
         'txtHEAD2
         '
-        Me.txtHEAD2.Location = New System.Drawing.Point(9, 183)
+        Me.txtHEAD2.Location = New System.Drawing.Point(12, 225)
+        Me.txtHEAD2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHEAD2.MaxLength = 1000
         Me.txtHEAD2.Multiline = True
         Me.txtHEAD2.Name = "txtHEAD2"
-        Me.txtHEAD2.Size = New System.Drawing.Size(315, 118)
+        Me.txtHEAD2.Size = New System.Drawing.Size(419, 144)
         Me.txtHEAD2.TabIndex = 5
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(10, 167)
+        Me.Label4.Location = New System.Drawing.Point(13, 206)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(26, 13)
+        Me.Label4.Size = New System.Drawing.Size(27, 16)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "# 2:"
         '
         'txtHEAD1
         '
-        Me.txtHEAD1.Location = New System.Drawing.Point(9, 43)
+        Me.txtHEAD1.Location = New System.Drawing.Point(12, 53)
+        Me.txtHEAD1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHEAD1.MaxLength = 1000
         Me.txtHEAD1.Multiline = True
         Me.txtHEAD1.Name = "txtHEAD1"
-        Me.txtHEAD1.Size = New System.Drawing.Size(315, 118)
+        Me.txtHEAD1.Size = New System.Drawing.Size(419, 144)
         Me.txtHEAD1.TabIndex = 3
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(10, 27)
+        Me.Label5.Location = New System.Drawing.Point(13, 33)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(26, 13)
+        Me.Label5.Size = New System.Drawing.Size(27, 16)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "# 1:"
         '
@@ -344,20 +376,21 @@ Partial Class frmRPTParameter
         '
         'frmRPTParameter
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(556, 528)
+        Me.ClientSize = New System.Drawing.Size(741, 650)
         Me.Controls.Add(Me.grpHeaderText)
         Me.Controls.Add(Me.gpbLogo)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox3)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmRPTParameter"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTICKET - Report Parameter"
+        Me.Text = "IINTICKET - Report Parameter"
         Me.GroupBox3.ResumeLayout(False)
         CType(Me.dgvParam, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.REPORTPARAMBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

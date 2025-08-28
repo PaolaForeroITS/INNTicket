@@ -52,9 +52,10 @@ Partial Class frmTicketWorkerEdit
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(430, 16)
+        Me.btnSearch.Location = New System.Drawing.Point(573, 20)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(51, 20)
+        Me.btnSearch.Size = New System.Drawing.Size(68, 25)
         Me.btnSearch.TabIndex = 11
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True
@@ -63,35 +64,39 @@ Partial Class frmTicketWorkerEdit
         '
         Me.txtFullName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtFullName.Enabled = False
-        Me.txtFullName.Location = New System.Drawing.Point(71, 14)
+        Me.txtFullName.Location = New System.Drawing.Point(95, 17)
+        Me.txtFullName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFullName.Name = "txtFullName"
-        Me.txtFullName.Size = New System.Drawing.Size(353, 20)
+        Me.txtFullName.Size = New System.Drawing.Size(470, 22)
         Me.txtFullName.TabIndex = 10
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(20, 16)
+        Me.Label1.Location = New System.Drawing.Point(27, 20)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 13)
+        Me.Label1.Size = New System.Drawing.Size(54, 16)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Worker:"
         '
         'btnCancelDelete
         '
-        Me.btnCancelDelete.Location = New System.Drawing.Point(266, 271)
+        Me.btnCancelDelete.Location = New System.Drawing.Point(355, 334)
+        Me.btnCancelDelete.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCancelDelete.Name = "btnCancelDelete"
-        Me.btnCancelDelete.Size = New System.Drawing.Size(100, 27)
+        Me.btnCancelDelete.Size = New System.Drawing.Size(133, 33)
         Me.btnCancelDelete.TabIndex = 23
         Me.btnCancelDelete.Text = "Delete"
         Me.btnCancelDelete.UseVisualStyleBackColor = True
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(151, 271)
+        Me.btnSave.Location = New System.Drawing.Point(201, 334)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(100, 27)
+        Me.btnSave.Size = New System.Drawing.Size(133, 33)
         Me.btnSave.TabIndex = 22
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
@@ -102,9 +107,11 @@ Partial Class frmTicketWorkerEdit
         Me.GroupBox1.Controls.Add(Me.btnSearch)
         Me.GroupBox1.Controls.Add(Me.txtFullName)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(5, 1)
+        Me.GroupBox1.Location = New System.Drawing.Point(7, 1)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(497, 65)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(663, 80)
         Me.GroupBox1.TabIndex = 21
         Me.GroupBox1.TabStop = False
         '
@@ -112,17 +119,19 @@ Partial Class frmTicketWorkerEdit
         '
         Me.txtAppointment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtAppointment.Enabled = False
-        Me.txtAppointment.Location = New System.Drawing.Point(71, 35)
+        Me.txtAppointment.Location = New System.Drawing.Point(95, 43)
+        Me.txtAppointment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAppointment.Name = "txtAppointment"
-        Me.txtAppointment.Size = New System.Drawing.Size(353, 20)
+        Me.txtAppointment.Size = New System.Drawing.Size(470, 22)
         Me.txtAppointment.TabIndex = 22
         '
         'txtHourQde
         '
-        Me.txtHourQde.Location = New System.Drawing.Point(108, 160)
+        Me.txtHourQde.Location = New System.Drawing.Point(144, 197)
+        Me.txtHourQde.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHourQde.Name = "txtHourQde"
         Me.txtHourQde.ReadOnly = True
-        Me.txtHourQde.Size = New System.Drawing.Size(56, 20)
+        Me.txtHourQde.Size = New System.Drawing.Size(73, 22)
         Me.txtHourQde.TabIndex = 23
         Me.txtHourQde.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -130,9 +139,10 @@ Partial Class frmTicketWorkerEdit
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(20, 19)
+        Me.Label9.Location = New System.Drawing.Point(27, 23)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(75, 13)
+        Me.Label9.Size = New System.Drawing.Size(93, 16)
         Me.Label9.TabIndex = 18
         Me.Label9.Text = "Register Date:"
         '
@@ -140,19 +150,21 @@ Partial Class frmTicketWorkerEdit
         '
         Me.dtpRegisterDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpRegisterDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpRegisterDate.Location = New System.Drawing.Point(108, 19)
+        Me.dtpRegisterDate.Location = New System.Drawing.Point(144, 23)
+        Me.dtpRegisterDate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpRegisterDate.MinDate = New Date(2017, 1, 1, 0, 0, 0, 0)
         Me.dtpRegisterDate.Name = "dtpRegisterDate"
-        Me.dtpRegisterDate.Size = New System.Drawing.Size(125, 20)
+        Me.dtpRegisterDate.Size = New System.Drawing.Size(165, 22)
         Me.dtpRegisterDate.TabIndex = 19
         Me.dtpRegisterDate.Value = New Date(2017, 1, 31, 0, 0, 0, 0)
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(20, 160)
+        Me.Label10.Location = New System.Drawing.Point(27, 197)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(34, 13)
+        Me.Label10.Size = New System.Drawing.Size(41, 16)
         Me.Label10.TabIndex = 20
         Me.Label10.Text = "Total:"
         '
@@ -170,17 +182,20 @@ Partial Class frmTicketWorkerEdit
         Me.GroupBox2.Controls.Add(Me.dtpRegisterDate)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Location = New System.Drawing.Point(5, 72)
+        Me.GroupBox2.Location = New System.Drawing.Point(7, 89)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(246, 193)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(328, 238)
         Me.GroupBox2.TabIndex = 24
         Me.GroupBox2.TabStop = False
         '
         'txtHourLost
         '
-        Me.txtHourLost.Location = New System.Drawing.Point(108, 134)
+        Me.txtHourLost.Location = New System.Drawing.Point(144, 165)
+        Me.txtHourLost.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHourLost.Name = "txtHourLost"
-        Me.txtHourLost.Size = New System.Drawing.Size(56, 20)
+        Me.txtHourLost.Size = New System.Drawing.Size(73, 22)
         Me.txtHourLost.TabIndex = 31
         Me.txtHourLost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -188,17 +203,19 @@ Partial Class frmTicketWorkerEdit
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(20, 134)
+        Me.Label5.Location = New System.Drawing.Point(27, 165)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(56, 13)
+        Me.Label5.Size = New System.Drawing.Size(67, 16)
         Me.Label5.TabIndex = 30
         Me.Label5.Text = "Hour Lost:"
         '
         'txtHourStandby
         '
-        Me.txtHourStandby.Location = New System.Drawing.Point(108, 108)
+        Me.txtHourStandby.Location = New System.Drawing.Point(144, 133)
+        Me.txtHourStandby.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHourStandby.Name = "txtHourStandby"
-        Me.txtHourStandby.Size = New System.Drawing.Size(56, 20)
+        Me.txtHourStandby.Size = New System.Drawing.Size(73, 22)
         Me.txtHourStandby.TabIndex = 29
         Me.txtHourStandby.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -206,17 +223,19 @@ Partial Class frmTicketWorkerEdit
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(20, 108)
+        Me.Label4.Location = New System.Drawing.Point(27, 133)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 13)
+        Me.Label4.Size = New System.Drawing.Size(92, 16)
         Me.Label4.TabIndex = 28
         Me.Label4.Text = "Hour Standby:"
         '
         'txtHourOperation
         '
-        Me.txtHourOperation.Location = New System.Drawing.Point(108, 82)
+        Me.txtHourOperation.Location = New System.Drawing.Point(144, 101)
+        Me.txtHourOperation.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHourOperation.Name = "txtHourOperation"
-        Me.txtHourOperation.Size = New System.Drawing.Size(56, 20)
+        Me.txtHourOperation.Size = New System.Drawing.Size(73, 22)
         Me.txtHourOperation.TabIndex = 27
         Me.txtHourOperation.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -224,17 +243,19 @@ Partial Class frmTicketWorkerEdit
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(20, 82)
+        Me.Label3.Location = New System.Drawing.Point(27, 101)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(82, 13)
+        Me.Label3.Size = New System.Drawing.Size(101, 16)
         Me.Label3.TabIndex = 26
         Me.Label3.Text = "Hour Operation:"
         '
         'txtHourTravel
         '
-        Me.txtHourTravel.Location = New System.Drawing.Point(108, 56)
+        Me.txtHourTravel.Location = New System.Drawing.Point(144, 69)
+        Me.txtHourTravel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHourTravel.Name = "txtHourTravel"
-        Me.txtHourTravel.Size = New System.Drawing.Size(56, 20)
+        Me.txtHourTravel.Size = New System.Drawing.Size(73, 22)
         Me.txtHourTravel.TabIndex = 25
         Me.txtHourTravel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -242,36 +263,40 @@ Partial Class frmTicketWorkerEdit
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(20, 56)
+        Me.Label2.Location = New System.Drawing.Point(27, 69)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(66, 13)
+        Me.Label2.Size = New System.Drawing.Size(81, 16)
         Me.Label2.TabIndex = 24
         Me.Label2.Text = "Hour Travel:"
         '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.txtActivityResume)
-        Me.GroupBox3.Location = New System.Drawing.Point(257, 72)
+        Me.GroupBox3.Location = New System.Drawing.Point(343, 89)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(245, 193)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(327, 238)
         Me.GroupBox3.TabIndex = 25
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Activity Resume:"
         '
         'txtActivityResume
         '
-        Me.txtActivityResume.Location = New System.Drawing.Point(9, 19)
+        Me.txtActivityResume.Location = New System.Drawing.Point(12, 23)
+        Me.txtActivityResume.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtActivityResume.Multiline = True
         Me.txtActivityResume.Name = "txtActivityResume"
-        Me.txtActivityResume.Size = New System.Drawing.Size(230, 168)
+        Me.txtActivityResume.Size = New System.Drawing.Size(305, 206)
         Me.txtActivityResume.TabIndex = 22
         '
         'frmTicketWorkerEdit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(508, 306)
+        Me.ClientSize = New System.Drawing.Size(677, 377)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.btnCancelDelete)
@@ -279,6 +304,7 @@ Partial Class frmTicketWorkerEdit
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmTicketWorkerEdit"

@@ -24,8 +24,8 @@ Partial Class frmTicketFile
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketFile))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuOpenFile = New System.Windows.Forms.ToolStripMenuItem()
@@ -61,6 +61,7 @@ Partial Class frmTicketFile
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem, Me.mnuOpenFile, Me.mnuDeleteFile, Me.mnuRefresh, Me.mnuLog})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -72,7 +73,7 @@ Partial Class frmTicketFile
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 38)
         Me.mnuNewItem.Text = "New Item"
         Me.mnuNewItem.ToolTipText = "Save the Ticket"
         '
@@ -80,28 +81,28 @@ Partial Class frmTicketFile
         '
         Me.mnuOpenFile.Image = CType(resources.GetObject("mnuOpenFile.Image"), System.Drawing.Image)
         Me.mnuOpenFile.Name = "mnuOpenFile"
-        Me.mnuOpenFile.Size = New System.Drawing.Size(85, 38)
+        Me.mnuOpenFile.Size = New System.Drawing.Size(106, 38)
         Me.mnuOpenFile.Text = "Open File"
         '
         'mnuDeleteFile
         '
         Me.mnuDeleteFile.Image = CType(resources.GetObject("mnuDeleteFile.Image"), System.Drawing.Image)
         Me.mnuDeleteFile.Name = "mnuDeleteFile"
-        Me.mnuDeleteFile.Size = New System.Drawing.Size(89, 38)
+        Me.mnuDeleteFile.Size = New System.Drawing.Size(114, 38)
         Me.mnuDeleteFile.Text = "Delete File"
         '
         'mnuRefresh
         '
         Me.mnuRefresh.Image = CType(resources.GetObject("mnuRefresh.Image"), System.Drawing.Image)
         Me.mnuRefresh.Name = "mnuRefresh"
-        Me.mnuRefresh.Size = New System.Drawing.Size(74, 38)
+        Me.mnuRefresh.Size = New System.Drawing.Size(92, 38)
         Me.mnuRefresh.Text = "Refresh"
         '
         'mnuLog
         '
         Me.mnuLog.Image = CType(resources.GetObject("mnuLog.Image"), System.Drawing.Image)
         Me.mnuLog.Name = "mnuLog"
-        Me.mnuLog.Size = New System.Drawing.Size(55, 38)
+        Me.mnuLog.Size = New System.Drawing.Size(68, 38)
         Me.mnuLog.Text = "Log"
         '
         'dgvTicketFile
@@ -127,6 +128,7 @@ Partial Class frmTicketFile
         '
         Me.colSync.DataPropertyName = "SYNC"
         Me.colSync.HeaderText = "Sync"
+        Me.colSync.MinimumWidth = 6
         Me.colSync.Name = "colSync"
         Me.colSync.ReadOnly = True
         Me.colSync.Width = 50
@@ -135,6 +137,7 @@ Partial Class frmTicketFile
         '
         Me.colAvailable.DataPropertyName = "AVAILABLE"
         Me.colAvailable.HeaderText = "Ready"
+        Me.colAvailable.MinimumWidth = 6
         Me.colAvailable.Name = "colAvailable"
         Me.colAvailable.ReadOnly = True
         Me.colAvailable.Width = 45
@@ -143,38 +146,42 @@ Partial Class frmTicketFile
         '
         Me.DataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn11.DataPropertyName = "CREATEDDATETIME"
-        DataGridViewCellStyle1.Format = "dd/MM/yyyy HH:mm tt"
-        DataGridViewCellStyle1.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn11.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Format = "dd/MM/yyyy HH:mm tt"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn11.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridViewTextBoxColumn11.HeaderText = "Date"
+        Me.DataGridViewTextBoxColumn11.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         Me.DataGridViewTextBoxColumn11.ReadOnly = True
-        Me.DataGridViewTextBoxColumn11.Width = 55
+        Me.DataGridViewTextBoxColumn11.Width = 65
         '
         'DataGridViewTextBoxColumn9
         '
         Me.DataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn9.DataPropertyName = "USERNAME"
         Me.DataGridViewTextBoxColumn9.HeaderText = "Created By"
+        Me.DataGridViewTextBoxColumn9.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         Me.DataGridViewTextBoxColumn9.ReadOnly = True
-        Me.DataGridViewTextBoxColumn9.Width = 84
+        Me.DataGridViewTextBoxColumn9.Width = 103
         '
         'colTicketFileName
         '
         Me.colTicketFileName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colTicketFileName.DataPropertyName = "TICKETFILENAME"
         Me.colTicketFileName.HeaderText = "File Name"
+        Me.colTicketFileName.MinimumWidth = 6
         Me.colTicketFileName.Name = "colTicketFileName"
         Me.colTicketFileName.ReadOnly = True
-        Me.colTicketFileName.Width = 79
+        Me.colTicketFileName.Width = 98
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "COMMENT"
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridViewTextBoxColumn5.HeaderText = "Comment"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.ReadOnly = True
         Me.DataGridViewTextBoxColumn5.Width = 450
@@ -183,41 +190,51 @@ Partial Class frmTicketFile
         '
         Me.colTicketFileId.DataPropertyName = "TICKETFILEID"
         Me.colTicketFileId.HeaderText = "TICKETFILEID"
+        Me.colTicketFileId.MinimumWidth = 6
         Me.colTicketFileId.Name = "colTicketFileId"
         Me.colTicketFileId.ReadOnly = True
         Me.colTicketFileId.Visible = False
+        Me.colTicketFileId.Width = 125
         '
         'colTicketId
         '
         Me.colTicketId.DataPropertyName = "TICKETID"
         Me.colTicketId.HeaderText = "TICKETID"
+        Me.colTicketId.MinimumWidth = 6
         Me.colTicketId.Name = "colTicketId"
         Me.colTicketId.ReadOnly = True
         Me.colTicketId.Visible = False
+        Me.colTicketId.Width = 125
         '
         'DataGridViewTextBoxColumn7
         '
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "ACTION"
         Me.DataGridViewTextBoxColumn7.HeaderText = "ACTION"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
         Me.DataGridViewTextBoxColumn7.Visible = False
+        Me.DataGridViewTextBoxColumn7.Width = 125
         '
         'DataGridViewTextBoxColumn10
         '
         Me.DataGridViewTextBoxColumn10.DataPropertyName = "FILESIZE"
         Me.DataGridViewTextBoxColumn10.HeaderText = "FILESIZE"
+        Me.DataGridViewTextBoxColumn10.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         Me.DataGridViewTextBoxColumn10.ReadOnly = True
         Me.DataGridViewTextBoxColumn10.Visible = False
+        Me.DataGridViewTextBoxColumn10.Width = 125
         '
         'colLocation
         '
         Me.colLocation.DataPropertyName = "LOCATION"
         Me.colLocation.HeaderText = "Stored"
+        Me.colLocation.MinimumWidth = 6
         Me.colLocation.Name = "colLocation"
         Me.colLocation.ReadOnly = True
         Me.colLocation.Visible = False
+        Me.colLocation.Width = 125
         '
         'TICKETFILEBindingSource
         '
@@ -274,7 +291,7 @@ Partial Class frmTicketFile
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(711, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 13)
+        Me.Label1.Size = New System.Drawing.Size(47, 16)
         Me.Label1.TabIndex = 35
         Me.Label1.Text = "Ticket:"
         '
@@ -286,7 +303,7 @@ Partial Class frmTicketFile
         Me.txtTicketId.Location = New System.Drawing.Point(757, 17)
         Me.txtTicketId.Name = "txtTicketId"
         Me.txtTicketId.ReadOnly = True
-        Me.txtTicketId.Size = New System.Drawing.Size(100, 20)
+        Me.txtTicketId.Size = New System.Drawing.Size(100, 22)
         Me.txtTicketId.TabIndex = 36
         '
         'frmTicketFile
@@ -299,11 +316,12 @@ Partial Class frmTicketFile
         Me.Controls.Add(Me.dgvTicketFile)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmTicketFile"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Attachment"
+        Me.Text = "INNTicket - Attachment"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.dgvTicketFile, System.ComponentModel.ISupportInitialize).EndInit()

@@ -46,9 +46,10 @@ Partial Class frmServiceLineList
         'chkNo
         '
         Me.chkNo.AutoSize = True
-        Me.chkNo.Location = New System.Drawing.Point(318, 12)
+        Me.chkNo.Location = New System.Drawing.Point(424, 15)
+        Me.chkNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkNo.Name = "chkNo"
-        Me.chkNo.Size = New System.Drawing.Size(40, 17)
+        Me.chkNo.Size = New System.Drawing.Size(47, 20)
         Me.chkNo.TabIndex = 47
         Me.chkNo.Text = "No"
         Me.chkNo.UseVisualStyleBackColor = True
@@ -58,9 +59,10 @@ Partial Class frmServiceLineList
         Me.chkYes.AutoSize = True
         Me.chkYes.Checked = True
         Me.chkYes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkYes.Location = New System.Drawing.Point(268, 12)
+        Me.chkYes.Location = New System.Drawing.Point(357, 15)
+        Me.chkYes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkYes.Name = "chkYes"
-        Me.chkYes.Size = New System.Drawing.Size(44, 17)
+        Me.chkYes.Size = New System.Drawing.Size(53, 20)
         Me.chkYes.TabIndex = 46
         Me.chkYes.Text = "Yes"
         Me.chkYes.UseVisualStyleBackColor = True
@@ -68,9 +70,10 @@ Partial Class frmServiceLineList
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(222, 12)
+        Me.Label3.Location = New System.Drawing.Point(296, 15)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.Size = New System.Drawing.Size(47, 16)
         Me.Label3.TabIndex = 45
         Me.Label3.Text = "Active:"
         '
@@ -78,10 +81,11 @@ Partial Class frmServiceLineList
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(425, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(567, 52)
         Me.MenuStrip1.TabIndex = 44
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -89,7 +93,7 @@ Partial Class frmServiceLineList
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
         Me.mnuNewItem.Text = "New Item"
         Me.mnuNewItem.ToolTipText = "Save the Ticket"
         '
@@ -149,26 +153,30 @@ Partial Class frmServiceLineList
         Me.dgvServiceLine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvServiceLine.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colServiceLineId, Me.colName, Me.colActive})
         Me.dgvServiceLine.DataSource = Me.SERVICELINEBindingSource
-        Me.dgvServiceLine.Location = New System.Drawing.Point(5, 45)
+        Me.dgvServiceLine.Location = New System.Drawing.Point(7, 55)
+        Me.dgvServiceLine.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvServiceLine.Name = "dgvServiceLine"
         Me.dgvServiceLine.ReadOnly = True
         Me.dgvServiceLine.RowHeadersWidth = 10
         Me.dgvServiceLine.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvServiceLine.Size = New System.Drawing.Size(416, 395)
+        Me.dgvServiceLine.Size = New System.Drawing.Size(555, 486)
         Me.dgvServiceLine.TabIndex = 48
         '
         'colServiceLineId
         '
         Me.colServiceLineId.DataPropertyName = "SERVICELINEID"
         Me.colServiceLineId.HeaderText = "ServiceLineId"
+        Me.colServiceLineId.MinimumWidth = 6
         Me.colServiceLineId.Name = "colServiceLineId"
         Me.colServiceLineId.ReadOnly = True
         Me.colServiceLineId.Visible = False
+        Me.colServiceLineId.Width = 125
         '
         'colName
         '
         Me.colName.DataPropertyName = "NAME"
         Me.colName.HeaderText = "Service Line"
+        Me.colName.MinimumWidth = 6
         Me.colName.Name = "colName"
         Me.colName.ReadOnly = True
         Me.colName.Width = 320
@@ -177,27 +185,29 @@ Partial Class frmServiceLineList
         '
         Me.colActive.DataPropertyName = "ACTIVE"
         Me.colActive.HeaderText = "Active"
+        Me.colActive.MinimumWidth = 6
         Me.colActive.Name = "colActive"
         Me.colActive.ReadOnly = True
         Me.colActive.Width = 60
         '
         'frmServiceLineList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(425, 443)
+        Me.ClientSize = New System.Drawing.Size(567, 545)
         Me.Controls.Add(Me.dgvServiceLine)
         Me.Controls.Add(Me.chkNo)
         Me.Controls.Add(Me.chkYes)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmServiceLineList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Service Line"
+        Me.Text = "INNTicket - Service Line"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()

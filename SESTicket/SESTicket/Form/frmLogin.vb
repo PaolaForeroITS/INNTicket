@@ -177,7 +177,7 @@
 
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim sysVer As New clsSystemVersion
-        Me.Text = "SESTicket - Version " & sysVer.SystemVersion
+        Me.Text = "INNTicket - Version " & sysVer.SystemVersion
         sysVer.Dispose()
         sysVer = Nothing
 

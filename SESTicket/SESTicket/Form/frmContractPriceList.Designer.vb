@@ -23,12 +23,12 @@ Partial Class frmContractPriceList
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmContractPriceList))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
         Me.CONTRACTPRICELISTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CONTRACTPRICELISTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTPRICELISTTableAdapter()
@@ -36,20 +36,6 @@ Partial Class frmContractPriceList
         Me.CONTRACTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
         Me.CUSTOMERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
         Me.dgvContractPriceList = New System.Windows.Forms.DataGridView()
-        Me.cbxCustomer = New System.Windows.Forms.ComboBox()
-        Me.CUSTOMERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.cbxContract = New System.Windows.Forms.ComboBox()
-        Me.CONTRACTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuExportData = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuImportData = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuUpdateTicket = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.chkYes = New System.Windows.Forms.CheckBox()
-        Me.chkNo = New System.Windows.Forms.CheckBox()
         Me.colTabGroup = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colGroupOrder = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colCodeItem = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -71,6 +57,20 @@ Partial Class frmContractPriceList
         Me.colPermUpdPriceUnit = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colPermNegative = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colPriceUnitDecimal = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cbxCustomer = New System.Windows.Forms.ComboBox()
+        Me.CUSTOMERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbxContract = New System.Windows.Forms.ComboBox()
+        Me.CONTRACTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuExportData = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuImportData = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuUpdateTicket = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.chkYes = New System.Windows.Forms.CheckBox()
+        Me.chkNo = New System.Windows.Forms.CheckBox()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CONTRACTPRICELISTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvContractPriceList, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -142,22 +142,243 @@ Partial Class frmContractPriceList
         Me.dgvContractPriceList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvContractPriceList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colTabGroup, Me.colGroupOrder, Me.colCodeItem, Me.colDescription, Me.colUnit, Me.colSalesPrice, Me.colClass, Me.colInvClassType, Me.colActive, Me.colQty, Me.colContractPriceListId, Me.colContractID, Me.colIsHeader, Me.colExibitOnReport, Me.colShowCustItemRep, Me.colPriceBase, Me.colPriceUtility, Me.colPermUpdDescrip, Me.colPermUpdPriceUnit, Me.colPermNegative, Me.colPriceUnitDecimal})
         Me.dgvContractPriceList.DataSource = Me.CONTRACTPRICELISTBindingSource
-        Me.dgvContractPriceList.Location = New System.Drawing.Point(0, 45)
+        Me.dgvContractPriceList.Location = New System.Drawing.Point(0, 55)
+        Me.dgvContractPriceList.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvContractPriceList.Name = "dgvContractPriceList"
         Me.dgvContractPriceList.ReadOnly = True
         Me.dgvContractPriceList.RowHeadersWidth = 20
         Me.dgvContractPriceList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvContractPriceList.Size = New System.Drawing.Size(1192, 566)
+        Me.dgvContractPriceList.Size = New System.Drawing.Size(1589, 697)
         Me.dgvContractPriceList.TabIndex = 1
+        '
+        'colTabGroup
+        '
+        Me.colTabGroup.DataPropertyName = "TABGROUP"
+        Me.colTabGroup.HeaderText = "Tab Group"
+        Me.colTabGroup.MinimumWidth = 6
+        Me.colTabGroup.Name = "colTabGroup"
+        Me.colTabGroup.ReadOnly = True
+        Me.colTabGroup.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.colTabGroup.Width = 85
+        '
+        'colGroupOrder
+        '
+        Me.colGroupOrder.DataPropertyName = "GROUPORDER"
+        DataGridViewCellStyle6.Format = "N2"
+        DataGridViewCellStyle6.NullValue = Nothing
+        Me.colGroupOrder.DefaultCellStyle = DataGridViewCellStyle6
+        Me.colGroupOrder.HeaderText = "Order"
+        Me.colGroupOrder.MinimumWidth = 6
+        Me.colGroupOrder.Name = "colGroupOrder"
+        Me.colGroupOrder.ReadOnly = True
+        Me.colGroupOrder.Width = 60
+        '
+        'colCodeItem
+        '
+        Me.colCodeItem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.colCodeItem.DataPropertyName = "CUSTCODEITEM"
+        Me.colCodeItem.HeaderText = "Code Item"
+        Me.colCodeItem.MinimumWidth = 6
+        Me.colCodeItem.Name = "colCodeItem"
+        Me.colCodeItem.ReadOnly = True
+        Me.colCodeItem.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.colCodeItem.Width = 74
+        '
+        'colDescription
+        '
+        Me.colDescription.DataPropertyName = "DESCRIPTION"
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.colDescription.DefaultCellStyle = DataGridViewCellStyle7
+        Me.colDescription.HeaderText = "Description"
+        Me.colDescription.MinimumWidth = 6
+        Me.colDescription.Name = "colDescription"
+        Me.colDescription.ReadOnly = True
+        Me.colDescription.Width = 520
+        '
+        'colUnit
+        '
+        Me.colUnit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colUnit.DataPropertyName = "UNIT_SALE"
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.colUnit.DefaultCellStyle = DataGridViewCellStyle8
+        Me.colUnit.HeaderText = "Unit"
+        Me.colUnit.MinimumWidth = 6
+        Me.colUnit.Name = "colUnit"
+        Me.colUnit.ReadOnly = True
+        Me.colUnit.Width = 59
+        '
+        'colSalesPrice
+        '
+        Me.colSalesPrice.DataPropertyName = "SALES_PRICE"
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle9.NullValue = Nothing
+        Me.colSalesPrice.DefaultCellStyle = DataGridViewCellStyle9
+        Me.colSalesPrice.HeaderText = "Sales Price"
+        Me.colSalesPrice.MinimumWidth = 6
+        Me.colSalesPrice.Name = "colSalesPrice"
+        Me.colSalesPrice.ReadOnly = True
+        Me.colSalesPrice.Width = 125
+        '
+        'colClass
+        '
+        Me.colClass.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
+        Me.colClass.DataPropertyName = "INVENTORYCLASSID"
+        Me.colClass.HeaderText = "Class"
+        Me.colClass.MinimumWidth = 6
+        Me.colClass.Name = "colClass"
+        Me.colClass.ReadOnly = True
+        Me.colClass.Width = 70
+        '
+        'colInvClassType
+        '
+        Me.colInvClassType.DataPropertyName = "INVENTORYCLASSTYPE"
+        Me.colInvClassType.HeaderText = "Type"
+        Me.colInvClassType.MinimumWidth = 6
+        Me.colInvClassType.Name = "colInvClassType"
+        Me.colInvClassType.ReadOnly = True
+        Me.colInvClassType.Width = 60
+        '
+        'colActive
+        '
+        Me.colActive.DataPropertyName = "ACTIVE"
+        Me.colActive.HeaderText = "Active"
+        Me.colActive.MinimumWidth = 6
+        Me.colActive.Name = "colActive"
+        Me.colActive.ReadOnly = True
+        Me.colActive.Width = 60
+        '
+        'colQty
+        '
+        Me.colQty.DataPropertyName = "CONTRACTED_QTY"
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle10.Format = "n2"
+        Me.colQty.DefaultCellStyle = DataGridViewCellStyle10
+        Me.colQty.HeaderText = "Qty"
+        Me.colQty.MinimumWidth = 6
+        Me.colQty.Name = "colQty"
+        Me.colQty.ReadOnly = True
+        Me.colQty.Visible = False
+        Me.colQty.Width = 50
+        '
+        'colContractPriceListId
+        '
+        Me.colContractPriceListId.DataPropertyName = "CONTRACTPRICELISTID"
+        Me.colContractPriceListId.HeaderText = "ContractPriceListID"
+        Me.colContractPriceListId.MinimumWidth = 6
+        Me.colContractPriceListId.Name = "colContractPriceListId"
+        Me.colContractPriceListId.ReadOnly = True
+        Me.colContractPriceListId.Visible = False
+        Me.colContractPriceListId.Width = 125
+        '
+        'colContractID
+        '
+        Me.colContractID.DataPropertyName = "CONTRACTID"
+        Me.colContractID.HeaderText = "ContractID"
+        Me.colContractID.MinimumWidth = 6
+        Me.colContractID.Name = "colContractID"
+        Me.colContractID.ReadOnly = True
+        Me.colContractID.Visible = False
+        Me.colContractID.Width = 125
+        '
+        'colIsHeader
+        '
+        Me.colIsHeader.DataPropertyName = "ISHEADER"
+        Me.colIsHeader.HeaderText = "ISHEADER"
+        Me.colIsHeader.MinimumWidth = 6
+        Me.colIsHeader.Name = "colIsHeader"
+        Me.colIsHeader.ReadOnly = True
+        Me.colIsHeader.Visible = False
+        Me.colIsHeader.Width = 125
+        '
+        'colExibitOnReport
+        '
+        Me.colExibitOnReport.DataPropertyName = "EXIBITONREPORT"
+        Me.colExibitOnReport.HeaderText = "EXIBITONREPORT"
+        Me.colExibitOnReport.MinimumWidth = 6
+        Me.colExibitOnReport.Name = "colExibitOnReport"
+        Me.colExibitOnReport.ReadOnly = True
+        Me.colExibitOnReport.Visible = False
+        Me.colExibitOnReport.Width = 125
+        '
+        'colShowCustItemRep
+        '
+        Me.colShowCustItemRep.DataPropertyName = "SHOWCUSTITEMREPORT"
+        Me.colShowCustItemRep.HeaderText = "SHOWCUSTITEMREPORT"
+        Me.colShowCustItemRep.MinimumWidth = 6
+        Me.colShowCustItemRep.Name = "colShowCustItemRep"
+        Me.colShowCustItemRep.ReadOnly = True
+        Me.colShowCustItemRep.Visible = False
+        Me.colShowCustItemRep.Width = 125
+        '
+        'colPriceBase
+        '
+        Me.colPriceBase.DataPropertyName = "PRICEBASE"
+        Me.colPriceBase.HeaderText = "PRICEBASE"
+        Me.colPriceBase.MinimumWidth = 6
+        Me.colPriceBase.Name = "colPriceBase"
+        Me.colPriceBase.ReadOnly = True
+        Me.colPriceBase.Visible = False
+        Me.colPriceBase.Width = 125
+        '
+        'colPriceUtility
+        '
+        Me.colPriceUtility.DataPropertyName = "PRICEUTILITY"
+        Me.colPriceUtility.HeaderText = "PRICEUTILITY"
+        Me.colPriceUtility.MinimumWidth = 6
+        Me.colPriceUtility.Name = "colPriceUtility"
+        Me.colPriceUtility.ReadOnly = True
+        Me.colPriceUtility.Visible = False
+        Me.colPriceUtility.Width = 125
+        '
+        'colPermUpdDescrip
+        '
+        Me.colPermUpdDescrip.DataPropertyName = "PERMITUPDATEDESCRIP"
+        Me.colPermUpdDescrip.HeaderText = "PERMITUPDATEDESCRIP"
+        Me.colPermUpdDescrip.MinimumWidth = 6
+        Me.colPermUpdDescrip.Name = "colPermUpdDescrip"
+        Me.colPermUpdDescrip.ReadOnly = True
+        Me.colPermUpdDescrip.Visible = False
+        Me.colPermUpdDescrip.Width = 125
+        '
+        'colPermUpdPriceUnit
+        '
+        Me.colPermUpdPriceUnit.DataPropertyName = "PERMITUPDATEPRICEUNIT"
+        Me.colPermUpdPriceUnit.HeaderText = "PERMITUPDATEPRICEUNIT"
+        Me.colPermUpdPriceUnit.MinimumWidth = 6
+        Me.colPermUpdPriceUnit.Name = "colPermUpdPriceUnit"
+        Me.colPermUpdPriceUnit.ReadOnly = True
+        Me.colPermUpdPriceUnit.Visible = False
+        Me.colPermUpdPriceUnit.Width = 125
+        '
+        'colPermNegative
+        '
+        Me.colPermNegative.DataPropertyName = "PERMITNEGATIVE"
+        Me.colPermNegative.HeaderText = "PERMITNEGATIVE"
+        Me.colPermNegative.MinimumWidth = 6
+        Me.colPermNegative.Name = "colPermNegative"
+        Me.colPermNegative.ReadOnly = True
+        Me.colPermNegative.Visible = False
+        Me.colPermNegative.Width = 125
+        '
+        'colPriceUnitDecimal
+        '
+        Me.colPriceUnitDecimal.DataPropertyName = "PRICEUNITDECIMAL"
+        Me.colPriceUnitDecimal.HeaderText = "PRICEUNITDECIMAL"
+        Me.colPriceUnitDecimal.MinimumWidth = 6
+        Me.colPriceUnitDecimal.Name = "colPriceUnitDecimal"
+        Me.colPriceUnitDecimal.ReadOnly = True
+        Me.colPriceUnitDecimal.Visible = False
+        Me.colPriceUnitDecimal.Width = 125
         '
         'cbxCustomer
         '
         Me.cbxCustomer.DataSource = Me.CUSTOMERBindingSource
         Me.cbxCustomer.DisplayMember = "NAME"
         Me.cbxCustomer.FormattingEnabled = True
-        Me.cbxCustomer.Location = New System.Drawing.Point(483, 12)
+        Me.cbxCustomer.Location = New System.Drawing.Point(644, 15)
+        Me.cbxCustomer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCustomer.Name = "cbxCustomer"
-        Me.cbxCustomer.Size = New System.Drawing.Size(265, 21)
+        Me.cbxCustomer.Size = New System.Drawing.Size(352, 24)
         Me.cbxCustomer.TabIndex = 5
         Me.cbxCustomer.ValueMember = "CUSTOMERID"
         '
@@ -169,9 +390,10 @@ Partial Class frmContractPriceList
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(423, 15)
+        Me.Label1.Location = New System.Drawing.Point(564, 18)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Customer:"
         '
@@ -180,9 +402,10 @@ Partial Class frmContractPriceList
         Me.cbxContract.DataSource = Me.CONTRACTBindingSource
         Me.cbxContract.DisplayMember = "CONTRACTNUMBER"
         Me.cbxContract.FormattingEnabled = True
-        Me.cbxContract.Location = New System.Drawing.Point(810, 12)
+        Me.cbxContract.Location = New System.Drawing.Point(1080, 15)
+        Me.cbxContract.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxContract.Name = "cbxContract"
-        Me.cbxContract.Size = New System.Drawing.Size(231, 21)
+        Me.cbxContract.Size = New System.Drawing.Size(307, 24)
         Me.cbxContract.TabIndex = 7
         Me.cbxContract.ValueMember = "CONTRACTID"
         '
@@ -194,9 +417,10 @@ Partial Class frmContractPriceList
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(754, 15)
+        Me.Label2.Location = New System.Drawing.Point(1005, 18)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(50, 13)
+        Me.Label2.Size = New System.Drawing.Size(59, 16)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Contract:"
         '
@@ -204,10 +428,11 @@ Partial Class frmContractPriceList
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem, Me.mnuExportData, Me.mnuImportData, Me.mnuUpdateTicket})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1198, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1597, 52)
         Me.MenuStrip1.TabIndex = 31
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -215,7 +440,7 @@ Partial Class frmContractPriceList
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
         Me.mnuNewItem.Text = "New Item"
         Me.mnuNewItem.ToolTipText = "Save the Ticket"
         '
@@ -223,29 +448,30 @@ Partial Class frmContractPriceList
         '
         Me.mnuExportData.Image = CType(resources.GetObject("mnuExportData.Image"), System.Drawing.Image)
         Me.mnuExportData.Name = "mnuExportData"
-        Me.mnuExportData.Size = New System.Drawing.Size(95, 38)
+        Me.mnuExportData.Size = New System.Drawing.Size(122, 48)
         Me.mnuExportData.Text = "Export Data"
         '
         'mnuImportData
         '
         Me.mnuImportData.Image = CType(resources.GetObject("mnuImportData.Image"), System.Drawing.Image)
         Me.mnuImportData.Name = "mnuImportData"
-        Me.mnuImportData.Size = New System.Drawing.Size(98, 38)
+        Me.mnuImportData.Size = New System.Drawing.Size(124, 48)
         Me.mnuImportData.Text = "Import Data"
         '
         'mnuUpdateTicket
         '
         Me.mnuUpdateTicket.Image = CType(resources.GetObject("mnuUpdateTicket.Image"), System.Drawing.Image)
         Me.mnuUpdateTicket.Name = "mnuUpdateTicket"
-        Me.mnuUpdateTicket.Size = New System.Drawing.Size(113, 38)
+        Me.mnuUpdateTicket.Size = New System.Drawing.Size(141, 48)
         Me.mnuUpdateTicket.Text = "Update Tickets"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(1047, 15)
+        Me.Label3.Location = New System.Drawing.Point(1396, 18)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.Size = New System.Drawing.Size(47, 16)
         Me.Label3.TabIndex = 32
         Me.Label3.Text = "Active:"
         '
@@ -254,9 +480,10 @@ Partial Class frmContractPriceList
         Me.chkYes.AutoSize = True
         Me.chkYes.Checked = True
         Me.chkYes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkYes.Location = New System.Drawing.Point(1093, 14)
+        Me.chkYes.Location = New System.Drawing.Point(1457, 17)
+        Me.chkYes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkYes.Name = "chkYes"
-        Me.chkYes.Size = New System.Drawing.Size(44, 17)
+        Me.chkYes.Size = New System.Drawing.Size(53, 20)
         Me.chkYes.TabIndex = 33
         Me.chkYes.Text = "Yes"
         Me.chkYes.UseVisualStyleBackColor = True
@@ -264,205 +491,20 @@ Partial Class frmContractPriceList
         'chkNo
         '
         Me.chkNo.AutoSize = True
-        Me.chkNo.Location = New System.Drawing.Point(1143, 14)
+        Me.chkNo.Location = New System.Drawing.Point(1524, 17)
+        Me.chkNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkNo.Name = "chkNo"
-        Me.chkNo.Size = New System.Drawing.Size(40, 17)
+        Me.chkNo.Size = New System.Drawing.Size(47, 20)
         Me.chkNo.TabIndex = 34
         Me.chkNo.Text = "No"
         Me.chkNo.UseVisualStyleBackColor = True
         '
-        'colTabGroup
-        '
-        Me.colTabGroup.DataPropertyName = "TABGROUP"
-        Me.colTabGroup.HeaderText = "Tab Group"
-        Me.colTabGroup.Name = "colTabGroup"
-        Me.colTabGroup.ReadOnly = True
-        Me.colTabGroup.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.colTabGroup.Width = 85
-        '
-        'colGroupOrder
-        '
-        Me.colGroupOrder.DataPropertyName = "GROUPORDER"
-        DataGridViewCellStyle1.Format = "N2"
-        DataGridViewCellStyle1.NullValue = Nothing
-        Me.colGroupOrder.DefaultCellStyle = DataGridViewCellStyle1
-        Me.colGroupOrder.HeaderText = "Order"
-        Me.colGroupOrder.Name = "colGroupOrder"
-        Me.colGroupOrder.ReadOnly = True
-        Me.colGroupOrder.Width = 60
-        '
-        'colCodeItem
-        '
-        Me.colCodeItem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.colCodeItem.DataPropertyName = "CUSTCODEITEM"
-        Me.colCodeItem.HeaderText = "Code Item"
-        Me.colCodeItem.Name = "colCodeItem"
-        Me.colCodeItem.ReadOnly = True
-        Me.colCodeItem.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.colCodeItem.Width = 61
-        '
-        'colDescription
-        '
-        Me.colDescription.DataPropertyName = "DESCRIPTION"
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.colDescription.DefaultCellStyle = DataGridViewCellStyle2
-        Me.colDescription.HeaderText = "Description"
-        Me.colDescription.Name = "colDescription"
-        Me.colDescription.ReadOnly = True
-        Me.colDescription.Width = 520
-        '
-        'colUnit
-        '
-        Me.colUnit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colUnit.DataPropertyName = "UNIT_SALE"
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.colUnit.DefaultCellStyle = DataGridViewCellStyle3
-        Me.colUnit.HeaderText = "Unit"
-        Me.colUnit.Name = "colUnit"
-        Me.colUnit.ReadOnly = True
-        Me.colUnit.Width = 51
-        '
-        'colSalesPrice
-        '
-        Me.colSalesPrice.DataPropertyName = "SALES_PRICE"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle4.NullValue = Nothing
-        Me.colSalesPrice.DefaultCellStyle = DataGridViewCellStyle4
-        Me.colSalesPrice.HeaderText = "Sales Price"
-        Me.colSalesPrice.Name = "colSalesPrice"
-        Me.colSalesPrice.ReadOnly = True
-        '
-        'colClass
-        '
-        Me.colClass.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
-        Me.colClass.DataPropertyName = "INVENTORYCLASSID"
-        Me.colClass.HeaderText = "Class"
-        Me.colClass.Name = "colClass"
-        Me.colClass.ReadOnly = True
-        Me.colClass.Width = 57
-        '
-        'colInvClassType
-        '
-        Me.colInvClassType.DataPropertyName = "INVENTORYCLASSTYPE"
-        Me.colInvClassType.HeaderText = "Type"
-        Me.colInvClassType.Name = "colInvClassType"
-        Me.colInvClassType.ReadOnly = True
-        Me.colInvClassType.Width = 60
-        '
-        'colActive
-        '
-        Me.colActive.DataPropertyName = "ACTIVE"
-        Me.colActive.HeaderText = "Active"
-        Me.colActive.Name = "colActive"
-        Me.colActive.ReadOnly = True
-        Me.colActive.Width = 60
-        '
-        'colQty
-        '
-        Me.colQty.DataPropertyName = "CONTRACTED_QTY"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle5.Format = "n2"
-        Me.colQty.DefaultCellStyle = DataGridViewCellStyle5
-        Me.colQty.HeaderText = "Qty"
-        Me.colQty.Name = "colQty"
-        Me.colQty.ReadOnly = True
-        Me.colQty.Visible = False
-        Me.colQty.Width = 50
-        '
-        'colContractPriceListId
-        '
-        Me.colContractPriceListId.DataPropertyName = "CONTRACTPRICELISTID"
-        Me.colContractPriceListId.HeaderText = "ContractPriceListID"
-        Me.colContractPriceListId.Name = "colContractPriceListId"
-        Me.colContractPriceListId.ReadOnly = True
-        Me.colContractPriceListId.Visible = False
-        '
-        'colContractID
-        '
-        Me.colContractID.DataPropertyName = "CONTRACTID"
-        Me.colContractID.HeaderText = "ContractID"
-        Me.colContractID.Name = "colContractID"
-        Me.colContractID.ReadOnly = True
-        Me.colContractID.Visible = False
-        '
-        'colIsHeader
-        '
-        Me.colIsHeader.DataPropertyName = "ISHEADER"
-        Me.colIsHeader.HeaderText = "ISHEADER"
-        Me.colIsHeader.Name = "colIsHeader"
-        Me.colIsHeader.ReadOnly = True
-        Me.colIsHeader.Visible = False
-        '
-        'colExibitOnReport
-        '
-        Me.colExibitOnReport.DataPropertyName = "EXIBITONREPORT"
-        Me.colExibitOnReport.HeaderText = "EXIBITONREPORT"
-        Me.colExibitOnReport.Name = "colExibitOnReport"
-        Me.colExibitOnReport.ReadOnly = True
-        Me.colExibitOnReport.Visible = False
-        '
-        'colShowCustItemRep
-        '
-        Me.colShowCustItemRep.DataPropertyName = "SHOWCUSTITEMREPORT"
-        Me.colShowCustItemRep.HeaderText = "SHOWCUSTITEMREPORT"
-        Me.colShowCustItemRep.Name = "colShowCustItemRep"
-        Me.colShowCustItemRep.ReadOnly = True
-        Me.colShowCustItemRep.Visible = False
-        '
-        'colPriceBase
-        '
-        Me.colPriceBase.DataPropertyName = "PRICEBASE"
-        Me.colPriceBase.HeaderText = "PRICEBASE"
-        Me.colPriceBase.Name = "colPriceBase"
-        Me.colPriceBase.ReadOnly = True
-        Me.colPriceBase.Visible = False
-        '
-        'colPriceUtility
-        '
-        Me.colPriceUtility.DataPropertyName = "PRICEUTILITY"
-        Me.colPriceUtility.HeaderText = "PRICEUTILITY"
-        Me.colPriceUtility.Name = "colPriceUtility"
-        Me.colPriceUtility.ReadOnly = True
-        Me.colPriceUtility.Visible = False
-        '
-        'colPermUpdDescrip
-        '
-        Me.colPermUpdDescrip.DataPropertyName = "PERMITUPDATEDESCRIP"
-        Me.colPermUpdDescrip.HeaderText = "PERMITUPDATEDESCRIP"
-        Me.colPermUpdDescrip.Name = "colPermUpdDescrip"
-        Me.colPermUpdDescrip.ReadOnly = True
-        Me.colPermUpdDescrip.Visible = False
-        '
-        'colPermUpdPriceUnit
-        '
-        Me.colPermUpdPriceUnit.DataPropertyName = "PERMITUPDATEPRICEUNIT"
-        Me.colPermUpdPriceUnit.HeaderText = "PERMITUPDATEPRICEUNIT"
-        Me.colPermUpdPriceUnit.Name = "colPermUpdPriceUnit"
-        Me.colPermUpdPriceUnit.ReadOnly = True
-        Me.colPermUpdPriceUnit.Visible = False
-        '
-        'colPermNegative
-        '
-        Me.colPermNegative.DataPropertyName = "PERMITNEGATIVE"
-        Me.colPermNegative.HeaderText = "PERMITNEGATIVE"
-        Me.colPermNegative.Name = "colPermNegative"
-        Me.colPermNegative.ReadOnly = True
-        Me.colPermNegative.Visible = False
-        '
-        'colPriceUnitDecimal
-        '
-        Me.colPriceUnitDecimal.DataPropertyName = "PRICEUNITDECIMAL"
-        Me.colPriceUnitDecimal.HeaderText = "PRICEUNITDECIMAL"
-        Me.colPriceUnitDecimal.Name = "colPriceUnitDecimal"
-        Me.colPriceUnitDecimal.ReadOnly = True
-        Me.colPriceUnitDecimal.Visible = False
-        '
         'frmContractPriceList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(1198, 612)
+        Me.ClientSize = New System.Drawing.Size(1597, 753)
         Me.Controls.Add(Me.chkNo)
         Me.Controls.Add(Me.chkYes)
         Me.Controls.Add(Me.Label3)
@@ -473,11 +515,13 @@ Partial Class frmContractPriceList
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.dgvContractPriceList)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmContractPriceList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Contract Price List"
+        Me.Text = "INNTicket - Contract Price List"
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CONTRACTPRICELISTBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvContractPriceList, System.ComponentModel.ISupportInitialize).EndInit()

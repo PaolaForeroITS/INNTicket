@@ -75,11 +75,13 @@ Partial Class frmWorkerList
         Me.dgvWorker.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvWorker.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colWorkerID, Me.colName1, Me.colName2, Me.colSurname1, Me.colSurname2, Me.colAppointment, Me.colSubaccount, Me.colEmail, Me.colPhone, Me.colBonusValue, Me.colManHourValue, Me.colActive})
         Me.dgvWorker.DataSource = Me.WORKERBindingSource
-        Me.dgvWorker.Location = New System.Drawing.Point(0, 45)
+        Me.dgvWorker.Location = New System.Drawing.Point(0, 55)
+        Me.dgvWorker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvWorker.Name = "dgvWorker"
         Me.dgvWorker.ReadOnly = True
+        Me.dgvWorker.RowHeadersWidth = 51
         Me.dgvWorker.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvWorker.Size = New System.Drawing.Size(967, 476)
+        Me.dgvWorker.Size = New System.Drawing.Size(1289, 586)
         Me.dgvWorker.TabIndex = 1
         '
         'colWorkerID
@@ -87,79 +89,89 @@ Partial Class frmWorkerList
         Me.colWorkerID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colWorkerID.DataPropertyName = "WORKERID"
         Me.colWorkerID.HeaderText = "ID"
+        Me.colWorkerID.MinimumWidth = 6
         Me.colWorkerID.Name = "colWorkerID"
         Me.colWorkerID.ReadOnly = True
-        Me.colWorkerID.Width = 43
+        Me.colWorkerID.Width = 49
         '
         'colName1
         '
         Me.colName1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colName1.DataPropertyName = "NAME1"
         Me.colName1.HeaderText = "Name1"
+        Me.colName1.MinimumWidth = 6
         Me.colName1.Name = "colName1"
         Me.colName1.ReadOnly = True
-        Me.colName1.Width = 66
+        Me.colName1.Width = 80
         '
         'colName2
         '
         Me.colName2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colName2.DataPropertyName = "NAME2"
         Me.colName2.HeaderText = "Name2"
+        Me.colName2.MinimumWidth = 6
         Me.colName2.Name = "colName2"
         Me.colName2.ReadOnly = True
-        Me.colName2.Width = 66
+        Me.colName2.Width = 80
         '
         'colSurname1
         '
         Me.colSurname1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colSurname1.DataPropertyName = "SURNAME1"
         Me.colSurname1.HeaderText = "Surname1"
+        Me.colSurname1.MinimumWidth = 6
         Me.colSurname1.Name = "colSurname1"
         Me.colSurname1.ReadOnly = True
-        Me.colSurname1.Width = 80
+        Me.colSurname1.Width = 97
         '
         'colSurname2
         '
         Me.colSurname2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colSurname2.DataPropertyName = "SURNAME2"
         Me.colSurname2.HeaderText = "Surname2"
+        Me.colSurname2.MinimumWidth = 6
         Me.colSurname2.Name = "colSurname2"
         Me.colSurname2.ReadOnly = True
-        Me.colSurname2.Width = 80
+        Me.colSurname2.Width = 97
         '
         'colAppointment
         '
         Me.colAppointment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colAppointment.DataPropertyName = "APPOINTMENT"
         Me.colAppointment.HeaderText = "Appointment"
+        Me.colAppointment.MinimumWidth = 6
         Me.colAppointment.Name = "colAppointment"
         Me.colAppointment.ReadOnly = True
-        Me.colAppointment.Width = 91
+        Me.colAppointment.Width = 111
         '
         'colSubaccount
         '
         Me.colSubaccount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colSubaccount.DataPropertyName = "SUBACCOUNT"
         Me.colSubaccount.HeaderText = "SubAccount"
+        Me.colSubaccount.MinimumWidth = 6
         Me.colSubaccount.Name = "colSubaccount"
         Me.colSubaccount.ReadOnly = True
-        Me.colSubaccount.Width = 91
+        Me.colSubaccount.Width = 108
         '
         'colEmail
         '
         Me.colEmail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colEmail.DataPropertyName = "EMAIL"
         Me.colEmail.HeaderText = "Email"
+        Me.colEmail.MinimumWidth = 6
         Me.colEmail.Name = "colEmail"
         Me.colEmail.ReadOnly = True
-        Me.colEmail.Width = 57
+        Me.colEmail.Width = 70
         '
         'colPhone
         '
         Me.colPhone.DataPropertyName = "PHONE"
         Me.colPhone.HeaderText = "Phone"
+        Me.colPhone.MinimumWidth = 6
         Me.colPhone.Name = "colPhone"
         Me.colPhone.ReadOnly = True
+        Me.colPhone.Width = 125
         '
         'colBonusValue
         '
@@ -170,9 +182,10 @@ Partial Class frmWorkerList
         DataGridViewCellStyle1.NullValue = Nothing
         Me.colBonusValue.DefaultCellStyle = DataGridViewCellStyle1
         Me.colBonusValue.HeaderText = "Bonus Value"
+        Me.colBonusValue.MinimumWidth = 6
         Me.colBonusValue.Name = "colBonusValue"
         Me.colBonusValue.ReadOnly = True
-        Me.colBonusValue.Width = 85
+        Me.colBonusValue.Width = 103
         '
         'colManHourValue
         '
@@ -182,13 +195,16 @@ Partial Class frmWorkerList
         DataGridViewCellStyle2.Format = "N2"
         Me.colManHourValue.DefaultCellStyle = DataGridViewCellStyle2
         Me.colManHourValue.HeaderText = "Man-Hour Value"
+        Me.colManHourValue.MinimumWidth = 6
         Me.colManHourValue.Name = "colManHourValue"
         Me.colManHourValue.ReadOnly = True
+        Me.colManHourValue.Width = 122
         '
         'colActive
         '
         Me.colActive.DataPropertyName = "ACTIVE"
         Me.colActive.HeaderText = "Active"
+        Me.colActive.MinimumWidth = 6
         Me.colActive.Name = "colActive"
         Me.colActive.ReadOnly = True
         Me.colActive.Width = 60
@@ -233,10 +249,11 @@ Partial Class frmWorkerList
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem, Me.mnuExportData, Me.mnuImportData})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(979, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1305, 52)
         Me.MenuStrip1.TabIndex = 32
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -244,7 +261,7 @@ Partial Class frmWorkerList
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
         Me.mnuNewItem.Text = "New Item"
         Me.mnuNewItem.ToolTipText = "Save the Ticket"
         '
@@ -252,22 +269,23 @@ Partial Class frmWorkerList
         '
         Me.mnuExportData.Image = CType(resources.GetObject("mnuExportData.Image"), System.Drawing.Image)
         Me.mnuExportData.Name = "mnuExportData"
-        Me.mnuExportData.Size = New System.Drawing.Size(95, 38)
+        Me.mnuExportData.Size = New System.Drawing.Size(122, 48)
         Me.mnuExportData.Text = "Export Data"
         '
         'mnuImportData
         '
         Me.mnuImportData.Image = CType(resources.GetObject("mnuImportData.Image"), System.Drawing.Image)
         Me.mnuImportData.Name = "mnuImportData"
-        Me.mnuImportData.Size = New System.Drawing.Size(98, 38)
+        Me.mnuImportData.Size = New System.Drawing.Size(124, 48)
         Me.mnuImportData.Text = "Import Data"
         '
         'chkNo
         '
         Me.chkNo.AutoSize = True
-        Me.chkNo.Location = New System.Drawing.Point(927, 16)
+        Me.chkNo.Location = New System.Drawing.Point(1236, 20)
+        Me.chkNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkNo.Name = "chkNo"
-        Me.chkNo.Size = New System.Drawing.Size(40, 17)
+        Me.chkNo.Size = New System.Drawing.Size(47, 20)
         Me.chkNo.TabIndex = 37
         Me.chkNo.Text = "No"
         Me.chkNo.UseVisualStyleBackColor = True
@@ -277,9 +295,10 @@ Partial Class frmWorkerList
         Me.chkYes.AutoSize = True
         Me.chkYes.Checked = True
         Me.chkYes.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkYes.Location = New System.Drawing.Point(877, 16)
+        Me.chkYes.Location = New System.Drawing.Point(1169, 20)
+        Me.chkYes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkYes.Name = "chkYes"
-        Me.chkYes.Size = New System.Drawing.Size(44, 17)
+        Me.chkYes.Size = New System.Drawing.Size(53, 20)
         Me.chkYes.TabIndex = 36
         Me.chkYes.Text = "Yes"
         Me.chkYes.UseVisualStyleBackColor = True
@@ -287,29 +306,32 @@ Partial Class frmWorkerList
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(831, 16)
+        Me.Label3.Location = New System.Drawing.Point(1108, 20)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.Size = New System.Drawing.Size(47, 16)
         Me.Label3.TabIndex = 35
         Me.Label3.Text = "Active:"
         '
         'frmWorkerList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(979, 527)
+        Me.ClientSize = New System.Drawing.Size(1305, 649)
         Me.Controls.Add(Me.chkNo)
         Me.Controls.Add(Me.chkYes)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.dgvWorker)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmWorkerList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Worker"
+        Me.Text = "INNTicket - Worker"
         CType(Me.WORKERBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvWorker, System.ComponentModel.ISupportInitialize).EndInit()

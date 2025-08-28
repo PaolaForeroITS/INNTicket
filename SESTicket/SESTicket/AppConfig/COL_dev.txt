@@ -11,7 +11,7 @@
     <add key="CheckVersion" value="true"/>
     <add key="SQLServer" value="colsql01"/>
     <add key="SQLTimeOut" value="30"/>
-    <add key="ActiveDirectoryDomain" value="LDAP://superior.sesi.local"/>
+    <add key="ActiveDirectoryDomain" value="LDAP://inngtech.local"/>
     <add key="PingMS" value="1200"/>
     <add key="AppUpdLocal" value="C:\SESTicket\appupd"/>
     <add key="ClientSettingsProvider.ServiceUri" value=""/>

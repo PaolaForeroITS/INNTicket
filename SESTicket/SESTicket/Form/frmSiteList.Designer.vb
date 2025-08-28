@@ -109,11 +109,13 @@ Partial Class frmSiteList
         Me.dgvSite.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSite.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colSiteID, Me.colAlias, Me.colName, Me.colDescription, Me.colAddress, Me.colAttention, Me.colCountry, Me.colState, Me.colCity, Me.colPhone, Me.colFax, Me.colEmail, Me.colGoodsAccount, Me.colGoodsSubAccount, Me.colSalesAccount, Me.colSalesSubAccount, Me.colInventoryAccount, Me.colInventorySubAccount})
         Me.dgvSite.DataSource = Me.SITESBindingSource
-        Me.dgvSite.Location = New System.Drawing.Point(0, 45)
+        Me.dgvSite.Location = New System.Drawing.Point(0, 55)
+        Me.dgvSite.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvSite.Name = "dgvSite"
         Me.dgvSite.ReadOnly = True
+        Me.dgvSite.RowHeadersWidth = 51
         Me.dgvSite.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvSite.Size = New System.Drawing.Size(865, 240)
+        Me.dgvSite.Size = New System.Drawing.Size(1153, 295)
         Me.dgvSite.TabIndex = 1
         '
         'colSiteID
@@ -121,14 +123,16 @@ Partial Class frmSiteList
         Me.colSiteID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colSiteID.DataPropertyName = "SITEID"
         Me.colSiteID.HeaderText = "ID"
+        Me.colSiteID.MinimumWidth = 6
         Me.colSiteID.Name = "colSiteID"
         Me.colSiteID.ReadOnly = True
-        Me.colSiteID.Width = 43
+        Me.colSiteID.Width = 49
         '
         'colAlias
         '
         Me.colAlias.DataPropertyName = "ALIAS"
         Me.colAlias.HeaderText = "Alias"
+        Me.colAlias.MinimumWidth = 6
         Me.colAlias.Name = "colAlias"
         Me.colAlias.ReadOnly = True
         Me.colAlias.Width = 45
@@ -138,142 +142,169 @@ Partial Class frmSiteList
         Me.colName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colName.DataPropertyName = "NAME"
         Me.colName.HeaderText = "Name"
+        Me.colName.MinimumWidth = 6
         Me.colName.Name = "colName"
         Me.colName.ReadOnly = True
-        Me.colName.Width = 60
+        Me.colName.Width = 73
         '
         'colDescription
         '
         Me.colDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colDescription.DataPropertyName = "DESCRIPTION"
         Me.colDescription.HeaderText = "Description"
+        Me.colDescription.MinimumWidth = 6
         Me.colDescription.Name = "colDescription"
         Me.colDescription.ReadOnly = True
-        Me.colDescription.Width = 85
+        Me.colDescription.Width = 104
         '
         'colAddress
         '
         Me.colAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colAddress.DataPropertyName = "ADDRESS"
         Me.colAddress.HeaderText = "Address"
+        Me.colAddress.MinimumWidth = 6
         Me.colAddress.Name = "colAddress"
         Me.colAddress.ReadOnly = True
-        Me.colAddress.Width = 70
+        Me.colAddress.Width = 87
         '
         'colAttention
         '
         Me.colAttention.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colAttention.DataPropertyName = "ATENTION"
         Me.colAttention.HeaderText = "Attention"
+        Me.colAttention.MinimumWidth = 6
         Me.colAttention.Name = "colAttention"
         Me.colAttention.ReadOnly = True
-        Me.colAttention.Width = 74
+        Me.colAttention.Width = 87
         '
         'colCountry
         '
         Me.colCountry.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colCountry.DataPropertyName = "COUNTRY"
         Me.colCountry.HeaderText = "Country"
+        Me.colCountry.MinimumWidth = 6
         Me.colCountry.Name = "colCountry"
         Me.colCountry.ReadOnly = True
-        Me.colCountry.Width = 68
+        Me.colCountry.Width = 81
         '
         'colState
         '
         Me.colState.DataPropertyName = "STATE"
         Me.colState.HeaderText = "State"
+        Me.colState.MinimumWidth = 6
         Me.colState.Name = "colState"
         Me.colState.ReadOnly = True
+        Me.colState.Width = 125
         '
         'colCity
         '
         Me.colCity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.colCity.DataPropertyName = "CITY"
         Me.colCity.HeaderText = "City"
+        Me.colCity.MinimumWidth = 6
         Me.colCity.Name = "colCity"
         Me.colCity.ReadOnly = True
-        Me.colCity.Width = 49
+        Me.colCity.Width = 58
         '
         'colPhone
         '
         Me.colPhone.DataPropertyName = "PHONE"
         Me.colPhone.HeaderText = "Phone"
+        Me.colPhone.MinimumWidth = 6
         Me.colPhone.Name = "colPhone"
         Me.colPhone.ReadOnly = True
         Me.colPhone.Visible = False
+        Me.colPhone.Width = 125
         '
         'colFax
         '
         Me.colFax.DataPropertyName = "FAX"
         Me.colFax.HeaderText = "Fax"
+        Me.colFax.MinimumWidth = 6
         Me.colFax.Name = "colFax"
         Me.colFax.ReadOnly = True
         Me.colFax.Visible = False
+        Me.colFax.Width = 125
         '
         'colEmail
         '
         Me.colEmail.DataPropertyName = "EMAIL"
         Me.colEmail.HeaderText = "Email"
+        Me.colEmail.MinimumWidth = 6
         Me.colEmail.Name = "colEmail"
         Me.colEmail.ReadOnly = True
         Me.colEmail.Visible = False
+        Me.colEmail.Width = 125
         '
         'colGoodsAccount
         '
         Me.colGoodsAccount.DataPropertyName = "COSTOFGOODSACCOUNT"
         Me.colGoodsAccount.HeaderText = "GoodsAccount"
+        Me.colGoodsAccount.MinimumWidth = 6
         Me.colGoodsAccount.Name = "colGoodsAccount"
         Me.colGoodsAccount.ReadOnly = True
         Me.colGoodsAccount.Visible = False
+        Me.colGoodsAccount.Width = 125
         '
         'colGoodsSubAccount
         '
         Me.colGoodsSubAccount.DataPropertyName = "COSTOFGOODSSUBACCOUNT"
         Me.colGoodsSubAccount.HeaderText = "GoodsSubAccount"
+        Me.colGoodsSubAccount.MinimumWidth = 6
         Me.colGoodsSubAccount.Name = "colGoodsSubAccount"
         Me.colGoodsSubAccount.ReadOnly = True
         Me.colGoodsSubAccount.Visible = False
+        Me.colGoodsSubAccount.Width = 125
         '
         'colSalesAccount
         '
         Me.colSalesAccount.DataPropertyName = "SALESACCOUNT"
         Me.colSalesAccount.HeaderText = "SalesAccount"
+        Me.colSalesAccount.MinimumWidth = 6
         Me.colSalesAccount.Name = "colSalesAccount"
         Me.colSalesAccount.ReadOnly = True
         Me.colSalesAccount.Visible = False
+        Me.colSalesAccount.Width = 125
         '
         'colSalesSubAccount
         '
         Me.colSalesSubAccount.DataPropertyName = "SALESSUBACCOUNT"
         Me.colSalesSubAccount.HeaderText = "SalesSubAccount"
+        Me.colSalesSubAccount.MinimumWidth = 6
         Me.colSalesSubAccount.Name = "colSalesSubAccount"
         Me.colSalesSubAccount.ReadOnly = True
         Me.colSalesSubAccount.Visible = False
+        Me.colSalesSubAccount.Width = 125
         '
         'colInventoryAccount
         '
         Me.colInventoryAccount.DataPropertyName = "INVENTORYACCOUNT"
         Me.colInventoryAccount.HeaderText = "InventoryAccount"
+        Me.colInventoryAccount.MinimumWidth = 6
         Me.colInventoryAccount.Name = "colInventoryAccount"
         Me.colInventoryAccount.ReadOnly = True
         Me.colInventoryAccount.Visible = False
+        Me.colInventoryAccount.Width = 125
         '
         'colInventorySubAccount
         '
         Me.colInventorySubAccount.DataPropertyName = "INVENTORYSUBACCOUNT"
         Me.colInventorySubAccount.HeaderText = "InventorySubAccount"
+        Me.colInventorySubAccount.MinimumWidth = 6
         Me.colInventorySubAccount.Name = "colInventorySubAccount"
         Me.colInventorySubAccount.ReadOnly = True
         Me.colInventorySubAccount.Visible = False
+        Me.colInventorySubAccount.Width = 125
         '
         'MenuStrip1
         '
         Me.MenuStrip1.AutoSize = False
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(870, 42)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1160, 52)
         Me.MenuStrip1.TabIndex = 34
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -281,24 +312,25 @@ Partial Class frmSiteList
         '
         Me.mnuNewItem.Image = CType(resources.GetObject("mnuNewItem.Image"), System.Drawing.Image)
         Me.mnuNewItem.Name = "mnuNewItem"
-        Me.mnuNewItem.Size = New System.Drawing.Size(86, 38)
+        Me.mnuNewItem.Size = New System.Drawing.Size(107, 48)
         Me.mnuNewItem.Text = "New Item"
         Me.mnuNewItem.ToolTipText = "Save the Ticket"
         '
         'frmSiteList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(870, 287)
+        Me.ClientSize = New System.Drawing.Size(1160, 353)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.dgvSite)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSiteList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket - Sites"
+        Me.Text = "INNTicket - Sites"
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SITESBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvSite, System.ComponentModel.ISupportInitialize).EndInit()

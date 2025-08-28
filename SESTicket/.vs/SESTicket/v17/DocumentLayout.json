@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\RepositorioSesticket\\SESTicket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|c:\\repositoriosesticket\\sesticket\\sesticket\\form\\frmlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|solutionrelative:sesticket\\form\\frmlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|c:\\repositoriosesticket\\sesticket\\sesticket\\sesticket.exe.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|solutionrelative:sesticket\\sesticket.exe.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|c:\\repositoriosesticket\\sesticket\\sesticket\\appconfig\\col_dev.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|solutionrelative:sesticket\\appconfig\\col_dev.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|c:\\repositoriosesticket\\sesticket\\sesticket\\appconfig\\arg.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|solutionrelative:sesticket\\appconfig\\arg.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,14 +51,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmLogin.vb [Design]",
-              "DocumentMoniker": "C:\\RepositorioSesticket\\SESTicket\\SESTicket\\Form\\frmLogin.vb",
-              "RelativeDocumentMoniker": "SESTicket\\Form\\frmLogin.vb",
-              "ToolTip": "C:\\RepositorioSesticket\\SESTicket\\SESTicket\\Form\\frmLogin.vb [Design]",
-              "RelativeToolTip": "SESTicket\\Form\\frmLogin.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-26T21:10:58.213Z",
-              "EditorCaption": " [Design]"
+              "Title": "SESTicket.exe.config",
+              "DocumentMoniker": "C:\\RepositorioSesticket\\SESTicket\\SESTicket\\SESTicket.exe.config",
+              "RelativeDocumentMoniker": "SESTicket\\SESTicket.exe.config",
+              "ToolTip": "C:\\RepositorioSesticket\\SESTicket\\SESTicket\\SESTicket.exe.config",
+              "RelativeToolTip": "SESTicket\\SESTicket.exe.config",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-27T21:23:29.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "COL_dev.txt",
+              "DocumentMoniker": "C:\\RepositorioSesticket\\SESTicket\\SESTicket\\AppConfig\\COL_dev.txt",
+              "RelativeDocumentMoniker": "SESTicket\\AppConfig\\COL_dev.txt",
+              "ToolTip": "C:\\RepositorioSesticket\\SESTicket\\SESTicket\\AppConfig\\COL_dev.txt",
+              "RelativeToolTip": "SESTicket\\AppConfig\\COL_dev.txt",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA0AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-08-27T21:23:24.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ARG.txt",
+              "DocumentMoniker": "C:\\RepositorioSesticket\\SESTicket\\SESTicket\\AppConfig\\ARG.txt",
+              "RelativeDocumentMoniker": "SESTicket\\AppConfig\\ARG.txt",
+              "ToolTip": "C:\\RepositorioSesticket\\SESTicket\\SESTicket\\AppConfig\\ARG.txt",
+              "RelativeToolTip": "SESTicket\\AppConfig\\ARG.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-08-27T21:23:01.281Z",
+              "EditorCaption": ""
             }
           ]
         }

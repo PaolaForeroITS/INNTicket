@@ -24,6 +24,9 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTTicketInvConsumptionConsolidated))
+        Me.TICKETINVHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.chkCanceled = New System.Windows.Forms.CheckBox()
         Me.btnOk = New System.Windows.Forms.Button()
@@ -35,13 +38,21 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
-        Me.TICKETINVHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TICKETINVHEADER_VTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.TICKETINVHEADER_VTableAdapter()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TICKETINVHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'TICKETINVHEADER_VBindingSource
+        '
+        Me.TICKETINVHEADER_VBindingSource.DataMember = "TICKETINVHEADER_V"
+        Me.TICKETINVHEADER_VBindingSource.DataSource = Me.SESTicketSQLDataSet
+        '
+        'SESTicketSQLDataSet
+        '
+        Me.SESTicketSQLDataSet.DataSetName = "SESTicketSQLDataSet"
+        Me.SESTicketSQLDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'GroupBox1
         '
@@ -54,9 +65,11 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(654, 67)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(872, 82)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filter"
@@ -66,18 +79,20 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
         Me.chkCanceled.AutoSize = True
         Me.chkCanceled.Checked = True
         Me.chkCanceled.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkCanceled.Location = New System.Drawing.Point(454, 20)
+        Me.chkCanceled.Location = New System.Drawing.Point(605, 25)
+        Me.chkCanceled.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkCanceled.Name = "chkCanceled"
-        Me.chkCanceled.Size = New System.Drawing.Size(71, 17)
+        Me.chkCanceled.Size = New System.Drawing.Size(87, 20)
         Me.chkCanceled.TabIndex = 11
         Me.chkCanceled.Text = "Canceled"
         Me.chkCanceled.UseVisualStyleBackColor = True
         '
         'btnOk
         '
-        Me.btnOk.Location = New System.Drawing.Point(547, 19)
+        Me.btnOk.Location = New System.Drawing.Point(729, 23)
+        Me.btnOk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnOk.Name = "btnOk"
-        Me.btnOk.Size = New System.Drawing.Size(75, 23)
+        Me.btnOk.Size = New System.Drawing.Size(100, 28)
         Me.btnOk.TabIndex = 43
         Me.btnOk.Text = "Ok"
         Me.btnOk.UseVisualStyleBackColor = True
@@ -87,9 +102,10 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
         Me.chkClosed.AutoSize = True
         Me.chkClosed.Checked = True
         Me.chkClosed.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkClosed.Location = New System.Drawing.Point(390, 20)
+        Me.chkClosed.Location = New System.Drawing.Point(520, 25)
+        Me.chkClosed.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkClosed.Name = "chkClosed"
-        Me.chkClosed.Size = New System.Drawing.Size(58, 17)
+        Me.chkClosed.Size = New System.Drawing.Size(72, 20)
         Me.chkClosed.TabIndex = 10
         Me.chkClosed.Text = "Closed"
         Me.chkClosed.UseVisualStyleBackColor = True
@@ -98,9 +114,10 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
         '
         Me.dtpServiceDateEnd.CustomFormat = "dd/MM/yyyy"
         Me.dtpServiceDateEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpServiceDateEnd.Location = New System.Drawing.Point(139, 40)
+        Me.dtpServiceDateEnd.Location = New System.Drawing.Point(185, 49)
+        Me.dtpServiceDateEnd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpServiceDateEnd.Name = "dtpServiceDateEnd"
-        Me.dtpServiceDateEnd.Size = New System.Drawing.Size(96, 20)
+        Me.dtpServiceDateEnd.Size = New System.Drawing.Size(127, 22)
         Me.dtpServiceDateEnd.TabIndex = 40
         '
         'chkOpen
@@ -108,9 +125,10 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
         Me.chkOpen.AutoSize = True
         Me.chkOpen.Checked = True
         Me.chkOpen.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkOpen.Location = New System.Drawing.Point(332, 20)
+        Me.chkOpen.Location = New System.Drawing.Point(443, 25)
+        Me.chkOpen.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkOpen.Name = "chkOpen"
-        Me.chkOpen.Size = New System.Drawing.Size(52, 17)
+        Me.chkOpen.Size = New System.Drawing.Size(62, 20)
         Me.chkOpen.TabIndex = 9
         Me.chkOpen.Text = "Open"
         Me.chkOpen.UseVisualStyleBackColor = True
@@ -119,18 +137,20 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
         '
         Me.dtpServiceDateBegin.CustomFormat = "dd/MM/yyyy"
         Me.dtpServiceDateBegin.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpServiceDateBegin.Location = New System.Drawing.Point(139, 17)
+        Me.dtpServiceDateBegin.Location = New System.Drawing.Point(185, 21)
+        Me.dtpServiceDateBegin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpServiceDateBegin.Name = "dtpServiceDateBegin"
-        Me.dtpServiceDateBegin.Size = New System.Drawing.Size(96, 20)
+        Me.dtpServiceDateBegin.Size = New System.Drawing.Size(127, 22)
         Me.dtpServiceDateBegin.TabIndex = 39
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(253, 20)
+        Me.Label5.Location = New System.Drawing.Point(337, 25)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(73, 13)
+        Me.Label5.Size = New System.Drawing.Size(87, 16)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Ticket Status:"
         '
@@ -138,9 +158,10 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(25, 41)
+        Me.Label2.Location = New System.Drawing.Point(33, 50)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(100, 13)
+        Me.Label2.Size = New System.Drawing.Size(123, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Service Date (End):"
         '
@@ -148,9 +169,10 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(25, 20)
+        Me.Label1.Location = New System.Drawing.Point(33, 25)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(108, 13)
+        Me.Label1.Size = New System.Drawing.Size(134, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Service Date (Begin):"
         '
@@ -160,43 +182,36 @@ Partial Class frmRPTTicketInvConsumptionConsolidated
         ReportDataSource1.Value = Me.TICKETINVHEADER_VBindingSource
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "SESTicket.rptTicketInvConsumptionConsolidated.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(13, 85)
+        Me.ReportViewer1.Location = New System.Drawing.Point(17, 105)
+        Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(1125, 473)
+        Me.ReportViewer1.Size = New System.Drawing.Size(1499, 582)
         Me.ReportViewer1.TabIndex = 3
-        '
-        'SESTicketSQLDataSet
-        '
-        Me.SESTicketSQLDataSet.DataSetName = "SESTicketSQLDataSet"
-        Me.SESTicketSQLDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TICKETINVHEADER_VBindingSource
-        '
-        Me.TICKETINVHEADER_VBindingSource.DataMember = "TICKETINVHEADER_V"
-        Me.TICKETINVHEADER_VBindingSource.DataSource = Me.SESTicketSQLDataSet
         '
         'TICKETINVHEADER_VTableAdapter
         '
         Me.TICKETINVHEADER_VTableAdapter.ClearBeforeFill = True
         '
-        'frmREPTicketInvConsumptionConsolidated
+        'frmRPTTicketInvConsumptionConsolidated
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1150, 563)
+        Me.ClientSize = New System.Drawing.Size(1533, 693)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "frmREPTicketInvConsumptionConsolidated"
+        Me.Name = "frmRPTTicketInvConsumptionConsolidated"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Report - Inventory Consumption Consolidated"
+        CType(Me.TICKETINVHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TICKETINVHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

@@ -26,7 +26,20 @@ Partial Class frmSearchSalesItem
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSearchSalesItem))
         Me.dgvSalesItemSearch = New System.Windows.Forms.DataGridView()
+        Me.colType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTabGroup = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colCustCodeItem = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colSalesPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colUnitSale = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colContractPriceList = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colIsHeader = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colPriceUnitDecimal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CONTRACTPRICELISTTMPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -40,18 +53,6 @@ Partial Class frmSearchSalesItem
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
         Me.CONTRACTPRICELISTTMPTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.CONTRACTPRICELISTTMPTableAdapter()
-        Me.colType = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTabGroup = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colCustCodeItem = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSalesPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colUnitSale = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colContractPriceList = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colIsHeader = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colPriceUnitDecimal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgvSalesItemSearch, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CONTRACTPRICELISTTMPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -67,13 +68,139 @@ Partial Class frmSearchSalesItem
         Me.dgvSalesItemSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSalesItemSearch.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colType, Me.colTabGroup, Me.colCustCodeItem, Me.colDescription, Me.colSalesPrice, Me.colUnitSale, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.colContractPriceList, Me.DataGridViewTextBoxColumn2, Me.colIsHeader, Me.colPriceUnitDecimal})
         Me.dgvSalesItemSearch.DataSource = Me.CONTRACTPRICELISTTMPBindingSource
-        Me.dgvSalesItemSearch.Location = New System.Drawing.Point(8, 65)
+        Me.dgvSalesItemSearch.Location = New System.Drawing.Point(11, 80)
+        Me.dgvSalesItemSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvSalesItemSearch.MultiSelect = False
         Me.dgvSalesItemSearch.Name = "dgvSalesItemSearch"
         Me.dgvSalesItemSearch.ReadOnly = True
+        Me.dgvSalesItemSearch.RowHeadersWidth = 51
         Me.dgvSalesItemSearch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvSalesItemSearch.Size = New System.Drawing.Size(1157, 480)
+        Me.dgvSalesItemSearch.Size = New System.Drawing.Size(1543, 591)
         Me.dgvSalesItemSearch.TabIndex = 1
+        '
+        'colType
+        '
+        Me.colType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colType.DataPropertyName = "TYPE"
+        Me.colType.HeaderText = "Type"
+        Me.colType.MinimumWidth = 6
+        Me.colType.Name = "colType"
+        Me.colType.ReadOnly = True
+        Me.colType.Width = 68
+        '
+        'colTabGroup
+        '
+        Me.colTabGroup.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colTabGroup.DataPropertyName = "TABGROUP"
+        Me.colTabGroup.HeaderText = "Group"
+        Me.colTabGroup.MinimumWidth = 6
+        Me.colTabGroup.Name = "colTabGroup"
+        Me.colTabGroup.ReadOnly = True
+        Me.colTabGroup.Width = 73
+        '
+        'colCustCodeItem
+        '
+        Me.colCustCodeItem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.colCustCodeItem.DataPropertyName = "CUSTCODEITEM"
+        Me.colCustCodeItem.HeaderText = "Item"
+        Me.colCustCodeItem.MinimumWidth = 6
+        Me.colCustCodeItem.Name = "colCustCodeItem"
+        Me.colCustCodeItem.ReadOnly = True
+        Me.colCustCodeItem.Width = 61
+        '
+        'colDescription
+        '
+        Me.colDescription.DataPropertyName = "DESCRIPTION"
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.colDescription.DefaultCellStyle = DataGridViewCellStyle1
+        Me.colDescription.HeaderText = "Description"
+        Me.colDescription.MinimumWidth = 6
+        Me.colDescription.Name = "colDescription"
+        Me.colDescription.ReadOnly = True
+        Me.colDescription.Width = 560
+        '
+        'colSalesPrice
+        '
+        Me.colSalesPrice.DataPropertyName = "SALES_PRICE"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.colSalesPrice.DefaultCellStyle = DataGridViewCellStyle2
+        Me.colSalesPrice.HeaderText = "Sales Price"
+        Me.colSalesPrice.MinimumWidth = 6
+        Me.colSalesPrice.Name = "colSalesPrice"
+        Me.colSalesPrice.ReadOnly = True
+        Me.colSalesPrice.Width = 125
+        '
+        'colUnitSale
+        '
+        Me.colUnitSale.DataPropertyName = "UNIT_SALE"
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.colUnitSale.DefaultCellStyle = DataGridViewCellStyle3
+        Me.colUnitSale.HeaderText = "Unit"
+        Me.colUnitSale.MinimumWidth = 6
+        Me.colUnitSale.Name = "colUnitSale"
+        Me.colUnitSale.ReadOnly = True
+        Me.colUnitSale.Width = 150
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "INVENTORYCLASSID"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "INVENTORYCLASSID"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        Me.DataGridViewTextBoxColumn7.Visible = False
+        Me.DataGridViewTextBoxColumn7.Width = 125
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "CONTRACTED_QTY"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "CONTRACTED_QTY"
+        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Visible = False
+        Me.DataGridViewTextBoxColumn8.Width = 125
+        '
+        'colContractPriceList
+        '
+        Me.colContractPriceList.DataPropertyName = "CONTRACTPRICELISTID"
+        Me.colContractPriceList.HeaderText = "CONTRACTPRICELISTID"
+        Me.colContractPriceList.MinimumWidth = 6
+        Me.colContractPriceList.Name = "colContractPriceList"
+        Me.colContractPriceList.ReadOnly = True
+        Me.colContractPriceList.Visible = False
+        Me.colContractPriceList.Width = 125
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "CONTRACTID"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "CONTRACTID"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.DataGridViewTextBoxColumn2.Visible = False
+        Me.DataGridViewTextBoxColumn2.Width = 125
+        '
+        'colIsHeader
+        '
+        Me.colIsHeader.DataPropertyName = "ISHEADER"
+        Me.colIsHeader.HeaderText = "ISHEADER"
+        Me.colIsHeader.MinimumWidth = 6
+        Me.colIsHeader.Name = "colIsHeader"
+        Me.colIsHeader.ReadOnly = True
+        Me.colIsHeader.Visible = False
+        Me.colIsHeader.Width = 125
+        '
+        'colPriceUnitDecimal
+        '
+        Me.colPriceUnitDecimal.DataPropertyName = "PRICEUNITDECIMAL"
+        Me.colPriceUnitDecimal.HeaderText = "PRICEUNITDECIMAL"
+        Me.colPriceUnitDecimal.MinimumWidth = 6
+        Me.colPriceUnitDecimal.Name = "colPriceUnitDecimal"
+        Me.colPriceUnitDecimal.ReadOnly = True
+        Me.colPriceUnitDecimal.Visible = False
+        Me.colPriceUnitDecimal.Width = 125
         '
         'CONTRACTPRICELISTTMPBindingSource
         '
@@ -88,24 +215,27 @@ Partial Class frmSearchSalesItem
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 18)
+        Me.Label1.Location = New System.Drawing.Point(17, 22)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.Size = New System.Drawing.Size(71, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Search by:"
         '
         'txtSearch
         '
-        Me.txtSearch.Location = New System.Drawing.Point(166, 18)
+        Me.txtSearch.Location = New System.Drawing.Point(221, 22)
+        Me.txtSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(220, 20)
+        Me.txtSearch.Size = New System.Drawing.Size(292, 22)
         Me.txtSearch.TabIndex = 3
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(660, 18)
+        Me.btnSearch.Location = New System.Drawing.Point(880, 22)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(75, 23)
+        Me.btnSearch.Size = New System.Drawing.Size(100, 28)
         Me.btnSearch.TabIndex = 4
         Me.btnSearch.Text = "Ok"
         Me.btnSearch.UseVisualStyleBackColor = True
@@ -114,17 +244,19 @@ Partial Class frmSearchSalesItem
         '
         Me.cbxSearch.FormattingEnabled = True
         Me.cbxSearch.Items.AddRange(New Object() {"Group", "Item", "Description"})
-        Me.cbxSearch.Location = New System.Drawing.Point(77, 17)
+        Me.cbxSearch.Location = New System.Drawing.Point(103, 21)
+        Me.cbxSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxSearch.Name = "cbxSearch"
-        Me.cbxSearch.Size = New System.Drawing.Size(83, 21)
+        Me.cbxSearch.Size = New System.Drawing.Size(109, 24)
         Me.cbxSearch.TabIndex = 5
         Me.cbxSearch.Text = "Description"
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(741, 18)
+        Me.btnReset.Location = New System.Drawing.Point(988, 22)
+        Me.btnReset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnReset.Size = New System.Drawing.Size(100, 28)
         Me.btnReset.TabIndex = 6
         Me.btnReset.Text = "Reset"
         Me.btnReset.UseVisualStyleBackColor = True
@@ -139,9 +271,11 @@ Partial Class frmSearchSalesItem
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtSearch)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(8, 9)
+        Me.GroupBox1.Location = New System.Drawing.Point(11, 11)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(853, 50)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1137, 62)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         '
@@ -150,9 +284,10 @@ Partial Class frmSearchSalesItem
         Me.chkMaterial.AutoSize = True
         Me.chkMaterial.Checked = True
         Me.chkMaterial.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkMaterial.Location = New System.Drawing.Point(561, 20)
+        Me.chkMaterial.Location = New System.Drawing.Point(748, 25)
+        Me.chkMaterial.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkMaterial.Name = "chkMaterial"
-        Me.chkMaterial.Size = New System.Drawing.Size(63, 17)
+        Me.chkMaterial.Size = New System.Drawing.Size(77, 20)
         Me.chkMaterial.TabIndex = 10
         Me.chkMaterial.Text = "Material"
         Me.chkMaterial.UseVisualStyleBackColor = True
@@ -162,9 +297,10 @@ Partial Class frmSearchSalesItem
         Me.chkService.AutoSize = True
         Me.chkService.Checked = True
         Me.chkService.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkService.Location = New System.Drawing.Point(496, 20)
+        Me.chkService.Location = New System.Drawing.Point(661, 25)
+        Me.chkService.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkService.Name = "chkService"
-        Me.chkService.Size = New System.Drawing.Size(62, 17)
+        Me.chkService.Size = New System.Drawing.Size(75, 20)
         Me.chkService.TabIndex = 9
         Me.chkService.Text = "Service"
         Me.chkService.UseVisualStyleBackColor = True
@@ -172,9 +308,10 @@ Partial Class frmSearchSalesItem
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(417, 20)
+        Me.Label2.Location = New System.Drawing.Point(556, 25)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 13)
+        Me.Label2.Size = New System.Drawing.Size(87, 16)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Ticket Status:"
         '
@@ -218,120 +355,17 @@ Partial Class frmSearchSalesItem
         '
         Me.CONTRACTPRICELISTTMPTableAdapter.ClearBeforeFill = True
         '
-        'colType
-        '
-        Me.colType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colType.DataPropertyName = "TYPE"
-        Me.colType.HeaderText = "Type"
-        Me.colType.Name = "colType"
-        Me.colType.ReadOnly = True
-        Me.colType.Width = 56
-        '
-        'colTabGroup
-        '
-        Me.colTabGroup.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colTabGroup.DataPropertyName = "TABGROUP"
-        Me.colTabGroup.HeaderText = "Group"
-        Me.colTabGroup.Name = "colTabGroup"
-        Me.colTabGroup.ReadOnly = True
-        Me.colTabGroup.Width = 61
-        '
-        'colCustCodeItem
-        '
-        Me.colCustCodeItem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.colCustCodeItem.DataPropertyName = "CUSTCODEITEM"
-        Me.colCustCodeItem.HeaderText = "Item"
-        Me.colCustCodeItem.Name = "colCustCodeItem"
-        Me.colCustCodeItem.ReadOnly = True
-        Me.colCustCodeItem.Width = 52
-        '
-        'colDescription
-        '
-        Me.colDescription.DataPropertyName = "DESCRIPTION"
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.colDescription.DefaultCellStyle = DataGridViewCellStyle1
-        Me.colDescription.HeaderText = "Description"
-        Me.colDescription.Name = "colDescription"
-        Me.colDescription.ReadOnly = True
-        Me.colDescription.Width = 560
-        '
-        'colSalesPrice
-        '
-        Me.colSalesPrice.DataPropertyName = "SALES_PRICE"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.colSalesPrice.DefaultCellStyle = DataGridViewCellStyle2
-        Me.colSalesPrice.HeaderText = "Sales Price"
-        Me.colSalesPrice.Name = "colSalesPrice"
-        Me.colSalesPrice.ReadOnly = True
-        '
-        'colUnitSale
-        '
-        Me.colUnitSale.DataPropertyName = "UNIT_SALE"
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.colUnitSale.DefaultCellStyle = DataGridViewCellStyle3
-        Me.colUnitSale.HeaderText = "Unit"
-        Me.colUnitSale.Name = "colUnitSale"
-        Me.colUnitSale.ReadOnly = True
-        Me.colUnitSale.Width = 150
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "INVENTORYCLASSID"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "INVENTORYCLASSID"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.ReadOnly = True
-        Me.DataGridViewTextBoxColumn7.Visible = False
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "CONTRACTED_QTY"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "CONTRACTED_QTY"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.ReadOnly = True
-        Me.DataGridViewTextBoxColumn8.Visible = False
-        '
-        'colContractPriceList
-        '
-        Me.colContractPriceList.DataPropertyName = "CONTRACTPRICELISTID"
-        Me.colContractPriceList.HeaderText = "CONTRACTPRICELISTID"
-        Me.colContractPriceList.Name = "colContractPriceList"
-        Me.colContractPriceList.ReadOnly = True
-        Me.colContractPriceList.Visible = False
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "CONTRACTID"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "CONTRACTID"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Visible = False
-        '
-        'colIsHeader
-        '
-        Me.colIsHeader.DataPropertyName = "ISHEADER"
-        Me.colIsHeader.HeaderText = "ISHEADER"
-        Me.colIsHeader.Name = "colIsHeader"
-        Me.colIsHeader.ReadOnly = True
-        Me.colIsHeader.Visible = False
-        '
-        'colPriceUnitDecimal
-        '
-        Me.colPriceUnitDecimal.DataPropertyName = "PRICEUNITDECIMAL"
-        Me.colPriceUnitDecimal.HeaderText = "PRICEUNITDECIMAL"
-        Me.colPriceUnitDecimal.Name = "colPriceUnitDecimal"
-        Me.colPriceUnitDecimal.ReadOnly = True
-        Me.colPriceUnitDecimal.Visible = False
-        '
         'frmSearchSalesItem
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(1170, 549)
+        Me.ClientSize = New System.Drawing.Size(1560, 676)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.dgvSalesItemSearch)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmSearchSalesItem"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Search Contract Price Item"

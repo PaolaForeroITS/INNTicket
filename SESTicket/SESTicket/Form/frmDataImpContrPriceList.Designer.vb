@@ -23,6 +23,7 @@ Partial Class frmDataImpContrPriceList
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDataImpContrPriceList))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cbxContract = New System.Windows.Forms.ComboBox()
         Me.CONTRACTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -47,9 +48,11 @@ Partial Class frmDataImpContrPriceList
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 10)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 12)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(384, 79)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(512, 97)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Inform the Customer and Contract"
@@ -59,9 +62,10 @@ Partial Class frmDataImpContrPriceList
         Me.cbxContract.DataSource = Me.CONTRACTBindingSource
         Me.cbxContract.DisplayMember = "CONTRACTNUMBER"
         Me.cbxContract.FormattingEnabled = True
-        Me.cbxContract.Location = New System.Drawing.Point(78, 46)
+        Me.cbxContract.Location = New System.Drawing.Point(104, 57)
+        Me.cbxContract.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxContract.Name = "cbxContract"
-        Me.cbxContract.Size = New System.Drawing.Size(295, 21)
+        Me.cbxContract.Size = New System.Drawing.Size(392, 24)
         Me.cbxContract.TabIndex = 3
         Me.cbxContract.ValueMember = "CONTRACTID"
         '
@@ -80,9 +84,10 @@ Partial Class frmDataImpContrPriceList
         Me.cbxCustomer.DataSource = Me.CUSTOMERBindingSource
         Me.cbxCustomer.DisplayMember = "NAME"
         Me.cbxCustomer.FormattingEnabled = True
-        Me.cbxCustomer.Location = New System.Drawing.Point(78, 19)
+        Me.cbxCustomer.Location = New System.Drawing.Point(104, 23)
+        Me.cbxCustomer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbxCustomer.Name = "cbxCustomer"
-        Me.cbxCustomer.Size = New System.Drawing.Size(295, 21)
+        Me.cbxCustomer.Size = New System.Drawing.Size(392, 24)
         Me.cbxCustomer.TabIndex = 2
         Me.cbxCustomer.ValueMember = "CUSTOMERID"
         '
@@ -95,9 +100,10 @@ Partial Class frmDataImpContrPriceList
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(18, 46)
+        Me.Label2.Location = New System.Drawing.Point(24, 57)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(50, 13)
+        Me.Label2.Size = New System.Drawing.Size(59, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Contract:"
         '
@@ -105,17 +111,19 @@ Partial Class frmDataImpContrPriceList
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(18, 19)
+        Me.Label1.Location = New System.Drawing.Point(24, 23)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Customer:"
         '
         'btnOk
         '
-        Me.btnOk.Location = New System.Drawing.Point(402, 19)
+        Me.btnOk.Location = New System.Drawing.Point(536, 23)
+        Me.btnOk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnOk.Name = "btnOk"
-        Me.btnOk.Size = New System.Drawing.Size(75, 23)
+        Me.btnOk.Size = New System.Drawing.Size(100, 28)
         Me.btnOk.TabIndex = 2
         Me.btnOk.Text = "Ok"
         Me.btnOk.UseVisualStyleBackColor = True
@@ -130,12 +138,14 @@ Partial Class frmDataImpContrPriceList
         '
         'frmDataImpContrPriceList
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(489, 94)
+        Me.ClientSize = New System.Drawing.Size(652, 116)
         Me.Controls.Add(Me.btnOk)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmDataImpContrPriceList"
