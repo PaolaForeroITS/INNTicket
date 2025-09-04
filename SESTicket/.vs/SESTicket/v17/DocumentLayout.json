@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\RepositorioSesticket\\SESTicket\\",
+  "WorkspaceRootPath": "C:\\Users\\DEVOPS-ADM\\source\\repos\\INNTicket\\SESTicket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|c:\\repositoriosesticket\\sesticket\\sesticket\\form\\frmlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|c:\\users\\devops-adm\\source\\repos\\innticket\\sesticket\\sesticket\\form\\frmlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{B5D70D5B-28AF-4C3E-AE63-8B3F80B47BD8}|SESTicket\\SESTicket.vbproj|solutionrelative:sesticket\\form\\frmlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -44,12 +44,12 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmLogin.vb [Design]",
-              "DocumentMoniker": "C:\\RepositorioSesticket\\SESTicket\\SESTicket\\Form\\frmLogin.vb",
+              "DocumentMoniker": "C:\\Users\\DEVOPS-ADM\\source\\repos\\INNTicket\\SESTicket\\SESTicket\\Form\\frmLogin.vb",
               "RelativeDocumentMoniker": "SESTicket\\Form\\frmLogin.vb",
-              "ToolTip": "C:\\RepositorioSesticket\\SESTicket\\SESTicket\\Form\\frmLogin.vb [Design]",
+              "ToolTip": "C:\\Users\\DEVOPS-ADM\\source\\repos\\INNTicket\\SESTicket\\SESTicket\\Form\\frmLogin.vb [Design]",
               "RelativeToolTip": "SESTicket\\Form\\frmLogin.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-26T21:10:58.213Z",
+              "WhenOpened": "2025-09-04T14:50:16.188Z",
               "EditorCaption": " [Design]"
             }
           ]

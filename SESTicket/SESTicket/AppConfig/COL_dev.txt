@@ -3,13 +3,13 @@
   <configSections>
   </configSections>
   <connectionStrings>
-    <add name="SESTicket.My.MySettings.SESTicketSQLConnStr" connectionString="Data Source=colsql01;Initial Catalog=SESTICKET_dev;Persist Security Info=True;User ID=usrSESTICKET;Password=sesticket123" providerName="System.Data.SqlClient"/>
+    <add name="SESTicket.My.MySettings.SESTicketSQLConnStr" connectionString="Data Source=SVC1D3-01;Initial Catalog=SESTICKET_dev;Persist Security Info=True;User ID=usrSESTICKET;Password=sesticket123" providerName="System.Data.SqlClient"/>
     <add name="SESTicket.My.MySettings.SESTicketAccConnStr" connectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\SESTicket\data\SESTicket.accdb;Persist Security Info=False;Jet OLEDB:Database Password=SESTicket123" providerName="System.Data.OleDb"/>
     <add name="SESTicket.My.MySettings.SESTicketAccBaseConnStr" connectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\SESTicket\data\SESTicketBaseData.accdb;Persist Security Info=False;Jet OLEDB:Database Password=SESTicket123" providerName="System.Data.OleDb"/>
   </connectionStrings>
   <appSettings>
     <add key="CheckVersion" value="true"/>
-    <add key="SQLServer" value="colsql01"/>
+    <add key="SQLServer" value="SVC1D3-01"/>
     <add key="SQLTimeOut" value="30"/>
     <add key="ActiveDirectoryDomain" value="LDAP://superior.sesi.local"/>
     <add key="PingMS" value="1200"/>
