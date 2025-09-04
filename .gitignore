@@ -15,3 +15,26 @@
 /SESTicket/.vs/SESTicket/FileContentIndex/508e5b6a-f7b0-4312-96b3-549ed2cbd81c.vsidx
 /SESTicket/.vs/SESTicket/FileContentIndex/e9c714fa-afbb-4ded-aac8-d521f81f52fc.vsidx
 /SESTicket/.vs/SESTicket/FileContentIndex
+/SESTicketReport/.vs/SESTicketReport/config
+# Archivos de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Carpetas de compilación
+bin/
+obj/
+Debug/
+Release/
+
+# Archivos temporales de proyecto
+*.cache
+*.log
+*.tmp
+*.bak
+*.bin
+
+# Configuración local
+*.local
