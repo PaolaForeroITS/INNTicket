@@ -9,16 +9,37 @@ Public Class clsDatabaseSQL
     Dim sqlConn As SqlConnection
     Dim sqlCommand As SqlCommand
 
+    'Public Sub OpenConnection()
+    '    Dim connString As String
+
+    '    connString = ConfigurationManager.ConnectionStrings("SESTicketSQLConnStr").ConnectionString
+    '    sqlConn = New SqlConnection(connString)
+
+    '    If Not sqlConn.State = ConnectionState.Open Then
+    '        sqlConn.Open()
+    '    End If
+
+    'End Sub
+
     Public Sub OpenConnection()
-        Dim connString As String
+        Try
+            Dim connString As String = ConfigurationManager.ConnectionStrings("SESTicketSQLConnStr")?.ConnectionString
 
-        connString = ConfigurationManager.ConnectionStrings("SESTicketSQLConnStr").ConnectionString
-        sqlConn = New SqlConnection(connString)
+            If String.IsNullOrEmpty(connString) Then
+                Throw New Exception("Cadena de conexión no definida.")
+            End If
 
-        If Not sqlConn.State = ConnectionState.Open Then
-            sqlConn.Open()
-        End If
+            sqlConn = New SqlConnection(connString)
 
+            If sqlConn IsNot Nothing AndAlso sqlConn.State <> ConnectionState.Open Then
+                sqlConn.Open()
+            End If
+
+        Catch ex As SqlException
+            Throw New Exception("Error de SQL: " & ex.Message)
+        Catch ex As Exception
+            Throw New Exception("Error general: " & ex.Message)
+        End Try
     End Sub
 
     Public Sub CloseConnection()

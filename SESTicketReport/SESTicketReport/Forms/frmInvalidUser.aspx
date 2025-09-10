@@ -16,16 +16,16 @@
 </head>
 <body>
 <div class="row" style="margin-top:5px; height: 55px;">
-        <h1><asp:Image ID="Image1" runat="server" style="position: absolute; top: 2px; width: 170px; height: 59px; left: 7px;" ImageUrl="../Image/spn-logo-2016.png" /></h1>
+        <h1><asp:Image ID="Image1" runat="server" style="position: absolute; top: 10px; width: 200px; height: auto; left: 10px;" ImageUrl="../Image/spn-logo-2016.png" /></h1>
     </div>
     
     <div class="Title" style="position: absolute; 
                               top: 17px; 
-                              left: 199px;
+                              left: 230px;
                               color: #1E3561;
                               font-family: Arial, Helvetica, sans-serif;
                               font-size: 18px;">
-        SESTicket - Report
+        INNTicket - Report
     </div>
 
     <form id="mspDefault" runat="server">
