@@ -19,7 +19,7 @@
 
         sql = "SELECT NAME " &
               "FROM [USER] " &
-              "WHERE LTRIM(RTRIM(LOWER(USERNAME))) = '" & Replace(System.Security.Principal.WindowsIdentity.GetCurrent().Name, "SUPERIOR\", "").ToLower.Trim & "' " &
+              "WHERE LTRIM(RTRIM(LOWER(USERNAME))) = '" & Replace(System.Security.Principal.WindowsIdentity.GetCurrent().Name, "INNGTECH\", "").ToLower.Trim & "' " &
               "AND ACTIVE = 'YES' "
 
         bdconn.ExecuteSQL(sql, ds)
