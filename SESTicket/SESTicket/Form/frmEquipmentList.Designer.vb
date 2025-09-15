@@ -33,7 +33,7 @@ Partial Class frmEquipmentList
         Me.colUnit = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EQUIPMENTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExportData = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,8 +41,8 @@ Partial Class frmEquipmentList
         Me.chkNo = New System.Windows.Forms.CheckBox()
         Me.chkYes = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.EQUIPMENTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.EQUIPMENTTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.EQUIPMENTTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.EQUIPMENTTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         CType(Me.dgvEquipment, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EQUIPMENTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -246,7 +246,7 @@ Partial Class frmEquipmentList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -279,10 +279,10 @@ Partial Class frmEquipmentList
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents EQUIPMENTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents EQUIPMENTTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.EQUIPMENTTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents EQUIPMENTTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.EQUIPMENTTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvEquipment As System.Windows.Forms.DataGridView
     Friend WithEvents colStatus As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip

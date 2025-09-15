@@ -25,7 +25,7 @@ Partial Class frmCustomerList
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCustomerList))
         Me.CUSTOMERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.dgvCustomer = New System.Windows.Forms.DataGridView()
         Me.colCustomerID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colName = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -42,8 +42,8 @@ Partial Class frmCustomerList
         Me.colSalesSubAccount = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colARAccount = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colARSubAccount = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CUSTOMERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.CUSTOMERTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.CUSTOMERBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -271,7 +271,7 @@ Partial Class frmCustomerList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -320,10 +320,10 @@ Partial Class frmCustomerList
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents CUSTOMERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CUSTOMERTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents CUSTOMERTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvCustomer As System.Windows.Forms.DataGridView
     Friend WithEvents colCustomerID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colName As System.Windows.Forms.DataGridViewTextBoxColumn

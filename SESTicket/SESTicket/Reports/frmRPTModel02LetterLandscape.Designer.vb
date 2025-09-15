@@ -28,13 +28,13 @@ Partial Class frmRPTModel02LetterLandscape
         Dim ReportDataSource3 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTModel02LetterLandscape))
         Me.REPORTHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.REPORTLINE_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.REPORTPARAMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.REPORTHEADER_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
-        Me.REPORTLINE_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTLINE_VTableAdapter()
-        Me.REPORTPARAMTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
+        Me.REPORTHEADER_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
+        Me.REPORTLINE_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTLINE_VTableAdapter()
+        Me.REPORTPARAMTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
         CType(Me.REPORTHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.REPORTLINE_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -113,10 +113,10 @@ Partial Class frmRPTModel02LetterLandscape
     End Sub
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents REPORTHEADER_VBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents REPORTLINE_VBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents REPORTHEADER_VTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter
-    Friend WithEvents REPORTLINE_VTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.REPORTLINE_VTableAdapter
+    Friend WithEvents REPORTHEADER_VTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter
+    Friend WithEvents REPORTLINE_VTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.REPORTLINE_VTableAdapter
     Friend WithEvents REPORTPARAMBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents REPORTPARAMTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter
+    Friend WithEvents REPORTPARAMTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter
 End Class

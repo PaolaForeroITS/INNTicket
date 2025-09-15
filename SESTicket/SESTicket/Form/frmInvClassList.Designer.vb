@@ -24,10 +24,10 @@ Partial Class frmInvClassList
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInvClassList))
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.INVENTORYCLASSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.INVENTORYCLASSTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.INVENTORYCLASSTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.dgvInvClass = New System.Windows.Forms.DataGridView()
         Me.colInvClassID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colType = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -90,7 +90,7 @@ Partial Class frmInvClassList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -284,10 +284,10 @@ Partial Class frmInvClassList
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents INVENTORYCLASSBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents INVENTORYCLASSTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents INVENTORYCLASSTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvInvClass As System.Windows.Forms.DataGridView
     Friend WithEvents colInvClassID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colType As System.Windows.Forms.DataGridViewTextBoxColumn

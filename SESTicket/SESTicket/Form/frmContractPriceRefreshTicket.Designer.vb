@@ -34,9 +34,9 @@ Partial Class frmContractPriceRefreshTicket
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colTicketStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TICKET_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
-        Me.TICKET_VTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.TICKET_VTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
+        Me.TICKET_VTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.TICKET_VTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.chkCheckAllLines = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -47,8 +47,8 @@ Partial Class frmContractPriceRefreshTicket
         Me.CUSTOMERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.chkShowClosed = New System.Windows.Forms.CheckBox()
         Me.btnRefreshPrices = New System.Windows.Forms.Button()
-        Me.CUSTOMERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
-        Me.CONTRACTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
+        Me.CUSTOMERTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
+        Me.CONTRACTTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
         CType(Me.dgvTicket, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TICKET_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -184,7 +184,7 @@ Partial Class frmContractPriceRefreshTicket
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -328,10 +328,10 @@ Partial Class frmContractPriceRefreshTicket
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents TICKET_VBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TICKET_VTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.TICKET_VTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents TICKET_VTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.TICKET_VTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvTicket As System.Windows.Forms.DataGridView
     Friend WithEvents chkCheckAllLines As System.Windows.Forms.CheckBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -342,9 +342,9 @@ Partial Class frmContractPriceRefreshTicket
     Friend WithEvents chkShowClosed As System.Windows.Forms.CheckBox
     Friend WithEvents btnRefreshPrices As System.Windows.Forms.Button
     Friend WithEvents CUSTOMERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CUSTOMERTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
+    Friend WithEvents CUSTOMERTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
     Friend WithEvents CONTRACTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CONTRACTTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter
+    Friend WithEvents CONTRACTTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter
     Friend WithEvents colChecked As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents colTicketID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn

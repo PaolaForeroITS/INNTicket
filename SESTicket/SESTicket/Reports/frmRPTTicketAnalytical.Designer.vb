@@ -27,7 +27,7 @@ Partial Class frmRPTTicketAnalytical
         Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTTicketAnalytical))
         Me.sp_TicketHeaderRptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.sp_TicketHeaderByInvoiceRptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.chkOpenByInvoice = New System.Windows.Forms.CheckBox()
@@ -45,9 +45,9 @@ Partial Class frmRPTTicketAnalytical
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.sp_TicketHeaderRptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderRptTableAdapter()
+        Me.sp_TicketHeaderRptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderRptTableAdapter()
         Me.ReportViewer2 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.sp_TicketHeaderByInvoiceRptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderByInvoiceRptTableAdapter()
+        Me.sp_TicketHeaderByInvoiceRptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderByInvoiceRptTableAdapter()
         CType(Me.sp_TicketHeaderRptBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sp_TicketHeaderByInvoiceRptBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -312,14 +312,14 @@ Partial Class frmRPTTicketAnalytical
     Friend WithEvents dtpServiceDateBegin As System.Windows.Forms.DateTimePicker
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents sp_TicketHeaderRptBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
-    Friend WithEvents sp_TicketHeaderRptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderRptTableAdapter
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
+    Friend WithEvents sp_TicketHeaderRptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderRptTableAdapter
     Friend WithEvents txtCreatedBy As System.Windows.Forms.TextBox
     Friend WithEvents chkCanceled As System.Windows.Forms.CheckBox
     Friend WithEvents chkClosed As System.Windows.Forms.CheckBox
     Friend WithEvents chkOpen As System.Windows.Forms.CheckBox
     Friend WithEvents ReportViewer2 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents sp_TicketHeaderByInvoiceRptBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents sp_TicketHeaderByInvoiceRptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderByInvoiceRptTableAdapter
+    Friend WithEvents sp_TicketHeaderByInvoiceRptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderByInvoiceRptTableAdapter
     Friend WithEvents chkOpenByInvoice As System.Windows.Forms.CheckBox
 End Class

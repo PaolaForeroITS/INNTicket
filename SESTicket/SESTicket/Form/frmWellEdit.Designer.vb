@@ -28,7 +28,7 @@ Partial Class frmWellEdit
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cbxSite = New System.Windows.Forms.ComboBox()
         Me.SITESBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.cbxState = New System.Windows.Forms.ComboBox()
         Me.STATEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label11 = New System.Windows.Forms.Label()
@@ -51,15 +51,15 @@ Partial Class frmWellEdit
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.COUNTRYTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.COUNTRYTableAdapter()
-        Me.STATETableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.STATETableAdapter()
-        Me.CITYTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CITYTableAdapter()
-        Me.SITESTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter()
-        Me.PETRFIELDTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.PETRFIELDTableAdapter()
+        Me.COUNTRYTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.COUNTRYTableAdapter()
+        Me.STATETableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.STATETableAdapter()
+        Me.CITYTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CITYTableAdapter()
+        Me.SITESTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter()
+        Me.PETRFIELDTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.PETRFIELDTableAdapter()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RIGTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.RIGTableAdapter()
+        Me.RIGTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.RIGTableAdapter()
         Me.GroupBox3.SuspendLayout()
         CType(Me.SITESBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -444,19 +444,19 @@ Partial Class frmWellEdit
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents cbxSite As System.Windows.Forms.ComboBox
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents COUNTRYBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents COUNTRYTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.COUNTRYTableAdapter
+    Friend WithEvents COUNTRYTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.COUNTRYTableAdapter
     Friend WithEvents STATEBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents CITYBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents STATETableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.STATETableAdapter
-    Friend WithEvents CITYTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CITYTableAdapter
+    Friend WithEvents STATETableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.STATETableAdapter
+    Friend WithEvents CITYTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CITYTableAdapter
     Friend WithEvents SITESBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SITESTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter
+    Friend WithEvents SITESTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents cbxField As System.Windows.Forms.ComboBox
     Friend WithEvents PETRFIELDBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents PETRFIELDTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.PETRFIELDTableAdapter
+    Friend WithEvents PETRFIELDTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.PETRFIELDTableAdapter
     Friend WithEvents cbxActive As System.Windows.Forms.ComboBox
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
@@ -465,5 +465,5 @@ Partial Class frmWellEdit
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents cbxRig As System.Windows.Forms.ComboBox
     Friend WithEvents RIGBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents RIGTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.RIGTableAdapter
+    Friend WithEvents RIGTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.RIGTableAdapter
 End Class

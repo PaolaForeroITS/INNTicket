@@ -42,12 +42,12 @@ Partial Class frmSearchWorker
         Me.colManHourValue = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colBonusValue = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WORKERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.cbxSearch = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnReset = New System.Windows.Forms.Button()
-        Me.WORKERTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.WORKERTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.WORKERTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.WORKERTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
         CType(Me.dgvWorker, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.WORKERBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -273,7 +273,7 @@ Partial Class frmSearchWorker
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Me.WORKERTableAdapter
@@ -307,10 +307,10 @@ Partial Class frmSearchWorker
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents WORKERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents WORKERTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.WORKERTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents WORKERTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.WORKERTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvWorker As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewCheckBoxColumn1 As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents cbxSearch As System.Windows.Forms.ComboBox

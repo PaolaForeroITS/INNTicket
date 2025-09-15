@@ -27,14 +27,14 @@ Partial Class frmDataImpContrPriceList
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cbxContract = New System.Windows.Forms.ComboBox()
         Me.CONTRACTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.cbxCustomer = New System.Windows.Forms.ComboBox()
         Me.CUSTOMERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnOk = New System.Windows.Forms.Button()
-        Me.CUSTOMERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
-        Me.CONTRACTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
+        Me.CUSTOMERTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
+        Me.CONTRACTTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
         Me.GroupBox1.SuspendLayout()
         CType(Me.CONTRACTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -165,9 +165,9 @@ Partial Class frmDataImpContrPriceList
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnOk As System.Windows.Forms.Button
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents CUSTOMERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CUSTOMERTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
+    Friend WithEvents CUSTOMERTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
     Friend WithEvents CONTRACTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CONTRACTTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter
+    Friend WithEvents CONTRACTTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter
 End Class

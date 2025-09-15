@@ -15,7 +15,7 @@ Option Explicit On
 Namespace My
     
     <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.5.0.0"),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.14.0.0"),  _
      Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
     Partial Friend NotInheritable Class MySettings
         Inherits Global.System.Configuration.ApplicationSettingsBase
@@ -57,6 +57,17 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=SVC1D3-01;Initial Catalog=SESTICKET_dev;Persist Security Info=True;Us"& _ 
+            "er ID=usrSESTICKET;Password=sesticket123")>  _
+        Public ReadOnly Property SESTicketSQLConnStr() As String
+            Get
+                Return CType(Me("SESTicketSQLConnStr"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\SESTicket\data\SESTicket.accdb;P"& _ 
             "ersist Security Info=True;Jet OLEDB:Database Password=SESTicket123")>  _
         Public ReadOnly Property SESTicketAccConnStr() As String
@@ -75,17 +86,6 @@ Namespace My
                 Return CType(Me("SESTicketAccBaseConnStr"),String)
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=10.202.2.37;Initial Catalog=SESTICKET_dev;Persist Security Info=True;"& _ 
-            "User ID=usrSESTICKET;Password=sesticket123")>  _
-        Public ReadOnly Property SESTicketSQLConnStr() As String
-            Get
-                Return CType(Me("SESTicketSQLConnStr"),String)
-            End Get
-        End Property
     End Class
 End Namespace
 
@@ -97,9 +97,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.SESTicket.My.MySettings
+        Friend ReadOnly Property Settings() As Global.INNTicket.My.MySettings
             Get
-                Return Global.SESTicket.My.MySettings.Default
+                Return Global.INNTicket.My.MySettings.Default
             End Get
         End Property
     End Module

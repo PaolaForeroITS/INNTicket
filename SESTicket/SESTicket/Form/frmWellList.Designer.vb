@@ -37,7 +37,7 @@ Partial Class frmWellList
         Me.colActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colPetrFieldId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WELLBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.chkNo = New System.Windows.Forms.CheckBox()
         Me.chkYes = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -45,8 +45,8 @@ Partial Class frmWellList
         Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExportData = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuImportData = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WELLTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.WELLTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.WELLTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.WELLTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         CType(Me.dgvWell, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.WELLBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -290,7 +290,7 @@ Partial Class frmWellList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -323,10 +323,10 @@ Partial Class frmWellList
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents WELLBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents WELLTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.WELLTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents WELLTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.WELLTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvWell As System.Windows.Forms.DataGridView
     Friend WithEvents colStatus As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents chkNo As System.Windows.Forms.CheckBox

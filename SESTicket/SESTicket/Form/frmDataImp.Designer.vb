@@ -69,7 +69,7 @@ Partial Class frmDataImp
         Me.PRICEBASE = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PRICEUTILITY = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IMP_CONTRACTPRICELISTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.tabEquipment = New System.Windows.Forms.TabPage()
         Me.dgvImpEquipment = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -147,12 +147,12 @@ Partial Class frmDataImp
         Me.btnImportData = New System.Windows.Forms.Button()
         Me.btnOpenFile = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.IMP_CONTRACTPRICELISTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.IMP_CONTRACTPRICELISTTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
-        Me.IMP_EQUIPMENTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.IMP_EQUIPMENTTableAdapter()
-        Me.IMP_WORKERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.IMP_WORKERTableAdapter()
-        Me.IMP_INVENTORYITEMTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.IMP_INVENTORYITEMTableAdapter()
-        Me.IMP_WELLTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.IMP_WELLTableAdapter()
+        Me.IMP_CONTRACTPRICELISTTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.IMP_CONTRACTPRICELISTTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.IMP_EQUIPMENTTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.IMP_EQUIPMENTTableAdapter()
+        Me.IMP_WORKERTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.IMP_WORKERTableAdapter()
+        Me.IMP_INVENTORYITEMTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.IMP_INVENTORYITEMTableAdapter()
+        Me.IMP_WELLTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.IMP_WELLTableAdapter()
         Me.TabControl1.SuspendLayout()
         Me.tabContrPrice.SuspendLayout()
         CType(Me.dgvImpContrPrice, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1251,7 +1251,7 @@ Partial Class frmDataImp
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -1314,10 +1314,10 @@ Partial Class frmDataImp
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents tabContrPrice As System.Windows.Forms.TabPage
     Friend WithEvents tabEquipment As System.Windows.Forms.TabPage
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents IMP_CONTRACTPRICELISTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents IMP_CONTRACTPRICELISTTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.IMP_CONTRACTPRICELISTTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents IMP_CONTRACTPRICELISTTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.IMP_CONTRACTPRICELISTTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvImpContrPrice As System.Windows.Forms.DataGridView
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -1331,7 +1331,7 @@ Partial Class frmDataImp
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents txtFilePath As System.Windows.Forms.TextBox
     Friend WithEvents IMP_EQUIPMENTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents IMP_EQUIPMENTTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.IMP_EQUIPMENTTableAdapter
+    Friend WithEvents IMP_EQUIPMENTTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.IMP_EQUIPMENTTableAdapter
     Friend WithEvents dgvImpEquipment As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1343,7 +1343,7 @@ Partial Class frmDataImp
     Friend WithEvents DataGridViewTextBoxColumn22 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents tabWorker As System.Windows.Forms.TabPage
     Friend WithEvents IMP_WORKERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents IMP_WORKERTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.IMP_WORKERTableAdapter
+    Friend WithEvents IMP_WORKERTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.IMP_WORKERTableAdapter
     Friend WithEvents dgvImpWorker As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn23 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn24 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1361,11 +1361,11 @@ Partial Class frmDataImp
     Friend WithEvents DataGridViewTextBoxColumn36 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents tabInvItem As System.Windows.Forms.TabPage
     Friend WithEvents IMP_INVENTORYITEMBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents IMP_INVENTORYITEMTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.IMP_INVENTORYITEMTableAdapter
+    Friend WithEvents IMP_INVENTORYITEMTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.IMP_INVENTORYITEMTableAdapter
     Friend WithEvents dgvImpInvItem As System.Windows.Forms.DataGridView
     Friend WithEvents tabWell As System.Windows.Forms.TabPage
     Friend WithEvents IMP_WELLBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents IMP_WELLTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.IMP_WELLTableAdapter
+    Friend WithEvents IMP_WELLTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.IMP_WELLTableAdapter
     Friend WithEvents dgvImpWell As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn

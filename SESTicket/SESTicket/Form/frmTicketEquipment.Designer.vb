@@ -32,10 +32,10 @@ Partial Class frmTicketEquipment
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketEquipment))
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.TICKETEQUIPMENT_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TICKETEQUIPMENT_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETEQUIPMENT_VTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.TICKETEQUIPMENT_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETEQUIPMENT_VTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
         Me.dgvEquip = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -101,7 +101,7 @@ Partial Class frmTicketEquipment
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing

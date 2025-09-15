@@ -41,7 +41,7 @@ Partial Class frmSiteEdit
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cbxState = New System.Windows.Forms.ComboBox()
         Me.STATEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -69,9 +69,9 @@ Partial Class frmSiteEdit
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
-        Me.COUNTRYTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.COUNTRYTableAdapter()
-        Me.STATETableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.STATETableAdapter()
-        Me.CITYTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CITYTableAdapter()
+        Me.COUNTRYTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.COUNTRYTableAdapter()
+        Me.STATETableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.STATETableAdapter()
+        Me.CITYTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CITYTableAdapter()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.STATEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -597,13 +597,13 @@ Partial Class frmSiteEdit
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnSave As System.Windows.Forms.Button
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents COUNTRYBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents COUNTRYTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.COUNTRYTableAdapter
+    Friend WithEvents COUNTRYTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.COUNTRYTableAdapter
     Friend WithEvents STATEBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents CITYBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents STATETableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.STATETableAdapter
-    Friend WithEvents CITYTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CITYTableAdapter
+    Friend WithEvents STATETableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.STATETableAdapter
+    Friend WithEvents CITYTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CITYTableAdapter
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtDescription As System.Windows.Forms.TextBox
     Friend WithEvents Label12 As System.Windows.Forms.Label

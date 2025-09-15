@@ -28,10 +28,10 @@ Partial Class frmRigList
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.RIGBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.RIGTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.RIGTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.RIGTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.RIGTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.dgvRig = New System.Windows.Forms.DataGridView()
         Me.colRigId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MenuStrip1.SuspendLayout()
@@ -107,7 +107,7 @@ Partial Class frmRigList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -169,10 +169,10 @@ Partial Class frmRigList
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents mnuNewItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuExit As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents RIGBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents RIGTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.RIGTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents RIGTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.RIGTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvRig As System.Windows.Forms.DataGridView
     Friend WithEvents colRigId As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

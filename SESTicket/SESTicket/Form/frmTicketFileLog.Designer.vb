@@ -29,10 +29,10 @@ Partial Class frmTicketFileLog
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.TICKETFILELOGBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TICKETFILELOGTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETFILELOGTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.TICKETFILELOGTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETFILELOGTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
         Me.dgvTicketFileLog = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -118,7 +118,7 @@ Partial Class frmTicketFileLog
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -202,10 +202,10 @@ Partial Class frmTicketFileLog
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents TICKETFILELOGBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TICKETFILELOGTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TICKETFILELOGTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents TICKETFILELOGTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TICKETFILELOGTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvTicketFileLog As System.Windows.Forms.DataGridView
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn

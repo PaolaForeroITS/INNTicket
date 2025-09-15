@@ -46,9 +46,9 @@ Partial Class frmTicketFile
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colLocation = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TICKETFILEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
-        Me.TICKETFILETableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETFILETableAdapter()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.TICKETFILETableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETFILETableAdapter()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtTicketId = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
@@ -277,7 +277,7 @@ Partial Class frmTicketFile
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -331,16 +331,16 @@ Partial Class frmTicketFile
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents mnuNewItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuOpenFile As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuDeleteFile As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents TICKETFILEBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TICKETFILETableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TICKETFILETableAdapter
+    Friend WithEvents TICKETFILETableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TICKETFILETableAdapter
     Friend WithEvents dgvTicketFile As System.Windows.Forms.DataGridView
     Friend WithEvents mnuRefresh As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuLog As System.Windows.Forms.ToolStripMenuItem

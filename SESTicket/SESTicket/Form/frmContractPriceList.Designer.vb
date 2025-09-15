@@ -29,12 +29,12 @@ Partial Class frmContractPriceList
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmContractPriceList))
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.CONTRACTPRICELISTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.CONTRACTPRICELISTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTPRICELISTTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
-        Me.CONTRACTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
-        Me.CUSTOMERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
+        Me.CONTRACTPRICELISTTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTPRICELISTTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.CONTRACTTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
+        Me.CUSTOMERTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
         Me.dgvContractPriceList = New System.Windows.Forms.DataGridView()
         Me.colTabGroup = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colGroupOrder = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -120,7 +120,7 @@ Partial Class frmContractPriceList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -533,18 +533,18 @@ Partial Class frmContractPriceList
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents CONTRACTPRICELISTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CONTRACTPRICELISTTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTPRICELISTTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents CONTRACTPRICELISTTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTPRICELISTTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvContractPriceList As System.Windows.Forms.DataGridView
     Friend WithEvents cbxCustomer As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents cbxContract As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents CUSTOMERTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
+    Friend WithEvents CUSTOMERTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
     Friend WithEvents CUSTOMERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CONTRACTTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter
+    Friend WithEvents CONTRACTTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter
     Friend WithEvents CONTRACTBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents colStatus As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip

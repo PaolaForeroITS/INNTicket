@@ -43,7 +43,7 @@ Public Class clsSystemVersion
     Public sAppUpdLocal As String = ConfigurationManager.AppSettings("AppUpdLocal").ToString
 
     Public Function SystemVersion() As String
-        Return "7.2.1"
+        Return "7.2.2"
     End Function
 
     Public Sub UpdateAppVersionUpdate()

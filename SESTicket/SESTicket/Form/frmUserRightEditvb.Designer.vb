@@ -39,7 +39,7 @@ Partial Class frmUserRightEdit
         Me.PermitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DenyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OBJECTGROUPITEMVBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtSubGroup = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -52,9 +52,9 @@ Partial Class frmUserRightEdit
         Me.BENABLEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.OBJECTGROUPVBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
-        Me.OBJECTGROUP_VTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.OBJECTGROUP_VTableAdapter()
-        Me.OBJECTGROUPITEM_VTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.OBJECTGROUPITEM_VTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.OBJECTGROUP_VTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.OBJECTGROUP_VTableAdapter()
+        Me.OBJECTGROUPITEM_VTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.OBJECTGROUPITEM_VTableAdapter()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.dgvObjGroupItem, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -375,7 +375,7 @@ Partial Class frmUserRightEdit
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing

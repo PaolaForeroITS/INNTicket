@@ -27,11 +27,11 @@ Partial Class frmRPTTicketServiceEvaluation
         Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTTicketServiceEvaluation))
         Me.REPORTHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.TMP_RPT_TICKETSERVEVALSERVBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.REPORTHEADER_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
-        Me.TMP_RPT_TICKETSERVEVALSERVTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TMP_RPT_TICKETSERVEVALSERVTableAdapter()
+        Me.REPORTHEADER_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
+        Me.TMP_RPT_TICKETSERVEVALSERVTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TMP_RPT_TICKETSERVEVALSERVTableAdapter()
         CType(Me.REPORTHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TMP_RPT_TICKETSERVEVALSERVBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,8 +98,8 @@ Partial Class frmRPTTicketServiceEvaluation
     End Sub
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents REPORTHEADER_VBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents TMP_RPT_TICKETSERVEVALSERVBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents REPORTHEADER_VTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter
-    Friend WithEvents TMP_RPT_TICKETSERVEVALSERVTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TMP_RPT_TICKETSERVEVALSERVTableAdapter
+    Friend WithEvents REPORTHEADER_VTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter
+    Friend WithEvents TMP_RPT_TICKETSERVEVALSERVTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TMP_RPT_TICKETSERVEVALSERVTableAdapter
 End Class

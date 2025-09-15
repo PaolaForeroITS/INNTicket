@@ -40,9 +40,9 @@ Partial Class frmSearchWell
         Me.ACTIVEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colSiteAlias = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WELLVBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet1 = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet1 = New INNTicket.SESTicketAccessDataSet()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.WELL_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.WELL_VTableAdapter()
+        Me.WELL_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.WELL_VTableAdapter()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvWell, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.WELLVBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -268,7 +268,7 @@ Partial Class frmSearchWell
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents dgvWell As System.Windows.Forms.DataGridView
     Friend WithEvents SITEDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents WELL_VTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.WELL_VTableAdapter
+    Friend WithEvents WELL_VTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.WELL_VTableAdapter
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents SESTicketAccessDataSet1 As SESTicketAccessDataSet
     Friend WithEvents WELLVBindingSource1 As BindingSource

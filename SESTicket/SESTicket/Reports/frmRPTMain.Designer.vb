@@ -28,19 +28,19 @@ Partial Class frmRPTMain
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cbxTicketLayout = New System.Windows.Forms.ComboBox()
         Me.CONTRACTREPLAYOUTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.cbxOrientation = New System.Windows.Forms.ComboBox()
         Me.lblOrientation = New System.Windows.Forms.Label()
         Me.chkPageBreak = New System.Windows.Forms.CheckBox()
         Me.cbxRepParam = New System.Windows.Forms.ComboBox()
         Me.REPORTPARAMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.REPORTPARAMTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
+        Me.REPORTPARAMTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cbxCountry = New System.Windows.Forms.ComboBox()
         Me.COUNTRYBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.COUNTRYTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.COUNTRYTableAdapter()
-        Me.CONTRACTREPLAYOUTTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.CONTRACTREPLAYOUTTableAdapter()
+        Me.COUNTRYTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.COUNTRYTableAdapter()
+        Me.CONTRACTREPLAYOUTTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.CONTRACTREPLAYOUTTableAdapter()
         CType(Me.CONTRACTREPLAYOUTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.REPORTPARAMBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -224,9 +224,9 @@ Partial Class frmRPTMain
     Friend WithEvents chkPageBreak As System.Windows.Forms.CheckBox
     Friend WithEvents cbxRepParam As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents REPORTPARAMBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents REPORTPARAMTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter
+    Friend WithEvents REPORTPARAMTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter
     Friend WithEvents Label3 As Label
     Friend WithEvents cbxCountry As ComboBox
     Friend WithEvents COUNTRYBindingSource As BindingSource

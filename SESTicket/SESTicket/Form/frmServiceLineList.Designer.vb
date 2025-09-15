@@ -29,10 +29,10 @@ Partial Class frmServiceLineList
         Me.Label3 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.SERVICELINEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SERVICELINETableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.SERVICELINETableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.SERVICELINETableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.SERVICELINETableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.dgvServiceLine = New System.Windows.Forms.DataGridView()
         Me.colServiceLineId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colName = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -138,7 +138,7 @@ Partial Class frmServiceLineList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -222,10 +222,10 @@ Partial Class frmServiceLineList
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents mnuNewItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents SERVICELINEBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SERVICELINETableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.SERVICELINETableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents SERVICELINETableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.SERVICELINETableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvServiceLine As System.Windows.Forms.DataGridView
     Friend WithEvents colServiceLineId As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colName As System.Windows.Forms.DataGridViewTextBoxColumn

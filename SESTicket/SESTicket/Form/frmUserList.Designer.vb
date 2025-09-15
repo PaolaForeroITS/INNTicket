@@ -36,14 +36,14 @@ Partial Class frmUserList
         Me.colTicketSync = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.USERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.chkNo = New System.Windows.Forms.CheckBox()
         Me.chkYes = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.USERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.USERTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.USERTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.USERTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         CType(Me.dgvUser, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.USERBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -203,7 +203,7 @@ Partial Class frmUserList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Me.USERTableAdapter
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -230,10 +230,10 @@ Partial Class frmUserList
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents USERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents USERTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.USERTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents USERTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.USERTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvUser As System.Windows.Forms.DataGridView
     Friend WithEvents colPassword As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colEnabled As System.Windows.Forms.DataGridViewCheckBoxColumn

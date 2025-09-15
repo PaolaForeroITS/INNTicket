@@ -26,8 +26,8 @@ Partial Class frmSearchEquipment
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSearchEquipment))
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
-        Me.EQUIPMENTTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.EQUIPMENTTableAdapter()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
+        Me.EQUIPMENTTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.EQUIPMENTTableAdapter()
         Me.dgvEquipment = New System.Windows.Forms.DataGridView()
         Me.colEquipmentId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -37,7 +37,7 @@ Partial Class frmSearchEquipment
         Me.mnuPrincip = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.mnuContextOk = New System.Windows.Forms.ToolStripMenuItem()
         Me.EQUIPMENTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -175,7 +175,7 @@ Partial Class frmSearchEquipment
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -245,10 +245,10 @@ Partial Class frmSearchEquipment
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents EQUIPMENTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents EQUIPMENTTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.EQUIPMENTTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents EQUIPMENTTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.EQUIPMENTTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvEquipment As System.Windows.Forms.DataGridView
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox

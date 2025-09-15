@@ -24,10 +24,10 @@ Partial Class frmSiteList
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSiteList))
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.SITESBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SITESTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.SITESTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.dgvSite = New System.Windows.Forms.DataGridView()
         Me.colSiteID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colAlias = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -96,7 +96,7 @@ Partial Class frmSiteList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -339,10 +339,10 @@ Partial Class frmSiteList
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents SITESBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SITESTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents SITESTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvSite As System.Windows.Forms.DataGridView
     Friend WithEvents colStatus As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip

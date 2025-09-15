@@ -71,7 +71,7 @@ Partial Class frmInvoiceEdit
         Me.colTicketInvoiceID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colTicketId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TICKETINVOICELINEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.txtUnitSale = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -96,9 +96,9 @@ Partial Class frmInvoiceEdit
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtTicketTotal = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TICKETINVOICELINETableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.TICKETINVOICELINETableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
-        Me.SALESITEM_VTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.SALESITEM_VTableAdapter()
+        Me.TICKETINVOICELINETableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.TICKETINVOICELINETableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.SALESITEM_VTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.SALESITEM_VTableAdapter()
         Me.pnlTicket.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -633,7 +633,7 @@ Partial Class frmInvoiceEdit
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -698,16 +698,16 @@ Partial Class frmInvoiceEdit
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtTicketTotal As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents TICKETINVOICELINEBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TICKETINVOICELINETableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.TICKETINVOICELINETableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents TICKETINVOICELINETableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.TICKETINVOICELINETableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvTicketInvLine As System.Windows.Forms.DataGridView
     Friend WithEvents btnDelete As System.Windows.Forms.Button
     Friend WithEvents btnNew As System.Windows.Forms.Button
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
     Friend WithEvents SALESITEM_VBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SALESITEM_VTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.SALESITEM_VTableAdapter
+    Friend WithEvents SALESITEM_VTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.SALESITEM_VTableAdapter
     Friend WithEvents dgvSalesItem As System.Windows.Forms.DataGridView
     Friend WithEvents colType As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colTabGroup As System.Windows.Forms.DataGridViewTextBoxColumn

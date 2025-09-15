@@ -30,9 +30,9 @@ Partial Class frmSearchSite
         Me.colName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colSiteId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SITESBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
-        Me.SITESTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SITESTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
+        Me.SITESTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.SITESTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
         CType(Me.dgvSite, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SITESBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -144,7 +144,7 @@ Partial Class frmSearchSite
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing

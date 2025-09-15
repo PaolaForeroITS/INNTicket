@@ -31,7 +31,7 @@ Partial Class frmInvItemEdit
         Me.txtAbbrev = New System.Windows.Forms.TextBox()
         Me.cbxDefaultSite = New System.Windows.Forms.ComboBox()
         Me.SITESBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cbxInventoryClass = New System.Windows.Forms.ComboBox()
         Me.INVENTORYCLASSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -82,9 +82,9 @@ Partial Class frmInvItemEdit
         Me.Label14 = New System.Windows.Forms.Label()
         Me.txtGoodAccount = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.INVENTORYCLASSTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter()
-        Me.SITESTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter()
-        Me.INVENTORYUNITTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYUNITTableAdapter()
+        Me.INVENTORYCLASSTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter()
+        Me.SITESTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter()
+        Me.INVENTORYUNITTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYUNITTableAdapter()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
@@ -632,15 +632,15 @@ Partial Class frmInvItemEdit
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents txtSalesAccountUBRAIU As System.Windows.Forms.TextBox
     Friend WithEvents Label20 As System.Windows.Forms.Label
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents INVENTORYCLASSBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents INVENTORYCLASSTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter
+    Friend WithEvents INVENTORYCLASSTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter
     Friend WithEvents SITESBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SITESTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter
+    Friend WithEvents SITESTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.SITESTableAdapter
     Friend WithEvents txtSalesUnit As System.Windows.Forms.TextBox
     Friend WithEvents txtPurchaseUnit As System.Windows.Forms.TextBox
     Friend WithEvents INVENTORYUNITBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents INVENTORYUNITTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYUNITTableAdapter
+    Friend WithEvents INVENTORYUNITTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYUNITTableAdapter
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtAbbrev As System.Windows.Forms.TextBox
     Friend WithEvents cbxActive As System.Windows.Forms.ComboBox

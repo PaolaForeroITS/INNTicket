@@ -32,11 +32,11 @@ Partial Class frmTicketServEvalHSEQ
         Me.HSEQToolStripMenuIPrint = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TICKETSERVEVAL_HSEQBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.TICKETSERVEVALECPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TICKETSERVEVAL_HSEQTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_HSEQTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
-        Me.TICKETSERVEVAL_ECPTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_ECPTableAdapter()
+        Me.TICKETSERVEVAL_HSEQTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_HSEQTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.TICKETSERVEVAL_ECPTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_ECPTableAdapter()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.dgvTicketEvalHSEQ = New System.Windows.Forms.DataGridView()
         Me.colServiceDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -168,7 +168,7 @@ Partial Class frmTicketServEvalHSEQ
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -395,10 +395,10 @@ Partial Class frmTicketServEvalHSEQ
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents TICKETSERVEVAL_HSEQBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TICKETSERVEVAL_HSEQTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_HSEQTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents TICKETSERVEVAL_HSEQTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVEVAL_HSEQTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents mnuNewItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuPrintServEval As System.Windows.Forms.ToolStripMenuItem

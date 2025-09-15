@@ -36,13 +36,13 @@ Partial Class frmDataExpLayout
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cbxCustomer = New System.Windows.Forms.ComboBox()
         Me.CUSTOMERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.cbxContract = New System.Windows.Forms.ComboBox()
         Me.CONTRACTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.CONTRACTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
-        Me.CUSTOMERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
+        Me.CONTRACTTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
+        Me.CUSTOMERTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
         Me.GroupBox1.SuspendLayout()
         Me.grpExpInacLine.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -276,11 +276,11 @@ Partial Class frmDataExpLayout
     Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
     Friend WithEvents cbxContract As System.Windows.Forms.ComboBox
     Friend WithEvents CONTRACTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
-    Friend WithEvents CONTRACTTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
+    Friend WithEvents CONTRACTTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter
     Friend WithEvents cbxCustomer As System.Windows.Forms.ComboBox
     Friend WithEvents CUSTOMERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CUSTOMERTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
+    Friend WithEvents CUSTOMERTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

@@ -36,7 +36,7 @@ Partial Class frmTicketOperReport
         Me.colActivityDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colComments = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TICKETOPEREPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.btnNewActivity = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.dgvActivityLine = New System.Windows.Forms.DataGridView()
@@ -51,9 +51,9 @@ Partial Class frmTicketOperReport
         Me.btnDeleteActivity = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtComments = New System.Windows.Forms.TextBox()
-        Me.TICKETOPEREPTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
-        Me.TICKETOPEREPACTTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPACTTableAdapter()
+        Me.TICKETOPEREPTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.TICKETOPEREPACTTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPACTTableAdapter()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvOperDate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TICKETOPEREPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -346,7 +346,7 @@ Partial Class frmTicketOperReport
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -381,14 +381,14 @@ Partial Class frmTicketOperReport
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents TICKETOPEREPBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TICKETOPEREPTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents TICKETOPEREPTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvOperDate As System.Windows.Forms.DataGridView
     Friend WithEvents btnNewOperDate As System.Windows.Forms.Button
     Friend WithEvents TICKETOPEREPACTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TICKETOPEREPACTTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPACTTableAdapter
+    Friend WithEvents TICKETOPEREPACTTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPACTTableAdapter
     Friend WithEvents btnNewActivity As System.Windows.Forms.Button
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents btnDeleteActivity As System.Windows.Forms.Button

@@ -43,13 +43,13 @@ Partial Class frmSearchInvItem
         Me.LASTCOST = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colInventoryClassId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.INVENTORYITEMCONTRACTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.cbxSearch = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.INVENTORYITEMCONTRACTTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.INVENTORYITEMCONTRACTTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.INVENTORYITEMCONTRACTTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.INVENTORYITEMCONTRACTTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
         CType(Me.dgvInvItem, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.INVENTORYITEMCONTRACTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -280,7 +280,7 @@ Partial Class frmSearchInvItem
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -311,10 +311,10 @@ Partial Class frmSearchInvItem
     End Sub
     Friend WithEvents btnSearch As System.Windows.Forms.Button
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents INVENTORYITEMCONTRACTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents INVENTORYITEMCONTRACTTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.INVENTORYITEMCONTRACTTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents INVENTORYITEMCONTRACTTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.INVENTORYITEMCONTRACTTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvInvItem As System.Windows.Forms.DataGridView
     Friend WithEvents cbxSearch As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label

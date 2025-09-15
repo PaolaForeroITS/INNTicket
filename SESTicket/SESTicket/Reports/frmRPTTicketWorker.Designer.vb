@@ -27,7 +27,7 @@ Partial Class frmRPTTicketWorker
         Dim ReportDataSource2 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTTicketWorker))
         Me.sp_TicketWorkerRptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.sp_TicketWorkerTotalRptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.chkCanceled = New System.Windows.Forms.CheckBox()
@@ -43,13 +43,13 @@ Partial Class frmRPTTicketWorker
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.sp_TicketWorkerRptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerRptTableAdapter()
+        Me.sp_TicketWorkerRptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerRptTableAdapter()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.ReportViewer2 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.sp_TicketWorkerTotalRptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerTotalRptTableAdapter()
+        Me.sp_TicketWorkerTotalRptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerTotalRptTableAdapter()
         CType(Me.sp_TicketWorkerRptBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sp_TicketWorkerTotalRptBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -344,13 +344,13 @@ Partial Class frmRPTTicketWorker
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents sp_TicketWorkerRptBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
-    Friend WithEvents sp_TicketWorkerRptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerRptTableAdapter
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
+    Friend WithEvents sp_TicketWorkerRptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerRptTableAdapter
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
     Friend WithEvents ReportViewer2 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents sp_TicketWorkerTotalRptBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents sp_TicketWorkerTotalRptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerTotalRptTableAdapter
+    Friend WithEvents sp_TicketWorkerTotalRptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketWorkerTotalRptTableAdapter
 End Class

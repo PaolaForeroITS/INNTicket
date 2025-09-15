@@ -30,10 +30,10 @@ Partial Class frmCloseTicketDB
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuCloseTicket = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.TMP_TICKETCLOSEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TMP_TICKETCLOSETableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TMP_TICKETCLOSETableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.TMP_TICKETCLOSETableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TMP_TICKETCLOSETableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
         Me.dgvTicketClose = New System.Windows.Forms.DataGridView()
         Me.colTicketId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colServiceTicket = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -118,7 +118,7 @@ Partial Class frmCloseTicketDB
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing

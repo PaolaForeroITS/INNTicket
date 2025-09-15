@@ -66,7 +66,7 @@ Partial Class frmTicketEdit
         Me.colTicketId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TICKETSERVICETYPEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.btnDeleteServiceLine = New System.Windows.Forms.Button()
         Me.btnAddServiceType = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -193,24 +193,24 @@ Partial Class frmTicketEdit
         Me.txtTicketNumber = New System.Windows.Forms.TextBox()
         Me.lblCustomer = New System.Windows.Forms.Label()
         Me.lblTicketNumber = New System.Windows.Forms.Label()
-        Me.CUSTOMERTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.CUSTOMERTableAdapter()
-        Me.SERVICETYPETableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SERVICETYPETableAdapter()
-        Me.CURRENCYTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.CURRENCYTableAdapter()
-        Me.TUBINGTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TUBINGTableAdapter()
-        Me.CASINGTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.CASINGTableAdapter()
-        Me.CONTRACTTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.CONTRACTTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
-        Me.TICKETWORKERTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETWORKERTableAdapter()
+        Me.CUSTOMERTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.CUSTOMERTableAdapter()
+        Me.SERVICETYPETableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.SERVICETYPETableAdapter()
+        Me.CURRENCYTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.CURRENCYTableAdapter()
+        Me.TUBINGTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TUBINGTableAdapter()
+        Me.CASINGTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.CASINGTableAdapter()
+        Me.CONTRACTTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.CONTRACTTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.TICKETWORKERTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETWORKERTableAdapter()
         Me.pnlTicketCanceled = New System.Windows.Forms.Panel()
         Me.btnCancelDet = New System.Windows.Forms.Button()
         Me.lblTicketCancelDet = New System.Windows.Forms.Label()
-        Me.TUBBING_DRILLPIPETableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TUBBING_DRILLPIPETableAdapter()
-        Me.TUBBING_WEIGHTTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TUBBING_WEIGHTTableAdapter()
-        Me.CASING_SIZETableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.CASING_SIZETableAdapter()
-        Me.CASING_WEIGHTTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.CASING_WEIGHTTableAdapter()
-        Me.SERVLINE_CUST_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SERVLINE_CUST_VTableAdapter()
-        Me.TICKETSERVICETYPETableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVICETYPETableAdapter()
-        Me.TICKETOPEHOURTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEHOURTableAdapter()
+        Me.TUBBING_DRILLPIPETableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TUBBING_DRILLPIPETableAdapter()
+        Me.TUBBING_WEIGHTTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TUBBING_WEIGHTTableAdapter()
+        Me.CASING_SIZETableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.CASING_SIZETableAdapter()
+        Me.CASING_WEIGHTTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.CASING_WEIGHTTableAdapter()
+        Me.SERVLINE_CUST_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.SERVLINE_CUST_VTableAdapter()
+        Me.TICKETSERVICETYPETableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETSERVICETYPETableAdapter()
+        Me.TICKETOPEHOURTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEHOURTableAdapter()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -1985,7 +1985,7 @@ Partial Class frmTicketEdit
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Me.TUBINGTableAdapter
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -2138,7 +2138,7 @@ Partial Class frmTicketEdit
     Friend WithEvents tabEquipments As System.Windows.Forms.TabPage
     Friend WithEvents tabWorkers As System.Windows.Forms.TabPage
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents cbxServiceType As System.Windows.Forms.ComboBox
     Friend WithEvents dtpTimeStarted As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label9 As System.Windows.Forms.Label
@@ -2179,25 +2179,25 @@ Partial Class frmTicketEdit
     Friend WithEvents lblTicketNumber As System.Windows.Forms.Label
     Friend WithEvents lblContract As System.Windows.Forms.Label
     Friend WithEvents CUSTOMERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CUSTOMERTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.CUSTOMERTableAdapter
+    Friend WithEvents CUSTOMERTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.CUSTOMERTableAdapter
     Friend WithEvents SERVICETYPEBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SERVICETYPETableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.SERVICETYPETableAdapter
+    Friend WithEvents SERVICETYPETableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.SERVICETYPETableAdapter
     Friend WithEvents CURRENCYBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CURRENCYTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.CURRENCYTableAdapter
+    Friend WithEvents CURRENCYTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.CURRENCYTableAdapter
     Friend WithEvents TUBINGBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TUBINGTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TUBINGTableAdapter
+    Friend WithEvents TUBINGTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TUBINGTableAdapter
     ' Friend WithEvents CASING_SIZETableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.CASING_SIZETableAdapter
     'Friend WithEvents CASING_WEIGHTTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.CASING_WEIGHTTableAdapter
     Friend WithEvents CASINGBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CASINGTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.CASINGTableAdapter
+    Friend WithEvents CASINGTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.CASINGTableAdapter
     Friend WithEvents cbxContract As System.Windows.Forms.ComboBox
     Friend WithEvents CONTRACTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CONTRACTTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.CONTRACTTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents CONTRACTTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.CONTRACTTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents btnWAdd As System.Windows.Forms.Button
     Friend WithEvents mnuCloseTicket As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TICKETWORKERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TICKETWORKERTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TICKETWORKERTableAdapter
+    Friend WithEvents TICKETWORKERTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TICKETWORKERTableAdapter
     Friend WithEvents dgvWorker As System.Windows.Forms.DataGridView
     Friend WithEvents colWTicketWorker As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colWTimeStarted As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -2217,13 +2217,13 @@ Partial Class frmTicketEdit
     Friend WithEvents tabOperReport As System.Windows.Forms.TabPage
     Friend WithEvents pnlOperReport As System.Windows.Forms.Panel
     Friend WithEvents TUBBINGDRILLPIPEBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TUBBING_DRILLPIPETableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TUBBING_DRILLPIPETableAdapter
+    Friend WithEvents TUBBING_DRILLPIPETableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TUBBING_DRILLPIPETableAdapter
     Friend WithEvents TUBBINGWEIGHTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TUBBING_WEIGHTTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TUBBING_WEIGHTTableAdapter
+    Friend WithEvents TUBBING_WEIGHTTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TUBBING_WEIGHTTableAdapter
     Friend WithEvents CASINGSIZEBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CASING_SIZETableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.CASING_SIZETableAdapter
+    Friend WithEvents CASING_SIZETableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.CASING_SIZETableAdapter
     Friend WithEvents CASINGWEIGHTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CASING_WEIGHTTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.CASING_WEIGHTTableAdapter
+    Friend WithEvents CASING_WEIGHTTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.CASING_WEIGHTTableAdapter
     Friend WithEvents TicketSalesItemToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuJobLog As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
@@ -2234,7 +2234,7 @@ Partial Class frmTicketEdit
     Friend WithEvents tabServEvalHSEQ As System.Windows.Forms.TabPage
     Friend WithEvents pnlHSEQServEval As System.Windows.Forms.Panel
     Friend WithEvents SERVLINECUSTVBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SERVLINE_CUST_VTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.SERVLINE_CUST_VTableAdapter
+    Friend WithEvents SERVLINE_CUST_VTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.SERVLINE_CUST_VTableAdapter
     Friend WithEvents txtWellName As System.Windows.Forms.TextBox
     Friend WithEvents btnSearchWell As System.Windows.Forms.Button
     Friend WithEvents GroupBox7 As GroupBox

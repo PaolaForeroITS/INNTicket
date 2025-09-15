@@ -71,14 +71,14 @@ Partial Class frmInvoiceList
         Me.cmnuSep01 = New System.Windows.Forms.ToolStripSeparator()
         Me.cmnuCancelTicket = New System.Windows.Forms.ToolStripMenuItem()
         Me.SpTicketInvoiceBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblTicketID = New System.Windows.Forms.Label()
         Me.cbxDate = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.cbxCustomer = New System.Windows.Forms.ComboBox()
         Me.CbxCustomerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.cbxTicket = New System.Windows.Forms.ComboBox()
         Me.txtTicketId = New System.Windows.Forms.TextBox()
         Me.btnSearch = New System.Windows.Forms.Button()
@@ -99,7 +99,7 @@ Partial Class frmInvoiceList
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtDif = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -107,11 +107,11 @@ Partial Class frmInvoiceList
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txtTicketTotal = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Sp_TicketInvoiceTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketInvoiceTableAdapter()
-        Me.CbxServiceLineTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.cbxServiceLineTableAdapter()
-        Me.CbxSiteTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxSiteTableAdapter()
-        Me.CbxTicketStatusTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.cbxTicketStatusTableAdapter()
-        Me.CbxCustomerTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxCustomerTableAdapter()
+        Me.Sp_TicketInvoiceTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketInvoiceTableAdapter()
+        Me.CbxServiceLineTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.cbxServiceLineTableAdapter()
+        Me.CbxSiteTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.cbxSiteTableAdapter()
+        Me.CbxTicketStatusTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.cbxTicketStatusTableAdapter()
+        Me.CbxCustomerTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.cbxCustomerTableAdapter()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         CType(Me.dgvInvoice, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.cmnuGridPrincip.SuspendLayout()
@@ -812,7 +812,7 @@ Partial Class frmInvoiceList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -964,8 +964,8 @@ Partial Class frmInvoiceList
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvInvoice As System.Windows.Forms.DataGridView
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents dtpServiceDateEnd As System.Windows.Forms.DateTimePicker
@@ -989,7 +989,7 @@ Partial Class frmInvoiceList
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtTicketTotal As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents btnSearch As Button
     Friend WithEvents cbxTicket As ComboBox
     Friend WithEvents txtTicketId As TextBox

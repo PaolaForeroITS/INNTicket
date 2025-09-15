@@ -26,7 +26,7 @@ Partial Class frmRPTTicketEquipment
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTTicketEquipment))
         Me.sp_TicketEquipmentRptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.chkCanceled = New System.Windows.Forms.CheckBox()
@@ -42,7 +42,7 @@ Partial Class frmRPTTicketEquipment
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.sp_TicketEquipmentRptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketEquipmentRptTableAdapter()
+        Me.sp_TicketEquipmentRptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketEquipmentRptTableAdapter()
         CType(Me.sp_TicketEquipmentRptBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -273,6 +273,6 @@ Partial Class frmRPTTicketEquipment
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents sp_TicketEquipmentRptBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
-    Friend WithEvents sp_TicketEquipmentRptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketEquipmentRptTableAdapter
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
+    Friend WithEvents sp_TicketEquipmentRptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketEquipmentRptTableAdapter
 End Class

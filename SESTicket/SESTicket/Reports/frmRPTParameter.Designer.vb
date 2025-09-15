@@ -33,7 +33,7 @@ Partial Class frmRPTParameter
         Me.colAuxLogo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colReportParamId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.REPORTPARAMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuNew = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
@@ -55,7 +55,7 @@ Partial Class frmRPTParameter
         Me.txtHEAD1 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.REPORTPARAMTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
+        Me.REPORTPARAMTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
         Me.GroupBox3.SuspendLayout()
         CType(Me.dgvParam, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.REPORTPARAMBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -431,9 +431,9 @@ Partial Class frmRPTParameter
     Friend WithEvents mnuEdit As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuSave As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuCancel As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents REPORTPARAMBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents REPORTPARAMTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter
+    Friend WithEvents REPORTPARAMTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter
     Friend WithEvents colDescrip As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colHead1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colHead2 As System.Windows.Forms.DataGridViewTextBoxColumn

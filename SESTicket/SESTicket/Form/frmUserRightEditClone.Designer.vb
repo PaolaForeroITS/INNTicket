@@ -27,10 +27,10 @@ Partial Class frmUserRightEditClone
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cbxUserCloneRight1 = New System.Windows.Forms.ComboBox()
         Me.CbxUserCloneRightBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.btnOk = New System.Windows.Forms.Button()
-        Me.CbxUserCloneRightTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.cbxUserCloneRightTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.CbxUserCloneRightTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.cbxUserCloneRightTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.GroupBox1.SuspendLayout()
         CType(Me.CbxUserCloneRightBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,7 +112,7 @@ Partial Class frmUserRightEditClone
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing

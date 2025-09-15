@@ -35,7 +35,7 @@ Partial Class frmTicketServEvalHSEQEdit
         Me.txtObs = New System.Windows.Forms.TextBox()
         Me.cbxEvalGeneralPercep = New System.Windows.Forms.ComboBox()
         Me.HSEQANSWERSBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.cbxEvalHSEQPerf = New System.Windows.Forms.ComboBox()
         Me.HSEQANSWERSBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
         Me.cbxEvalComun = New System.Windows.Forms.ComboBox()
@@ -50,7 +50,7 @@ Partial Class frmTicketServEvalHSEQEdit
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.HSEQ_ANSWERSTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.HSEQ_ANSWERSTableAdapter()
+        Me.HSEQ_ANSWERSTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.HSEQ_ANSWERSTableAdapter()
         Me.GroupBox1.SuspendLayout()
         Me.grpClientAnswer.SuspendLayout()
         CType(Me.HSEQANSWERSBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -375,9 +375,9 @@ Partial Class frmTicketServEvalHSEQEdit
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents cbxEvalPersonal As System.Windows.Forms.ComboBox
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents HSEQANSWERSBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents HSEQ_ANSWERSTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.HSEQ_ANSWERSTableAdapter
+    Friend WithEvents HSEQ_ANSWERSTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.HSEQ_ANSWERSTableAdapter
     Friend WithEvents cbxEvalGeneralPercep As System.Windows.Forms.ComboBox
     Friend WithEvents cbxEvalHSEQPerf As System.Windows.Forms.ComboBox
     Friend WithEvents cbxEvalComun As System.Windows.Forms.ComboBox

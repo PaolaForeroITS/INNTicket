@@ -59,7 +59,7 @@ Partial Class frmInvItemList
         Me.colMaxOnHand = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colVendorId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.INVENTORYITEMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.chkNo = New System.Windows.Forms.CheckBox()
         Me.chkYes = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -67,8 +67,8 @@ Partial Class frmInvItemList
         Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExportData = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuImportData = New System.Windows.Forms.ToolStripMenuItem()
-        Me.INVENTORYITEMTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYITEMTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.INVENTORYITEMTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYITEMTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         CType(Me.dgvInvItem, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.INVENTORYITEMBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -398,7 +398,7 @@ Partial Class frmInvItemList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -425,10 +425,10 @@ Partial Class frmInvItemList
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents INVENTORYITEMBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents INVENTORYITEMTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYITEMTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents INVENTORYITEMTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYITEMTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvInvItem As System.Windows.Forms.DataGridView
     Friend WithEvents chkNo As System.Windows.Forms.CheckBox
     Friend WithEvents chkYes As System.Windows.Forms.CheckBox

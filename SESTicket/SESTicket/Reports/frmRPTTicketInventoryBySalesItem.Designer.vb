@@ -26,7 +26,7 @@ Partial Class frmRPTTicketInventoryBySalesItem
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTTicketInventoryBySalesItem))
         Me.sp_TicketInventoryBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.chkCanceled = New System.Windows.Forms.CheckBox()
         Me.btnOk = New System.Windows.Forms.Button()
@@ -38,7 +38,7 @@ Partial Class frmRPTTicketInventoryBySalesItem
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.sp_TicketInventoryTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketInventoryTableAdapter()
+        Me.sp_TicketInventoryTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketInventoryTableAdapter()
         CType(Me.sp_TicketInventoryBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -222,8 +222,8 @@ Partial Class frmRPTTicketInventoryBySalesItem
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents sp_TicketInventoryBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
-    Friend WithEvents sp_TicketInventoryTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketInventoryTableAdapter
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
+    Friend WithEvents sp_TicketInventoryTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketInventoryTableAdapter
     Friend WithEvents chkCanceled As System.Windows.Forms.CheckBox
     Friend WithEvents chkClosed As System.Windows.Forms.CheckBox
     Friend WithEvents chkOpen As System.Windows.Forms.CheckBox

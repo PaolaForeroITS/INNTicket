@@ -46,7 +46,7 @@ Partial Class frmContractPriceEdit
         Me.txtCustomerItemCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CONTRACTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.cbxInventoryClass = New System.Windows.Forms.ComboBox()
         Me.INVENTORYCLASSPRICEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.INVENTORYCLASSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -69,9 +69,9 @@ Partial Class frmContractPriceEdit
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
-        Me.CONTRACTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
-        Me.INVENTORYCLASSTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter()
-        Me.INVENTORYCLASS_PRICETableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASS_PRICETableAdapter()
+        Me.CONTRACTTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter()
+        Me.INVENTORYCLASSTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter()
+        Me.INVENTORYCLASS_PRICETableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASS_PRICETableAdapter()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.cbxPermNegative = New System.Windows.Forms.ComboBox()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -707,12 +707,12 @@ Partial Class frmContractPriceEdit
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents btnSave As System.Windows.Forms.Button
     Friend WithEvents CONTRACTBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
-    Friend WithEvents CONTRACTTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
+    Friend WithEvents CONTRACTTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTTableAdapter
     Friend WithEvents INVENTORYCLASSBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents INVENTORYCLASSTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter
+    Friend WithEvents INVENTORYCLASSTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASSTableAdapter
     Friend WithEvents INVENTORYCLASSPRICEBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents INVENTORYCLASS_PRICETableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASS_PRICETableAdapter
+    Friend WithEvents INVENTORYCLASS_PRICETableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.INVENTORYCLASS_PRICETableAdapter
     Friend WithEvents txtContract As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtCustomer As System.Windows.Forms.TextBox

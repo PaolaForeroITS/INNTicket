@@ -34,7 +34,7 @@ Partial Class frmTicketDB
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.cbxCustomer = New System.Windows.Forms.ComboBox()
         Me.CbxCustomerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.txtTicketId = New System.Windows.Forms.TextBox()
         Me.chkCanceled = New System.Windows.Forms.CheckBox()
         Me.chkClosed = New System.Windows.Forms.CheckBox()
@@ -50,9 +50,9 @@ Partial Class frmTicketDB
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.Sp_TicketDBBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.dgvTicket = New System.Windows.Forms.DataGridView()
         Me.colAttach = New System.Windows.Forms.DataGridViewImageColumn()
         Me.colTicketId = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -77,10 +77,10 @@ Partial Class frmTicketDB
         Me.mnuChangeSupSupervisor = New System.Windows.Forms.ToolStripMenuItem()
         Me.cmnuSep01 = New System.Windows.Forms.ToolStripSeparator()
         Me.cmnuCancelTicket = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CbxServiceLineTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxServiceLineTableAdapter()
-        Me.CbxCustomerTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxCustomerTableAdapter()
-        Me.CbxSiteTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxSiteTableAdapter()
-        Me.Sp_TicketDBTableAdapter1 = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketDBTableAdapter()
+        Me.CbxServiceLineTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.cbxServiceLineTableAdapter()
+        Me.CbxCustomerTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.cbxCustomerTableAdapter()
+        Me.CbxSiteTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.cbxSiteTableAdapter()
+        Me.Sp_TicketDBTableAdapter1 = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketDBTableAdapter()
         Me.GroupBox1.SuspendLayout()
         CType(Me.CbxCustomerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -374,7 +374,7 @@ Partial Class frmTicketDB
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing

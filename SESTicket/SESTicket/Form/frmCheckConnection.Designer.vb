@@ -79,7 +79,7 @@ Partial Class frmCheckConnection
         Me.Name = "frmCheckConnection"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SESTicket"
+        Me.Text = "INNTicket"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

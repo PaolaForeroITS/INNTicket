@@ -102,7 +102,7 @@ Partial Class frmMain
         Me.cmnuSep01 = New System.Windows.Forms.ToolStripSeparator()
         Me.cmnuRemoveTicketList = New System.Windows.Forms.ToolStripMenuItem()
         Me.TICKET_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.mnuMain = New System.Windows.Forms.MenuStrip()
         Me.mnuBaseData = New System.Windows.Forms.ToolStripMenuItem()
@@ -158,11 +158,11 @@ Partial Class frmMain
         Me.CbxServiceLineBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TICKET_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKET_VTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
-        Me.CbxServiceLineTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxServiceLineTableAdapter()
-        Me.CbxCustomerTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxCustomerTableAdapter()
-        Me.CbxSiteTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.cbxSiteTableAdapter()
+        Me.TICKET_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKET_VTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.CbxServiceLineTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.cbxServiceLineTableAdapter()
+        Me.CbxCustomerTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.cbxCustomerTableAdapter()
+        Me.CbxSiteTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.cbxSiteTableAdapter()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.dgvTicketAccess, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.cmnuGridPrincip.SuspendLayout()
@@ -1294,7 +1294,7 @@ Partial Class frmMain
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -1346,11 +1346,11 @@ Partial Class frmMain
     Friend WithEvents ToolStripLogin As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents ToolStripFullName As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents ToolStripSQL As System.Windows.Forms.ToolStripStatusLabel
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents TICKET_VBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TICKET_VTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TICKET_VTableAdapter
+    Friend WithEvents TICKET_VTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TICKET_VTableAdapter
     Friend WithEvents dgvTicketAccess As System.Windows.Forms.DataGridView
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents colStatus As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents mnuMain As MenuStrip

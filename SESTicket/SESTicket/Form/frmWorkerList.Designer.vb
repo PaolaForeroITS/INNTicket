@@ -27,7 +27,7 @@ Partial Class frmWorkerList
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmWorkerList))
         Me.WORKERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.dgvWorker = New System.Windows.Forms.DataGridView()
         Me.colWorkerID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colName1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -41,8 +41,8 @@ Partial Class frmWorkerList
         Me.colBonusValue = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colManHourValue = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.WORKERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.WORKERTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.WORKERTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.WORKERTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExportData = New System.Windows.Forms.ToolStripMenuItem()
@@ -240,7 +240,7 @@ Partial Class frmWorkerList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Me.WORKERTableAdapter
@@ -341,10 +341,10 @@ Partial Class frmWorkerList
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents WORKERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents WORKERTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.WORKERTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents WORKERTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.WORKERTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvWorker As System.Windows.Forms.DataGridView
     Friend WithEvents colStatus As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents colWorkerID As System.Windows.Forms.DataGridViewTextBoxColumn

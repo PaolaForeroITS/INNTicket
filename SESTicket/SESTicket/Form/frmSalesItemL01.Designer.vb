@@ -64,7 +64,7 @@ Partial Class frmSalesItemL01
         Me.colAmountUSD2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SALESITEMTOTALL02SERVBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.tabpMaterial = New System.Windows.Forms.TabPage()
         Me.dgvSalesItemTotalL02Mat = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -123,12 +123,12 @@ Partial Class frmSalesItemL01
         Me.colSISalesPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colDiscType = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SALESITEMVBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SALESITEM_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_VTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
-        Me.SALESITEM_TOTAL_L01TableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L01TableAdapter()
-        Me.SALESITEM_TOTAL_L02_MATTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_MATTableAdapter()
-        Me.SALESITEM_TOTAL_L02_SERVTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_SERVTableAdapter()
-        Me.TICKETINVLINESALES_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETINVLINESALES_VTableAdapter()
+        Me.SALESITEM_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_VTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.SALESITEM_TOTAL_L01TableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L01TableAdapter()
+        Me.SALESITEM_TOTAL_L02_MATTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_MATTableAdapter()
+        Me.SALESITEM_TOTAL_L02_SERVTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_SERVTableAdapter()
+        Me.TICKETINVLINESALES_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETINVLINESALES_VTableAdapter()
         Me.tabSalesItemFoot.SuspendLayout()
         Me.tabpLineAmount.SuspendLayout()
         Me.tabL02.SuspendLayout()
@@ -1085,7 +1085,7 @@ Partial Class frmSalesItemL01
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -1153,19 +1153,19 @@ Partial Class frmSalesItemL01
     Friend WithEvents Label29 As System.Windows.Forms.Label
     Friend WithEvents txtExchangeRate As System.Windows.Forms.TextBox
     Friend WithEvents dgvSalesItem As System.Windows.Forms.DataGridView
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents SALESITEMVBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SALESITEM_VTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_VTableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents SALESITEM_VTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_VTableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents SALESITEM_TOTAL_L01BindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SALESITEM_TOTAL_L01TableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L01TableAdapter
+    Friend WithEvents SALESITEM_TOTAL_L01TableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L01TableAdapter
     Friend WithEvents dgvSalesItemTotalL01 As System.Windows.Forms.DataGridView
     Friend WithEvents dgvSalesItemTotalL02Mat As System.Windows.Forms.DataGridView
     Friend WithEvents SALESITEMTOTALL02MATBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SALESITEM_TOTAL_L02_MATTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_MATTableAdapter
+    Friend WithEvents SALESITEM_TOTAL_L02_MATTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_MATTableAdapter
     Friend WithEvents dgvSalesItemTotalL02Serv As System.Windows.Forms.DataGridView
     Friend WithEvents SALESITEMTOTALL02SERVBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SALESITEM_TOTAL_L02_SERVTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_SERVTableAdapter
+    Friend WithEvents SALESITEM_TOTAL_L02_SERVTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.SALESITEM_TOTAL_L02_SERVTableAdapter
     Friend WithEvents tabL02 As System.Windows.Forms.TabControl
     Friend WithEvents tabpMaterial As System.Windows.Forms.TabPage
     Friend WithEvents tabpService As System.Windows.Forms.TabPage

@@ -25,14 +25,14 @@ Partial Class frmServiceTypeList
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmServiceTypeList))
         Me.SERVICETYPEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.dgvServiceType = New System.Windows.Forms.DataGridView()
         Me.colServiceTypeID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colServiceTypeCode = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colActive = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SERVICETYPETableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.SERVICETYPETableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.SERVICETYPETableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.SERVICETYPETableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuNewItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.chkNo = New System.Windows.Forms.CheckBox()
@@ -139,7 +139,7 @@ Partial Class frmServiceTypeList
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -226,10 +226,10 @@ Partial Class frmServiceTypeList
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents SERVICETYPEBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SERVICETYPETableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.SERVICETYPETableAdapter
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents SERVICETYPETableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.SERVICETYPETableAdapter
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvServiceType As System.Windows.Forms.DataGridView
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents mnuNewItem As System.Windows.Forms.ToolStripMenuItem

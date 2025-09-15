@@ -30,7 +30,7 @@ Partial Class frmRPTTicketSalesItem
         Dim ReportDataSource5 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTTicketSalesItem))
         Me.sp_SalesItemL01RptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.sp_SalesItemL02RptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.sp_SalesItemTotalL01RptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.sp_SalesItemTotalL02MatRptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -61,12 +61,12 @@ Partial Class frmRPTTicketSalesItem
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.ReportViewer5 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.sp_TicketHeaderRptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.sp_TicketHeaderRptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderRptTableAdapter()
-        Me.sp_SalesItemL01RptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemL01RptTableAdapter()
-        Me.sp_SalesItemTotalL02MatRptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL02MatRptTableAdapter()
-        Me.sp_SalesItemTotalL02ServRptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL02ServRptTableAdapter()
-        Me.sp_SalesItemL02RptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemL02RptTableAdapter()
-        Me.sp_SalesItemTotalL01RptTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL01RptTableAdapter()
+        Me.sp_TicketHeaderRptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderRptTableAdapter()
+        Me.sp_SalesItemL01RptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemL01RptTableAdapter()
+        Me.sp_SalesItemTotalL02MatRptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL02MatRptTableAdapter()
+        Me.sp_SalesItemTotalL02ServRptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL02ServRptTableAdapter()
+        Me.sp_SalesItemL02RptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemL02RptTableAdapter()
+        Me.sp_SalesItemTotalL01RptTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL01RptTableAdapter()
         CType(Me.sp_SalesItemL01RptBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sp_SalesItemL02RptBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -474,9 +474,9 @@ Partial Class frmRPTTicketSalesItem
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents sp_TicketHeaderRptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderRptTableAdapter
+    Friend WithEvents sp_TicketHeaderRptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_TicketHeaderRptTableAdapter
     Friend WithEvents sp_TicketHeaderRptBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents chkCanceled As System.Windows.Forms.CheckBox
     Friend WithEvents chkClosed As System.Windows.Forms.CheckBox
     Friend WithEvents chkOpen As System.Windows.Forms.CheckBox
@@ -492,7 +492,7 @@ Partial Class frmRPTTicketSalesItem
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents sp_SalesItemL01RptBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents sp_SalesItemL01RptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemL01RptTableAdapter
+    Friend WithEvents sp_SalesItemL01RptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemL01RptTableAdapter
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
@@ -502,13 +502,13 @@ Partial Class frmRPTTicketSalesItem
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage4 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage5 As System.Windows.Forms.TabPage
-    Friend WithEvents sp_SalesItemTotalL02MatRptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL02MatRptTableAdapter
+    Friend WithEvents sp_SalesItemTotalL02MatRptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL02MatRptTableAdapter
     Friend WithEvents sp_SalesItemTotalL02ServRptBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents sp_SalesItemTotalL02ServRptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL02ServRptTableAdapter
+    Friend WithEvents sp_SalesItemTotalL02ServRptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL02ServRptTableAdapter
     Friend WithEvents ReportViewer3 As Microsoft.Reporting.WinForms.ReportViewer
-    Friend WithEvents sp_SalesItemL02RptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemL02RptTableAdapter
+    Friend WithEvents sp_SalesItemL02RptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemL02RptTableAdapter
     Friend WithEvents sp_SalesItemTotalL01RptBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents sp_SalesItemTotalL01RptTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL01RptTableAdapter
+    Friend WithEvents sp_SalesItemTotalL01RptTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.sp_SalesItemTotalL01RptTableAdapter
     Friend WithEvents ReportViewer4 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents sp_SalesItemTotalL02MatRptBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ReportViewer5 As Microsoft.Reporting.WinForms.ReportViewer

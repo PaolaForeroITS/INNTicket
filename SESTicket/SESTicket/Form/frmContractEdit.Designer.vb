@@ -28,7 +28,7 @@ Partial Class frmContractEdit
         Me.Label23 = New System.Windows.Forms.Label()
         Me.cbxServiceLine = New System.Windows.Forms.ComboBox()
         Me.SERVICELINEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketSQLDataSet = New SESTicket.SESTicketSQLDataSet()
+        Me.SESTicketSQLDataSet = New INNTicket.SESTicketSQLDataSet()
         Me.cbxActive = New System.Windows.Forms.ComboBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.txtDescription = New System.Windows.Forms.TextBox()
@@ -42,15 +42,15 @@ Partial Class frmContractEdit
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cbxCurrency = New System.Windows.Forms.ComboBox()
         Me.CURRENCYBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.CURRENCYBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label7 = New System.Windows.Forms.Label()
         Me.dtpDueDate = New System.Windows.Forms.DateTimePicker()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.dtpStartDate = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.CURRENCYTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.CURRENCYTableAdapter()
-        Me.CUSTOMERTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
+        Me.CURRENCYTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.CURRENCYTableAdapter()
+        Me.CUSTOMERTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.txtGoodsSubAccount = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -63,7 +63,7 @@ Partial Class frmContractEdit
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.chkAIUApplication = New System.Windows.Forms.CheckedListBox()
         Me.AIUTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.AIUTableTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.AIUTableTableAdapter()
+        Me.AIUTableTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.AIUTableTableAdapter()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.txtServiceIVAPerc = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -82,7 +82,7 @@ Partial Class frmContractEdit
         Me.cbxLayoutType = New System.Windows.Forms.ComboBox()
         Me.LAYOUTTYPEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.LAYOUTTYPETableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.LAYOUTTYPETableAdapter()
+        Me.LAYOUTTYPETableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.LAYOUTTYPETableAdapter()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
         Me.txtExchangeRate = New System.Windows.Forms.TextBox()
@@ -94,7 +94,7 @@ Partial Class frmContractEdit
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.cbxInvSplitAmount = New System.Windows.Forms.ComboBox()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.SERVICELINETableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.SERVICELINETableAdapter()
+        Me.SERVICELINETableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.SERVICELINETableAdapter()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
@@ -125,10 +125,10 @@ Partial Class frmContractEdit
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnuSave = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
-        Me.COUNTRYTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.COUNTRYTableAdapter()
-        Me.REPORTTICKETLISTTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTTICKETLISTTableAdapter()
-        Me.CONTRACTREPLAYOUTTableAdapter = New SESTicket.SESTicketSQLDataSetTableAdapters.CONTRACTREPLAYOUTTableAdapter()
-        Me.TableAdapterManager = New SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
+        Me.COUNTRYTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.COUNTRYTableAdapter()
+        Me.REPORTTICKETLISTTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTTICKETLISTTableAdapter()
+        Me.CONTRACTREPLAYOUTTableAdapter = New INNTicket.SESTicketSQLDataSetTableAdapters.CONTRACTREPLAYOUTTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager()
         Me.GroupBox1.SuspendLayout()
         CType(Me.SERVICELINEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketSQLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1241,7 +1241,7 @@ Partial Class frmContractEdit
         Me.TableAdapterManager.STATETableAdapter = Nothing
         Me.TableAdapterManager.TICKETINVOICELINETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketSQLDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -1326,10 +1326,10 @@ Partial Class frmContractEdit
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents CURRENCYBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CURRENCYTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.CURRENCYTableAdapter
-    Friend WithEvents SESTicketSQLDataSet As SESTicket.SESTicketSQLDataSet
+    Friend WithEvents CURRENCYTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.CURRENCYTableAdapter
+    Friend WithEvents SESTicketSQLDataSet As INNTicket.SESTicketSQLDataSet
     Friend WithEvents CUSTOMERBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CUSTOMERTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
+    Friend WithEvents CUSTOMERTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.CUSTOMERTableAdapter
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents txtSalesSubAccount As System.Windows.Forms.TextBox
     Friend WithEvents Label17 As System.Windows.Forms.Label
@@ -1341,7 +1341,7 @@ Partial Class frmContractEdit
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents AIUTableBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents AIUTableTableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.AIUTableTableAdapter
+    Friend WithEvents AIUTableTableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.AIUTableTableAdapter
     Friend WithEvents chkAIUApplication As System.Windows.Forms.CheckedListBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents txtServiceIVAPerc As System.Windows.Forms.TextBox
@@ -1361,7 +1361,7 @@ Partial Class frmContractEdit
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents cbxLayoutType As System.Windows.Forms.ComboBox
     Friend WithEvents LAYOUTTYPEBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents LAYOUTTYPETableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.LAYOUTTYPETableAdapter
+    Friend WithEvents LAYOUTTYPETableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.LAYOUTTYPETableAdapter
     Friend WithEvents cbxActive As System.Windows.Forms.ComboBox
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
@@ -1378,9 +1378,9 @@ Partial Class frmContractEdit
     Friend WithEvents cbxServiceLine As System.Windows.Forms.ComboBox
     Friend WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents SERVICELINEBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SERVICELINETableAdapter As SESTicket.SESTicketSQLDataSetTableAdapters.SERVICELINETableAdapter
+    Friend WithEvents SERVICELINETableAdapter As INNTicket.SESTicketSQLDataSetTableAdapters.SERVICELINETableAdapter
     Friend WithEvents CURRENCYBindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage

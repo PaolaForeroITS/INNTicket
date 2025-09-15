@@ -28,13 +28,13 @@ Partial Class frmRPTModel03LetterPortraitPageBreak
         Dim ReportDataSource3 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTModel03LetterPortraitPageBreak))
         Me.REPORTHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.REPORTLINE_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.REPORTPARAMBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.REPORTHEADER_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
-        Me.REPORTLINE_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTLINE_VTableAdapter()
-        Me.REPORTPARAMTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
+        Me.REPORTHEADER_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
+        Me.REPORTLINE_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTLINE_VTableAdapter()
+        Me.REPORTPARAMTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTPARAMTableAdapter()
         CType(Me.REPORTHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.REPORTLINE_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,7 +72,7 @@ Partial Class frmRPTModel03LetterPortraitPageBreak
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource2)
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource3)
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "SESTicket.rptTicketModel03LetterPortraitPageBreak.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "INNTicket.rptTicketModel03LetterPortraitPageBreak.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(8, 1)
         Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ReportViewer1.Name = "ReportViewer1"

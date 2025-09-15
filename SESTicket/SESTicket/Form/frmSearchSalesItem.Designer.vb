@@ -41,7 +41,7 @@ Partial Class frmSearchSalesItem
         Me.colIsHeader = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colPriceUnitDecimal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CONTRACTPRICELISTTMPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.btnSearch = New System.Windows.Forms.Button()
@@ -51,8 +51,8 @@ Partial Class frmSearchSalesItem
         Me.chkMaterial = New System.Windows.Forms.CheckBox()
         Me.chkService = New System.Windows.Forms.CheckBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TableAdapterManager = New SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
-        Me.CONTRACTPRICELISTTMPTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.CONTRACTPRICELISTTMPTableAdapter()
+        Me.TableAdapterManager = New INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager()
+        Me.CONTRACTPRICELISTTMPTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.CONTRACTPRICELISTTMPTableAdapter()
         CType(Me.dgvSalesItemSearch, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CONTRACTPRICELISTTMPBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -346,7 +346,7 @@ Partial Class frmSearchSalesItem
         Me.TableAdapterManager.TMP_RPT_TICKETSERVEVALSERVTableAdapter = Nothing
         Me.TableAdapterManager.TMP_TICKETCLOSETableAdapter = Nothing
         Me.TableAdapterManager.TUBINGTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.UpdateOrder = INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
@@ -377,8 +377,8 @@ Partial Class frmSearchSalesItem
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
-    Friend WithEvents TableAdapterManager As SESTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
+    Friend WithEvents TableAdapterManager As INNTicket.SESTicketAccessDataSetTableAdapters.TableAdapterManager
     Friend WithEvents dgvSalesItemSearch As System.Windows.Forms.DataGridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox

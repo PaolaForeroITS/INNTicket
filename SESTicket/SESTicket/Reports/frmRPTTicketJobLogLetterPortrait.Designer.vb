@@ -29,7 +29,7 @@ Partial Class frmRPTTicketJobLogLetterPortrait
         Dim ReportDataSource4 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTTicketJobLogLetterPortrait))
         Me.REPORTHEADER_VBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SESTicketAccessDataSet = New SESTicket.SESTicketAccessDataSet()
+        Me.SESTicketAccessDataSet = New INNTicket.SESTicketAccessDataSet()
         Me.TICKETOPEREPACTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TICKETOPEREPBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TMP_TICKETOPEREPWORKERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -38,10 +38,10 @@ Partial Class frmRPTTicketJobLogLetterPortrait
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cbxJobLog = New System.Windows.Forms.ComboBox()
-        Me.REPORTHEADER_VTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
-        Me.TICKETOPEREPACTTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPACTTableAdapter()
-        Me.TICKETOPEREPTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPTableAdapter()
-        Me.TMP_TICKETOPEREPWORKERTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.TMP_TICKETOPEREPWORKERTableAdapter()
+        Me.REPORTHEADER_VTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter()
+        Me.TICKETOPEREPACTTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPACTTableAdapter()
+        Me.TICKETOPEREPTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPTableAdapter()
+        Me.TMP_TICKETOPEREPWORKERTableAdapter = New INNTicket.SESTicketAccessDataSetTableAdapters.TMP_TICKETOPEREPWORKERTableAdapter()
         CType(Me.REPORTHEADER_VBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SESTicketAccessDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TICKETOPEREPACTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -189,12 +189,12 @@ Partial Class frmRPTTicketJobLogLetterPortrait
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents cbxJobLog As System.Windows.Forms.ComboBox
     Friend WithEvents REPORTHEADER_VBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents SESTicketAccessDataSet As SESTicket.SESTicketAccessDataSet
+    Friend WithEvents SESTicketAccessDataSet As INNTicket.SESTicketAccessDataSet
     Friend WithEvents TICKETOPEREPACTBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents TICKETOPEREPBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents REPORTHEADER_VTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter
-    Friend WithEvents TICKETOPEREPACTTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPACTTableAdapter
-    Friend WithEvents TICKETOPEREPTableAdapter As SESTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPTableAdapter
+    Friend WithEvents REPORTHEADER_VTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.REPORTHEADER_VTableAdapter
+    Friend WithEvents TICKETOPEREPACTTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPACTTableAdapter
+    Friend WithEvents TICKETOPEREPTableAdapter As INNTicket.SESTicketAccessDataSetTableAdapters.TICKETOPEREPTableAdapter
     Friend WithEvents TMP_TICKETOPEREPWORKERBindingSource As BindingSource
     Friend WithEvents TMP_TICKETOPEREPWORKERTableAdapter As SESTicketAccessDataSetTableAdapters.TMP_TICKETOPEREPWORKERTableAdapter
 End Class
