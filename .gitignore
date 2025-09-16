@@ -38,3 +38,15 @@ Release/
 
 # Configuración local
 *.local
+
+# Ignorar archivos binarios y temporales
+*.exe
+*.dll
+*.pdb
+*.cache
+.vs/
+bin/
+obj/
+
+
+
