@@ -70,7 +70,7 @@
     <ApplicationManifest>SESTicket.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Superior.ico</ApplicationIcon>
+    <ApplicationIcon>InngTech.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
@@ -79,11 +79,17 @@
     <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
@@ -598,6 +604,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -1247,6 +1254,7 @@
     <EmbeddedResource Include="Reports\rptTicketWorkerTotal.rdlc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Dns\local_ticket_dev.dsn" />
     <None Include="Excel\frmInvoiceList.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -1378,9 +1386,10 @@
     <Content Include="Image\if_self1_62587.ico" />
     <Content Include="Image\if_Shipping1_62590.png" />
     <Content Include="Image\importdata.JPG" />
+    <Content Include="Image\InngTech.ico" />
+    <Content Include="Image\InngTech.png" />
     <Content Include="Image\invitem.jpg" />
     <Content Include="Image\invoice.png" />
-    <Content Include="Image\its.png" />
     <Content Include="Image\join_indexes-512.png" />
     <Content Include="Image\KeyChainAccess.png" />
     <Content Include="Image\livro_pluma.jpg" />
@@ -1394,8 +1403,6 @@
     <Content Include="Image\reporticon.png" />
     <Content Include="Image\reporticon2.ico" />
     <Content Include="Image\sql-server-database-icon_298689.jpg" />
-    <Content Include="Image\Superior.ico" />
-    <Content Include="Image\superior.JPG" />
     <Content Include="Image\Sync.ico" />
     <Content Include="Image\sync.JPG" />
     <Content Include="Image\unlock %281%29.png" />
@@ -1403,7 +1410,6 @@
     <Content Include="Image\unlock.png" />
     <Content Include="Image\unlock3.ico" />
     <Content Include="Image\unlock4.png" />
-    <Content Include="Image\update_icon.jpg" />
     <Content Include="Image\warehouse-inventory-icon.png" />
     <Content Include="NewBDObj\Version7.0.1.txt" />
     <Content Include="NewBDObj\Version3.0.0.txt" />
@@ -1437,12 +1443,8 @@
     <Content Include="Reports\ReportFiles\empty.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Reports\ReportFiles\its.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\ReportFiles\superior.JPG">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Reports\ReportFiles\InngTech.png" />
+    <Content Include="InngTech.ico" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
@@ -1457,7 +1459,6 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Superior.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="attach\" />

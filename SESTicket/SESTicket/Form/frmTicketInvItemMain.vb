@@ -11,7 +11,7 @@ Public Class frmTicketInvItemMain
     Dim bLoadForm As Boolean = True
 
     Private Sub frmTicketInvItemMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Text = "SESTicket - Inventory Itens - TICKETID: " & sTicketID
+        Me.Text = "INNTicket - Inventory Itens - TICKETID: " & sTicketID
 
         util.DateTimePickerFormat(dtpDateDispatched)
         util.DateTimePickerFormat(dtpDateReturned)
