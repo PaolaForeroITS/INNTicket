@@ -5,7 +5,7 @@
 
         Me.Cursor = Cursors.WaitCursor
 
-        Me.Text = "SESTicket - Inventory Consumption - Ticket: " & sTicketId
+        Me.Text = "INNTicket - Inventory Consumption - Ticket: " & sTicketId
 
         'TODO: This line of code loads data into the 'SESTicketAccessDataSet.REPORTHEADER_V' table. You can move, or remove it, as needed.
         Me.REPORTHEADER_VTableAdapter.Fill(Me.SESTicketAccessDataSet.REPORTHEADER_V)

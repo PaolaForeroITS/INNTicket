@@ -278,33 +278,74 @@ Public Class frmMain
         frm = Nothing
     End Sub
 
+    'Private Sub CheckVersion()
+
+    '    Dim sysVer As New clsSystemVersion
+    '    sysVer.sUsername = Me.sUsername
+    '    sysVer.isSQLConnect = Me.bIsSQLConnect
+
+    '    Me.Text = "INNTicket - Version " & sysVer.SystemVersion
+
+    '    sysVer.UpdateAppVersionUpdate()
+
+    '    If sysVer.isAccBaseDataUpdated = False Then
+    '        MsgBox("The BaseData version is not same of the application." & Chr(10) & "The update is strongly recomended." & Chr(10) & "Contact the Administrator.", vbInformation)
+    '        sysVer.Dispose()
+    '        End
+    '    End If
+
+    '    If sysVer.isAccTicketUpdated = False Then
+    '        MsgBox("The TicketDB version is not same of the application." & Chr(10) & "The update is strongly recomended." & Chr(10) & "Contact the Administrator.", vbInformation)
+    '        sysVer.Dispose()
+    '        End
+    '    End If
+
+    '    sysVer.Dispose()
+    '    sysVer = Nothing
+
+    'End Sub
+
     Private Sub CheckVersion()
+        Dim sysVer As clsSystemVersion = Nothing
 
-        Dim sysVer As New clsSystemVersion
-        sysVer.sUsername = Me.sUsername
-        sysVer.isSQLConnect = Me.bIsSQLConnect
+        Try
+            sysVer = New clsSystemVersion
+            sysVer.sUsername = Me.sUsername
+            sysVer.isSQLConnect = Me.bIsSQLConnect
 
-        Me.Text = "SESTicket - Version " & sysVer.SystemVersion
+            Me.Text = "INNTicket - Version " & sysVer.SystemVersion
 
-        sysVer.UpdateAppVersionUpdate()
+            sysVer.UpdateAppVersionUpdate()
 
-        If sysVer.isAccBaseDataUpdated = False Then
-            MsgBox("The BaseData version is not same of the application." & Chr(10) & "The update is strongly recomended." & Chr(10) & "Contact the Administrator.", vbInformation)
-            sysVer.Dispose()
-            End
-        End If
+            If sysVer.isAccBaseDataUpdated = False Then
+                MsgBox("The BaseData version is not same as the application." & Chr(10) &
+                   "The update is strongly recommended." & Chr(10) &
+                   "Contact the Administrator.", vbInformation)
+                Exit Sub
+            End If
 
-        If sysVer.isAccTicketUpdated = False Then
-            MsgBox("The TicketDB version is not same of the application." & Chr(10) & "The update is strongly recomended." & Chr(10) & "Contact the Administrator.", vbInformation)
-            sysVer.Dispose()
-            End
-        End If
+            If sysVer.isAccTicketUpdated = False Then
+                MsgBox("The TicketDB version is not same as the application." & Chr(10) &
+                   "The update is strongly recommended." & Chr(10) &
+                   "Contact the Administrator.", vbInformation)
+                Exit Sub
+            End If
 
-        sysVer.Dispose()
-        sysVer = Nothing
-
+        Catch ex As Exception
+            MsgBox("❌ Se produjo un error en CheckVersion:" & Chr(10) &
+               ex.Message & Chr(10) &
+               "StackTrace: " & ex.StackTrace, vbCritical)
+        Finally
+            If Not sysVer Is Nothing Then
+                Try
+                    sysVer.Dispose()
+                Catch ex As Exception
+                    MsgBox("❌ Error al liberar recursos de sysVer:" & Chr(10) &
+                       ex.Message, vbCritical)
+                End Try
+            End If
+        End Try
     End Sub
-
     Private Sub CheckAppIsOpen()
 
         Dim objMutex As System.Threading.Mutex
