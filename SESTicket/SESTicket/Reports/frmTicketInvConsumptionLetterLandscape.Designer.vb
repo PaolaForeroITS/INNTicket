@@ -90,11 +90,10 @@ Partial Class frmTicketInvConsumptionLetterLandscape
         Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource4)
         Me.ReportViewer1.LocalReport.EnableExternalImages = True
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "SESTicket.rptTicketInvConsumptionLetterLandscape.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(1, 60)
-        Me.ReportViewer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReportViewer1.Location = New System.Drawing.Point(1, 49)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(1601, 729)
+        Me.ReportViewer1.Size = New System.Drawing.Size(1201, 593)
         Me.ReportViewer1.TabIndex = 3
         '
         'REPORTHEADER_VTableAdapter
@@ -116,10 +115,9 @@ Partial Class frmTicketInvConsumptionLetterLandscape
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(15, 18)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(11, 15)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 16)
+        Me.Label2.Size = New System.Drawing.Size(58, 13)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Parameter:"
         '
@@ -128,10 +126,9 @@ Partial Class frmTicketInvConsumptionLetterLandscape
         Me.cbxRepParam.DataSource = Me.REPORTPARAMBindingSource1
         Me.cbxRepParam.DisplayMember = "DESCRIP"
         Me.cbxRepParam.FormattingEnabled = True
-        Me.cbxRepParam.Location = New System.Drawing.Point(100, 15)
-        Me.cbxRepParam.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbxRepParam.Location = New System.Drawing.Point(75, 12)
         Me.cbxRepParam.Name = "cbxRepParam"
-        Me.cbxRepParam.Size = New System.Drawing.Size(284, 24)
+        Me.cbxRepParam.Size = New System.Drawing.Size(214, 21)
         Me.cbxRepParam.TabIndex = 10
         Me.cbxRepParam.ValueMember = "REPORTPARAMID"
         '
@@ -142,14 +139,13 @@ Partial Class frmTicketInvConsumptionLetterLandscape
         '
         'frmTicketInvConsumptionLetterLandscape
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1605, 793)
+        Me.ClientSize = New System.Drawing.Size(1204, 644)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cbxRepParam)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmTicketInvConsumptionLetterLandscape"

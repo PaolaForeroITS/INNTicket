@@ -1437,9 +1437,7 @@
     <Content Include="Reports\ReportFiles\empty.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Reports\ReportFiles\its.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Reports\ReportFiles\InngTech.png" />
     <Content Include="Reports\ReportFiles\superior.JPG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
