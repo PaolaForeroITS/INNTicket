@@ -286,7 +286,7 @@ Partial Class frmTicketEdit
         Me.TabPage1.Controls.Add(Me.GroupBox5)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage1.Size = New System.Drawing.Size(1112, 489)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Details"
@@ -833,8 +833,8 @@ Partial Class frmTicketEdit
         Me.tabSalesItem.Controls.Add(Me.pnlSalesItem)
         Me.tabSalesItem.Location = New System.Drawing.Point(4, 22)
         Me.tabSalesItem.Name = "tabSalesItem"
-        Me.tabSalesItem.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.tabSalesItem.Size = New System.Drawing.Size(1112, 531)
+        Me.tabSalesItem.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabSalesItem.Size = New System.Drawing.Size(1112, 489)
         Me.tabSalesItem.TabIndex = 1
         Me.tabSalesItem.Text = "Sales Item"
         Me.tabSalesItem.UseVisualStyleBackColor = True
@@ -853,7 +853,7 @@ Partial Class frmTicketEdit
         Me.tabEquipments.Controls.Add(Me.pnlEquipment)
         Me.tabEquipments.Location = New System.Drawing.Point(4, 22)
         Me.tabEquipments.Name = "tabEquipments"
-        Me.tabEquipments.Size = New System.Drawing.Size(1112, 531)
+        Me.tabEquipments.Size = New System.Drawing.Size(1112, 489)
         Me.tabEquipments.TabIndex = 2
         Me.tabEquipments.Text = "Equipments"
         '
@@ -871,7 +871,7 @@ Partial Class frmTicketEdit
         Me.tabWorkers.Controls.Add(Me.GroupBox8)
         Me.tabWorkers.Location = New System.Drawing.Point(4, 22)
         Me.tabWorkers.Name = "tabWorkers"
-        Me.tabWorkers.Size = New System.Drawing.Size(1112, 531)
+        Me.tabWorkers.Size = New System.Drawing.Size(1112, 489)
         Me.tabWorkers.TabIndex = 3
         Me.tabWorkers.Text = "Workers"
         '
@@ -879,9 +879,9 @@ Partial Class frmTicketEdit
         '
         Me.GroupBox9.Controls.Add(Me.dgvTicketOpeHour)
         Me.GroupBox9.Location = New System.Drawing.Point(3, 8)
-        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox9.Size = New System.Drawing.Size(553, 99)
         Me.GroupBox9.TabIndex = 20
         Me.GroupBox9.TabStop = False
@@ -898,7 +898,7 @@ Partial Class frmTicketEdit
         Me.dgvTicketOpeHour.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colOpHourTravel, Me.colOpHourOperation, Me.colOpHourStandby, Me.colOpHourLost, Me.colOpHourQde, Me.DataGridViewTextBoxColumn1})
         Me.dgvTicketOpeHour.DataSource = Me.TICKETOPEHOURBindingSource
         Me.dgvTicketOpeHour.Location = New System.Drawing.Point(4, 16)
-        Me.dgvTicketOpeHour.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgvTicketOpeHour.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvTicketOpeHour.MultiSelect = False
         Me.dgvTicketOpeHour.Name = "dgvTicketOpeHour"
         Me.dgvTicketOpeHour.ReadOnly = True
@@ -993,9 +993,9 @@ Partial Class frmTicketEdit
         Me.GroupBox8.Controls.Add(Me.btnWAdd)
         Me.GroupBox8.Controls.Add(Me.dgvWorker)
         Me.GroupBox8.Location = New System.Drawing.Point(2, 110)
-        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox8.Size = New System.Drawing.Size(1107, 398)
         Me.GroupBox8.TabIndex = 19
         Me.GroupBox8.TabStop = False
@@ -1167,7 +1167,7 @@ Partial Class frmTicketEdit
         Me.tabOperReport.Controls.Add(Me.pnlOperReport)
         Me.tabOperReport.Location = New System.Drawing.Point(4, 22)
         Me.tabOperReport.Name = "tabOperReport"
-        Me.tabOperReport.Size = New System.Drawing.Size(1112, 531)
+        Me.tabOperReport.Size = New System.Drawing.Size(1112, 489)
         Me.tabOperReport.TabIndex = 5
         Me.tabOperReport.Text = "Job Log"
         '
@@ -1184,7 +1184,7 @@ Partial Class frmTicketEdit
         Me.tabServEvalHSEQ.Controls.Add(Me.pnlHSEQServEval)
         Me.tabServEvalHSEQ.Location = New System.Drawing.Point(4, 22)
         Me.tabServEvalHSEQ.Name = "tabServEvalHSEQ"
-        Me.tabServEvalHSEQ.Size = New System.Drawing.Size(1112, 531)
+        Me.tabServEvalHSEQ.Size = New System.Drawing.Size(1112, 489)
         Me.tabServEvalHSEQ.TabIndex = 6
         Me.tabServEvalHSEQ.Text = "HSEQ - Service Evaluation"
         Me.tabServEvalHSEQ.UseVisualStyleBackColor = True
@@ -1209,8 +1209,8 @@ Partial Class frmTicketEdit
         Me.tabAdicInform.Controls.Add(Me.Label29)
         Me.tabAdicInform.Location = New System.Drawing.Point(4, 22)
         Me.tabAdicInform.Name = "tabAdicInform"
-        Me.tabAdicInform.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
-        Me.tabAdicInform.Size = New System.Drawing.Size(1112, 531)
+        Me.tabAdicInform.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabAdicInform.Size = New System.Drawing.Size(1112, 489)
         Me.tabAdicInform.TabIndex = 4
         Me.tabAdicInform.Text = "Additional Information"
         '
@@ -1278,7 +1278,7 @@ Partial Class frmTicketEdit
         'txtSONumber
         '
         Me.txtSONumber.Location = New System.Drawing.Point(216, 75)
-        Me.txtSONumber.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSONumber.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSONumber.MaxLength = 255
         Me.txtSONumber.Name = "txtSONumber"
         Me.txtSONumber.Size = New System.Drawing.Size(202, 20)
@@ -1297,7 +1297,7 @@ Partial Class frmTicketEdit
         'txtJobNumber
         '
         Me.txtJobNumber.Location = New System.Drawing.Point(10, 75)
-        Me.txtJobNumber.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtJobNumber.Margin = New System.Windows.Forms.Padding(2)
         Me.txtJobNumber.MaxLength = 255
         Me.txtJobNumber.Name = "txtJobNumber"
         Me.txtJobNumber.Size = New System.Drawing.Size(202, 20)
@@ -1948,8 +1948,8 @@ Partial Class frmTicketEdit
         'PanelCostCenter
         '
         Me.PanelCostCenter.BackColor = System.Drawing.Color.White
-        Me.PanelCostCenter.Controls.Add(Me.LbCostCenter)
         Me.PanelCostCenter.Controls.Add(Me.CbxCostCenter)
+        Me.PanelCostCenter.Controls.Add(Me.LbCostCenter)
         Me.PanelCostCenter.Location = New System.Drawing.Point(6, 114)
         Me.PanelCostCenter.Name = "PanelCostCenter"
         Me.PanelCostCenter.Size = New System.Drawing.Size(987, 34)
@@ -1957,14 +1957,11 @@ Partial Class frmTicketEdit
         '
         'CbxCostCenter
         '
-        Me.CbxCostCenter.DataSource = Me.CONTRACTBindingSource
-        Me.CbxCostCenter.DisplayMember = "CONTRACTNUMBER"
         Me.CbxCostCenter.FormattingEnabled = True
         Me.CbxCostCenter.Location = New System.Drawing.Point(116, 7)
         Me.CbxCostCenter.Name = "CbxCostCenter"
-        Me.CbxCostCenter.Size = New System.Drawing.Size(290, 21)
-        Me.CbxCostCenter.TabIndex = 3
-        Me.CbxCostCenter.ValueMember = "CONTRACTID"
+        Me.CbxCostCenter.Size = New System.Drawing.Size(291, 21)
+        Me.CbxCostCenter.TabIndex = 5
         '
         'LbCostCenter
         '

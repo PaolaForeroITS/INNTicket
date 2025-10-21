@@ -787,6 +787,7 @@ Public Class frmTicketEdit
 
     End Sub
 
+
     Private Sub SaveToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles mnuSaveTicket.Click
 
 
@@ -872,15 +873,16 @@ Public Class frmTicketEdit
                 Exit Sub
             End If
 
-            sql = "INSERT INTO [TICKET] " &
-                "([TICKETID],[DATESERVICE],[CUSTOMERID],[CONTRACTID],[CURRENCYID] " &
-                ",[WELLID],[TIMEARRIVED],[TIMESTARTED],[TIMECOMPLETED] " &
-                ",[CASINGSIZE],[CASINGWEIGHT],[CASINGGRADE],[TUBINGSIZE],[TUBINGWEIGHT] " &
-                ",[TUBINGGRADE],[PRESSUREMAX],[DEPTHMAX],[JOBDESCRIPTION],[CUSTREPRES] " &
-                ",[CUSTREPRESPOSITION],[CUSTREPRESASSIST],[CUSTREPRESASSISTPOSITION],[CONTRACTORREPRESENTATIVE] " &
-                ",[CUSTCOMMENTS],[CONTRACTCOMMENTS],[ADICINFORM],[CREATEDUSER],[CREATEDDATETIME]  " &
-                ",[UPDATEDDATETIME],[UPDATEDUSER],[SyncDB],EXCHANGERATE,TICKETSTATUS,SERVICELINEID,RIGID,SUPERIORNUM,DM,JOBNUMBER,SERVICEORDERNUM,SITEID," &
-                "HOURTRAVEL,HOUROPERATION,HOURSTANDBY,HOURLOST,HOURQDE,SUPERIORSUPERVISOR) VALUES ("
+            sql = "SELECT 1"
+            'sql = "INSERT INTO [TICKET] " &
+            '    "([TICKETID],[DATESERVICE],[CUSTOMERID],[CONTRACTID],[CURRENCYID] " &
+            '    ",[WELLID],[TIMEARRIVED],[TIMESTARTED],[TIMECOMPLETED] " &
+            '    ",[CASINGSIZE],[CASINGWEIGHT],[CASINGGRADE],[TUBINGSIZE],[TUBINGWEIGHT] " &
+            '    ",[TUBINGGRADE],[PRESSUREMAX],[DEPTHMAX],[JOBDESCRIPTION],[CUSTREPRES] " &
+            '    ",[CUSTREPRESPOSITION],[CUSTREPRESASSIST],[CUSTREPRESASSISTPOSITION],[CONTRACTORREPRESENTATIVE] " &
+            '    ",[CUSTCOMMENTS],[CONTRACTCOMMENTS],[ADICINFORM],[CREATEDUSER],[CREATEDDATETIME]  " &
+            '    ",[UPDATEDDATETIME],[UPDATEDUSER],[SyncDB],EXCHANGERATE,TICKETSTATUS,SERVICELINEID,RIGID,SUPERIORNUM,DM,JOBNUMBER,SERVICEORDERNUM,SITEID," &
+            '    "HOURTRAVEL,HOUROPERATION,HOURSTANDBY,HOURLOST,HOURQDE,SUPERIORSUPERVISOR) VALUES ("
 
             sql = sql & util.SQLConvStrNull(txtTicketNumber.Text, "s") & ","
             sql = sql & util.SQLConvStrDate(dtpServiceDate.Value.ToString) & ","
@@ -965,45 +967,45 @@ Public Class frmTicketEdit
                 Me.Cursor = Cursors.Arrow
                 Exit Sub
             End If
-
-            sql = "UPDATE [TICKET] SET " &
-                " [DATESERVICE] = " & util.SQLConvStrDate(dtpServiceDate.Value.ToString) & " " &
-                ",[CUSTOMERID] = " & util.SQLConvStrNull(cbxCustomer.SelectedValue, "s") & " " &
-                ",[CONTRACTID] = " & util.SQLConvStrNull(cbxContract.SelectedValue, "n") & " " &
-                ",[CURRENCYID] = " & util.SQLConvStrNull(cbxCurrency.SelectedValue, "s") & " " &
-                ",[WELLID] = " & util.SQLConvStrNull(sWellId, "s") & " " &
-                ",[TIMEARRIVED] = " & util.SQLConvStrDatetime(dtpTimeArrived.Value.ToString) & " " &
-                ",[TIMESTARTED] = " & util.SQLConvStrDatetime(dtpTimeStarted.Value.ToString) & " " &
-                ",[TIMECOMPLETED] = " & util.SQLConvStrDatetime(dtpTimeCompleted.Value.ToString) & " " &
-                ",[CASINGSIZE] = " & util.SQLConvStrNull(cbxCasingSize.Text, "s") & " " &
-                ",[CASINGWEIGHT] = " & util.SQLConvStrNull(cbxCasingWeight.Text, "s") & " " &
-                ",[CASINGGRADE] = " & util.SQLConvStrNull(cbxCasingGrade.Text, "s") & " " &
-                ",[TUBINGSIZE] = " & util.SQLConvStrNull(cbxTubingPipe.Text, "s") & " " &
-                ",[TUBINGWEIGHT] = " & util.SQLConvStrNull(cbxTubingWeight.Text, "s") & " " &
-                ",[TUBINGGRADE] = " & util.SQLConvStrNull(cbxTubingGrade.Text, "s") & " " &
-                ",[PRESSUREMAX] = " & util.SQLConvStrNull(txtMaxPressure.Text, "n") & " " &
-                ",[DEPTHMAX] = " & util.SQLConvStrNull(txtMaxDepth.Text, "n") & " " &
-                ",[JOBDESCRIPTION] = " & util.SQLConvStrNull(txtJobDescription.Text, "s") & " " &
-                ",[CUSTREPRES] = " & util.SQLConvStrNull(txtCustRepres.Text, "s") & " " &
-                ",[CUSTREPRESPOSITION] = " & util.SQLConvStrNull(txtCustRepresPosition.Text, "s") & " " &
-                ",[CUSTREPRESASSIST] = " & util.SQLConvStrNull(txtCustRepresAssist.Text, "s") & " " &
-                ",[CUSTREPRESASSISTPOSITION] = " & util.SQLConvStrNull(txtCustRepresAssistPos.Text, "s") & " " &
-                ",[CONTRACTORREPRESENTATIVE] = " & util.SQLConvStrNull(sContrRepresId, "s") & " " &
-                ",[CUSTCOMMENTS] = " & util.SQLConvStrNull(txtCustComments.Text, "s") & " " &
-                ",[CONTRACTCOMMENTS] = " & util.SQLConvStrNull(txtContrComments.Text, "s") & " " &
-                ",[UPDATEDDATETIME] = " & util.GetDateTime() & " " &
-                ",[UPDATEDUSER] = " & util.SQLConvStrNull(sUsername, "s") & " " &
-                ",[ADICINFORM] = " & util.SQLConvStrNull(txtAdicInform.Text, "s") & " " &
-                ",[SERVICELINEID] = " & util.SQLConvStrNull(cbxServiceLine.SelectedValue, "n") & " " &
-                ",[RIGID] = " & util.SQLConvStrNull(txtRig.Text, "s") & " " &
-                ",[SUPERIORNUM] = " & util.SQLConvStrNull(txtSupNum.Text, "s") & " " &
-                ",[DM] = " & util.SQLConvStrNull(txtDM.Text, "s") & " " &
-                ",[JOBNUMBER] = " & util.SQLConvStrNull(txtJobNumber.Text, "s") & " " &
-                ",[SERVICEORDERNUM] = " & util.SQLConvStrNull(txtSONumber.Text, "s") & " " &
-                ",[SITEID] = " & util.SQLConvStrNull(sSiteId, "s") & " " &
-                ",[SUPERIORSUPERVISOR] = " & util.SQLConvStrNull(sSuperiorSupervisorId, "s") & " " &
-                " WHERE " &
-                "[TICKETID] = '" & txtTicketNumber.Text & "'"
+            sql = "select 1"
+            'sql = "UPDATE [TICKET] SET " &
+            '    " [DATESERVICE] = " & util.SQLConvStrDate(dtpServiceDate.Value.ToString) & " " &
+            '    ",[CUSTOMERID] = " & util.SQLConvStrNull(cbxCustomer.SelectedValue, "s") & " " &
+            '    ",[CONTRACTID] = " & util.SQLConvStrNull(cbxContract.SelectedValue, "n") & " " &
+            '    ",[CURRENCYID] = " & util.SQLConvStrNull(cbxCurrency.SelectedValue, "s") & " " &
+            '    ",[WELLID] = " & util.SQLConvStrNull(sWellId, "s") & " " &
+            '    ",[TIMEARRIVED] = " & util.SQLConvStrDatetime(dtpTimeArrived.Value.ToString) & " " &
+            '    ",[TIMESTARTED] = " & util.SQLConvStrDatetime(dtpTimeStarted.Value.ToString) & " " &
+            '    ",[TIMECOMPLETED] = " & util.SQLConvStrDatetime(dtpTimeCompleted.Value.ToString) & " " &
+            '    ",[CASINGSIZE] = " & util.SQLConvStrNull(cbxCasingSize.Text, "s") & " " &
+            '    ",[CASINGWEIGHT] = " & util.SQLConvStrNull(cbxCasingWeight.Text, "s") & " " &
+            '    ",[CASINGGRADE] = " & util.SQLConvStrNull(cbxCasingGrade.Text, "s") & " " &
+            '    ",[TUBINGSIZE] = " & util.SQLConvStrNull(cbxTubingPipe.Text, "s") & " " &
+            '    ",[TUBINGWEIGHT] = " & util.SQLConvStrNull(cbxTubingWeight.Text, "s") & " " &
+            '    ",[TUBINGGRADE] = " & util.SQLConvStrNull(cbxTubingGrade.Text, "s") & " " &
+            '    ",[PRESSUREMAX] = " & util.SQLConvStrNull(txtMaxPressure.Text, "n") & " " &
+            '    ",[DEPTHMAX] = " & util.SQLConvStrNull(txtMaxDepth.Text, "n") & " " &
+            '    ",[JOBDESCRIPTION] = " & util.SQLConvStrNull(txtJobDescription.Text, "s") & " " &
+            '    ",[CUSTREPRES] = " & util.SQLConvStrNull(txtCustRepres.Text, "s") & " " &
+            '    ",[CUSTREPRESPOSITION] = " & util.SQLConvStrNull(txtCustRepresPosition.Text, "s") & " " &
+            '    ",[CUSTREPRESASSIST] = " & util.SQLConvStrNull(txtCustRepresAssist.Text, "s") & " " &
+            '    ",[CUSTREPRESASSISTPOSITION] = " & util.SQLConvStrNull(txtCustRepresAssistPos.Text, "s") & " " &
+            '    ",[CONTRACTORREPRESENTATIVE] = " & util.SQLConvStrNull(sContrRepresId, "s") & " " &
+            '    ",[CUSTCOMMENTS] = " & util.SQLConvStrNull(txtCustComments.Text, "s") & " " &
+            '    ",[CONTRACTCOMMENTS] = " & util.SQLConvStrNull(txtContrComments.Text, "s") & " " &
+            '    ",[UPDATEDDATETIME] = " & util.GetDateTime() & " " &
+            '    ",[UPDATEDUSER] = " & util.SQLConvStrNull(sUsername, "s") & " " &
+            '    ",[ADICINFORM] = " & util.SQLConvStrNull(txtAdicInform.Text, "s") & " " &
+            '    ",[SERVICELINEID] = " & util.SQLConvStrNull(cbxServiceLine.SelectedValue, "n") & " " &
+            '    ",[RIGID] = " & util.SQLConvStrNull(txtRig.Text, "s") & " " &
+            '    ",[SUPERIORNUM] = " & util.SQLConvStrNull(txtSupNum.Text, "s") & " " &
+            '    ",[DM] = " & util.SQLConvStrNull(txtDM.Text, "s") & " " &
+            '    ",[JOBNUMBER] = " & util.SQLConvStrNull(txtJobNumber.Text, "s") & " " &
+            '    ",[SERVICEORDERNUM] = " & util.SQLConvStrNull(txtSONumber.Text, "s") & " " &
+            '    ",[SITEID] = " & util.SQLConvStrNull(sSiteId, "s") & " " &
+            '    ",[SUPERIORSUPERVISOR] = " & util.SQLConvStrNull(sSuperiorSupervisorId, "s") & " " &
+            '    " WHERE " &
+            '    "[TICKETID] = '" & txtTicketNumber.Text & "'"
 
             bdconnACCESS.ExecuteNonSQL(sql)
 
@@ -1855,4 +1857,150 @@ Public Class frmTicketEdit
         Loop
     End Sub
 
+    Private Sub CbxCostCenter_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CbxCostCenter.SelectedIndexChanged
+        If sTicketNumberOld = "" Then
+            CarregaCbxCostCenter()
+            CarregaCbxMoeda()
+        End If
+    End Sub
+
+    Public Sub CarregaCbxCostCenter()
+
+        If IsNothing(CbxCostCenter.SelectedValue) Then
+            MsgBox("Choose the Cost center", vbExclamation)
+            Exit Sub
+        End If
+
+        If cbxServiceType.SelectedValue.ToString = "-1" Then
+            MsgBox("Choose the Cost center", vbExclamation)
+            Exit Sub
+        End If
+
+        Me.Cursor = Cursors.WaitCursor
+
+        Dim bdconn As New clsBancoDadosACCESS
+        Dim sql As String
+        Dim ds As New DataSet
+
+        bdconn.OpenConnection()
+
+        sql = "SELECT COUNT(*) AS QDE FROM TICKETCOSTCENTER " &
+            "WHERE TICKETID='" & txtTicketNumber.Text & "' "
+        bdconn.ExecuteSQL(sql, ds)
+
+        If ds.Tables(0).Rows(0)("QDE") > 0 Then
+            Me.Cursor = Cursors.Arrow
+            bdconn.CloseConnection()
+            bdconn.Dispose()
+            bdconn = Nothing
+            ds.Dispose()
+            ds = Nothing
+            CbxCostCenter.SelectedValue = -1
+            Exit Sub
+        End If
+        ds.Dispose()
+        ds = Nothing
+
+        Dim seq As New clsSequenceAccess(txtTicketNumber.Text)
+
+        sql = "INSERT INTO [TICKETCOSTCENTER] " &
+            "([TICKETID], [COSTCENTERID]) VALUES ('"
+        ' "(TICKETSERVICETYPEID, [TICKETID],[SERVICETYPEID]) VALUES ('"
+
+        'sql = sql & seq.TicketServiceTypeNextId & "','"
+        sql = sql & txtTicketNumber.Text & "',"
+        sql = sql & CbxCostCenter.SelectedValue.ToString & ")"
+
+        bdconn.ExecuteNonSQL(sql)
+
+        bdconn.CloseConnection()
+        bdconn.Dispose()
+        bdconn = Nothing
+        seq = Nothing
+
+        AdjustTicketCostCenter()
+
+        Dim sync As New clsSyncTicket
+        sync.UpdateSyncDateTime(txtTicketNumber.Text, "ACCESS")
+        sync.Dispose()
+        sync = Nothing
+
+        CarregaTicketServiceType()
+
+        cbxServiceType.SelectedValue = -1
+
+        Me.Cursor = Cursors.Arrow
+
+    End Sub
+
+    Private Sub AdjustTicketCostCenter()
+
+        Dim bdconn As New clsBancoDadosACCESS
+        Dim sql As String
+        Dim ds As New DataSet
+
+        bdconn.OpenConnection()
+
+        Dim sID As String = ""
+        Dim sCode As String = ""
+        Dim sDesc As String = ""
+
+        sql = "SELECT CostCenter.ID AS CostCenterID,[SmartCode] as CODE,[CostCenterName] AS descriptions" &
+            "FROM CostCenter INNER JOIN TICKETCostCenter  ON CostCenter.ID=TICKETCostCenter.COSTCENTERID " &
+            "WHERE (((TICKETCostCenter.TICKETID)='" & txtTicketNumber.Text & "'))"
+
+        bdconn.ExecuteSQL(sql, ds)
+
+        If ds.Tables(0).Rows.Count > 0 Then
+            For i As Integer = 0 To ds.Tables(0).Rows.Count - 1
+
+                If Not IsDBNull(ds.Tables(0).Rows(i)("ID")) Then
+                    If sID <> "" Then
+                        sID = sID & ", "
+                    End If
+                    sID = sID & ds.Tables(0).Rows(i)("ID").ToString
+                End If
+
+                If Not IsDBNull(ds.Tables(0).Rows(i)("CODE")) Then
+                    If sCode <> "" Then
+                        sCode = sCode & ", "
+                    End If
+                    sCode = sCode & ds.Tables(0).Rows(i)("CODE").ToString
+                End If
+
+                If Not IsDBNull(ds.Tables(0).Rows(i)("descriptions")) Then
+                    If sDesc <> "" Then
+                        sDesc = sDesc & ", "
+                    End If
+                    sDesc = sDesc & ds.Tables(0).Rows(i)("descriptions").ToString
+                End If
+
+            Next
+
+            'sql = "UPDATE TICKETCostCenter SET " &
+            '    "COSTCENTERID = " & util.SQLConvStrNull(sID, "s") &
+            '    " WHERE TICKETID = '" & txtTicketNumber.Text & "'"
+            'bdconn.ExecuteNonSQL(sql)
+
+        Else
+            'sql = "UPDATE TICKETCostCenter SET " &
+            '"COSTCENTERID = NULL " &
+            '",SERVICETYPEGRPTEXT = NULL " &
+            '" WHERE TICKETID = '" & txtTicketNumber.Text & "'"
+            'bdconn.ExecuteNonSQL(sql)
+        End If
+
+
+        bdconn.CloseConnection()
+        bdconn.Dispose()
+        bdconn = Nothing
+
+    End Sub
+
+    Private Sub CarregaTicketCostCenter()
+        'TODO: This line of code loads data into the 'SESTicketAccessDataSet.TICKETSERVICETYPE' table. You can move, or remove it, as needed.
+        Me.TICKETSERVICETYPETableAdapter.Fill(Me.SESTicketAccessDataSet.TICKETSERVICETYPE)
+        TICKETSERVICETYPEBindingSource.Filter = "TICKETID='" & txtTicketNumber.Text & "'"
+        dgvTicketServType.Refresh()
+    End Sub
 End Class
