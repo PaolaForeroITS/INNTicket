@@ -1976,18 +1976,6 @@ Public Class frmTicketEdit
                 End If
 
             Next
-
-            'sql = "UPDATE TICKETCostCenter SET " &
-            '    "COSTCENTERID = " & util.SQLConvStrNull(sID, "s") &
-            '    " WHERE TICKETID = '" & txtTicketNumber.Text & "'"
-            'bdconn.ExecuteNonSQL(sql)
-
-        Else
-            'sql = "UPDATE TICKETCostCenter SET " &
-            '"COSTCENTERID = NULL " &
-            '",SERVICETYPEGRPTEXT = NULL " &
-            '" WHERE TICKETID = '" & txtTicketNumber.Text & "'"
-            'bdconn.ExecuteNonSQL(sql)
         End If
 
 
@@ -1997,10 +1985,28 @@ Public Class frmTicketEdit
 
     End Sub
 
-    Private Sub CarregaTicketCostCenter()
-        'TODO: This line of code loads data into the 'SESTicketAccessDataSet.TICKETSERVICETYPE' table. You can move, or remove it, as needed.
-        Me.TICKETSERVICETYPETableAdapter.Fill(Me.SESTicketAccessDataSet.TICKETSERVICETYPE)
-        TICKETSERVICETYPEBindingSource.Filter = "TICKETID='" & txtTicketNumber.Text & "'"
-        dgvTicketServType.Refresh()
+    Private Sub CarregaCostCenter()
+
+        Dim sql As String = "SELECT ID, COSTCENTERNAME FROM [COSTCENTER]"
+        Dim ds As New DataSet()
+
+        ' Ejecutar la consulta
+        bdconnACCESS.ExecuteSQL(sql, ds)
+
+        ' Asignar datos al ComboBox si hay resultados
+        If ds.Tables.Count > 0 AndAlso ds.Tables(0).Rows.Count > 0 Then
+            With CbxCostCenter
+                .DataSource = ds.Tables(0)
+                .DisplayMember = "COSTCENTERNAME" ' Lo que se muestra
+                .ValueMember = "ID"               ' El valor real del item
+            End With
+        Else
+            CbxCostCenter.DataSource = Nothing
+        End If
+
+        ' Liberar recursos
+        ds.Dispose()
+        ds = Nothing
+
     End Sub
 End Class
