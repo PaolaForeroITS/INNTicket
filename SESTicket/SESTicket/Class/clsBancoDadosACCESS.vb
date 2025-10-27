@@ -41,11 +41,15 @@ Public Class clsBancoDadosACCESS
     End Sub
 
     Public Sub ExecuteNonSQL(str As String)
-        oledbCommand = New OleDbCommand(str)
-        oledbCommand.Connection = oledbConn
-        oledbCommand.ExecuteNonQuery()
-        oledbCommand.Dispose()
-        oledbCommand = Nothing
+        Try
+            oledbCommand = New OleDbCommand(str)
+            oledbCommand.Connection = oledbConn
+            oledbCommand.ExecuteNonQuery()
+            oledbCommand.Dispose()
+            oledbCommand = Nothing
+        Catch ex As Exception
+            Log("Error: " & ex.Message)
+        End Try
     End Sub
 
     Public Sub ExecuteSQL(str As String, ByRef Ds As DataSet)

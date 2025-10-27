@@ -93,6 +93,7 @@ Public Class clsSyncTicket
                 "WHERE " &
                 "TICKETID = '" & sTicketID & "'"
 
+
             sStep = "Inserting TICKET" & Environment.NewLine
 
             bdconnACCESS.ExecuteNonSQL(sql)
@@ -126,9 +127,16 @@ Public Class clsSyncTicket
             sStep = "Executing TicketServiceType" & Environment.NewLine
             SendTicketServiceType(sTicketID, DBDest)
 
-        Catch ex As Exception
+            'Catch ex As Exception
+            '    bErro = True
+            '    sLog = sStep & Environment.NewLine & "Error: " & ex.Message
+            '    DeleteTicket(sTicketID, DBDest)
+            '    UpdateSyncDBStatus(sTicketID, False)
+        Catch ex As Exception '-->>TRAZA PAOLA FORERO 2025
             bErro = True
-            sLog = sStep & Environment.NewLine & "Error: " & ex.Message
+            sLog = "Paso: " & sStep & Environment.NewLine &
+           "Error: " & ex.Message & Environment.NewLine &
+           "StackTrace: " & ex.StackTrace
             DeleteTicket(sTicketID, DBDest)
             UpdateSyncDBStatus(sTicketID, False)
         End Try

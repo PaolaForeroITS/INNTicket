@@ -117,8 +117,17 @@
         Catch ex As Exception
             btnClose.Visible = True
             Me.Cursor = Cursors.Arrow
-            Log(ex.Message)
-            MsgBox("Some erros ocurred during the process. Contact the Administrator", vbExclamation)
+
+            Dim errorDetails As String = "Error Message: " & ex.Message & vbCrLf &
+                             "Source: " & ex.Source & vbCrLf &
+                             "StackTrace: " & ex.StackTrace & vbCrLf &
+                             "TargetSite: " & ex.TargetSite.ToString()
+            Log("=== ERROR ===")
+            Log(errorDetails)
+            Log("=== END ERROR ===")
+
+            MsgBox("An unexpected error occurred. The error was logged. Please contact the administrator.", vbExclamation, "Process Error")
+
         End Try
 
     End Sub

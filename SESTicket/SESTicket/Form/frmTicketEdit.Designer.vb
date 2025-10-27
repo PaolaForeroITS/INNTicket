@@ -23,20 +23,20 @@ Partial Class frmTicketEdit
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle66 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle67 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle68 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle69 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle70 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTicketEdit))
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle71 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle72 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle73 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle74 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle75 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle76 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle77 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle78 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -214,6 +214,9 @@ Partial Class frmTicketEdit
         Me.PanelCostCenter = New System.Windows.Forms.Panel()
         Me.CbxCostCenter = New System.Windows.Forms.ComboBox()
         Me.LbCostCenter = New System.Windows.Forms.Label()
+        Me.TubbinG_DRILLPIPETableAdapter1 = New SESTicket.SESTicketAccessDataSetTableAdapters.TUBBING_DRILLPIPETableAdapter()
+        Me.COSTCENTERBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.COSTCENTERTableAdapter = New SESTicket.SESTicketAccessDataSetTableAdapters.COSTCENTERTableAdapter()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -257,6 +260,7 @@ Partial Class frmTicketEdit
         CType(Me.CUSTOMERBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTicketCanceled.SuspendLayout()
         Me.PanelCostCenter.SuspendLayout()
+        CType(Me.COSTCENTERBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -911,10 +915,10 @@ Partial Class frmTicketEdit
         'colOpHourTravel
         '
         Me.colOpHourTravel.DataPropertyName = "HOURTRAVEL"
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.Format = "N2"
-        DataGridViewCellStyle1.NullValue = "0.00"
-        Me.colOpHourTravel.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle66.Format = "N2"
+        DataGridViewCellStyle66.NullValue = "0.00"
+        Me.colOpHourTravel.DefaultCellStyle = DataGridViewCellStyle66
         Me.colOpHourTravel.HeaderText = "Hour Travel"
         Me.colOpHourTravel.MinimumWidth = 6
         Me.colOpHourTravel.Name = "colOpHourTravel"
@@ -924,10 +928,10 @@ Partial Class frmTicketEdit
         'colOpHourOperation
         '
         Me.colOpHourOperation.DataPropertyName = "HOUROPERATION"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.Format = "N2"
-        DataGridViewCellStyle2.NullValue = "0.00"
-        Me.colOpHourOperation.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle67.Format = "N2"
+        DataGridViewCellStyle67.NullValue = "0.00"
+        Me.colOpHourOperation.DefaultCellStyle = DataGridViewCellStyle67
         Me.colOpHourOperation.HeaderText = "Hour Operation"
         Me.colOpHourOperation.MinimumWidth = 6
         Me.colOpHourOperation.Name = "colOpHourOperation"
@@ -937,10 +941,10 @@ Partial Class frmTicketEdit
         'colOpHourStandby
         '
         Me.colOpHourStandby.DataPropertyName = "HOURSTANDBY"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.Format = "N2"
-        DataGridViewCellStyle3.NullValue = "0.00"
-        Me.colOpHourStandby.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle68.Format = "N2"
+        DataGridViewCellStyle68.NullValue = "0.00"
+        Me.colOpHourStandby.DefaultCellStyle = DataGridViewCellStyle68
         Me.colOpHourStandby.HeaderText = "Hour Standby"
         Me.colOpHourStandby.MinimumWidth = 6
         Me.colOpHourStandby.Name = "colOpHourStandby"
@@ -950,10 +954,10 @@ Partial Class frmTicketEdit
         'colOpHourLost
         '
         Me.colOpHourLost.DataPropertyName = "HOURLOST"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.Format = "N2"
-        DataGridViewCellStyle4.NullValue = "0.00"
-        Me.colOpHourLost.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle69.Format = "N2"
+        DataGridViewCellStyle69.NullValue = "0.00"
+        Me.colOpHourLost.DefaultCellStyle = DataGridViewCellStyle69
         Me.colOpHourLost.HeaderText = "Hour Lost"
         Me.colOpHourLost.MinimumWidth = 6
         Me.colOpHourLost.Name = "colOpHourLost"
@@ -963,10 +967,10 @@ Partial Class frmTicketEdit
         'colOpHourQde
         '
         Me.colOpHourQde.DataPropertyName = "HOURQDE"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.Format = "N2"
-        DataGridViewCellStyle5.NullValue = "0.00"
-        Me.colOpHourQde.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle70.Format = "N2"
+        DataGridViewCellStyle70.NullValue = "0.00"
+        Me.colOpHourQde.DefaultCellStyle = DataGridViewCellStyle70
         Me.colOpHourQde.HeaderText = "Total"
         Me.colOpHourQde.MinimumWidth = 6
         Me.colOpHourQde.Name = "colOpHourQde"
@@ -1044,8 +1048,8 @@ Partial Class frmTicketEdit
         'colWAppoint
         '
         Me.colWAppoint.DataPropertyName = "APPOINTMENT"
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.colWAppoint.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle71.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.colWAppoint.DefaultCellStyle = DataGridViewCellStyle71
         Me.colWAppoint.HeaderText = "Appointment"
         Me.colWAppoint.MinimumWidth = 6
         Me.colWAppoint.Name = "colWAppoint"
@@ -1055,9 +1059,9 @@ Partial Class frmTicketEdit
         'colWRegisterDate
         '
         Me.colWRegisterDate.DataPropertyName = "REGISTERDATE"
-        DataGridViewCellStyle7.Format = "d"
-        DataGridViewCellStyle7.NullValue = Nothing
-        Me.colWRegisterDate.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle72.Format = "d"
+        DataGridViewCellStyle72.NullValue = Nothing
+        Me.colWRegisterDate.DefaultCellStyle = DataGridViewCellStyle72
         Me.colWRegisterDate.HeaderText = "Register Date"
         Me.colWRegisterDate.MinimumWidth = 6
         Me.colWRegisterDate.Name = "colWRegisterDate"
@@ -1067,9 +1071,9 @@ Partial Class frmTicketEdit
         'colHourTravel
         '
         Me.colHourTravel.DataPropertyName = "HOURTRAVEL"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.Format = "n2"
-        Me.colHourTravel.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle73.Format = "n2"
+        Me.colHourTravel.DefaultCellStyle = DataGridViewCellStyle73
         Me.colHourTravel.HeaderText = "Hour Travel"
         Me.colHourTravel.MinimumWidth = 6
         Me.colHourTravel.Name = "colHourTravel"
@@ -1079,9 +1083,9 @@ Partial Class frmTicketEdit
         'colHourOperation
         '
         Me.colHourOperation.DataPropertyName = "HOUROPERATION"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.Format = "n2"
-        Me.colHourOperation.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle74.Format = "n2"
+        Me.colHourOperation.DefaultCellStyle = DataGridViewCellStyle74
         Me.colHourOperation.HeaderText = "Hour Operation"
         Me.colHourOperation.MinimumWidth = 6
         Me.colHourOperation.Name = "colHourOperation"
@@ -1091,9 +1095,9 @@ Partial Class frmTicketEdit
         'colHourStandby
         '
         Me.colHourStandby.DataPropertyName = "HOURSTANDBY"
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle10.Format = "n2"
-        Me.colHourStandby.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle75.Format = "n2"
+        Me.colHourStandby.DefaultCellStyle = DataGridViewCellStyle75
         Me.colHourStandby.HeaderText = "Hour Standby"
         Me.colHourStandby.MinimumWidth = 6
         Me.colHourStandby.Name = "colHourStandby"
@@ -1103,9 +1107,9 @@ Partial Class frmTicketEdit
         'colHourLost
         '
         Me.colHourLost.DataPropertyName = "HOURLOST"
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.Format = "n2"
-        Me.colHourLost.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle76.Format = "n2"
+        Me.colHourLost.DefaultCellStyle = DataGridViewCellStyle76
         Me.colHourLost.HeaderText = "Hour Lost"
         Me.colHourLost.MinimumWidth = 6
         Me.colHourLost.Name = "colHourLost"
@@ -1115,10 +1119,10 @@ Partial Class frmTicketEdit
         'colWHourQde
         '
         Me.colWHourQde.DataPropertyName = "HOURQDE"
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle12.Format = "N2"
-        DataGridViewCellStyle12.NullValue = Nothing
-        Me.colWHourQde.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle77.Format = "N2"
+        DataGridViewCellStyle77.NullValue = Nothing
+        Me.colWHourQde.DefaultCellStyle = DataGridViewCellStyle77
         Me.colWHourQde.HeaderText = "Total"
         Me.colWHourQde.MinimumWidth = 6
         Me.colWHourQde.Name = "colWHourQde"
@@ -1128,8 +1132,8 @@ Partial Class frmTicketEdit
         'colResumeActivity
         '
         Me.colResumeActivity.DataPropertyName = "RESUMEACTIVITY"
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.colResumeActivity.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle78.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.colResumeActivity.DefaultCellStyle = DataGridViewCellStyle78
         Me.colResumeActivity.HeaderText = "Resume"
         Me.colResumeActivity.MinimumWidth = 6
         Me.colResumeActivity.Name = "colResumeActivity"
@@ -1854,6 +1858,7 @@ Partial Class frmTicketEdit
         Me.TableAdapterManager.CASINGTableAdapter = Me.CASINGTableAdapter
         Me.TableAdapterManager.CITYTableAdapter = Nothing
         Me.TableAdapterManager.CONTRACTTableAdapter = Me.CONTRACTTableAdapter
+        Me.TableAdapterManager.COSTCENTERTableAdapter = Nothing
         Me.TableAdapterManager.COUNTRYTableAdapter = Nothing
         Me.TableAdapterManager.CURRENCYTableAdapter = Me.CURRENCYTableAdapter
         Me.TableAdapterManager.CUSTOMERTableAdapter = Me.CUSTOMERTableAdapter
@@ -1871,6 +1876,7 @@ Partial Class frmTicketEdit
         Me.TableAdapterManager.SERVICELINETableAdapter = Nothing
         Me.TableAdapterManager.SITESTableAdapter = Nothing
         Me.TableAdapterManager.STATETableAdapter = Nothing
+        Me.TableAdapterManager.TICKETCOSTCENTERTableAdapter = Nothing
         Me.TableAdapterManager.TICKETFILELOGTableAdapter = Nothing
         Me.TableAdapterManager.TICKETOPEREPACTTableAdapter = Nothing
         Me.TableAdapterManager.TICKETOPEREPTableAdapter = Nothing
@@ -1882,6 +1888,8 @@ Partial Class frmTicketEdit
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
+        Me.TableAdapterManager.zSQL_COSTCENTERTableAdapter = Nothing
+        Me.TableAdapterManager.zSQL_TICKETCOSTCENTERTableAdapter = Nothing
         '
         'TICKETWORKERTableAdapter
         '
@@ -1957,11 +1965,14 @@ Partial Class frmTicketEdit
         '
         'CbxCostCenter
         '
+        Me.CbxCostCenter.DataSource = Me.COSTCENTERBindingSource
+        Me.CbxCostCenter.DisplayMember = "COSTCENTERNAME"
         Me.CbxCostCenter.FormattingEnabled = True
         Me.CbxCostCenter.Location = New System.Drawing.Point(116, 7)
         Me.CbxCostCenter.Name = "CbxCostCenter"
-        Me.CbxCostCenter.Size = New System.Drawing.Size(291, 21)
+        Me.CbxCostCenter.Size = New System.Drawing.Size(500, 21)
         Me.CbxCostCenter.TabIndex = 5
+        Me.CbxCostCenter.ValueMember = "ID"
         '
         'LbCostCenter
         '
@@ -1971,6 +1982,19 @@ Partial Class frmTicketEdit
         Me.LbCostCenter.Size = New System.Drawing.Size(93, 13)
         Me.LbCostCenter.TabIndex = 4
         Me.LbCostCenter.Text = "Cost Center Name"
+        '
+        'TubbinG_DRILLPIPETableAdapter1
+        '
+        Me.TubbinG_DRILLPIPETableAdapter1.ClearBeforeFill = True
+        '
+        'COSTCENTERBindingSource
+        '
+        Me.COSTCENTERBindingSource.DataMember = "COSTCENTER"
+        Me.COSTCENTERBindingSource.DataSource = Me.SESTicketAccessDataSet
+        '
+        'COSTCENTERTableAdapter
+        '
+        Me.COSTCENTERTableAdapter.ClearBeforeFill = True
         '
         'frmTicketEdit
         '
@@ -2047,6 +2071,7 @@ Partial Class frmTicketEdit
         Me.pnlTicketCanceled.PerformLayout()
         Me.PanelCostCenter.ResumeLayout(False)
         Me.PanelCostCenter.PerformLayout()
+        CType(Me.COSTCENTERBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2232,4 +2257,7 @@ Partial Class frmTicketEdit
     Friend WithEvents PanelCostCenter As Panel
     Friend WithEvents LbCostCenter As Label
     Friend WithEvents CbxCostCenter As ComboBox
+    Friend WithEvents TubbinG_DRILLPIPETableAdapter1 As SESTicketAccessDataSetTableAdapters.TUBBING_DRILLPIPETableAdapter
+    Friend WithEvents COSTCENTERBindingSource As BindingSource
+    Friend WithEvents COSTCENTERTableAdapter As SESTicketAccessDataSetTableAdapters.COSTCENTERTableAdapter
 End Class

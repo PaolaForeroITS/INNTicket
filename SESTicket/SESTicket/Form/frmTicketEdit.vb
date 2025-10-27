@@ -1,6 +1,7 @@
 ﻿Imports System.Configuration
 Imports System.IO
 Imports Excel = Microsoft.Office.Interop.Excel
+
 Public Class frmTicketEdit
     Implements IDisposable
 
@@ -47,6 +48,8 @@ Public Class frmTicketEdit
     End Sub
 
     Private Sub frmTicketEdit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'SESTicketAccessDataSet.COSTCENTER' table. You can move, or remove it, as needed.
+        Me.COSTCENTERTableAdapter.Fill(Me.SESTicketAccessDataSet.COSTCENTER)
 
         'Added validation to enable the Frontera report print option.
 
@@ -216,14 +219,17 @@ Public Class frmTicketEdit
         Me.CONTRACTTableAdapter.Fill(Me.SESTicketAccessDataSet.CONTRACT)
         'TODO: This line of code loads data into the 'SESTicketAccessDataSet.CURRENCY' table. You can move, or remove it, as needed.
         Me.CURRENCYTableAdapter.Fill(Me.SESTicketAccessDataSet.CURRENCY)
-
+        'ADD COST CENTER 2025
+        'Me.COSTCENTERTableAdapter.Fill(Me.SESTicketAccessDataSet.COSTCENTER)
         CarregaCbxTubing()
         CarregaCbxCasing()
+        CarregaCbxCostCenter()
 
         cbxServiceLine.Refresh()
         cbxCustomer.Refresh()
         cbxContract.Refresh()
         cbxCurrency.Refresh()
+        'CbxCostCenter.Refresh() 'ADD COST CENTER 2025
 
     End Sub
 
@@ -1858,155 +1864,30 @@ Public Class frmTicketEdit
     End Sub
 
     Private Sub CbxCostCenter_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CbxCostCenter.SelectedIndexChanged
-        If sTicketNumberOld = "" Then
-            CarregaCbxCostCenter()
-            CarregaCbxMoeda()
-        End If
+        'If sTicketNumberOld = "" Then
+        'CarregaCostCenter()
+        'End If
     End Sub
 
-    Public Sub CarregaCbxCostCenter()
+    Private Sub CarregaCbxCostCenter()
+        ' Llenar la tabla original
+        Me.COSTCENTERTableAdapter.Fill(Me.SESTicketAccessDataSet.COSTCENTER)
 
-        If IsNothing(CbxCostCenter.SelectedValue) Then
-            MsgBox("Choose the Cost center", vbExclamation)
-            Exit Sub
-        End If
+        ' Crear una copia para modificar
+        Dim dt As DataTable = Me.SESTicketAccessDataSet.COSTCENTER.Copy()
 
-        If cbxServiceType.SelectedValue.ToString = "-1" Then
-            MsgBox("Choose the Cost center", vbExclamation)
-            Exit Sub
-        End If
+        ' Agregar la fila "Seleccionar"
+        Dim newRow As DataRow = dt.NewRow()
+        newRow("ID") = 0
+        newRow("CostCenterName") = "Seleccionar"
+        dt.Rows.InsertAt(newRow, 0)
 
-        Me.Cursor = Cursors.WaitCursor
+        ' Asignar al ComboBox
+        CbxCostCenter.DataSource = dt
+        CbxCostCenter.DisplayMember = "CostCenterName"
+        CbxCostCenter.ValueMember = "ID"
 
-        Dim bdconn As New clsBancoDadosACCESS
-        Dim sql As String
-        Dim ds As New DataSet
-
-        bdconn.OpenConnection()
-
-        sql = "SELECT COUNT(*) AS QDE FROM TICKETCOSTCENTER " &
-            "WHERE TICKETID='" & txtTicketNumber.Text & "' "
-        bdconn.ExecuteSQL(sql, ds)
-
-        If ds.Tables(0).Rows(0)("QDE") > 0 Then
-            Me.Cursor = Cursors.Arrow
-            bdconn.CloseConnection()
-            bdconn.Dispose()
-            bdconn = Nothing
-            ds.Dispose()
-            ds = Nothing
-            CbxCostCenter.SelectedValue = -1
-            Exit Sub
-        End If
-        ds.Dispose()
-        ds = Nothing
-
-        Dim seq As New clsSequenceAccess(txtTicketNumber.Text)
-
-        sql = "INSERT INTO [TICKETCOSTCENTER] " &
-            "([TICKETID], [COSTCENTERID]) VALUES ('"
-        ' "(TICKETSERVICETYPEID, [TICKETID],[SERVICETYPEID]) VALUES ('"
-
-        'sql = sql & seq.TicketServiceTypeNextId & "','"
-        sql = sql & txtTicketNumber.Text & "',"
-        sql = sql & CbxCostCenter.SelectedValue.ToString & ")"
-
-        bdconn.ExecuteNonSQL(sql)
-
-        bdconn.CloseConnection()
-        bdconn.Dispose()
-        bdconn = Nothing
-        seq = Nothing
-
-        AdjustTicketCostCenter()
-
-        Dim sync As New clsSyncTicket
-        sync.UpdateSyncDateTime(txtTicketNumber.Text, "ACCESS")
-        sync.Dispose()
-        sync = Nothing
-
-        CarregaTicketServiceType()
-
-        cbxServiceType.SelectedValue = -1
-
-        Me.Cursor = Cursors.Arrow
-
-    End Sub
-
-    Private Sub AdjustTicketCostCenter()
-
-        Dim bdconn As New clsBancoDadosACCESS
-        Dim sql As String
-        Dim ds As New DataSet
-
-        bdconn.OpenConnection()
-
-        Dim sID As String = ""
-        Dim sCode As String = ""
-        Dim sDesc As String = ""
-
-        sql = "SELECT CostCenter.ID AS CostCenterID,[SmartCode] as CODE,[CostCenterName] AS descriptions" &
-            "FROM CostCenter INNER JOIN TICKETCostCenter  ON CostCenter.ID=TICKETCostCenter.COSTCENTERID " &
-            "WHERE (((TICKETCostCenter.TICKETID)='" & txtTicketNumber.Text & "'))"
-
-        bdconn.ExecuteSQL(sql, ds)
-
-        If ds.Tables(0).Rows.Count > 0 Then
-            For i As Integer = 0 To ds.Tables(0).Rows.Count - 1
-
-                If Not IsDBNull(ds.Tables(0).Rows(i)("ID")) Then
-                    If sID <> "" Then
-                        sID = sID & ", "
-                    End If
-                    sID = sID & ds.Tables(0).Rows(i)("ID").ToString
-                End If
-
-                If Not IsDBNull(ds.Tables(0).Rows(i)("CODE")) Then
-                    If sCode <> "" Then
-                        sCode = sCode & ", "
-                    End If
-                    sCode = sCode & ds.Tables(0).Rows(i)("CODE").ToString
-                End If
-
-                If Not IsDBNull(ds.Tables(0).Rows(i)("descriptions")) Then
-                    If sDesc <> "" Then
-                        sDesc = sDesc & ", "
-                    End If
-                    sDesc = sDesc & ds.Tables(0).Rows(i)("descriptions").ToString
-                End If
-
-            Next
-        End If
-
-
-        bdconn.CloseConnection()
-        bdconn.Dispose()
-        bdconn = Nothing
-
-    End Sub
-
-    Private Sub CarregaCostCenter()
-
-        Dim sql As String = "SELECT ID, COSTCENTERNAME FROM [COSTCENTER]"
-        Dim ds As New DataSet()
-
-        ' Ejecutar la consulta
-        bdconnACCESS.ExecuteSQL(sql, ds)
-
-        ' Asignar datos al ComboBox si hay resultados
-        If ds.Tables.Count > 0 AndAlso ds.Tables(0).Rows.Count > 0 Then
-            With CbxCostCenter
-                .DataSource = ds.Tables(0)
-                .DisplayMember = "COSTCENTERNAME" ' Lo que se muestra
-                .ValueMember = "ID"               ' El valor real del item
-            End With
-        Else
-            CbxCostCenter.DataSource = Nothing
-        End If
-
-        ' Liberar recursos
-        ds.Dispose()
-        ds = Nothing
-
+        ' Seleccionar la opción "Seleccionar"
+        CbxCostCenter.SelectedIndex = 0
     End Sub
 End Class
