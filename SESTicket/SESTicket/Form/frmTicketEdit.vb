@@ -229,7 +229,6 @@ Public Class frmTicketEdit
         cbxCustomer.Refresh()
         cbxContract.Refresh()
         cbxCurrency.Refresh()
-        'CbxCostCenter.Refresh() 'ADD COST CENTER 2025
 
     End Sub
 
@@ -797,70 +796,77 @@ Public Class frmTicketEdit
     Private Sub SaveToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles mnuSaveTicket.Click
 
 
-        If cbxServiceLine.Text = "" Then
-            MsgBox("Inform the Service Line", vbExclamation)
-            Exit Sub
-        End If
+        MsgBox("CbxCostCenter: " & CbxCostCenter.SelectedValue.ToString(), vbExclamation)
 
-        If cbxCustomer.Text = "" Then
-            MsgBox("Inform the Customer", vbExclamation)
-            Exit Sub
-        End If
+        'If cbxServiceLine.Text = "" Then
+        '    MsgBox("Inform the Service Line", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If dtpServiceDate.Text = "" Then
-            MsgBox("Inform the Service Date", vbExclamation)
-            Exit Sub
-        End If
+        'If cbxCustomer.Text = "" Then
+        '    MsgBox("Inform the Customer", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If cbxContract.Text = "" Then
-            MsgBox("Inform the Contract", vbExclamation)
-            Exit Sub
-        End If
+        'If dtpServiceDate.Text = "" Then
+        '    MsgBox("Inform the Service Date", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If cbxCurrency.Text = "" Then
-            MsgBox("Inform the Currency", vbExclamation)
-            Exit Sub
-        End If
+        'If cbxContract.Text = "" Then
+        '    MsgBox("Inform the Contract", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If dtpTimeArrived.Text = "" Then
-            MsgBox("Inform the Time Arrived", vbExclamation)
-            Exit Sub
-        End If
+        'If cbxCurrency.Text = "" Then
+        '    MsgBox("Inform the Currency", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If dtpTimeStarted.Text = "" Then
-            MsgBox("Inform the Time Started", vbExclamation)
-            Exit Sub
-        End If
+        'If dtpTimeArrived.Text = "" Then
+        '    MsgBox("Inform the Time Arrived", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If dtpTimeCompleted.Text = "" Then
-            MsgBox("Inform the Time Completed", vbExclamation)
-            Exit Sub
-        End If
+        'If dtpTimeStarted.Text = "" Then
+        '    MsgBox("Inform the Time Started", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If txtWellName.Text = "" Then
-            MsgBox("Inform the Well Type", vbExclamation)
-            Exit Sub
-        End If
+        'If dtpTimeCompleted.Text = "" Then
+        '    MsgBox("Inform the Time Completed", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If txtCustRepres.Text = "" Then
-            MsgBox("Inform the Customer Representative", vbExclamation)
-            Exit Sub
-        End If
+        'If txtWellName.Text = "" Then
+        '    MsgBox("Inform the Well Type", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If txtCustRepresPosition.Text = "" Then
-            MsgBox("Inform the Customer Representative Position", vbExclamation)
-            Exit Sub
-        End If
+        'If txtCustRepres.Text = "" Then
+        '    MsgBox("Inform the Customer Representative", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If sContrRepresId = "" Then
-            MsgBox("Inform the Contractor Representative", vbExclamation)
-            Exit Sub
-        End If
+        'If txtCustRepresPosition.Text = "" Then
+        '    MsgBox("Inform the Customer Representative Position", vbExclamation)
+        '    Exit Sub
+        'End If
 
-        If sSiteId = "" Then
-            MsgBox("Inform the Site", vbExclamation)
-            Exit Sub
-        End If
+        'If sContrRepresId = "" Then
+        '    MsgBox("Inform the Contractor Representative", vbExclamation)
+        '    Exit Sub
+        'End If
+
+        'If sSiteId = "" Then
+        '    MsgBox("Inform the Site", vbExclamation)
+        '    Exit Sub
+        'End If
+
+        'If CbxCostCenter.Text = "" Then
+        '    MsgBox("Inform the Cost center", vbExclamation)
+        '    Exit Sub
+        'End If
 
         Me.Cursor = Cursors.WaitCursor
 
@@ -879,7 +885,7 @@ Public Class frmTicketEdit
                 Exit Sub
             End If
 
-            sql = "SELECT 1"
+            'sql = "SELECT 1"
             'sql = "INSERT INTO [TICKET] " &
             '    "([TICKETID],[DATESERVICE],[CUSTOMERID],[CONTRACTID],[CURRENCYID] " &
             '    ",[WELLID],[TIMEARRIVED],[TIMESTARTED],[TIMECOMPLETED] " &
@@ -890,51 +896,57 @@ Public Class frmTicketEdit
             '    ",[UPDATEDDATETIME],[UPDATEDUSER],[SyncDB],EXCHANGERATE,TICKETSTATUS,SERVICELINEID,RIGID,SUPERIORNUM,DM,JOBNUMBER,SERVICEORDERNUM,SITEID," &
             '    "HOURTRAVEL,HOUROPERATION,HOURSTANDBY,HOURLOST,HOURQDE,SUPERIORSUPERVISOR) VALUES ("
 
-            sql = sql & util.SQLConvStrNull(txtTicketNumber.Text, "s") & ","
-            sql = sql & util.SQLConvStrDate(dtpServiceDate.Value.ToString) & ","
-            sql = sql & util.SQLConvStrNull(cbxCustomer.SelectedValue, "s") & ","
-            sql = sql & util.SQLConvStrNull(cbxContract.SelectedValue, "n") & ","
-            sql = sql & util.SQLConvStrNull(cbxCurrency.SelectedValue, "s") & ","
-            sql = sql & util.SQLConvStrNull(sWellId, "s") & ","
-            sql = sql & util.SQLConvStrDatetime(dtpTimeArrived.Value.ToString) & ","
-            sql = sql & util.SQLConvStrDatetime(dtpTimeStarted.Value.ToString) & ","
-            sql = sql & util.SQLConvStrDatetime(dtpTimeCompleted.Value.ToString) & ","
-            sql = sql & util.SQLConvStrNull(cbxCasingSize.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(cbxCasingWeight.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(cbxCasingGrade.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(cbxTubingPipe.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(cbxTubingWeight.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(cbxTubingGrade.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtMaxPressure.Text, "n") & ","
-            sql = sql & util.SQLConvStrNull(txtMaxDepth.Text, "n") & ","
-            sql = sql & util.SQLConvStrNull(txtJobDescription.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtCustRepres.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtCustRepresPosition.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtCustRepresAssist.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtCustRepresAssistPos.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(sContrRepresId, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtCustComments.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtContrComments.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtAdicInform.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(sUsername, "s") & "," & util.GetDateTime() & ",NULL,NULL,0,"
+            'sql = sql & util.SQLConvStrNull(txtTicketNumber.Text, "s") & ","
+            'sql = sql & util.SQLConvStrDate(dtpServiceDate.Value.ToString) & ","
+            'sql = sql & util.SQLConvStrNull(cbxCustomer.SelectedValue, "s") & ","
+            'sql = sql & util.SQLConvStrNull(cbxContract.SelectedValue, "n") & ","
+            'sql = sql & util.SQLConvStrNull(cbxCurrency.SelectedValue, "s") & ","
+            'sql = sql & util.SQLConvStrNull(sWellId, "s") & ","
+            'sql = sql & util.SQLConvStrDatetime(dtpTimeArrived.Value.ToString) & ","
+            'sql = sql & util.SQLConvStrDatetime(dtpTimeStarted.Value.ToString) & ","
+            'sql = sql & util.SQLConvStrDatetime(dtpTimeCompleted.Value.ToString) & ","
+            'sql = sql & util.SQLConvStrNull(cbxCasingSize.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(cbxCasingWeight.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(cbxCasingGrade.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(cbxTubingPipe.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(cbxTubingWeight.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(cbxTubingGrade.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtMaxPressure.Text, "n") & ","
+            'sql = sql & util.SQLConvStrNull(txtMaxDepth.Text, "n") & ","
+            'sql = sql & util.SQLConvStrNull(txtJobDescription.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtCustRepres.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtCustRepresPosition.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtCustRepresAssist.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtCustRepresAssistPos.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(sContrRepresId, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtCustComments.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtContrComments.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtAdicInform.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(sUsername, "s") & "," & util.GetDateTime() & ",NULL,NULL,0,"
 
-            If cbxCurrency.SelectedValue = "USD" Then
-                sql = sql & "0,'Open',"
-            Else
-                sql = sql & "1,'Open',"
-            End If
-            sql = sql & util.SQLConvStrNull(cbxServiceLine.SelectedValue, "n") & ","
-            sql = sql & util.SQLConvStrNull(txtRig.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtSupNum.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtDM.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtJobNumber.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(txtSONumber.Text, "s") & ","
-            sql = sql & util.SQLConvStrNull(sSiteId, "s") & ",0,0,0,0,0,"
-            sql = sql & util.SQLConvStrNull(sSuperiorSupervisorId, "s") & ")"
+            'If cbxCurrency.SelectedValue = "USD" Then
+            '    sql = sql & "0,'Open',"
+            'Else
+            '    sql = sql & "1,'Open',"
+            'End If
+            'sql = sql & util.SQLConvStrNull(cbxServiceLine.SelectedValue, "n") & ","
+            'sql = sql & util.SQLConvStrNull(txtRig.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtSupNum.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtDM.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtJobNumber.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(txtSONumber.Text, "s") & ","
+            'sql = sql & util.SQLConvStrNull(sSiteId, "s") & ",0,0,0,0,0,"
+            'sql = sql & util.SQLConvStrNull(sSuperiorSupervisorId, "s") & ")"
+
+            'bdconnACCESS.ExecuteNonSQL(sql)
+
+            'UpdateTicketNumber()
+
+            sql = "INSERT INTO [dbo].[TICKETCOSTCENTER] ([TICKETID] ,[COSTCENTERID]) VALUES ("
+            sql = sql & util.SQLConvStrNull(txtTicketNumber.Text, "s") & ","
+            sql = sql & CbxCostCenter.SelectedValue & ")"
 
             bdconnACCESS.ExecuteNonSQL(sql)
-
-            UpdateTicketNumber()
 
             TabControl1.TabPages.Add(tabSalesItem)
             If bShowTabOperReport = True Then
@@ -968,12 +980,19 @@ Public Class frmTicketEdit
             LoadTicketOpeHour()
         Else
 
-            If dgvTicketServType.RowCount = 0 Then
-                MsgBox("Inform the Service Line", vbExclamation)
-                Me.Cursor = Cursors.Arrow
-                Exit Sub
-            End If
-            sql = "select 1"
+            'If dgvTicketServType.RowCount = 0 Then
+            '    MsgBox("Inform the Service Line", vbExclamation)
+            '    Me.Cursor = Cursors.Arrow
+            '    Exit Sub
+            'End If
+
+            sql = "INSERT INTO [dbo].[TICKETCOSTCENTER] ([TICKETID] ,[COSTCENTERID]) VALUES ("
+            sql = sql & util.SQLConvStrNull(txtTicketNumber.Text, "s") & ", "
+            sql = sql & CbxCostCenter.SelectedValue & ")"
+
+            bdconnACCESS.ExecuteNonSQL(sql)
+
+            'sql = "select 1"
             'sql = "UPDATE [TICKET] SET " &
             '    " [DATESERVICE] = " & util.SQLConvStrDate(dtpServiceDate.Value.ToString) & " " &
             '    ",[CUSTOMERID] = " & util.SQLConvStrNull(cbxCustomer.SelectedValue, "s") & " " &
@@ -1013,7 +1032,7 @@ Public Class frmTicketEdit
             '    " WHERE " &
             '    "[TICKETID] = '" & txtTicketNumber.Text & "'"
 
-            bdconnACCESS.ExecuteNonSQL(sql)
+            'bdconnACCESS.ExecuteNonSQL(sql)
 
         End If
 
@@ -1861,12 +1880,6 @@ Public Class frmTicketEdit
                 remainingText = ""
             End If
         Loop
-    End Sub
-
-    Private Sub CbxCostCenter_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CbxCostCenter.SelectedIndexChanged
-        'If sTicketNumberOld = "" Then
-        'CarregaCostCenter()
-        'End If
     End Sub
 
     Private Sub CarregaCbxCostCenter()

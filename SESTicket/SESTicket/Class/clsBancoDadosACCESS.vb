@@ -48,7 +48,10 @@ Public Class clsBancoDadosACCESS
             oledbCommand.Dispose()
             oledbCommand = Nothing
         Catch ex As Exception
-            Log("Error: " & ex.Message)
+
+            MessageBox.Show("Ocurrió un error al ejecutar la consulta SQL:" & vbCrLf & ex.Message, "Error de ejecución", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Log("Error SQL: " & ex.ToString())
+
         End Try
     End Sub
 
