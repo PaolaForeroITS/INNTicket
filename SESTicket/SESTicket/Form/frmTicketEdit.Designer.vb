@@ -1888,8 +1888,7 @@ Partial Class frmTicketEdit
         Me.TableAdapterManager.USERTableAdapter = Nothing
         Me.TableAdapterManager.WELLTableAdapter = Nothing
         Me.TableAdapterManager.WORKERTableAdapter = Nothing
-        Me.TableAdapterManager.zSQL_COSTCENTERTableAdapter = Nothing
-        Me.TableAdapterManager.zSQL_TICKETCOSTCENTERTableAdapter = Nothing
+
         '
         'TICKETWORKERTableAdapter
         '

@@ -1247,6 +1247,7 @@
     <EmbeddedResource Include="Reports\rptTicketWorkerTotal.rdlc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Dns\local_ticket_dev.dsn" />
     <None Include="Excel\frmInvoiceList.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -1439,6 +1440,9 @@
     </Content>
     <Content Include="Reports\ReportFiles\InngTech.png" />
     <Content Include="Reports\ReportFiles\superior.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SESTicketBaseData.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="SqlServerTypes\Loader.cs" />
