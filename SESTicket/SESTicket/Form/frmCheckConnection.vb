@@ -14,49 +14,44 @@ Public Class frmCheckConnection
 
     Private Sub CheckPaths()
 
-        Me.Cursor = Cursors.WaitCursor
-
-        lblMessage.Text = "Checking Path. Please wait."
-        Me.Refresh()
-
-        'Dim sPathTmp As String = ConfigurationManager.AppSettings("FilePath").ToString & "\tmp"
-        'If (Not System.IO.Directory.Exists(sPathTmp)) Then
-        '    System.IO.Directory.CreateDirectory(sPathTmp)
-        'End If
-
-
-        Dim filePathSetting As String = ConfigurationManager.AppSettings("FilePath")
-
-        If String.IsNullOrEmpty(filePathSetting) Then
-            MessageBox.Show("La clave 'FilePath' no está definida o está vacía en AppSettings.")
-            Me.Cursor = Cursors.Arrow
-            Exit Sub
-        End If
-
-        Dim sPathTmp As String = filePathSetting & "\tmp"
-
-
-        lblMessage.Text = "Deleting Temporary Files. Please wait."
-        Me.Refresh()
-
         Try
+            Me.Cursor = Cursors.WaitCursor
 
-            Dim arrStr As String() = {}
-            arrStr = System.IO.Directory.GetFiles(sPathTmp, "*.docx")
+            lblMessage.Text = "Checking Path. Please wait."
+            Me.Refresh()
+            Dim sPathTmp As String = "C:\SESTicket\file\tmp"
+            'Dim sPathTmp As String = ConfigurationManager.AppSettings("FilePath").ToString & "\tmp"
+            If (Not System.IO.Directory.Exists(sPathTmp)) Then
+                System.IO.Directory.CreateDirectory(sPathTmp)
 
-            For i As Integer = 0 To arrStr.Length - 1
-                Try
-                    System.IO.File.Delete(arrStr(i))
-                Catch ExIO As Exception
-                    Debug.Print(ExIO.Message)
-                End Try
-            Next i
+            End If
+
+
+            lblMessage.Text = "Deleting Temporary Files. Please wait."
+            Me.Refresh()
+
+            Try
+
+                Dim arrStr As String() = {}
+                arrStr = System.IO.Directory.GetFiles(sPathTmp, "*.docx")
+
+                For i As Integer = 0 To arrStr.Length - 1
+                    Try
+                        System.IO.File.Delete(arrStr(i))
+                    Catch ExIO As Exception
+                        Debug.Print(ExIO.Message)
+                    End Try
+                Next i
+
+            Catch ex As Exception
+
+            End Try
+
+            Me.Cursor = Cursors.Arrow
 
         Catch ex As Exception
-
+            MessageBox.Show("Error en SendTicketCostCenter: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-
-        Me.Cursor = Cursors.Arrow
 
     End Sub
 

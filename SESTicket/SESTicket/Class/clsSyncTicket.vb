@@ -39,7 +39,7 @@ Public Class clsSyncTicket
     End Sub
 #End Region
 
-    Public Sub SendTicket(sTicketID As String, DBDest As String)
+     Public Sub SendTicket(sTicketID As String, DBDest As String)
 
         Dim sStep As String = ""
 
@@ -510,127 +510,132 @@ Public Class clsSyncTicket
         Dim bdconnSQL As New clsBancoDadosSQL
         Dim bdconnACCESS As New clsBancoDadosACCESS
 
-        If DBDest = "SQL" Then
-            bdconnSQL.OpenConnection()
-        Else
-            bdconnACCESS.OpenConnection()
-        End If
+        Try
 
-        Dim sql As String
+            If DBDest = "SQL" Then
+                bdconnSQL.OpenConnection()
+            Else
+                bdconnACCESS.OpenConnection()
+            End If
 
-        sql = "DELETE FROM TICKETSERVEVAL_HSEQ WHERE TICKETID = '" & sTicketId & "' "
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            Dim sql As String
 
-        sql = "DELETE FROM TICKETINVENTORY " &
-        "where EXISTS (SELECT 1 FROM TICKETSALESITEM B  " &
-        "WHERE TICKETINVENTORY.TICKETSALESITEMID = B.TICKETSALESITEMID AND B.TICKETID = '" & sTicketId & "') "
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKETSERVEVAL_HSEQ WHERE TICKETID = '" & sTicketId & "' "
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        sql = "DELETE FROM TICKETINVADIC WHERE TICKETID = '" & sTicketId & "' "
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKETINVENTORY " &
+            "where EXISTS (SELECT 1 FROM TICKETSALESITEM B  " &
+            "WHERE TICKETINVENTORY.TICKETSALESITEMID = B.TICKETSALESITEMID AND B.TICKETID = '" & sTicketId & "') "
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        sql = "DELETE FROM TICKETINVLINE " &
-        "where EXISTS (SELECT 1 FROM TICKETINVHEADER B  " &
-        "WHERE TICKETINVLINE.TICKETINVHEADERID = B.TICKETINVHEADERID AND B.TICKETID = '" & sTicketId & "') "
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKETINVADIC WHERE TICKETID = '" & sTicketId & "' "
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        sql = "DELETE FROM TICKETINVHEADER WHERE TICKETID = '" & sTicketId & "' "
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKETINVLINE " &
+            "where EXISTS (SELECT 1 FROM TICKETINVHEADER B  " &
+            "WHERE TICKETINVLINE.TICKETINVHEADERID = B.TICKETINVHEADERID AND B.TICKETID = '" & sTicketId & "') "
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        sql = "DELETE FROM TICKETSALESITEM WHERE TICKETID = '" & sTicketId & "'"
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKETINVHEADER WHERE TICKETID = '" & sTicketId & "' "
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        sql = "DELETE FROM TICKETEQUIPMENT WHERE TICKETID = '" & sTicketId & "'"
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKETSALESITEM WHERE TICKETID = '" & sTicketId & "'"
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        sql = "DELETE FROM TICKETWORKER WHERE TICKETID = '" & sTicketId & "'"
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKETEQUIPMENT WHERE TICKETID = '" & sTicketId & "'"
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        sql = "DELETE  FROM TICKETOPEREPACT " & _
-              "WHERE " & _
-              "EXISTS (SELECT 1 FROM TICKETOPEREP " & _
-              "WHERE  " & _
-              "TICKETOPEREP.TICKETOPEREPID = TICKETOPEREPACT.TICKETOPEREPID " & _
-              "AND TICKETOPEREP.TICKETID = '" & sTicketId & "')"
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKETWORKER WHERE TICKETID = '" & sTicketId & "'"
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        sql = "DELETE FROM TICKETOPEREP " & _
-              "WHERE TICKETOPEREP.TICKETID = '" & sTicketId & "'"
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE  FROM TICKETOPEREPACT " &
+                  "WHERE " &
+                  "EXISTS (SELECT 1 FROM TICKETOPEREP " &
+                  "WHERE  " &
+                  "TICKETOPEREP.TICKETOPEREPID = TICKETOPEREPACT.TICKETOPEREPID " &
+                  "AND TICKETOPEREP.TICKETID = '" & sTicketId & "')"
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        sql = "DELETE FROM TICKETSERVICETYPE " &
-              "WHERE TICKETID = '" & sTicketId & "'"
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKETOPEREP " &
+                  "WHERE TICKETOPEREP.TICKETID = '" & sTicketId & "'"
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        sql = "DELETE FROM TICKETCOSTCENTER WHERE TICKETID = '" & sTicketId & "'"
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKETSERVICETYPE " &
+                  "WHERE TICKETID = '" & sTicketId & "'"
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
+
+            sql = "DELETE FROM TICKETCOSTCENTER WHERE TICKETID = '" & sTicketId & "'"
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
 
-        sql = "DELETE FROM TICKET WHERE TICKETID = '" & sTicketId & "'"
-        If DBDest = "SQL" Then
-            bdconnSQL.ExecuteNonSQL(sql)
-        Else
-            bdconnACCESS.ExecuteNonSQL(sql)
-        End If
+            sql = "DELETE FROM TICKET WHERE TICKETID = '" & sTicketId & "'"
+            If DBDest = "SQL" Then
+                bdconnSQL.ExecuteNonSQL(sql)
+            Else
+                bdconnACCESS.ExecuteNonSQL(sql)
+            End If
 
-        If DBDest = "SQL" Then
-            bdconnSQL.CloseConnection()
-            bdconnSQL.Dispose()
-            bdconnSQL = Nothing
-        Else
-            bdconnACCESS.CloseConnection()
-            bdconnACCESS.Dispose()
-            bdconnACCESS = Nothing
-        End If
+            If DBDest = "SQL" Then
+                bdconnSQL.CloseConnection()
+                bdconnSQL.Dispose()
+                bdconnSQL = Nothing
+            Else
+                bdconnACCESS.CloseConnection()
+                bdconnACCESS.Dispose()
+                bdconnACCESS = Nothing
+            End If
 
+        Catch ex As Exception
+            MessageBox.Show("Error en DeleteTicket: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
     Public Sub CloseTicket(ByVal sTicketId As String, Optional Source As String = "")
@@ -875,27 +880,27 @@ Public Class clsSyncTicket
                 "TICKETID = '" & sTicketId & "' "
             bdconnACCESS.ExecuteNonSQL(Sql)
 
-            Sql = "INSERT INTO TICKETOPEREP " & _
-             "(TICKETOPEREPID,TICKETID,ACTIVITYDATE,SERVICEDESCR,COMMENTS, ACTIVITYDATEDESC) " & _
-             "SELECT REPLACE(TICKETOPEREPID,'" & sTicketId & ".','" & sTicketIdNew & ".') " & _
-             ",'" & sTicketIdNew & "' " & _
-             ",ACTIVITYDATE,SERVICEDESCR,COMMENTS,ACTIVITYDATEDESC " & _
-             "FROM TICKETOPEREP " & _
+            Sql = "INSERT INTO TICKETOPEREP " &
+             "(TICKETOPEREPID,TICKETID,ACTIVITYDATE,SERVICEDESCR,COMMENTS, ACTIVITYDATEDESC) " &
+             "SELECT REPLACE(TICKETOPEREPID,'" & sTicketId & ".','" & sTicketIdNew & ".') " &
+             ",'" & sTicketIdNew & "' " &
+             ",ACTIVITYDATE,SERVICEDESCR,COMMENTS,ACTIVITYDATEDESC " &
+             "FROM TICKETOPEREP " &
              "WHERE TICKETOPEREP.TICKETID = '" & sTicketId & "'"
 
             bdconnACCESS.ExecuteNonSQL(Sql)
 
-            Sql = "INSERT INTO TICKETOPEREPACT " & _
-            "(TICKETOPEREPACTID,TICKETOPEREPID " & _
-            ",ACTIVITYTIME,DESCRIPTION,LINEORDER,BOLD,ALIGHMENT) " & _
-            "SELECT " & _
-            "REPLACE(TICKETOPEREPACTID,'" & sTicketId & ".','" & sTicketIdNew & ".') " & _
-            ",REPLACE(TICKETOPEREPID,'" & sTicketId & ".','" & sTicketIdNew & ".') " & _
-            ",ACTIVITYTIME,DESCRIPTION,LINEORDER,BOLD,ALIGHMENT " & _
-            "FROM TICKETOPEREPACT " & _
-            "WHERE " & _
-            "EXISTS (SELECT 1 FROM TICKETOPEREP " & _
-            "WHERE TICKETOPEREPACT.TICKETOPEREPID = TICKETOPEREP.TICKETOPEREPID " & _
+            Sql = "INSERT INTO TICKETOPEREPACT " &
+            "(TICKETOPEREPACTID,TICKETOPEREPID " &
+            ",ACTIVITYTIME,DESCRIPTION,LINEORDER,BOLD,ALIGHMENT) " &
+            "SELECT " &
+            "REPLACE(TICKETOPEREPACTID,'" & sTicketId & ".','" & sTicketIdNew & ".') " &
+            ",REPLACE(TICKETOPEREPID,'" & sTicketId & ".','" & sTicketIdNew & ".') " &
+            ",ACTIVITYTIME,DESCRIPTION,LINEORDER,BOLD,ALIGHMENT " &
+            "FROM TICKETOPEREPACT " &
+            "WHERE " &
+            "EXISTS (SELECT 1 FROM TICKETOPEREP " &
+            "WHERE TICKETOPEREPACT.TICKETOPEREPID = TICKETOPEREP.TICKETOPEREPID " &
             "AND TICKETOPEREP.TICKETID = '" & sTicketId & "') "
 
             bdconnACCESS.ExecuteNonSQL(Sql)
@@ -932,7 +937,8 @@ Public Class clsSyncTicket
 
         Catch ex As Exception
             Me.DeleteTicket(sTicketIdNew, "ACCESS")
-            MsgBox("Some problems ocurred during Clone Ticket: " & ex.Message)
+            'MsgBox("Some problems ocurred during Clone Ticket: " & ex.Message)
+            MessageBox.Show("Some problems ocurred during Clone Ticket: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return ""
         End Try
 
@@ -1159,68 +1165,78 @@ Public Class clsSyncTicket
     End Sub
 
     Public Sub UpdateTickecCostCenterSync(sTicketId As String, DBDest As String)
-
-        Dim Sql As String
         Dim bdconnACCESS As New clsBancoDadosACCESS
-
-        bdconnACCESS.OpenConnection()
-
+        Dim Sql As String = ""
         Dim sTabOrig As String
         Dim sTabDest As String
 
-        If DBDest = "SQL" Then
-            sTabOrig = ""
-            sTabDest = "zSQL_"
-        Else
-            sTabOrig = "zSQL_"
-            sTabDest = ""
-        End If
+        Try
+            bdconnACCESS.OpenConnection()
 
-        Sql = "UPDATE " & sTabDest & "TICKETCOSTCENTER INNER JOIN " & sTabOrig & "TICKET ON " & sTabDest & "TICKET.TICKETID = " & sTabOrig & "TICKET.TICKETID " &
-                "SET " & sTabDest & "TICKET.COSTCENTERID = [" & sTabOrig & "TICKET].[COSTCENTERID] " &
-                "WHERE " & sTabOrig & "TICKET.TICKETID= '" & sTicketId & "'"
+            If DBDest = "SQL" Then
+                sTabOrig = ""
+                sTabDest = "zSQL_"
+            Else
+                sTabOrig = "zSQL_"
+                sTabDest = ""
+            End If
 
-        bdconnACCESS.ExecuteNonSQL(Sql)
+            Sql = "UPDATE " & sTabDest & "TICKETCOSTCENTER " &
+              "INNER JOIN " & sTabOrig & "TICKETCOSTCENTER ON " &
+              sTabDest & "TICKETCOSTCENTER.TICKETID = " & sTabOrig & "TICKETCOSTCENTER.TICKETID " &
+              "SET " & sTabDest & "TICKETCOSTCENTER.COSTCENTERID = " & sTabOrig & "TICKETCOSTCENTER.COSTCENTERID " &
+              "WHERE " & sTabOrig & "TICKETCOSTCENTER.TICKETID = '" & sTicketId & "'"
 
-        bdconnACCESS.CloseConnection()
-        bdconnACCESS.Dispose()
-        bdconnACCESS = Nothing
+            bdconnACCESS.ExecuteNonSQL(Sql)
 
+        Catch ex As Exception
+            MessageBox.Show("Error en UpdateTicketCostCenterSync: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            If bdconnACCESS IsNot Nothing Then
+                bdconnACCESS.CloseConnection()
+                bdconnACCESS.Dispose()
+                bdconnACCESS = Nothing
+            End If
+        End Try
     End Sub
 
     Private Sub SendTicketCostCenter(sTicketId As String, DBDest As String)
 
         Dim bdconnACCESS As New clsBancoDadosACCESS
-        bdconnACCESS.OpenConnection()
+        Try
+            bdconnACCESS.OpenConnection()
 
-        Dim sql As String
+            Dim sql As String
 
-        Dim sTabOrig As String
-        Dim sTabDest As String
+            Dim sTabOrig As String
+            Dim sTabDest As String
 
-        If DBDest = "SQL" Then
-            sTabOrig = ""
-            sTabDest = "zSQL_"
-        Else
-            sTabOrig = "zSQL_"
-            sTabDest = ""
-        End If
+            If DBDest = "SQL" Then
+                sTabOrig = ""
+                sTabDest = "zSQL_"
+            Else
+                sTabOrig = "zSQL_"
+                sTabDest = ""
+            End If
 
-        sql = "INSERT INTO " & sTabDest & " TICKETCOSTCENTER " &
-                "(TICKETID,COSTCENTERID ) " &
-                "SELECT   " &
-                "TICKETID,COSTCENTERID  " &
-                "FROM TICKETCOSTCENTER " &
-                "WHERE " &
-                "TICKETID = '" & sTicketId & "' "
-        bdconnACCESS.ExecuteNonSQL(sql)
+            sql = "INSERT INTO " & sTabDest & "TICKETCOSTCENTER " &
+                    "(TICKETID,COSTCENTERID ) " &
+                    "SELECT   " &
+                    "TICKETID,COSTCENTERID  " &
+                    "FROM TICKETCOSTCENTER " &
+                    "WHERE " &
+                    "TICKETID = '" & sTicketId & "' "
+            bdconnACCESS.ExecuteNonSQL(sql)
 
-        bdconnACCESS.ExecuteNonSQL(sql)
+            bdconnACCESS.ExecuteNonSQL(sql)
 
-        bdconnACCESS.CloseConnection()
-        bdconnACCESS.Dispose()
-        bdconnACCESS = Nothing
+            bdconnACCESS.CloseConnection()
+            bdconnACCESS.Dispose()
+            bdconnACCESS = Nothing
 
+        Catch ex As Exception
+            MessageBox.Show("Error en SendTicketCostCenter: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
 End Class
