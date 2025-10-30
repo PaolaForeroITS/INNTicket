@@ -19,10 +19,22 @@ Public Class frmCheckConnection
         lblMessage.Text = "Checking Path. Please wait."
         Me.Refresh()
 
-        Dim sPathTmp As String = ConfigurationManager.AppSettings("FilePath").ToString & "\tmp"
-        If (Not System.IO.Directory.Exists(sPathTmp)) Then
-            System.IO.Directory.CreateDirectory(sPathTmp)
+        'Dim sPathTmp As String = ConfigurationManager.AppSettings("FilePath").ToString & "\tmp"
+        'If (Not System.IO.Directory.Exists(sPathTmp)) Then
+        '    System.IO.Directory.CreateDirectory(sPathTmp)
+        'End If
+
+
+        Dim filePathSetting As String = ConfigurationManager.AppSettings("FilePath")
+
+        If String.IsNullOrEmpty(filePathSetting) Then
+            MessageBox.Show("La clave 'FilePath' no está definida o está vacía en AppSettings.")
+            Me.Cursor = Cursors.Arrow
+            Exit Sub
         End If
+
+        Dim sPathTmp As String = filePathSetting & "\tmp"
+
 
         lblMessage.Text = "Deleting Temporary Files. Please wait."
         Me.Refresh()

@@ -3169,7 +3169,8 @@ FROM            COSTCENTER</CommandText>
                 </InsertCommand>
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT * FROM   TICKETCOSTCENTER</CommandText>
+                    <CommandText>SELECT        ID, TICKETID, COSTCENTERID
+FROM            TICKETCOSTCENTER</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -7101,25 +7102,25 @@ FROM            COSTCENTER</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TICKETCOSTCENTER" msprop:Generator_RowClassName="TICKETCOSTCENTERRow" msprop:Generator_RowEvHandlerName="TICKETCOSTCENTERRowChangeEventHandler" msprop:Generator_RowDeletedName="TICKETCOSTCENTERRowDeleted" msprop:Generator_RowDeletingName="TICKETCOSTCENTERRowDeleting" msprop:Generator_RowEvArgName="TICKETCOSTCENTERRowChangeEvent" msprop:Generator_TablePropName="TICKETCOSTCENTER" msprop:Generator_RowChangedName="TICKETCOSTCENTERRowChanged" msprop:Generator_UserTableName="TICKETCOSTCENTER" msprop:Generator_RowChangingName="TICKETCOSTCENTERRowChanging" msprop:Generator_TableClassName="TICKETCOSTCENTERDataTable" msprop:Generator_TableVarName="tableTICKETCOSTCENTER">
+        <xs:element name="TICKETCOSTCENTER" msprop:Generator_RowEvHandlerName="TICKETCOSTCENTERRowChangeEventHandler" msprop:Generator_RowDeletedName="TICKETCOSTCENTERRowDeleted" msprop:Generator_RowDeletingName="TICKETCOSTCENTERRowDeleting" msprop:Generator_RowEvArgName="TICKETCOSTCENTERRowChangeEvent" msprop:Generator_TablePropName="TICKETCOSTCENTER" msprop:Generator_RowChangedName="TICKETCOSTCENTERRowChanged" msprop:Generator_UserTableName="TICKETCOSTCENTER" msprop:Generator_RowChangingName="TICKETCOSTCENTERRowChanging" msprop:Generator_RowClassName="TICKETCOSTCENTERRow" msprop:Generator_TableClassName="TICKETCOSTCENTERDataTable" msprop:Generator_TableVarName="tableTICKETCOSTCENTER">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="TICKETID" msprop:Generator_UserColumnName="TICKETID" msprop:Generator_ColumnPropNameInTable="TICKETIDColumn" msprop:Generator_ColumnPropNameInRow="TICKETID" msprop:Generator_ColumnVarNameInTable="columnTICKETID" minOccurs="0">
+              <xs:element name="TICKETID" msprop:Generator_ColumnPropNameInTable="TICKETIDColumn" msprop:Generator_ColumnPropNameInRow="TICKETID" msprop:Generator_UserColumnName="TICKETID" msprop:Generator_ColumnVarNameInTable="columnTICKETID" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="RIG" msprop:Generator_UserColumnName="RIG" msprop:Generator_ColumnPropNameInTable="RIGColumn" msprop:Generator_ColumnPropNameInRow="RIG" msprop:Generator_ColumnVarNameInTable="columnRIG" minOccurs="0">
+              <xs:element name="RIG" msprop:Generator_ColumnPropNameInTable="RIGColumn" msprop:Generator_ColumnPropNameInRow="RIG" msprop:Generator_UserColumnName="RIG" msprop:Generator_ColumnVarNameInTable="columnRIG" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:int" />
-              <xs:element name="COSTCENTERID" msprop:Generator_UserColumnName="COSTCENTERID" msprop:Generator_ColumnPropNameInTable="COSTCENTERIDColumn" msprop:Generator_ColumnPropNameInRow="COSTCENTERID" msprop:Generator_ColumnVarNameInTable="columnCOSTCENTERID" type="xs:int" minOccurs="0" />
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:int" />
+              <xs:element name="COSTCENTERID" msprop:Generator_ColumnPropNameInTable="COSTCENTERIDColumn" msprop:Generator_ColumnPropNameInRow="COSTCENTERID" msprop:Generator_UserColumnName="COSTCENTERID" msprop:Generator_ColumnVarNameInTable="columnCOSTCENTERID" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

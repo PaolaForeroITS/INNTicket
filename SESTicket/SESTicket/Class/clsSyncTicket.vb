@@ -126,6 +126,8 @@ Public Class clsSyncTicket
             TicketDBSyncAccess(sTicketID, DBDest)
             sStep = "Executing TicketServiceType" & Environment.NewLine
             SendTicketServiceType(sTicketID, DBDest)
+            sStep = "Executing TickecCostCenter" & Environment.NewLine
+            SendTicketCostCenter(sTicketID, DBDest)
 
             'Catch ex As Exception
             '    bErro = True
@@ -604,6 +606,13 @@ Public Class clsSyncTicket
             bdconnACCESS.ExecuteNonSQL(sql)
         End If
 
+        sql = "DELETE FROM TICKETCOSTCENTER WHERE TICKETID = '" & sTicketId & "'"
+        If DBDest = "SQL" Then
+            bdconnSQL.ExecuteNonSQL(sql)
+        Else
+            bdconnACCESS.ExecuteNonSQL(sql)
+        End If
+
 
         sql = "DELETE FROM TICKET WHERE TICKETID = '" & sTicketId & "'"
         If DBDest = "SQL" Then
@@ -691,6 +700,8 @@ Public Class clsSyncTicket
 
         Sql = "UPDATE TICKET SET SYNCDB=1 WHERE TICKETID = '" & sTicketId & "'"
         bdconnACCESS.ExecuteNonSQL(Sql)
+
+        UpdateTickecCostCenterSync(sTicketId, DBDest)
 
         bdconnACCESS.CloseConnection()
         bdconnACCESS.Dispose()
@@ -899,6 +910,15 @@ Public Class clsSyncTicket
             "WHERE " &
             "TICKETID = '" & sTicketId & "' "
 
+            bdconnACCESS.ExecuteNonSQL(Sql)
+
+            Sql = "INSERT INTO TICKETCOSTCENTER " &
+                "(TICKETID,COSTCENTERID ) " &
+                "SELECT   " &
+                "'" & sTicketIdNew & "' " &
+                "FROM TICKETCOSTCENTER " &
+                "WHERE " &
+                "TICKETID = '" & sTicketId & "' "
             bdconnACCESS.ExecuteNonSQL(Sql)
 
 
@@ -1138,6 +1158,69 @@ Public Class clsSyncTicket
 
     End Sub
 
+    Public Sub UpdateTickecCostCenterSync(sTicketId As String, DBDest As String)
 
+        Dim Sql As String
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+
+        bdconnACCESS.OpenConnection()
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        Sql = "UPDATE " & sTabDest & "TICKETCOSTCENTER INNER JOIN " & sTabOrig & "TICKET ON " & sTabDest & "TICKET.TICKETID = " & sTabOrig & "TICKET.TICKETID " &
+                "SET " & sTabDest & "TICKET.COSTCENTERID = [" & sTabOrig & "TICKET].[COSTCENTERID] " &
+                "WHERE " & sTabOrig & "TICKET.TICKETID= '" & sTicketId & "'"
+
+        bdconnACCESS.ExecuteNonSQL(Sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
+
+    Private Sub SendTicketCostCenter(sTicketId As String, DBDest As String)
+
+        Dim bdconnACCESS As New clsBancoDadosACCESS
+        bdconnACCESS.OpenConnection()
+
+        Dim sql As String
+
+        Dim sTabOrig As String
+        Dim sTabDest As String
+
+        If DBDest = "SQL" Then
+            sTabOrig = ""
+            sTabDest = "zSQL_"
+        Else
+            sTabOrig = "zSQL_"
+            sTabDest = ""
+        End If
+
+        sql = "INSERT INTO " & sTabDest & " TICKETCOSTCENTER " &
+                "(TICKETID,COSTCENTERID ) " &
+                "SELECT   " &
+                "TICKETID,COSTCENTERID  " &
+                "FROM TICKETCOSTCENTER " &
+                "WHERE " &
+                "TICKETID = '" & sTicketId & "' "
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.ExecuteNonSQL(sql)
+
+        bdconnACCESS.CloseConnection()
+        bdconnACCESS.Dispose()
+        bdconnACCESS = Nothing
+
+    End Sub
 
 End Class
