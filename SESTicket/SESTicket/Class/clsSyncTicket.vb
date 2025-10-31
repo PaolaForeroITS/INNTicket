@@ -1228,8 +1228,6 @@ Public Class clsSyncTicket
                     "TICKETID = '" & sTicketId & "' "
             bdconnACCESS.ExecuteNonSQL(sql)
 
-            bdconnACCESS.ExecuteNonSQL(sql)
-
             bdconnACCESS.CloseConnection()
             bdconnACCESS.Dispose()
             bdconnACCESS = Nothing

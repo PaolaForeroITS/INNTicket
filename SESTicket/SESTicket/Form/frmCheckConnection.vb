@@ -69,7 +69,7 @@ Public Class frmCheckConnection
                 lblMessage.Text = "Checking your version. Please wait."
                 Me.Refresh()
 
-                Dim sCheckVersion As String = ConfigurationManager.AppSettings("CheckVersion").ToString
+                Dim sCheckVersion As String = "True" 'ConfigurationManager.AppSettings("CheckVersion").ToString
 
                 If LCase(sCheckVersion) = "true" Then
                     Dim sysVer As New clsSystemVersion

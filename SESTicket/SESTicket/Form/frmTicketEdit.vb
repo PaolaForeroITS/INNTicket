@@ -48,8 +48,8 @@ Public Class frmTicketEdit
     End Sub
 
     Private Sub frmTicketEdit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'SESTicketAccessDataSet.COSTCENTER' table. You can move, or remove it, as needed.
-        Me.COSTCENTERTableAdapter.Fill(Me.SESTicketAccessDataSet.COSTCENTER)
+        'TODO: This line of code loads data into the 'SESTicketAccessDataSet.TICKETCOSTCENTER' table. You can move, or remove it, as needed.
+        Me.TICKETCOSTCENTERTableAdapter.Fill(Me.SESTicketAccessDataSet.TICKETCOSTCENTER)
 
         'Added validation to enable the Frontera report print option.
 
@@ -131,6 +131,7 @@ Public Class frmTicketEdit
                 CarregaCbxServiceLine()
                 CarregaCbxContract()
                 CarregaCbxMoeda()
+                CarregaCbxCostCenter()
 
             Catch ex As Exception
                 Me.Cursor = Cursors.Arrow
@@ -154,6 +155,7 @@ Public Class frmTicketEdit
             TicketEnable()
             CarregaTicketServiceType()
             LoadTicketOpeHour()
+            LoadTicketCostCenter()
 
         End If
 
@@ -219,8 +221,7 @@ Public Class frmTicketEdit
         Me.CONTRACTTableAdapter.Fill(Me.SESTicketAccessDataSet.CONTRACT)
         'TODO: This line of code loads data into the 'SESTicketAccessDataSet.CURRENCY' table. You can move, or remove it, as needed.
         Me.CURRENCYTableAdapter.Fill(Me.SESTicketAccessDataSet.CURRENCY)
-        'ADD COST CENTER 2025
-        'Me.COSTCENTERTableAdapter.Fill(Me.SESTicketAccessDataSet.COSTCENTER)
+
         CarregaCbxTubing()
         CarregaCbxCasing()
         CarregaCbxCostCenter()
@@ -860,7 +861,7 @@ Public Class frmTicketEdit
             Exit Sub
         End If
 
-        If CbxCostCenter.Text = "" Then
+        If CbxCostCenter.Text = "Seleccionar" Then
             MsgBox("Inform the Cost center", vbExclamation)
             Exit Sub
         End If
@@ -872,9 +873,9 @@ Public Class frmTicketEdit
 
         If sTicketNumberOld = "" Then
 
-            Dim sMsg As String = "The following CUSTOMER and CONTRACT are used by new ticket." & Environment.NewLine &
-                "Customer: " & cbxCustomer.Text & Environment.NewLine &
-                "Contract: " & cbxContract.Text & Environment.NewLine & Environment.NewLine &
+            Dim sMsg As String = "The following CUSTOMER And CONTRACT are used by New ticket." & Environment.NewLine &
+                "Customer " & cbxCustomer.Text & Environment.NewLine &
+                "Contract " & cbxContract.Text & Environment.NewLine & Environment.NewLine &
                 "This information cannot be change after safe. Continue?"
 
             If MsgBox(sMsg, vbYesNo) = vbNo Then
@@ -882,7 +883,7 @@ Public Class frmTicketEdit
                 Exit Sub
             End If
 
-            sql = "SELECT 1"
+            sql = "Select 1"
             sql = "INSERT INTO [TICKET] " &
                 "([TICKETID],[DATESERVICE],[CUSTOMERID],[CONTRACTID],[CURRENCYID] " &
                 ",[WELLID],[TIMEARRIVED],[TIMESTARTED],[TIMECOMPLETED] " &
@@ -924,7 +925,7 @@ Public Class frmTicketEdit
             If cbxCurrency.SelectedValue = "USD" Then
                 sql = sql & "0,'Open',"
             Else
-                sql = sql & "1,'Open',"
+            Sql = sql & "1,'Open',"
             End If
             sql = sql & util.SQLConvStrNull(cbxServiceLine.SelectedValue, "n") & ","
             sql = sql & util.SQLConvStrNull(txtRig.Text, "s") & ","
@@ -1022,6 +1023,14 @@ Public Class frmTicketEdit
                 ",[SERVICEORDERNUM] = " & util.SQLConvStrNull(txtSONumber.Text, "s") & " " &
                 ",[SITEID] = " & util.SQLConvStrNull(sSiteId, "s") & " " &
                 ",[SUPERIORSUPERVISOR] = " & util.SQLConvStrNull(sSuperiorSupervisorId, "s") & " " &
+                " WHERE " &
+                "[TICKETID] = '" & txtTicketNumber.Text & "'"
+
+            bdconnACCESS.ExecuteNonSQL(sql)
+
+            sql = "select 1"
+            sql = "UPDATE [TICKETCOSTCENTER] SET " &
+                " [COSTCENTERID] = " & CbxCostCenter.SelectedValue &
                 " WHERE " &
                 "[TICKETID] = '" & txtTicketNumber.Text & "'"
 
@@ -1896,4 +1905,29 @@ Public Class frmTicketEdit
         ' Seleccionar la opción "Seleccionar"
         CbxCostCenter.SelectedIndex = 0
     End Sub
+
+    Private Sub LoadTicketCostCenter()
+        Try
+            ' Llenar la tabla TICKETCOSTCENTER
+            Me.TICKETCOSTCENTERTableAdapter.Fill(Me.SESTicketAccessDataSet.TICKETCOSTCENTER)
+
+            ' Filtrar por el Ticket actual
+            TICKETCOSTCENTERBindingSource.Filter = "TICKETID='" & txtTicketNumber.Text & "'"
+
+            ' Verificar si hay datos
+            If TICKETCOSTCENTERBindingSource.Count > 0 Then
+                Dim rowView As DataRowView = CType(TICKETCOSTCENTERBindingSource.Current, DataRowView)
+                Dim costCenterId As Integer = Convert.ToInt32(rowView("COSTCENTERID"))
+
+                ' Asignar el valor al ComboBox
+                CbxCostCenter.SelectedValue = costCenterId
+            Else
+                ' Si no hay registro, dejar en "Seleccionar"
+                CbxCostCenter.SelectedIndex = 0
+            End If
+        Catch ex As Exception
+            MsgBox("Error al cargar el Cost Center: " & ex.Message)
+        End Try
+    End Sub
+
 End Class
